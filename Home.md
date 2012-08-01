@@ -6,4 +6,4 @@ Here is the wiki of `node-webkit`, feel free to help us improve it.
 
 [[Manifest format]] - the format of `package.json`
 
-[[How to compile]]
+[[Building node-webkit]]
