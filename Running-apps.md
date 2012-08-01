@@ -1,0 +1,32 @@
+_Since our package system is similar to [LOVE](https://love2d.org), following guides are modified from its [Wiki](https://love2d.org/wiki/Getting_Started)._
+
+`node-webkit` can load an app in two ways: 
+
+* From a folder. The startup path specifies this folder. 
+* From a `.nw` file (a renamed .zip-file). The startup path specifies the file. 
+
+In both cases, there has to be a file called `package.json` in the startup path or `.nw` zipfile. This file will be parsed when `node-webkit` starts. If this file is missing, `node-webkit` will not recognize the folder or `.nw` file as app, and it will complain about a wrongly packaged app. A frequently made mistake is zipping the folder rather than its contents. This stems from very old practice (because when you unzip a folder you don't want it to splash out all over your current directory), but for `node-webkit` doing that doesn't make sense: you need to zip the app folder's contents only, to get a correct `.nw`. 
+
+### Windows
+
+On Windows, the easiest way to run the app is to drag the folder onto `nw.exe`, or a shortcut to `nw.exe`. Remember to drag the folder containing `package.json`, and not `package.json` itself.
+
+You can also call it from the command line: 
+
+For instance: 
+
+    nw C:\apps\myapp
+    nw C:\apps\packagedapp.nw
+
+### Linux
+
+On Linux, you can use one of these command lines: 
+
+    nw /home/path/to/appdir/
+    nw /home/path/to/packagedapp.nw
+
+If you have installed the `.deb`, you can double click on `.nw` files in your file manager as well. 
+
+### Mac OS X
+
+Guide for Mac is coming soon.
