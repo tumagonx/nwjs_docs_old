@@ -2,8 +2,9 @@
 
 _Since our package system is similar to [LOVE](https://love2d.org), following guides are modified from its [Wiki](https://love2d.org/wiki/Game_Distribution)._
 
-An app's package is a zip archive with `.nw` as extension. Two caveats:
+An app's package is a zip archive with `.nw` as extension. Three caveats:
 
+* There must be a `package.json` file that describes the package, see [[Manifest format]].
 * The `package.json` file must be at the root of the archive. 
 * In the `.nw`, the file and directory path names are case sensitive. This can be puzzling for Windows and Mac OS X users, whose filesystem is case insensitive, and whose apps may work when unzipped but not when packaged.
 
