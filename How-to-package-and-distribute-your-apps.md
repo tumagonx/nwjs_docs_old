@@ -1,6 +1,6 @@
 ## Make a package
 
-_Since our package system is similar to [LOVE](https://love2d.org), following guides are modified from its [Wiki](https://love2d.org/wiki/Game_Distribution)._
+_Since our package system is similar to [LÖVE](https://love2d.org), following guides are modified from its [Wiki](https://love2d.org/wiki/Game_Distribution)._
 
 An app's package is a zip archive with `.nw` as extension. Three caveats:
 
