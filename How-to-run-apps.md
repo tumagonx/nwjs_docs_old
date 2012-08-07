@@ -1,4 +1,4 @@
-_Since our package system is similar to [LOVE](https://love2d.org), following guides are modified from its [Wiki](https://love2d.org/wiki/Getting_Started)._
+_Since our package system is similar to [LÖVE](https://love2d.org), following guides are modified from its [Wiki](https://love2d.org/wiki/Getting_Started)._
 
 `node-webkit` can load an app in two ways: 
 
