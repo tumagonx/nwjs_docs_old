@@ -95,5 +95,5 @@ Alternately, the `build_projects` script (.bat on Windows, .sh on OS-X and Linux
 ## Build Faster
 
 * [Build Instructions for Windows](http://www.chromium.org/developers/how-tos/build-instructions-windows#TOC-Accelerating-the-build)
-* [LinuxFasterBuilds](code.google.com/p/chromium/wiki/LinuxFasterBuilds)
+* [LinuxFasterBuilds](http://code.google.com/p/chromium/wiki/LinuxFasterBuilds)
 * [WindowsPrecompiledHeaders](http://code.google.com/p/chromium/wiki/WindowsPrecompiledHeaders)
