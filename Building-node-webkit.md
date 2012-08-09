@@ -72,7 +72,7 @@ If you encountered other problems, see [UsingNewGit](http://code.google.com/p/ch
 Currently our project just patches `CEF` and is independent of `Chromium`, so you still need to put `CEF`'s code under `node-webkit/src`:
 
     cd /path/to/node-webkit/src
-    git clone https://github.com/zcbenz/cef.git
+    git clone --recursive https://github.com/zcbenz/cef.git
 
 ## Build
 
