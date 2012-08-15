@@ -37,6 +37,9 @@ Each package must provide all the following fields in its package descriptor fil
 ### main
 *(string)* which page should be opened when `node-webkit` starts.
 
+### name 
+*(string)* the name of the package. This must be a unique, lowercase alpha-numeric name without spaces. It may include "." or "_" or "-" characters. It is otherwise opaque. 
+
 ## Features Control Fields
 
 Following fields control which features `node-webkit` should provide and how `node-webkit` should open the main window.
@@ -74,9 +77,6 @@ Coming soon.
 ## Other Fields
 
 The [Packages/1.0](http://wiki.commonjs.org/wiki/Packages/1.0) standard specifies many other fields `package.json` should provide. currently we don't make use of them, but you provide them still.
-
-### name 
-the name of the package. This must be a unique, lowercase alpha-numeric name without spaces. It may include "." or "_" or "-" characters. It is otherwise opaque. 
 
 ### description 
 a brief description of the package. By convention, the first sentence (up to the first ". ") should be usable as a package title in listings. 
