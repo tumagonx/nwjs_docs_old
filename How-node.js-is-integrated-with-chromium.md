@@ -19,5 +19,3 @@ Another modification resided under `third_party/WebKit/Source/WebCore/bindings/v
 ## Insert node's symbols into webkit
 
 This is the most important and trickiest part of `node-webkit`, first we initialize a context for `node`, and make `node` setup all its stuff under it, see `content/renderer/renderer_main.cc`, then when WebKit has installed DOM into its context, we move everything from `node` to `WebKit`, see `third_party/WebKit/Source/WebCore/bindings/v8/V8DOMWindowShell.cpp` in line 346.
-
-A potential problem is that all node's callbacks will be executed under node's context, since the message loop runs under node's context. But all codes from `<script>` tag will run under WebKit's context, this could cause some problems since same codes under different contexts.
