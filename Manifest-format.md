@@ -5,7 +5,7 @@ Every app package should contain a manifest file named `package.json`, it will t
 ````
 {
   "main": "index.html",
-  "name": "demo",
+  "name": "nw-demo",
   "description": "demo app of node-webkit",
   "version": "0.1",
   "keywords": [ "demo", "node-webkit" ],
@@ -39,6 +39,8 @@ Each package must provide all the following fields in its package descriptor fil
 
 ### name 
 *(string)* the name of the package. This must be a unique, lowercase alpha-numeric name without spaces. It may include "." or "_" or "-" characters. It is otherwise opaque. 
+
+`name` should be globally unique since `node-webkit` will store app's data under the directory named `name`.
 
 ## Features Control Fields
 
