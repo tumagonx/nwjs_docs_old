@@ -1,0 +1,1 @@
+`node.js` chose `setTimeout` and `console` family that as its global variables, which conflicts with DOM's `setTimeout` and `console`, currently we simply disable `setTimeout` and `console` in `node.js`.
