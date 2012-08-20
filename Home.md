@@ -6,8 +6,11 @@ Guides:
 
 * [[How to run apps]]
 * [[How to package and distribute your apps]]
-* [[Debugging with devtools]]
 * [[Manifest format]] - the format of `package.json`
+
+Advanced:
+* [[Debugging with devtools]]
+* [[Command line switches]]
 
 Traps:
 
