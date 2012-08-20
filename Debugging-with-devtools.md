@@ -1,18 +1,20 @@
+*Note: following guides only apply to node-webkit >= v0.2.2*
+
 ## Open Developer Tools
 
-`node-webkit` supports only remote debugging now, so in order to use chrome's developer tools on `node-webkit`, you need to specify an empty port on startup:
+In order to show the `Debug` menu, you should manually append an `developer` switch:
 
 ````bash
-$ nw --remote-debugging-port=8259
+$ nw --developer`
 ````
 
 Note, on Windows the command parameter is a little different:
 
 ````
-nw /remote-debugging-port=8259
+nw /developer
 ````
 
-Then when you open the developer tools from the context menu item `Show DevTools`, most things functions well.
+Then when you open the developer tools from the application menu `Debug` -> `Show DevTools`.
 
 ## Bugs of Developer Tools
 
