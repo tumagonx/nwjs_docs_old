@@ -31,16 +31,16 @@ If you have installed the `.deb`, you can double click on `.nw` files in your fi
 
 On Mac OSX, a folder or `.nw` file can be dropped onto the nw.app application bundle. On the Mac OSX Terminal (commandline), you can use nw like this (assuming it's installed to the Applications directory): 
 
-    open -n -a nw "/home/path/to/app" 
+    open -n -a node-webkit "/home/path/to/app" 
 
 In some cases it may be faster to invoke the nw binary inside the application bundle directly via the following: 
 
-    /Applications/nw.app/Contents/MacOS/nw myapp 
+    /Applications/node-webkit.app/Contents/MacOS/node-webkit myapp 
 
 You can setup an alias in your Terminal session to call the binary when you use nw by adding an alias to your ~/.bash_profile (open -a TextEdit ~/.bash_profile): 
 
     # alias to nw
-    alias nw="/Applications/nw.app/Contents/MacOS/nw"
+    alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 
 Now you can call nw from the commandline like Linux and Windows: 
 
