@@ -2,7 +2,6 @@ Our compilation will follow `Chromium`'s standard, by using `gclient` and `gyp`,
 
 * [Get the Code](http://www.chromium.org/developers/how-tos/get-the-code) - the usage of `gclient`
 * [UsingNewGit ](http://code.google.com/p/chromium/wiki/UsingNewGit) - steps of syncing code 
-* [BranchesAndBuilding](http://code.google.com/p/chromiumembedded/wiki/BranchesAndBuilding) - how to build `CEF`
 
 And choose the instructions for your platform, they contained important building conventions.
 
@@ -17,19 +16,18 @@ And choose the instructions for your platform, they contained important building
 
 ## Get the Code
 
-Currently `node-webkit` is based on `CEF`, which is based on `Chromium`, so we need to get both projects' source code. Following steps are roughly same with `CEF`'s [building steps](http://code.google.com/p/chromiumembedded/wiki/BranchesAndBuilding).
+`node-webkit` is now a part of our custom `Chromium`, that means the way we get `node-webkit` is mostly the same with `Chromium`, following steps are indeed modified from the [Get the Code](http://www.chromium.org/developers/how-tos/get-the-code).
 
-### Get Chromium's Code
-
-First find a place to put our code, it will take up about 14G disk place after compilation. Assume you store code under `node-webkit` folder, our
-final directory architecture will be like:
+First find a place to put our code, it will take up about 14G disk place after compilation. Assume you store code under `node-webkit` folder, our final directory architecture will be like:
 
     node-webkit/
     |-- .gclient
     `-- src/
         |-- many-stuff
         |-- ...
-        `-- cef
+        `-- content
+            |-- ...
+            `-- nw
 
 Then create the `.gclient` file under `node-webkit`, its content should be:
 
@@ -51,9 +49,7 @@ Then create the `.gclient` file under `node-webkit`, its content should be:
        },
     ]
 
-`dbc6308eb7` is in fact the last commit hash of [my chromium repository](https://github.com/zcbenz/chromium), change it as you will.
-
-Finally sync code under `node-webkit` (it would spend a few hours depending on your network condition):
+Finally sync code under `node-webkit` directory (where `.gclient` resides), it would spend a few hours depending on your network condition:
 
     gclient sync
 
@@ -67,30 +63,19 @@ Note: if you're on Linux and you get any dependency errors during `gclient sync`
 
 If you encountered other problems, see [UsingNewGit](http://code.google.com/p/chromium/wiki/UsingNewGit).
 
-### Get CEF's code
-
-Currently our project just patches `CEF` and is independent of `Chromium`, so you still need to put `CEF`'s code under `node-webkit/src`:
-
-    cd /path/to/node-webkit/src
-    git clone --recursive https://github.com/zcbenz/cef.git
-
 ## Build
 
-Run the `cef_create_projects` script (.bat on Windows, .sh on OS-X and Linux) to generate the build files based on the GYP configuration.
+After the `gclient sync`, project files should have be prepared. If not, you should manually run:
 
-    cd /path/to/node-webkit/src/cef
-    ./cef_create_projects.sh
+    ./build/gyp_chromium
 
-Compile `node-webkit`
+Then you can just compile the `nw` target:
 
-* Windows - Open the Visual Studio solution file and build. 
-* Mac OS-X - Open the Xcode project file and build. 
+* Windows - Open the Visual Studio solution file and build project `nw` under `content`. 
+* Mac OS-X - Open the Xcode project file and build `nw`. 
 * Linux - Run `make -j4 nw` from the Chromium `src` directory. 
 
-Alternately, the `build_projects` script (.bat on Windows, .sh on OS-X and Linux) can be used to build on the command line using the default system tools. 
-
-    cd /path/to/chromium/src/cef/tools
-    build_projects.sh Debug
+Alternately, you can use `ninja` to build `node-webkit`, see [NinjaBuild](http://code.google.com/p/chromium/wiki/NinjaBuild). This method is also recommended since it's very fast and easy to use.
 
 ## Build Faster
 
