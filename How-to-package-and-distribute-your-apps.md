@@ -56,4 +56,12 @@ Eventually, we will provide scripts which do this automatically for various pack
 
 ### Mac OS X 
 
-Currently we lack deep integration with Mac.
+_Following guides apply to node-webkit >= 0.2.3_
+
+On OS X, the `node-webkit.app` is a directory that can be easily changed. You need to modify following files to make a real distribution of yours:
+
+* `Contents/MacOS/node-webkit`: the binary itself, see instructions of Linux on how to append `.nw` file to the binary.
+* `Contents/Resources/app.icns`: icon of your app.
+* `Contents/Info.plist`: the apple package description file.
+
+About the `Info.plist` the file, you can view [Implementing Cocoa's Standard About Panel](http://cocoadevcentral.com/articles/000071.php) on how this file will influence your app and what fields you should modify.
