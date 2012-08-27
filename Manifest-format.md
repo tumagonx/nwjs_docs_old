@@ -46,6 +46,10 @@ Each package must provide all the following fields in its package descriptor fil
 
 Following fields control which features `node-webkit` should provide and how `node-webkit` should open the main window.
 
+### nodejs
+
+*(boolean)* set `nodejs` to false will disable node inside WebKit, if you're only using HTML5 to write apps, it could improve stability and performance.
+
 ### window
 *(object)* controls how the main window looks, see _Window Fields_ below.
 
