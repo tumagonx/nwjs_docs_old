@@ -63,6 +63,13 @@ Note: if you're on Linux and you get any dependency errors during `gclient sync`
 
 If you encountered other problems, see [UsingNewGit](http://code.google.com/p/chromium/wiki/UsingNewGit).
 
+## Patch WebKit
+
+We have done some hacks on WebKit to make it comfortable with local apps and node.js, currently you should manually apply our patch for WebKit.
+
+    cd /path-to-node-webkit/src/third_party/WebKit
+    git apply ../../content/src/patches/webkit.patch
+
 ## Build
 
 After the `gclient sync`, project files should have be prepared. If not, you should manually run:
