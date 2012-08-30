@@ -11,6 +11,7 @@ Guides:
 Advanced:
 * [[Debugging with devtools]]
 * [[Command line switches]]
+* [[Play with window]]
 
 Traps:
 
