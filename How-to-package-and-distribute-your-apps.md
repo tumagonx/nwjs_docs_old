@@ -56,12 +56,13 @@ Eventually, we will provide scripts which do this automatically for various pack
 
 ### Mac OS X 
 
-_Following guides apply to node-webkit >= 0.2.3_
+_Following guides apply to node-webkit >= 0.2.4_
 
-On OS X, the `node-webkit.app` is a directory that can be easily changed. You need to modify following files to make a real distribution of yours:
+On OS X, the `node-webkit.app` is a directory that can be easily changed. To make node-webkit automatically open your app, you need to put your app file under `Contents/Resources` and name it `app.nw`. The bonus over other platforms is, the `app.nw` needs not to be a zip file, if you want to speed up startup, you can make `app.nw` your app's directory.
 
-* `Contents/MacOS/node-webkit`: the binary itself, see instructions of Linux on how to append `.nw` file to the binary.
+And you need to modify following files to make a real distribution of yours:
+
 * `Contents/Resources/app.icns`: icon of your app.
 * `Contents/Info.plist`: the apple package description file.
 
-About the `Info.plist` the file, you can view [Implementing Cocoa's Standard About Panel](http://cocoadevcentral.com/articles/000071.php) on how this file will influence your app and what fields you should modify.
+About the `Info.plist` file, you can view [Implementing Cocoa's Standard About Panel](http://cocoadevcentral.com/articles/000071.php) on how this file will influence your app and what fields you should modify.
