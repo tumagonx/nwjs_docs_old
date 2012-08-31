@@ -12,7 +12,7 @@ Advanced:
 * [[Debugging with devtools]]
 * [[Command line switches]]
 * [[Play with window]]
-* [[getUserMedia API - control camera and microphone]]
+* [[Control camera and microphone with getUserMedia API]]
 
 Traps:
 
