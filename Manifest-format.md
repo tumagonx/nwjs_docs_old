@@ -58,6 +58,9 @@ Following fields control which features `node-webkit` should provide and how `no
 
 ## Window Sub Fields
 
+### title
+*(string)* the default title of window created by node-webkit, it's very useful if you want to show your own title when the app is starting.
+
 ### width/height
 *(int)* the initial width/height of the main window.
 
