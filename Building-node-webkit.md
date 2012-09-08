@@ -68,7 +68,7 @@ If you encountered other problems, see [UsingNewGit](http://code.google.com/p/ch
 We have done some hacks on WebKit to make it comfortable with local apps and node.js, currently you should manually apply our patch for WebKit.
 
     cd /path-to-node-webkit/src/third_party/WebKit
-    git apply ../../content/src/patches/webkit.patch
+    git apply ../../content/nw/patches/webkit.patch
 
 ## Build
 
