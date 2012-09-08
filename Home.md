@@ -2,7 +2,7 @@ Here is the wiki of `node-webkit`, feel free to help us improve it.
 
 ## For Users
 
-Guides:
+Basic:
 
 * [[How to run apps]]
 * [[How to package and distribute your apps]]
@@ -12,6 +12,8 @@ Advanced:
 * [[Debugging with devtools]]
 * [[Command line switches]]
 * [[Play with window]]
+* [[nw protocol]]
+* [[File dialogs]]
 * [[Control camera and microphone with getUserMedia API]]
 
 Traps:
