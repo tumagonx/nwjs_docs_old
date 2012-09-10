@@ -1,6 +1,6 @@
 For licensing issues node-webkit didn't ship with support for patented media formats, but for commercial cases where it's necessary to support patented media formats, we have solutions bellow.
 
-**Please consult experts if you want to use patented media formats on your apps**
+**Please consult experts if you want to use patented media formats on your apps.**
 
 # Overview
 
@@ -24,4 +24,4 @@ The folder location may vary according to the linux distro you are using. Its lo
 
 Head to your Applications folder and right-click Google Chrome. Choose show package contents and drill down to Versions > Most recent # > Framework > Libraries. Copy `libffmpegsumo.dylib`.
 
-Then open `node-webkit.app/Content`
+Then open `node-webkit.app/Contents/Frameworks/node-webkit Framework.framework/Libraries/` and paste the `libffmpegsumo.dylib` file.
