@@ -12,6 +12,7 @@ Advanced:
 * [[File dialogs]]
 * [[Dragging files into page]]
 * [[Control camera and microphone with getUserMedia API]]
+* [[Support mp3 and H264 in video and audio tag]]
 
 Debugging:
 * [[Debugging with devtools]]
