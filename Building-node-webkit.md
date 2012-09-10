@@ -94,3 +94,28 @@ ninja -C out/Release nw -j4
 * [Build Instructions for Windows](http://www.chromium.org/developers/how-tos/build-instructions-windows#TOC-Accelerating-the-build)
 * [LinuxFasterBuilds](http://code.google.com/p/chromium/wiki/LinuxFasterBuilds)
 * [WindowsPrecompiledHeaders](http://code.google.com/p/chromium/wiki/WindowsPrecompiledHeaders)
+
+## Update to upstream
+
+If you decide to build node-webkit your self, you need to take care of updating your code since node-webkit is in rapid development.
+
+The first thing you should do before updating your code is reset WebKit repository since it contains our patch:
+
+````
+cd /path-to-node-webkit/src/third_party/WebKit
+git reset --hard HEAD
+````
+
+then you should update your source code tree:
+
+````
+cd /path-to-node-webkit
+gclient sync
+````
+
+And don't forget to re-patch WebKit before you build:
+
+````
+cd /path-to-node-webkit/src/third_party/WebKit
+git apply ../../content/nw/patches/webkit.patch
+````
