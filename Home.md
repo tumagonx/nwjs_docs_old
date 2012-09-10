@@ -10,6 +10,7 @@ Basic:
 Advanced:
 * [[Play with window]]
 * [[File dialogs]]
+* [[Dragging files into page]]
 * [[Control camera and microphone with getUserMedia API]]
 
 Debugging:
