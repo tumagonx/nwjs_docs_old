@@ -10,7 +10,7 @@ First, since the getUserMedia API is currently an experimental feature, the API 
 
 To use the webcam or microphone, we need to request permission. The first parameter to getUserMedia() is an object specifying the type of media you want to access. For example, if you want to access the webcam, the first parameter should be {video: true}. To use both the microphone and camera, pass {video: true, audio: true}:
 
-````html
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,13 +64,13 @@ function takePhoto()
 </script>
 </body>
 </html>
-````
+```
 
 ### Applying effects
 
 Using CSS Filters, we can apply some gnarly effects to the <video> as it is captured:
 
-````html
+```html
 <style>
 video {
   width: 307px;
@@ -108,4 +108,4 @@ function changeFilter(e) {
 
 document.querySelector('video').addEventListener('click', changeFilter, false);
 </script>
-````
+```
