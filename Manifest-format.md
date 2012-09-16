@@ -79,6 +79,9 @@ Following fields control which features `node-webkit` should provide and how `no
 ### max_width/max_height
 *(int)* maximum width/height of window
 
+### as_desktop
+*(boolean)* show as desktop background window under X11 environment
+
 ## WebKit Sub Fields
 
 Coming soon.
