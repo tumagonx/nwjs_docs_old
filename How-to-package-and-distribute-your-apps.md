@@ -44,6 +44,8 @@ Here's how to do it on Windows. In a console, type this:
 
 Then, all you have to do is zip app.exe and required DLLs, and distribute them. Yes; this does mean that the game will have a private copy of `node-webkit`, but there's nothing wrong with that. It also means that you will have to create one package for each platform you would like to support, or simply offer the `.nw` alone for the other platforms. 
 
+And please also note that the `nw.pak` must also be distributed along with the `app.exe`.
+
 ### Linux 
 
 On Linux, it's similar: 
@@ -51,6 +53,8 @@ On Linux, it's similar:
     cat /usr/bin/nw app.nw > app && chmod +x app 
 
 Then, you'll have to make a package for various packaging systems with dependencies as the `node-webkit` package. Were you to make a .deb package this way, for instance, the user would not have to install the `node-webkit` package separately. 
+
+And please note that the `nw.pak` file must also be in the same directory with the `app` file, otherwise you would expect blank page for some features.
 
 Eventually, we will provide scripts which do this automatically for various package systems. You'll have to figure it out yourself until then. 
 
