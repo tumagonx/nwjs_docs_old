@@ -7,6 +7,10 @@ Basic:
 * [[How to package and distribute your apps]]
 * [[Manifest format]] - the format of `package.json`
 
+API:
+* [Node.js Manual & Documentation](http://nodejs.org/api/)
+* [[Native UI API Manual]]
+
 Advanced:
 * [[Play with window]]
 * [[File dialogs]]
