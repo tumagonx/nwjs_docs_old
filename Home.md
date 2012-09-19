@@ -9,7 +9,7 @@ Basic:
 
 API:
 * [Node.js Manual & Documentation](http://nodejs.org/api/)
-* [[Native UI API Manual]]
+* [[Native UI API Manual]] - node-webkit API for native UI controls
 
 Advanced:
 * [[Play with window]]
