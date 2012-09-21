@@ -20,6 +20,10 @@ window.open('popup.html', '_blank', 'screenX=0,screenY=0,width=100,height=100');
 
 To close a window, use `window.close();`.
 
+### Focus and blur
+
+By using `window.focus()` and `window.blur()`, you can move focus between your windows. To focus on parent window, you can use `window.opener.focus()`.
+
 ### Move and resize window
 
 The `window.resizeTo(width,height)` method resizes a window to the specified `width` and `height`.
