@@ -82,7 +82,7 @@ It has no effect on setting `icon` of a `separator` item.
 
 ### MenuItem.click
 
-**Get** or **Set** the `click` callback of a `MenuItem`, the `click` must be a valid function, it will be called when users click on the item
+**Get** or **Set** the `click` callback of a `MenuItem`, the `click` must be a valid function, it will be called when users click on the item.
 
 ## See Also
 
