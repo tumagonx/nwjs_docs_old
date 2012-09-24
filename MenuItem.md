@@ -1,3 +1,5 @@
+_MenuItem API requires node-webkit >= 0.3.0_
+
 `MenuItem` represents an item in a menu. A `MenuItem` can be a separator or a normal item which has label and icon. `MenuItem` is usually used with `Menu` together.
 
 ## Synopsis
