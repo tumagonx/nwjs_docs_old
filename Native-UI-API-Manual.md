@@ -1,10 +1,14 @@
 _Native UI API requires node-webkit >= 0.3.0_
 
-## API Overview
+## Overview
 
 * [[API Overview and Notices]] - Read it before using APIs
 
-## API Categories
+## Categories
+
+### Extended Window APIs
+
+* [[Window]]
 
 ### Menus
 
