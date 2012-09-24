@@ -80,6 +80,10 @@ It has no effect on setting `icon` of a `separator` item.
 
 **Get** or **Set** the `submenu` of a `MenuItem`, the `submenu` must be a `Menu` object. Developers had better set `submenu` in the `option` when creating the `MenuItem`, changing it at runtime is slow on some platforms.
 
+### MenuItem.click
+
+**Get** or **Set** the `click` callback of a `MenuItem`, the `click` must be a valid function, it will be called when users click on the item
+
 ## See Also
 
 * [[Menu]]
