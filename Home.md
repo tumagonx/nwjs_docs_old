@@ -15,6 +15,7 @@ Advanced:
 * [[Play with window]]
 * [[File dialogs]]
 * [[Dragging files into page]]
+* [[Save persistent data in app]]
 * [[Control camera and microphone with getUserMedia API]]
 * [[Support mp3 and H264 in video and audio tag]]
 
