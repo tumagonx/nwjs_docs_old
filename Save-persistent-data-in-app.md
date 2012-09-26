@@ -73,6 +73,10 @@ sessionStorage.life = "";
 console.log(sessionStorage.life);
 ```
 
+## IndexedDB
+... TODO ...
+IndexedDB's API is asynchronous relatively low-level and tedious to use, so it is preferable to use an abstraction, like PouchDB. 
+
 ## Application Cache
 
 HTML5 introduces application cache, which means that a web application is cached, and accessible without an internet connection.
