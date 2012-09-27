@@ -58,6 +58,7 @@ menu = null; // This line is very important
 
 In summary, please **DO NOT** do following things:
 
-* Do not reassign an element, like `menu[0] = item` or `item = new gui.MenuItem({})`.
-* Do not delete an element, like `delete item`.
+* Do not recreate UI elements, reuse them.
+* Do not reassign an element, such as `menu[0] = item` or `item = new gui.MenuItem({})`.
+* Do not delete an element, such `delete item`.
 * Do not change UI types' prototype.
