@@ -1,5 +1,7 @@
 _Native UI API requires node-webkit >= 0.3.0_
 
+## Overview
+
 Here is our APIs for creating native UI controls in node-webkit. Generally, to load our Native UI library, you need first to use `require` function to load `nw.gui` module (our module name did not follow node's standard, so you wouldn't encounter module name clashes):
 
 ```javascript
@@ -51,3 +53,11 @@ var menu = new gui.Menu(...);
 menu.remove();
 menu = null; // This line is very important
 ```
+
+## Don'ts
+
+In summary, please **DO NOT** do following things:
+
+* Do not reassign an element, like `menu[0] = item` or `item = new gui.MenuItem({})`.
+* Do not delete an element, like `delete item`.
+* Do not change UI types' prototype.
