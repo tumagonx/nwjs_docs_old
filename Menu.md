@@ -24,8 +24,8 @@ menu.removeAt(1);
 menu.popup(10, 10);
 
 // Iterate menu's items
-for (var i = 0; i < menu.length; ++i) {
-  console.log(menu[i]);
+for (var i = 0; i < menu.items.length; ++i) {
+  console.log(menu.items[i]);
 }
 ```
 
@@ -41,11 +41,14 @@ Every field has its own property in the `Menu`, see documentation of each proper
 
 **Get** or **Set** the `title` of a Menu, it can only be plain text. Usually the `title` is not showed.
 
-### Menu.length
+### Menu.items
+**Get** an array that contains all items of a menu.
+
+### Menu.items.length
 
 **Get** how many items this `Menu` has.
 
-### Menu[i]
+### Menu.items[i]
 
 **Get** the `i`th menu item of the `Menu`. It will return a `MenuItem` object.
 
