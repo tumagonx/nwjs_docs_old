@@ -32,15 +32,15 @@ menu.append(new gui.MenuItem({ label: 'Im an item' }));
 menu.removeAt(0);
 ```
 
-Child elements can be got via index accessing like arrays:
+Child elements are usually stored in `items` field, and can be got via index accessing:
 
 ```javascript
-for (var i = 0; i < menu.length; ++i) {
-  console.log('MenuItem', i, menu[i]);
+for (var i = 0; i < menu.items.length; ++i) {
+  console.log('MenuItem', i, menu.items[i]);
 }
 ```
 
-And please don't directly change elements via reassigning like `menu[2] = new gui.MenuItem(...);`, it's absolutely wrong. To update an element, just change it like `menu[2].title = 'New Title'`, to replace an element, first `remove` it and then do an `insert`.
+And please don't directly change elements via reassigning like `menu.items[2] = new gui.MenuItem(...);`, it's absolutely wrong. To update an element, just change it like `menu.items[2].title = 'New Title'`, to replace an element, first `remove` it and then do an `insert`.
 
 Another thing is we don't throw exceptions we you're doing something wrong in UI API, **we crash**. So be careful on using it. If you're reusing a deleted element, or passing wrong types, we will crash without warning you.
 
@@ -59,6 +59,6 @@ menu = null; // This line is very important
 In summary, please **DO NOT** do following things:
 
 * Do not recreate UI elements, reuse them.
-* Do not reassign an element, such as `menu[0] = item` or `item = new gui.MenuItem({})`.
+* Do not reassign an element, such as `menu.items[0] = item` or `item = new gui.MenuItem({})`.
 * Do not delete an element, such `delete item`.
 * Do not change UI types' prototype.
