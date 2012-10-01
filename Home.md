@@ -1,4 +1,4 @@
-Here is the wiki of `node-webkit`, feel free to help us improve it.
+Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't read documentations, but please at least skim the content, you could find answers to most of your questions here.
 
 ## For Users
 
