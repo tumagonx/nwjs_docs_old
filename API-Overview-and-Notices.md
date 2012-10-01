@@ -47,11 +47,11 @@ Another thing is we don't throw exceptions we you're doing something wrong in UI
 One thing you may not notice is after deleting objects, you should always assign `null` to a deleted UI object, in case you accidentally reuse it, an example is:
 
 ```javascript
-var menu = new gui.Menu(...);
+var tray = new gui.Tray(...);
 // blablabla...
 // We are done with it
-menu.remove();
-menu = null; // This line is very important
+tray.remove();
+tray = null; // This line is very important
 ```
 
 ## Don'ts
