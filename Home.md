@@ -6,6 +6,7 @@ Basic:
 * [[How to run apps]]
 * [[How to package and distribute your apps]]
 * [[Manifest format]] - the format of `package.json`
+* [[How to use node.js techniques to write app]] - wonder how to use `express` stuff in node-webkit?
 
 API:
 * [Node.js Manual & Documentation](http://nodejs.org/api/)
