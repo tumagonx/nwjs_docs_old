@@ -1,4 +1,5 @@
-`node.js` and `Chromium` each has its own implementation of `setTimeout` and `console`, currently we use `Chromium`'s implementation everywhere, even in node's module, reasons:
+Node.js and Chromium each has its own implementation of `setTimeout` and `console`. Currently, for `console`, we use Chromium's implementation everywhere, because it can print in devtools and have more information exposed.
 
-1. Many web libraries make use of hacks on `window.setTimeout`, while node modules rarely do that.
-2. `Chromium`'s `console` is very friendly with devtools and is alse capable of debugging.
+As for `setTimeout` family, we just keep things as they are. In webpages `setTimeout` will call `window.setTimeout`, e.g. the WebKit's implementation. In node modules `setTimeout` will call `global.setTimeout`, e.g. the node's implementation. In this way, we can make sure those low level hacks on timers will still work in node-webkit.
+
+And please note that since we have implemented renderer's message loop in libuv, node's implementation of timers will be more accurate than WebKit's. So if you're doing something that needs accurate clock, please use `global.setTimeout`.
