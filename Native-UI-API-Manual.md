@@ -16,5 +16,7 @@ _Native UI API requires node-webkit >= 0.3.0_
 * [[Menu]]
 * [[MenuItem]]
 
-### Notification Controls
-* [[Tray]]
+### Platform Services
+
+* [[Clipboard]] - or `Pasteboard`
+* [[Tray]] - or `Status Icon`, `Status Item`, `Notification Area Icon`
