@@ -5,7 +5,7 @@
 In order to show the `Debug` menu, you should manually append an `developer` switch:
 
 ````bash
-$ nw --developer`
+$ nw --developer
 ````
 
 Note, on Windows the command parameter is a little different:
