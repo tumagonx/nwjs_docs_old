@@ -10,7 +10,7 @@ The short answer is, **DO NOT** use `Express`.
 
 People who want `Express` are indeed finding two things: `router` and `template engine`.
 
-As for `router`, it is used for showing different pages for different urls, like `/user/zcbenz` and `/article/901127`. You don't need a `router` in node-webkit, because you already have better one: the file protocol. For example, if you have an app like this:
+As for `router`, it is used for showing different pages for different urls, like `/user/zcbenz` and `/article/901127`. You don't need a `router` in node-webkit, because you already have a better one: the `file:` protocol. For example, if you have an app like this:
 
 ```
 ap
@@ -50,6 +50,14 @@ $(document).ready(function() {
 ```
 
 Another example is how I refresh the address bar and folder view in [zcbenz/nw-file-explorer](https://github.com/zcbenz/nw-file-explorer), see [node_modules/folder_view.js](https://github.com/zcbenz/nw-file-explorer/blob/master/node_modules/folder_view.js) and [node_modules/address_bar.js](https://github.com/zcbenz/nw-file-explorer/blob/master/node_modules/address_bar.js).
+
+### Why not the router way?
+
+If you have experiences with both `express` and `appjs`, you are likely to be finding the same way of writing apps in node-webkit, e.g. using `router` to show pages. We don't support it because it's the wrong way.
+
+Firstly, node-webkit is a runtime for HTML and Javascript apps, not for node.js apps, we don't want to require any node.js knowledge to write a complete app.
+
+And node-webkit is also compatible with most other web runtimes, you can easily migrate an app written in tideSDK or other platforms into node-webkit, and vice verso. But if you use the `router` style in `express` and `appjs` for your app, it would be a hard time for you to move to other platforms.
 
 ## CoffeeScript, LESS and more
 
