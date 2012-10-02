@@ -54,6 +54,16 @@ tray.remove();
 tray = null; // This line is very important
 ```
 
+## EventEmitter
+
+In node-webkit, every UI element inherits from Node.js's [EventEmitter](http://nodejs.org/api/events.html), so you can listen to element's events with this style:
+
+```javascript
+menuitem.on('click', function() {
+  console.log('Item is clicked');
+});
+```
+
 ## Don'ts
 
 In summary, please **DO NOT** do following things:
