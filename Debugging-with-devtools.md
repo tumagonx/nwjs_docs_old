@@ -14,7 +14,9 @@ Note, on Windows the command parameter is a little different:
 nw /developer
 ````
 
-Then when you open the developer tools from the application menu `Debug` -> `Show DevTools`.
+Then you can open devtools from the application menu `Debug` -> `Show DevTools`.
+
+**Note: On Windows and Linux, you need to make sure `nw.pak` is in the same directory with `nw`(Linux) or `nw.exe` (Window)**
 
 ## Bugs of Developer Tools
 
@@ -28,6 +30,7 @@ Under certain Windows machines, the devtools loads very slow, it may show a whit
 
 So if you encounter empty window when opening the devtools, please check following things:
 
+* `nw.pak` should be in the same directory with `nw.exe`.
 * Your proxy settings.
 * Antivirus or firewall software.
 * Check if you boot your Windows VM in VMWare Fusion mode.
