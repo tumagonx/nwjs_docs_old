@@ -21,4 +21,15 @@ Then when you open the developer tools from the application menu `Debug` -> `Sho
 Currently not everything of developer tools is working well, bellow are the things that don't work:
 
 * node modules don't shown in script sources
-* render process crashed when the debugger continues execution
+
+## Why the devtools shows an empty window?
+
+Under certain Windows machines, the devtools loads very slow, it may show a white page at first and needs about 30s to be fully loaded. This is not a bug of node-webkit, devtools in node-webkit is indeed a remote debugger, it needs to open a local server and transfer data via sockets.
+
+So if you encounter empty window when opening the devtools, please check following things:
+
+* Your proxy settings.
+* Antivirus or firewall software.
+* Check if you boot your Windows VM in VMWare Fusion mode.
+
+If you still have problems after making sure nothing is slowing down the devtools, than you have to wait until devtools is fully loaded.
