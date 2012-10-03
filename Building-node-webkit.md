@@ -109,6 +109,8 @@ git reset --hard HEAD
 then you should update your source code tree:
 
 ````
+cd /path-to-node-webkit/src
+git pull
 cd /path-to-node-webkit
 gclient sync
 ````
