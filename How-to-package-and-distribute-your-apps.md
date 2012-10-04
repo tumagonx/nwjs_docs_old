@@ -70,3 +70,23 @@ And you need to modify following files to make a real distribution of yours:
 * `Contents/Info.plist`: the apple package description file.
 
 About the `Info.plist` file, you can view [Implementing Cocoa's Standard About Panel](http://cocoadevcentral.com/articles/000071.php) on how this file will influence your app and what fields you should modify.
+
+## Which files should be shipped?
+
+Apart from the binary files, there're some other files you should also ship, see instructions for different platforms bellow
+
+### Window
+
+The `nw.pak` and `icudt.dll` must be shipped along with `nw.exe`, the former one contains important javascript lib files, and the latter one is a important network library.
+
+`avcodec-54.dll`, `avformat-54.dll` and `avutil-51.dll` are media libraries, if you want to use `<video>` and `<audio>` tag, or other media related features, you should ship them.
+
+`libEGL.dll` and `libGLESv2.dll` are used for WebGL and GPU acceleration, you had better ship them.
+
+### Linux
+
+`nw.pak` must be shipped with `nw`. If you want media features, also ship `libffmpeg.so`.
+
+### Mac OS X
+
+Just ship the `node-webkit.app` would be fine, you don't need to care for other things.
