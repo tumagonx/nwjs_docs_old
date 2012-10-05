@@ -124,6 +124,10 @@ Make the window fullscreen. This function is different with HTML5 FullScreen API
 
 Leave the fullscreen mode.
 
+### Window.openDevTools()
+
+Open the devtools to inspect the window.
+
 ## Events
 
 Following events can be listened by using `Window.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
