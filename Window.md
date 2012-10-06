@@ -140,6 +140,36 @@ Usually you would do some shutdown work in the callback of `close` event, and th
 
 For use case you can see demo code of `Window.close()` above or `Best Practice` bellow.
 
+### closed
+
+The `closed` event is emitted **after** corresponding window is closed. Normally you'll not be able to get this event since after the window is closed all js objects will be released. But it's useful if you're listening this window's events in another window, whose objects will not be released.
+
+```html
+<script>
+  var gui = require('nw.gui');
+
+  // Open a new window.
+  var win = gui.Window.get(
+    window.open('popup.html')
+  );
+
+  // Release the 'win' object here after the new window is closed.
+  win.on('closed', function() {
+    win = null;
+  });
+
+  // Listen to main window's close event
+  gui.Window.get().on('close', function() {
+    // If the new window is still open then close it.
+    if (win != null)
+      win.close(true);
+
+    // After closing the new window, close the main window.
+    this.close(true);
+  });
+</script>
+```
+
 ### focus
 
 Emitted when window gets focus.
