@@ -2,7 +2,7 @@ Every app package should contain a manifest file named `package.json`, it will t
 
 ## Quick Start
 
-````
+```json
 {
   "main": "index.html",
   "name": "nw-demo",
@@ -24,7 +24,7 @@ Every app package should contain a manifest file named `package.json`, it will t
     "webgl-disabled": true
   }
 }
-````
+```
 
 ## Basic Format
 
@@ -81,6 +81,12 @@ Following fields control which features `node-webkit` should provide and how `no
 
 ### as_desktop
 *(boolean)* show as desktop background window under X11 environment
+
+### resizable
+*(boolean)* whether window is resizable _(available after node-webkit v0.3.0)_
+
+### fullscreen
+*(boolean)* whether window is fullscren _(available after node-webkit v0.3.0)_
 
 ## WebKit Sub Fields
 
