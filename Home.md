@@ -33,4 +33,4 @@ Traps:
 * [[Building node-webkit]]
 * [[How node.js is integrated with Chromium]]
 * [[Downloads of old versions]]
-* [[List of apps using node-webkit]]
+* [[List of apps and companies using node-webkit]]
