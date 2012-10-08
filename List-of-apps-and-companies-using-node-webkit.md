@@ -10,7 +10,7 @@ It's open sourced at https://github.com/fengmk2/fawave_desktop.
 
 ### Preview
 
-![v0.1.0](http://ww3.sinaimg.cn/large/6cfc7910jw1dxnu4o3nrlj.jpg)
+![v0.1.0](http://ww3.sinaimg.cn/bmiddle/6cfc7910jw1dxnu4o3nrlj.jpg)
 
 ### CSS Shack
 
