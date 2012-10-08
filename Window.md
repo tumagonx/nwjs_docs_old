@@ -51,6 +51,18 @@ var new_win = gui.Window.get(
 );
 ```
 
+### Window.x/Window.y
+
+**Get** or **Set** left/top offset from window to screen.
+
+### Window.width/Window.height
+
+**Get** or **Set** window's size.
+
+### Window.title
+
+**Get** or **Set** window's title.
+
 ### Window.moveTo(x, y)
 
 Moves a window's left and top edge to the specified coordinates.
@@ -127,6 +139,22 @@ Leave the fullscreen mode.
 ### Window.openDevTools()
 
 Open the devtools to inspect the window.
+
+### Window.setMaximumSize(width, height)
+
+Set window's maximum size.
+
+### Window.setMinimumSize(width, height)
+
+Set window's minimum size.
+
+### Window.setResizable(Boolean resizable)
+
+Set whether window is resizable.
+
+### Window.setPosition(String position)
+
+Shortcut to move window to specified `position`. Currently only `center` is supported on all platforms, which will put window in the middle of the screen.
 
 ## Events
 
