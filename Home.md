@@ -27,6 +27,7 @@ Debugging:
 
 Traps:
 * [[Console and timers]]
+* [[Transfer objects between window and node]]
 
 ## For Developers
 
