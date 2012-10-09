@@ -1,6 +1,6 @@
 __Clipboard API requires node-webkit >= v0.3.0__
 
-`Clipboard` is an abstraction of clipboard(Windows and GTK) and pasteboard(Mac), currently it only supports reading and writing pain text in the system clipboard.
+`Clipboard` is an abstraction of clipboard(Windows and GTK) and pasteboard(Mac), currently it only supports reading and writing plain text in the system clipboard.
 
 ## Synopsis
 
