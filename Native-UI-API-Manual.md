@@ -10,6 +10,7 @@ _Native UI API requires node-webkit >= 0.3.0_
 ### Extended Window APIs
 
 * [[Window]]
+* [[Frameless Window]]
 
 ### Menus
 
