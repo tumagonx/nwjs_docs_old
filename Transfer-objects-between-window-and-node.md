@@ -73,3 +73,5 @@ exports.get = function (key, callback) { ... }
 ```
 
 If you do so, you will find node-webkit's renderer process crashed, that's because the `window.openDatabase` requires to run under the browser window's context, which is a limitation of WebKit, and it will just crash when running under node.js's context. So when you want to use such functions, please don't use them as node.js modules.
+
+One thing need to be noted that if you call functions defined in context C1 from context C2, the V8 engine will automatically do the context switch (from C2 to C1) stuff for you. So regarding application architecture, maybe interfacing the code in 2 contexts with functions could be better than just sharing variables.
