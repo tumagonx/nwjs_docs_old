@@ -41,6 +41,7 @@ Then we trigger a `click` event on `input` tag, and use the `change` event to ca
     chooser.trigger('click');            
     chooser.change(function(evt) {
       console.log($(this).val());
+    });
   }
   chooseFile('#fileDialog');
 </script>
