@@ -88,6 +88,9 @@ Following fields control which features `node-webkit` should provide and how `no
 ### fullscreen
 *(boolean)* whether window is fullscren _(available after node-webkit v0.3.0)_
 
+### show
+*(boolean)* specify it to `false` if you want your app to be hidden on startup _(available after node-webkit v0.3.0)_
+
 ## WebKit Sub Fields
 
 Coming soon.
