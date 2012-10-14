@@ -21,7 +21,7 @@ Every app package should contain a manifest file named `package.json`, it will t
     "max_height": 600
   },
   "webkit": {
-    "webgl-disabled": true
+    "plugin": true
   }
 }
 ```
@@ -51,10 +51,10 @@ Following fields control which features `node-webkit` should provide and how `no
 *(boolean)* set `nodejs` to false will disable node inside WebKit, if you're only using HTML5 to write apps, it could improve stability and performance.
 
 ### window
-*(object)* controls how the main window looks, see _Window Fields_ below.
+*(object)* controls how the main window looks, see _Window Sub Fields_ below.
 
 ### webkit
-*(object)* controls what features should be on/off, see _WebKit Fields_ below.
+*(object)* controls what features of WebKit should be on/off, see _WebKit Sub Fields_ below.
 
 ## Window Sub Fields
 
@@ -86,14 +86,28 @@ Following fields control which features `node-webkit` should provide and how `no
 *(boolean)* whether window is resizable _(available after node-webkit v0.3.0)_
 
 ### fullscreen
-*(boolean)* whether window is fullscren _(available after node-webkit v0.3.0)_
+*(boolean)* whether window is fullscreen _(available after node-webkit v0.3.0)_
+
+### frame
+
+*(boolean)* specify it to `false` to make the window frameless _(available after node-webkit v0.3.0)_
 
 ### show
 *(boolean)* specify it to `false` if you want your app to be hidden on startup _(available after node-webkit v0.3.0)_
 
 ## WebKit Sub Fields
 
-Coming soon.
+_Following fields requires node-webkit >= v0.3.0._
+
+### plugin
+*(boolean)* whether to load external browser plugins like Flash, default to false.
+
+### java
+*(boolean)* whether to load Java applets, default to false.
+
+### page-cache
+
+*(boolean)* whether to enable page cache, default to false.
 
 ## Other Fields
 
