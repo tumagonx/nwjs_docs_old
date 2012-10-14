@@ -156,6 +156,10 @@ Set whether window is resizable.
 
 Shortcut to move window to specified `position`. Currently only `center` is supported on all platforms, which will put window in the middle of the screen.
 
+### Window.requestAttention(Boolean attention)
+
+Pass `true` to indicate that the window needs user's action, pass `false` to cancel it. The final behaviour depends on the platform.
+
 ## Events
 
 Following events can be listened by using `Window.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
