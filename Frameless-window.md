@@ -49,3 +49,7 @@ One thing on frameless window is that the dragging behaviour may conflict with s
 ```
 
 And also remember not to mark text area as draggable.
+
+## Context Menu
+
+On some platforms, the OS will treat non-draggable area as non-client frame, and when you right click on it a system window menu will popup. So you should not abuse non-draggable area and only use it for custom frame and titlebars, and you should never try to listen to `contextmenu`  event on non-draggable areas.
