@@ -22,4 +22,5 @@ _Native UI API requires node-webkit >= 0.3.0_
 * [[Clipboard]] - or `Pasteboard`
 * [[Tray]] - or `Status Icon`, `Status Item`, `Notification Area Icon`
 * [[File dialogs]]
+* [[Shell]] - platform-dependent desktop functions
 * [[Dialog]]
