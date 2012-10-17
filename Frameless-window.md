@@ -50,6 +50,10 @@ One thing on frameless window is that the dragging behaviour may conflict with s
 
 And also remember not to mark text area as draggable.
 
-## Context Menu
+## Context menu
 
 On some platforms, the OS will treat non-draggable area as non-client frame, and when you right click on it a system window menu will popup. So you should not abuse non-draggable area and only use it for custom frame and titlebars, and you should never try to listen to `contextmenu`  event on non-draggable areas.
+
+## Window operations
+
+After the standard frame is removed, you need to provide ways for users to close/minimize the window. The pure javascript way to close a window is `window.close()`, if you want more, you can use node-webkit's native [[Window]] API.
