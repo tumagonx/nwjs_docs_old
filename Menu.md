@@ -9,7 +9,7 @@ _Menu API requires node-webkit >= 0.3.0_
 var gui = require('nw.gui');
 
 // Create an empty menu
-var menu = new gui.Menu({ title: 'Empty Menu' });
+var menu = new gui.Menu();
 
 // Add some items
 menu.append(new gui.MenuItem({ label: 'Item A' }));
@@ -31,15 +31,9 @@ for (var i = 0; i < menu.items.length; ++i) {
 
 ## Reference
 
-### new Menu(option)
+### new Menu()
 
-Create a new `Menu`, `option` is an object contains initial settings for the `Menu`. `option` can have following fields: `title`.
-
-Every field has its own property in the `Menu`, see documentation of each property for details.
-
-### Menu.title
-
-**Get** or **Set** the `title` of a Menu, it can only be plain text. Usually the `title` is not showed.
+Create a new `Menu`.
 
 ### Menu.items
 **Get** an array that contains all items of a menu.
