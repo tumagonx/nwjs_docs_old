@@ -31,7 +31,7 @@ item = new gui.MenuItem({
 });
 
 // You can have submenu!
-var submenu = new gui.Menu({ title: 'Sub Menu' });
+var submenu = new gui.Menu();
 submenu.append(new gui.MenuItem({ label: 'Item 1' }));
 submenu.append(new gui.MenuItem({ label: 'Item 2' }));
 submenu.append(new gui.MenuItem({ label: 'Item 3' }));
