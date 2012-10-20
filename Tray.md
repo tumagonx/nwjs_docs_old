@@ -49,15 +49,24 @@ On Mac `title` will be showed on status bar along with its `icon`, but it doesn'
 
 **Get** or **Set** the `menu` of `Tray`, `menu` will be showed when you click on the `Tray` icon.
 
-On Mac, this is the only way to set the tray menu since you cannot listen to left and right click on `Tray`. While on GTK and Window, node-webkit will listen to the clicking on `Tray` and automatically show the `menu` if you set it.
+On Mac the menu will be showed when you click on the tray (which is the only action available for tray icons on Mac). On Windows and Linux, the menu will be showed when you single click on the tray with right mouse button, clicking with left mouse button sends the `click` event and does not show a menu.
 
-However, if you choose to listen to left and right click event of `Tray` on GTK and Windows, the `menu` will not automatically be showed, and you need to take care of different behaviours on different platforms.
+In order to reduce differences from different platforms, setting `menu` property is the only way to bind a menu to tray, there's no way to popup a menu with left mouse button click on Linux and Windows.
 
 ### Tray.remove()
 
 Remove the tray.
 
-Once removed, you will not be able to show it again and you should set your tray variable to `null`. This limitation is inherited from Cocoa, since we need to keep same behaviour on all platforms.
+Once removed, you will not be able to show it again and you should set your tray variable to `null`. There is no way temporarily hide a tray icon.
+
+## Events
+Following events can be listened by using `Tray.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
+
+### click
+
+Emitted when user clicks the menu item with left mouse button. You can only catch this event on `Windows` and `Linux`, since there is no way to catch it on Mac. So you should never make user interactive rely on the `click` event.
+
+And you cannot catch click with right mouse button, because it is used to show menu. Even if you're not binding a menu to a tray, you still can not listen to it. Double click events are also ignored.
 
 ## See also
 
