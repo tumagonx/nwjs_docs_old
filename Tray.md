@@ -12,7 +12,7 @@ var gui = require('nw.gui');
 var tray = new gui.Tray({ title: 'Tray', icon: 'img/icon.png' });
 
 // Give it a menu
-var menu = new gui.Menu({ title: 'Menu' });
+var menu = new gui.Menu();
 menu.append({ label: 'Item' });
 tray.menu = menu;
 
