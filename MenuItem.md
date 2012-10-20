@@ -84,7 +84,14 @@ It has no effect on setting `icon` of a `separator` item.
 
 ### MenuItem.click
 
-**Get** or **Set** the `click` callback of a `MenuItem`, the `click` must be a valid function, it will be called when users click on the item.
+**Get** or **Set** the `click` callback of a `MenuItem`, the `click` must be a valid function, it will be called when users activate the item.
+
+## Events
+Following events can be listened by using `MenuItem.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
+
+### click
+
+Emitted when user activates the menu item.
 
 ## See Also
 
