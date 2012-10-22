@@ -170,7 +170,7 @@ The `close` event is a special event that will affect the result of the `Window.
 
 Usually you would do some shutdown work in the callback of `close` event, and then call `this.close(true)` to really close the window, which will not be caught again. Forgetting to add `true` when calling `this.close()` in the callback will result in infinite loop.
 
-For use case you can see demo code of `Window.close()` above or `Best Practice` bellow.
+For use case you can see demo code of `Window.close()` above.
 
 ### closed
 
@@ -225,16 +225,6 @@ Emitted when window enters fullscreen state.
 ### leave-fullscreen
 
 Emitted when window leaves fullscreen state.
-
-## Best Practice
-
-### Popup 'Document is not saved' dialog on close
-
-TODO
-
-### Save window state on close and restore on startup
-
-TODO
 
 ## See also
 
