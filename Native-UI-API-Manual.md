@@ -24,3 +24,8 @@ _Native UI API requires node-webkit >= 0.3.0_
 * [[File dialogs]]
 * [[Shell]] - platform-dependent desktop functions
 * [[Dialog]]
+
+## Tips
+
+* [[Show window after page is ready]]
+* [[Minimize to tray]]
