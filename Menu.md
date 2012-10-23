@@ -2,6 +2,8 @@ _Menu API requires node-webkit >= 0.3.0_
 
 `Menu` represents a native menu, it can be used as window menu or context menu.
 
+**Note: Window menu is not implemented yet, it will be added in v0.3.2**
+
 ## Synopsis
 
 ```javascript
