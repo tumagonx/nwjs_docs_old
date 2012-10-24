@@ -136,7 +136,7 @@ Make the window fullscreen. This function is different with HTML5 FullScreen API
 
 Leave the fullscreen mode.
 
-### Window.openDevTools()
+### Window.showDevTools()
 
 Open the devtools to inspect the window.
 
