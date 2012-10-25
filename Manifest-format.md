@@ -96,7 +96,7 @@ Following fields control which features `node-webkit` should provide and how `no
 *(boolean)* specify it to `false` if you want your app to be hidden on startup _(available after node-webkit v0.3.0)_
 
 ### kiosk
-*(boolean)* whether to use `Kiosk` mode. In `Kiosk` mode, the app will be fullscreen and try to prevent users from leaving the app, so you should remember to provide a way in app to leave `Kiosk` mode _(available after node-webkit v0.3.1)_
+*(boolean)* whether to use `Kiosk` mode. In `Kiosk` mode, the app will be fullscreen and try to prevent users from leaving the app, so you should remember to provide a way in app to leave `Kiosk` mode. This mode is mainly used for presentation on public displays _(available after node-webkit v0.3.1)_
 
 ## WebKit Sub Fields
 
