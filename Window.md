@@ -136,6 +136,18 @@ Make the window fullscreen. This function is different with HTML5 FullScreen API
 
 Leave the fullscreen mode.
 
+### Window.enterKioskMode()
+
+_Requires node-webkit >= v0.3.1_
+
+Enter the Kiosk mode. In Kiosk mode, the app will be fullscreen and try to prevent users from leaving the app, so you should remember to provide a way in app to leave Kiosk mode. This mode is mainly used for presentation on public displays.
+
+### Window.leaveKioskMode()
+
+_Requires node-webkit >= v0.3.1_
+
+Leave the Kiosk mode.
+
 ### Window.showDevTools()
 
 Open the devtools to inspect the window.
