@@ -50,7 +50,7 @@ Following fields control which features `node-webkit` should provide and how `no
 *(boolean)* set `nodejs` to false will disable node inside WebKit, if you're only using HTML5 to write apps, it could improve stability and performance.
 
 ### node-main
-*(string)* specify the path to a node.js script file, it will be executed on startup in renderer process. This script will have same runtime environment with normal node.js binary.
+*(string)* specify the path to a node.js script file, it will be executed on startup in renderer process. This script will have same runtime environment with normal node.js binary. _(available after node-webkit v0.3.1)_
 
 ### window
 *(object)* controls how the main window looks, see _Window Sub Fields_ below.
