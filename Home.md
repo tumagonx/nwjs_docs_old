@@ -13,8 +13,9 @@ API:
 * [[Native UI API Manual]] - node-webkit API for native UI controls
 
 Advanced:
-* [[Play with window]]
+* [[The Kiosk mode]]
 * [[File dialogs]]
+* [[Play with window]]
 * [[Dragging files into page]]
 * [[Save persistent data in app]]
 * [[Control camera and microphone with getUserMedia API]]
