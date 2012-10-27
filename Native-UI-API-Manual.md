@@ -29,3 +29,4 @@ _Native UI API requires node-webkit >= 0.3.0_
 
 * [[Show window after page is ready]]
 * [[Minimize to tray]]
+* [[Preserve window state between sessions]]
