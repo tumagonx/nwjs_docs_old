@@ -3,6 +3,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 ## For Users
 
 Basic:
+* [[Features list]]
 * [[How to run apps]]
 * [[How to package and distribute your apps]]
 * [[Manifest format]] - the format of `package.json`
