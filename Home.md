@@ -14,12 +14,15 @@ API:
 
 Advanced:
 * [[The Kiosk mode]]
+* [[Support mp3 and H264 in video and audio tag]]
+
+HTML5 Features:
 * [[File dialogs]]
 * [[Play with window]]
 * [[Dragging files into page]]
 * [[Save persistent data in app]]
 * [[Control camera and microphone with getUserMedia API]]
-* [[Support mp3 and H264 in video and audio tag]]
+* [[Use datalist for auto completion]]
 
 Debugging:
 * [[Debugging with devtools]]
