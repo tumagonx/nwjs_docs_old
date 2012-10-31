@@ -99,18 +99,25 @@ ninja -C out/Release nw -j4
 
 If you decide to build node-webkit your self, you need to take care of updating your code since node-webkit is in rapid development.
 
-The first thing you should do before updating your code is reset WebKit repository since it contains our patch:
+Firs you should manually pull our `node-webkit` and `node` repository:
+
+````
+cd /path-to-node-webkit/src/content/nw
+git pull
+cd /path-to-node-webkit/src/third_party/node
+git pull
+````
+
+Then reset the WebKit repository since it contains our patch:
 
 ````
 cd /path-to-node-webkit/src/third_party/WebKit
 git reset --hard HEAD
 ````
 
-then you should update your source code tree:
+And use gclient to update all other things automatically:
 
 ````
-cd /path-to-node-webkit/src
-git pull
 cd /path-to-node-webkit
 gclient sync
 ````
