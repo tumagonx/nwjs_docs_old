@@ -1,22 +1,24 @@
-*Note: following guides only apply to node-webkit >= v0.2.2*
+*Note: following guides only apply to node-webkit >= v0.3.0*
 
 ## Open Developer Tools
 
-In order to show the `Debug` menu, you should manually append an `developer` switch:
+In order to show the `devtools` button in toolbar, you should make sure your window shows the toolbar:
 
-````bash
-$ nw --developer
-````
+```json
+{
+  "window": {
+    "toolbar": true
+  }
+}
+```
 
-Note, on Windows the command parameter is a little different:
+Then you can open devtools from the `devtools` button (the one on the right of url entry) in the toolbar.
 
-````
-nw /developer
-````
+**Note:** On Windows and Linux, you need to make sure `nw.pak` is in the same directory with `nw`(Linux) or `nw.exe` (Window)
 
-Then you can open devtools from the application menu `Debug` -> `Show DevTools`.
+## Remote Debugging
 
-**Note: On Windows and Linux, you need to make sure `nw.pak` is in the same directory with `nw`(Linux) or `nw.exe` (Window)**
+You can use the `--remote-debugging-port=port` command parameter to specify which port the devtools should listen to. For example, by running `nw --remote-debugging-port=9222`, you can open `http://localhost:9222/` to visit the debugger remotely.
 
 ## Bugs of Developer Tools
 
