@@ -2,7 +2,7 @@ _Menu API requires node-webkit >= 0.3.0_
 
 `Menu` represents a native menu, it can be used as window menu or context menu.
 
-**Note: Window menu is not implemented yet, it will be added in v0.3.2**
+**Note:** Window menu is not implemented yet, it will be added in v0.3.2.
 
 ## Synopsis
 
@@ -33,9 +33,11 @@ for (var i = 0; i < menu.items.length; ++i) {
 
 ## Reference
 
-### new Menu()
+### new Menu([option])
 
 Create a new `Menu`.
+
+If no `option` is specified, a normal context menu will be created. To create a menu to be used as window's menu, you need to explicitly specify `'type': 'menubar'` in the `option`, e.g. `new Menu({ 'type': 'menubar' })`.
 
 ### Menu.items
 **Get** an array that contains all items of a menu.
