@@ -16,6 +16,7 @@ _Native UI API requires node-webkit >= 0.3.0_
 
 * [[Menu]]
 * [[MenuItem]]
+* [[Window menu]] - notes on window's menubar
 
 ### Platform Services
 
