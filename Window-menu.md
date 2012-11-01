@@ -40,6 +40,8 @@ gui.Window.get().menu = new gui.Menu({ type: 'menubar' });
 
 The resulted menu will have indeed three submenus: `your-app-name`, `Edit` and `Window`, which are necessary for full-functionality apps.
 
+Another thing you may encounter is that the first item of application menu shows `node-webkit` instead of `your-app-name`, to fix it, you need to replace all `node-webkit` strings in `node-webkit.app/Contents/Info.plist`.
+
 ## Best practice
 
 As mentioned above, on Windows and Linux each window can has one menubar, while on Mac one app can have only one application menu. So generally you should set menu for only your main window and avoid using window menu when you may have multiple main windows.
