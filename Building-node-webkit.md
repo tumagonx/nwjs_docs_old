@@ -96,7 +96,6 @@ Use gclient to update all other things automatically:
 
 ````
 cd /path-to-node-webkit
-git pull
 gclient sync
 ````
 
