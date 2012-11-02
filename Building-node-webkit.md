@@ -63,13 +63,6 @@ Note: if you're on Linux and you get any dependency errors during `gclient sync`
 
 If you encountered other problems, see [UsingNewGit](http://code.google.com/p/chromium/wiki/UsingNewGit).
 
-## Patch WebKit
-
-We have done some hacks on WebKit to make it comfortable with local apps and node.js, currently you should manually apply our patch for WebKit.
-
-    cd /path-to-node-webkit/src/third_party/WebKit
-    git apply ../../content/nw/patches/webkit.patch
-
 ## Build
 
 After the `gclient sync`, project files should have be prepared. If not, you should manually run:
@@ -99,23 +92,11 @@ ninja -C out/Release nw -j4
 
 If you decide to build node-webkit your self, you need to take care of updating your code since node-webkit is in rapid development.
 
-First reset the WebKit repository since it contains our patch:
-
-````
-cd /path-to-node-webkit/src/third_party/WebKit
-git reset --hard HEAD
-````
-
-Then use gclient to update all other things automatically:
+Use gclient to update all other things automatically:
 
 ````
 cd /path-to-node-webkit
+git pull
 gclient sync
 ````
 
-And don't forget to re-patch WebKit before you build:
-
-````
-cd /path-to-node-webkit/src/third_party/WebKit
-git apply ../../content/nw/patches/webkit.patch
-````
