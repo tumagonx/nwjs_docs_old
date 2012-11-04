@@ -105,6 +105,7 @@ Usually you would like to listen to the `close` event and do some shutdown work 
 
 ```javascript
 win.on('close', function() {
+  this.hide(); // Pretend to be closed already
   console.log("We're closing...");
   this.close(true);
 });
@@ -182,6 +183,8 @@ The `close` event is a special event that will affect the result of the `Window.
 
 Usually you would do some shutdown work in the callback of `close` event, and then call `this.close(true)` to really close the window, which will not be caught again. Forgetting to add `true` when calling `this.close()` in the callback will result in infinite loop.
 
+And if the shutdown work takes some time, users may feel that the app is exiting slowly, which is bad experience, so you could just hide the window in the `close` event before really closing it to make a smooth user experience.
+
 For use case you can see demo code of `Window.close()` above.
 
 ### closed
@@ -204,6 +207,9 @@ The `closed` event is emitted **after** corresponding window is closed. Normally
 
   // Listen to main window's close event
   gui.Window.get().on('close', function() {
+    // Hide the window to give use the feeling of closing immediately
+    this.hide();
+
     // If the new window is still open then close it.
     if (win != null)
       win.close(true);
