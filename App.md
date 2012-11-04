@@ -19,6 +19,10 @@ gui.App.quit();
 
 **Get** the command line arguments when starting the app.
 
+### closeAllWindows()
+
+Send the `close` event to all windows of current app, if no window is blocking the `close` event, then the app will quit after all windows have done shutdown. Use this method to quit an app will give windows a chance to save data.
+
 ### quit()
 
-Quit current app.
+Quit current app. This method will **not** send `close` event to windows and app will just quit quietly.
