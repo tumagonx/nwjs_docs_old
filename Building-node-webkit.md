@@ -33,7 +33,7 @@ Then create the `.gclient` file under `node-webkit`, its content should be:
 
     solutions = [
        { "name"        : "src",
-         "url"         : "https://github.com/zcbenz/chromium.git@node",
+         "url"         : "https://github.com/zcbenz/chromium.git@origin/node",
          "deps_file"   : ".DEPS.git",
          "managed"     : True,
          "custom_deps" : {
@@ -90,12 +90,9 @@ ninja -C out/Release nw -j4
 
 ## Update to upstream
 
-If you decide to build node-webkit your self, you need to take care of updating your code since node-webkit is in rapid development.
-
-Use gclient to update all other things automatically:
+You can use gclient to update everything automatically:
 
 ````
 cd /path-to-node-webkit
 gclient sync
 ````
-
