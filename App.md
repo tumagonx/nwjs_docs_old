@@ -26,3 +26,11 @@ Send the `close` event to all windows of current app, if no window is blocking t
 ### quit()
 
 Quit current app. This method will **not** send `close` event to windows and app will just quit quietly.
+
+## Events
+
+Following events can be listened by using `App.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
+
+### open
+
+Emitted when users opened a file with your app. For more on this, see [[Handling files]].
