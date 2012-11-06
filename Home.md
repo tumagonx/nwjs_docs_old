@@ -17,6 +17,7 @@ Advanced:
 * [[The Kiosk mode]]
 * [[File dialogs]]
 * [[Support mp3 and H264 in video and audio tag]]
+* [[Build native modules with nw-gyp]]
 
 HTML5 Features:
 * [[Play with window]]
