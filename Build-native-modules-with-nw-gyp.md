@@ -1,4 +1,4 @@
-* nw-gyp is supported from version 0.3.2 *
+*nw-gyp is supported from version 0.3.2*
 
 nw-gyp is a hack on node-gyp to support node-webkit specific headers and libraries. 
 
