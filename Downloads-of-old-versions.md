@@ -1,3 +1,12 @@
+## v0.3.1
+[v0.3.1 release note](https://groups.google.com/forum/?fromgroups=#!topic/node-webkit/KOqDJRtjo2I)
+
+Prebuilt binaries (v0.3.1):
+
+* Linux: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.1/nw_release_linux_x32.tar.gz) / [64bit](https://s3.amazonaws.com/node-webkit/v0.3.1/nw_release_linux_x64.tar.gz)
+* Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.3.1/nw_release_win32.zip)
+* Mac: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.1/nw_release_mac.zip)
+
 ## v0.3.0
 
 [v0.3.0 release note](https://groups.google.com/forum/?fromgroups=#!topic/node-webkit/OL8HhB06Ygs)
