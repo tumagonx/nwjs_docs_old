@@ -52,6 +52,9 @@ Following fields control which features `node-webkit` should provide and how `no
 ### node-main
 *(string)* specify the path to a node.js script file, it will be executed on startup in renderer process. This script will have same runtime environment with normal node.js binary. _(available after node-webkit v0.3.1)_
 
+### single-instance
+*(boolean)* by default node-webkit only allows one instance of your app if your app is a standalone package (packaged with instructions of [[How to package and distribute your apps]]), if you want to allow multiple instances of your app running at the same time, specify this to `false`.
+
 ### window
 *(object)* controls how the main window looks, see _Window Sub Fields_ below.
 
