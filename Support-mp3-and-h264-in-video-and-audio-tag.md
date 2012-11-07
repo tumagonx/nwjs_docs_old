@@ -25,3 +25,19 @@ The folder location may vary according to the linux distro you are using. Its lo
 Head to your Applications folder and right-click Google Chrome. Choose show package contents and drill down to Versions > Most recent # > Framework > Libraries. Copy `libffmpegsumo.dylib`.
 
 Then open `node-webkit.app/Contents/Frameworks/node-webkit Framework.framework/Libraries/` and paste the `libffmpegsumo.dylib` file.
+
+
+Alternatively, if you are building node-webkit, open src/third_party/ffmpeg/chromium/scripts/build_ffmpeg.sh, go to (approximately, might change) line 379 and change
+```sh
+# Google Chrome & ChromeOS specific configuration.
+add_flag_chrome --enable-decoder=aac,h264,mp3
+add_flag_chrome --enable-demuxer=mp3,mov
+add_flag_chrome --enable-parser=aac,h264,mpegaudio
+```
+To
+
+```sh
+add_flag_common --enable-decoder=aac,h264,mp3
+add_flag_common --enable-demuxer=mp3,mov
+add_flag_common --enable-parser=aac,h264,mpegaudio
+```
