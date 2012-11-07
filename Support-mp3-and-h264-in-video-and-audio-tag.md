@@ -41,3 +41,6 @@ add_flag_common --enable-decoder=aac,h264,mp3
 add_flag_common --enable-demuxer=mp3,mov
 add_flag_common --enable-parser=aac,h264,mpegaudio
 ```
+
+Then follow the short directions here:
+http://src.chromium.org/svn/trunk/deps/third_party/ffmpeg/README.chromium
