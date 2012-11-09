@@ -11,3 +11,5 @@ Enable `Developer tools` in menubar.
 
 ### --no-toolbar
 Force disabling toolbar.
+
+### All switches supported by [Content API of Chromium](http://src.chromium.org/svn/trunk/src/content/public/common/content_switches.cc)
