@@ -4,7 +4,7 @@ If you used to write server side scripts, and have little experience writing mob
 
 If you searched `write desktop apps in node.js` and found node-webkit, the first thing you may do is trying to figure out how to make `Express` or other node web frameworks work, and I've get questions like this for too many times.
 
-The short answer is, **DO NOT** use `Express`.
+The answer is, You can still use `Express` in the same way you use with Node.js (create a HTTP server, etc), but that's not the way which can fully unleash the power of node-webkit.
 
 ### Router
 
@@ -53,11 +53,9 @@ Another example is how I refresh the address bar and folder view in [zcbenz/nw-f
 
 ### Why not the router way?
 
-If you have experiences with both `express` and `appjs`, you are likely to be finding the same way of writing apps in node-webkit, e.g. using `router` to show pages. We don't support it because it's the wrong way.
+One of the founding nature of node-webkit is that you can call any Node modules you want from DOM **directly**. 'directly' means the Javascript objects of Node and DOM reside in the same V8 heap. So variables references are made directly like a pointer, and function calls don't need to come across any kind of JSON marshalling/unmarshalling bridge between processes, or even threads.
 
-Firstly, node-webkit is a runtime for HTML and Javascript apps, not for node.js apps, we don't want to require any node.js knowledge to write a complete app.
-
-And node-webkit is also compatible with most other web runtimes, you can easily migrate an app written in tideSDK or other platforms into node-webkit, and vice verso. But if you use the `router` style in `express` and `appjs` for your app, it would be a hard time for you to move to other platforms.
+Some may find their code in B/S architecture can be easily reused by launching a http server in node-webkit, but refactoring your code a little bit and making DOM calls Node directly would give you a brand new way of writing applications, with the benefits on both performance and architecture.
 
 ## CoffeeScript, LESS and more
 
@@ -93,7 +91,7 @@ And of course you can always choose to compile the code before packing your app,
 
 If you have written server side scripts, you would be familiar with navigating user to different pages when they click a link, and save users' session information in `cookies` or in server.
 
-In node-webkit, you can basically do the same thing by using `window.location`, you can install it in the `onclick` event of a link and node-webkti will navigate to a new page when user clicks it. But by doing this you would lose everything in `window` context, you can save everything in cookies like old web pages, or you can save things in the `global` variable, which resides in Node.js's context and will live through your app.
+In node-webkit, you can basically do the same thing by using `window.location`, you can install it in the `onclick` event of a link and node-webkit will navigate to a new page when user clicks it. But by doing this you would lose everything in `window` context, you can save everything in cookies like old web pages, or you can save things in the `global` variable, which resides in Node.js's context and will live through your app.
 
 But a better way is just refreshing part of your pages, not navigating to a new one, you can search for `ajax` to get basic ideas.
 
