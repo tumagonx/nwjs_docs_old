@@ -18,7 +18,7 @@ Advanced:
 * [[File dialogs]]
 * [[Support mp3 and H264 in video and audio tag]]
 * [[Build native modules with nw-gyp]]
-* [Command line arguments of 'nw' executable](Command line switches)
+* [Command line arguments of 'nw' executable](wiki/Command-line-switches)
 
 HTML5 Features:
 * [[Play with window]]
