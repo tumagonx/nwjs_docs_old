@@ -75,7 +75,7 @@ About the `Info.plist` file, you can view [Implementing Cocoa's Standard About P
 
 Apart from the binary files, there're some other files you should also ship, see instructions for different platforms bellow
 
-### Window
+### Windows
 
 The `nw.pak` and `icudt.dll` must be shipped along with `nw.exe`, the former one contains important javascript lib files, and the latter one is a important network library.
 
