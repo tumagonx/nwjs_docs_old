@@ -9,6 +9,8 @@ Besides Node's symbols, the following symbols is available in Node's context:
 Since the `node-main` script is the main module of Node.js, it can be referred from DOM context with `process.mainModule`.
 
 # Example 
+*the following code works with node-webkit* **>=0.3.3**
+
 index.html
 ````html
 <html>
