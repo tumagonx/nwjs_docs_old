@@ -5,6 +5,7 @@ nw-gyp is a hack on node-gyp to support node-webkit specific headers and librari
 The usage is the same with node-gyp, except that you need to specify the version of node-webkit manually. 
 
 ````bash
+$ npm install nw-gyp
 $ nw-gyp configure --target=0.3.3
 $ nw-gyp build
 ````
