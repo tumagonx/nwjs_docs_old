@@ -90,6 +90,9 @@ Following fields control which features `node-webkit` should provide and how `no
 ### resizable
 *(boolean)* whether window is resizable _(available after node-webkit v0.3.0)_
 
+### always-on-top
+*(boolean)* whether the window should always stay on top of other windows _(available after node-webkit v0.3.4)_
+
 ### fullscreen
 *(boolean)* whether window is fullscreen _(available after node-webkit v0.3.0)_
 
