@@ -1,3 +1,10 @@
+## Preparing extra files
+
+The following sub-directories can be put in application's root directory:
+
+* **node_modules** - any Node modules you want to deploy with your application
+* **plugins** - NPAPI plugin files
+
 ## Make a package
 
 _Since our package system is similar to [LÖVE](https://love2d.org), following guides are modified from its [Wiki](https://love2d.org/wiki/Game_Distribution)._
