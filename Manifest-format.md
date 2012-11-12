@@ -50,7 +50,7 @@ Following fields control which features `node-webkit` should provide and how `no
 *(boolean)* set `nodejs` to false will disable node inside WebKit, if you're only using HTML5 to write apps, it could improve stability and performance.
 
 ### node-main
-*(string)* specify the path to a node.js script file, it will be executed on startup in Node context. This script will have same runtime environment with normal node.js binary. [See here](node-main) for more information. _(available after node-webkit v0.3.1)_
+*(string)* specify the path to a node.js script file, it will be executed on startup in Node context. This script will have same runtime environment with normal node.js binary. The script is ensured to run before the first DOM window load starting from v0.3.3. [See here](node-main) for more information. _(available after node-webkit v0.3.1)_
 
 ### single-instance
 *(boolean)* by default node-webkit only allows one instance of your app if your app is a standalone package (packaged with instructions of [[How to package and distribute your apps]]), if you want to allow multiple instances of your app running at the same time, specify this to `false`.
