@@ -11,6 +11,8 @@ Since the `node-main` script is the main module of Node.js, it can be referred f
 # Example 
 *the following code works with node-webkit* **>=0.3.3**
 
+After refreshing the page you can see that the number is increased.
+
 index.html
 ````html
 <html>
