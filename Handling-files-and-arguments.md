@@ -14,7 +14,7 @@ console.log(gui.App.argv);
 
 And if you open a file with your app in GUI (like file explorer in Windows, Finder in Mac and nautilus in Linux), the path of opened file will also be passed with `App.argv`.
 
-**Note:** `App.argv` does not work on Windows now, because of [a bug](https://github.com/rogerwang/node-webkit/issues/150), it will be fixed in node-webkit v0.3.0.
+**Note:** `App.argv` does not work on Windows now, because of [a bug](https://github.com/rogerwang/node-webkit/issues/150), it is fixed in node-webkit v0.3.4.
 
 ## Open file with existing app
 
