@@ -63,6 +63,17 @@ Note: if you're on Linux and you get any dependency errors during `gclient sync`
 
 If you encountered other problems, see [UsingNewGit](http://code.google.com/p/chromium/wiki/UsingNewGit).
 
+## Extra Steps on Windows
+
+If you're building node-webkit on Windows, you should copy DirectX SDK files into `/path/to/node-webkit/src/third_party/directxsdk/files`:
+
+```bash
+mkdir -p /path/to/node-webkit/src/third_party/directxsdk/files
+cp -r /c/Program\ Files\ \(x86\)/Microsoft\ DirectX\ SDK\ \(June\ 2010\)/* /path/to/node-webkit/src/third_party/directxsdk/files/
+```
+
+This step is necessary to get some DirectX dlls files extracted, and we mentioned it here because this is not documented in Chromium's site.
+
 ## Build
 
 After the `gclient sync`, project files should have be prepared. If not, you should manually run:
