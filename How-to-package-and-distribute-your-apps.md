@@ -86,9 +86,9 @@ Apart from the binary files, there're some other files you should also ship, see
 
 The `nw.pak` and `icudt.dll` must be shipped along with `nw.exe`, the former one contains important javascript lib files, and the latter one is a important network library.
 
-`avcodec-54.dll`, `avformat-54.dll` and `avutil-51.dll` are media libraries, if you want to use `<video>` and `<audio>` tag, or other media related features, you should ship them.
+`ffmpegsumo.dll` are media library, if you want to use `<video>` and `<audio>` tag, or other media related features, you should ship it.
 
-`libEGL.dll` and `libGLESv2.dll` are used for WebGL and GPU acceleration, you had better ship them.
+`libEGL.dll` and `libGLESv2.dll` are used for WebGL and GPU acceleration, you had better ship them. And `D3DCompiler_43.dll` and `d3dx9_43.dll` as well if you want to make sure WebGL works on more hardware. These 2 files are from DirectX redistributable.
 
 ### Linux
 
