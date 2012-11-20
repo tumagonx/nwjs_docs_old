@@ -20,6 +20,7 @@ Advanced:
 * [[Build native modules with nw-gyp]]
 * [Command line arguments of 'nw' executable](wiki/Command-line-switches)
 * [[Third party browser plugins]]
+* [[WebGL support on Windows]]
 
 HTML5 Features:
 * [[Play with window]]
