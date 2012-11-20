@@ -14,7 +14,7 @@ But there is also a much simpler way, you can just copy those media codec files 
 
 You need files from at least [Chrome 25 in the dev channel](http://dev.chromium.org/getting-involved/dev-channel)
 
-1. Locate Chrome\Application folder ( You can get to them pretty quickly by going to start > run > %localappdata% [enter] and then drilling down.)
+1. Locate Chrome\Application folder (e.g. C:\Program Files\Google)
 
 2. Copy `ffmpegsumo.dll` to your node-webkit distribution.
 
