@@ -12,9 +12,11 @@ But there is also a much simpler way, you can just copy those media codec files 
 
 # Windows
 
+You need files from at least [Chrome 25 in the dev channel](http://dev.chromium.org/getting-involved/dev-channel)
+
 1. Locate Chrome\Application folder ( You can get to them pretty quickly by going to start > run > %localappdata% [enter] and then drilling down.)
 
-2. Copy `avcodec-52.dll`, `avformat-52.dll`, `avutil-50.dll` to your node-webkit distribution.
+2. Copy `ffmpegsumo.dll` to your node-webkit distribution.
 
 # Linux
 
