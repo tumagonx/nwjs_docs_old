@@ -63,6 +63,18 @@ var new_win = gui.Window.get(
 
 **Get** or **Set** window's title.
 
+### Window.isFullscreen
+
+_Requires node-webkit >= v0.3.5_
+
+**Get** or **Set** whether we're in fullscreen mode.
+
+### Window.isKioskMode
+
+_Requires node-webkit >= v0.3.5_
+
+**Get** or **Set** whether we're in kiosk mode.
+
 ### Window.moveTo(x, y)
 
 Moves a window's left and top edge to the specified coordinates.
@@ -137,6 +149,12 @@ Make the window fullscreen. This function is different with HTML5 FullScreen API
 
 Leave the fullscreen mode.
 
+### Window.toggleFullscreen()
+
+_Requires node-webkit >= v0.3.5_
+
+Toggle the fullscreen mode.
+
 ### Window.enterKioskMode()
 
 _Requires node-webkit >= v0.3.1_
@@ -148,6 +166,12 @@ Enter the Kiosk mode. In Kiosk mode, the app will be fullscreen and try to preve
 _Requires node-webkit >= v0.3.1_
 
 Leave the Kiosk mode.
+
+### Window.toggleKioskMode()
+
+_Requires node-webkit >= v0.3.5_
+
+Toggle the kiosk mode.
 
 ### Window.showDevTools()
 
