@@ -28,7 +28,7 @@ Head to your Applications folder and right-click Google Chrome. Choose show pack
 
 Then open `node-webkit.app/Contents/Frameworks/node-webkit Framework.framework/Libraries/` and paste the `libffmpegsumo.dylib` file.
 
-
+# build your own
 Alternatively, if you are building node-webkit, open src/third_party/ffmpeg/chromium/scripts/build_ffmpeg.sh, go to (approximately, might change) line 379 and change
 ```sh
 # Google Chrome & ChromeOS specific configuration.
@@ -46,3 +46,5 @@ add_flag_common --enable-parser=aac,h264,mpegaudio
 
 Then follow the short directions here:
 http://src.chromium.org/svn/trunk/deps/third_party/ffmpeg/README.chromium
+
+Please also at least turn on the resource loader's support in Chromium's code, or your format will be treated as non supported MIME type and won't be loaded. See src/net/base/mime_util.cc. You might want to look into code in other files guarded by 'USE_PROPRIETARY_CODECS' macro.
