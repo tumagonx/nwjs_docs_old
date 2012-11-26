@@ -8,6 +8,7 @@ Basic:
 * [[How to package and distribute your apps]]
 * [[Manifest format]] - the format of `package.json`
 * [[How to use node.js web modules in node-webkit]] - wonder how to use `express` stuff in node-webkit?
+* [[Troubleshooting]]
 
 API:
 * [Node.js Manual & Documentation](http://nodejs.org/api/)
