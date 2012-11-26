@@ -14,11 +14,9 @@ console.log(gui.App.argv);
 
 And if you open a file with your app in GUI (like file explorer in Windows, Finder in Mac and nautilus in Linux), the path of opened file will also be passed with `App.argv`.
 
-**Note:** because of [a bug](https://github.com/rogerwang/node-webkit/issues/150), `App.argv` did not work on Windows properly until it was fixed in node-webkit v0.3.4.
-
 ## Open file with existing app
 
-In most times, when you want to open a file with your app, you would like to open them in one session instead of multiple sessions. For example, for an IDE, if you have already opened one IDE instance, and then you opened a source code file, you would want the existing IDE instance to handle this file instead of opening a new huge instance of the IDE.
+In most times, when you want to open multiple files with your app, you would like to open them in one session instead of multiple sessions. For example, for an IDE, if you have already opened one IDE instance, and then you opened a source code file, you would want the existing IDE instance to handle this file instead of opening a new huge instance of the IDE.
 
 For node-webkit apps, this is solved by default. When you open a file, node-webkit will check whether your app  has already opened, if not, a new instance of your app would start and the path of file will be passed in `App.argv`, if there is already one instance of your app, the path of file will be passed to the existing instance by sending `open` event to the `App` object:
 
@@ -30,6 +28,8 @@ gui.App.on('open', function(path) {
 ```
 
 **Note:** `open` event is sent only if your app is a standalone app, e.g. packaged with instructions of [[How to package and distribute your apps]].
+
+**Note:** On Mac, when you drag a file into the dock icon of your app, the `open` will also be emitted.
 
 **Note:** On Windows and Linux, if you don't want this behaviour you can close it by setting `single-instance` to `false` in `package.json`, however it has no effect on Mac since it's forced by the OS.
 
