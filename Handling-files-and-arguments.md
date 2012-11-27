@@ -31,6 +31,8 @@ gui.App.on('open', function(path) {
 
 **Note:** On Mac, when you drag a file into the dock icon of your app, the `open` will also be emitted.
 
+**Note:** On Mac, you should [Register the File Types Your App Supports](http://developer.apple.com/library/ios/#documentation/FileManagement/Conceptual/DocumentInteraction_TopicsForIOS/Articles/RegisteringtheFileTypesYourAppSupports.html) in the `node-webkit.app/Contents/Info.plist`.
+
 **Note:** On Windows and Linux, if you don't want this behaviour you can close it by setting `single-instance` to `false` in `package.json`, however it has no effect on Mac since it's forced by the OS.
 
 ## Difference between "App.argv" and "open" event
