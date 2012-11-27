@@ -56,12 +56,12 @@ Following fields control which features `node-webkit` should provide and how `no
 *(boolean)* by default node-webkit only allows one instance of your app if your app is a standalone package (packaged with instructions of [[How to package and distribute your apps]]), if you want to allow multiple instances of your app running at the same time, specify this to `false`.
 
 ### window
-*(object)* controls how the main window looks, see _Window Sub Fields_ below.
+*(object)* controls how the main window looks, see _Window Subfields_ below.
 
 ### webkit
-*(object)* controls what features of WebKit should be on/off, see _WebKit Sub Fields_ below.
+*(object)* controls what features of WebKit should be on/off, see _WebKit Subfields_ below.
 
-## Window Sub Fields
+## Window Subfields
 
 ### title
 *(string)* the default title of window created by node-webkit, it's very useful if you want to show your own title when the app is starting.
@@ -106,7 +106,7 @@ Following fields control which features `node-webkit` should provide and how `no
 ### kiosk
 *(boolean)* whether to use `Kiosk` mode. In `Kiosk` mode, the app will be fullscreen and try to prevent users from leaving the app, so you should remember to provide a way in app to leave `Kiosk` mode. This mode is mainly used for presentation on public displays _(available after node-webkit v0.3.1)_
 
-## WebKit Sub Fields
+## WebKit Subfields
 
 _Following fields requires node-webkit >= v0.3.0._
 
