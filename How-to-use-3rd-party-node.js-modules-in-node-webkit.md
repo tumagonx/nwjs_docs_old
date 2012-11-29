@@ -1,5 +1,7 @@
 You can install the 3rd party modules in your application's directory and then just call `require()` from your code in HTML. The path /path/to/your/app/node_modules is in the module search path of node-webkit.
 
+The built-in Node modules such as `fs` can be used directly without these steps.
+
 Here is an example of loading `async` module:
 ````bash
 $ cd /path/to/your/app
