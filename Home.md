@@ -7,7 +7,7 @@ Basic:
 * [[How to run apps]]
 * [[How to package and distribute your apps]]
 * [[Manifest format]] - the format of `package.json`
-* [[How to use node.js web modules in node-webkit]] - wonder how to use `express` stuff in node-webkit?
+* [[How to use node.js modules in node-webkit]]
 * [[Troubleshooting]]
 
 API:
@@ -22,6 +22,7 @@ Advanced:
 * [Command line arguments of 'nw' executable](wiki/Command-line-switches)
 * [[Third party browser plugins]]
 * [[WebGL support on Windows]]
+* [[about node.js server side script in node webkit]] - wonder how to use `express` stuff in node-webkit?
 
 HTML5 Features:
 * [[Play with window]]
