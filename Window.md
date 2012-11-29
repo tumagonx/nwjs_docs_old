@@ -2,7 +2,7 @@ _Window API requires node-webkit >= v0.3.0_
 
 `Window` is a wrapper of DOM's `window` object, it has extended operations and can receive various window events.
 
-You can not create a new `Window`, you can only get a `Window` object by using `Window.get()`. Every `Window` is an instance of [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter) object, and you're able to use `Window.on(...)` to response to native window's events.
+Every `Window` is an instance of [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter) object, and you're able to use `Window.on(...)` to response to native window's events.
 
 ## Synopsis
 
@@ -50,6 +50,22 @@ var new_win = gui.Window.get(
   window.open('https://github.com')
 );
 ```
+
+### open(url[, options])
+
+Open a new window and load `url` in it, you can specify extra `options` with the window. All window subfields in [[Manifest format]] can be used.
+
+```javascript
+var win = gui.Window.open('https://github.com', {
+  position: 'center',
+  width: 901,
+  height: 127
+});
+```
+
+### Window.window
+
+**Get** DOM's `window` object in the native window.
 
 ### Window.x/Window.y
 
