@@ -7,7 +7,7 @@ Basic:
 * [[How to run apps]]
 * [[How to package and distribute your apps]]
 * [[Manifest format]] - the format of `package.json`
-* [[How to use node.js modules in node-webkit]]
+* [[How to use 3rd party node.js modules in node-webkit]]
 * [[Troubleshooting]]
 
 API:
