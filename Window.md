@@ -141,6 +141,18 @@ win.on('close', function() {
 win.close();
 ```
 
+### Window.reload()
+
+_Requires node-webkit >= v0.3.5_
+
+Reloads the current window.
+
+### Window.reloadIgnoringCache()
+
+_Requires node-webkit >= v0.3.5_
+
+Like reload(), but don't use caches (aka "shift-reload").
+
 ### Window.maximize()
 
 Maximize the window on GTK and Windows, zoom the window on Mac.
@@ -265,6 +277,20 @@ The `closed` event is emitted **after** corresponding window is closed. Normally
   });
 </script>
 ```
+
+### loading
+
+_Requires node-webkit >= v0.3.5_
+
+Emitted when the window starts to reload, normally you cannot catch this event because usually it's emitted before you actually setup the callback.
+
+The only situation that you can catch this event is when you refresh the window and listen to this event in another window.
+
+### loaded
+
+_Requires node-webkit >= v0.3.5_
+
+Emitted when the window is fully loaded, this event behaves the same with `window.onload`, but doesn't rely on the DOM.
 
 ### focus
 
