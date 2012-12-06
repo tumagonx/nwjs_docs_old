@@ -34,6 +34,7 @@ So if you encounter empty window when opening the devtools, please check followi
 
 * `nw.pak` should be in the same directory with `nw.exe`.
 * Your proxy settings.
+* Your VPN settings.
 * Antivirus or firewall software.
 * Check if you boot your Windows VM in VMWare Fusion mode.
 
