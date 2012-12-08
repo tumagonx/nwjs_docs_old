@@ -2,7 +2,9 @@
 
 We keep the modification minimal on both Node and Chromium. Only 2 things are done: main loop integration and context bridging.
 
-Both `node.js` and `Chromium` have their main loops. So it would take some jobs to make it run in `Chromium`. One of the founding feature of node-webkit is to call Node functions *directly* from DOM, so we integrate them into the same thread. That requires the integration of the main loop of Node and the one from Chromium Render process.
+Both `node.js` and `Chromium` have their main loops. So it would take some efforts to make it run in `Chromium`. One of the founding feature of node-webkit is to call Node functions **directly** from DOM, so we integrate them into the same thread. That requires the integration of the main loop of Node and the one from Chromium Render process.
+
+In order to make the objects from Node and DOM to refer to each other, Node is made to use the same V8 engine instance as the one in Chromium. The objects from the 2 worlds are in 2 `contexts` respectively, to keep their namespace clean.
 
 ## Main Loop Integration
 
