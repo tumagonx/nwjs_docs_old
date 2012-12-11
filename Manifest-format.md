@@ -47,7 +47,7 @@ Each package must provide all the following fields in its package descriptor fil
 Following fields control which features `node-webkit` should provide and how `node-webkit` should open the main window.
 
 ### nodejs
-*(boolean)* set `nodejs` to false will disable node inside WebKit, if you're only using HTML5 to write apps, it could improve stability and performance.
+*(boolean)* set `nodejs` to false will disable Node support in WebKit.
 
 ### node-main
 *(string)* specify the path to a node.js script file, it will be executed on startup in Node context. This script will have same runtime environment with normal node.js binary. The script is ensured to run before the first DOM window load starting from v0.3.3. [See here](node-main) for more information. _(available after node-webkit v0.3.1)_
