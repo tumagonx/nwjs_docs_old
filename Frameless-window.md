@@ -27,7 +27,7 @@ To make the whole window draggable, you can add `-webkit-app-region: drag` as `b
 </body>
 ```
 
-And note that if you have made the whole window draggable,  you must also mark buttons and custom window buttons as non-draggable, otherwise it would be very hard for users to click on them:
+And note that if you have made the whole window draggable,  you must also **mark buttons and custom window buttons as non-draggable**, otherwise it would be very hard for users to click on them:
 
 ```css
 button {
