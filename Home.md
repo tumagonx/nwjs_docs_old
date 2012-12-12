@@ -22,7 +22,8 @@ Advanced:
 * [Command line arguments of 'nw' executable](wiki/Command-line-switches)
 * [[Third party browser plugins]]
 * [[WebGL support on Windows]]
-* [[about node.js server side script in node webkit]] - wonder how to use `express` stuff in node-webkit?
+* [[About node.js server side script in node-webkit]] - wonder how to use `express` stuff in node-webkit?
+* [[Get version of node-webkit in app]]
 
 HTML5 Features:
 * [[Play with window]]
