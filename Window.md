@@ -308,6 +308,14 @@ Emitted when window is minimized.
 
 Emitted when window is restored from minimize state.
 
+### maximize
+
+Emitted when window is maximized.
+
+### unmaximize
+
+Emitted when window is restored from maximize state. Note that on some platforms window can be resized even when maximized, so the `unmaximize` may not be emitted when a maximized window is resized instead of being unmaximized
+
 ### enter-fullscreen
 
 Emitted when window enters fullscreen state.
