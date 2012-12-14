@@ -1,19 +1,19 @@
-## v0.3.5 
+## v0.3.5 (Dec 3, 2012)
 [v0.3.5 release note](https://groups.google.com/d/msg/node-webkit/vUlZI3rV8_k/HTzpXUoUiZ4J)
 
 * Linux: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.5/node-webkit-v0.3.5-linux-ia32.tar.gz) / [64bit](http://s3.amazonaws.com/node-webkit/v0.3.5/node-webkit-v0.3.5-linux-x64.tar.gz)
 * Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.3.5/node-webkit-v0.3.5-win-ia32.zip)
 * Mac: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.5/node-webkit-v0.3.5-osx-ia32.zip)
 
-## v0.3.4
-[v0.3.4 release note](https://groups.google.com/d/topic/node-webkit/emg2W5CmKRU/discussion)
+## v0.3.4 (Nov 20, 2012)
+[v0.3.4 release note](https://groups.google.com/d/msg/node-webkit/emg2W5CmKRU/rLH0yJTKTs4J)
 
 * Linux: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.4/node-webkit-v0.3.4-linux-ia32.tar.gz) / [64bit](http://s3.amazonaws.com/node-webkit/v0.3.4/node-webkit-v0.3.4-linux-x64.tar.gz)
 * Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.3.4/node-webkit-v0.3.4-win-ia32.zip)
 * Mac: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.4/node-webkit-v0.3.4-osx-ia32.zip)
 
 
-## v0.3.3
+## v0.3.3 (Nov 12, 2012)
 [v0.3.3 release note](https://groups.google.com/forum/?fromgroups=#!topic/node-webkit/d-31Gl0EbT8)
 
 Prebuilt binaries (v0.3.3):
@@ -22,7 +22,7 @@ Prebuilt binaries (v0.3.3):
 * Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.3.3/node-webkit-v0.3.3-win-ia32.zip)
 * Mac: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.3/node-webkit-v0.3.3-osx-ia32.zip)
 
-## v0.3.2
+## v0.3.2 (Nov 7, 2012)
 [v0.3.2 release note](https://groups.google.com/forum/?fromgroups=#!topic/node-webkit/8JktpVPZTNs)
 
 Prebuilt binaries (v0.3.2):
@@ -31,7 +31,7 @@ Prebuilt binaries (v0.3.2):
 * Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.3.2/nw_release_win32.zip)
 * Mac: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.2/nw_release_mac.zip)
 
-## v0.3.1
+## v0.3.1 
 [v0.3.1 release note](https://groups.google.com/forum/?fromgroups=#!topic/node-webkit/KOqDJRtjo2I)
 
 Prebuilt binaries (v0.3.1):
