@@ -61,6 +61,16 @@ Following fields control which features `node-webkit` should provide and how `no
 ### webkit
 *(object)* controls what features of WebKit should be on/off, see _WebKit Subfields_ below.
 
+### user-agent
+_since v0.3.7_
+
+*(string)* Override the `User-Agent` header in HTTP requests made from the application.
+The following placeholders are available:
+
+* `%name`: replaced by the `name` field in the manifest.
+* `%ver`: replaced by the `version` field in the manifest, if available.
+* `%nwver`: replaced by the version of node-webkit.
+
 ## Window Subfields
 
 ### title
