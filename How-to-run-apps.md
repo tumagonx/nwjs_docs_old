@@ -7,6 +7,10 @@ _Since our package system is similar to [LÖVE](https://love2d.org), following g
 
 In both cases, there has to be a file called `package.json` in the startup path or `.nw` zipfile. This file will be parsed when `node-webkit` starts. If this file is missing, `node-webkit` will not recognize the folder or `.nw` file as app, and it will complain about a wrongly packaged app. A frequently made mistake is zipping the folder rather than its contents. This stems from very old practice (because when you unzip a folder you don't want it to splash out all over your current directory), but for `node-webkit` doing that doesn't make sense: you need to zip the app folder's contents only, to get a correct `.nw`. 
 
+### All platforms
+
+You can put files of node-webkit in the same directory with your app's files including `package.json`, and then just run the `nw` executable.
+
 ### Windows
 
 On Windows, the easiest way to run the app is to drag the folder onto `nw.exe`, or a shortcut to `nw.exe`. Remember to drag the folder containing `package.json`, and not `package.json` itself.
