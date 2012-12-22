@@ -71,6 +71,54 @@ The following placeholders are available:
 * `%ver`: replaced by the `version` field in the manifest, if available.
 * `%nwver`: replaced by the version of node-webkit.
 
+### access-node-remote
+_since v0.3.7_
+
+*(string)* Enable calling Node in remote pages. The value controls for which sites this feature should be turned on. The format is the same with the "proxy bypass rules" of the browser:
+
+It's a rule set, which rules are separated by `,` or `;`. Each rule can be any of the following:
+
+````CPP
+  // (1) [ URL_SCHEME "://" ] HOSTNAME_PATTERN [ ":" <port> ]
+  //
+  //   Match all hostnames that match the pattern HOSTNAME_PATTERN.
+  //
+  //   Examples:
+  //     "foobar.com", "*foobar.com", "*.foobar.com", "*foobar.com:99",
+  //     "https://x.*.y.com:99"
+  //
+  // (2) "." HOSTNAME_SUFFIX_PATTERN [ ":" PORT ]
+  //
+  //   Match a particular domain suffix.
+  //
+  //   Examples:
+  //     ".google.com", ".com", "http://.google.com"
+  //
+  // (3) [ SCHEME "://" ] IP_LITERAL [ ":" PORT ]
+  //
+  //   Match URLs which are IP address literals.
+  //
+  //   Conceptually this is the similar to (1), but with special cases
+  //   to handle IP literal canonicalization. For example matching
+  //   on "[0:0:0::1]" would be the same as matching on "[::1]" since
+  //   the IPv6 canonicalization is done internally.
+  //
+  //   Examples:
+  //     "127.0.1", "[0:0::1]", "[::1]", "http://[::1]:99"
+  //
+  // (4)  IP_LITERAL "/" PREFIX_LENGHT_IN_BITS
+  //
+  //   Match any URL that is to an IP literal that falls between the
+  //   given range. IP range is specified using CIDR notation.
+  //
+  //   Examples:
+  //     "192.168.1.1/16", "fefe:13::abc/33".
+  //
+  // (5)  "<local>"
+  //
+  //   Match local addresses. The meaning of "<local>" is whether the
+  //   host matches one of: "127.0.0.1", "::1", "localhost".
+````
 ## Window Subfields
 
 ### title
