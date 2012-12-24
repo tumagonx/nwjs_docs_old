@@ -32,6 +32,12 @@ written as plugins, that are just plain npm packages.
 
 ![](http://reditr.com/images/column_dark.png)
 
+### CATS
+
+[Code Assistant for TypeScript](http://jbaron.github.com/cats/) is an IDE for TypeScript developers. It is opensource and runs on Linux, Windows and OSX. You can get it at: http://jbaron.github.com/cats/
+
+![](https://raw.github.com/jbaron/cats/master/artifacts/cats_screenshot.png)
+
 ## Companies
 
 ### Everytime
