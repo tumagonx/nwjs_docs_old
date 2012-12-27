@@ -37,5 +37,6 @@ So if you encounter empty window when opening the devtools, please check followi
 * Your VPN settings.
 * Antivirus or firewall software.
 * Check if you boot your Windows VM in VMWare Fusion mode.
+* Uninstall VMWare's network configs.
 
 If you still have problems after making sure nothing is slowing down the devtools, than you have to wait until devtools is fully loaded.
