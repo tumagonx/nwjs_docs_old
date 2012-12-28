@@ -70,6 +70,8 @@ The following placeholders are available:
 * `%name`: replaced by the `name` field in the manifest.
 * `%ver`: replaced by the `version` field in the manifest, if available.
 * `%nwver`: replaced by the version of node-webkit.
+* `%webkit_ver`: replaced by the version of WebKit engine.
+* `%osinfo`: replaced by the OS and CPU information you would see in browser's user agent string.
 
 ### access-node-remote
 _since v0.3.7_
