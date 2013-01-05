@@ -73,7 +73,7 @@ The following placeholders are available:
 * `%webkit_ver`: replaced by the version of WebKit engine.
 * `%osinfo`: replaced by the OS and CPU information you would see in browser's user agent string.
 
-### access-node-remote
+### node-remote
 _since v0.3.7_
 
 *(string)* Enable calling Node in remote pages. The value controls for which sites this feature should be turned on. The format is the same with the "proxy bypass rules" of the browser:
