@@ -1,5 +1,11 @@
+## v0.3.6 (Dec 14, 2012)
+[v0.3.6 release notes](https://groups.google.com/d/msg/node-webkit/sUamgSnbTzk/0gI-lywN_2IJ)
+* Linux: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.6/node-webkit-v0.3.6-linux-ia32.tar.gz) / [64bit](http://s3.amazonaws.com/node-webkit/v0.3.6/node-webkit-v0.3.6-linux-x64.tar.gz)
+* Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.3.6/node-webkit-v0.3.6-win-ia32.zip)
+* Mac: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.6/node-webkit-v0.3.6-osx-ia32.zip)
+
 ## v0.3.5 (Dec 3, 2012)
-[v0.3.5 release note](https://groups.google.com/d/msg/node-webkit/vUlZI3rV8_k/HTzpXUoUiZ4J)
+[v0.3.5 release notes](https://groups.google.com/d/msg/node-webkit/vUlZI3rV8_k/HTzpXUoUiZ4J)
 
 * Linux: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.5/node-webkit-v0.3.5-linux-ia32.tar.gz) / [64bit](http://s3.amazonaws.com/node-webkit/v0.3.5/node-webkit-v0.3.5-linux-x64.tar.gz)
 * Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.3.5/node-webkit-v0.3.5-win-ia32.zip)
