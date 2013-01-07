@@ -121,6 +121,11 @@ It's a rule set, which rules are separated by `,` or `;`. Each rule can be any o
   //   Match local addresses. The meaning of "<local>" is whether the
   //   host matches one of: "127.0.0.1", "::1", "localhost".
 ````
+### chromium-args
+_since v0.3.8_
+
+*(string)* Specify chromium command line arguments. It will be useful if you want to distribute the app with some custom chromium args. For example, if you want to disable the GPU accelerated video display, just add `"chromium-args" : "disable-accelerated-video"`. If you want to add multiple arguments, separate each two arguments by space.
+
 ## Window Subfields
 
 ### title
