@@ -3,7 +3,6 @@ If your project already have a function called `require()` it will conflicts wit
 ````html
 <script type="text/javascript">
     window.requireNode = window.require;
-    window.gui = window.requireNode('nw.gui');
     window.require = undefined; 
 </script>
 ````
