@@ -28,7 +28,7 @@ Currently not everything of developer tools is working well, bellow are the thin
 
 ## Why the devtools shows an empty window?
 
-Under certain Windows machines, the devtools loads very slow, it may show a white page at first and needs about 30s to be fully loaded. This is not a bug of node-webkit, devtools in node-webkit is indeed a remote debugger, it needs to open a local server and transfer data via sockets.
+Under certain Windows machines, the devtools loads very slow, it may show a white page at first and needs about 30s to be fully loaded. This may not be a bug of node-webkit, devtools in node-webkit is indeed a remote debugger, it needs to open a local server and transfer data via sockets.
 
 So if you encounter empty window when opening the devtools, please check following things:
 
@@ -38,5 +38,3 @@ So if you encounter empty window when opening the devtools, please check followi
 * Antivirus or firewall software.
 * Check if you boot your Windows VM in VMWare Fusion mode.
 * Uninstall VMWare's network configs.
-
-If you still have problems after making sure nothing is slowing down the devtools, than you have to wait until devtools is fully loaded.
