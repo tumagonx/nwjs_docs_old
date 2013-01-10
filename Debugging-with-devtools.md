@@ -33,7 +33,7 @@ Under certain Windows machines, the devtools loads very slow, it may show a whit
 So if you encounter empty window when opening the devtools, please check following things:
 
 * `nw.pak` should be in the same directory with `nw.exe`.
-* Your proxy settings: try to disable proxy autodetection in IE.
+* Your proxy settings: **on Windows try to disable proxy autodetection in IE**.
 * Your VPN settings.
 * Antivirus or firewall software.
 * Check if you boot your Windows VM in VMWare Fusion mode.
