@@ -1,6 +1,6 @@
 Sublime Text 2 is a great cross-platform editor for building node-webkit apps, you can download it here: http://www.sublimetext.com/2
 
-### Mac OS
+### Mac OS X
 
 1. Download node-webkit.app and place it in /Applications folder
 2. From the Sublime Text 2 menu select `Tools -> Build System -> New Build System`
