@@ -35,6 +35,7 @@ HTML5 Features:
 
 Debugging:
 * [[Debugging with devtools]]
+* [[Debugging with Sublime Text 2]]
 * [[The nw protocol]]
 
 Traps:
