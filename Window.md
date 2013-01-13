@@ -53,7 +53,7 @@ var new_win = gui.Window.get(
 
 ### open(url[, options])
 
-Open a new window and load `url` in it, you can specify extra `options` with the window. All window subfields in [[Manifest format]] can be used.
+Open a new window and load `url` in it, you can specify extra `options` with the window. All window subfields in [[Manifest format]] can be used. Since v0.4.0, a boolean field `new-instance` can be used to start a new Node instance (webkit process).
 
 ```javascript
 var win = gui.Window.open('https://github.com', {
