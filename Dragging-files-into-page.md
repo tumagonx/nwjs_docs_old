@@ -13,8 +13,11 @@ An example is:
 </style>
 <div id="holder"></div>
 <script>
-var holder = document.getElementById('holder');
+// prevent default behavior from changing page on dropped file
+window.ondragover = function(e) { e.preventDefault(); return false };
+window.ondrop = function(e) { e.preventDefault(); return false };
 
+var holder = document.getElementById('holder');
 holder.ondragover = function () { this.className = 'hover'; return false; };
 holder.ondragend = function () { this.className = ''; return false; };
 holder.ondrop = function (e) {
