@@ -1,8 +1,8 @@
 _This example needs node-webkit >= v0.3.0_
 
-On Windows, a common (bad) window design pattern is to minimize the window to the notification area. e.g. Hide and window when you click the minimize button and add a tray icon to bring the window back.
+On Windows, a common window design pattern is to minimize the window to the notification area. e.g. Hide and window when you click the minimize button and add a tray icon to bring the window back.
 
-To implement it in node-webkit, you can use the code bellow. But you should remember that this behaviour is not recommended in most times.
+To implement it in node-webkit, you can try to use the code bellow.
 
 ```html
 <html>
