@@ -6,6 +6,17 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 The Desktop application for privacy your online correspondence.
 
+The problem of protecting private data is now more than ever.
+There are many ways to encrypt a message, but the problem is, 
+that the key to encrypt the need to tell your partner.
+You can not send key on internet, for example,
+your Internet service provider has access to everything that you send and receive.
+Cypher uses modern mechanism for encrypt data and does not send secret key.
+Simple and clear description of how the algorithm allows the two sides
+to get secret key using a unsafe channel.
+http://www.youtube.com/watch?v=3QnD2c4Xovk
+
+
 It's open sourced at https://github.com/rafaelkyrdan/cypher.
 
 ### Fawave Desktop
