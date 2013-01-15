@@ -2,6 +2,12 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### Cypher
+
+The Desktop application for privacy your online correspondence.
+
+It's open sourced at https://github.com/rafaelkyrdan/cypher.
+
 ### Fawave Desktop
 
 The desktop edition of fawave, a popular chrome extension.
