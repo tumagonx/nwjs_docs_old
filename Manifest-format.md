@@ -80,7 +80,7 @@ _since v0.3.7_
 
 It's a rule set, which rules are separated by `,` or `;`. Each rule can be any of the following:
 
-````CPP
+```CPP
   // (1) [ URL_SCHEME "://" ] HOSTNAME_PATTERN [ ":" <port> ]
   //
   //   Match all hostnames that match the pattern HOSTNAME_PATTERN.
@@ -120,11 +120,21 @@ It's a rule set, which rules are separated by `,` or `;`. Each rule can be any o
   //
   //   Match local addresses. The meaning of "<local>" is whether the
   //   host matches one of: "127.0.0.1", "::1", "localhost".
-````
+```
 ### chromium-args
 _since v0.4.0_
 
 *(string)* Specify chromium command line arguments. It will be useful if you want to distribute the app with some custom chromium args. For example, if you want to disable the GPU accelerated video display, just add `"chromium-args" : "disable-accelerated-video"`. If you want to add multiple arguments, separate each two arguments by space.
+
+V8 options can be specified in this field with `js-flags`, e.g. turn on Harmony Proxies feature:
+
+```json
+{
+  "name": "nw-demo",
+  "main": "index.html",
+  "chromium-args": "--js-flags=--harmony-proxies"
+}
+```
 
 ## Window Subfields
 
