@@ -124,7 +124,7 @@ It's a rule set, which rules are separated by `,` or `;`. Each rule can be any o
 ### chromium-args
 _since v0.4.0_
 
-*(string)* Specify chromium command line arguments. It will be useful if you want to distribute the app with some custom chromium args. For example, if you want to disable the GPU accelerated video display, just add `"chromium-args" : "disable-accelerated-video"`. If you want to add multiple arguments, separate each two arguments by space.
+*(string)* Specify chromium command line arguments. It will be useful if you want to distribute the app with some custom chromium args. For example, if you want to disable the GPU accelerated video display, just add `"chromium-args" : "--disable-accelerated-video"`. If you want to add multiple arguments, separate each two arguments by space.
 
 V8 options can be specified in this field with `js-flags`, e.g. turn on Harmony Proxies feature:
 
