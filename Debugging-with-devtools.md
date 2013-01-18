@@ -26,15 +26,11 @@ Currently not everything of developer tools is working well, bellow are the thin
 
 * node modules don't shown in script sources
 
-## Why the devtools is slow or shows an empty window?
+## Why the devtools shows an empty window?
 
-Under certain Windows machines, the devtools loads very slow, it may show a white page at first and needs about 30s to be fully loaded. This might not be a bug of node-webkit, devtools in node-webkit is indeed a remote debugger, it needs to open a local server and transfer data via sockets.
+Under certain network settings, it may show a white page for devtools. This might not be a bug of node-webkit, devtools in node-webkit is indeed a remote debugger, it needs to open a local server and transfer data via sockets.
 
 So if you encounter empty window when opening the devtools, please check following things:
 
 * `nw.pak` should be in the same directory with `nw.exe`.
-* Your proxy settings: **on Windows try to disable proxy autodetection in IE**.
-* Your VPN settings.
-* Antivirus or firewall software.
-* Check if you boot your Windows VM in VMWare Fusion mode.
-* Uninstall VMWare's network configs.
+* Your proxy settings: bypass localhost in the settings.
