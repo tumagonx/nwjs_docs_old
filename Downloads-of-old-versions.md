@@ -1,3 +1,9 @@
+## v0.3.7 (Jan 6, 2013)
+[v0.3.7 release notes](https://groups.google.com/d/msg/node-webkit/Ia0HHY8BWLA/kJWM6Hw6CwcJ)
+* Linux: [32bit](https://s3.amazonaws.com/node-webkit/v0.3.7/node-webkit-v0.3.7-linux-ia32.tar.gz) / [64bit](https://s3.amazonaws.com/node-webkit/v0.3.7/node-webkit-v0.3.7-linux-x64.tar.gz)
+* Windows: [win32](https://s3.amazonaws.com/node-webkit/v0.3.7/node-webkit-v0.3.7-win-ia32.zip)
+* Mac: [32bit](https://s3.amazonaws.com/node-webkit/v0.3.7/node-webkit-v0.3.7-osx-ia32.zip)
+
 ## v0.3.6 (Dec 14, 2012)
 [v0.3.6 release notes](https://groups.google.com/d/msg/node-webkit/sUamgSnbTzk/0gI-lywN_2IJ)
 * Linux: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.6/node-webkit-v0.3.6-linux-ia32.tar.gz) / [64bit](http://s3.amazonaws.com/node-webkit/v0.3.6/node-webkit-v0.3.6-linux-x64.tar.gz)
