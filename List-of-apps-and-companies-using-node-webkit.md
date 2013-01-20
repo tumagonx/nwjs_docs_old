@@ -17,7 +17,7 @@ to get secret key using a unsafe channel.
 http://www.youtube.com/watch?v=3QnD2c4Xovk
 
 
-It's open sourced at https://github.com/rafaelkyrdan/cypher.
+It's open sourced at http://rafaelkyrdan.github.com/cypher/ 
 
 ### Fawave Desktop
 
