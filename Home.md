@@ -13,6 +13,7 @@ Basic:
 API:
 * [Node.js Manual & Documentation](http://nodejs.org/api/)
 * [[Native UI API Manual]] - node-webkit API for native UI controls
+* [[Changes related to Node]] - Things added/changed to Node API after bring in DOM
 
 Advanced:
 * [[The Kiosk mode]]
