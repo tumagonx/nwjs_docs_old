@@ -81,15 +81,20 @@ var win = gui.Window.open('https://github.com', {
 
 ### Window.isFullscreen
 
-_Requires node-webkit >= v0.3.5_
+_since v0.3.5_
 
 **Get** or **Set** whether we're in fullscreen mode.
 
 ### Window.isKioskMode
 
-_Requires node-webkit >= v0.3.5_
+_since v0.3.5_
 
 **Get** or **Set** whether we're in kiosk mode.
+
+### Window.zoom
+_since v0.4.1_
+
+**Get** or **Set** the page zoom. `0` for normal size; positive value for zooming in; negative value for zooming out.
 
 ### Window.moveTo(x, y)
 
@@ -323,6 +328,10 @@ Emitted when window enters fullscreen state.
 ### leave-fullscreen
 
 Emitted when window leaves fullscreen state.
+
+### zoom
+
+Emitted when window zooming changed. It has a parameter indicating the new zoom level. See `Window.zoom` for the parameter's value definition.
 
 ## See also
 
