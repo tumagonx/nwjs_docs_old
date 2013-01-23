@@ -46,6 +46,19 @@ tx.executeSql('SELECT * FROM foo', [], function (tx, results) {
 
 For more information, you can read tutorials like [Introducing Web SQL Databases](http://html5doctor.com/introducing-web-sql-databases/).
 
+
+## IndexedDB
+[IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB) is considered the NoSQL successor of WebSQL. It is supported by the latest versions of Chromium and therefore node-webkit - the implementation is based on the key-value storage LevelDB.
+IndexedDB's API is asynchronous and relatively low-level and verbose, so you might prefer using an abstraction, like PouchDB.
+
+## PouchDB
+[PouchDB](http://pouchdb.com/) is an embedded database engine inspired by CouchDB. In node-webkit, it can be used as an abstraction over IndexedDB (via the Chromium implementation) or directly on LevelDB (via the node.js module). As with CouchDB, there are no dynamic index-based queries, but you can dynamically aggregate a view via map/reduce. Unlike CouchDB, you cannot have incremental views, which ultimately makes retrieving data from it slow with large data sets (always execute map/reduce to query).
+It can directly replicate to/from CouchDB, which gives it an advantage if you are building an application that has to sync with the cloud.
+
+## EJDB
+[EJDB](https://github.com/Softmotions/ejdb) (Embedded JSON Database engine) is a simple & fast database engine based on Tokyo Cabinet. It's usage copies MongoDB - you can easily make dynamic queries and sort/paginate the result.
+The fast queries and easy-to-use API make it the best choice for node-webkit.
+
 ## Web Storage
 
 Web storage is a easy to use key-value database, you can use it like normal js objects but everything will be saved to disk for you.
@@ -73,9 +86,7 @@ sessionStorage.life = "";
 console.log(sessionStorage.life);
 ```
 
-## IndexedDB
-... TODO ...
-IndexedDB's API is asynchronous relatively low-level and tedious to use, so it is preferable to use an abstraction, like PouchDB. 
+**Be warned that for large data sets web storage is incredibly impractical, since the API is synchronous, there is no advanced indexing/queries (only one key-value store) and the value can only be a string.**
 
 ## Application Cache
 
