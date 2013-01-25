@@ -2,6 +2,8 @@ You can install the 3rd party modules in your application's directory and then j
 
 The built-in Node modules such as `fs` can be used directly without these steps.
 
+Native modules should be built by [nw-gyp](https://npmjs.org/package/nw-gyp) rather than `node-gyp`, which `npm` uses by default.
+
 Here is an example of loading `async` module:
 ````bash
 $ cd /path/to/your/app
