@@ -136,8 +136,6 @@ V8 options can be specified in this field with `js-flags`, e.g. turn on Harmony 
 }
 ```
 
-To turn on multiple options, you can do it like `"chromium-args": "--js-flags=--harmony-proxies --js-flags=--harmony_collections"`
-
 ## Window Subfields
 
 ### title
