@@ -70,6 +70,7 @@ End of the day market data from web to your favorite charting application .
 Fundamental market data from web to your favorite charting application.
 Market reports from web to your favorite charting application.
 Here is video tutorial http://youtu.be/BfBIzmpPV2M
-http://sourceforge.net/projects/shubhalabhadown/screenshots/snap1.png
+[![Image](http://sourceforge.net/projects/shubhalabhadown/screenshots/snap1.png)](http://sourceforge.net/projects/shubhalabhadown/screenshots/snap1.png)
+
 http://sourceforge.net/projects/shubhalabhadown/screenshots/snap2.png
 http://sourceforge.net/projects/shubhalabhadown/screenshots/snap3.png
