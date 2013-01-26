@@ -62,3 +62,14 @@ written as plugins, that are just plain npm packages.
 [Everytime](https://www.everytimehq.com/) is a video and audio collaboration sass. It allows to bookmark any moment in any media, on the web (Youtube/Vimeo/Soundcloud) or on your computer. To bookmark moments on videos or musics from your computer, it uses a [desktop app](https://www.everytimehq.com/desktop), built with node-webkit, to communicate with [VLC](http://www.videolan.org/)
 
 ![screenshot of VLC being controlled from Everytime](https://www.everytimehq.com/assets/screenshots/desktop.jpg)
+
+### Shubha Downloader
+There is large amount of information available in market place. The markets are always in sync. In today’s world investors find it very difficult to make effective use of information available to them. Shubha Downloader  is great tool which resolves this problem and helps investor to increase his productivity and stay focused on decision making.   Shubha Downloader enable end user to download market data from available sources and organize it. Shubha Downloader  is Open source & FREE utility for end users.
+Shubha Downloader  have main features as
+End of the day market data from web to your favorite charting application .
+Fundamental market data from web to your favorite charting application.
+Market reports from web to your favorite charting application.
+Here is video tutorial http://youtu.be/BfBIzmpPV2M
+http://sourceforge.net/projects/shubhalabhadown/screenshots/snap1.png
+http://sourceforge.net/projects/shubhalabhadown/screenshots/snap2.png
+http://sourceforge.net/projects/shubhalabhadown/screenshots/snap3.png
