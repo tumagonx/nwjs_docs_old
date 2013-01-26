@@ -72,5 +72,5 @@ Market reports from web to your favorite charting application.
 Here is video tutorial http://youtu.be/BfBIzmpPV2M
 [![Image](http://sourceforge.net/projects/shubhalabhadown/screenshots/snap1.png)](http://sourceforge.net/projects/shubhalabhadown/screenshots/snap1.png)
 
-http://sourceforge.net/projects/shubhalabhadown/screenshots/snap2.png
-http://sourceforge.net/projects/shubhalabhadown/screenshots/snap3.png
+[![Image](http://sourceforge.net/projects/shubhalabhadown/screenshots/snap2.png)](http://sourceforge.net/projects/shubhalabhadown/screenshots/snap2.png)
+[![Image](http://sourceforge.net/projects/shubhalabhadown/screenshots/snap3.png)](http://sourceforge.net/projects/shubhalabhadown/screenshots/snap3.png)
