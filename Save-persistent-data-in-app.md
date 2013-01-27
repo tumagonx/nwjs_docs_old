@@ -36,11 +36,13 @@ db.transaction(function (tx) {
 });
 
 // Query out the data
-tx.executeSql('SELECT * FROM foo', [], function (tx, results) {
-  var len = results.rows.length, i;
-  for (i = 0; i < len; i++) {
-    alert(results.rows.item(i).text);
-  }
+db.transaction(function (tx) {
+  tx.executeSql('SELECT * FROM foo', [], function (tx, results) {
+    var len = results.rows.length, i;
+    for (i = 0; i < len; i++) {
+      alert(results.rows.item(i).text);
+    }
+  });
 });
 ```
 
