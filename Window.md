@@ -16,7 +16,7 @@ var win = gui.Window.get();
 // Listen to the minimize event
 win.on('minimize', function() {
   console.log('Window is minimized');
-}
+});
 
 // Minimize the window
 win.minimize();
