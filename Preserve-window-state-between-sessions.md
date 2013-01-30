@@ -29,8 +29,8 @@ Then you can load everything in the `onload` or `$(document).ready`, and save th
   // Restore on startup.
   onload = function() {
     if (localStorage.width && localStorage.height) {
-      win.resizeTo(localStorage.width, localStorage.height);
-      win.moveTo(localStorage.x, localStorage.y);
+      win.resizeTo(parseInt(localStorage.width), parseInt(localStorage.height));
+      win.moveTo(parseInt(localStorage.x), parseInt(localStorage.y));
     }
 
     win.show();
