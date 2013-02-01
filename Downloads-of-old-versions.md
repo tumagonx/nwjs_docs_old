@@ -47,7 +47,7 @@ Prebuilt binaries (v0.3.2):
 
 * Linux: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.2/nw_release_linux_x32.tar.gz) / [64bit](https://s3.amazonaws.com/node-webkit/v0.3.2/nw_release_linux_x64.tar.gz)
 * Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.3.2/nw_release_win32.zip)
-* Mac: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.2/nw_release_mac.zip)
+* Mac: [32bit, 10.7+](http://s3.amazonaws.com/node-webkit/v0.3.2/nw_release_mac.zip)
 
 ## v0.3.1 (Oct 29, 2012)
 [v0.3.1 release note](https://groups.google.com/forum/?fromgroups=#!topic/node-webkit/KOqDJRtjo2I)
@@ -56,7 +56,7 @@ Prebuilt binaries (v0.3.1):
 
 * Linux: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.1/nw_release_linux_x32.tar.gz) / [64bit](https://s3.amazonaws.com/node-webkit/v0.3.1/nw_release_linux_x64.tar.gz)
 * Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.3.1/nw_release_win32.zip)
-* Mac: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.1/nw_release_mac.zip)
+* Mac: [32bit, 10.7+](http://s3.amazonaws.com/node-webkit/v0.3.1/nw_release_mac.zip)
 
 ## v0.3.0 (Oct 22, 2012)
 
@@ -64,7 +64,7 @@ Prebuilt binaries (v0.3.1):
 
 * Linux: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.0/nw_release_linux_x32.tar.gz) / [64bit](https://s3.amazonaws.com/node-webkit/v0.3.0/nw_release_linux_x64.tar.gz)
 * Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.3.0/nw_release_win32.zip)
-* Mac: [32bit](http://s3.amazonaws.com/node-webkit/v0.3.0/nw_release_mac.zip)
+* Mac: [32bit, 10.7+](http://s3.amazonaws.com/node-webkit/v0.3.0/nw_release_mac.zip)
 
 ## v0.2.6 (Sep 25, 2012)
 
@@ -72,7 +72,7 @@ Prebuilt binaries (v0.3.1):
 
 * Linux: [32bit](http://s3.amazonaws.com/node-webkit/v0.2.6/nw_release_linux_x32.tar.gz) / [64bit](http://s3.amazonaws.com/node-webkit/v0.2.6/nw_release_linux_x64.tar.gz)
 * Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.2.6/nw_release_win32.zip)
-* Mac: [32bit](http://s3.amazonaws.com/node-webkit/v0.2.6/nw_release_mac.zip)
+* Mac: [32bit, 10.7+](http://s3.amazonaws.com/node-webkit/v0.2.6/nw_release_mac.zip)
 
 ## v0.2.5
 
@@ -80,7 +80,7 @@ Prebuilt binaries (v0.3.1):
 
 * Linux: [32bit](http://s3.amazonaws.com/node-webkit/v0.2.5/nw_release_linux_x32.tar.gz) / [64bit](http://s3.amazonaws.com/node-webkit/v0.2.5/nw_release_linux_x64.tar.gz)
 * Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.2.5/nw_release_win32.zip)
-* Mac: [32bit](http://s3.amazonaws.com/node-webkit/v0.2.5/nw_release_mac.zip)
+* Mac: [32bit, 10.7+](http://s3.amazonaws.com/node-webkit/v0.2.5/nw_release_mac.zip)
 
 ## v0.2.4
 
@@ -88,7 +88,7 @@ Prebuilt binaries (v0.3.1):
 
 * Linux: [32bit](http://s3.amazonaws.com/node-webkit/v0.2.4/nw_release_linux_x32.tar.gz) / [64bit](http://s3.amazonaws.com/node-webkit/v0.2.4/nw_release_linux_x64.tar.gz)
 * Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.2.4/nw_release_win32.zip)
-* Mac: [32bit](http://s3.amazonaws.com/node-webkit/v0.2.4/nw_release_mac.zip)
+* Mac: [32bit, 10.7+](http://s3.amazonaws.com/node-webkit/v0.2.4/nw_release_mac.zip)
 
 ## v0.2.3
 
@@ -96,7 +96,7 @@ Prebuilt binaries (v0.3.1):
 
 * Linux: [32bit](http://s3.amazonaws.com/node-webkit/v0.2.3/nw_release_linux_x32.tar.gz) / [64bit](http://s3.amazonaws.com/node-webkit/v0.2.3/nw_release_linux_x64.tar.gz)
 * Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.2.3/nw_release_win32.zip)
-* Mac: [32bit](http://s3.amazonaws.com/node-webkit/v0.2.3/nw_release_mac.zip)
+* Mac: [32bit, 10.7+](http://s3.amazonaws.com/node-webkit/v0.2.3/nw_release_mac.zip)
 
 ## v0.2.2
 
@@ -104,7 +104,7 @@ Prebuilt binaries (v0.3.1):
 
 * Linux: [32bit](http://s3.amazonaws.com/node-webkit/v0.2.2/nw_release_linux_x32.tar.gz) / [64bit](http://s3.amazonaws.com/node-webkit/v0.2.2/nw_release_linux_x64.tar.gz)
 * Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.2.2/nw_release_win32.zip)
-* Mac: [32bit](http://s3.amazonaws.com/node-webkit/v0.2.2/nw_release_mac.zip)
+* Mac: [32bit, 10.7+](http://s3.amazonaws.com/node-webkit/v0.2.2/nw_release_mac.zip)
 
 ## v0.2.1
 
@@ -112,7 +112,7 @@ Prebuilt binaries (v0.3.1):
 
 * Linux: [32bit](http://s3.amazonaws.com/node-webkit/v0.2.1/nw_release_linux_x32.tar.gz) / [64bit](http://s3.amazonaws.com/node-webkit/v0.2.1/nw_release_linux_x64.tar.gz)
 * Windows: [win32](http://s3.amazonaws.com/node-webkit/v0.2.1/nw_release_win32.zip)
-* Mac: [32bit](http://s3.amazonaws.com/node-webkit/v0.2.1/nw_release_mac.zip)
+* Mac: [32bit, 10.7+](http://s3.amazonaws.com/node-webkit/v0.2.1/nw_release_mac.zip)
 
 ## GTK+ and WebKit based node-webkit
 
