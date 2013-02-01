@@ -56,6 +56,11 @@ Get it at http://css-shack.herokuapp.com.
 [Ambiance](https://github.com/Gozala/ambiance) is a code editor. Most of the core features are
 written as plugins, that are just plain npm packages.
 
+### Arduinoscope
+
+[Arduinoscope](https://github.com/konsumer/arduinoscope) is an oscilloscope for Arduinos running Firmata. There are 2 GUIs, one of them uses node-webkit.
+
+
 ![](https://a248.e.akamai.net/camo.github.com/4c23bb2ce48d25f7b2e2d8dc0419872d1e698289/687474703a2f2f662e636c2e6c792f6974656d732f3239315733423050325730513261306a316832552f53637265656e25323053686f74253230323031322d31302d3138253230617425323032322e34362e35382532302e706e67)
 ![](https://a248.e.akamai.net/camo.github.com/e2ceb63e2e779ffec598a7c6745f276be9245b4c/687474703a2f2f662e636c2e6c792f6974656d732f3350343731713254306b334532593164303631622f53637265656e25323053686f74253230323031322d31302d3138253230617425323032322e34372e32332532302e706e67)
 
