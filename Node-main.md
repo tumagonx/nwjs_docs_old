@@ -4,7 +4,7 @@ The script will be running in Node's context which won't be destructed across pa
 
 Besides Node's symbols, the following symbols is available in Node's context:
 
-*  **window**: defined as a property of 'global', points to the DOM window global object. Note that it would be updated upon page navigation.
+*  **window**: defined as a property of 'global', points to the DOM window global object. Note that it would be updated upon page navigation. This symbol is not available at the time when the script is loaded, because the script is executed before the DOM window load.
 
 Since the `node-main` script is the main module of Node.js, it can be referred from DOM context with `process.mainModule`.
 
