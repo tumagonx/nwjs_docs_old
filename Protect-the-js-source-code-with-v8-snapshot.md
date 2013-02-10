@@ -8,7 +8,7 @@ There are important limitations in the current implementation. Please see the la
 
 ## Compilation
 
-JS source code is compiled to native code with the tool `nwsnapshot`, which is provided in the binary download of `node-webkit`. To use it:
+JS source code is compiled to native code (aka. 'snapshot') with the tool `nwsnapshot`, which is provided in the binary download of `node-webkit`. To use it:
 
 ````bash
 nwsnapshot --extra_code source.js snapshot.bin
@@ -22,10 +22,18 @@ Add the following field to `package.json`:
 "snapshot" : "snapshot.bin"
 ````
 
+## Run
+
+It's important to remember that the compiled code runs **when you launch `nwsnapshot`**. Then the JS heap state is saved to the binary file (e.g. `snapshot.bin`) and restored right before your application launches. So it's better to just define functions or variables there.
+
+And the scripts runs/loads loads very early (you can assume it's earlier than context creation) so DOM objects such as `window` is not defined. So you may want to defined functions and pass `window` as argument.
+
+The snapshot is a kind of 'template' used to create JS contexts. So the objects defined there will be in every JS contexts.
+
 ## Limitation
 
-The source code being compiled cannot be too big. `nwsnapshot` will report error when this happens.
+The source code being compiled **cannot be too big**. `nwsnapshot` will report error when this happens.
 
-The compiled code runs slower than normal JS: ~30% performance according to v8bench.
+The compiled code runs **slower than normal JS**: ~30% performance according to v8bench.
 
-The compiled code is not cross-platform or compatible between versions of node-webkit. So you'll need to run `nwsnapshot` for each of the platforms when you package your application.
+The compiled code is **not cross-platform nor compatible between versions** of node-webkit. So you'll need to run `nwsnapshot` for each of the platforms when you package your application.
