@@ -1,6 +1,6 @@
 _Since v0.4.2_
 
-**Note that this feature is still experimental. Please expect changes (of interface and usage) in future versions.**
+**This feature is still experimental. Please expect changes (of interface and usage) in future versions.**
 
 The JavaScript source code of your application can be protected by compiling to native code. Only the native code is distributed with the application and is loaded when the application starts.
 
