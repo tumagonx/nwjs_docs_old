@@ -26,7 +26,7 @@ Advanced:
 * [[About node.js server side script in node-webkit]] - wonder how to use `express` stuff in node-webkit?
 * [[Get version of node-webkit in app]]
 * [What if Node's require() conflicts with the same name in your code (e.g. RequireJS) ?](wiki/faq-name-conflict)
-* [[Protect the JS source code with v8 snapshot]]
+* [[Protect JavaScript source code with v8 snapshot]]
 
 HTML5 Features:
 * [[Play with window]]
