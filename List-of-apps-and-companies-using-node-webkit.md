@@ -7,6 +7,12 @@ Light Table is a new interactive IDE that lets you modify running programs and e
 
 http://www.lighttable.com/
 
+### Brief Msg
+
+Brief Msg is a cross-platform open source messenger for SIP servers compatible with WebSocket protocol.
+
+http://briefmsg.org/
+
 ### Cypher
 
 The Desktop application for privacy your online correspondence.
