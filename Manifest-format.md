@@ -141,6 +141,11 @@ _since v0.4.1_
 }
 ```
 
+### snapshot
+_since v0.4.2_
+
+*(string)* Specify the path to the snapshot file to be loaded with the application. The snapshot file contains compiled code of your application. See [[Protect the js source code with v8 snapshot]].
+
 ## Window Subfields
 
 ### title
