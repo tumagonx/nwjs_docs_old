@@ -34,6 +34,6 @@ The snapshot is a kind of 'template' used to create JS contexts. So the objects 
 
 The source code being compiled **cannot be too big**. `nwsnapshot` will report error when this happens.
 
-The compiled code runs **slower than normal JS**: ~30% performance according to v8bench. Other JS source code will not be affected.
+The compiled code runs **slower than normal JS**: ~30% performance according to v8bench. Normal JS source code will not be affected.
 
 The compiled code is **not cross-platform nor compatible between versions** of node-webkit. So you'll need to run `nwsnapshot` for each of the platforms when you package your application.
