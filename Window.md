@@ -239,7 +239,7 @@ Pass `true` to indicate that the window needs user's action, pass `false` to can
 ### Window.capturePage(callback [, image_format]) 
 _since v0.4.2_
 
-Captures the visible area of the window.
+Captures the visible area of the window. Note: a simple demo usage can be found here: https://gist.github.com/zhchbin/4749217 
 
 `callback` should be a function that will be called when the the image data is ready. It looks like this:
 ```javascript
