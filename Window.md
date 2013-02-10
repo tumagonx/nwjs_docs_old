@@ -236,6 +236,20 @@ Shortcut to move window to specified `position`. Currently only `center` is supp
 
 Pass `true` to indicate that the window needs user's action, pass `false` to cancel it. The final behaviour depends on the platform.
 
+### Window.capturePage(callback [, image_format]) 
+_since v0.4.2_
+
+Captures the visible area of the window.
+
+`callback` should be a function that will be called when the the image data is ready. It looks like this:
+```javascript
+function(dataUrl) {...};
+```
+A `dataURL(string)` which encodes an image of the visible area of the captured
+window. May be assigned to the 'src' property of an HTML Image element for display.
+
+`image_format` is enumerated string ["jpeg", "png"]. Default is 'jpeg'.
+
 ## Events
 
 Following events can be listened by using `Window.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
@@ -332,6 +346,9 @@ Emitted when window leaves fullscreen state.
 ### zoom
 
 Emitted when window zooming changed. It has a parameter indicating the new zoom level. See `Window.zoom` for the parameter's value definition.
+
+### capturepagedone
+Emitted after the capturePage method is called and image data is ready. See `Window.capturePage's` callback function for the parameter's value definition. 
 
 ## See also
 
