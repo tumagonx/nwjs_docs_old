@@ -3,7 +3,7 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 ## Apps
 ### Simple Ace Editor
 
-Yet Another Text Editor
+Ace Text Editor  -  The Same Editor that powers github.com
 
 Source @ https://github.com/brads-tools/node-webkit-ace-editor & 
 Thanks @ http://ace.ajax.org/
