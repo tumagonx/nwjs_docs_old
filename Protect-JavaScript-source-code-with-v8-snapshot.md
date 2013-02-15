@@ -1,6 +1,6 @@
 _Since v0.4.2_
 
-**This feature is still experimental. Please expect changes (of interface and usage) in future versions.**
+**This feature is still experimental -- API & tool usage are subject to change in future versions.**
 
 The JavaScript source code of your application can be protected by compiling to native code. Only the native code is distributed with the application and is loaded when the application starts.
 
@@ -37,3 +37,38 @@ The source code being compiled **cannot be too big**. `nwsnapshot` will report e
 The compiled code runs **slower than normal JS**: ~30% performance according to v8bench. Normal JS source code will not be affected.
 
 The compiled code is **not cross-platform nor compatible between versions** of node-webkit. So you'll need to run `nwsnapshot` for each of the platforms when you package your application.
+
+## Sample
+
+mytest.js:
+````js
+function mytest(a) {
+    document.write(a + 42);
+}
+````
+Compile `mytest.js` to native code:
+
+````bash
+nwsnapshot --extra_code mytest.js mytest.bin
+````
+
+package.json:
+````json
+{
+  "name": "nw-demo",
+  "main": "index.html",
+  "snapshot": "mytest.bin"
+}
+````
+
+index.html:
+````html
+<html><head>
+  <title>snapshot demo</title>
+</head>
+<body>
+  <script>
+  mytest(2); 
+  </script>
+</body></html>
+````
