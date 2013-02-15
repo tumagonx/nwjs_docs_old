@@ -10,17 +10,17 @@ There are important limitations in the current implementation. Please see the la
 
 JS source code is compiled to native code (aka. 'snapshot') with the tool `nwsnapshot`, which is provided in the binary download of `node-webkit`. To use it:
 
-````bash
+```bash
 nwsnapshot --extra_code source.js snapshot.bin
-````
+```
 The `snapshot.bin` file is needed to be distributed with your application. You can name it whatever you want.
 
 ## Package
 
 Add the following field to `package.json`:
-````json
+```json
 "snapshot" : "snapshot.bin"
-````
+```
 
 ## Run
 
@@ -41,28 +41,28 @@ The compiled code is **not cross-platform nor compatible between versions** of n
 ## Sample
 
 mytest.js:
-````js
+```javascript
 function mytest(a) {
     document.write(a + 42);
 }
-````
+```
 Compile `mytest.js` to native code:
 
-````bash
+```bash
 nwsnapshot --extra_code mytest.js mytest.bin
-````
+```
 
 package.json:
-````json
+```json
 {
   "name": "nw-demo",
   "main": "index.html",
   "snapshot": "mytest.bin"
 }
-````
+```
 
 index.html:
-````html
+```html
 <html><head>
   <title>snapshot demo</title>
 </head>
@@ -71,4 +71,4 @@ index.html:
   mytest(2); 
   </script>
 </body></html>
-````
+```
