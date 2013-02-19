@@ -3,7 +3,7 @@ Our compilation will follow `Chromium`'s standard, by using `gclient` and `gyp`,
 * [Get the Code](http://www.chromium.org/developers/how-tos/get-the-code) - the usage of `gclient`
 * [UsingNewGit ](http://code.google.com/p/chromium/wiki/UsingNewGit) - steps of syncing code 
 
-And choose the instructions for your platform, they contained important building conventions.
+And preview the upstream instructions for your platform, they contained important building conventions.
 
 * [Build Instructions for Windows](http://www.chromium.org/developers/how-tos/build-instructions-windows)
 * [Build instructions for Linux](http://code.google.com/p/chromium/wiki/LinuxBuildInstructions)
@@ -78,7 +78,7 @@ This step is necessary to get some DirectX dlls files extracted, and we mentione
 
 After the `gclient sync`, project files should have be prepared. If not, you should manually run:
 
-    ./build/gyp_chromium
+    ./build/gyp_chromium content/content.gyp
 
 Then you can just compile the `nw` target (and don't forget to build with `Release` mode):
 
@@ -89,7 +89,7 @@ Then you can just compile the `nw` target (and don't forget to build with `Relea
 Alternately, you can use `ninja` to build `node-webkit`, see [NinjaBuild](http://code.google.com/p/chromium/wiki/NinjaBuild). This method is also recommended since it's very fast and easy to use. A short summary of using `ninja` is:
 
 ````
-GYP_GENERATORS='ninja' ./build/gyp_chromium
+GYP_GENERATORS='ninja' ./build/gyp_chromium content/content.gyp
 ninja -C out/Release nw -j4
 ````
 
