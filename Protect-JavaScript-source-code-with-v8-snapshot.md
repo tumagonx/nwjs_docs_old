@@ -4,7 +4,7 @@ _Since v0.4.2_
 
 The JavaScript source code of your application can be protected by compiling to native code. Only the native code is distributed with the application and is loaded when the application starts.
 
-There are important limitations in the current implementation. Please see the last section.
+There are important limitations in the current implementation. Please see the 'Limitation' section.
 
 ## Compilation
 
@@ -40,7 +40,7 @@ The compiled code is **not cross-platform nor compatible between versions** of n
 
 ## Sample
 
-mytest.js:
+mytest.js: (this is the JS code to be protected)
 ```javascript
 function mytest(a) {
     document.write(a + 42);
@@ -61,7 +61,7 @@ package.json:
 }
 ```
 
-index.html:
+index.html: (note that we don't need to distribute 'mytest.js' with it)
 ```html
 <html><head>
   <title>snapshot demo</title>
