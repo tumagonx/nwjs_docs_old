@@ -5,13 +5,13 @@ The built-in Node modules such as `fs` can be used directly without these steps.
 Native modules should be built by [nw-gyp](https://npmjs.org/package/nw-gyp) rather than `node-gyp`, which `npm` uses by default. For more information, see [[Build native modules with nw gyp]].
 
 Here is an example of loading `async` module:
-````bash
+```bash
 $ cd /path/to/your/app
 $ npm install async
-````
+```
 
 Here is the list of files in the whole tree:
-````bash
+```bash
 $ find .
 .
 ./package.json
@@ -27,16 +27,16 @@ $ find .
 ./node_modules/async/lib
 ./node_modules/async/lib/async.js
 ./node_modules/async/index.js
-````
+```
 package.json:
-````json
+```json
 {
   "name": "nw-demo",
   "main": "index.html"
 }
-````
+```
 index.html:
-````html
+```html
 <html>
 <head>
 <title>test</title>
@@ -48,4 +48,4 @@ var async=require('async');
 test should be here.
 </body>
 </html>
-````
+```
