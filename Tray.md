@@ -46,6 +46,7 @@ On Mac `title` will be showed on status bar along with its `icon`, but it doesn'
 **Get** or **Set** the `icon` of `Tray`, `icon` must a path to your icon file. It can be a relative path which points to an icon in your app, or an absolute path pointing to a file in user's system.
 
 ### Tray.alticon
+_since v0.4.2_
 
 **Get** or **Set** the  alternate (active) tray icon for Mac. It has no effects on Linux and Win.
 
