@@ -18,7 +18,7 @@ And preview the upstream instructions for your platform, they contained importan
 
 `node-webkit` is now a part of our custom `Chromium`, that means the way we get `node-webkit` is mostly the same with `Chromium`, following steps are indeed modified from the [Get the Code](http://www.chromium.org/developers/how-tos/get-the-code).
 
-First find a place to put our code, it will take up about 14G disk space after compilation. Assume you store code under `node-webkit` folder, our final directory architecture will be like:
+First find a place to put our code, it will take up about 14G disk space after compilation. Assume you store code under `node-webkit` folder, after the code is downloaded by gclient, our final directory architecture will be like:
 
     node-webkit/
     |-- .gclient
@@ -27,7 +27,7 @@ First find a place to put our code, it will take up about 14G disk space after c
         |-- ...
         `-- content
             |-- ...
-            `-- nw
+            `-- nw  (source code of this repo)
 
 Then create the `.gclient` file under `node-webkit`, its content should be:
 
