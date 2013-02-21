@@ -18,18 +18,9 @@ And preview the upstream instructions for your platform, they contained importan
 
 `node-webkit` is now a part of our custom `Chromium`, that means the way we get `node-webkit` is mostly the same with `Chromium`, following steps are indeed modified from the [Get the Code](http://www.chromium.org/developers/how-tos/get-the-code).
 
-First find a place to put our code, it will take up about 14G disk space after compilation. Assume you store code under `node-webkit` folder, after the code is downloaded by gclient, our final directory architecture will be like:
+First find a place to put our code, it will take up about 14G disk space after compilation.
 
-    node-webkit/
-    |-- .gclient
-    `-- src/
-        |-- many-stuff
-        |-- ...
-        `-- content
-            |-- ...
-            `-- nw  (source code of this repo)
-
-Then create the `.gclient` file under `node-webkit`, its content should be:
+To start, make an empty directory, say `node-webkit`, then create the `.gclient` file in it, its content should be:
 
     solutions = [
        { "name"        : "src",
@@ -52,6 +43,17 @@ Then create the `.gclient` file under `node-webkit`, its content should be:
 Finally sync code under `node-webkit` directory (where `.gclient` resides), it would spend a few hours depending on your network condition:
 
     gclient sync
+
+Assume you store code under `node-webkit` folder, after all code is downloaded by gclient, our final directory architecture will be like:
+
+    node-webkit/
+    |-- .gclient
+    `-- src/
+        |-- many-stuff
+        |-- ...
+        `-- content
+            |-- ...
+            `-- nw  (source code of this repo)
 
 Note: if you're on Linux and you get any dependency errors during `gclient sync` (like 'nss' or 'gtk+-2.0'), run `./src/build/install-build-deps.sh`, then re-run gclient sync:
 
