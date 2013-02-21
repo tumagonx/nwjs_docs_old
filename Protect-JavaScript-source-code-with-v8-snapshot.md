@@ -24,15 +24,17 @@ Add the following field to `package.json`:
 
 ## Run
 
-It's important to remember that the compiled code runs **when you launch `nwsnapshot`**. Then the JS heap state is saved to the binary file (e.g. `snapshot.bin`) and restored right before your application launches. So it's better to just define functions or variables there.
+It's important to remember that the code being compiled is evaluated **when you launch `nwsnapshot`**. Then the JS heap state is saved to the binary file (e.g. `snapshot.bin`) and restored right before JS context creation (and before your application launches). So you may not want to run any code in the top level scope. So it's better to just define functions or variables there.
 
-And the scripts runs/loads loads very early (you can assume it's earlier than context creation) so DOM objects such as `window` is not defined. So you may want to defined functions and pass `window` as argument.
+And the scripts runs/loads loads very early (you can assume it's earlier than context creation) so Node and DOM objects such as `window` is not defined. So you may want to defined functions and pass `window` as argument.
 
-The snapshot is a kind of 'template' used to create JS contexts. So the objects defined there will be in every JS contexts.
+The snapshot is used by V8 as a kind of 'template' to create JS contexts. So the objects defined there will be in every JS contexts.
 
 ## Limitation
 
-The source code being compiled **cannot be too big**. `nwsnapshot` will report error when this happens.
+The source code being compiled **cannot be too big**. `nwsnapshot` will report error when this happens. 
+
+Experiments show that 3 copies of the jquery library will exceed this limit. If you feel this is too small for your application, consider split your code into 2 parts: compiled and plain source, or you can file an issue.
 
 The compiled code runs **slower than normal JS**: ~30% performance according to v8bench. Normal JS source code will not be affected.
 
