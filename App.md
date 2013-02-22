@@ -41,4 +41,4 @@ Following events can be listened by using `App.on()` function, for more informat
 
 _Available after node-webkit v0.3.2_
 
-Emitted when users opened a file with your app. For more on this, see [[Handling files]].
+Emitted when users opened a file with your app. For more on this, see [[Handling files and arguments]].
