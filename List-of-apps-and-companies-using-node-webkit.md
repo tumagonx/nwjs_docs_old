@@ -1,6 +1,12 @@
 Here is the list of apps and companies using node-webkit. If you want your app or company listed, you can add it yourself or send a mail to roger.wang@intel.com, both public and private apps would be fine.
 
 ## Apps
+### HostSpirit
+
+HostSpirit  -  A simple host editor for windows users
+
+Source @ https://github.com/mamboer/jqfocus/tree/master/mods/nwapps/hostspirit
+
 ### Simple Ace Editor
 
 Ace Text Editor  -  The Same Editor that powers github.com
@@ -117,4 +123,3 @@ TeeChart is an HTML5 charting and graphing library, fully compatible with node-w
 Get it at http://www.steema.com/teechart/html5
 
 [![Image](http://www.steema.com/uploads/products/screenshot1Scroller_th.jpg)](http://www.steema.com/uploads/products/screenshot1Scroller_th.jpg)
-
