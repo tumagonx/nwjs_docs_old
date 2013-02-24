@@ -1,6 +1,14 @@
 Here is the list of apps and companies using node-webkit. If you want your app or company listed, you can add it yourself or send a mail to roger.wang@intel.com, both public and private apps would be fine.
 
 ## Apps
+### Weather-Map
+
+Weather-Map free weather map
+
+Weather-Map is a desktop application that provides free weather data. Weather-Map wide range of weather data - map with current weather, quantity of precipitation, wind speed, clouds cover, sea Level Pressure contour maps, temperature, snow precipitation, data from weather stations, data from radars, data for cities. Weather data is received from [OpenWeatherMap](http://www.openweathermap.org) api.
+
+It's open sourced at https://github.com/rafaelkyrdan/Weather-Map
+
 ### HostSpirit
 
 HostSpirit  -  A simple host editor for windows users
