@@ -34,9 +34,9 @@ The snapshot is used by V8 as a kind of 'template' to create JS contexts. So the
 
 The source code being compiled **cannot be too big**. `nwsnapshot` will report error when this happens. 
 
-Experiments show that 3 copies of the jquery library will exceed this limit. If you feel this is too small for your application, consider split your code into 2 parts: compiled and plain source, or you can file an issue.
+Experiments show that 3 copies of the jquery library will exceed this limit. If you feel this is too small for your application, consider split your code into 2 parts: compiled and plain source. If you have a real need against this limit, please file an issue and we'll find time to fix it.
 
-The compiled code runs **slower than normal JS**: ~30% performance according to v8bench. Normal JS source code will not be affected.
+The compiled code runs **slower than normal JS**: ~30% performance according to v8bench. Normal JS source code will not be affected. Again, if you have a real need against this limit, please file an issue and we'll find time to fix it.
 
 The compiled code is **not cross-platform nor compatible between versions** of node-webkit. So you'll need to run `nwsnapshot` for each of the platforms when you package your application.
 
