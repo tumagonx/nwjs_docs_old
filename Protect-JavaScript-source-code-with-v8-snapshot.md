@@ -6,6 +6,8 @@ The JavaScript source code of your application can be protected by compiling to 
 
 There are important limitations in the current implementation. Please see the 'Limitation' section.
 
+This feature is the fix for [issue 269](https://github.com/rogerwang/node-webkit/issues/269)
+
 ## Compilation
 
 JS source code is compiled to native code (aka. 'snapshot') with the tool `nwsnapshot`, which is provided in the binary download of `node-webkit`. To use it:
