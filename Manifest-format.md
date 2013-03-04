@@ -7,7 +7,7 @@ Every app package should contain a manifest file named `package.json`, it will t
   "main": "index.html",
   "name": "nw-demo",
   "description": "demo app of node-webkit",
-  "version": "0.1",
+  "version": "0.1.0",
   "keywords": [ "demo", "node-webkit" ],
   "window": {
     "icon": "link.png",
