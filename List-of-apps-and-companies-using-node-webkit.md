@@ -65,11 +65,11 @@ Docular is an open-source and cross-platform editor for markdown documents!
 
 Feel free to fork it on [Github](https://github.com/danielking/docular)!
 
-![mac](https://raw.github.com/danielking/docular/master/screenshots/docular_mac.png)
+![mac](https://github.com/danielking/docular/blob/5b70943bb682da1eadf830a51ae736a74432018f/screenshots/docular_mac.png?raw=true)
 
-![linux](https://raw.github.com/danielking/docular/master/screenshots/docular_linux.png)
+![linux](https://github.com/danielking/docular/blob/5b70943bb682da1eadf830a51ae736a74432018f/screenshots/docular_linux.png?raw=true)
 
-![win](https://raw.github.com/danielking/docular/master/screenshots/docular_win.png)
+![win](https://github.com/danielking/docular/blob/5b70943bb682da1eadf830a51ae736a74432018f/screenshots/docular_win.png?raw=true)
 
 
 ### CSS Shack
