@@ -1,6 +1,15 @@
 Here is the list of apps and companies using node-webkit. If you want your app or company listed, you can add it yourself or send a mail to roger.wang@intel.com, both public and private apps would be fine.
 
 ## Apps
+
+### Koala
+
+Koala is a developer tool for less, sass and coffeescript compilation, to help web developers to use less,sass and coffeescript development more efficient.
+
+Get it at [http://koala-app.com/](http://koala-app.com/)
+
+![koala](http://koala-app.com/images/screenshots/linux.png)
+
 ### MUVConf
 
 MUVConf is a SIP multi-user video conference. See demo [video](http://youtu.be/YrBU-Aqtvrk).
