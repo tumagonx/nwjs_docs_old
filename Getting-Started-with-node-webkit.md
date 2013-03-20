@@ -12,7 +12,7 @@ To begin our introduction to node-webkit, we'll start with the simplest program 
 
 Create `index.html`:
 
-````html
+```html
 <html>
 <head>
 <title>Hello World!</title>
@@ -21,16 +21,16 @@ Create `index.html`:
 <h1>Hello World!</h1>
 </body>
 </html>
-````
+```
 
 Create `package.json`:
 
-````json
+```json
 {
   "name": "nw-demo",
   "main": "index.html"
 }
-````
+```
 
 Compress `index.html` and `package.json` into a zip archive, and rename
 it to `app.nw`:
@@ -42,9 +42,9 @@ it to `app.nw`:
 Download the prebuilt binary for your platform and use it to open the
 `app.nw` file:
 
-````bash
+```bash
 $ ./nw app.nw
-````
+```
 
 Note: on Windows, you can drag the `app.nw` to `nw.exe` to open it.
 
@@ -58,8 +58,8 @@ There are APIs for native UI controls in node-webkit. You can use these for cont
 
 The following example shows how to use menu.
 
-````html
- <html>
+```html
+<html>
 <head>
   <title> Menu </title>
 </head>
@@ -132,4 +132,4 @@ win.menu = menubar;
 </script>  
 </body>
 </html>
-````
+```
