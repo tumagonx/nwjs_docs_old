@@ -2,16 +2,17 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 
 ## For Users
 
-Basic:
+Overview:
 * [[Features list]]
+* [[Getting Started with node-webkit]]
 * [[How to run apps]]
 * [[How to package and distribute your apps]]
-* [[Manifest format]] - the format of `package.json`
 * [[How to use 3rd party node.js modules in node-webkit]]
 * [[Troubleshooting]]
 
-API:
+Library Reference:
 * [Node.js Manual & Documentation](http://nodejs.org/api/)
+* [[Manifest format]] - the format of `package.json`
 * [[Native UI API Manual]] - node-webkit API for native UI controls
 * [[Changes related to Node]] - Things added/changed to Node API after bring in DOM
 
