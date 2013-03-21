@@ -138,17 +138,17 @@ win.menu = menubar;
 
 You can call node.js and modules directly fomr the DOM. So it enable endless possibilities for writing apps with node-webkit.
 
-````html
+```html
 <html>
 <body>
 <script>
-// get the system platformusing node.js
+// get the system platformu sing node.js
 var os = require('os')
 document.write('Our computer is: ', os.platform())
 </script>
 </body>
 </html>
-````
+```
 
 
 ## Run and Package Apps
