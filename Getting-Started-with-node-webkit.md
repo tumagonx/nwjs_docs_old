@@ -1,6 +1,6 @@
 This chapter is contains some tutorial information to get you started with node-webkit programming. It assumes that you have node-webkit binaries. If you want to build node-webkit itself first, refer to the [[Building node-webkit]] section.
 
-Since node-webkit is based on [Chromium](www.chromium.org) and node.js. It let us call node.js code and modules directly from the DOM, and using all Web technologies for your apps.
+Since node-webkit is based on [Chromium](www.chromium.org) and node.js. It let us call node.js code and modules directly from the DOM, and using all Web technologies for your apps. So we can easily package a web application to a native application.
 
 ## Basics
 
@@ -133,3 +133,40 @@ win.menu = menubar;
 </body>
 </html>
 ```
+
+**Example 3. Using node.js**
+
+You can call node.js and modules directly fomr the DOM. So it enable endless possibilities for writing apps with node-webkit.
+
+````html
+<html>
+<body>
+<script>
+// get the system platformusing node.js
+var os = require('os')
+document.write('Our computer is: ', os.platform())
+</script>
+</body>
+</html>
+````
+
+
+## Run and Package Apps
+
+Now, we can write simple node-webkit apps. Next is to learn how to run and package them. 
+
+**Run the App**
+
+There are two general ways to run apps for all platform.
+
+* From a folder. The startup path specifies this folder.
+* From a .nw file (a renamed .zip-file). The startup path specifies the file.
+
+For Example:
+
+````bash
+nw path_to_app_dir
+nw path_to_app.nw
+````
+
+Go back to [Wiki](https://github.com/rogerwang/node-webkit/wiki) for much more.
