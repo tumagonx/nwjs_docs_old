@@ -24,6 +24,9 @@ Weather-Map free weather map
 
 Weather-Map is a desktop application that provides free weather data. Weather-Map wide range of weather data - map with current weather, quantity of precipitation, wind speed, clouds cover, sea Level Pressure contour maps, temperature, snow precipitation, data from weather stations, data from radars, data for cities. Weather data is received from [OpenWeatherMap](http://www.openweathermap.org) api.
 
+![weather-map](http://habrastorage.org/storage2/919/dac/c3f/919dacc3f855a708973865d8f1bd9ac8.png)
+![weather-map](http://habrastorage.org/storage2/21d/848/217/21d848217df767728a27c7b4da3c4154.png)
+
 It's open sourced at https://github.com/rafaelkyrdan/Weather-Map
 
 ### HostSpirit
