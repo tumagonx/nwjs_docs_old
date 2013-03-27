@@ -65,6 +65,10 @@ Simple and clear description of how the algorithm allows the two sides
 to get secret key using a unsafe channel.
 http://www.youtube.com/watch?v=3QnD2c4Xovk
 
+![cypher](http://habrastorage.org/storage2/8c7/2a8/b17/8c72a8b175c178aa658919ee465df642.png)
+
+![cypher](http://habrastorage.org/storage2/15d/83a/a9d/15d83aa9dfb7029939daba8dd2ce9872.png)
+
 
 It's open sourced at http://rafaelkyrdan.github.com/cypher/ 
 
