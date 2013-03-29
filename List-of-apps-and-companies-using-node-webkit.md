@@ -128,6 +128,11 @@ written as plugins, that are just plain npm packages.
 
 [Arduinoscope](https://github.com/konsumer/arduinoscope) is an oscilloscope for Arduinos running Firmata. There are 2 GUIs, one of them uses node-webkit.
 
+### Markgiu
+[Markgiu](https://github.com/bianchimro/markgiu) is a node-webkit based MarkDown editor, built with knockoutjs, bootstrap and other web niceties.
+![markgiu screenshot](https://raw.github.com/bianchimro/markgiu/master/screenshots/screenshot2.png)
+
+
 ## Companies
 
 ### Everytime
