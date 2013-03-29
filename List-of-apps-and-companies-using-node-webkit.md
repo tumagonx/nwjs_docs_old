@@ -130,7 +130,7 @@ written as plugins, that are just plain npm packages.
 
 ### Markgiu
 [Markgiu](https://github.com/bianchimro/markgiu) is a node-webkit based MarkDown editor, built with knockoutjs, bootstrap and other web niceties.
-![markgiu screenshot](https://raw.github.com/bianchimro/markgiu/master/screenshots/screenshot2.png)
+![markgiu screenshot](https://raw.github.com/bianchimro/markgiu/master/screenshots/screenshot1.png)
 
 
 ## Companies
