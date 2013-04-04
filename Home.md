@@ -5,7 +5,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 Overview:
 * [[Features list]]
 * [[Getting Started with node-webkit]]
-* [How to open a window](Window)
+* [How to open a window](wiki/Window)
 * [[How to run apps]]
 * [[How to package and distribute your apps]]
 * [[How to use 3rd party node.js modules in node-webkit]]
