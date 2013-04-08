@@ -98,6 +98,20 @@ for (var i = 0; i < files.length; ++i)
 
 If you make use of the `fs` module with this, you will do magics not possible in browser.
 
+# Default path
+
+_This feature requires node-webkit >= v0.5.0_
+
+Sometimes the application may intelligently suggest where some files might be saved (or loaded) so that its users don't have to do any manual navigating where such suggestion is correct.
+
+Such path suggestion is given as a value of yet another custom attribute (`nwworkingdir`):
+
+```html
+<input type="file" nwworkingdir="…" />
+```
+
+The file dialog starts in the given directory when this element is activated.
+
 # Why not provide API in javascript
 
 We do not provide file dialog API in javascript for following reasons now:
