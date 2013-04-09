@@ -1,6 +1,6 @@
 This chapter is contains some tutorial information to get you started with node-webkit programming. It assumes that you have node-webkit binaries. If you want to build node-webkit itself first, refer to the [[Building node-webkit]] section.
 
-Since node-webkit is based on [Chromium](www.chromium.org) and node.js. It let's us call node.js code and modules directly from the DOM, and allows us to use Web technologies for your apps. So we can easily package a web application to a native application.
+Since node-webkit is based on [Chromium](www.chromium.org) and node.js. It let's us call node.js code and modules directly from the DOM, and allows you to use Web technologies for your apps. Further, you can easily package a web application to a native application.
 
 ## Basics
 
