@@ -10,6 +10,7 @@ Overview:
 * [[How to package and distribute your apps]]
 * [[How to use 3rd party node.js modules in node-webkit]]
 * [[Troubleshooting]]
+* [[Security]]
 
 Library Reference:
 * [Node.js Manual & Documentation](http://nodejs.org/api/)
