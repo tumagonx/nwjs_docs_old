@@ -8,5 +8,6 @@ Which frames are Node frames and which are not?
 
 What can Node frames do?
 
-1. Node support: access to `require`, `global`, `process`, 'Buffer' and 'root' from Node.
-2. Universal access to other frames: this can get around the cross-domain security check defined in DOM.
+1. Node support: access to `require`, `global`, `process`, `Buffer` and `root` from Node.
+2. Universal access to other frames: this can get around all cross-domain security checks defined in DOM.
+3. Ignore `X-Frame-Options` headers for child frames.
