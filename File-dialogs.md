@@ -106,8 +106,16 @@ Sometimes the application may intelligently suggest where some files might be s
 
 Such path suggestion is given as a value of yet another custom attribute (`nwworkingdir`):
 
+### Windows 
+
 ```html
-<input type="file" nwworkingdir="…" />
+<input type="file" nwworkingdir="C:\Windows" />
+```
+
+### Unix
+
+```html
+<input type="file" nwworkingdir="/home/path/" />
 ```
 
 The file dialog starts in the given directory when this element is activated.
