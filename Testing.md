@@ -1,0 +1,1 @@
+Now node-webkit's testing works have to parts: automatic tests and manual test. Node-webkit uses [Mocha] to run automatice tests.
