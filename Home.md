@@ -30,6 +30,7 @@ Advanced:
 * [[Get version of node-webkit in app]]
 * [What if Node's require() conflicts with the same name in your code (e.g. RequireJS) ?](wiki/faq-name-conflict)
 * [[Protect JavaScript source code with v8 snapshot]]
+* [[Testing]]
 
 HTML5 Features:
 * [[Play with window]]
