@@ -2,7 +2,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 
 ## For Users
 
-Overview:
+**Overview:**
 * [[Features list]]
 * [[Getting Started with node-webkit]]
 * [How to open a window](wiki/Window)
@@ -12,13 +12,13 @@ Overview:
 * [[Troubleshooting]]
 * [[Security]]
 
-Library Reference:
+**Library Reference:**
 * [Node.js Manual & Documentation](http://nodejs.org/api/)
 * [[Manifest format]] - the format of `package.json`
 * [[Native UI API Manual]] - node-webkit API for native UI controls
 * [[Changes related to Node]] - Things added/changed to Node API after bring in DOM
 
-Advanced:
+**Advanced:**
 * [[The Kiosk mode]]
 * [[File dialogs]]
 * [[Support mp3 and H264 in video and audio tag]]
@@ -30,21 +30,23 @@ Advanced:
 * [[Get version of node-webkit in app]]
 * [What if Node's require() conflicts with the same name in your code (e.g. RequireJS) ?](wiki/faq-name-conflict)
 * [[Protect JavaScript source code with v8 snapshot]]
+
+**Testing**
 * [The Testing work with node-webkit](wiki/Testing)
 
-HTML5 Features:
+**HTML5 Features:**
 * [[Play with window]]
 * [[Dragging files into page]]
 * [[Save persistent data in app]]
 * [[Control camera and microphone with getUserMedia API]]
 * [[Use datalist for auto completion]]
 
-Debugging:
+**Debugging:**
 * [[Debugging with devtools]]
 * [[Debugging with Sublime Text 2]]
 * [[The nw protocol]]
 
-Traps:
+**Traps:**
 * [[Console and timers]]
 * [[Transfer objects between window and node]]
 
