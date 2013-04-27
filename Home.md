@@ -19,11 +19,12 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[Changes related to Node]] - Things added/changed to Node API after bring in DOM
 
 **Advanced:**
+* [[Build native modules with nw-gyp]]
+* [Command line arguments of 'nw' executable](wiki/Command-line-switches)
+* [[mini browser in iframe]]
 * [[The Kiosk mode]]
 * [[File dialogs]]
 * [[Support mp3 and H264 in video and audio tag]]
-* [[Build native modules with nw-gyp]]
-* [Command line arguments of 'nw' executable](wiki/Command-line-switches)
 * [[Third party browser plugins]]
 * [[WebGL support on Windows]]
 * [[About node.js server side script in node-webkit]] - wonder how to use `express` stuff in node-webkit?
