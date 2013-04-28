@@ -2,7 +2,7 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
-#### Prepros App
+#### [Prepros App](http://alphapixels.com/prepros)
 >Prepros is a free and open source app that can compile less, sass, stylus, jade, haml and much more with live browser refresh.
 
 Get more info at [http://alphapixels.com/prepros](http://alphapixels.com/prepros)
