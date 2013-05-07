@@ -14,7 +14,7 @@ In order to show the `devtools` button in toolbar, you should make sure your win
 
 Then you can open devtools from the `devtools` button (the one on the right of url entry) in the toolbar.
 
-**Note:** On Windows and Linux, you need to make sure `nw.pak` is in the same directory with `nw`(Linux) or `nw.exe` (Window)
+**Requirement:** On Windows and Linux, you need to make sure `nw.pak` is in the same directory with `nw` (Linux) or `nw.exe` (Windows).
 
 ## Remote Debugging
 
