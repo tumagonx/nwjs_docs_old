@@ -1,7 +1,7 @@
 _This document is still under construction_
 
 ## console
-Since node-webkit is not a console app, console.log is now redirected to Webkit's console. So you can see it in devtools.
+Since node-webkit supports GUI applications instead of console applications, the output of `console.log()` (and other similar methods such as `console.warn()` and `console.error()`) is redirected to WebKit's console. You may see it in your “[Developer Tools](Debugging-with-devtools)” window (on its “Console” tab).
 
 ## process
 A couple of new fields is added to the global `process` object:
