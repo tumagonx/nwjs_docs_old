@@ -83,6 +83,9 @@ http://www.youtube.com/watch?v=3QnD2c4Xovk
 
 It's open sourced at http://rafaelkyrdan.github.com/cypher/ 
 
+### Clock
+This is a clock application for Ubuntu: http://michealhark.tk/applications/clock/
+
 ### Fawave Desktop
 
 The desktop edition of fawave, a popular chrome extension.
