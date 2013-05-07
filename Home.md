@@ -31,6 +31,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[Get version of node-webkit in app]]
 * [What if Node's require() conflicts with the same name in your code (e.g. RequireJS) ?](wiki/faq-name-conflict)
 * [[Protect JavaScript source code with v8 snapshot]]
+* [[The solution of lacking libudev.so.0]]
 
 **Testing**
 * [The Testing work with node-webkit](wiki/Testing)
