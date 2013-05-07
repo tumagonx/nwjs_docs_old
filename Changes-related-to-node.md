@@ -4,8 +4,9 @@ _This document is still under construction_
 Since node-webkit is not a console app, console.log is now redirected to Webkit's console. So you can see it in devtools.
 
 ## process
+A couple of new fields is added to the global `process` object:
 * `process.versions['node-webkit']` is set with node-webkit's version.
-* `process.mainModule` is set for start page (`index.html`). When `node-main` is specified in the manifest, `process.mainModule` points to `node-main`.
+* `process.mainModule` is set for the start page (such as `index.html`) as specified in the manifest's [`main`](Manifest-format#main) field. However, when the [`node-main`](Manifest-format#node-main) field is also specified in the manifest, `process.mainModule` points to the file specified in the `node-main` field.
 
 ## global
 The following names are inserted to the global object in Node's context:
