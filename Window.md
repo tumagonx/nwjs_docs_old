@@ -350,6 +350,10 @@ Emitted when window zooming changed. It has a parameter indicating the new zoom 
 ### capturepagedone
 Emitted after the capturePage method is called and image data is ready. See `Window.capturePage's` callback function for the parameter's value definition. 
 
+## Issues
+
+Now on linux, the function `setMaximumSize()/setMinimumSize()` and `setResizable()` can not be set at the same time. If do so, they all do not work. Please taking care of this.
+
 ## See also
 
 * [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter)
