@@ -6,7 +6,7 @@ install the package `libudev1`, and there is `libudev.so.1` at `/lib/x86_64-linu
 
 ````bash
 $ apt-get install libudev1
-$ cd /lib/x86_64-linux-gun/
+$ cd /lib/x86_64-linux-gnu/
 $ ln -s libudev.so.1 libudev.so.0
 ````
 
