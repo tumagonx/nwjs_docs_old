@@ -5,3 +5,12 @@ Audio should work. The problem should be the codec for mp3 or other non-free med
 
 # WebGL
 2 extra DLL files from DirectX are needed, or your GFX card/driver is on Chromium's black list. See https://github.com/rogerwang/node-webkit/issues/185
+
+# Lack of libudev.so.0
+Maybe node-webkit doesn't work on your computer with the error.
+
+````
+nw: error while loading shared libraries: libudev.so.0: cannot open shared object file: No such file or directory
+````
+
+See https://github.com/rogerwang/node-webkit/issues/136. and the temporary solution [[The solution of lacking libudev.so.0]]
