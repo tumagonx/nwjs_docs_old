@@ -6,6 +6,8 @@ Audio should work. The problem should be the codec for mp3 or other non-free med
 # WebGL
 2 extra DLL files from DirectX are needed, or your GFX card/driver is on Chromium's black list. See https://github.com/rogerwang/node-webkit/issues/185
 
+Sometimes the css doesn't display correctly, such as `-webkit-transform:translateZ(-1000px);`. Maybe it's the problem with the WebGL.
+
 # Lack of libudev.so.0
 Maybe node-webkit doesn't work on your computer with the error.
 
