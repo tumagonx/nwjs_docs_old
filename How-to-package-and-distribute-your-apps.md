@@ -99,3 +99,7 @@ The `nw.pak` and `icudt.dll` must be shipped along with `nw.exe`, the former one
 ### Mac OS X
 
 Just ship the `node-webkit.app` would be fine, you don't need to care for other things.
+
+## Alternative way
+
+You can just put files of node-webkit in the same directory with your package.json and then distribute the tree. When nw executable is started it will look for package.json in the same directory.
