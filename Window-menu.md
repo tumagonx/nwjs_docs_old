@@ -44,6 +44,6 @@ Another thing you may encounter is that the first item of application menu shows
 
 ## Best practice
 
-As mentioned above, on Windows and Linux each window can has one menubar, while on Mac one app can have only one application menu. So generally you should set menu for only your main window and avoid using window menu when you may have multiple main windows.
+As mentioned above, on Windows and Linux each window can have one menubar, while on Mac an app can have only one application menu. So generally you should set menu for only your main window and avoid using window menu when you may have multiple main windows.
 
 And it may happens that you want to design different menus for different platforms, then you can use [process.platform](http://nodejs.org/api/process.html#process_process_platform) to get which platform you're in.
