@@ -35,7 +35,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [Icons](wiki/Icons)
 
 **Testing**
-* [The Testing work with node-webkit](wiki/Testing)
+* [The Testing work for node-webkit](wiki/Testing)
 
 **HTML5 Features:**
 * [[Play with window]]
