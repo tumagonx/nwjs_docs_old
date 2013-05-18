@@ -51,7 +51,4 @@ holder.ondrop = function (e) {
 };
 ```
 
-If you're using jQuery to bind your drag / drop events, keep in mind that the event object passed back to your handlers is a jQuery event object, not the original HTML5 event object.  Therefore, you need to access the `dataEvents` object by doing:
-```
-   e.originalEvent.dataTransfer
-```
+If you're using jQuery to bind your drag / drop events, keep in mind that the event object passed back to your handlers is a jQuery event object, not the original HTML5 event object. Therefore, when you need to access the `dataTransfer` object, you have to use the `e.originalEvent.dataTransfer` field.
