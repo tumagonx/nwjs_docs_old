@@ -6,7 +6,17 @@ Now node-webkit's testing works have to parts: automatic tests and manual test. 
 
 ## How do we test with Mocha
 
-In folder `automatic_test`, every subdirectory has a file called `mocha_test.js`. In `mocha_test.js`, there are test cases writed using mocha. Finally we load these test case and run them in `index.html`.
+In folder `automatic_tests`, every subdirectory has a file called `mocha_test.js`. In `mocha_test.js`, there are test cases writed using mocha. Finally we load these test case and run them in `index.html`. The structure is:
+
+    node-webkit/
+    |-- src/
+    `-- tests/
+        |-- index.html
+        |-- ...
+        `-- automatic_tests/
+            |-- ...
+            `-- node/
+                |-- mocha_test.js
 
 ## How to write test case for node-webkit
 
@@ -40,5 +50,4 @@ var client = require('nw_test_app').createClient({
   data: {ok : true},
 });
 ```
-
 
