@@ -40,8 +40,8 @@ It's open sourced at https://github.com/rafaelkyrdan/Weather-Map
 ### HostSpirit
 
 HostSpirit  -  A simple host editor for windows users
-
-Source @ https://github.com/mamboer/jqfocus/tree/master/mods/nwapps/hostspirit
+![HostSpirit](http://faso.me/nwapp/hostspirit/assets/img/hs.jpg)
+Source @ https://github.com/mamboer/nwapp/tree/master/hostspirit
 
 ### Simple Ace Editor
 
