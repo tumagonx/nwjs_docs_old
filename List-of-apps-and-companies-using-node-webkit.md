@@ -176,3 +176,13 @@ Get it at http://www.steema.com/teechart/html5
 ### Facebook AoPS.app (internal design tool)
 
 Remote Inspector for Adobe Photoshop. Wraps the https://github.com/subtleGradient/node-photoshop-inspector-server project in a Mac app and adds some features that are handy for Designers at Facebook.
+
+### Fleex player
+
+The [fleex](http://fleex.tv/) player is a desktop application that helps you get better at English by watching your favorite tv shows and movies:
+* We find the subtitles for you
+* It works with all your video (it's VLC-based)
+* You can adapt the subtitles to your level
+* Many more features like built-in dictionaries, idioms detection...
+
+[![Image](https://fleex.blob.core.windows.net/misc/staticImages/node_webkit.png)](http://fleex.tv)
