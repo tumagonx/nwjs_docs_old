@@ -49,7 +49,7 @@ $(document).ready(function() {
 </script>
 ```
 
-Another example is how I refresh the address bar and folder view in [zcbenz/nw-file-explorer](https://github.com/zcbenz/nw-file-explorer), see [node_modules/folder_view.js](https://github.com/zcbenz/nw-file-explorer/blob/master/node_modules/folder_view.js) and [node_modules/address_bar.js](https://github.com/zcbenz/nw-file-explorer/blob/master/node_modules/address_bar.js).
+Another example is how I refresh the address bar and folder view in [zcbenz/nw-file-explorer](https://github.com/zcbenz/nw-sample-apps/tree/master/file-explorer), see [node_modules/folder_view.js](https://github.com/zcbenz/nw-sample-apps/blob/master/file-explorer/node_modules/folder_view.js) and [node_modules/address_bar.js](https://github.com/zcbenz/nw-sample-apps/blob/master/file-explorer/node_modules/address_bar.js).
 
 ### Why not the router way?
 
