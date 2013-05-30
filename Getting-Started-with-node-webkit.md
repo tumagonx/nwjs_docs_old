@@ -136,7 +136,7 @@ win.menu = menubar;
 
 **Example 3. Using node.js**
 
-You can call node.js and modules directly fomr the DOM. So it enable endless possibilities for writing apps with node-webkit.
+You can call node.js and modules directly from the DOM. So it enable endless possibilities for writing apps with node-webkit.
 
 ```html
 <html>
