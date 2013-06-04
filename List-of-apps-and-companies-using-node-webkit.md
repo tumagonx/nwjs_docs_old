@@ -143,6 +143,11 @@ written as plugins, that are just plain npm packages.
 [Markgiu](https://github.com/bianchimro/markgiu) is a node-webkit based MarkDown editor, built with knockoutjs, bootstrap and other web niceties.
 ![markgiu screenshot](https://raw.github.com/bianchimro/markgiu/master/screenshots/screenshot1.png)
 
+### Sync Hard
+
+[Sync Hard](http://synchardapp.com/) is a super simplified GUI front-end to rsync.  It will optionally create md5 checksums of each file before and after being transferred.
+
+![Sync Hard screenshot](http://synchardapp.com/img/screenshot-130603.png)
 
 ## Companies
 
