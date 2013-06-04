@@ -1,4 +1,4 @@
-It's very common to store persistent data in native apps, people usually do it by embedding database libraries or manipulate plain text files. In node-webkit, you have much better choices than that, you can use `Web SQL Database`, `Web Storage` or `Application Cache` without headaches of any extra dependencies.
+It's very common to store persistent data in native apps, people usually do it by embedding external databases or manipulating plain text files. In node-webkit, you have much better choices than that, you can use `Web SQL Database`, `embedded databases`, `Web Storage` or `Application Cache` without headaches of any extra dependencies.
 
 ## Web SQL Database
 
@@ -59,7 +59,10 @@ It can directly replicate to/from CouchDB, which gives it an advantage if you ar
 
 ## EJDB
 [EJDB](https://github.com/Softmotions/ejdb) (Embedded JSON Database engine) is a simple & fast database engine based on Tokyo Cabinet. It's usage copies MongoDB - you can easily make dynamic queries and sort/paginate the result.
-The fast queries and easy-to-use API make it the best choice for node-webkit.
+The fast queries and easy-to-use API make it a very good choice for node-webkit.
+
+## NeDB
+[NeDB](https://github.com/louischatriot/nedb) (Node embedded database) is a pure javascript database for Node.js (unlike EJDB, you don't need to compile anything). It implements the most common subset of MongoDB's and can be used to persist data or simply as an in-memory datastore. Even though it's not native, it's still fast enough for desktop apps (40k reads/s, 10k writes/s).
 
 ## Web Storage
 
