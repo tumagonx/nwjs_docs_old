@@ -20,9 +20,9 @@ In folder `automatic_tests`, every subdirectory has a file called `mocha_test.js
 
 ## How to write test case for node-webkit
 
-Mocha is easy to use, you can directly wirte mocha code in `mocha_test.js`. But if you have a simple app and want to ues it, there are some traps.
+Mocha is easy to use, we can directly write mocha code in `mocha_test.js`. But if we have a simple app and want to use it, there are some traps.
 
-Since you need to spawn a new process for the app, but there would be problem using the communication method of node.js's `child_process` modoule. So you need to use other method for the data transporting like using socket.
+Since we need to spawn a new process for the app, but there would be problem using the communication method of node.js's `child_process` module. So we need to use other method for the data transporting like using socket.
 
 In node-webkit testing system, we have implement a simple module `nw_test_app` for the job. How to use it:
 
