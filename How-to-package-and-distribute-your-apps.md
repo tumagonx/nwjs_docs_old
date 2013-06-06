@@ -104,3 +104,23 @@ Just ship the `node-webkit.app` would be fine, you don't need to care for other 
 
 * You can just put files of node-webkit in the same directory with your package.json and then distribute the tree. When nw executable is started it will look for package.json in the same directory.
 * [nodebob](https://github.com/geo8bit/nodebob) is a build tool for node-webkit that automates a release of your node-webkit application in windows environment. Currently in v0.1, written in windows batch script.
+
+## An alternative way to make an executable file in Windows
+
+After packaging `app.nw` into `nw.exe` in the above way, you still have to ship `app.exe` with `nw.pak` and some `*.dll` files to the end users. It's still possible to improve the result.
+
+[Enigma Virtual Box](http://enigmaprotector.com/en/aboutvb.html) is a software that 'enables application files and registry to be consolidated in a single executable file'. It's [free](http://forum.enigmaprotector.com/viewtopic.php?f=20&t=5334) for personal and commercial use. 
+
+__Attention__! "Enigma Virtual Box" and all accompanying files are licensed "AS IS" without warranties as to performance or merchantability or any other warranties whether expressed or implied. __You use this way at your own risk!__ There may or may not be some issues with the program generated.
+
+1. [Download](http://enigmaprotector.com/assets/files/enigmavb.exe) and install the software. 
+2. Open 'Enigma Virtual Box' from start menu or the program folder.
+3. Browse and choose the `app.exe` main program file in the `Enter Input File Name` blank.
+4. Drag (or use the 'add' button to select and add) all the other `*.dll` files and `nw.pak` into the 'Files' blank. When the 'Select Folder' panel alerts, choose '%DEFAULT FOLDER' (the default value in fact) and press 'OK' button.
+5. Press 'File Options', choose 'Compress Files', and 'OK' if you like.
+6. Some other configures if you know what you are doing.
+7. Press the big 'Process' button in the main panel.
+8. After all things done, you can press 'Close' and exit Enigma Virtual Box.
+9. There should be a new `app_boxed.exe` in the program folder now.
+
+Now you can move and distribute the single `app_boxed.exe` to anywhere, without any `nw.pak` and `*.dll` files.
