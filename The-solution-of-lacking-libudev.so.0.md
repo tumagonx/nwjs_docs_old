@@ -1,24 +1,32 @@
 #### WARNING: This solution is dangerous and may destabilize your system. Use at own risk.
 
-Now Ubuntu 13.04 has remove the package `libudev0`, but chromium is depending the lib. So the node-webkit can't run on Ubuntu 13.04. The same problem is also appears on Fedora 18. There are some solutions:
+Due to the removal of `libudev0` and its associated library `libudev.so.0`, node-webkit isn't able to run on newer distributions such as:
 
-**1. create the linker to `libudev.so.1` by hand.**
+ * Ubuntu 13.04
+ * Fedora 18
+ * Arch
+ * Gentoo
+ * Derivatives of the above
+
+...and possibly others. Until node-webkit is updated to depend on the currently shipped version `libudev.so.1`, the following solutions *should* provide a stopgap measure for testing and development purposes (though their safety is not guaranteed):
+
+**1. Create the symlink to `libudev.so.1` by hand.**
 
 install the package `libudev1`, and there is `libudev.so.1` at `/lib/x86_64-linux-gun/libudev.so.1`. On Ubuntu for example, Run:
 
-````bash
-$ apt-get install libudev1
-$ cd /lib/x86_64-linux-gnu/
-$ ln -s libudev.so.1 libudev.so.0
-````
+``` bash
+# apt-get install libudev1
+# cd /lib/x86_64-linux-gnu/
+# ln -s libudev.so.1 libudev.so.0
+```
 
-**2. through the .deb .rpm.**
+**2. Modify the .deb or .rpm package file**
 
-When install your app through the package. We can add some scripts for solving it. At the post install, create the linker to `libudev.so.1`.  
+When install your app through the package. We can add some scripts for solving it. At the post install, create the symlink to `libudev.so.1`.  
 
 Select the deb of Ubuntu for example. In the `DEBIAN/postinst` add these code. 
 
-````shell
+``` shell
 get_lib_dir() {
   if [ "$DEFAULT_ARCH" = "i386" ]; then
     LIBDIR=lib/i386-linux-gnu
@@ -50,4 +58,4 @@ add_udev_symlinks() {
   fi
 }
 
-````
+```
