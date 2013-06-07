@@ -1,3 +1,5 @@
+## WARNING: This solution is dangerous and may destabilize your system. Use at own risk.
+
 Now Ubuntu 13.04 has remove the package `libudev0`, but chromium is depending the lib. So the node-webkit can't run on Ubuntu 13.04. The same problem is also appears on Fedora 18. There are some solutions:
 
 **1. create the linker to `libudev.so.1` by hand.**
