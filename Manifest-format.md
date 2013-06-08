@@ -12,6 +12,7 @@ Every app package should contain a manifest file named `package.json`, it will t
   "window": {
     "icon": "link.png",
     "toolbar": true,
+    "frame": false,
     "width": 800,
     "height": 500,
     "position": "mouse",
