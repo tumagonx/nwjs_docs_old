@@ -2,6 +2,21 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### Gisto
+
+Gisto is a Cross-platform gist snippets management desktop application that allows you and your team share code snippets fast and easily.
+
+Based on GitHub Gists Infrastructure which means you can use all your existing snippets by connecting your GitHub account!
+
+| Light theme | Dark theme |
+|:------|:------|
+| ![Gisto](http://Gisto.github.io/img/lite_theme.png "Gisto") | ![Gisto](http://Gisto.github.io/img/dark_theme.png "Gisto") |
+
+
+See more at: [www.gistoapp.com](http://www.gistoapp.com)
+
+Source/Fork: [@GitHub](https://github.com/Gisto/Gisto)
+
 #### [Prepros App](http://alphapixels.com/prepros)
 >Prepros is a free and open source app that can compile less, sass, stylus, jade, haml and much more with live browser refresh.
 
