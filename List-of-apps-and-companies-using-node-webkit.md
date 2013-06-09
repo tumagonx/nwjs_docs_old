@@ -22,7 +22,7 @@ Source/Fork: [@GitHub](https://github.com/Gisto/Gisto)
 
 Get more info at [http://alphapixels.com/prepros](http://alphapixels.com/prepros)
 
-![Prepros screenshot](http://alphapixels.com/prepros/img/prepros.png)
+![Prepros screenshot](http://alphapixels.com/prepros/img/prepros.jpg)
 
 
 ### Koala
