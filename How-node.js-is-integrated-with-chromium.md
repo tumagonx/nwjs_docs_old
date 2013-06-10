@@ -20,7 +20,7 @@ This is the most important and trickiest part of `node-webkit`, first we initial
 
 ## Make Node start with render process
 
-Though `node` has a `Start` function that setups everything,it will redirect everything into its own message loop, so we split the `Start` function into several parts, see `third_party/node/src/node.cc`.
+Though `node` has a `Start` function that setups everything, it will redirect everything into its own message loop, so we split the `Start` function into several parts, see `third_party/node/src/node.cc`.
 
 And since `node` itself expects to execute a script file, there are many logics that deal with script execution in `third_party/node/src/node.js`, we heavily modified that part and used some tricks to make its module system run under `node-webkit`.
 
