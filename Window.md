@@ -206,9 +206,11 @@ _Requires node-webkit >= v0.3.5_
 
 Toggle the kiosk mode.
 
-### Window.showDevTools()
+### Window.showDevTools(id)
 
 Open the devtools to inspect the window.
+
+The `id` argument is supported since v0.6.0. It should be the value of `id` attribute of any `iframe` element in the window. It can be used to limit the devtools window to inspect only the iframe. For more information, please read [Devtools Jail Feature].
 
 ### Window.setMaximumSize(width, height)
 
