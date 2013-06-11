@@ -138,7 +138,7 @@ _since v0.4.1_
 {
   "name": "nw-demo",
   "main": "index.html",
-  "js-flags": "--harmony-proxies --harmony_collections"
+  "js-flags": "--harmony_proxies --harmony_collections"
 }
 ```
 
