@@ -80,7 +80,7 @@ This step is necessary to get some DirectX dlls files extracted, and we mentione
 
 After the `gclient sync`, project files should have be prepared. If not, you should manually run:
 
-    ./build/gyp_chromium content/content.gyp
+    ./build/gyp_chromium content/content.gyp   (on OSX the argument '--no-circular-check' is needed)
 
 Then you can just compile the `nw` target (and don't forget to build with `Release` mode):
 
