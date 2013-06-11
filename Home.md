@@ -34,6 +34,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[The solution of lacking libudev.so.0]]
 * [Icons](wiki/Icons)
 * [Shell](wiki/Shell) — a collection of APIs that do desktop related jobs
+* [[Devtools jail feature]] -- useful for IDE developers
 
 **Testing**
 * [The Testing work for node-webkit](wiki/Testing)
