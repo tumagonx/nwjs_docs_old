@@ -13,10 +13,10 @@ If you want to show Devtools in an iframe of your window, you can use this featu
 Call `Window.showDevTools(id, headless)`. When `headless` is `true`, there will be no new window popped up to show Devtools. A `devtools-opened` event will be sent to the `Window` object with a `url` parameter, which is the URL for showing Devtools UI.
 
 ```javascript
-    var win = nwgui.Window.get();
-    win.showDevTools('frame0', true);
-    win.on("devtools-opened", function(url) {
-        console.log("devtools-opened: " + url);
-        document.getElementById('devtools').src = url;
-    });
-````
+var win = nwgui.Window.get();
+win.showDevTools('frame0', true);
+win.on("devtools-opened", function(url) {
+    console.log("devtools-opened: " + url);
+    document.getElementById('devtools').src = url;
+});
+```
