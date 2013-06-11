@@ -357,7 +357,7 @@ Emitted when window zooming changed. It has a parameter indicating the new zoom 
 Emitted after the capturePage method is called and image data is ready. See `Window.capturePage's` callback function for the parameter's value definition. 
 
 ### devtools-opened
-Emitted after Devtools is ready after calling `Window.showDevTools(id, headless)` with `headless` = `true`. See [[Devtools jail feature]] and [[Window]] for more information.
+Emitted after Devtools is ready after calling `Window.showDevTools(id, headless)` with `headless` = `true`. The event callback has an `url` argument, which is the URL to load Devtools UI. See [[Devtools jail feature]] and [[Window]] for more information.
 
 ## Issues
 
