@@ -20,3 +20,5 @@ win.on("devtools-opened", function(url) {
     document.getElementById('devtools').src = url;
 });
 ```
+## see also
+[[Window]]
