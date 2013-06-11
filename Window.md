@@ -210,7 +210,7 @@ Toggle the kiosk mode.
 
 Open the devtools to inspect the window.
 
-The `id` argument is supported since v0.6.0. It should be the value of `id` attribute of any `iframe` element in the window. It can be used to limit the devtools window to inspect only the iframe. For more information, please read [Devtools Jail Feature].
+The `id` argument is supported since v0.6.0. It should be the value of `id` attribute of any `iframe` element in the window. It can be used to limit the devtools window to inspect only the iframe. For more information, please read [[Devtools Jail Feature]].
 
 ### Window.setMaximumSize(width, height)
 
