@@ -356,6 +356,9 @@ Emitted when window zooming changed. It has a parameter indicating the new zoom 
 ### capturepagedone
 Emitted after the capturePage method is called and image data is ready. See `Window.capturePage's` callback function for the parameter's value definition. 
 
+### devtools-opened
+Emitted after Devtools is ready after calling `Window.showDevTools(id, headless)` with `headless` = `true`. See [[Devtools jail feature]] and [[Window]] for more information.
+
 ## Issues
 
 Now on linux, the function `setMaximumSize()/setMinimumSize()` and `setResizable()` can not be set at the same time. If do so, they all do not work. Please taking care of this.
