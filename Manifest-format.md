@@ -207,7 +207,9 @@ _Following fields requires node-webkit >= v0.3.0._
 *(boolean)* whether to enable page cache, default to false.
 
 ### dom-storage-quota
+
 _since v0.6.0_
+
 *(int)* Number of mega bytes for the quota of the DOM storage.
 
 ## Other Fields
