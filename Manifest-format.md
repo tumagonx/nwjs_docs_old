@@ -206,6 +206,10 @@ _Following fields requires node-webkit >= v0.3.0._
 
 *(boolean)* whether to enable page cache, default to false.
 
+### dom-storage-quota
+_since v0.6.0_
+*(int)* Number of mega bytes for the quota of the DOM storage.
+
 ## Other Fields
 
 The [Packages/1.0](http://wiki.commonjs.org/wiki/Packages/1.0) standard specifies many other fields `package.json` should provide. currently we don't make use of them, but you provide them still.
