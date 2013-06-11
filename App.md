@@ -1,4 +1,4 @@
-_App API requires node-webkit >= v0.3.1_
+_Since v0.3.1_
 
 ## Synopsis
 
@@ -35,6 +35,8 @@ Quit current app. This method will **not** send `close` event to windows and app
 
 ### clearCache()
 
+_Since v0.6.0_
+
 Clear the HTTP cache in memory and the one on disk. This method call is synchronized.
 
 ## Events
@@ -43,6 +45,6 @@ Following events can be listened by using `App.on()` function, for more informat
 
 ### open
 
-_Available after node-webkit v0.3.2_
+_Since v0.3.2_
 
 Emitted when users opened a file with your app. For more on this, see [[Handling files and arguments]].
