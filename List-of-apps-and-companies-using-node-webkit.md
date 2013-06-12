@@ -2,6 +2,14 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### Wifi-fikser
+Wifi fikser is an app for Telenet a Belgian ISP provider to help clients with their Wifi problems. It's released as both a Web app and a Desktop app for Windows and Mac OSX. We first created the Web app and after that we just packaged in into a Desktop app using Node-Webkit which was very easy.
+
+![Preview](https://www.dropbox.com/s/hprrljrku34u28m/nw-preview.png)
+
+More info can be found at [Telenet-wifi](http://www.telenet-wifi.be/) 
+Also a download is available in [Dutch](http://www.telenet-wifi.be/nl#/download) and [French](http://www.telenet-wifi.be/fr#/download) 
+
 ### Gisto
 
 Gisto is a Cross-platform gist snippets management desktop application that allows you and your team share code snippets fast and easily.
