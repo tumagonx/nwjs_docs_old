@@ -91,7 +91,7 @@ _since v0.3.5_
 
 **Get** or **Set** whether we're in kiosk mode.
 
-### Window.zoom
+### Window.zoomLevel
 _since v0.4.1_
 
 **Get** or **Set** the page zoom. `0` for normal size; positive value for zooming in; negative value for zooming out.
