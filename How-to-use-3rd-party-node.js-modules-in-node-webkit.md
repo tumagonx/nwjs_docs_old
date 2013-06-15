@@ -89,7 +89,7 @@ test should be here.
 
 ## 3rd party modules with C/C++ addons
 
-For modules containing [C/C++ addons](http://nodejs.org/docs/latest/api/addons.html) the situation is slightly different from the above, and more complex, because the ABI (application binary interface) of node-webkit differs from Node's ABI.
+For modules containing [C/C++ addons](http://nodejs.org/docs/latest/api/addons.html) the situation is slightly different from the above — and more complex — because the ABI (application binary interface) of node-webkit differs from Node's ABI.
 
 When such a module is installed for Node (with `npm install` command), `npm` uses its internal version of the [`node-gyp`](https://github.com/TooTallNate/node-gyp) tool to build the addons (from their source code) for Node.js.
 
