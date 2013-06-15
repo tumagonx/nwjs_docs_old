@@ -24,7 +24,7 @@ There are, however, some small changes between Node's and node-webkit's API. (Se
 
 If a 3rd party module is written totally in JavaScript (i.e. does not contain any C/C++ [addons](http://nodejs.org/docs/latest/api/addons.html)), it can be used in node-webkit the same way it is used in Node: `require('moduleName')`.
 
-However, the behaviour of relative paths in that `require()` method depends on how the parent file itself is used in the application (here “the parent file” is the file in which the `require()` method is called):
+However, the behaviour of relative paths (if such paths are used in that `require()` method) depends on how the parent file itself is used in the application (here “the parent file” is the file in which the `require()` method is called):
 
 * If the parent file was also required by Node (using `require()`), then the child's relative path is treated as relative to its parent.
 
