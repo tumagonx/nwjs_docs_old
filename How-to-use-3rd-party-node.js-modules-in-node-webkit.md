@@ -34,7 +34,7 @@ The former rule means that any module's submodules are being required exactly as
 
 The latter rule means that you may put the necessary modules in the `/node_modules` subdirectory of your application and then `require()` them in scripts on your HTML pages.
 
-For example, you may install such modules from [`npm` packages](https://npmjs.org/) by running `npm install` in your application's directory (where the [manifest](Manifest-format) is), because `npm` would automatically put these modules in the `/node_modules` subdirectory.
+For example, you may install such modules from [`npm` packages](https://npmjs.org/) by running `npm install modulename` in your application's directory (where your application's [manifest](Manifest-format) resides), because `npm` would automatically put these modules in the `/node_modules` subdirectory.
 
 ### Example: async
 Here is an example of installing and using `async` module:
