@@ -64,7 +64,7 @@ $ find .
 ./node_modules/async/index.js
 ```
 
-where your application's manifest (`package.json`) may then look like the following:
+where your application's manifest (`./package.json`) might look like the following:
 ```json
 {
   "name": "nw-demo",
