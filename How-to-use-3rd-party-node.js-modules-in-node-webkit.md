@@ -12,9 +12,11 @@ All of these types can be used in node-webkit.
 
 The internal (built-in) modules of Node.js can be used as directly as in Node, according to the documentation on [Node API](http://nodejs.org/docs/latest/api/).
 
-For example, `var fs = require('fs')` is enough to start using the file system module.
+For example, `var fs = require('fs')` is enough to start using [the file system module.](http://nodejs.org/docs/latest/api/fs.html)
 
 For example, you may use [the `process` module](http://nodejs.org/docs/latest/api/process.html) instantly (without any `require(…)`), as in Node.
+
+And so on.
 
 There are, however, some small changes between Node's and node-webkit's API. (See “[[Changes related to node]]” for details.)
 
