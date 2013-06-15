@@ -30,7 +30,7 @@ However, the behaviour of relative paths in that `require()` method depends on 
 
 * If the parent file is included by WebKit (using any web technology: classic DOM `window.open()`, node-webkit's [`Window.open()`](Window#openurl-options), classic DOM [`XMLHttpRequest`](https://developer.mozilla.org/en/docs/DOM/XMLHttpRequest), jQuery's [`$.getScript()`](http://api.jquery.com/jQuery.getScript/), HTML `<script src="...">` element, etc.), then the child's relative path is treated as relative to the application's root directory.
 
-The former rule means that any module's submodules are required exactly as in Node.
+The former rule means that any module's submodules are being required exactly as in Node and work properly.
 
 The latter rule means that you may put the necessary modules in the `/node_modules` subdirectory of your application and then `require()` them in scripts on your HTML pages.
 
