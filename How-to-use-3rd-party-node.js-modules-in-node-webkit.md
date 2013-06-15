@@ -30,11 +30,11 @@ However, the behaviour of relative paths in that `require()` method depends on 
 
 * If the parent file is included by WebKit (using any web technology: classic DOM `window.open()`, node-webkit's [`Window.open()`](Window#openurl-options), classic DOM [`XMLHttpRequest`](https://developer.mozilla.org/en/docs/DOM/XMLHttpRequest), jQuery's [`$.getScript()`](http://api.jquery.com/jQuery.getScript/), HTML `<script src="...">` element, etc.), then the child's relative path is treated as relative to the application's root directory.
 
-The former rule means that any module's submodules are being required exactly as in Node and work properly.
+The former rule means that any module's submodules are always being required exactly as in Node and work properly.
 
-The latter rule means that you may put the necessary modules in the `/node_modules` subdirectory of your application and then `require()` them in scripts on your HTML pages.
+However, it is generally wise not to use the explicit relative paths (starting with `../` or `./`) at all. It's enough to call simply `require('modulename')` if the module was put in the `/node_modules` subdirectory of your application. (See the “[Loading from `node_modules` Folders](http://nodejs.org/docs/latest/api/modules.html#modules_loading_from_node_modules_folders)” section of Node API.)
 
-For example, you may install such modules from [`npm` packages](https://npmjs.org/) by running `npm install modulename` in your application's directory (where your application's [manifest](Manifest-format) resides), because `npm` would automatically put these modules in the `/node_modules` subdirectory.
+For example, you may install modules from [`npm` packages](https://npmjs.org/) by running `npm install modulename` in your application's directory (where your application's [manifest](Manifest-format) resides), because `npm` would automatically put these modules in the `/node_modules` subdirectory.
 
 ### Example: async
 Here is an example of installing and using `async` module:
@@ -89,7 +89,7 @@ test should be here.
 
 ## 3rd party modules with C/C++ addons
 
-For modules containing [C/C++ addons](http://nodejs.org/docs/latest/api/addons.html) the situation is slightly different because the ABI (application binary interface) of node-webkit differs from Node's ABI.
+For modules containing [C/C++ addons](http://nodejs.org/docs/latest/api/addons.html) the situation is slightly different from the above, and more complex, because the ABI (application binary interface) of node-webkit differs from Node's ABI.
 
 When such a module is installed for Node (with `npm install` command), `npm` uses its internal version of the [`node-gyp`](https://github.com/TooTallNate/node-gyp) tool to build the addons (from their source code) for Node.js.
 
