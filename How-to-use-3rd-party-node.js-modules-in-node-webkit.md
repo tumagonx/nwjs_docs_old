@@ -32,7 +32,7 @@ However, the behaviour of relative paths (if such paths are used in that `re
 
 The former rule means that any module's submodules are always being required exactly as in Node and work properly.
 
-However, it is generally wise not to use the explicit relative paths (starting with `../` or `./`) at all. Instead of it, just calling `require('modulename')` is enough — if your module has been put in the `/node_modules` subdirectory of your application. (See the “[Loading from `node_modules` Folders](http://nodejs.org/docs/latest/api/modules.html#modules_loading_from_node_modules_folders)” section of Node API.)
+However, it is generally wise not to use the explicit relative paths (starting with `../` or `./`) at all. Instead of it, just calling `require('modulename')` is enough — if the module has been put in the `/node_modules` subdirectory of your application. (See the “[Loading from `node_modules` Folders](http://nodejs.org/docs/latest/api/modules.html#modules_loading_from_node_modules_folders)” section of Node API.)
 
 For example, you may install modules from [`npm` packages](https://npmjs.org/) by running `npm install modulename` in your application's directory (where your application's [manifest](Manifest-format) resides), because `npm` would automatically put these modules in the `/node_modules` subdirectory.
 
