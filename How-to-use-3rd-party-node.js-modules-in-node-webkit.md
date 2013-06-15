@@ -97,7 +97,7 @@ To build such a module for node-webkit, [`nw-gyp`](https://github.com/rogerwa
 
 To install nw-gyp, run `npm install nw-gyp -g`.
 
-To run nw-gyp, please meet its [requirements](https://github.com/rogerwang/nw-gyp#installation) (you'll need a proper Python engine and C/C++ compiler). These requirements are not different from node-gyp's.
+Before actually using nw-gyp, please meet its [requirements](https://github.com/rogerwang/nw-gyp#installation) (you'll need a proper Python engine and C/C++ compiler). These requirements are not different from node-gyp's.
 
 To build a module for node-webkit, you may at first obtain it from an npm package, as if for Node.js (`npm install modulename`), but then rebuild it for node-webkit (`nw-gyp rebuild --target=0.5.0`).
 
