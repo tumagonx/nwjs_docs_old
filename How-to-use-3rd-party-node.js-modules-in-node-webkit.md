@@ -37,14 +37,14 @@ However, it is generally wise not to use the explicit relative paths (starting
 For example, you may install modules from [`npm` packages](https://npmjs.org/) by running `npm install modulename` in your application's directory (where your application's [manifest](Manifest-format) resides), because `npm` would automatically put these modules in the `/node_modules` subdirectory.
 
 ### Example: async
-Here is an example of installing and using `async` module:
+Here is an example of installing the `async` module:
 
 ```bash
 $ cd /path/to/your/app
 $ npm install async
 ```
 
-Here is the list of files in the whole tree:
+Here is the resulting list of files in the whole tree:
 
 ```bash
 $ find .
@@ -64,7 +64,7 @@ $ find .
 ./node_modules/async/index.js
 ```
 
-Your application's manifest (`package.json`) may then look like the following:
+where your application's manifest (`package.json`) may then look like the following:
 ```json
 {
   "name": "nw-demo",
