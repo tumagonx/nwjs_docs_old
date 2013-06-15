@@ -107,7 +107,7 @@ In both of these alternatives,
 
 * nw-gyp must be run in the module's directory (where the module's `binding.gyp` resides),
 
-* the necessary target version of node-webkit (such as `0.5.0` in `nw-gyp rebuild --target=0.5.0`) must be given explicitly, because nw-gyp cannot autodetect it. (You should also rebuild a module for any newer version of node-webkit, because the ABI is not stable.)
+* the necessary target version of node-webkit (such as `0.5.0` in `nw-gyp rebuild --target=0.5.0`) must be given explicitly, because nw-gyp cannot autodetect it. (You should also rebuild a module before using it in any newer version of node-webkit, because the ABI is not stable and changes constantly with the versions.)
 
 The built C/C++ addons of Node and node-webkit are mutually incompatible. For example, you cannot use `npm test` to test an addon-containing module in Node, if that addon is built for node-webkit: the test will always fail (either with some cryptic message or with a silent crash of the whole engine).
 
