@@ -37,6 +37,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[Devtools jail feature]] -- useful for IDE developers
 
 **Testing**
+* [The Testing framework for your application running on node-webkit](wiki/chromedriver)
 * [The Testing work for node-webkit](wiki/Testing)
 
 **HTML5 Features:**
