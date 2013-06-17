@@ -1,6 +1,6 @@
 Since v0.6.0 `chromedriver` is distributed with node-webkit binaries.
 
-From [`chromedriver` project home page](http://code.google.com/p/chromedriver/):
+From [chromedriver project home page](http://code.google.com/p/chromedriver/):
 
 > WebDriver is an open source tool for automated testing of webapps across many browsers. It provides capabilities for navigating to web pages, user input, JavaScript execution, and more. ChromeDriver is a standalone server which implements WebDriver's wire protocol for Chromium. It is being developed by members of the Chromium and WebDriver teams. 
 
