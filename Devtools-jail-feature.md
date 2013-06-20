@@ -16,7 +16,7 @@ Call `Window.showDevTools(id, headless)`. When `headless` is `true`, there will 
 
 ```javascript
 var win = nwgui.Window.get();
-win.showDevTools('frame0', true);
+win.showDevTools('', true);
 win.on("devtools-opened", function(url) {
     console.log("devtools-opened: " + url);
     document.getElementById('devtools').src = url;
