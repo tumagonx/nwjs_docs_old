@@ -10,6 +10,8 @@ This feature is useful for developing IDE with node-webkit: the IDE developers w
 
 If you want to show Devtools in an iframe of your window, you can use this feature:
 
+NOTE: it's not supposed to use a single iframe for both Jail and showing the Devtools UI.
+
 Call `Window.showDevTools(id, headless)`. When `headless` is `true`, there will be no new window popped up to show Devtools. A `devtools-opened` event will be sent to the `Window` object with a `url` parameter, which is the URL for showing Devtools UI.
 
 ```javascript
