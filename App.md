@@ -23,9 +23,15 @@ gui.App.quit();
 
 **Get** all the command line arguments when starting the app. Because node-webkit itself used switches like `--no-sandbox` and `--process-per-tab`, it would confuse the app when the switches were meant to be given to node-webkit, so `App.argv` just filtered such switches (arguments' precedence were kept). You can get the switches to be filtered with `App.filteredArgv`.
 
+### dataPath
+
+_since v0.6.1_
+
+**Get** the application's data path in user's directory. Windows: `%LOCALAPPDATA%/<name>`; Linux: `~/.config/<name>`; OSX: `~/Library/Application Support/<name>` where `<name>` is the field in the manifest.
+
 ### closeAllWindows()
 
-_Available after node-webkit v0.3.2_
+_since v0.3.2_
 
 Send the `close` event to all windows of current app, if no window is blocking the `close` event, then the app will quit after all windows have done shutdown. Use this method to quit an app will give windows a chance to save data.
 
