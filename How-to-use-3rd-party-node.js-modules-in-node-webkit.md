@@ -107,8 +107,15 @@ In both of these alternatives,
 
 * nw-gyp must be run in the module's directory (where the module's `binding.gyp` resides),
 
-* the necessary target version of node-webkit (such as `0.5.0` in `nw-gyp rebuild --target=0.5.0`) must be given explicitly, because nw-gyp cannot autodetect it. (You should also rebuild a module before using it in any newer version of node-webkit, because the ABI is not stable and changes constantly with the versions.)
+* the necessary target version of node-webkit (such as `0.5.0` in `nw-gyp rebuild --target=0.5.0`) must be given explicitly, because nw-gyp cannot autodetect it,
 
-The built C/C++ addons of Node and node-webkit are mutually incompatible. For example, you cannot use some `node test.js` (or `npm test`) to test an addon-containing module in Node if that addon has been built for node-webkit: the test will always fail (either with some cryptic message or with a silent crash of the whole engine).
+* you must rebuild a module before you start using it in any newer version of node-webkit, because the ABI is not stable and changes constantly with the versions. For example,
+  * after node-webkit 0.6.0 is released, `nw-gyp rebuild --target=0.6.0` is necessary,
+  * after node-webkit 0.6.1 is released, `nw-gyp rebuild --target=0.6.1` is necessary,
+  * and so on.
 
-For more information on that matter (including further limitations and known issues), see “[[Build native modules with nw gyp]]”.
+The difference of ABI also means that the built C/C++ addons (i.e. `.node` files) of Node and node-webkit are **mutually incompatible:** you cannot use an addon in Node if it's built for node-webkit, and vice versa.
+
+For example, you cannot use some `node test.js` (or `npm test`) to test an addon-containing module **in Node** if that addon has been built **for node-webkit:** the test will always fail (either with some cryptic message or with a silent crash of the whole engine).
+
+For more information on that matter (including further limitations and known issues), see “[[Build native modules with nw-gyp]]”.
