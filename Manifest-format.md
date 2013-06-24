@@ -194,7 +194,7 @@ _since v0.4.2_
 
 ### dom_storage_quota
 
-_since v0.6.0_
+_since v0.6.1_
 
 *(int)* Number of mega bytes for the quota of the DOM storage. The suggestion is to put double the value you want.
 
