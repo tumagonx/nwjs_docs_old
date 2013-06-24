@@ -31,7 +31,7 @@ Same as above install `libudev1` if needed. Now create a local symlink to `libud
 Then create a shell script to run nw:
 
 ``` bash
-#!bin/bash
+#!/bin/sh
 LD_LIBRARY_PATH=/home/omi/nw:$LD_LIBRARY_PATH ./nw
 ```
 
