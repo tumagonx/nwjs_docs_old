@@ -116,6 +116,6 @@ In both of these alternatives,
 
 The difference of ABI also means that the built C/C++ addons (i.e. `.node` files) of Node and node-webkit are **mutually incompatible:** you cannot use an addon in Node if it's built for node-webkit, and vice versa.
 
-For example, you cannot use some `node test.js` (or `npm test`) to test an addon-containing module **in Node** if that addon has been built **for node-webkit:** the test will always fail (either with some cryptic message or with a silent crash of the whole engine).
+For example, you cannot use some `node test.js` (or `npm test`) to test an addon-containing module **in Node** if that addon has been built **for node-webkit:** the test will always fail (either with some cryptic error message or with a crash of the whole engine).
 
 For more information on that matter (including further limitations and known issues), see “[[Build native modules with nw-gyp]]”.
