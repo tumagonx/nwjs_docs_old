@@ -147,6 +147,12 @@ _since v0.4.2_
 
 *(string)* Specify the path to the snapshot file to be loaded with the application. The snapshot file contains compiled code of your application. See [[Protect JavaScript source code with v8 snapshot]].
 
+### dom_storage_quota
+
+_since v0.6.1_
+
+*(int)* Number of mega bytes for the quota of the DOM storage. The suggestion is to put double the value you want.
+
 ## Window Subfields
 
 ### title
@@ -191,12 +197,6 @@ _since v0.4.2_
 
 ### kiosk
 *(boolean)* whether to use `Kiosk` mode. In `Kiosk` mode, the app will be fullscreen and try to prevent users from leaving the app, so you should remember to provide a way in app to leave `Kiosk` mode. This mode is mainly used for presentation on public displays _(available after node-webkit v0.3.1)_
-
-### dom_storage_quota
-
-_since v0.6.1_
-
-*(int)* Number of mega bytes for the quota of the DOM storage. The suggestion is to put double the value you want.
 
 ## WebKit Subfields
 
