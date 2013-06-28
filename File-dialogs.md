@@ -16,12 +16,14 @@ Another thing is the `File` object of HTML5's file API, in WebKit the `path` att
 
 To create a file dialog, we should first put a `input` tag on html page and make it hidden:
 
-_In order to make examples simple we use jQuery for DOM operations_
+_In order to make examples simple we use jQuery or MooTools for DOM operations_
 
 ```html
 <html>
 <head>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <!-- OR -->
+  <script src="http://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
 </head>
 <body>
 <input style="display:none;" id="fileDialog" type="file" />
@@ -34,16 +36,33 @@ _In order to make examples simple we use jQuery for DOM operations_
 
 Then we trigger a `click` event on `input` tag, and use the `change` event to capture the file path:
 
+## jQuery
 ```html
 <script>
   function chooseFile(name) {
     var chooser = $(name);
-    chooser.trigger('click');            
     chooser.change(function(evt) {
       console.log($(this).val());
     });
+
+    chooser.trigger('click');  
   }
   chooseFile('#fileDialog');
+</script>
+```
+
+## MooTools
+```html
+<script>
+  function chooseFile(name) {
+    var chooser = $(name);
+    chooser.addEvent("change", function() {
+      console.log(this.value);
+    });
+
+    chooser.click();
+  }
+  chooseFile('fileDialog');
 </script>
 ```
 
