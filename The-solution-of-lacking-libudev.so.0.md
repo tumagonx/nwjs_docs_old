@@ -32,12 +32,10 @@ Then create a shell script to run nw:
 
 ``` bash
 #!/bin/sh
-LD_LIBRARY_PATH=/home/omi/nw:$LD_LIBRARY_PATH ./nw
+LD_LIBRARY_PATH=/home/omi/nw:$LD_LIBRARY_PATH ./nw $*
 ```
 
 As you are only modifying local contents of node-webkit directory, this option should not have an impact on the overall stability of your system.
-
-Note that this does not pass the command line parameters along though. Update the script accordingly if you need that option.
 
 **3. Modify the .deb or .rpm package file**
 
