@@ -34,7 +34,13 @@ From the command line:
 3. Your fully-prepared `.nw` file shall be located right outside of your project directory 
 4. Cake!
 
-## Making an executable file out of a .nw file 
+## Put your app with nw executable
+
+* You can just put files of node-webkit in the same directory with your package.json and then distribute the tree. When nw executable is started it will look for package.json in the same directory. (on OSX it's the same level directory with `node-webkit.app`
+* Or you can zip your files and name it `package.nw` and place it in the same directory with nw executable.
+* [nodebob](https://github.com/geo8bit/nodebob) is a build tool for node-webkit that automates a release of your node-webkit application in windows environment. Currently in v0.1, written in windows batch script.
+
+## Alternative way - Making an executable file out of a .nw file 
 
 Many people are (understandably) concerned about what end-users need to do in order to run an app. If users receive a `.nw` alone, they will naturally need `node-webkit` installed (or at least unzipped) in order to run it. But, with `node-webkit`, you can merge the `.nw` file with the `node-webkit` executable. 
 
@@ -99,12 +105,6 @@ The `nw.pak` and `icudt.dll` must be shipped along with `nw.exe`, the former one
 ### Mac OS X
 
 Just ship the `node-webkit.app` would be fine, you don't need to care for other things.
-
-## Alternative ways
-
-* You can just put files of node-webkit in the same directory with your package.json and then distribute the tree. When nw executable is started it will look for package.json in the same directory. (on OSX it's the same level directory with `node-webkit.app`
-* Or you can zip your files and name it `package.nw` and place it in the same directory with nw executable.
-* [nodebob](https://github.com/geo8bit/nodebob) is a build tool for node-webkit that automates a release of your node-webkit application in windows environment. Currently in v0.1, written in windows batch script.
 
 ## An alternative way to make an executable file in Windows
 
