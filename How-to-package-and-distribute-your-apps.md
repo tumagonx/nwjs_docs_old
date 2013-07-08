@@ -102,7 +102,8 @@ Just ship the `node-webkit.app` would be fine, you don't need to care for other 
 
 ## Alternative ways
 
-* You can just put files of node-webkit in the same directory with your package.json and then distribute the tree. When nw executable is started it will look for package.json in the same directory.
+* You can just put files of node-webkit in the same directory with your package.json and then distribute the tree. When nw executable is started it will look for package.json in the same directory. (on OSX it's the same level directory with `node-webkit.app`
+* Or you can zip your files and name it `package.nw` and place it in the same directory with nw executable.
 * [nodebob](https://github.com/geo8bit/nodebob) is a build tool for node-webkit that automates a release of your node-webkit application in windows environment. Currently in v0.1, written in windows batch script.
 
 ## An alternative way to make an executable file in Windows
