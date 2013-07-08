@@ -3,7 +3,7 @@
 Due to the removal of `libudev0` and its associated library `libudev.so.0`, node-webkit isn't able to run on newer distributions such as:
 
  * Ubuntu 13.04
- * Fedora 18
+ * Fedora 18, 19
  * Arch
  * Gentoo
  * Derivatives of the above
