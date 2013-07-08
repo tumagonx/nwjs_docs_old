@@ -7,7 +7,7 @@ The following sub-directories can be put in application's root directory:
 
 You don't need to ship the `nwsnapshot` file in the downloaded zip.
 
-## Make a package
+## Step 1: Make a package
 
 _Since our package system is similar to [LÖVE](https://love2d.org), following guides are modified from its [Wiki](https://love2d.org/wiki/Game_Distribution)._
 
@@ -34,13 +34,13 @@ From the command line:
 3. Your fully-prepared `.nw` file shall be located right outside of your project directory 
 4. Cake!
 
-## Put your app with nw executable
+## Step 2a: Put your app with nw executable
 
 * You can zip your files and name it `package.nw` and place it in the same directory with nw executable.
 * Or you can just put files of node-webkit in the same directory with your package.json and then distribute the tree. When nw executable is started it will look for package.json in the same directory. (on OSX it's the same level directory with `node-webkit.app`)
 * [nodebob](https://github.com/geo8bit/nodebob) is a build tool for node-webkit that automates a release of your node-webkit application in windows environment. Currently in v0.1, written in windows batch script.
 
-## Alternative way - Making an executable file out of a .nw file 
+## Step 2b: Alternative way - Making an executable file out of a .nw file 
 
 Many people are (understandably) concerned about what end-users need to do in order to run an app. If users receive a `.nw` alone, they will naturally need `node-webkit` installed (or at least unzipped) in order to run it. But, with `node-webkit`, you can merge the `.nw` file with the `node-webkit` executable. 
 
