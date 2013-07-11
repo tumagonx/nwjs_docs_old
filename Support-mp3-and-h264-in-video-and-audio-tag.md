@@ -6,13 +6,13 @@ For licensing issues node-webkit didn't ship with codec for patented media forma
 
 Since node-webkit is based on Chromium, their media parts are basically the same. In order to open MP3 and H.264, you need to compile ffmpeg with corresponding features open. **And be careful, MP3 and H.264 codecs are GPL licensed in ffmpeg.**
 
-But there is also a much simpler way, you can just copy those media codec files from Chrome.
+There is also a simpler way, you can try to use the media codec files from Chrome. It had been reported to work, but we don't test this and it may not work for you in latest version.
 
 **Notice: linking with GPL code will make your codes GPL too.**
 
 # Windows
 
-You need files from at least [Chrome 25 in the dev channel](http://dev.chromium.org/getting-involved/dev-channel)
+You need files from the matching Chrome version. (0.6.x is based on Chromium 28)
 
 1. Locate Chrome\Application folder (e.g. C:\Program Files\Google)
 
