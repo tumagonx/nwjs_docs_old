@@ -35,6 +35,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [Icons](wiki/Icons)
 * [Shell](wiki/Shell) — a collection of APIs that do desktop related jobs
 * [[Devtools jail feature]] -- useful for IDE developers
+* [[Handling files and arguments]]
 
 **Testing**
 * [The Testing framework for your application running on node-webkit](wiki/chromedriver)
