@@ -29,21 +29,27 @@ _since v0.6.1_
 
 **Get** the application's data path in user's directory. Windows: `%LOCALAPPDATA%/<name>`; Linux: `~/.config/<name>`; OSX: `~/Library/Application Support/<name>` where `<name>` is the field in the manifest.
 
+### clearCache()
+
+_Since v0.6.0_
+
+Clear the HTTP cache in memory and the one on disk. This method call is synchronized.
+
 ### closeAllWindows()
 
 _since v0.3.2_
 
 Send the `close` event to all windows of current app, if no window is blocking the `close` event, then the app will quit after all windows have done shutdown. Use this method to quit an app will give windows a chance to save data.
 
+### getProxyForURL(url)
+
+_since v0.6.3_
+
+Query the proxy to be used for loading `url` in DOM. The return value is in the same format used in [PAC](http://en.wikipedia.org/wiki/Proxy_auto-config) (e.g. "DIRECT", "PROXY localhost:8080").
+
 ### quit()
 
 Quit current app. This method will **not** send `close` event to windows and app will just quit quietly.
-
-### clearCache()
-
-_Since v0.6.0_
-
-Clear the HTTP cache in memory and the one on disk. This method call is synchronized.
 
 ## Events
 
