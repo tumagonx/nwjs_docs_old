@@ -2,6 +2,13 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### Gifrocket
+Create gif from video. Actually for Mac OSX only, Windows and Linux are on the way.
+
+[gifrocket.com](http://www.gifrocket.com/)
+
+![Preview](http://f.cl.ly/items/0z3Q162u2O0v2m230r3W/screen-gifrocket.png)
+
 ### Wifi-fikser
 Wifi fikser is an app for Telenet a Belgian ISP provider to help clients with their Wifi problems. It's released as both a Web app and a Desktop app for Windows and Mac OSX. We first created the Web app and after that we just packaged in into a Desktop app using Node-Webkit which was very easy.
 
