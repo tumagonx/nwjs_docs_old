@@ -1,4 +1,4 @@
-Now node-webkit's testing works have to parts: automatic tests and manual test. Node-webkit uses [Mocha](http://visionmedia.github.io/mocha/) to run automatice tests.
+Now node-webkit's testing works have to parts: automatic tests and manual test. Node-webkit uses [Mocha](http://visionmedia.github.io/mocha/) to run automatic tests.
 
 ## node-webkit tests
 
