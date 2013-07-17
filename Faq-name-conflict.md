@@ -7,4 +7,10 @@ If your project already has a function called `require()` it will conflict with 
 </script>
 ````
 
+**NOTE:** If you are using the text! plugin of requirejs you need also to add some code before the require.config (or another place once the require object is fully loaded)
+
+````html
+require.nodeRequire = window.requireNode;
+````
+
 **NOTE:** If you use `nw.gui` module, you need to keep the function name as `require()` as code in the module will call `require()`. A solution is to rename it back before loading `nw.gui` and rename it again after the loading is done.
