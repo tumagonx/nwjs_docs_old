@@ -1,8 +1,17 @@
-For licensing issues node-webkit didn't ship with codec for patented media formats, but for commercial cases where it's necessary to support patented media formats, we have solutions bellow.
+For licensing issues our pre-built binary doesn't ship with codec for patented media formats, but for commercial cases where it's necessary to support patented media formats, we have solutions bellow.
 
 **Please consult experts if you want to use patented media formats on your apps.**
 
 # Overview
+
+In the pre-built libffmpegsumo.dll, the following codecs are supported:
+```
+theora,vorbis,vp8,pcm_u8,pcm_s16le,pcm_s24le,pcm_f32le,pcm_s16be,pcm_s24be
+```
+The following demuxers are supported:
+```
+ogg,matroska,wav
+```
 
 Since node-webkit is based on Chromium, their media parts are basically the same. In order to open MP3 and H.264, you need to compile ffmpeg with corresponding features open. **And be careful, MP3 and H.264 codecs are GPL licensed in ffmpeg.**
 
