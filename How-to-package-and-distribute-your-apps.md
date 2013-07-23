@@ -88,7 +88,7 @@ About the `Info.plist` file, you can view [Implementing Cocoa's Standard About P
 
 ## Which files should be shipped?
 
-Apart from the binary files, there're some other files you should also ship, see instructions for different platforms bellow
+Apart from the binary files, there're some other files you should also ship, see instructions for different platforms below
 
 ### Windows
 
