@@ -57,7 +57,7 @@ Here's how to do it on Windows. In a console, type this:
 
     copy /b nw.exe+app.nw app.exe 
 
-Then, all you have to do is zip app.exe and required DLLs, and distribute them. Yes; this does mean that the game will have a private copy of `node-webkit`, but there's nothing wrong with that. It also means that you will have to create one package for each platform you would like to support, or simply offer the `.nw` alone for the other platforms. 
+Then, all you have to do is zip app.exe and required DLLs, and distribute them. Yes; this does mean that the app will have a private copy of `node-webkit`, but there's nothing wrong with that. It also means that you will have to create one package for each platform you would like to support, or simply offer the `.nw` alone for the other platforms. 
 
 And please also note that the `nw.pak` must also be distributed along with the `app.exe`.
 
