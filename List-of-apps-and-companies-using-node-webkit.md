@@ -2,6 +2,18 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### Haroopad
+Haroopad is a document processor for creating web-friendly document in markdown editor.
+
+You can also based on the markdown, to create Web documents, blogs, as well as e-mail, the report documents expert.
+
+And then support Windows, Linux, the Mac OS, you get the experience of editing the same document markdown in the desired platform.
+
+![Preview](http://pad.haroopress.com/assets/images/release-v0.4.8.png)
+
+Get more information at [http://pad.haroopress.com](http://pad.haroopress.com)
+
+
 ### Gifrocket
 Create gif from video. Actually for Mac OSX only, Windows and Linux are on the way.
 
