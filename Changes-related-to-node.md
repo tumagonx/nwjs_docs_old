@@ -25,4 +25,8 @@ Only Node modules (called by `require()` method) can use the `__dirname` global 
 
 This global is not available in WebKit's context (including the “Developer Tools” window).
 
-**Note:**   you may use [`process.cwd()`](http://nodejs.org/docs/latest/api/process.html#process_process_cwd) in both contexts to get the current working directory, but it's not exactly the same thing.
+Possible workarounds:
+
+* You may use `window.location()` to get the URL of a page. (Requires some additional parsing to get the path out of the URL.)
+
+* You may use [`process.cwd()`](http://nodejs.org/docs/latest/api/process.html#process_process_cwd) to get the current working directory. (However, that's not exactly the same thing.)
