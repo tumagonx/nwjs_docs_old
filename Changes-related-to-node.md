@@ -21,4 +21,8 @@ Behaviour of relative paths in Node's `require()` method depends on how the pa
 WebKit (Chrome) has its own DOM `crypto` object. When you `require()` the Node API module of the same name (see http://nodejs.org/docs/latest/api/crypto.html for details), you have to use some other name (see [issue 540](https://github.com/rogerwang/node-webkit/issues/540) for example).
 
 ## __dirname
-Only Node modules (called by `require()` method) can use the `__dirname` global to read the path to the current directory. This global is not available in WebKit's context (including the “Developer Tools” window).
+Only Node modules (called by `require()` method) can use the `__dirname` global to read the path to their file's directory.
+
+This global is not available in WebKit's context (including the “Developer Tools” window).
+
+**Note:**   you may use [`process.cwd()`](http://nodejs.org/docs/latest/api/process.html#process_process_cwd) in both contexts to get the current working directory, but it's not exactly the same thing.
