@@ -142,7 +142,7 @@ You can call node.js and modules directly from the DOM. So it enable endless pos
 <html>
 <body>
 <script>
-// get the system platformu sing node.js
+// get the system platform using node.js
 var os = require('os')
 document.write('Our computer is: ', os.platform())
 </script>
