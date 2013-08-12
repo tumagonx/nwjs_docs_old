@@ -13,14 +13,15 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[Security]]
 
 **Library Reference:**
-* [Node.js Manual & Documentation](http://nodejs.org/api/)
 * [[Manifest format]] — the format of `package.json`
 * [[Native UI API Manual]] — node-webkit API for native UI controls
 * [[Changes related to Node]] — Things added/changed to Node API after bring in DOM
+* [Node.js Manual & Documentation](http://nodejs.org/api/)
 
 **Advanced:**
+* [Use app protocol to migrate code from your web site](App protocol)
 * [[Build native modules with nw-gyp]]
-* [Command line arguments of 'nw' executable](wiki/Command-line-switches)
+* [Command line arguments of 'nw' executable](Command-line-switches)
 * [[mini browser in iframe]]
 * [[The Kiosk mode]]
 * [[File dialogs]]
