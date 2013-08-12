@@ -19,9 +19,9 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [Node.js Manual & Documentation](http://nodejs.org/api/)
 
 **Advanced:**
-* [Use app protocol to migrate code from your web site](App protocol)
+* [Use app protocol to migrate code from your web site](wiki/App protocol)
 * [[Build native modules with nw-gyp]]
-* [Command line arguments of 'nw' executable](Command-line-switches)
+* [Command line arguments of 'nw' executable](wiki/Command-line-switches)
 * [[mini browser in iframe]]
 * [[The Kiosk mode]]
 * [[File dialogs]]
