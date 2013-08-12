@@ -12,6 +12,8 @@ console.log(gui.App.argv);
 // Quit current app
 gui.App.quit();
 ```
+// Get the name field in manifest
+gui.App.manifest.name
 
 ## Reference
 
@@ -28,6 +30,12 @@ gui.App.quit();
 _since v0.6.1_
 
 **Get** the application's data path in user's directory. Windows: `%LOCALAPPDATA%/<name>`; Linux: `~/.config/<name>`; OSX: `~/Library/Application Support/<name>` where `<name>` is the field in the manifest.
+
+### manifest
+
+_since v0.7.0_
+
+**Get** the JSON object of the manifest file.
 
 ### clearCache()
 
