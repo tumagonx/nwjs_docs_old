@@ -16,6 +16,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[Manifest format]] — the format of `package.json`
 * [[Native UI API Manual]] — node-webkit API for native UI controls
 * [[Changes related to Node]] — Things added/changed to Node API after bring in DOM
+* [[Changes to DOM]] — Things changed to DOM to support native app better
 * [Node.js Manual & Documentation](http://nodejs.org/api/)
 
 **Advanced:**
