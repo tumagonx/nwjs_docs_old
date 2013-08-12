@@ -18,14 +18,22 @@ And if you open a file with your app in GUI (like file explorer in Windows, Find
 
 In most times, when you want to open multiple files with your app, you would like to open them in one session instead of multiple sessions. For example, for an IDE, if you have already opened one IDE instance, and then you opened a source code file, you would want the existing IDE instance to handle this file instead of opening a new huge instance of the IDE.
 
-For node-webkit apps, this is solved by default. When you open a file, node-webkit will check whether your app  has already opened, if not, a new instance of your app would start and the path of file will be passed in `App.argv`, if there is already one instance of your app, the path of file will be passed to the existing instance by sending `open` event to the `App` object:
+For node-webkit apps, this is solved by default. When you open a file, node-webkit will check whether your app  has already opened, if not, a new instance of your app would start and the path of file will be passed in `App.argv`, if there is already one instance of your app, the full command line of the second instance will be passed to the existing instance by sending `open` event to the `App` object:
 
 ```javascript
 // Listen to `open` event
-gui.App.on('open', function(path) {
-  console.log('Opening: ' + path);
+gui.App.on('open', function(cmdline) {
+  console.log('command line: ' + cmdline);
 });
 ```
+**Before v0.7.0** the callback is different: it was defined as sending the file path in the argument as parameter, and the callback is called multiple times for each of the arguments.
+```javascript
+// Listen to `open` event
+gui.App.on('open', function(path) {
+  console.log('Opening file: ' + path);
+});
+```
+
 
 **Note:** `open` event is sent only if your app is a standalone app, e.g. packaged with instructions of [[How to package and distribute your apps]].
 
