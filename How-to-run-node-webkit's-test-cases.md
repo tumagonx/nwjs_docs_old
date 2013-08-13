@@ -131,4 +131,4 @@ We use `tools/build_native_modules.py` to build our native modules:
 $ cd src/content/nw
 $ python tools/build_native_modules.py`
 ````
-Alao, please update `node_modules` using `npm install -d`.
+Also, please update `node_modules` using `npm install -d`.
