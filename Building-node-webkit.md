@@ -95,6 +95,16 @@ GYP_GENERATORS='ninja' ./build/gyp_chromium content/content.gyp
 ninja -C out/Release nw -j4
 ````
 
+##Tips
+1. You can specify what project files to generate through `GYP_GENERATORS`. And you can export it in `~/.bashrc` etc.For example, if you want to use `make`:
+````
+GYP_GENERATORS='make' ./build/gyp_chromium content/content.gyp
+````
+
+2. When you build on Mac, don't forget to pass `--no-circular-check` to generate project files:
+````
+GYP_GENERATORS='ninja' ./build/gyp_chromium content/content.gyp --no-circular-check
+````
 ## Build Faster
 
 * [Build Instructions for Windows](http://www.chromium.org/developers/how-tos/build-instructions-windows#TOC-Accelerating-the-build)
