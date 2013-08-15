@@ -1,3 +1,5 @@
+**The following solution is provided in the same way as Google Chrome is used in their product:**
+
 Due to the removal of `libudev0` and its associated library `libudev.so.0`, node-webkit isn't able to run on newer distributions such as:
 
  * Ubuntu 13.04
