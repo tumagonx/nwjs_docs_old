@@ -6,7 +6,7 @@ Due to the removal of `libudev0` and its associated library `libudev.so.0`, node
  * Gentoo
  * Derivatives of the above
 
-...and possibly others. Until node-webkit is updated to depend on the currently shipped version `libudev.so.1`, the following solutions *should* provide a stopgap measure for testing and development purposes (though their safety is not guaranteed):
+...and possibly others. Until node-webkit is updated to depend on the currently shipped version `libudev.so.1`, the following solutions *should* provide a stopgap measure for packaging your applications.
 
 **1. Create global symlink to `libudev.so.1` by hand.**
 
