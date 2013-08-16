@@ -1,4 +1,4 @@
-''since v0.7.0''
+_since v0.7.0_
 
 The app protocol is defined like http protocol: `app://<host>/path`. The host part is essential. You can define it to anything you want. The root of `path` refers to the application's directory, which is the directory where the manifest file resides.
 
@@ -6,7 +6,7 @@ It's provided for the ease of migrating files from your web site, e.g. repackage
 
 Regarding [security](Security), it's treated as local file protocol and have access to Node functionality. 
 
-Example:
+_Example:_
 
 If you use absolute paths in the project and move the project directory to different path, you can just set a global 'app://xyz' in package's manifest.json to avoid of path modification in each file. Well, if you only use relative paths, you don't need to use it.
 
