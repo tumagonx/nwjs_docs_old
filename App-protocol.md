@@ -6,10 +6,11 @@ It's provided for the ease of migrating files from your web site, e.g. repackage
 
 Regarding [security](Security), it's treated as local file protocol and have access to Node functionality. 
 
-''Example:''
+Example:
 
 If you use absolute paths in the project and move the project directory to different path, you can just set a global 'app://xyz' in package's manifest.json to avoid of path modification in each file. Well, if you only use relative paths, you don't need to use it.
 
+```json
  {
   "name": "ParleysDesktop",
   "main": "app://whatever/index.html",
@@ -25,3 +26,4 @@ If you use absolute paths in the project and move the project directory to diffe
     "max_height": 8000
   }
  }
+```
