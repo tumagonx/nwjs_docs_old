@@ -10,19 +10,7 @@ Due to the removal of `libudev0` and its associated library `libudev.so.0`, node
 
 ...and possibly others. Until node-webkit is updated to depend on the currently shipped version `libudev.so.1`, the following solutions *should* provide a stopgap measure for packaging your applications.
 
-**1. Create global symlink to `libudev.so.1` by hand.**
-
-#### WARNING: This solution is dangerous and may destabilize your system. Use at own risk.
-
-install the package `libudev1`, and there is `libudev.so.1` at `/lib/x86_64-linux-gun/libudev.so.1`. On Ubuntu for example, Run:
-
-``` bash
-# apt-get install libudev1
-# cd /lib/x86_64-linux-gnu/
-# ln -s libudev.so.1 libudev.so.0
-```
-
-**2. Create local symlink to `libudev.so.1`**
+**1. Create local symlink to `libudev.so.1`**
 
 Same as above install `libudev1` if needed. Now create a local symlink to `libudev.so.1`. On Ubuntu for example, run from the directory where nw files are extracted:
 
@@ -38,6 +26,18 @@ LD_LIBRARY_PATH=/home/omi/nw:$LD_LIBRARY_PATH ./nw $*
 ```
 
 As you are only modifying local contents of node-webkit directory, this option should not have an impact on the overall stability of your system.
+
+**2. Create global symlink to `libudev.so.1` by hand.**
+
+#### WARNING: This solution is dangerous and may destabilize your system. Use at own risk.
+
+install the package `libudev1`, and there is `libudev.so.1` at `/lib/x86_64-linux-gun/libudev.so.1`. On Ubuntu for example, Run:
+
+``` bash
+# apt-get install libudev1
+# cd /lib/x86_64-linux-gnu/
+# ln -s libudev.so.1 libudev.so.0
+```
 
 **3. Modify the .deb or .rpm package file**
 
