@@ -12,6 +12,8 @@ Due to the removal of `libudev0` and its associated library `libudev.so.0`, node
 
 **1. Create global symlink to `libudev.so.1` by hand.**
 
+#### WARNING: This solution is dangerous and may destabilize your system. Use at own risk.
+
 install the package `libudev1`, and there is `libudev.so.1` at `/lib/x86_64-linux-gun/libudev.so.1`. On Ubuntu for example, Run:
 
 ``` bash
@@ -38,6 +40,8 @@ LD_LIBRARY_PATH=/home/omi/nw:$LD_LIBRARY_PATH ./nw $*
 As you are only modifying local contents of node-webkit directory, this option should not have an impact on the overall stability of your system.
 
 **3. Modify the .deb or .rpm package file**
+
+#### WARNING: This solution is dangerous and may destabilize your system. Use at own risk.
 
 When install your app through the package. We can add some scripts for solving it. At the post install, create the symlink to `libudev.so.1`.  
 
