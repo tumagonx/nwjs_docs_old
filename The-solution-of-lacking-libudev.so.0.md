@@ -27,56 +27,35 @@ LD_LIBRARY_PATH=/home/omi/nw:$LD_LIBRARY_PATH ./nw $*
 
 As you are only modifying local contents of node-webkit directory, this option should not have an impact on the overall stability of your system.
 
-**2. Create global symlink to `libudev.so.1` by hand.**
-
-#### WARNING: This solution is dangerous and may destabilize your system. Use at own risk.
-
-install the package `libudev1`, and there is `libudev.so.1` at `/lib/x86_64-linux-gun/libudev.so.1`. On Ubuntu for example, Run:
-
-``` bash
-# apt-get install libudev1
-# cd /lib/x86_64-linux-gnu/
-# ln -s libudev.so.1 libudev.so.0
-```
-
-**3. Modify the .deb or .rpm package file**
-
-#### WARNING: This solution is dangerous and may destabilize your system. Use at own risk.
-
-When install your app through the package. We can add some scripts for solving it. At the post install, create the symlink to `libudev.so.1`.  
-
-Select the deb of Ubuntu for example. In the `DEBIAN/postinst` add these code. 
+**2. Use a wrapper shell script for your application.**
+In this way, rename the binary executable file as `myapp-bin`, and then create a shell script named `myapp` as the following. Users run the `myapp` file.
 
 ``` shell
-get_lib_dir() {
-  if [ "$DEFAULT_ARCH" = "i386" ]; then
-    LIBDIR=lib/i386-linux-gnu
-  elif [ "$DEFAULT_ARCH" = "amd64" ]; then
-    LIBDIR=lib/x86_64-linux-gnu
-  else
-    echo Unknown CPU Architecture: "$DEFAULT_ARCH"
-    exit 1
-  fi
-}
+#!/bin/bash
+export MYAPP_WRAPPER="`readlink -f "$0"`"
 
-LIBUDEV_0=libudev.so.0
-LIBUDEV_1=libudev.so.1
+HERE="`dirname "$MYAPP_WRAPPER"`"
 
-add_udev_symlinks() {
-  get_lib_dir
-  if [ -f "/$LIBDIR/$LIBUDEV_0" -o -f "/usr/$LIBDIR/$LIBUDEV_0" -o -f "/lib/$LIBUDEV_0" ]; then
-    return 0
-  fi
+# Always use our versions of ffmpeg libs.
+# This also makes RPMs find the compatibly-named library symlinks.
+if [[ -n "$LD_LIBRARY_PATH" ]]; then
+  LD_LIBRARY_PATH="$HERE:$HERE/lib:$LD_LIBRARY_PATH"
+else
+  LD_LIBRARY_PATH="$HERE:$HERE/lib"
+fi
+export LD_LIBRARY_PATH
 
-  if [ -f "/$LIBDIR/$LIBUDEV_1" ]; then
-    ln -snf "/$LIBDIR/$LIBUDEV_1" "/$LIBDIR/$LIBUDEV_0"
-  elif [ -f "/usr/$LIBDIR/$LIBUDEV_1" ];
-  then
-    ln -snf "/usr/$LIBDIR/$LIBUDEV_1" "/$LIBDIR/$LIBUDEV_0"
-  else
-    echo "$LIBUDEV_1" not found in "$LIBDIR" or "/usr/$LIBDIR".
-    exit 1
-  fi
-}
+exec -a "$0" "$HERE/myapp-bin"  "$@"
+```
+** Creating a symlink for your package in the postinstall script **
 
+In the postinstall script of your DEB or RPM package, run the following script to create a local symlink. Use this together with the previous wrapper script.
+```shell
+#!/bin/sh
+set -e
+udiskbin=`which udisks`
+udevso=`ldd $udiskbin | grep libudev.so | awk '{print $3;}'`
+if [ -e "$udevso" ]; then
+   ln -sf "$udevso" /opt/myapp/libudev.so.0
+fi
 ```
