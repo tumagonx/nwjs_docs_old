@@ -233,7 +233,7 @@ Array of maintainers of the package. Each maintainer is a hash which must have a
 "maintainers":[ {
    "name": "Bill Bloggs",
    "email": "billblogs@bblogmedia.com",
-  " web": "http://www.bblogmedia.com",
+   "web": "http://www.bblogmedia.com",
 }]
 ````
 
