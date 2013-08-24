@@ -47,7 +47,7 @@ export LD_LIBRARY_PATH
 
 exec -a "$0" "$HERE/myapp-bin"  "$@"
 ```
-** Creating a symlink for your package in the postinstall script **
+**Creating a symlink for your package in the postinstall script**
 
 In the postinstall script of your DEB or RPM package, run the following script to create a local symlink. Use this together with the previous wrapper script.
 ```shell
