@@ -2,6 +2,19 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### Circadio
+Circadio is an easy to use yet feature rich time tracking application for Windows, Linux and OS X and is currently in public beta.
+
+![Preview](https://getcircadio.com/img/timetracker.png)
+
+With Circadio, you will be tracking time with a single click, enabling you to focus on your job instead of timetracking. When you're ready, you can provide additional information and finally sync your time to a task from any project management system with an API.
+
+Circadio will notify you when you forget to start a timer, and will ask you what to do with the missing time, when it wakes up after your laptop lost its power. Circadio can be configured to fit your way of working. If you want it to, it will tell you when to go home, when you're overloaded with work, when you can take on new tasks and much more.
+
+Circadio will update itself as new features and fixes become available.
+
+Sign up and download at [https://getcircadio.com](https://getcircadio.com)
+
 ### Haroopad
 Haroopadis a markdown enabled document processor for creating web-friendly documents.
 
