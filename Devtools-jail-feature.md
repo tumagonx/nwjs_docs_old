@@ -2,7 +2,7 @@
 
 With the feature `Devtools jail` you can limit the functions of devtools inside an iframe of your window. That means the user can only inspect the DOM elements and JavaScript files in the iframe.
 
-To do that, call `Window.showDevTools(id)` where `id` is the value of `id` attribute of the iframe element.
+To do that, call `Window.showDevTools(id)` where `id` is the value of `id` attribute of the iframe element. Since v0.7.2, you can also call `Window.showDevTools(iframe)` where `iframe` is the object of the iframe element.
 
 This feature is useful for developing IDE with node-webkit: the IDE developers want their users (application developers) to be able to debug their application with Devtools. The UI of the user's application is shown in an iframe in an simulator window, the outer parts of which is used for decoration or control buttons.
 
