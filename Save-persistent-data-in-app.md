@@ -60,6 +60,7 @@ It can directly replicate to/from CouchDB, which gives it an advantage if you ar
 ## EJDB
 [EJDB](https://github.com/Softmotions/ejdb) (Embedded JSON Database engine) is a simple & fast database engine based on Tokyo Cabinet. It's usage copies MongoDB - you can easily make dynamic queries and sort/paginate the result.
 The fast queries and easy-to-use API make it a very good choice for node-webkit.
+An extra step is required to use EJDB in a node-webkit app. Please refer to [3rd party modules with C/C++ addons](https://github.com/rogerwang/node-webkit/wiki/Using-Node-modules) for information.
 
 ## NeDB
 [NeDB](https://github.com/louischatriot/nedb) (Node embedded database) is a pure javascript database for Node.js (unlike EJDB, you don't need to compile anything). It implements the most common subset of MongoDB's and can be used to persist data or simply as an in-memory datastore. Even though it's not native, it's still fast enough for desktop apps (40k reads/s, 10k writes/s).
