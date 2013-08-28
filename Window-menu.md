@@ -40,7 +40,7 @@ gui.Window.get().menu = new gui.Menu({ type: 'menubar' });
 
 The resulted menu will have indeed three submenus: `your-app-name`, `Edit` and `Window`, which are necessary for full-functionality apps.
 
-Another thing you may encounter is that the first item of application menu shows `node-webkit` instead of `your-app-name`, to fix it, you need to replace all `node-webkit` strings in `node-webkit.app/Contents/Info.plist`.
+Another thing you may encounter is that the first item of application menu shows `node-webkit` instead of `your-app-name`, to fix it, you need to edit CFBundleName in `node-webkit.app/Contents/Info.plist`. Set your app name instead of `node-webkit` string.
 
 ## Best practice
 
