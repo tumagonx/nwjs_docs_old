@@ -30,3 +30,7 @@ Possible workarounds:
 * You may use `window.location()` to get the URL of a page. (Requires some additional parsing to get the path out of the URL.)
 
 * You may use [`process.cwd()`](http://nodejs.org/docs/latest/api/process.html#process_process_cwd) to get the current working directory. (However, that's not exactly the same thing.)
+
+## require('child_process')
+
+Currently `child_process.fork` [is broken](https://github.com/rogerwang/node-webkit/issues/213) in node-webkit.
