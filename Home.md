@@ -11,6 +11,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[Using Node modules]]
 * [[Troubleshooting]]
 * [[Security]]
+* [Sample applications](https://github.com/zcbenz/nw-sample-apps)
 
 **Library Reference:**
 * [[Manifest format]] — the format of `package.json`
