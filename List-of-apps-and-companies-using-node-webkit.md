@@ -2,6 +2,11 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### Sputnik
+Open source RSS reader. Download at [http://sputnik.szwacz.com](http://sputnik.szwacz.com)
+
+![Screenshot](http://sputnik.szwacz.com/images/screen.jpg)
+
 ### Circadio
 Circadio is an easy to use yet feature rich time tracking application for Windows, Linux and OS X and is currently in public beta.
 
