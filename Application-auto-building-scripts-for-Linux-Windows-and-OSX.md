@@ -8,8 +8,8 @@ cp /opt/node-webkit/nw.pak ./nw.pak
 cat /opt/node-webkit/nw ./my-app.nw > ../build/linux/my-app && chmod +x ../build/linux/my-app
 #move nw.pak to build folder
 mv ./nw.pak ../build/linux/nw.pak
-#remove office-improver.nw
-rm ./office-improver.nw
+#remove my-app.nw
+rm ./my-app.nw
 #run application
 ../build/linux/my-app
 ```
@@ -32,7 +32,7 @@ rem move icudt.dll to build folder
 copy icudt.dll ..\build\win32\icudt.dll
 del icudt.dll
 rem remove my-app.nw
-del office-improver.nw
+del my-app.nw
 rem run application
 ..\build\win32\my-app.exe
 ```
