@@ -14,7 +14,7 @@ rm ./office-improver.nw
 ../build/linux/my-app
 ```
 build.bat for Windows:
-```
+```bat
 rem zip all files without git to zip archive -2 compression methods - fast (-mx0) or strong (-mx9)
 7z.exe a -tzip my-app.nw * -xr!?git\* -mx0
 rem copy nw.pak from current build node-webkit to current (%~dp0) folder
