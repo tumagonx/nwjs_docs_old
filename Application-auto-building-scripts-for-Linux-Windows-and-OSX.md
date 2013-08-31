@@ -13,6 +13,8 @@ rm ./office-improver.nw
 #run application
 ../build/linux/my-app
 ```
+In Windows we must use for example 7-zip [http://www.7-zip.org/] batch file - in this system we cannot make zip archive from native console...
+
 build.bat for Windows:
 ```bat
 rem zip all files without git to zip archive -2 compression methods - fast (-mx0) or strong (-mx9)
