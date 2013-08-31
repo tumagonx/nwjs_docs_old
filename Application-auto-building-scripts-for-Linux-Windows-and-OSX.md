@@ -1,3 +1,17 @@
+Structure of files for autobuild cross-platform app:
+
+my-app
+*Resources
+**package.json
+**index.html
+**build.sh
+**build.bat
+**build.command
+*build
+**linux
+**win32
+**osx
+
 In Linux we can "install" node-webkit in: /opt/node-webkit
 
 build.sh for Linux:
