@@ -1,3 +1,5 @@
+In Linux we can "install" node-webkit in: /opt/node-webkit
+
 build.sh for Linux:
 ```
 #zip all files to nw archive
@@ -13,6 +15,9 @@ rm ./my-app.nw
 #run application
 ../build/linux/my-app
 ```
+
+In Windows we can "install" node-webkit in: c:\node-webkit
+
 In Windows we must use for example 7-zip [http://www.7-zip.org/] batch file - in this system we cannot make zip archive from native console...
 
 build.bat for Windows:
