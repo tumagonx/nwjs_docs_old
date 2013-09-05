@@ -91,20 +91,24 @@ Then you can just compile the `nw` target (and don't forget to build with `Relea
 Alternately, you can use `ninja` to build `node-webkit`, see [NinjaBuild](http://code.google.com/p/chromium/wiki/NinjaBuild). This method is also recommended since it's very fast and easy to use. A short summary of using `ninja` is:
 
 ````
-GYP_GENERATORS='ninja' ./build/gyp_chromium content/content.gyp
+GYP_GENERATORS='ninja'
+./build/gyp_chromium content/content.gyp
 ninja -C out/Release nw -j4
 ````
 
 ##Tips
 1. You can specify what project files to generate through `GYP_GENERATORS`. And you can export it in `~/.bashrc` etc.For example, if you want to use `make`:
 ````
-GYP_GENERATORS='make' ./build/gyp_chromium content/content.gyp
+GYP_GENERATORS='make'
+./build/gyp_chromium content/content.gyp
 ````
 
 2. When you build on Mac, don't forget to pass `--no-circular-check` to generate project files:
 ````
-GYP_GENERATORS='ninja' ./build/gyp_chromium content/content.gyp --no-circular-check
+GYP_GENERATORS='ninja'
+./build/gyp_chromium content/content.gyp --no-circular-check
 ````
+
 ## Build Faster
 
 * [Build Instructions for Windows](http://www.chromium.org/developers/how-tos/build-instructions-windows#TOC-Accelerating-the-build)
