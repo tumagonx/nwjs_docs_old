@@ -88,7 +88,9 @@ About the `Info.plist` file, you can view [Implementing Cocoa's Standard About P
 
 ## Which files should be shipped?
 
-Apart from the binary files, there're some other files you should also ship, see instructions for different platforms below
+Apart from the binary files, there're some other files you should also ship, see instructions for different platforms below. 
+
+And since the binary is based on Chromium, multiple open source license notices are needed including the MIT License, the LGPL, the BSD, the Ms-PL and an MPL/GPL/LGPL tri-license. _(This doesn't apply to your code and you don't have to open source your code)_
 
 ### Windows
 
