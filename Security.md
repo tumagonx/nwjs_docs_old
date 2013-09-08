@@ -4,7 +4,7 @@ As application developer, one should be keep in mind that contents should be loa
 
 Which frames are Node frames and which are not?
 
-1. iframes has the attribute `nwdisable` are normal frames. (NOTE: `nwfaketop` attribute should be specified with `nwdisable`. The reason is in https://github.com/rogerwang/node-webkit/issues/534)
+1. iframes that have the attribute `nwdisable` are normal frames. (NOTE: `nwfaketop` attribute should be specified with `nwdisable`. The reason is in https://github.com/rogerwang/node-webkit/issues/534)
 2. Local files, [app protocol](App protocol) frames (or remote sites when URL matches the `node-remote` field) are Node frames. (`nodejs` field should not be set to false in this case)
 3. Frames opened with `window.open` are normal frames when these flags are set: `new-instance` = `true` and `nodejs` = `false`
 
