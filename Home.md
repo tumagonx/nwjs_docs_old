@@ -9,6 +9,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[How to run apps]]
 * [[How to package and distribute your apps]]
 * [[Using Node modules]]
+* [[Differences of JavaScript contexts]]
 * [[Troubleshooting]]
 * [[Security]]
 * [Sample applications](https://github.com/zcbenz/nw-sample-apps)
