@@ -213,7 +213,7 @@ written as plugins, that are just plain npm packages.
 
 [Sync Hard](http://synchardapp.com/) is a super simplified GUI front-end to rsync.  It will optionally create md5 checksums of each file before and after being transferred.
 
-![Sync Hard screenshot](http://synchardapp.com/assets/img/screenshot-130603.png)
+![Sync Hard screenshot](https://synchardapp.com/assets/img/screenshot-130603.png)
 
 ## Companies
 
