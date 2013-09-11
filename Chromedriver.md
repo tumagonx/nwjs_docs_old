@@ -8,6 +8,34 @@ You can use it with tools like [selenium](http://docs.seleniumhq.org/).
 
 The only difference of the binary files from the official one is: `chromedriver2_server` will search for node-webkit binaries (nw, nw.exe) in the same directory (on OSX it's the same directory with `node-webkit.app`).
 
+## Getting started
+
+The following workflow uses [wd](https://github.com/admc/wd) to drive the tests:
+
+### Installing
+
+* Download `chromedriver2` (see links below) and place it under the same dir that contains the node-webkit binaries (`nw`, `nw.exe`, or `node-webkit.app` on OSX)
+* Download the [Selenium Server Standalone](http://docs.seleniumhq.org/download/) jar and place it in the same dir as `chromedriver2`
+* Install `wd` in your project's `node_modules/`:
+```
+$ npm install wd
+```
+
+### Running
+
+* Start Selenium:
+```
+$ java -jar selenium-server-standalone-VERSION.jar -Dwebdriver.chrome.driver=./chromedriver2_server
+```
+* Drive Selenium as per [wd](https://github.com/admc/wd)'s instructions, for example:
+```
+$ (your_project_path)/node_modules/.bin/wd shell
+(wd): x = wd.remote()
+(wd): x.init({ browserName: "chrome" })
+(wd): x.get("http://google.com")
+```
+* At this point you should have a node-webkit window open showing Google's homepage
+
 ## Downloads
 ### 0.7.x
 https://s3.amazonaws.com/node-webkit/v0.7.0/chromedriver2-nw-v0.7-win-ia32.zip
