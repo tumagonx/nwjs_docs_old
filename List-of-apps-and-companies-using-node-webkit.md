@@ -273,3 +273,9 @@ Key features included:
 * Portability of the tags, due to the fact, that tags are saved in the file name
 
 [![Image](http://tagspaces.org/content/TagSpaces.png)](http://tagspaces.org)
+
+
+[wikipedia](https://github.com/hemanth/nw-wiki-app) a simple app to get the feel of using `node-webkit` :
+
+![img](http://h3manth.com/i/1fde0b5314.png)
+
