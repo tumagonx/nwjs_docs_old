@@ -98,6 +98,12 @@ In order to provide complete set of file dialogs, node-webkit add another two at
 <input type="file" nwsaveas />
 ```
 
+Starting from v0.7.3 you can specify a value for the default file name to save:
+
+```html
+<input type="file" nwsaveas="filename.txt" />
+```
+
 # FileList
 
 Instead of the value of `input` tag, HTML5 provides a `files` attribute to return all files selected in a `input` tag.  The standard usage is:
