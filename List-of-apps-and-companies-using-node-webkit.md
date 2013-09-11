@@ -257,3 +257,19 @@ The [fleex](http://fleex.tv/) player is a desktop application that helps you get
 * Many more features like built-in dictionaries, idioms detection...
 
 [![Image](https://fleex.blob.core.windows.net/misc/staticImages/node_webkit.png)](http://fleex.tv)
+
+### TagSpaces
+
+[TagSpaces](http://tagspaces.org/) is: 
+* An application, which allows you to navigate and organize your local files with the help of tags.
+* An extensible platform providing a web based user interface for your hard drive.
+* A purely locally running application, which does not need a web server and or internet connection.
+
+Key features included:
+* File tagging without the need of a database
+* Taking notes
+* Browsing, viewing and editing of your local files directly in the browser without external applications
+* Different visualization possibilities of directory structures and files
+* Portability of the tags, due to the fact, that tags are saved in the file name
+
+[![Image](http://tagspaces.org/content/TagSpaces.png)](http://tagspaces.org)
