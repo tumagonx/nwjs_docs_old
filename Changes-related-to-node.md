@@ -6,6 +6,7 @@ Since node-webkit supports GUI applications instead of console applications, th
 ## process
 A couple of new fields is added to the global `process` object:
 * `process.versions['node-webkit']` is set with node-webkit's version.
+* `process.versions['chromium']` is set with the chromium version which node-webkit is based on. _(since v0.7.3)_
 * `process.mainModule` is set for the start page (such as `index.html`) as specified in the manifest's [`main`](Manifest-format#main) field. However, when the [`node-main`](Manifest-format#node-main) field is also specified in the manifest, `process.mainModule` points to the file specified in the `node-main` field.
 
 ## global
