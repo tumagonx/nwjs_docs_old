@@ -218,6 +218,12 @@ The optional `iframe` argument is supported since v0.7.2. It should be the ifram
 
 For more information, please read [[Devtools Jail Feature]].
 
+### Window.closeDevTools()
+
+_since v0.7.3_
+
+Close the devtools window.
+
 ### Window.setMaximumSize(width, height)
 
 Set window's maximum size.
