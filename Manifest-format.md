@@ -154,6 +154,12 @@ _since v0.6.1_
 
 *(int)* Number of mega bytes for the quota of the DOM storage. The suggestion is to put double the value you want.
 
+### no-edit-menu
+
+_since v0.7.3_
+
+*(boolean)* whether the default `Edit` menu should be created on Mac. The default value is `true`. Only effective on Mac. **This is a workaround for a feature request and is expected to be replaced by something else soon**
+
 ## Window Subfields
 
 ### title
