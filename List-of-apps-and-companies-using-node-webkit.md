@@ -2,11 +2,17 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### Hyro
+A real-time HTML5 editor. Lightweight and easy to use. [http://jawerty.github.io/Hyro/](http://jawerty.github.io/Hyro/)
+
+![Screenshot](https://raw.github.com/jawerty/Hyro/master/screenshots/2.png)
+
+made by Jared Wright ([@jawerty](http://github.com/jawerty))
+
 ### Sqwiggle
 [Sqwiggle](https://www.sqwiggle.com) is a tool which helps remote teams work more efficiently together by facilitating real presence and frictionless discussions using images, WebRTC video and quick sharing.
 
 ![Sqwiggle Screenshot](https://lh6.googleusercontent.com/-jHelIGY5NvE/Uh7iazRsE4I/AAAAAAAAABw/iTqloaGk8aI/s1092-fcrop64=1,13fd0000ecbcfe78/Screen%2BShot%2B2013-08-28%2Bat%2B22.54.56.png)
-
 
 ### Sputnik
 Open source RSS reader. Download at [http://sputnik.szwacz.com](http://sputnik.szwacz.com)
