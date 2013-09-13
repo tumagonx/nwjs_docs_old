@@ -300,7 +300,7 @@ The `closed` event is emitted **after** corresponding window is closed. Normally
 
   // Listen to main window's close event
   gui.Window.get().on('close', function() {
-    // Hide the window to give use the feeling of closing immediately
+    // Hide the window to give user the feeling of closing immediately
     this.hide();
 
     // If the new window is still open then close it.
