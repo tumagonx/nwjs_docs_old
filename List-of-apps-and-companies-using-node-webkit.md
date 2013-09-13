@@ -215,6 +215,16 @@ written as plugins, that are just plain npm packages.
 
 ![Sync Hard screenshot](https://synchardapp.com/assets/img/screenshot-130603.png)
 
+### Cloud Commander Application
+
+[Cloud Commander Application](http://coderaiser.github.io/cloudcmd-app) is a cloud file manager.
+It contains two panels, editor and console.
+
+![Cloud Commander app](https://raw.github.com/coderaiser/cloudcmd-screenshot/master/cloudcmd-v0.3.0.png "Cloud Commander Application")
+![Cloud Commander app (edit)](https://raw.github.com/coderaiser/cloudcmd-screenshot/master/cloudcmd-v0.3.0-edit.png "Cloud Commander Application(edit)")
+![Cloud Commander app Console](https://raw.github.com/coderaiser/cloudcmd-screenshot/master/cloudcmd-v0.3.0-console.png "Cloud Commander Application(console)")|
+
+
 ## Companies
 
 ### Everytime
@@ -280,4 +290,3 @@ Key features included:
 [wiki-app](https://github.com/hemanth/nw-wiki-app) a simple app to get the feel of using `node-webkit` :
 
 ![img](http://h3manth.com/i/1fde0b5314.png)
-
