@@ -16,7 +16,7 @@ If the `require()` method (of Node.js [modules API](http://nodejs.org/docs/late
 
 If HTML `<script src="...">` element (or jQuery's [`$.getScript()`](http://api.jquery.com/jQuery.getScript/), or any other similar method) is used in some window, then the script runs in the context of that window.
 
-If the module is given as the value of the [`"node-main"`](https://github.com/rogerwang/node-webkit/wiki/node-main) property, it runs in the Node's context but later has an access to the `window` object. (See the “[node-main](https://github.com/rogerwang/node-webkit/wiki/node-main)” article for details.)
+If the module is given as the value of the [`"node-main"`](https://github.com/rogerwang/node-webkit/wiki/node-main) property of the application's [manifest file](https://github.com/rogerwang/node-webkit/wiki/Manifest-format), then the module runs in the Node's context but later has access to the `window` object. (See the “[node-main](https://github.com/rogerwang/node-webkit/wiki/node-main)” article for details.)
 
 ## Features and limitations of the Node's context
 
