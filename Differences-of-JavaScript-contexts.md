@@ -36,6 +36,8 @@ The most common cause for such problems is the behaviour of the `instanceof` o
 
 For example, a simple check `someValue instanceof Array` cannot determine if a variable's value is an array's if it's passed from another context (see “[Determining with absolute accuracy whether or not a JavaScript object is an array](http://web.mit.edu/jwalden/www/isArray.html)” for details).
 
+The same problem arises when the `.constructor` property is checked directly (for example, when `someValue.constructor === Array` is used instead of `someValue instanceof Array`).
+
 The following constructors are children of the context-dependent global object, and thus their instances are affected:
 
 * **Standard object types:** `Array`, `Boolean`, `Date`, `Function`, `Number`, `Object`, `RegExp`, `String`.
@@ -49,3 +51,146 @@ There are several ways to work around this problem.
 ### Avoiding instanceof
 
 The easiest way to prevent context-related problems is to avoid using `instanceof` when a value may come from another JavaScript context. For example, you may use [`Array.isArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray) method to check whether a value is an array, and that method works reliably across contexts.
+
+However, if such a convenient alternate method is not readily available, or when you face a problem in someone other's (not your own) code and patching that would need a hassle, then another workaround is necessary.
+
+### Using a constructor from the other context
+
+When you foresee passing a value to some other context, you may providently use a constructor from that context in order to construct you value. The value then would easily pass any `instanceof` checks in that context.
+
+For example, the well-known [`async`](https://github.com/caolan/async) module uses (in [its code](https://github.com/caolan/async/blob/d8601a17ab0bc6a1572227998b6e9182637f37b6/lib/async.js) dated 2013-05-20) numerous `.constructor` checks (in lines [472](https://github.com/caolan/async/blob/d8601a17ab0bc6a1572227998b6e9182637f37b6/lib/async.js#L472), [505](https://github.com/caolan/async/blob/d8601a17ab0bc6a1572227998b6e9182637f37b6/lib/async.js#L505), [545](https://github.com/caolan/async/blob/d8601a17ab0bc6a1572227998b6e9182637f37b6/lib/async.js#L545), [675](https://github.com/caolan/async/blob/d8601a17ab0bc6a1572227998b6e9182637f37b6/lib/async.js#L675), [752](https://github.com/caolan/async/blob/d8601a17ab0bc6a1572227998b6e9182637f37b6/lib/async.js#L752)) and thus fails whenever it encounters an array from another context. For example, if you run the following code from a node-webkit's window context,
+
+```js
+require('async').waterfall([
+   function(callback){
+      console.log('1.');
+      callback(null, 'one', 'two');
+   },
+   function(arg1, arg2, callback){
+      console.log('2.');
+      callback(null, 'three');
+   },
+   function(arg1, callback){
+      console.log('3.');
+      callback(null, 'done');
+   }
+], function (err, result) {
+   console.log('Fin.');
+   if( err ) throw err;
+   console.log(result);
+});
+```
+it throws the `Error: First argument to waterfall must be an array of functions` (erroneously thinking it's not an array).
+
+Using the [`nwglobal`](https://github.com/Mithgol/nwglobal) module, you may access the Node's context's `Array` constructor and rewrite the above code:
+
+```js
+require('async').waterfall( require('nwglobal').Array(
+   function(callback){
+      console.log('1.');
+      callback(null, 'one', 'two');
+   },
+   function(arg1, arg2, callback){
+      console.log('2.');
+      callback(null, 'three');
+   },
+   function(arg1, callback){
+      console.log('3.');
+      callback(null, 'done');
+   }
+), function (err, result) {
+   console.log('Fin.');
+   if( err ) throw err;
+   console.log(result);
+});
+```
+
+It makes the `async` module happy.
+
+However, in some cases you cannot (or won't) use the constructor directly to create your value. (For example, as you may [see in MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function), using the `Function` constructor is less efficient than declaring a function, and it also does not create a closure.) In such cases another workaround is necessary.
+
+### Replacing __proto__
+
+The non-standard (but widely implemented) `__proto__` property of an object can be used (as you may [see in MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)) to change the object's internal `[[Prototype]]` property (initially containing the prototype of its constructor).
+
+When you foresee passing a value to some other context, you may providently replace the value's `__proto__` property with a constructor from that context. The value then would easily pass any `instanceof` checks in that context.
+
+For example, the well-known [`async`](https://github.com/caolan/async) module uses (in [its code](https://github.com/caolan/async/blob/d8601a17ab0bc6a1572227998b6e9182637f37b6/lib/async.js) dated 2013-05-20) an `instanceof Function` check ([on line 428](https://github.com/caolan/async/blob/d8601a17ab0bc6a1572227998b6e9182637f37b6/lib/async.js#L428)) and thus it fails whenever it encounters a function from another context. For example, if you run the following code from a node-webkit's window context,
+
+```js
+var getData = function (callback) {
+   setTimeout(function(){
+       console.log('1.1: got data');
+       callback();
+   }, 300);
+}
+var makeFolder=  function (callback) {
+   setTimeout(function(){
+       console.log('1.1: made folder');
+       callback();
+   }, 200);
+}
+var writeFile= function(callback) {
+   setTimeout(function(){
+       console.log('1.1: wrote file');
+       callback(null, 'myfile');
+   }, 300);
+}
+var emailFiles= function(callback, results) {
+   console.log('1.1: emailed file: '+results.writeFile);
+   callback(null, results.writeFile);
+}
+require('async').auto({
+   getData:getData ,
+   makeFolder:makeFolder,
+   writeFile: ['getData', 'makeFolder',writeFile],
+   emailFiles: ['writeFile',emailFiles]
+}, function(err, results) {
+   console.log('1.1: err: '+ err);
+   console.log('1.1: results: '+ results);
+});
+```
+
+it throws the `has no method slice` error (erroneously thinking that the given value is not a function and thus it has to be an array, and then attempting to slice that “array”).
+
+Using the [`nwglobal`](https://github.com/Mithgol/nwglobal) module, you may access the Node's context's `Function` constructor and rewrite the above code:
+
+```js
+var getData = function (callback) {
+   setTimeout(function(){
+       console.log('1.1: got data');
+       callback();
+   }, 300);
+}
+getData.__proto__ = require('nwglobal').Function;
+var makeFolder=  function (callback) {
+   setTimeout(function(){
+       console.log('1.1: made folder');
+       callback();
+   }, 200);
+}
+makeFolder.__proto__ = require('nwglobal').Function;
+var writeFile= function(callback) {
+   setTimeout(function(){
+       console.log('1.1: wrote file');
+       callback(null, 'myfile');
+   }, 300);
+}
+writeFile.__proto__ = require('nwglobal').Function;
+var emailFiles= function(callback, results) {
+   console.log('1.1: emailed file: '+results.writeFile);
+   callback(null, results.writeFile);
+}
+emailFiles.__proto__ = require('nwglobal').Function;
+require('async').auto({
+   getData:getData ,
+   makeFolder:makeFolder,
+   writeFile: ['getData', 'makeFolder',writeFile],
+   emailFiles: ['writeFile',emailFiles]
+}, function(err, results) {
+   console.log('1.1: err: '+ err);
+   console.log('1.1: results: '+ results);
+});
+```
+
+It makes the `async` module happy.
