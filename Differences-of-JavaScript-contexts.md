@@ -109,7 +109,7 @@ It makes the `async` module happy.
 
 However, in some cases you cannot (or won't) use the constructor directly to create your value. (For example, as you may [see in MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function), using the `Function` constructor is less efficient than declaring a function, and it also does not create a closure.) In such cases another workaround is necessary.
 
-### Replacing __proto__
+### Replacing `__proto__`
 
 The non-standard (but widely implemented) `__proto__` property of an object can be used (as you may [see in MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)) to change the object's internal “&#91;&#91;Prototype&#93;&#93;” property (initially containing the prototype of its constructor).
 
