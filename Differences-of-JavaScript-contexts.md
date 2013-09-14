@@ -27,3 +27,25 @@ The Node.js `global` object is the global object in the Node's context. Any
 That also means you cannot rely on `alert()` (which is actually `window.alert()`) for debugging. You may, however, use `console.log()`; its output (and the output of other similar methods such as `console.warn()` and `console.error()`) is redirected to WebKit's console. You may see it in your “[Developer Tools](Debugging-with-devtools)” window (on its “Console” tab).
 
 You cannot use `require('nw.gui')` (to access the node-webkit's [GUI API](https://github.com/rogerwang/node-webkit/wiki/API-Overview-and-Notices)) from the Node's context, because there's no GUI outside of a window.
+
+## Working around differences of contexts
+
+While differences of contexts are generally benefitial, sometimes they may constitute a problem in your (or some other person's) code, and a need for a workaround arises.
+
+The most common cause for such problems is the behaviour of the `instanceof` operator in JavaScript. As you may [see in MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof), the operation `someValue instanceof someConstructor` tests whether an object has in its prototype chain the `prototype` property of the given constructor. However, if `someValue` is passed from a different JavaScript context, then it has its own line of ancestor objects, and the `someValue instanceof someConstructor` check fails inevitably.
+
+For example, a simple check `someValue instanceof Array` cannot determine if a variable's value is an array's if it's passed from another context (see “[Determining with absolute accuracy whether or not a JavaScript object is an array](http://web.mit.edu/jwalden/www/isArray.html)” for details).
+
+The following constructors are children of the context-dependent global object, and thus their instances are affected:
+
+* **Standard object types:** `Array`, `Boolean`, `Date`, `Function`, `Number`, `Object`, `RegExp`, `String`.
+
+* **Typed array types:** `ArrayBuffer`, `DataView`, `Float32Array`, `Float64Array`, `Int16Array`, `Int32Array`, `Int8Array`, `Uint16Array`, `Uint32Array`, `Uint8Array`.
+
+* **Error types:** `Error`, `EvalError`, `RangeError`, `ReferenceError`, `SyntaxError`, `TypeError`, `URIError`.
+
+There are several ways to work around this problem.
+
+### Avoiding instanceof
+
+The easiest way to prevent context-related problems is to avoid using `instanceof` when a value may come from another JavaScript context. For example, you may use [`Array.isArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray) method to check whether a value is an array, and that method works reliably across contexts.
