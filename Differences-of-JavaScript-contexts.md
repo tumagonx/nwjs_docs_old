@@ -12,7 +12,7 @@ Node modules in node-webkit run in their own shared Node context.
 
 ## Determining the context of a script
 
-If the `require()` method (of Node.js [modules API](http://nodejs.org/docs/latest/api/modules.html)) is used, then the required module runs in the Node's context.
+If the `require()` method (of Node.js [modules API](http://nodejs.org/docs/latest/api/modules.html)) is used, then the required module runs in the Node's context. (When you call the `require()` function or a function from some required module, the JS engine enters the Node's context and leaves it after the function returns.)
 
 If HTML `<script src="...">` element (or jQuery's [`$.getScript()`](http://api.jquery.com/jQuery.getScript/), or any other similar method) is used in some window, then the script runs in the context of that window.
 
@@ -27,6 +27,8 @@ The Node.js `global` object is the global object in the Node's context. Any
 That also means you cannot rely on `alert()` (which is actually `window.alert()`) for debugging. You may, however, use `console.log()`; its output (and the output of other similar methods such as `console.warn()` and `console.error()`) is redirected to WebKit's console. You may see it in your “[Developer Tools](Debugging-with-devtools)” window (on its “Console” tab).
 
 You cannot use `require('nw.gui')` (to access the node-webkit's [GUI API](https://github.com/rogerwang/node-webkit/wiki/API-Overview-and-Notices)) from the Node's context, because there's no GUI outside of a window.
+
+Some other browser features (such as `Worker` and `WebSocket` interfaces) are also unavailable in the Node's context.
 
 ## Working around differences of contexts
 
