@@ -111,7 +111,7 @@ However, in some cases you cannot (or won't) use the constructor directly t
 
 ### Replacing __proto__
 
-The non-standard (but widely implemented) `__proto__` property of an object can be used (as you may [see in MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)) to change the object's internal `[[Prototype]]` property (initially containing the prototype of its constructor).
+The non-standard (but widely implemented) `__proto__` property of an object can be used (as you may [see in MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)) to change the object's internal “&#91;&#91;Prototype&#93;&#93;” property (initially containing the prototype of its constructor).
 
 When you foresee passing a value to some other context, you may providently replace the value's `__proto__` property with a constructor from that context. The value then would easily pass any `instanceof` checks in that context.
 
