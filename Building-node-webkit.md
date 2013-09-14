@@ -84,14 +84,14 @@ After the `gclient sync`, project files should have be prepared. If not, you sho
 
 Then you can just compile the `nw` target (and don't forget to build with `Release` mode):
 
-* Windows - Open the Visual Studio solution file and build project `nw` under `content`. 
+* Windows - Use `ninja` as described below. Currently building with Visual Studio (Open the Visual Studio solution file and build project `nw` under `content`) is reported broken.
 * Mac OS X - Use `ninja` as described bellow, XCode will die building `node-webkit` :(. 
 * Linux - Run `make -j4 nw BUILDTYPE=Release` from the Chromium `src` directory. 
 
 Alternately, you can use `ninja` to build `node-webkit`, see [NinjaBuild](http://code.google.com/p/chromium/wiki/NinjaBuild). This method is also recommended since it's very fast and easy to use. A short summary of using `ninja` is:
 
 ````
-GYP_GENERATORS='ninja'
+export GYP_GENERATORS='ninja'
 ./build/gyp_chromium content/content.gyp
 ninja -C out/Release nw -j4
 ````
