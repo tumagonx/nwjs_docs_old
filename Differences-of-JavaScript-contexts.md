@@ -6,7 +6,7 @@ That's common practice among web browsers. It's a good thing because, for ex
 
 * when a programmer makes a mistake (such as [missing `new` before a poorly written constructor](http://ejohn.org/blog/simple-class-instantiation/)) and the bug affects (pollutes) the global scope, it still cannot affect larger areas (several windows);
 
-* malicious applications cannot access confidential data structures in other window.
+* malicious applications cannot access confidential data structures in other windows.
 
 Node modules in node-webkit run in their own shared Node context.
 
