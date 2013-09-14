@@ -18,7 +18,7 @@ If HTML `<script src="...">` element (or jQuery's [`$.getScript()`](http://api.j
 
 If the module is given as the value of the [`"node-main"`](https://github.com/rogerwang/node-webkit/wiki/node-main) property, it runs in the Node's context but later has an access to the `window` object. (See the “[node-main](https://github.com/rogerwang/node-webkit/wiki/node-main)” article for details.)
 
-## Features and limitation of the Node's context
+## Features and limitations of the Node's context
 
 Scripts running in the Node's context may use `__dirname` variable to read the path of their file's directory.
 
