@@ -158,7 +158,7 @@ _since v0.6.1_
 
 _since v0.7.3_
 
-*(boolean)* whether the default `Edit` menu should be created on Mac. The default value is `true`. Only effective on Mac. **This is a workaround for a feature request and is expected to be replaced by something else soon**
+*(boolean)* whether the default `Edit` menu should be disabled on Mac. The default value is `false`. Only effective on Mac. **This is a workaround for a feature request and is expected to be replaced by something else soon**
 
 ## Window Subfields
 
