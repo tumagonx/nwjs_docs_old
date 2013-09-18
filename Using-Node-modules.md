@@ -8,6 +8,8 @@ There are three types of modules in Node.js:
 
 All of these types can be used in node-webkit.
 
+**Note:**   you may use the “[Modules](https://github.com/joyent/node/wiki/Modules)” page in Node's wiki or [npm search](https://npmjs.org/) to discover many open source modules.
+
 ## Internal modules
 
 The internal (built-in) modules of Node.js can be used as directly as in Node, according to the documentation on [Node API](http://nodejs.org/docs/latest/api/).
