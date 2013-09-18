@@ -78,6 +78,28 @@ For `CoffeScript`, you should first tag your coffeescript with the type `text/co
 </html>
 ```
 
+You can also load `CoffeeScript` files using the `require` function from Node. In order to do so, you must first locally install the `coffee-script` module in your project directory (`npm install coffee-script`). After that, all you need to do is just require the `coffee-script` module, which registers `.coffee` extension. Example:
+
+index.html
+```html
+<!DOCTYPE html>
+<html>
+ <head>
+  <script>
+   require('coffee-script');
+   require('./app.coffee');
+  </script>
+ </head>
+ <body>
+ </body>
+</html>
+```
+
+app.coffee
+```coffeescript
+window.alert 'Hello!'
+```
+
 For `LESS`, it also has an online compiler that translates your `.less` file into `.css` file in browser, to use it, just add following lines in `<head>` tag:
 
 ```html
