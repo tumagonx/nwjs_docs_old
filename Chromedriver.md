@@ -36,6 +36,14 @@ $ (your_project_path)/node_modules/.bin/wd shell
 ```
 * At this point you should have a node-webkit window open showing Google's homepage
 
+### Important Note For Ubuntu 13.x Users
+
+As you may have found from trying to run node-webkit in later versions of Ubuntu, you will probably find this won't work due to lacking libudev.so.0.  You can work around this reasonably easily.
+  1. Rename `nw` to something else (I chose `myapp-bin`) - this is because ChromeDriver has hard-coded the executable to nw.
+  2. Create a new executable file called `nw` with the instructions found in the Wiki for the [libudev.so.0](https://github.com/rogerwang/node-webkit/wiki/The-solution-of-lacking-libudev.so.0) hack.  **REMEMBER TO CREATE A SIMLINK IN THIS DIRECTORY!!!**
+
+You should find this now works in Ubuntu 13.x
+
 ## Downloads
 ### 0.7.x
 https://s3.amazonaws.com/node-webkit/v0.7.0/chromedriver2-nw-v0.7-win-ia32.zip
