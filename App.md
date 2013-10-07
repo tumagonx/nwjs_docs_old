@@ -60,6 +60,12 @@ Query the proxy to be used for loading `url` in DOM. The return value is in the 
 
 Quit current app. This method will **not** send `close` event to windows and app will just quit quietly.
 
+### setCrashDumpDir(dir)
+
+_since v0.8.0_
+
+Set the directory where the minidump file will be saved on crash. For more information, see [[Crash dump]] 
+
 ## Events
 
 Following events can be listened by using `App.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
