@@ -8,10 +8,14 @@ Crash dumping is enabled on all the 3 platforms and the minidump file will be sa
 
 The dump location can be changed by an API: `App.setCrashDumpDir(dir)`. Note that if the program crashes before setting the new location, the dump file will still be saved in the default location.
 
-## decoding the stack trace ##
+## Decoding the stack trace ##
 
 To extract the stack trace from the minidump file, you need the `minidump_stackwalk` tool, symbols file of node-webkit binary and the minidump (.dmp) file generated from the crash. 
 
 See http://www.chromium.org/developers/decoding-crash-dumps  http://code.google.com/p/google-breakpad/wiki/GettingStartedWithBreakpad
 
 Symbols file of official node-webkit binary is provided staring from 0.8.0. It can be downloaded from:
+
+## Trigger the crash for testing ##
+
+To test the crash dump feature, 2 API functions are added in 0.8.0 to trigger the crash on purpose: `App.crashBrowser()` and `App.crashRenderer()`. They crash the browser process and the renderer process respectively.
