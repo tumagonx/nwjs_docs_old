@@ -50,6 +50,12 @@ _since v0.3.2_
 
 Send the `close` event to all windows of current app, if no window is blocking the `close` event, then the app will quit after all windows have done shutdown. Use this method to quit an app will give windows a chance to save data.
 
+### crashBrowser(), crashRenderer()
+
+_since v0.8.0_
+
+These 2 functions crashes the browser process and the renderer process respectively, to test the [[Crash dump]] feature.
+
 ### getProxyForURL(url)
 
 _since v0.6.3_
