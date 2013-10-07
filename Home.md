@@ -57,6 +57,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[Debugging with devtools]]
 * [[Debugging with Sublime Text 2]]
 * [[The nw protocol]]
+* [[Crash dump]]
 
 **Traps:**
 * [[Console and timers]]
