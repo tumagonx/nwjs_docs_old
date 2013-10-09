@@ -123,3 +123,15 @@ You can use gclient to update everything automatically:
 cd /path-to-node-webkit
 gclient sync
 ````
+
+node-webkit's code are in 6 git repos. To keep an eye on the commits, subscribe to our dev mailing list: node-webkit-dev+subscribe@googlegroups.com . 
+
+List of node-webkit repos:
+````
+https://github.com/rogerwang/node-webkit
+https://github.com/rogerwang/blink
+https://github.com/zcbenz/chromium
+https://github.com/rogerwang/breakpad
+https://github.com/rogerwang/v8
+https://github.com/rogerwang/node
+````
