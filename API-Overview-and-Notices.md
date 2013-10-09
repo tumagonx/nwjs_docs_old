@@ -42,7 +42,7 @@ for (var i = 0; i < menu.items.length; ++i) {
 
 And please don't directly change elements via reassigning like `menu.items[2] = new gui.MenuItem(...);`, it's absolutely wrong. To update an element, just change it like `menu.items[2].title = 'New Title'`, to replace an element, first `remove` it and then do an `insert`.
 
-Another thing is we don't throw exceptions we you're doing something wrong in UI API, **we crash**. So be careful on using it. If you're reusing a deleted element, or passing wrong types, we will crash without warning you.
+Another thing is we don't throw exceptions when you're doing something wrong in UI API, **we crash**. So be careful on using it. If you're reusing a deleted element, or passing wrong types, we will crash without warning you.
 
 One thing you may not notice is after deleting objects, you should always assign `null` to a deleted UI object, in case you accidentally reuse it, an example is:
 
