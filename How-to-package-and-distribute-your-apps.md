@@ -7,6 +7,10 @@ The following sub-directories can be put in application's root directory:
 
 You don't need to ship the `nwsnapshot` file in the downloaded zip.
 
+**Caution**: do not assume your `node_modules` that target one platform work _as is_ in all platforms. For instance `node-email-templates` has specific Windows & Mac os x `npm install` commands. Besides it requires python to install properly, which is not installed by default on Windows.
+
+As a rule of thumb `npm install` your `package.json` on each platform you target to ensure everything works as expected.
+
 ## Step 1: Make a package
 
 _Since our package system is similar to [LÖVE](https://love2d.org), following guides are modified from its [Wiki](https://love2d.org/wiki/Game_Distribution)._
