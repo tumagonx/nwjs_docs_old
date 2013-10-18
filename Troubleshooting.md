@@ -8,6 +8,12 @@ Audio should work. The problem should be the codec for mp3 or other non-free med
 
 Sometimes the css doesn't display correctly, such as `-webkit-transform:translateZ(-1000px);`. Maybe it's the problem with the WebGL.
 
+## Running JavaScript blocks CSS-defined animations
+
+By default they are running in the same thread.
+
+You may change it if you add `--enable-threaded-compositing` flag to the [`chromium-args`](https://github.com/rogerwang/node-webkit/wiki/Manifest-format#chromium-args) section of your application's [manifest file](https://github.com/rogerwang/node-webkit/wiki/Manifest-format).
+
 ## Lack of libudev.so.0
 Maybe node-webkit doesn't work on your computer with the error.
 
