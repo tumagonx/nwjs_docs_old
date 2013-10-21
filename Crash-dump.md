@@ -19,3 +19,15 @@ Symbols file of official node-webkit binary is provided staring from 0.8.0. It c
 ## Trigger the crash for testing ##
 
 To test the crash dump feature, 2 API functions are added in 0.8.0 to trigger the crash on purpose: `App.crashBrowser()` and `App.crashRenderer()`. They crash the browser process and the renderer process respectively.
+
+## Resources ##
+
+**Linux symbol files of breakpad**
+
+https://s3.amazonaws.com/node-webkit/v0.8.0-rc1/nw.breakpad.ia32.gz
+
+https://s3.amazonaws.com/node-webkit/v0.8.0-rc1/nw.breakpad.x64.gz
+
+**windows pdb file**
+
+https://s3.amazonaws.com/node-webkit/v0.8.0-rc1/nw.exe.pdb.zip
