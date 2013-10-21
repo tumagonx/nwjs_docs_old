@@ -226,6 +226,12 @@ _since v0.7.3_
 
 Close the devtools window.
 
+### Window.isDevToolsOpen()
+
+_since v0.8.0_
+
+Query the status of devtools window
+
 ### Window.setMaximumSize(width, height)
 
 Set window's maximum size.
@@ -367,7 +373,13 @@ Emitted when window zooming changed. It has a parameter indicating the new zoom 
 Emitted after the capturePage method is called and image data is ready. See `Window.capturePage's` callback function for the parameter's value definition. 
 
 ### devtools-opened
-Emitted after Devtools is ready after calling `Window.showDevTools(id, headless)` with `headless` = `true`. The event callback has an `url` argument, which is the URL to load Devtools UI. See [[Devtools jail feature]] and [[Window]] for more information.
+Emitted after Devtools is opened by any means (since v0.8.0), or ready after calling `Window.showDevTools(id, headless)` with `headless` = `true`. The event callback has an `url` argument, which is the URL to load Devtools UI. See [[Devtools jail feature]] and [[Window]] for more information.
+
+### devtools-closed
+
+_since v0.8.0_
+
+Emitted after Devtools is closed.
 
 ## Issues
 
