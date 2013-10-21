@@ -12,7 +12,9 @@ The dump location can be changed by an API: `App.setCrashDumpDir(dir)`. Note tha
 
 To extract the stack trace from the minidump file, you need the `minidump_stackwalk` tool, symbols file of node-webkit binary and the minidump (.dmp) file generated from the crash. 
 
-See http://www.chromium.org/developers/decoding-crash-dumps  http://code.google.com/p/google-breakpad/wiki/GettingStartedWithBreakpad
+See http://www.chromium.org/developers/decoding-crash-dumps  
+
+http://code.google.com/p/google-breakpad/wiki/GettingStartedWithBreakpad
 
 Symbols file of official node-webkit binary is provided staring from 0.8.0. It can be downloaded from:
 
