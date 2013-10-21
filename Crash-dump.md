@@ -33,3 +33,7 @@ https://s3.amazonaws.com/node-webkit/v0.8.0-rc1/nw.breakpad.x64.gz
 **windows pdb file**
 
 https://s3.amazonaws.com/node-webkit/v0.8.0-rc1/nw.exe.pdb.zip
+
+**mac dSYM files**
+
+https://s3.amazonaws.com/node-webkit/v0.8.0-rc1/node-webkit-osx-dsym-v0.8.0-rc1.tar.gz
