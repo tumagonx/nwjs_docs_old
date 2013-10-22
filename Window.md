@@ -8,7 +8,7 @@ Every `Window` is an instance of [EventEmitter](http://nodejs.org/api/events.htm
 
 ```javascript
 // Load native UI library
-var gui = require('nw.gui');
+var gui = require('nw.gui'); //or global.window.nwDispatcher.requireNwGui() (see https://github.com/rogerwang/node-webkit/issues/707)
 
 // Get the current window
 var win = gui.Window.get();
@@ -33,6 +33,7 @@ var new_win = gui.Window.get(
 new_win.on('focus', function() {
   console.log('New window is focused');
 });
+
 ```
 
 ## Reference
