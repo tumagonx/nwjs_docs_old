@@ -99,7 +99,7 @@ ninja -C out/Release nw -j4
 ##Tips
 1. You can specify what project files to generate through `GYP_GENERATORS`. And you can export it in `~/.bashrc` etc.For example, if you want to use `make`:
 ````
-GYP_GENERATORS='make'
+export GYP_GENERATORS='make'
 ./build/gyp_chromium content/content.gyp
 ````
 
