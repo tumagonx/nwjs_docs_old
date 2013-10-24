@@ -105,7 +105,7 @@ GYP_GENERATORS='make'
 
 2. When you build on Mac, don't forget to pass `--no-circular-check` to generate project files:
 ````
-GYP_GENERATORS='ninja'
+export GYP_GENERATORS='ninja'
 ./build/gyp_chromium content/content.gyp --no-circular-check
 ````
 
