@@ -231,6 +231,17 @@ It contains two panels, editor and console.
 ![Cloud Commander app Console](https://raw.github.com/coderaiser/cloudcmd-screenshot/master/cloudcmd-v0.3.0-console.png "Cloud Commander Application(console)")|
 
 
+### twd, kndl
+Simple wrappers for awesome web apps.
+Maintained by [passcod](https://github.com/passcod).
+
+#### [twd](https://github.com/passcod/twd): TweetDeck
+![Screenshot](http://i.imgur.com/R9F7Obw.png)
+
+#### [kndl](https://github.com/passcod/kndl): Kindle Cloud Reader
+![Screenshot](http://i.imgur.com/PU2y582.png)
+
+
 ## Companies
 
 ### Everytime
