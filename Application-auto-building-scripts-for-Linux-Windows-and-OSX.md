@@ -7,11 +7,11 @@ my-app/
 │   ├── index.html
 │   ├── build.sh
 │   ├── build.bat
-│   ├── build.command
+│   └── build.command
 ├── build/
 │   ├── linux
 │   ├── win32
-│   ├── osx
+│   └── osx
 ```
 
 In Linux we can "install" node-webkit in: /opt/node-webkit
