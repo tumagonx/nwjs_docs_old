@@ -228,7 +228,7 @@ It contains two panels, editor and console.
 
 ![Cloud Commander app](https://raw.github.com/coderaiser/cloudcmd-screenshot/master/cloudcmd-v0.3.0.png "Cloud Commander Application")
 ![Cloud Commander app (edit)](https://raw.github.com/coderaiser/cloudcmd-screenshot/master/cloudcmd-v0.3.0-edit.png "Cloud Commander Application(edit)")
-![Cloud Commander app Console](https://raw.github.com/coderaiser/cloudcmd-screenshot/master/cloudcmd-v0.3.0-console.png "Cloud Commander Application(console)")|
+![Cloud Commander app Console](https://raw.github.com/coderaiser/cloudcmd-screenshot/master/cloudcmd-v0.3.0-console.png "Cloud Commander Application(console)")
 
 
 ### twd, kndl
