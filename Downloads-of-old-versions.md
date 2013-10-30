@@ -1,5 +1,5 @@
-## v0.7.5 (Sep 18, 2013; Node v0.10.18; Upstream 29.0.1547.31)
-
+## v0.7.5 (Sep 18, 2013)
+Node v0.10.18; Browser 29.0.1547.31
 * Linux: [32bit](https://s3.amazonaws.com/node-webkit/v0.7.5/node-webkit-v0.7.5-linux-ia32.tar.gz) / [64bit] (https://s3.amazonaws.com/node-webkit/v0.7.5/node-webkit-v0.7.5-linux-x64.tar.gz)
 * Windows: [win32](https://s3.amazonaws.com/node-webkit/v0.7.5/node-webkit-v0.7.5-win-ia32.zip)
 * Mac: [32bit, 10.7+](https://s3.amazonaws.com/node-webkit/v0.7.5/node-webkit-v0.7.5-osx-ia32.zip)
