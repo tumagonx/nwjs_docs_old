@@ -8,8 +8,8 @@ Sublime Text 2 is a great cross-platform editor for building node-webkit apps, y
 
 ````json
 {
-    "cmd": ["node-webkit", "${project_path:${folder}}"],
-    "working_dir": "${project_path:${folder}}",
+    "cmd": ["node-webkit", "--enable-logging", "${project_path:${file_path}}"],
+    "working_dir": "${project_path:${file_path}}",
     "path": "/Applications/node-webkit.app/Contents/MacOS/"
 }
 ````
