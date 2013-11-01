@@ -24,8 +24,8 @@ As above, but the commands for the build system are as follows (replacing the pa
 
 ````json
 {
-    "cmd": ["nw.exe", "--enable-logging", "${file_path}"],
-    "working_dir": "${file_path}",
+    "cmd": ["nw.exe", "--enable-logging", "${project_path:${file_path}}"],
+    "working_dir": "${project_path:${file_path}}",
     "path": "C:/Tools/node-webkit/"
 }
 ````
