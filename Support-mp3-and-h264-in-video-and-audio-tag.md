@@ -1,4 +1,4 @@
-For licensing issues our pre-built binary doesn't ship with codec for patented media formats, but for commercial cases where it's necessary to support patented media formats, we have solutions bellow.
+For licensing issues our pre-built binary doesn't ship with codec for patented media formats, but for commercial cases where it's necessary to support patented media formats, we have solutions below.
 
 **Please consult experts if you want to use patented media formats on your apps.**
 
