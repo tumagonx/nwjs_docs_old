@@ -26,14 +26,14 @@ To test the crash dump feature, 2 API functions are added in 0.8.0 to trigger th
 
 **Linux symbol files of breakpad**
 
-https://s3.amazonaws.com/node-webkit/v0.8.0-rc1/nw.breakpad.ia32.gz
+https://s3.amazonaws.com/node-webkit/v0.8.0/nw.breakpad.ia32.gz
 
-https://s3.amazonaws.com/node-webkit/v0.8.0-rc1/nw.breakpad.x64.gz
+https://s3.amazonaws.com/node-webkit/v0.8.0/nw.breakpad.x64.gz
 
 **windows pdb file**
 
-https://s3.amazonaws.com/node-webkit/v0.8.0-rc1/nw.exe.pdb.zip
+https://s3.amazonaws.com/node-webkit/v0.8.0/nw.exe.pdb.zip
 
 **mac dSYM files**
 
-https://s3.amazonaws.com/node-webkit/v0.8.0-rc1/node-webkit-osx-dsym-v0.8.0-rc1.tar.gz
+https://s3.amazonaws.com/node-webkit/v0.8.0/node-webkit-osx-dsym-v0.8.0.tar.gz
