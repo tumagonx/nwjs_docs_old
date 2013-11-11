@@ -82,3 +82,4 @@ In this way, you can precisely choose which menu to show for different elements,
 
 * [[Tray]]
 * [[MenuItem]]
+* [Example of cut/copy/paste context menu implementation](https://gist.github.com/b1rdex/7409406)
