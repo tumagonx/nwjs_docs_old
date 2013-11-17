@@ -30,6 +30,45 @@ You cannot use `require('nw.gui')` (to access the node-webkit's [GUI API](htt
 
 Some other browser features (such as `Worker` and `WebSocket` interfaces) are also unavailable in the Node's context.
 
+## Resolving relative paths to other scripts
+Relative paths in webkit context are resolved according to path of main HTML file (like all browsers do). Relative paths in node modules are resolved according to path of that module (like node.js always do). Just remember in which context you are.
+
+For example if we have file `/myApp/main.html`:
+```html
+<html>
+  <head>
+    <!-- will be resolved according to this html file path -->
+    <script src="components/myComponent.js"></script>
+  </head>
+  <body>
+    <script>
+      // will be resolved according to this html file path
+      var hello = require('./libs/myLib');
+      // __dirname is not defined in webkit context, this is only node.js thing
+      console.log(__dirname); // undefined
+    </script>
+  </body>
+</html>
+```
+In file `/myApp/components/myComponent.js` we can do this:
+```javascript
+// we are still in webkit context, so paths are still resolved according to main.html
+
+var something = require('./util.js'); // will look for file /myApp/util.js NOT for /myApp/components/util.js
+
+// __dirname still not defined
+console.log(__dirname); // undefined
+```
+In file `/myApp/libs/myLib.js` we can do this:
+```javascript
+// here we are in node.js context, so paths are resolved according to this file
+
+var something = require('./otherUtil.js'); // will look for file /myApp/libs/otherUtil.js
+
+// __dirname is defined
+console.log(__dirname); // '/myApp/libs'
+```
+
 ## Working around differences of contexts
 
 While differences of contexts are generally benefitial, sometimes they may constitute a problem in your (or some other person's) code, and a need for a workaround arises.
