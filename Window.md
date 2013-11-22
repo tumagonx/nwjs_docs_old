@@ -273,6 +273,14 @@ window. May be assigned to the 'src' property of an HTML Image element for displ
 
 `image_format` is enumerated string ["jpeg", "png"]. Default is 'jpeg'.
 
+### Window.cookies.*
+
+_since v0.8.1_
+
+This includes multiple functions to manipulate the cookies. The API is defined in the same way as [Chrome Extensions'](http://developer.chrome.com/extensions/cookies.html). node-webkit supports the `get`, `getAll`, `remove` and `set` methods; `onChanged` event (supporting both `addListener` and `removeListener` function on this event).
+
+And anything related to `CookieStore` in the Chrome extension API is not supported, because there is only one global cookie store in node-webkit apps.
+
 ## Events
 
 Following events can be listened by using `Window.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
