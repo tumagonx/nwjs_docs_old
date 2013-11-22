@@ -221,6 +221,8 @@ The optional `iframe` argument is supported since v0.7.2. It should be the ifram
 
 For more information, please read [[Devtools Jail Feature]].
 
+Since v0.8.1, this function returns a `Window` object when `headless` is `false`, so the devtools Window can be manipulated. Note that the events on this object is not working yet.
+
 ### Window.closeDevTools()
 
 _since v0.7.3_
