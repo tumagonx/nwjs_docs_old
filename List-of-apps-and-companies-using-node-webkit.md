@@ -2,6 +2,15 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### Playlist: Make It Work Again!
+A tool that manages, fixes and repairs broken playlists. Available on Windows and Mac OS X.
+
+Check out the companion website for more information. A video is available too :)
+
+[Playlist: Make It Work Again!](http://www.playlist-make-it-work-again.com/)
+
+![Preview](http://www.playlist-make-it-work-again.com/assets/fix.jpg)
+
 ### Hyro
 A real-time HTML5 editor. Lightweight and easy to use. [http://jawerty.github.io/Hyro/](http://jawerty.github.io/Hyro/)
 
