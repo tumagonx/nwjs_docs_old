@@ -52,9 +52,16 @@ exec -a "$0" "$HERE/myapp-bin"  "$@"
 In the postinstall script of your DEB or RPM package, run the following script to create a local symlink. Use this together with the previous wrapper script.
 ```shell
 #!/bin/sh
-set -e
-udiskbin=`which udisks`
-udevso=`ldd $udiskbin | grep libudev.so | awk '{print $3;}'`
+udevDependent=`which udisks 2> /dev/null` # Ubuntu, Mint
+if [ -z "$udevDependent" ]
+then
+    udevDependent=`which systemd 2> /dev/null` # Fedora, SUSE
+fi
+if [ -z "$udevDependent" ]
+then
+    udevDependent=`which findmnt` # Arch
+fi
+udevso=`ldd $udevDependent | grep libudev.so | awk '{print $3;}'`
 if [ -e "$udevso" ]; then
    ln -sf "$udevso" /opt/myapp/libudev.so.0
 fi
