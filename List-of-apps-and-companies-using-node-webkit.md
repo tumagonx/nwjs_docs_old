@@ -2,6 +2,11 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### Candy Reader
+An open source PDF reader ported from browser to desktop, based on [pdf.js](https://github.com/mozilla/pdf.js) library. Get more details on its [development site](https://github.com/humu2009/candy-pdf-reader).
+
+![Screenshot](https://raw.github.com/humu2009/candy-pdf-reader/master/screenshots/candy-screenshot-3.jpg)
+
 ### Playlist: Make It Work Again!
 A tool that manages, fixes and repairs broken playlists. Available on Windows and Mac OS X.
 
