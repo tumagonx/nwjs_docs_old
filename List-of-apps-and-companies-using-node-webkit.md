@@ -2,6 +2,16 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+[![JazzUI: Not your average prototypes](https://github.com/jazzui/jazzui/blob/master/logo-name-full.png?raw=true)](https://github.com/jazzui/jazzui)
+
+**Does your favorite mock-up tool output production-ready code?**
+Of course not, that would take way too much time / effort! That's why we make mockups, so we can iterate quickly...
+
+JazzUI makes it easier to get into the flexibility and precision of HTML/CSS while maintaining the quick iterative features of a traditional mockup tool. Plus more awesome. **And 100% Open Source**.
+
+[Online Demo](http://jazzui.github.io/jazzui/) or [Watch the Screencast](https://vimeo.com/80597772)
+[![JazzUI Screenshot](https://github.com/jazzui/jazzui/blob/master/docs/screenshot.png?raw=true)](https://github.com/jazzui/jazzui)
+
 ### Candy Reader
 An open source PDF reader ported from browser to desktop, based on [pdf.js](https://github.com/mozilla/pdf.js) library. Get more details on its [development site](https://github.com/humu2009/candy-pdf-reader).
 
