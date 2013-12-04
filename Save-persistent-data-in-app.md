@@ -50,7 +50,7 @@ For more information, you can read tutorials like [Introducing Web SQL Databases
 
 
 ## IndexedDB
-[IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB) is considered the NoSQL successor of WebSQL. It is supported by the latest versions of Chromium and therefore node-webkit - the implementation is based on the key-value storage LevelDB.
+[IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB) is considered the NoSQL successor of WebSQL. It is supported by the latest versions of Chromium and therefore by node-webkit - the implementation is based on the key-value storage LevelDB.
 IndexedDB's API is asynchronous and relatively low-level and verbose, so you might prefer using an abstraction, like PouchDB.
 
 ## PouchDB
