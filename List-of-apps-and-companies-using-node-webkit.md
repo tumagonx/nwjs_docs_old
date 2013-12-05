@@ -336,3 +336,17 @@ Key features included:
 
 The [CrossUI RAD Tools](http://www.crossui.com/) enables developers to rapidly develop and package the exactly same code and UI into Web Apps, Native Desktop Apps for Windows, OS X, Linux and UNIX on 32-bit and 64-bit architectures as well as Mobile Apps for iPhone, iPad, Windows Phone, webOS, BlackBerry, and Android devices. Develop Once, Deploy Anywhere!
 [![Image](http://www.crossui.com/img/crossui.jpg)](http://www.crossui.com)
+
+### GruntMate
+
+GruntMate is a tools for manager grunt project with node-webkit
+
+* Convenient based project management Grunt
+* Facilitate unified management plug-Grunt
+* Provides visual start, stop Grunt project
+* Listen Gruntfile.js file changes automatically restart Grunt mission
+* uglifyjs compression / landscaping
+* Pictures to base64
+* Sprite Figure merge function
+
+[![Image](https://github.com/floydcash/gruntmate/raw/master/screen_shot/v1.03.png)](https://github.com/floydcash/gruntmate)
