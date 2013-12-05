@@ -26,6 +26,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[Build native modules with nw-gyp]]
 * [Command line arguments of 'nw' executable](wiki/Command-line-switches)
 * [[mini browser in iframe]]
+* [Frameless window and drag region](wiki/Frameless-window)
 * [[The Kiosk mode]]
 * [[File dialogs]]
 * [[Support mp3 and H264 in video and audio tag]]
