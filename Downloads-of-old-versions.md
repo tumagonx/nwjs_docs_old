@@ -1,3 +1,9 @@
+## v0.8.1 (Nov 22, 2013)
+Node v0.10.22; Browser 30.0.1599.66
+* Linux: [32bit](https://s3.amazonaws.com/node-webkit/v0.8.1/node-webkit-v0.8.1-linux-ia32.tar.gz) / [64bit] (https://s3.amazonaws.com/node-webkit/v0.8.1/node-webkit-v0.8.1-linux-x64.tar.gz)
+* Windows: [win32](https://s3.amazonaws.com/node-webkit/v0.8.1/node-webkit-v0.8.1-win-ia32.zip)
+* Mac: [32bit, 10.7+](https://s3.amazonaws.com/node-webkit/v0.8.1/node-webkit-v0.8.1-osx-ia32.zip)
+
 ## v0.8.0 (Oct 30, 2013)
 Node v0.10.18; Browser 30.0.1599.66
 * Linux: [32bit](https://s3.amazonaws.com/node-webkit/v0.8.0/node-webkit-v0.8.0-linux-ia32.tar.gz) / [64bit] (https://s3.amazonaws.com/node-webkit/v0.8.0/node-webkit-v0.8.0-linux-x64.tar.gz)
