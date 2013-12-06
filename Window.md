@@ -368,6 +368,14 @@ Emitted when window is maximized.
 
 Emitted when window is restored from maximize state. Note that on some platforms window can be resized even when maximized, so the `unmaximize` may not be emitted when a maximized window is resized instead of being unmaximized
 
+### move  
+_since v0.8.2_  
+Emitted after window is moved. The callback is called with 2 arguments: `(x, y)` for the new location of the upper-left corner of the window.
+
+### resize  
+_since v0.8.2_  
+Emitted after window is resized. The callback is called with 2 arguments: `(width, height)` for the new size of the window.
+
 ### enter-fullscreen
 
 Emitted when window enters fullscreen state.
