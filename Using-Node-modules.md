@@ -120,6 +120,10 @@ The difference of ABI also means that the built C/C++ addons (i.e. `.node` files
 
 For example, you cannot use some `node test.js` (or `npm test`) to test an addon-containing module **in Node** if that addon has been built **for node-webkit:** the test will always fail (either with some cryptic error message or with a crash of the whole engine).
 
-**Important note:**   on Windows the engine's executable file **must** have the name `nw.exe` for addons to work (i.e. you cannot rename `nw.exe` if you need any addon-containing modules). They use parts of the engine to sustain their execution.
+**Important note 1:**   on Windows the engine's executable file **must** have the name `nw.exe` for addons to work (i.e. you cannot rename `nw.exe` if you need any addon-containing modules). They use parts of the engine to sustain their execution.
+
+**Important note 2:**   on Windows it seems to be neccesary to include the full Python's path in the system's `PATH` variable.
+
+**Important note 3:**   Remember to replace the original `.node` file with your generated one, otherwise the module won't work (because it still points to the original Node.js module instead of using the one compiled for node-webkit).
 
 For more information on that matter (including further limitations and known issues), see “[[Build native modules with nw-gyp]]”.
