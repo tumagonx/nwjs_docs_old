@@ -14,7 +14,7 @@ Please see https://github.com/rogerwang/nw-gyp for more details.
 
 ## Known issues and limitations
 
-**NOTE**: native module is supposed to be rebuilt with newer version of node-webkit, because V8 doesn't have any stable ABI.
+**NOTE**: The V8 version in node-webkit is different with the version in Node.js. And because V8 doesn't have any stable ABI, your native module could be broken. But we are trying our best to support native modules, deprecated API is supported to maintain backward compatibility. And if you find your module can't be built, file an issue.
 
 On Windows, the executable file `nw.exe` cannot be renamed, or the native module cannot be loaded since it will try to find `nw.exe`. See https://github.com/rogerwang/node-webkit/issues/199
 
