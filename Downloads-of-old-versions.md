@@ -1,17 +1,23 @@
 ## v0.8.1 (Nov 22, 2013)
-Node v0.10.22; Browser 30.0.1599.66
+Node v0.10.22; Browser 30.0.1599.66  
+[v0.8.1 release notes](https://groups.google.com/d/msg/node-webkit/yK78LI_XvoU/ycWTzll8wOgJ)
+
 * Linux: [32bit](https://s3.amazonaws.com/node-webkit/v0.8.1/node-webkit-v0.8.1-linux-ia32.tar.gz) / [64bit] (https://s3.amazonaws.com/node-webkit/v0.8.1/node-webkit-v0.8.1-linux-x64.tar.gz)
 * Windows: [win32](https://s3.amazonaws.com/node-webkit/v0.8.1/node-webkit-v0.8.1-win-ia32.zip)
 * Mac: [32bit, 10.7+](https://s3.amazonaws.com/node-webkit/v0.8.1/node-webkit-v0.8.1-osx-ia32.zip)
 
 ## v0.8.0 (Oct 30, 2013)
-Node v0.10.18; Browser 30.0.1599.66
+Node v0.10.18; Browser 30.0.1599.66  
+[v0.8.0 release notes](https://groups.google.com/d/msg/node-webkit/Mzo3SO2Mv-g/UCsnofdcUkwJ)
+
 * Linux: [32bit](https://s3.amazonaws.com/node-webkit/v0.8.0/node-webkit-v0.8.0-linux-ia32.tar.gz) / [64bit] (https://s3.amazonaws.com/node-webkit/v0.8.0/node-webkit-v0.8.0-linux-x64.tar.gz)
 * Windows: [win32](https://s3.amazonaws.com/node-webkit/v0.8.0/node-webkit-v0.8.0-win-ia32.zip)
 * Mac: [32bit, 10.7+](https://s3.amazonaws.com/node-webkit/v0.8.0/node-webkit-v0.8.0-osx-ia32.zip)
 
 ## v0.7.5 (Sep 18, 2013)
-Node v0.10.18; Browser 29.0.1547.31
+Node v0.10.18; Browser 29.0.1547.31  
+[v0.7.5 release notes](https://groups.google.com/d/msg/node-webkit/4VBQuHO2H0c/UAdc2O1ZiBwJ)
+
 * Linux: [32bit](https://s3.amazonaws.com/node-webkit/v0.7.5/node-webkit-v0.7.5-linux-ia32.tar.gz) / [64bit] (https://s3.amazonaws.com/node-webkit/v0.7.5/node-webkit-v0.7.5-linux-x64.tar.gz)
 * Windows: [win32](https://s3.amazonaws.com/node-webkit/v0.7.5/node-webkit-v0.7.5-win-ia32.zip)
 * Mac: [32bit, 10.7+](https://s3.amazonaws.com/node-webkit/v0.7.5/node-webkit-v0.7.5-osx-ia32.zip)
