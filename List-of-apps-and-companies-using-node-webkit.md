@@ -2,6 +2,12 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+[![A Wizard's Lizard title](http://i.imgur.com/k0hhVq0.png)](http://www.wizardslizard.com/)
+
+Death is just the beginning in [A Wizard's Lizard](http://www.wizardslizard.com/), a procedurally generated action RPG for Windows, Mac, and Linux.
+
+[![A Wizard's Lizard screenshot](http://i.imgur.com/qkRnxOx.png)](http://www.wizardslizard.com/)
+
 [![JazzUI: Not your average prototypes](https://github.com/jazzui/jazzui/blob/master/logo-name-full.png?raw=true)](https://github.com/jazzui/jazzui)
 
 **Does your favorite mock-up tool output production-ready code?**
