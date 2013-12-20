@@ -24,6 +24,8 @@ _In order to make examples simple we use jQuery or MooTools for DOM operations_
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <!-- OR -->
   <script src="http://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
+  <!-- OR NONE-->
+
 </head>
 <body>
 <input style="display:none;" id="fileDialog" type="file" />
