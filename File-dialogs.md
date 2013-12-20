@@ -24,7 +24,7 @@ _In order to make examples simple we use jQuery or MooTools for DOM operations_
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <!-- OR -->
   <script src="http://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
-  <!-- OR NONE-->
+  <!-- OR NONE IF YOU ARE USING PURE JAVASCRIPT -->
 
 </head>
 <body>
@@ -38,7 +38,7 @@ _In order to make examples simple we use jQuery or MooTools for DOM operations_
 
 Then we trigger a `click` event on `input` tag, and use the `change` event to capture the file path:
 
-## Only JavaScript
+## Pure JavaScript
 ```html
 <script>
   function chooseFile(name) {
