@@ -36,6 +36,21 @@ _In order to make examples simple we use jQuery or MooTools for DOM operations_
 
 Then we trigger a `click` event on `input` tag, and use the `change` event to capture the file path:
 
+## Only JavaScript
+```html
+<script>
+  function chooseFile(name) {
+    var chooser = document.querySelector(name);
+    chooser.addEventListener("change", function(evt) {
+      console.log(this.value);
+    }, false);
+
+    chooser.click();  
+  }
+  chooseFile('#fileDialog');
+</script>
+```
+
 ## jQuery
 ```html
 <script>
