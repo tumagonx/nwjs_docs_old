@@ -32,6 +32,13 @@ Check out the companion website for more information. A video is available too :
 
 ![Preview](http://www.playlist-make-it-work-again.com/assets/fix.jpg)
 
+### Huayra-StopMotion
+
+A tool to create animated films [https://github.com/HuayraLinux/huayra-stopmotion](https://github.com/HuayraLinux/huayra-stopmotion)
+
+![Screenshot](https://raw.github.com/HuayraLinux/huayra-stopmotion/master/img/preview.png)
+
+
 ### Hyro
 A real-time HTML5 editor. Lightweight and easy to use. [http://jawerty.github.io/Hyro/](http://jawerty.github.io/Hyro/)
 
