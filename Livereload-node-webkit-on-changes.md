@@ -25,7 +25,6 @@ then change the script tag content:
   <script>
    var Gaze = require('gaze').Gaze;
    var gaze = new Gaze('**/*');
-   var path = './';
 
    gaze.on('all', function(event, filepath) {
      if (location)
