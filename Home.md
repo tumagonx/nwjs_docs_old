@@ -42,6 +42,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[Devtools jail feature]] -- useful for IDE developers
 * [[Application auto building scripts for Linux Windows and OSX]]
 * [[Handling files and arguments]]
+* [[Livereload node-webkit on changes]]
 
 **Testing**
 * [The Testing framework for your application running on node-webkit](wiki/chromedriver)
