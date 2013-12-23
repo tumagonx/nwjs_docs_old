@@ -14,3 +14,22 @@ To do this, you can add this script tag to the end of your main file:
   });
 </script>
 ```
+
+## Recursive solution
+
+Sadly, the previous solution don't work recursively. If you want a recursive
+alternative, first you need to install "gaze" (with "npm install gaze" command), and
+then change the script tag content:
+
+```
+  <script>
+   var Gaze = require('gaze').Gaze;
+   var gaze = new Gaze('**/*');
+   var path = './';
+
+   gaze.on('all', function(event, filepath) {
+     if (location)
+       location.reload();
+   });
+  </script>
+```
