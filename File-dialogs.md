@@ -101,7 +101,7 @@ And the `$('#fileDialog').val()` will return all selected files's paths separate
 <input type="file" accept=".doc,.docx,.xml,application/msword">
 ```
 
-## Select directory
+## Select directory (webkit)
 
 WebKit also adds a `webkitdirectory` attribute to show a directory select dialog:
 
@@ -111,7 +111,7 @@ WebKit also adds a `webkitdirectory` attribute to show a directory select dialog
 
 But this attribute is not so useful since the value of `input` tag is not the path of directory we selected, but paths of all files under the directory.
 
-## Select a directory
+## Select directory (node-webkit)
 
 In order to provide complete set of file dialogs, node-webkit add another two attributes: `nwdirectory` and `nwsaveas`.
 
