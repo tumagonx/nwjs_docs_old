@@ -85,6 +85,8 @@ Then we trigger a `click` event on `input` tag, and use the `change` event to ca
 
 # Other types of dialogs
 
+## Multiple
+
 To make the dialog able to select multiple files, just add a `multiple` attribute, which is specified in HTML5:
 
 ```html
@@ -92,6 +94,14 @@ To make the dialog able to select multiple files, just add a `multiple` attribut
 ```
 
 And the `$('#fileDialog').val()` will return all selected files's paths separated with `;`.
+
+## Filter File
+
+```html
+<input type="file" accept=".doc,.docx,.xml,application/msword">
+```
+
+## Select directory
 
 WebKit also adds a `webkitdirectory` attribute to show a directory select dialog:
 
@@ -101,6 +111,8 @@ WebKit also adds a `webkitdirectory` attribute to show a directory select dialog
 
 But this attribute is not so useful since the value of `input` tag is not the path of directory we selected, but paths of all files under the directory.
 
+## Select a directory
+
 In order to provide complete set of file dialogs, node-webkit add another two attributes: `nwdirectory` and `nwsaveas`.
 
 `nwdirectory` is a bit similar to `webkitdirectory` because it let user select a directory too, but it will not enumerate all files under the directory but directly returns the path of directory, developers may want to use `nwdirectory` to get the path of a directory:
@@ -108,6 +120,8 @@ In order to provide complete set of file dialogs, node-webkit add another two at
 ```html
 <input type="file" nwdirectory />
 ```
+
+## Save file
 
 `nwsaveas` will open a save as dialog which let user enter the path of a file, and it's possible to select a non-exist file which is different with the default file input tag:
 
