@@ -24,7 +24,7 @@ To start, make an empty directory, say `node-webkit`, then create the `.gclient`
 
     solutions = [
        { "name"        : "src",
-         "url"         : "https://github.com/zcbenz/chromium.git@origin/node",
+         "url"         : "https://github.com/rogerwang/chromium.src.git@origin/node",
          "deps_file"   : ".DEPS.git",
          "managed"     : True,
          "custom_deps" : {
@@ -130,7 +130,7 @@ List of node-webkit repos:
 ````
 https://github.com/rogerwang/node-webkit
 https://github.com/rogerwang/blink
-https://github.com/zcbenz/chromium
+https://github.com/rogerwang/chromium.src
 https://github.com/rogerwang/breakpad
 https://github.com/rogerwang/v8
 https://github.com/rogerwang/node
