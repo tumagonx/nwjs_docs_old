@@ -19,6 +19,8 @@ Sublime Text 2 is a great cross-platform editor for building node-webkit apps, y
 6. Open your main application file (ex.: index.html) from the left side menu and select `Tools -> Build`
 7. At this point node-webkit application will launch with your project and you will be able to see the debugging output in Sublime Text 2
 
+Work the same with Sublime Text 3.
+
 ### Windows
 As above, but the commands for the build system are as follows (replacing the path with the location of nw.exe):
 
