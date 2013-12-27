@@ -126,7 +126,7 @@ gclient sync
 
 node-webkit's code are in 6 git repos. To keep an eye on the commits, subscribe to our dev mailing list: node-webkit-dev+subscribe@googlegroups.com . 
 
-List of node-webkit repos:
+List of node-webkit repos, they are the repos we're doing daily works on and there are no internal repos:
 ````
 https://github.com/rogerwang/node-webkit
 https://github.com/rogerwang/blink
