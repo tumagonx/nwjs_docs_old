@@ -297,6 +297,8 @@ And if the shutdown work takes some time, users may feel that the app is exiting
 
 For use case you can see demo code of `Window.close()` above.
 
+Since v0.8.4 on OSX, there is a parameter on the callback of this event. Its value will be set to 'quit' if the window is being closed by pressing 'Cmd-Q' (intent to quit application). Otherwise the value is undefined. See https://github.com/rogerwang/node-webkit/issues/430
+
 ### closed
 
 The `closed` event is emitted **after** corresponding window is closed. Normally you'll not be able to get this event since after the window is closed all js objects will be released. But it's useful if you're listening this window's events in another window, whose objects will not be released.
