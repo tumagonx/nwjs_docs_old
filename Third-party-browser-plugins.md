@@ -1,8 +1,18 @@
-_Following content requires node-webkit >= v0.3.3_
+_This feature requires node-webkit v0.3.3 or newer._
 
 Like normal browsers, node-webkit enables you to load third party NPAPI plugins, and you can even ship them with your app. So apart from using node.js native modules, you can also use browser plugins to add native code for your app.
 
-By default the plugin support is closed, to open it, you need to specify `plugin` to `true` in `webkit` control fields:
+## Supported plugins
+
+Despite using Chromium codebase, node-webkit **does not** support [Pepper API](http://en.wikipedia.org/wiki/PPAPI#PPAPI) plugins.
+
+Only [NPAPI](http://en.wikipedia.org/wiki/NPAPI)-based plugins are supported.
+
+## Enabling plugins
+
+The support for plugins is turned off by default.
+
+Add [`"plugin": true`](https://github.com/rogerwang/node-webkit/wiki/Manifest-format#plugin) in the `"webkit"` section of your application's manifest to turn on the plugins.
 
 ```json
 {
@@ -12,10 +22,20 @@ By default the plugin support is closed, to open it, you need to specify `plugin
 }
 ```
 
-Then node-webkit will find and load plugins from conventional paths, which should be the same with your other browsers.
+## Location of plugins
 
-To distribute a plugin along with node-webkit, you have two choices. First you can write a installer which automatically installs plugins, like how many softwares done with flash.
+Node-webkit will find and pick plugins installed on your system (i.e. will use the paths common for other browsers).
 
-The second way is to ship plugins along with your app, if `/app` is the path to your app, you can create a `plugins` folder under it, e.g. `/app/plugins`, and then put your browser plugins in it and node-webkit will load them.
+Additionally node-webkit scans `/plugin` subdirectory of your application's root directory (root is where `package.json` resides).
 
-To see whether your plugins are loaded, you can use `navigator.plugins` in devtools's console.
+## Distribution of plugins
+
+* If a plugin is relatively popular (such as Flash), you may hope that plugin's already installed on your users' systems and node-webkit picks it.
+
+* If a plugin has its own installer, you may run it when your application is installed.
+
+* You may also include plugins in the `/plugins` directory of your application.
+
+## Listing of the loaded plugins
+
+To see whether your plugins are loaded, you can use `navigator.plugins` in [[Developer Tools|Debugging with devtools]]' console.
