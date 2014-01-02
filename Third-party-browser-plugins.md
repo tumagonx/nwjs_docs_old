@@ -12,7 +12,7 @@ Only [NPAPI](http://en.wikipedia.org/wiki/NPAPI)-based plugins are supported.
 
 The support for plugins is turned off by default.
 
-Add [`"plugin": true`](https://github.com/rogerwang/node-webkit/wiki/Manifest-format#plugin) in the `"webkit"` section of your application's manifest to turn on the plugins.
+Add [`"plugin": true`](https://github.com/rogerwang/node-webkit/wiki/Manifest-format#plugin) in the `"webkit"` section of your [[application's manifest|Manifest format]] to turn on the plugins.
 
 ```json
 {
