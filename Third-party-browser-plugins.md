@@ -26,7 +26,7 @@ Add [`"plugin": true`](https://github.com/rogerwang/node-webkit/wiki/Manifest-fo
 
 Node-webkit will find and pick plugins installed on your system (i.e. will use the paths common for other browsers).
 
-Additionally node-webkit scans `/plugin` subdirectory of your application's root directory (root is where `package.json` resides).
+Additionally node-webkit scans `/plugins` subdirectory of your application's root directory (root is where `package.json` resides).
 
 ## Distribution of plugins
 
