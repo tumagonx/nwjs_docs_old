@@ -39,3 +39,5 @@ Additionally node-webkit scans `/plugins` subdirectory of your application's roo
 ## Listing of the loaded plugins
 
 To see whether your plugins are loaded, you can use `navigator.plugins` in [[Developer Tools|Debugging with devtools]]' console.
+
+Your application can also use `navigator.plugins`. (For example, it's possible to warn the user about a missing plugin or to use a workaround.)
