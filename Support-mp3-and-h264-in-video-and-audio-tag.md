@@ -56,4 +56,22 @@ add_flag_common --enable-parser=aac,h264,mpegaudio
 Then follow the short directions here:
 http://src.chromium.org/svn/trunk/deps/third_party/ffmpeg/README.chromium
 
+You'll also need to patch the ffmpeg repo (or define the `branding` gyp variable to `Chrome`, didn't try it)
+
+```patch
+diff --git a/ffmpeg.gyp b/ffmpeg.gyp
+index ac059f0..1b0424c 100644
+--- a/ffmpeg.gyp
++++ b/ffmpeg.gyp
+@@ -54,7 +54,7 @@
+       ['chromeos == 1', {
+         'ffmpeg_branding%': '<(branding)OS',
+       }, {  # otherwise, assume Chrome/Chromium.
+-        'ffmpeg_branding%': '<(branding)',
++        'ffmpeg_branding%': 'Chrome',
+       }],
+     ],
+```
+see https://github.com/rogerwang/node-webkit/issues/1461#issuecomment-32009915
+
 Please also at least turn on the resource loader's support in Chromium's code, or your format will be treated as non supported MIME type and won't be loaded. See src/net/base/mime_util.cc. You might want to look into code in other files guarded by 'USE_PROPRIETARY_CODECS' macro.
