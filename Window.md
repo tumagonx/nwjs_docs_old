@@ -346,6 +346,10 @@ _Requires node-webkit >= v0.3.5_
 
 Emitted when the window is fully loaded, this event behaves the same with `window.onload`, but doesn't rely on the DOM.
 
+### document-end(frame)
+_since v0.9.0_  
+Emitted when the document object in this window or a child iframe is loaded, before the `onload` event is emitted. The argument is the iframe object, or `null` if the event is for the window.
+
 ### focus
 
 Emitted when window gets focus.
