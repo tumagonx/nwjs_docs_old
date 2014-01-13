@@ -44,6 +44,8 @@ Finally sync code under `node-webkit` directory (where `.gclient` resides), it w
 
     gclient sync
 
+_On OSX you'll see error messages reporting `cycle in .gyp file dependency graph detected`. It can be ignored because `gclient` wants to run `gyp_chromium` without a switch we need. Please move on to the `Build` section._
+
 Assume you store code under `node-webkit` folder, after all code is downloaded by gclient, our final directory architecture will be like:
 
     node-webkit/
