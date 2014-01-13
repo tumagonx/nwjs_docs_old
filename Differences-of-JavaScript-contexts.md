@@ -97,7 +97,7 @@ However, if such a convenient alternate method is not readily available, or w
 
 ### Using a constructor from the other context
 
-When you foresee passing a value to some other context, you may providently use a constructor from that context in order to construct you value. The value then would easily pass any `instanceof` checks in that context.
+When you foresee passing a value to some other context, you may providently use a constructor from that context in order to construct your value. The value then would easily pass any `instanceof` checks in that context.
 
 For example, the well-known [`async`](https://github.com/caolan/async) module uses (in [its code](https://github.com/caolan/async/blob/d8601a17ab0bc6a1572227998b6e9182637f37b6/lib/async.js) dated 2013-05-20) numerous `.constructor` checks (in lines [472](https://github.com/caolan/async/blob/d8601a17ab0bc6a1572227998b6e9182637f37b6/lib/async.js#L472), [505](https://github.com/caolan/async/blob/d8601a17ab0bc6a1572227998b6e9182637f37b6/lib/async.js#L505), [545](https://github.com/caolan/async/blob/d8601a17ab0bc6a1572227998b6e9182637f37b6/lib/async.js#L545), [675](https://github.com/caolan/async/blob/d8601a17ab0bc6a1572227998b6e9182637f37b6/lib/async.js#L675), [752](https://github.com/caolan/async/blob/d8601a17ab0bc6a1572227998b6e9182637f37b6/lib/async.js#L752)) and thus fails whenever it encounters an array from another context. For example, if you run the following code from a node-webkit's window context,
 
