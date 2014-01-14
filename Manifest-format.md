@@ -205,8 +205,8 @@ _since v0.7.3_
 ### kiosk
 *(boolean)* whether to use `Kiosk` mode. In `Kiosk` mode, the app will be fullscreen and try to prevent users from leaving the app, so you should remember to provide a way in app to leave `Kiosk` mode. This mode is mainly used for presentation on public displays _(available after node-webkit v0.3.1)_
 
-### inject-js
-*(string)* a local filename, relative to the application path, used to specify a JavaScript file to inject to the window. The injecting JavaScript code is to be executed after any files from css, but before any other DOM is constructed or any other script is run. This is mainly to be used as an option of `Window.open()` to inject JS in a new window. _(Since v0.9.0)_
+### inject-js-start / inject-js-end
+*(string)* a local filename, relative to the application path, used to specify a JavaScript file to inject to the window. `inject-js-start`: The injecting JavaScript code is to be executed after any files from css, but before any other DOM is constructed or any other script is run; `inject-js-end`: The injecting JavaScript code is to be executed after the document object is loaded, before `onload` event is fired. This is mainly to be used as an option of `Window.open()` to inject JS in a new window. _(Since v0.9.0)_
 
 ## WebKit Subfields
 
