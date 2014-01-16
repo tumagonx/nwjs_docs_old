@@ -350,9 +350,11 @@ _Requires node-webkit >= v0.3.5_
 
 Emitted when the window is fully loaded, this event behaves the same with `window.onload`, but doesn't rely on the DOM.
 
-### document-end(frame)
+### document-end
+`function (frame) {}`  
 _since v0.9.0_  
-Emitted when the document object in this window or a child iframe is loaded, before the `onload` event is emitted. The argument is the iframe object, or `null` if the event is for the window.
+Emitted when the document object in this window or a child iframe is loaded, before the `onload` event is emitted. 
+* **frame** is the iframe object, or `null` if the event is for the window.
 
 ### focus
 
@@ -411,8 +413,8 @@ _since v0.8.0_
 Emitted after Devtools is closed.
 
 ### new-win-policy
-`function (frame, url, policy) {}`  
-Emitted when a new window is requested from this window or a child iframe, e.g. user clicks a link with `_blank` target.
+`function (frame, url, policy) {}`    
+Emitted when a new window is requested from this window or a child iframe, e.g. user clicks a link with `_blank` target.  _since v0.9.0_
 * **frame** is the object of the child iframe where the request is from, or `null` if it's from the top window.
 * **url** is the address of the requested link
 * **policy** is an object with the following methods:
