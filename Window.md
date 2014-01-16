@@ -350,11 +350,19 @@ _Requires node-webkit >= v0.3.5_
 
 Emitted when the window is fully loaded, this event behaves the same with `window.onload`, but doesn't rely on the DOM.
 
+### document-start
+`function (frame) {}`  
+_since v0.9.0_  
+Emitted when the document object in this window or a child iframe is available, after any files from css, but before any other DOM is constructed or any other script is run; 
+* **frame** is the iframe object, or `null` if the event is for the window.
+See also: `inject-js-start` in [[Manifest-format]]
+
 ### document-end
 `function (frame) {}`  
 _since v0.9.0_  
 Emitted when the document object in this window or a child iframe is loaded, before the `onload` event is emitted. 
 * **frame** is the iframe object, or `null` if the event is for the window.
+See also: `inject-js-end` in [[Manifest-format]]
 
 ### focus
 
