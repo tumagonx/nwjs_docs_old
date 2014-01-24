@@ -6,7 +6,14 @@ Crash dumping is enabled on all the 3 platforms and the minidump file will be sa
  * Windows: [System temporary directory](http://msdn.microsoft.com/en-us/library/windows/desktop/aa364992%28v=vs.85%29.aspx)
  * Mac: ~/Library/Breakpad/`product name`  (product name is defined in .plist file in the application bundle)
 
-The dump location can be changed by an API: `App.setCrashDumpDir(dir)`. Note that if the program crashes before setting the new location, the dump file will still be saved in the default location.
+The dump location can be changed by an API:
+
+```javascript
+var gui = require('nw.gui');
+gui.App.setCrashDumpDir(dir);
+```
+
+Note that if the program crashes before setting the new location, the dump file will still be saved in the default location.
 
 ## Decoding the stack trace ##
 
