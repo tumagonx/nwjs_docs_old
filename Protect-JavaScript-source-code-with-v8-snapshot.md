@@ -44,6 +44,32 @@ The compiled code runs **slower than normal JS**: ~30% performance according to 
 
 The compiled code is **not cross-platform nor compatible between versions** of node-webkit. So you'll need to run `nwsnapshot` for each of the platforms when you package your application.
 
+You cannot create closure in your code like this:
+```js
+var sampleFunction;
+
+(function()
+{
+    var privateVar = 'private';
+
+    sampleFunction = function()
+    {   
+        return privateVar+'67868';
+    };
+})();
+```
+
+It should be written like below instead:  
+```js
+function sampleFunction()
+{
+    var privateVar = 'private';
+
+        return privateVar+'67868';
+}
+```
+If you have a large piece of code like this then you could wrap it inside a function and then compile it.
+
 ## Sample
 
 mytest.js: (this is the JS code to be protected)
