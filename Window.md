@@ -436,7 +436,7 @@ Emitted when a new window is requested from this window or a child iframe, e.g. 
 
 ## Issues
 
-Now on linux, the function `setMaximumSize()/setMinimumSize()` and `setResizable()` can not be set at the same time. If do so, they all do not work. Please taking care of this.
+Now on linux, the function `setMaximumSize()/setMinimumSize()` and `setResizable()` can not be set at the same time. If do so, they all do not work. Please take this into consideration.
 
 ## See also
 
