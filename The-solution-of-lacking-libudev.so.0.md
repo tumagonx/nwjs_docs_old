@@ -1,8 +1,9 @@
-** OK the following is the "leet" solution ;)
-Download ghex: sudo apt-get install ghex
-Open up nw executable: ghex nw
-Find and replace string udev.so.0 with udev.so.1: Ctrl-F + udev + CR + <replace 0 with 1>
-=== End quickfix
+** OK the following is the "leet" solution ;) **
+
+* Download ghex: sudo apt-get install ghex
+* Open up nw executable: ghex nw
+* Find and replace string udev.so.0 with udev.so.1: Ctrl-F + udev + CR + <replace 0 with 1>
+** === End quickfix === **
 
 **The following solution is provided in the same way as Google Chrome is used in their product:**
 
