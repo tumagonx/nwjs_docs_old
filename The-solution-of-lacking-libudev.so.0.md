@@ -1,4 +1,4 @@
-** OK the following is the "leet" solution ;) **
+**OK the following is the "leet" solution ;)**
 
 * Download ghex: sudo apt-get install ghex
 * Open up nw executable: ghex nw
