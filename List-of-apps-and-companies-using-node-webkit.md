@@ -2,11 +2,23 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### LexiMail
+
+[LexiMail](https://github.com/kimus/leximail) is a Open Source and cross-platform e-mail desktop application.
+
+![LexiMail Screenshot](https://github.com/kimus/leximail/blob/master/docs/img/leximail.png?raw=true)
+
+
+### A Wizard's Lizard
+
 [![A Wizard's Lizard title](http://i.imgur.com/k0hhVq0.png)](http://www.wizardslizard.com/)
 
 Death is just the beginning in [A Wizard's Lizard](http://www.wizardslizard.com/), a procedurally generated action RPG for Windows, Mac, and Linux.
 
 [![A Wizard's Lizard screenshot](http://i.imgur.com/qkRnxOx.png)](http://www.wizardslizard.com/)
+
+
+### JazzUI
 
 [![JazzUI: Not your average prototypes](https://github.com/jazzui/jazzui/blob/master/logo-name-full.png?raw=true)](https://github.com/jazzui/jazzui)
 
