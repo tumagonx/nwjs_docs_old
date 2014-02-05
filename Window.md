@@ -423,8 +423,11 @@ _since v0.8.0_
 Emitted after Devtools is closed.
 
 ### new-win-policy
+
+_since v0.9.0_
+
 `function (frame, url, policy) {}`    
-Emitted when a new window is requested from this window or a child iframe, e.g. user clicks a link with `_blank` target.  _since v0.9.0_
+Emitted when a new window is requested from this window or a child iframe, e.g. user clicks a link with `_blank` target.
 * **frame** is the object of the child iframe where the request is from, or `null` if it's from the top window.
 * **url** is the address of the requested link
 * **policy** is an object with the following methods:
