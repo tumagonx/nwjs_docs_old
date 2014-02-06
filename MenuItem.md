@@ -66,7 +66,7 @@ A `MenuItem`'s type can be set only when you create it, it cannot be changed at 
 
 It has no effect on setting `icon` of a `separator` item.
 
-OSX caveat: icon is not sized down like in windows, it is used in 1:1 ratio.
+OSX caveat: when used in notification context, icon is not sized down like in windows notification area, it is rather displayed in 1:1 ratio.
 
 ### MenuItem.tooltip
 
