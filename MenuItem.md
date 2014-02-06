@@ -66,6 +66,8 @@ A `MenuItem`'s type can be set only when you create it, it cannot be changed at 
 
 It has no effect on setting `icon` of a `separator` item.
 
+OSX caveat: icon is not sized down like in windows, it is used in 1:1 ratio.
+
 ### MenuItem.tooltip
 
 **Get** or **Set** the `tooltip` of a `MenuItem`, it can only be plain text. A `tooltip` is short string that describes the menu item, it will show when you hover your mouse on the item.
