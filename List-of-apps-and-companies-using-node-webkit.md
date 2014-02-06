@@ -375,3 +375,17 @@ GruntMate is a tools for manager grunt project with node-webkit
 * Sprite Figure merge function
 
 [![Image](https://github.com/floydcash/gruntmate/raw/master/screen_shot/v1.03.png)](https://github.com/floydcash/gruntmate)
+
+### Git Watcher
+
+https://github.com/demian85/git-watcher
+
+Git Watcher is a Git GUI app that shows diff information about local staged/unstaged files and allows you to commit changes. 
+
+UI is updated in real-time by detecting file changes and git index changes. Submodules also inform changes to their parent module.
+
+It also organizes repository submodules in tabs, so that you can work easily with them without the need of having multiple git gui instances or shells.
+
+![Overview 1](http://i.imgur.com/sPpmjhO.png)
+![Overview 2](http://i.imgur.com/4QWxanD.png)
+![Overview 3](http://i.imgur.com/56Ou6Ju.png)
