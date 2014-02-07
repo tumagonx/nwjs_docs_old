@@ -129,6 +129,11 @@ menubar.append(new gui.MenuItem({ label: 'Sub1', submenu: sub1}));
 //assign the menubar to window menu
 win.menu = menubar;
 
+// add a click event to an existing menuItem
+menu.items[0].click = function() { 
+    console.log("CLICK"); 
+};
+
 </script>  
 </body>
 </html>
