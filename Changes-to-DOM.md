@@ -9,6 +9,8 @@ var files = new FileList();
 files.append(f);
 document.getElementById('input0').files = files;
 ```
+### script can emulate user gestures
+JavaScripts can emulate user gestures while in browsers they can't. e.g. Triggering `click` event on file input. See [[File-dialogs]]
 
 ### nwUserAgent
 _since v0.9.0-rc1_
