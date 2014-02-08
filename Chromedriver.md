@@ -45,28 +45,23 @@ As you may have found from trying to run node-webkit in later versions of Ubuntu
 You should find this now works in Ubuntu 13.x
 
 ## Downloads
+### 0.9.x
+https://s3.amazonaws.com/node-webkit/v0.9.0/chromedriver2-nw-v0.9.0-linux-ia32.tar.gz  
+https://s3.amazonaws.com/node-webkit/v0.9.0/chromedriver2-nw-v0.9.0-linux-x64.tar.gz  
+https://s3.amazonaws.com/node-webkit/v0.9.0/chromedriver2-nw-v0.9.0-osx-ia32.zip  
+https://s3.amazonaws.com/node-webkit/v0.9.0/chromedriver2-nw-v0.9.0-win-ia32.zip  
 ### 0.8.x
-https://s3.amazonaws.com/node-webkit/v0.8.0/chromedriver2-nw-v0.8.0-linux-ia32.tar.gz
-
-https://s3.amazonaws.com/node-webkit/v0.8.0/chromedriver2-nw-v0.8.0-linux-x64.tar.gz
-
-https://s3.amazonaws.com/node-webkit/v0.8.0/chromedriver2-nw-v0.8.0-osx-ia32.zip
-
-https://s3.amazonaws.com/node-webkit/v0.8.0/chromedriver2-nw-v0.8.0-win-ia32.zip
+https://s3.amazonaws.com/node-webkit/v0.8.0/chromedriver2-nw-v0.8.0-linux-ia32.tar.gz  
+https://s3.amazonaws.com/node-webkit/v0.8.0/chromedriver2-nw-v0.8.0-linux-x64.tar.gz  
+https://s3.amazonaws.com/node-webkit/v0.8.0/chromedriver2-nw-v0.8.0-osx-ia32.zip  
+https://s3.amazonaws.com/node-webkit/v0.8.0/chromedriver2-nw-v0.8.0-win-ia32.zip  
 ### 0.7.x
-https://s3.amazonaws.com/node-webkit/v0.7.0/chromedriver2-nw-v0.7-win-ia32.zip
-
-https://s3.amazonaws.com/node-webkit/v0.7.0/chromedriver2-nw-v0.7-osx-ia32.zip
-
-https://s3.amazonaws.com/node-webkit/v0.7.0/chromedriver2-nw-v0.7-linux-ia32.tar.gz
-
-https://s3.amazonaws.com/node-webkit/v0.7.0/chromedriver2-nw-v0.7-linux-x64.tar.gz
-
+https://s3.amazonaws.com/node-webkit/v0.7.0/chromedriver2-nw-v0.7-win-ia32.zip  
+https://s3.amazonaws.com/node-webkit/v0.7.0/chromedriver2-nw-v0.7-osx-ia32.zip  
+https://s3.amazonaws.com/node-webkit/v0.7.0/chromedriver2-nw-v0.7-linux-ia32.tar.gz  
+https://s3.amazonaws.com/node-webkit/v0.7.0/chromedriver2-nw-v0.7-linux-x64.tar.gz  
 ### 0.6.x
-https://s3.amazonaws.com/node-webkit/v0.6.0/chromedriver2-nw-v0.6.0-win-ia32.zip
-
-https://s3.amazonaws.com/node-webkit/v0.6.0/chromedriver2-nw-v0.6.0-linux-ia32.tar.gz
-
-https://s3.amazonaws.com/node-webkit/v0.6.0/chromedriver2-nw-v0.6.0-linux-x64.tar.gz
-
-https://s3.amazonaws.com/node-webkit/v0.6.0/chromedriver2-nw-v0.6.0-osx-ia32.zip
+https://s3.amazonaws.com/node-webkit/v0.6.0/chromedriver2-nw-v0.6.0-win-ia32.zip  
+https://s3.amazonaws.com/node-webkit/v0.6.0/chromedriver2-nw-v0.6.0-linux-ia32.tar.gz  
+https://s3.amazonaws.com/node-webkit/v0.6.0/chromedriver2-nw-v0.6.0-linux-x64.tar.gz  
+https://s3.amazonaws.com/node-webkit/v0.6.0/chromedriver2-nw-v0.6.0-osx-ia32.zip  
