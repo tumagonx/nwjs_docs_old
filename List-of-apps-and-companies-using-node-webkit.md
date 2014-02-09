@@ -299,6 +299,21 @@ Maintained by [passcod](https://github.com/passcod).
 
 ![screenshot of VLC being controlled from Everytime](https://www.everytimehq.com/assets/screenshots/desktop.jpg)
 
+
+### Spreaker Studio
+
+[Spreaker](http://www.spreaker.com) is an online application for creating and sharing live audio content across the Internet. With Spreaker, users become Radio DJs and host personal radio shows that can be streamed live and listened through a widget which supports all the major social media and mobile platforms.
+
+**Spreaker Studio** is a brand new application for Windows and Mac OS that allows Spreaker users to professionally broadcast live audio. This application has been built with node-webkit, portaudio and lame.
+
+Download:
+
+ - Mac: http://download.spreaker.com/spreaker-osx.dmg
+ - Win: http://download.spreaker.com/spreaker-win.exe
+
+[![Image](http://download.spreaker.com/spreaker_studio_1.png)](http://download.spreaker.com/spreaker_studio_1.png)
+
+
 ### Shubha Downloader
 There is large amount of information available in market place. The markets are always in sync. In today’s world investors find it very difficult to make effective use of information available to them. Shubha Downloader  is great tool which resolves this problem and helps investor to increase his productivity and stay focused on decision making.   Shubha Downloader enable end user to download market data from available sources and organize it. Shubha Downloader  is Open source & FREE utility for end users.
 Shubha Downloader  have main features as
