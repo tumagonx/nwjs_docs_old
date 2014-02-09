@@ -9,7 +9,7 @@ An example is:
 <body>
 <style>
 #holder { border: 10px dashed #ccc; width: 300px; height: 300px; margin: 20px auto;}
-#holder:hover { border: 10px dashed #333; }
+#holder.hover { border: 10px dashed #333; }
 </style>
 <div id="holder"></div>
 <script>
