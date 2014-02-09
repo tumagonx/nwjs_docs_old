@@ -386,6 +386,6 @@ UI is updated in real-time by detecting file changes and git index changes. Subm
 
 It also organizes repository submodules in tabs, so that you can work easily with them without the need of having multiple git gui instances or shells.
 
-![Overview 1](http://i.imgur.com/sPpmjhO.png)
-![Overview 2](http://i.imgur.com/4QWxanD.png)
-![Overview 3](http://i.imgur.com/56Ou6Ju.png)
+![Overview 1](http://gitw.zedplan.com/screenshots/gitw1.png)
+![Overview 2](http://gitw.zedplan.com/screenshots/gitw2.png)
+![Overview 3](http://gitw.zedplan.com/screenshots/gitw3.png)
