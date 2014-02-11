@@ -137,3 +137,11 @@ https://github.com/rogerwang/breakpad
 https://github.com/rogerwang/v8
 https://github.com/rogerwang/node
 ````
+### branches
+There are two branches for node-webkit: v0.8 branch and master (v0.9) branch. See https://groups.google.com/d/msg/node-webkit/2OJ1cEMPLlA/09BvpTagSA0J
+
+The root repo and some of the dependency repos use the default branch for 0.9 starting from Feb 11, 2014. Previously the default branch was used for 0.8 branch.
+
+The "default branch" is the branch name you see in the start page of github repos. Regarding the root Chromium repo, the default branch is 'node'. It was switched from 0.8 to 0.9 on Feb 11, 2014.
+
+The branch names in dependency repos are specified in '.DEPS.git' file in the root repo. The tool 'gclient' is supposed to sync them for you. But sometimes manual switching between branches might be needed.
