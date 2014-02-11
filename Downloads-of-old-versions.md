@@ -1,5 +1,5 @@
 ## v0.9.0 (Feb 8, 2014)
-Node v0.11.9; Browser 32.0.1700.77
+Node v0.11.9; Browser 32.0.1700.77  
 [v0.9.0 release notes](https://groups.google.com/d/msg/node-webkit/b-hU7MUmImQ/6i9Qx2eX4msJ)  
 * Linux: [32bit](https://s3.amazonaws.com/node-webkit/v0.9.0/node-webkit-v0.9.0-linux-ia32.tar.gz) / [64bit] (https://s3.amazonaws.com/node-webkit/v0.9.0/node-webkit-v0.9.0-linux-x64.tar.gz)
 * Windows: [win32](https://s3.amazonaws.com/node-webkit/v0.9.0/node-webkit-v0.9.0-win-ia32.zip)
