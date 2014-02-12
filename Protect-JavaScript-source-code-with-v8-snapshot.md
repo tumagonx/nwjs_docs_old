@@ -1,6 +1,6 @@
 _Since v0.4.2_
 
-**There is a bug in 0.8.x that would make source code exposed. Do not use this feature with 0.8.x**
+**There is a bug in 0.8.x that would make source code exposed. Do not use this feature with 0.8.x. It is fixed in 0.9.x**
 
 **This feature is still experimental -- API & tool usage are subject to change in future versions.**
 
