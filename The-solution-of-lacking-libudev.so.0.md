@@ -3,7 +3,8 @@
 * Download ghex: sudo apt-get install ghex
 * Open up nw executable: ghex nw
 * Find and replace string udev.so.0 with udev.so.1: Ctrl-F + udev + CR + (replace 0 with 1)
-Tip - type 'udev.so.0' into the right hand side of the search box. Press Enter to find this text. Now **click on the red text** and change 'udev.so.0' to 'read udev.so.1' 
+
+Tip - type 'udev.so.0' into the right hand side of the search box. Press Enter to find this text. Now click on the text **highlighted in red** and change 'udev.so.0' to 'read udev.so.1' 
 
 **=== End quickfix ===**
 
