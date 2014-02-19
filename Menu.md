@@ -64,6 +64,15 @@ Remove `item` from `Menu`. This method requires you to keep the `MenuItem` outsi
 
 Remove the `i`th item form `Menu`
 
+### Menu.item[x].click
+Reference: x is the index of the menu object.
+
+```javascript
+  menu.items[x].click = function() { 
+      console.log('clicked');
+  };
+```
+
 ### Menu.popup(int x, int y)
 
 Popup the `Menu` at position (`x`, `y`) in current window. Usually you would listen to `contextmenu` event of DOM elements and manually popup the menu:
