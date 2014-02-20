@@ -259,7 +259,7 @@ Shortcut to move window to specified `position`. Currently only `center` is supp
 
 ### Window.setShowInTaskbar(Boolean show)
 _since v0.9.2_  
-Control whether to show window in taskbar or dock 
+Control whether to show window in taskbar or dock. See also `show_in_taskbar` in [[Manifest-format]].
 
 ### Window.requestAttention(Boolean attention)
 
