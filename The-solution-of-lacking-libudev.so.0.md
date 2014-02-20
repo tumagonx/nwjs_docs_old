@@ -40,7 +40,7 @@ As you are only modifying local contents of node-webkit directory, this option s
 **2. Use a wrapper shell script for your application.**
 In this way, rename the binary executable file as `myapp-bin`, and then create a shell script named `myapp` as the following. Users run the `myapp` file.
 
-``` shell
+```bash
 #!/bin/bash
 export MYAPP_WRAPPER="`readlink -f "$0"`"
 
@@ -60,19 +60,20 @@ exec -a "$0" "$HERE/myapp-bin"  "$@"
 **Creating a symlink for your package in the postinstall script**
 
 In the postinstall script of your DEB or RPM package, run the following script to create a local symlink. Use this together with the previous wrapper script.
-```shell
-#!/bin/sh
-udevDependent=`which udisks 2> /dev/null` # Ubuntu, Mint
-if [ -z "$udevDependent" ]
-then
-    udevDependent=`which systemd 2> /dev/null` # Fedora, SUSE
-fi
-if [ -z "$udevDependent" ]
-then
-    udevDependent=`which findmnt` # Arch
-fi
-udevso=`ldd $udevDependent | grep libudev.so | awk '{print $3;}'`
-if [ -e "$udevso" ]; then
-   ln -sf "$udevso" /opt/myapp/libudev.so.0
-fi
+```bash
+#!/bin/bash
+paths=(
+  "/lib/x86_64-linux-gnu/libudev.so.1" # Ubuntu, Xubuntu, Mint
+  "/usr/lib64/libudev.so.1" # SUSE, Fedora
+  "/usr/lib/libudev.so.1" # Arch, Fedora 32bit
+  "/lib/i386-linux-gnu/libudev.so.1" # Ubuntu 32bit
+)
+for i in "${paths[@]}"
+do
+  if [ -f $i ]
+  then
+    ln -sf "$i" /opt/myapp/libudev.so.0
+    break
+  fi
+done
 ```
