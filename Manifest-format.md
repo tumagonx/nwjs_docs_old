@@ -197,6 +197,9 @@ _since v0.7.3_
 ### fullscreen
 *(boolean)* whether window is fullscreen _(available after node-webkit v0.3.0)_
 
+### show_in_taskbar
+*(boolean)* whether the window is shown in taskbar or dock. The default is `true`. _since v0.9.2_
+
 ### frame
 
 *(boolean)* specify it to `false` to make the window frameless _(available after node-webkit v0.3.0)_
