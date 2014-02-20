@@ -257,6 +257,10 @@ Sets the widget to be on top of all other windows in the windowing system.
 
 Shortcut to move window to specified `position`. Currently only `center` is supported on all platforms, which will put window in the middle of the screen.
 
+### Window.setShowInTaskbar(Boolean show)
+_since v0.9.2_  
+Control whether to show window in taskbar or dock 
+
 ### Window.requestAttention(Boolean attention)
 
 Pass `true` to indicate that the window needs user's action, pass `false` to cancel it. The final behaviour depends on the platform.
