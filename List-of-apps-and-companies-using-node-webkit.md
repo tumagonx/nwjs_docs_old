@@ -404,3 +404,15 @@ It also organizes repository submodules in tabs, so that you can work easily wit
 ![Overview 1](http://gitw.zedplan.com/screenshots/gitw1.png)
 ![Overview 2](http://gitw.zedplan.com/screenshots/gitw2.png)
 ![Overview 3](http://gitw.zedplan.com/screenshots/gitw3.png)
+
+### Spock
+
+https://github.com/willerce/spock
+
+Spock is a GUI frontend for Grunt. Unlike Koala and Prepros, Spock merely provides a graphic interface, without adding any extra functionality.
+
+Instead of Grunt's original command line interface, Spock's graphic interface helps the new Grunt users. We hope Spock can promote the usage of Grunt.
+
+![Spock Overview](https://github-camo.global.ssl.fastly.net/f1f12a5904fa04229a8ed1145aa6bd9ec3fdaf19/687474703a2f2f732e77696c6c657263652e636f6d2f6c61622f73706f636b2f73706f636b2e706e67)
+
+Get it at [http://getspock.com/](http:/getspock.com/)
