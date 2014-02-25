@@ -137,7 +137,7 @@ Koala is a developer tool for less, sass and coffeescript compilation, to help w
 
 Get it at [http://koala-app.com/](http://koala-app.com/)
 
-![koala](http://koala-app.com/images/screenshots/linux.png)
+![koala](http://oklai.github.io/koala/img/screenshots/linux.png)
 
 ### MUVConf
 
