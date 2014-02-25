@@ -175,6 +175,10 @@ Thanks @ http://ace.ajax.org/
 
 Light Table is a new interactive IDE that lets you modify running programs and embed anything from websites to games. It provides the real time feedback.
 
+![lt-inspector](http://www.chris-granger.com/images/040/inspector.png)
+![lt-table](http://www.chris-granger.com/images/lightable/table.png)
+
+
 http://www.lighttable.com/
 
 ### Brief Msg
