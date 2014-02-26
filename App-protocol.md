@@ -14,7 +14,7 @@ If you use absolute paths in the project and move the project directory to diffe
  {
   "name": "ParleysDesktop",
   "main": "app://whatever/index.html",
-    "window": {
+  "window": {
     "toolbar": true,
     "frame": true,
     "width": 1000,
