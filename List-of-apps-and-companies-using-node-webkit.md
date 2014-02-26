@@ -294,6 +294,12 @@ Maintained by [passcod](https://github.com/passcod).
 #### [kndl](https://github.com/passcod/kndl): Kindle Cloud Reader
 ![Screenshot](http://i.imgur.com/PU2y582.png)
 
+### Remonit
+
+[Remonit](http://zef.io/remonit/) is a remote monitoring tool. It lets you run simple scripts to monitor your computer and/or servers. Gathered stats are shown in nice web dashboards that zoom with display size. 
+
+![](http://zef.io/remonit/ss0.png)
+
 
 ## Companies
 
