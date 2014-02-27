@@ -432,7 +432,7 @@ Get it at [http://getspock.com/](http:/getspock.com/)
 
 https://turtl.it/
 
-Turtl is an app that lets you store and share files and notes. It uses client-side encryption, making your data readable only to you and those you share with.
+Turtl is an app that lets you store and share files and notes. It uses client-side encryption, making your data readable only to you and those you share with. Store playlists, code snippets, bookmarks...anything you want, all completely private.
 
 ![Playlist in Turtl](http://turtl.github.io/js/playlist.jpg)
 
