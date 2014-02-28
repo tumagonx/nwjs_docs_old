@@ -82,7 +82,7 @@ function dumpWindowState() {
         winState.height = win.height;
 
         // save delta only of it is not zero
-        if (deltaHeight !== 0) {
+        if (deltaHeight !== 0 && currWinMode !== 'maximized') {
             winState.deltaHeight = deltaHeight;
         }
     }
