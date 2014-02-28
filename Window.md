@@ -54,7 +54,7 @@ var new_win = gui.Window.get(
 
 ### open(url[, options])
 
-Open a new window and load `url` in it, you can specify extra `options` with the window. All window subfields in [[Manifest format]] can be used. Since v0.4.0, a boolean field `new-instance` can be used to start a new Node instance (webkit process). Since v0.9.0, `inject-js-start` and `inject-js-end` field can be used to inject a javascript file, see [[Manifest format]] .
+Open a new window and load `url` in it, you can specify extra `options` with the window. All window subfields in [[Manifest format]] can be used. Since v0.4.0, a boolean field `new-instance` can be used to start a new Node instance (webkit process). Since v0.9.0 and 0.8.5, `inject-js-start` and `inject-js-end` field can be used to inject a javascript file, see [[Manifest format]] .
 
 Since v0.7.3 the opened window is not focused by default. It's a result of unifying behavior across platforms. If you want it to be focused by default, you can set `focus` to `true` in `options`.
 
@@ -288,7 +288,7 @@ This includes multiple functions to manipulate the cookies. The API is defined i
 And anything related to `CookieStore` in the Chrome extension API is not supported, because there is only one global cookie store in node-webkit apps.
 
 ### Window.eval(frame, script)
-_Since v0.9.0_  
+_Since v0.9.0 and v0.8.5_  
 Execute a piece of JavaScript in the window, if `frame` argument is null, or in the context of an iframe, if `frame` is an iframe object. The `script` argument is the content of the JavaScript source code.
 
 ## Events
@@ -355,7 +355,7 @@ _Requires node-webkit >= v0.3.5_
 Emitted when the window is fully loaded, this event behaves the same with `window.onload`, but doesn't rely on the DOM.
 
 ### document-start
-_since v0.9.0_ 
+_since v0.9.0 and v0.8.5_ 
 
 `function (frame) {}`  
 Emitted when the document object in this window or a child iframe is available, after any files from css, but before any other DOM is constructed or any other script is run; 
@@ -364,7 +364,7 @@ Emitted when the document object in this window or a child iframe is available, 
 See also: `inject-js-start` in [[Manifest-format]]
 
 ### document-end
-_since v0.9.0_
+_since v0.9.0 and v0.8.5_
 
 `function (frame) {}`    
 Emitted when the document object in this window or a child iframe is loaded, before the `onload` event is emitted. 
@@ -430,7 +430,7 @@ Emitted after Devtools is closed.
 
 ### new-win-policy
 
-_since v0.9.0_
+_since v0.9.0 and v0.8.5_
 
 `function (frame, url, policy) {}`    
 Emitted when a new window is requested from this window or a child iframe, e.g. user clicks a link with `_blank` target.
