@@ -5,3 +5,6 @@ node-webkit has special support to let you load external websites in an iframe i
 * `nwUserAgent` (since 0.9.0-rc1) is used to specify the `User-Agent` header of HTTP requests. See [[Changes-to-DOM]]
 
 For more discussion, see https://github.com/rogerwang/node-webkit/issues/534
+
+More features which would help on this topic:  
+`Window.eval()`, `inject-js-start`, `inject-js-end`, `document-start` and `document-end` in [[Window]]
