@@ -265,7 +265,7 @@ Control whether to show window in taskbar or dock. See also `show_in_taskbar` in
 
 Pass `true` to indicate that the window needs user's action, pass `false` to cancel it. The final behaviour depends on the platform.
 
-### Window.capturePage(callback [, image_format]) 
+### Window.capturePage(callback [, image_format | config_object ]) 
 _since v0.4.2_
 
 Captures the visible area of the window. Note: a simple demo usage can be found here: https://gist.github.com/zhchbin/4749217 
@@ -278,6 +278,35 @@ A `dataURL(string)` which encodes an image of the visible area of the captured
 window. May be assigned to the 'src' property of an HTML Image element for display.
 
 `image_format` is enumerated string ["jpeg", "png"]. Default is 'jpeg'.
+
+_since v0.9.3_
+
+It is now possible to define the `datatype` of the returned image by using an `config_object` as the second parameter.
+
+This object should be like: 
+```js
+{ 
+ format : "[jpeg|png]", 
+ datatype : "[raw|buffer|datauri]" 
+}
+```
+Where:  
+`format` defaults to `jpeg`  
+`datatype` defaults to `datauri`  
+
+Example usage:
+```js
+// png as base64string
+win.capturePage(function(base64string){
+ // do something with the base64string
+}, { format : 'png', datatype : 'raw'} );
+
+// png as node buffer
+win.capturePage(function(buffer){
+ // do something with the buffer
+}, { format : 'png', datatype : 'buffer'} );
+```
+
 
 ### Window.cookies.*
 
