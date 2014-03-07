@@ -1,3 +1,10 @@
+**One line fix:**
+* Navigate to the directory with the nw binary
+* Run the following from the command line:
+``` bash
+sed -i 's/\x75\x64\x65\x76\x2E\x73\x6F\x2E\x30/\x75\x64\x65\x76\x2E\x73\x6F\x2E\x31/g' nw
+```
+
 **OK the following is the "leet" solution ;)**
 
 * Download ghex: sudo apt-get install ghex
