@@ -449,3 +449,9 @@ http://getpopcornti.me/
 To allow any computer user to watch movies easily streaming from torrents, without any particular knowledge.
 
 ![Popcorn Time Preview](https://github-camo.global.ssl.fastly.net/5ee3a600ad6bb2afe7c61cdcc8b5856a694959c9/687474703a2f2f676574706f70636f726e74692e6d652f696d616765732f686f772d75692e706e67)
+
+### Codiqa
+
+[Codiqa](http://codiqa.com/) is a drag-and-drop development tool for building jQuery Mobile websites and apps.
+
+![Codiqa Screenshot](http://codiqa-static.s3.amazonaws.com/codiqa_desktop.png)
