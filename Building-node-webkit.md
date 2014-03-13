@@ -1,7 +1,6 @@
 Our compilation will follow `Chromium`'s standard, by using `gclient` and `gyp`, be sure to read following documentations before you continue, they contained required knowledge to build `node-webkit`.
 
 * [Get the Code](http://www.chromium.org/developers/how-tos/get-the-code) - the usage of `gclient`
-* [UsingNewGit ](http://code.google.com/p/chromium/wiki/UsingNewGit) - steps of syncing code 
 
 And preview the upstream instructions for your platform, they contained important building conventions.
 
