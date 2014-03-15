@@ -455,3 +455,8 @@ To allow any computer user to watch movies easily streaming from torrents, witho
 [Codiqa](http://codiqa.com/) is a drag-and-drop development tool for building jQuery Mobile websites and apps.
 
 ![Codiqa Screenshot](http://codiqa-static.s3.amazonaws.com/codiqa_desktop.png)
+
+### Secryptor
+A simple, yet powerful and free Node-Webkit application packaged for Windows and OS X to drag and drop files for encryption and exchange via the cloud. It has a Dropbox API integration and associations of the file extension ".skt" to fire up the app, recognize en/decryption automatically. Submission to the 2 App Stores started, download with source in German:  [Secryptor.de](http://www.secryptor.de/).
+
+![Screenshot](http://www.secryptor.de/bilder/screen1.png)
