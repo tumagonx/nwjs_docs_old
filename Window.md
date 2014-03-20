@@ -82,6 +82,9 @@ var win = gui.Window.open('https://github.com', {
 
 **Get** or **Set** window's title.
 
+### Window.menu
+**Get** or **Set** window's menubar. Set with a Menu with type `menubar`. See [[Menu]].
+
 ### Window.isFullscreen
 
 _since v0.3.5_
