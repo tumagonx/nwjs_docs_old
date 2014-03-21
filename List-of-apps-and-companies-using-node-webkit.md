@@ -145,6 +145,14 @@ Get more info at [http://alphapixels.com/prepros](http://alphapixels.com/prepros
 ![Prepros screenshot](http://alphapixels.com/prepros/static/img/prepros.jpg)
 
 
+### Slate
+
+Slate is a minimalistic IRC client focused on extensibility.
+
+See more and get it at [https://github.com/slate/slate](https://github.com/slate/slate)
+
+![Slate screenshot](https://camo.githubusercontent.com/0f50694c7e4d0bbcbd6350a271cc9ec0ad7405b0/68747470733a2f2f646c2e64726f70626f7875736572636f6e74656e742e636f6d2f752f363339363931332f736c6174652f53637265656e25323053686f74253230323031332d31302d3139253230617425323031312e34352e3038253230414d2e706e67)
+
 ### Koala
 
 Koala is a developer tool for less, sass and coffeescript compilation, to help web developers to use less,sass and coffeescript development more efficient.
