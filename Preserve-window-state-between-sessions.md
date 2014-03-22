@@ -19,16 +19,20 @@ winstate.js library:
  * current state of node-webkit Window API (v0.7.3 and later).
  *
  * Known issues:
- * - unmaximization not always sets the window (x, y) in the lastly used coordinates
- * - unmaximization animation sometimes looks wierd
- * - extra height added to window, at least in linux x64 gnome-shell env. It seems that
+ * - Unmaximization not always sets the window (x, y) in the lastly used coordinates.
+ * - Unmaximization animation sometimes looks wierd.
+ * - Extra height added to window, at least in linux x64 gnome-shell env. It seems that
  *   when we read height then it returns it with window frame, but if we resize window
  *   then it applies dimensions only to internal document without external frame.
  *   Need to test in other environments with different visual themes.
  *
  * Change log:
- * 2013.12.01
- * - workaround of extra height in gnome-shell added
+ * 2013-12-01
+ * - Workaround of extra height in gnome-shell added.
+ *
+ * 2014-03-22
+ * - Repared workaround (from 2013-12-01) behaviour when use frameless window.
+ *   Now it works correctly.
  */
 
 var gui = require('nw.gui');
@@ -39,7 +43,10 @@ var resizeTimeout;
 var isMaximizationEvent = false;
 
 // extra height added in linux x64 gnome-shell env, use it as workaround
-var deltaHeight = false;
+var deltaHeight = (function () {
+    // use deltaHeight only in windows with frame enabled
+    if (gui.App.manifest.window.frame) return true; else return 'disabled';
+})();
 
 
 function initWindowState() {
@@ -54,7 +61,7 @@ function initWindowState() {
         }
     } else {
         currWinMode = 'normal';
-        deltaHeight = 0
+        if (deltaHeight !== 'disabled') deltaHeight = 0;
         dumpWindowState();
     }
 
@@ -82,7 +89,7 @@ function dumpWindowState() {
         winState.height = win.height;
 
         // save delta only of it is not zero
-        if (deltaHeight !== 0 && currWinMode !== 'maximized') {
+        if (deltaHeight !== 'disabled' && deltaHeight !== 0 && currWinMode !== 'maximized') {
             winState.deltaHeight = deltaHeight;
         }
     }
@@ -90,7 +97,7 @@ function dumpWindowState() {
 
 function restoreWindowState() {
     // deltaHeight already saved, so just restore it and adjust window height
-    if (typeof winState.deltaHeight !== 'undefined') {
+    if (deltaHeight !== 'disabled' && typeof winState.deltaHeight !== 'undefined') {
         deltaHeight = winState.deltaHeight
         winState.height = winState.height - deltaHeight
     }
@@ -141,7 +148,7 @@ win.window.addEventListener('resize', function () {
         }
 
         // there is no deltaHeight yet, calculate it and adjust window size
-        if (deltaHeight === false) {
+        if (deltaHeight !== 'disabled' && deltaHeight === false) {
             deltaHeight = win.height - winState.height;
 
             // set correct size
