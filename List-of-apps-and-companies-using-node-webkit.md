@@ -329,6 +329,13 @@ Maintained by [passcod](https://github.com/passcod).
 
 ![](http://github.com/PCI-TDF/artomico/raw/master/artomico.png)
 
+### Youpp
+
+Simple YouTube client for Mac OSX. 
+[Youpp](http://ambrosechua.github.io/Youpp/)
+
+![](http://ambrosechua.github.io/Youpp/screenshots/Youpp-splash-screenshot.png)
+
 ## Companies
 
 ### Everytime
