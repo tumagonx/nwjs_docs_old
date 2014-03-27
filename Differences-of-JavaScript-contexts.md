@@ -235,3 +235,41 @@ require('async').auto({
 ```
 
 It makes the `async` module happy.
+
+## Avoiding Node's setImmediate
+
+Switching between WebKit's and Node's contexts takes some time. In most cases this does not constitute a problem, but using Node's [`setImmediate`](http://nodejs.org/docs/latest/api/timers.html#timers_setimmediate_callback_arg) (exported from some Node.js module) can be less immediate than expected.
+
+To work around this problem it's usually enough to define (in WebKit's context) and use David Baron's [`setZeroTimeout`](http://dbaron.org/log/20100309-faster-timeouts) function instead of Node's `setImeddiate`.
+
+```js
+// Only add setZeroTimeout to the window object, and hide everything
+// else in a closure.
+(function() {
+   var timeouts = [];
+   var messageName = "zero-timeout-message";
+
+   // Like setTimeout, but only takes a function argument.  There's
+   // no time argument (always zero) and no arguments (you have to
+   // use a closure).
+   function setZeroTimeout(fn) {
+      timeouts.push(fn);
+      window.postMessage(messageName, "*");
+   }
+
+   function handleMessage(event) {
+      if (event.source == window && event.data == messageName) {
+         event.stopPropagation();
+         if (timeouts.length > 0) {
+            var fn = timeouts.shift();
+            fn();
+         }
+      }
+   }
+
+   window.addEventListener("message", handleMessage, true);
+
+   // Add the one thing we want added to the window object.
+   window.setZeroTimeout = setZeroTimeout;
+})();
+```
