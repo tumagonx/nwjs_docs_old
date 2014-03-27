@@ -274,4 +274,4 @@ To work around this problem it's usually enough to define (in WebKit's conte
 })();
 ```
 
-Using standard [`window.setTimeout(yourFunction, 0)`](https://developer.mozilla.org/en-US/docs/Web/API/Window.setTimeout) is less efficient because [HTML5 standard](http://www.whatwg.org/specs/web-apps/current-work/multipage/timers.html#timers) defines its minimal timeout as **4 milliseconds** even if `0` is given (i.e. even if you use `setTimeout` only 25 times, you already get a whole second of extra delay in your application).
+Using standard [`window.setTimeout(yourFunction, 0)`](https://developer.mozilla.org/en-US/docs/Web/API/Window.setTimeout) is less efficient because [HTML5 standard](http://www.whatwg.org/specs/web-apps/current-work/multipage/timers.html#timers) defines its minimal timeout as **4 milliseconds** even if `0` is given (i.e. even if you use `setTimeout` only 250 times, you already get a whole second of extra delay in your application).
