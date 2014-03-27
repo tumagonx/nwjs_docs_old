@@ -250,8 +250,8 @@ To work around this problem it's usually enough to define (in WebKit's conte
    var messageName = "zero-timeout-message";
 
    // Like setTimeout, but only takes a function argument.
-   // There's no time argument (always zero) and no arguments
-   // (you have to use a closure if arguments are necessary).
+   // There's no time argument (always 0) and no function's arguments
+   // (you have to use a closure if such arguments are necessary).
    function setZeroTimeout(fn) {
       timeouts.push(fn);
       window.postMessage(messageName, "*");
