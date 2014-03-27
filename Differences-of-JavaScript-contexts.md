@@ -238,7 +238,9 @@ It makes the `async` module happy.
 
 ## Avoiding Node's setImmediate
 
-Switching between WebKit's and Node's contexts takes some time. In most cases this does not constitute a serious problem, but if you are in a WebKit's context and you are simply deferring some function's execution, then using Node's [`setImmediate`](http://nodejs.org/docs/latest/api/timers.html#timers_setimmediate_callback_arg) (exported from some Node.js module) can become less immediate than you would be happy to experience.
+Switching between WebKit's and Node's contexts takes some time.
+
+In most cases this delay does not constitute a serious problem, but if you are in a WebKit's context and you are simply deferring some function's execution (in some *[hot spot](http://www.catb.org/jargon/html/H/hot-spot.html)* where the same function is likely to be deferred hundreds of times; for example, when you draw some 500 objects giving the WebKit its chance to redraw the window after each object's appearance rather than forcing the user to stare on a blank screen mindlessly), then using Node's [`setImmediate`](http://nodejs.org/docs/latest/api/timers.html#timers_setimmediate_callback_arg) (exported from some Node.js module) can actually become less “immediate” than you would be happy to experience.
 
 To work around this problem it's usually enough to define (in WebKit's context) and use David Baron's [`setZeroTimeout`](http://dbaron.org/log/20100309-faster-timeouts) function instead of Node's `setImmediate`.
 
