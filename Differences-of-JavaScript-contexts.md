@@ -243,15 +243,15 @@ Switching between WebKit's and Node's contexts takes some time. In most case
 To work around this problem it's usually enough to define (in WebKit's context) and use David Baron's [`setZeroTimeout`](http://dbaron.org/log/20100309-faster-timeouts) function instead of Node's `setImmediate`.
 
 ```js
-// Only add setZeroTimeout to the window object, and hide everything
-// else in a closure.
+// Only add setZeroTimeout to the window object, and hide
+// everything else in a closure.
 (function() {
    var timeouts = [];
    var messageName = "zero-timeout-message";
 
-   // Like setTimeout, but only takes a function argument.  There's
-   // no time argument (always zero) and no arguments (you have to
-   // use a closure).
+   // Like setTimeout, but only takes a function argument.
+   // There's no time argument (always zero) and no arguments
+   // (you have to use a closure if arguments are necessary).
    function setZeroTimeout(fn) {
       timeouts.push(fn);
       window.postMessage(messageName, "*");
