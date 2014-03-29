@@ -4,7 +4,7 @@ To change icon in title bar of your app, put a reference to PNG/JPG into package
 {
   ... other stuff here ...
   "window": {
-     "icon": "path/to/my/app.png", 
+     "icon": "path/to/my/app.png"
   }
 }
 ```
