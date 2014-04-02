@@ -475,3 +475,9 @@ To allow any computer user to watch movies easily streaming from torrents, witho
 A simple, yet powerful and free Node-Webkit application packaged for Windows and OS X to drag and drop files for encryption and exchange via the cloud. It has a Dropbox API integration and associations of the file extension ".skt" to fire up the app, recognize en/decryption automatically. Submission to the 2 App Stores started, download with source in German:  [Secryptor.de](http://www.secryptor.de/).
 
 ![Screenshot](http://www.secryptor.de/bilder/screen1.png)
+
+### Web2Executable
+
+A simple, multi-platform GUI interface to node-webkit that allows easy and streamlined exporting of web applications to all platforms. It's written with Python and PySide and comes with pre-built binaries that run on all platforms. You can view the github page and download it [here.](https://github.com/jyapayne/Web2Executable)
+
+![Web2Executable Main Interface](http://i.imgur.com/V1609ea.png)
