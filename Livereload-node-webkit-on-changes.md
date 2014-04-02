@@ -8,9 +8,9 @@ To do this, you can add this script tag to the end of your main file:
   var path = './';
   var fs = require('fs');
   
-  fs.watch(path, [], function() {
+  fs.watch(path, function() {
     if (location)
-      location.reload(false);
+      location.reload();
   });
 </script>
 ```
