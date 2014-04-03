@@ -13,6 +13,12 @@ sed -i 's/\x75\x64\x65\x76\x2E\x73\x6F\x2E\x30/\x75\x64\x65\x76\x2E\x73\x6F\x2E\
 
 Tip - type 'udev.so.0' into the right hand side of the search box. Press Enter to find this text. Now click on the text **highlighted in red** and change 'udev.so.0' to 'read udev.so.1' 
 
+Additional Information:
+# Ubuntu 13.x x64
+ln -s /lib/x86_64-linux-gnu/libudev.so.1.3.5 /usr/lib/libudev.so.0
+# Ubuntu 13.x x32
+ln -s /lib/i386-linux-gnu/libudev.so.1.3.5  /usr/lib/libudev.so.0
+
 **=== End quickfix ===**
 
 **The following solution is provided in the same way as Google Chrome is used in their product:**
@@ -33,8 +39,6 @@ Same as above install `libudev1` if needed. Now create a local symlink to `libud
 
 ``` bash
 # ln -s /lib/x86_64-linux-gnu/libudev.so.1 ./libudev.so.0
-# Ubuntu 13.04
-# ln -s /lib/x86_64-linux-gnu/libudev.so.1.3.5 /usr/lib/libudev.so.0
 ```
 
 Then create a shell script to run nw:
