@@ -481,3 +481,11 @@ A simple, yet powerful and free Node-Webkit application packaged for Windows and
 A simple, multi-platform GUI interface to node-webkit that allows easy and streamlined exporting of web applications to all platforms. It's written with Python and PySide and comes with pre-built binaries that run on all platforms. You can view the github page and download it [here.](https://github.com/jyapayne/Web2Executable)
 
 ![Web2Executable Main Interface](http://i.imgur.com/V1609ea.png)
+
+### sizeChecker
+[sizeChecker](https://github.com/airbob/sizeChecker) is a GUI tool to examine folder/disc usage on your laptop/pc/mac, to let you have a clear view of file usages on your system.
+
+* overall view (hover to show detailed information including file/folder size,percentage,details)
+![overall](http://i.imgur.com/HoiCFrK.png)
+* display by file types to let you know percentage/details of each file types 
+![by type](http://i.imgur.com/nZ0sJxe.png)
