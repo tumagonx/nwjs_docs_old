@@ -301,9 +301,9 @@ written as plugins, that are just plain npm packages.
 [Cloud Commander Application](http://coderaiser.github.io/cloudcmd-app) is a cloud file manager.
 It contains two panels, editor and console.
 
-![Cloud Commander app](https://raw.github.com/coderaiser/cloudcmd-screenshot/master/cloudcmd-v0.3.0.png "Cloud Commander Application")
-![Cloud Commander app (edit)](https://raw.github.com/coderaiser/cloudcmd-screenshot/master/cloudcmd-v0.3.0-edit.png "Cloud Commander Application(edit)")
-![Cloud Commander app Console](https://raw.github.com/coderaiser/cloudcmd-screenshot/master/cloudcmd-v0.3.0-console.png "Cloud Commander Application(console)")
+![Cloud Commander app](http://cloudcmd.io/img/screen/menu.png "Cloud Commander Application")
+![Cloud Commander app (edit)](http://cloudcmd.io/img/screen/edit.png "Cloud Commander Application(edit)")
+![Cloud Commander app Console](http://cloudcmd.io/img/screen/console.png "Cloud Commander Application(console)")
 
 
 ### twd, kndl
