@@ -85,7 +85,7 @@ Following events can be listened by using `Tray.on()` function, for more informa
 
 ### click
 
-Emitted when user clicks the menu item with left mouse button. You can only catch this event on `Windows` and `Linux`, since there is no way to catch it on Mac. So you should never make user interactive rely on the `click` event.
+Emitted when user clicks the menu item with left mouse button.
 
 And you cannot catch click with right mouse button, because it is used to show menu. Even if you're not binding a menu to a tray, you still can not listen to it. Double click events are also ignored.
 
