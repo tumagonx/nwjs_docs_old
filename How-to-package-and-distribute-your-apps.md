@@ -44,7 +44,7 @@ From the command line:
 * Or you can just put files of node-webkit in the same directory with your package.json and then distribute the tree. When nw executable is started it will look for package.json in the same directory. (on OSX it's the same level directory with `node-webkit.app`). **This is the recommended way if the size of your files are big.**
 * [nodebob](https://github.com/geo8bit/nodebob) is a build tool for node-webkit that automates a release of your node-webkit application in windows environment. Currently in v0.1, written in windows batch script.
 * [grunt-node-webkit-builder](https://github.com/mllrsohn/grunt-node-webkit-builder) Let's you build your node-webkit apps for mac, win and linux with grunt. It will download the prebuilt binaries for a specific version, unpacks it, creates a release folder, creates the app.nw file for a specified directory and copies the app.nw file to where it belongs
-* [Nuwk!](http://codeb.it/nuwk/) Nuwk! makes it easy to create Mac Applications based on node-webkit, simplifying testing and building procedures. It takes care of creating the executable, attaching the app icon and configuring the plist file accordingly. (very aplpha stage)
+* [Nuwk!](http://codeb.it/nuwk/) Nuwk! makes it easy to create Mac Applications based on node-webkit, simplifying testing and building procedures. It takes care of creating the executable, attaching the app icon and configuring the plist file accordingly. (very alpha stage)
 
 
 ## Step 2b: Alternative way - Making an executable file out of a .nw file 
