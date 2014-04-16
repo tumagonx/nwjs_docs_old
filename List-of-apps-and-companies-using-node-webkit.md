@@ -472,7 +472,7 @@ To allow any computer user to watch movies easily streaming from torrents, witho
 ![Codiqa Screenshot](http://codiqa-static.s3.amazonaws.com/codiqa_desktop.png)
 
 ### Secryptor
-A simple, yet powerful and free Node-Webkit application packaged for Windows and OS X to drag and drop files for encryption and exchange via the cloud. It has a Dropbox API integration and associations of the file extension ".skt" to fire up the app, recognize en/decryption automatically. Submission to the 2 App Stores started, download with source in German:  [Secryptor.de](http://www.secryptor.de/).
+A simple, yet powerful and free Node-Webkit application packaged for Windows and OS X to drag and drop files for encryption and exchange via the cloud. It has a Dropbox API integration and associations of the file extension ".skt" to fire up the app, recognize en/decryption automatically. Submission to the 2 App Stores started, download with source in English, German, Turk and Spanish:  [Secryptor.de](http://www.secryptor.de/) - updated with an English description!
 
 ![Screenshot](http://www.secryptor.de/bilder/screen1.png)
 
