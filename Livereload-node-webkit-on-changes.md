@@ -32,3 +32,7 @@ then change the script tag content:
    });
   </script>
 ```
+
+## Using gulp
+
+[See this gist](https://gist.github.com/spelufo/10872517)
