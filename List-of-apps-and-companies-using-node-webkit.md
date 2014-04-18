@@ -489,3 +489,11 @@ A simple, multi-platform GUI interface to node-webkit that allows easy and strea
 ![overall](http://i.imgur.com/HoiCFrK.png)
 * display by file types to let you know percentage/details of each file types 
 ![by type](http://i.imgur.com/nZ0sJxe.png)
+
+
+
+### Substance Composer
+
+The Substance Composer is a modern workspace for creating professional web-first publications. You can download it [here.](http://substance.io/composer)
+
+![Substance Composer UI](http://substance.io/images/screenshots/composer-alpha-comments.png)
