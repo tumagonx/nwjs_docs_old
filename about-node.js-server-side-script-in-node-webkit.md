@@ -86,7 +86,7 @@ index.html
 <html>
  <head>
   <script>
-   require('coffee-script');
+   require('coffee-script/register');  // for versions &lt; 1.7.0, use: require('coffee-script');
    require('./app.coffee');
   </script>
  </head>
