@@ -2,6 +2,12 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### Fenix Web Server
+
+[Fenix](http://fenixwebserver.com) is a static local web server for Windows and OSX. It features point-and-click server creation/removal, push-button site sharing over SSH tunnels, logging, directory browsing/sharing, a webhook inspector, and more. GPL License.
+
+![Fenix Web Server GUI Screenshot](http://fenixwebserver.com/img/win32/banner_device.png)
+
 ### LexiMail
 
 [LexiMail](https://github.com/kimus/leximail) is a Open Source and cross-platform e-mail desktop application.
