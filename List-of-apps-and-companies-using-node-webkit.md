@@ -2,6 +2,12 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### POM 360
+
+[POM 360](http://sandipchitale.blogspot.com/2014/04/pom-360.html) is a simple tool to look at all aspects of your Maven pom and learn maven. Integrated help and short presentation on Maven is included.
+
+![POM 360 Screenshot](http://raw.githubusercontent.com/sandipchitale/POM360NW/master/pom360.png)
+
 ### Fenix Web Server
 
 [Fenix](http://fenixwebserver.com) is a static local web server for Windows and OSX. It features point-and-click server creation/removal, push-button site sharing over SSH tunnels, logging, directory browsing/sharing, a webhook inspector, and more. GPL License.
