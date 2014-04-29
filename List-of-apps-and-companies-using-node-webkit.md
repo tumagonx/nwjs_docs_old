@@ -2,6 +2,22 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### Intel® XDK
+[Intel® XDK](http://xdk.intel.com) is a HTML5 cross-platform solution enables developers to write web and hybrid apps once, and deploy across many app stores and form factor devices.
+* **Easy-to-use**: Streamlined workflow from design to app store
+* **Develop faster**: Integrated design, test, (on-device) debug & profile, and build tools
+* **Deploy simply**: Across more app stores, and form factors
+
+Intel XDK is available as a free download for Windows* 7 & 8 , Apple OS X*, and Ubuntu* Linux*.
+
+**Visit Intel XDK's Weibo @ http://weibo.com/xdktool, and WeChat by search "英特尔XDK".**
+
+![Intel XDK App Designer GUI Builder](https://software.intel.com/sites/default/files/managed/64/71/designerfiletreeclosed.png)
+
+![Intel XDK Emulator](https://software.intel.com/sites/default/files/managed/25/ca/bucketscreenshot2.png)
+
+![Intel XDK Build System](https://software.intel.com/sites/default/files/managed/3f/d7/buildscreen.png)
+
 ### POM 360
 
 [POM 360](http://sandipchitale.blogspot.com/2014/04/pom-360.html) is a simple tool to look at all aspects of your Maven pom and learn maven. Integrated help and short presentation on Maven is included.
