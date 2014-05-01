@@ -529,7 +529,7 @@ The Substance Composer is a modern workspace for creating professional web-first
 
 ### Vocabulary Builder
 
-[TechnoTutor Vocabulary Builder](http://vocabularybuilder.co) is an educational software that assists with effective vocabulary integration. Includes a build-in dictionary, text-to-speech, history and online updates.
+[TechnoTutor Vocabulary Builder](http://vocabularybuilder.co) is an educational software that assists with effective vocabulary integration. Includes a build-in dictionary, text-to-speech, history and online updates. Here's a [blog post detailing why we use node-webkit](http://technotutorproducts.com/2014/04/02/web-technologies-desktop-platform-behind-technotutors-new-vocabulary-builder.html).
 
 ![Vocabulary Builder Mistake Made](https://raw.githubusercontent.com/klevo/vb-screenshots/master/mistake.jpg)
 ![Vocabulary Builder Dictionary](https://raw.githubusercontent.com/klevo/vb-screenshots/master/dictionary.jpg)
