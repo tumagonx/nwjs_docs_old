@@ -525,3 +525,11 @@ A simple, multi-platform GUI interface to node-webkit that allows easy and strea
 The Substance Composer is a modern workspace for creating professional web-first publications. You can download it [here.](http://substance.io/composer)
 
 ![Substance Composer UI](http://substance.io/images/screenshots/composer-alpha-comments.png)
+
+
+### Vocabulary Builder
+
+[TechnoTutor Vocabulary Builder](http://vocabularybuilder.co) is an educational software that assists with effective vocabulary integration. Includes a build-in dictionary, text-to-speech, history and online updates.
+
+![Vocabulary Builder Mistake Made](https://raw.githubusercontent.com/klevo/vb-screenshots/master/mistake.jpg)
+![Vocabulary Builder Dictionary](https://raw.githubusercontent.com/klevo/vb-screenshots/master/dictionary.jpg)
