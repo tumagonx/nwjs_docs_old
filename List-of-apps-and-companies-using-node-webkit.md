@@ -124,7 +124,7 @@ Circadio will update itself as new features and fixes become available.
 Sign up and download at [https://getcircadio.com](https://getcircadio.com)
 
 ### Haroopad
-Haroopadis a markdown enabled document processor for creating web-friendly documents.
+Haroopad is a markdown enabled document processor for creating web-friendly documents.
 
 You can author various formats of documents such as blog article, slide, presentation, report, and e-mail as if experts did.
 
