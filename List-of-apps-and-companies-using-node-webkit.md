@@ -334,7 +334,7 @@ It contains two panels, editor and console.
 ![Cloud Commander app Console](https://raw.github.com/cloudcmd/screen/gh-pages/cloudcmd-v0.3.0-console.png "Cloud Commander Application(console)")
 
 
-### twd, kndl
+### twd, kndl, mfdrm
 Simple wrappers for awesome web apps.
 Maintained by [passcod](https://github.com/passcod).
 
@@ -343,6 +343,9 @@ Maintained by [passcod](https://github.com/passcod).
 
 #### [kndl](https://github.com/passcod/kndl): Kindle Cloud Reader
 ![Screenshot](http://i.imgur.com/PU2y582.png)
+
+#### [mfdrm](https://github.com/passcod/mfdrm): The Manifold Realms
+![Screenshot](https://i.imgur.com/a6oeAlE.png)
 
 ### Remonit
 
