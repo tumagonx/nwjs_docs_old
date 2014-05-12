@@ -500,7 +500,9 @@ Original and Great team
 
 Follower team (holds the original project) 
 * http://get-popcorn.com
+
 To allow any computer user to watch movies easily streaming from torrents, without any particular knowledge.
+
 old visual (0.2.9)
 ![Popcorn Time Preview](https://camo.githubusercontent.com/a55f33d8aebe9149286cb990b39ea3505dfc7980/687474703a2f2f6765742d706f70636f726e2e636f6d2f696d616765732f6865616465722d75692e6a7067)
 new visual (0.3)
