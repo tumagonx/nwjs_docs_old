@@ -495,13 +495,15 @@ Turtl is an app that lets you store and share files and notes. It uses client-si
 
 
 ###Popcorn Time
-
-http://getpopcornti.me/
-
+Original and Great team
+* http://getpopcornti.me/
+Follower team (holds the original project) 
+* http://get-popcorn.com
 To allow any computer user to watch movies easily streaming from torrents, without any particular knowledge.
-
-![Popcorn Time Preview](https://github-camo.global.ssl.fastly.net/5ee3a600ad6bb2afe7c61cdcc8b5856a694959c9/687474703a2f2f676574706f70636f726e74692e6d652f696d616765732f686f772d75692e706e67)
-
+old visual (0.2.9)
+![Popcorn Time Preview](https://camo.githubusercontent.com/a55f33d8aebe9149286cb990b39ea3505dfc7980/687474703a2f2f6765742d706f70636f726e2e636f6d2f696d616765732f6865616465722d75692e6a7067)
+new visual (0.3)
+![Popcorn Time Preview](https://camo.githubusercontent.com/112ee63007e9fbf4385471632192b08b88d7c8a0/687474703a2f2f692e696d6775722e636f6d2f4f564d4a6b43422e706e67)
 ### Codiqa
 
 [Codiqa](http://codiqa.com/) is a drag-and-drop development tool for building jQuery Mobile websites and apps.
