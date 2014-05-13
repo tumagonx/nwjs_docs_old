@@ -88,7 +88,7 @@ On OS X, the `node-webkit.app` is a directory that can be easily changed. To mak
 
 And you need to modify following files to make a real distribution of yours:
 
-* `Contents/Resources/app.icns`: icon of your app.
+* `Contents/Resources/nw.icns`: icon of your app.
 * `Contents/Info.plist`: the apple package description file.
 
 About the `Info.plist` file, you can view [Implementing Cocoa's Standard About Panel](http://cocoadevcentral.com/articles/000071.php) on how this file will influence your app and what fields you should modify.
