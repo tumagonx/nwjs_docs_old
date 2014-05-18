@@ -1,6 +1,15 @@
 Here is the list of apps and companies using node-webkit. If you want your app or company listed, you can add it yourself or send a mail to roger.wang@intel.com, both public and private apps would be fine.
 
+
+
 ## Apps
+
+
+### Game Dev Tycoon
+
+A business simulation game where you re-play the history of game development. <a href="http://www.greenheartgames.com/app/game-dev-tycoon/">Game Dev Tycoon</a> was one of the first node-webkit powered games on Steam and uses <a href="https://github.com/greenheartgames/greenworks">greenworks</a> to integrate node-webkit with Steamworks. For a full list of libraries used see the <a href="http://www.greenheartgames.com/credits/game-dev-tycoon/">credits page</a>.
+
+![Game Dev Tycoon Screenshot](http://i.imgur.com/nPfKnmL.png?1)
 
 ### Web2Executable
 
