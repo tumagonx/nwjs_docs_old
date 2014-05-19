@@ -552,3 +552,13 @@ The Substance Composer is a modern workspace for creating professional web-first
 
 ![Vocabulary Builder Mistake Made](https://raw.githubusercontent.com/klevo/vb-screenshots/master/mistake.jpg)
 ![Vocabulary Builder Dictionary](https://raw.githubusercontent.com/klevo/vb-screenshots/master/dictionary.jpg)
+
+
+
+
+### [gulp-app](https://github.com/sindresorhus/gulp-app)
+
+> Easily run [gulp](http://gulpjs.com) tasks from the current directory in Finder and get notified when they're finished.
+
+<img src="https://github.com/sindresorhus/gulp-app/raw/master/media/screenshot.png" width="315">
+
