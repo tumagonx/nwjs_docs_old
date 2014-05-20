@@ -22,7 +22,7 @@ If the module is given as the value of the [`"node-main"`](https://github.com
 
 Scripts running in the Node's context may use `__dirname` variable to read the path of their file's directory.
 
-The Node.js `global` object is the global object in the Node's context. Any WebKit window's `window` object is not the global object and even is not implicitly available (the special case of [node-main](https://github.com/rogerwang/node-webkit/wiki/node-main) is the only exception), i.e. you have to (explicitly) pass the `window` object to your module's function if you need to access it.
+The Node.js `global` object is the global object in the Node's context. Any WebKit window's `window` object is not the global object and even is not implicitly available in the Node's context (the special case of [node-main](https://github.com/rogerwang/node-webkit/wiki/node-main) is the only exception), i.e. you have to (explicitly) pass the `window` object to your module's function if you need to access it.
 
 That also means you cannot rely on `alert()` (which is actually `window.alert()`) for debugging. You may, however, use `console.log()`; its output (and the output of other similar methods such as `console.warn()` and `console.error()`) is redirected to WebKit's console. You may see it in your “[Developer Tools](Debugging-with-devtools)” window (on its “Console” tab).
 
