@@ -8,7 +8,7 @@ That's common practice among web browsers. It's a good thing because, for ex
 
 * malicious applications cannot access confidential data structures in other windows.
 
-Node modules in node-webkit run in their own shared Node context.
+Node modules in node-webkit run in their own shared Node context. (Shared by default; however, you may explicitly add `'new-instance': true` to the options of [`Window.open`](https://github.com/rogerwang/node-webkit/wiki/Window#openurl-options) if you need your new window to have a separate Node.js context.)
 
 ## Determining the context of a script
 
