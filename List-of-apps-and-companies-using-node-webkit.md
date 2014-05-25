@@ -4,6 +4,12 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### Super Game Jam
+
+[http://supergamejam.com/](**SuperGameJam**) is an engaging new documentary series following some of the world’s most talented indie game developers doing what they do best. Filmed in five cities over a six month time period, each episode pairs two indie developers together for 48 hours and challenges them to create a game based on a theme suggested by their peers. The app was built on [Ember.js](http://emberjs.com/), [node-webkit](https://github.com/rogerwang/node-webkit), [Bootstrap](http://getbootstrap.com/) and [Greenworks](https://github.com/greenheartgames/greenworks).
+
+![SuperGameJam Screenshot](http://legrudgerugged.com/img/supergamejam-screen.png)
+
 
 ### Game Dev Tycoon
 
@@ -561,4 +567,3 @@ The Substance Composer is a modern workspace for creating professional web-first
 > Easily run [gulp](http://gulpjs.com) tasks from the current directory in Finder and get notified when they're finished.
 
 <img src="https://github.com/sindresorhus/gulp-app/raw/master/media/screenshot.png" width="315">
-
