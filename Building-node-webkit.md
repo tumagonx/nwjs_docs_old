@@ -23,7 +23,7 @@ To start, make an empty directory, say `node-webkit`, then create the `.gclient`
 
     solutions = [
        { "name"        : "src",
-         "url"         : "https://github.com/rogerwang/chromium.src.git@origin/node",
+         "url"         : "https://github.com/rogerwang/chromium.src.git@origin/nw",
          "deps_file"   : ".DEPS.git",
          "managed"     : True,
          "custom_deps" : {
@@ -141,6 +141,6 @@ There are two branches for node-webkit: v0.8 branch and master (v0.9) branch. Se
 
 The root repo and some of the dependency repos use the default branch for 0.9 starting from Feb 11, 2014. Previously the default branch was used for 0.8 branch.
 
-The "default branch" is the branch name you see in the start page of github repos. Regarding the root Chromium repo, the default branch is 'node'. It was switched from 0.8 to 0.9 on Feb 11, 2014.
+The "default branch" is the branch name you see in the start page of github repos. Regarding the root Chromium repo, the default branch is 'nw'. It was switched from 0.8 to 0.9 on Feb 11, 2014.
 
 The branch names in dependency repos are specified in '.DEPS.git' file in the root repo. The tool 'gclient' is supposed to sync them for you. But sometimes manual switching between branches might be needed.
