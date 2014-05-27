@@ -567,3 +567,9 @@ The Substance Composer is a modern workspace for creating professional web-first
 > Easily run [gulp](http://gulpjs.com) tasks from the current directory in Finder and get notified when they're finished.
 
 <img src="https://github.com/sindresorhus/gulp-app/raw/master/media/screenshot.png" width="315">
+
+
+### [DizzyJS] (https://github.com/avihaymenahem/Dizzy-JS) ###
+ > Open Source Node-webkit based Desktop Music player!
+
+<img src="http://up407.siz.co.il/up2/2yj1qhyzyhwt.jpg">
