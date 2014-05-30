@@ -26,7 +26,7 @@ However the recommended way is not opening a new window or changing the `window.
 
 ### Template Engine
 
-For template engine, node.js guys have always been comfortable with rendering at server side and then send result to clients. In node-webkit everything is at client side, you don't need to render the template and then feed it to node-webkit, you could just render everything after the page is loaded.
+For template engine, node.js developers have always been comfortable with rendering at server side and then send result to clients. In node-webkit everything is at client side, you don't need to render the template and then feed it to node-webkit, you could just render everything after the page is loaded.
 
 The basic idea is: use the template engine to generate contents on the fly, and then append dynamic contents into the DOM. like this:
 
@@ -59,7 +59,7 @@ Some may find their code in B/S architecture can be easily reused by launching a
 
 ## CoffeeScript, LESS and more
 
-Guys who code in node.js would also want languages that compile into javascript and CSS, the most famous ones are `CoffeeScript` and `LESS`. Usually people would compile the code in server and then send results into clients' browsers, but indeed you can use them directly at browser side, by installing the compiler first and then evaluate the code on the fly.
+Developers who code in node.js would also want languages that compile into javascript and CSS, the most famous ones are `CoffeeScript` and `LESS`. Usually people would compile the code in server and then send results into clients' browsers, but indeed you can use them directly at browser side, by installing the compiler first and then evaluate the code on the fly.
 
 For `CoffeScript`, you should first tag your coffeescript with the type `text/coffeescript`, and then include [coffee-script.js](http://github.com/jashkenas/coffee-script/raw/master/extras/coffee-script.js) after all coffeescript on the page (this is the compiler that will evaluate and compile all coffeescript in order). Here is an example:
 
