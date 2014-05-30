@@ -1,28 +1,3 @@
-**One line fix:**
-* Navigate to the directory with the nw binary
-* Run the following from the command line:
-``` bash
-sed -i 's/\x75\x64\x65\x76\x2E\x73\x6F\x2E\x30/\x75\x64\x65\x76\x2E\x73\x6F\x2E\x31/g' nw
-```
-
-**OK the following is the "leet" solution ;)**
-
-* Download ghex: sudo apt-get install ghex
-* Open up nw executable: ghex nw
-* Find and replace string udev.so.0 with udev.so.1: Ctrl-F + udev + CR + (replace 0 with 1)
-
-Tip - type 'udev.so.0' into the right hand side of the search box. Press Enter to find this text. Now click on the text **highlighted in red** and change 'udev.so.0' to 'read udev.so.1' 
-
-Additional Information:
-```
-# Ubuntu 13.x x64
-ln -s /lib/x86_64-linux-gnu/libudev.so.1.3.5 /usr/lib/libudev.so.0
-# Ubuntu 13.x x32
-ln -s /lib/i386-linux-gnu/libudev.so.1.3.5  /usr/lib/libudev.so.0
-```
-
-**=== End quickfix ===**
-
 **The following solution is provided in the same way as Google Chrome is used in their product:**
 
 Due to the removal of `libudev0` and its associated library `libudev.so.0`, node-webkit isn't able to run on newer distributions such as:
@@ -53,7 +28,7 @@ LD_LIBRARY_PATH=/home/omi/nw:$LD_LIBRARY_PATH ./nw $*
 As you are only modifying local contents of node-webkit directory, this option should not have an impact on the overall stability of your system.
 
 **2. Use a wrapper shell script for your application.**
-In this way, rename the binary executable file as `myapp-bin`, and then create a shell script named `myapp` as the following. Users run the `myapp` file.
+In this method, we rename the binary executable file as `myapp-bin`, and then create a shell script named `myapp` as the following. Users run the `myapp` file.
 
 ```bash
 #!/bin/bash
@@ -92,3 +67,13 @@ do
   fi
 done
 ```
+
+**3. Modify the nw binary itself**
+
+In this method, we navigate (via command line) to the directory containing the nw binary and run the following:
+
+``` bash
+sed -i 's/\x75\x64\x65\x76\x2E\x73\x6F\x2E\x30/\x75\x64\x65\x76\x2E\x73\x6F\x2E\x31/g' nw
+```
+
+As should be obvious, this method comes with increased risk of damaging the nw executable and should only be attempted by skilled users *which understand what the command is doing*.
