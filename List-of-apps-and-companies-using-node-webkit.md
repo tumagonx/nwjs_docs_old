@@ -4,6 +4,17 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### Personal Kanban
+
+[Personal Kanban](http://screenisland.com/personal-kanban/) enables you to manage your projects via a virtual Kanban Board.
+Personal Kanban helps you to prioritize your tasks and to keep track of all your projects.
+
+It works great for projects like writing a thesis, creating a software, planning your house moving or anything else that consists of several tasks. It is available on the [Mac App Store](https://itunes.apple.com/de/app/personal-kanban/id879870851?mt=12).
+
+The app is built on [Angular.js](https://angularjs.org) and [node-webkit](https://github.com/rogerwang/node-webkit).
+
+![Personal Kanban Screenshot](http://screenisland.com/personal-kanban/img/pk@1x.png)
+
 ### Super Game Jam
 
 [Super Game Jam](http://supergamejam.com/) is an engaging new documentary series following some of the world’s most talented indie game developers doing what they do best. Filmed in five cities over a six month time period, each episode pairs two indie developers together for 48 hours and challenges them to create a game based on a theme suggested by their peers. The app was built on [Ember.js](http://emberjs.com/), [node-webkit](https://github.com/rogerwang/node-webkit), [Bootstrap](http://getbootstrap.com/) and [Greenworks](https://github.com/greenheartgames/greenworks).
