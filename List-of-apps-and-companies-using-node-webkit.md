@@ -405,7 +405,7 @@ Simple YouTube client for Mac OSX.
 
 [Everytime](https://www.everytimehq.com/) is a video and audio collaboration sass. It allows to bookmark any moment in any media, on the web (Youtube/Vimeo/Soundcloud) or on your computer. To bookmark moments on videos or musics from your computer, it uses a [desktop app](https://www.everytimehq.com/desktop), built with node-webkit, to communicate with [VLC](http://www.videolan.org/)
 
-! [screenshot of VLC being controlled from Everytime](https://www.everytimehq.com/assets/screenshots/desktop.jpg)
+! [screenshot of VLC being controlled from Everytime](https://s3.amazonaws.com/everytime-assets/pub/screenshots/desktop_app.png)
 
 
 ### Spreaker Studio
