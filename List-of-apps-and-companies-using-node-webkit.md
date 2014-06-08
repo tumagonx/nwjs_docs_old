@@ -589,3 +589,8 @@ The Substance Composer is a modern workspace for creating professional web-first
  > Open Source Node-webkit based Desktop Music player!
 
 <img src="http://up407.siz.co.il/up2/2yj1qhyzyhwt.jpg">
+
+### Wrong App
+[Wrong App](http://wrongapp.com) is a distraction-free text editor (with some Markdown support) for Mac. You can even try it online without downloading anything.
+
+![""](https://github.com/handstrings/wrong/raw/master/wrongappscreenshot.png)
