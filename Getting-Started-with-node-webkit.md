@@ -176,6 +176,6 @@ nw path_to_app.nw
 
 ## Troubleshooting
 
-If there are any problems, see it [[Troubleshooting]]. Maybe it can help you.
+Please read [[Troubleshooting]] if there are any problems.
 
 Go back to [Wiki](https://github.com/rogerwang/node-webkit/wiki) for much more.
