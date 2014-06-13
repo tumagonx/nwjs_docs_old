@@ -594,3 +594,8 @@ The Substance Composer is a modern workspace for creating professional web-first
 [Wrong App](http://wrongapp.com) is a distraction-free text editor (with some Markdown support) for Mac. You can even try it online without downloading anything.
 
 ![""](https://github.com/handstrings/wrong/raw/master/wrongappscreenshot.png)
+
+### QueryTree
+[QueryTree](http://querytreeapp.com) is a visual database query builder for Windows, Mac and Linux. It currently works with Microsoft SQL Server and MySQL. 
+
+![QueryTree Screenshot](http://querytreeapp.com/wp-content/uploads/2014/05/mainfeature2-1024x666.jpg)
