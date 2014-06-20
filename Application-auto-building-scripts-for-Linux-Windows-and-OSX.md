@@ -57,5 +57,5 @@ del my-app.nw
 rem run application
 ..\build\win32\my-app.exe
 ```
-
+## PowerShell Script
 [PowerShell Script](https://gist.github.com/romanov/abc494ee7b08f232f539)
