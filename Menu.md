@@ -87,6 +87,10 @@ document.body.addEventListener('contextmenu', function(ev) {
 
 In this way, you can precisely choose which menu to show for different elements, and you can update menu elements just before popuping it.
 
+### Menu.createMacBuiltin(appname)
+_since v0.10.0-rc1_  
+OSX only. Create the default menus (App, Edit and Windows). Later the items can be manipulated with the `items` property. The argument `appname` is use for the name of App menu.
+
 ## See also
 
 * [[Tray]]
