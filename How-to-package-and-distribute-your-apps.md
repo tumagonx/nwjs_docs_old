@@ -134,3 +134,10 @@ __Attention__! "Enigma Virtual Box" and all accompanying files are licensed "AS 
 9. There should be a new `app_boxed.exe` in the program folder now.
 
 Now you can move and distribute the single `app_boxed.exe` to anywhere, without any `nw.pak` and `*.dll` files.
+
+
+## Setup on Windows
+
+Instead of packaging your app in one exe file, you can create a setup which contains all necessary files. A free software for easily creating setups is Inno Setup: http://www.jrsoftware.org/isinfo.php
+
+An example for a setup configuration can be found here: https://github.com/SSilence/sum/blob/master/setup.iss
