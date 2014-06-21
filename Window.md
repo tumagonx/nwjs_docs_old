@@ -309,7 +309,9 @@ win.capturePage(function(buffer){
  // do something with the buffer
 }, { format : 'png', datatype : 'buffer'} );
 ```
-
+### setBadgeLabel(label)
+_since v0.10.0-rc1_  
+Windows and OSX only. Set the badge label on the window icon in taskbar or dock.
 
 ### Window.cookies.*
 
