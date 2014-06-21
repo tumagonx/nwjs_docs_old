@@ -27,7 +27,9 @@ item = new gui.MenuItem({
   label: "Click me",
   click: function() {
     console.log("I'm clicked");
-  }
+  },
+  key: "s",
+  modifiers: "ctrl-alt",
 });
 
 // You can have submenu!
@@ -46,7 +48,7 @@ item.click = function() { console.log('New click callback'); };
 
 ### new MenuItem(option)
 
-Create new `MenuItem`, `option` is an object contains initial settings for the `MenuItem`. `option` can have following fields: `label`, `icon`, `tooltip`, `type`, `click`, `checked`, `enabled` and `submenu`.
+Create new `MenuItem`, `option` is an object contains initial settings for the `MenuItem`. `option` can have following fields: `label`, `icon`, `tooltip`, `type`, `click`, `checked`, `enabled`, `submenu`, `key` and `modifiers`.
 
 Every field has its own property in the `MenuItem`, see documentation of each property for details.
 
@@ -85,6 +87,14 @@ It has no effect on setting `icon` of a `separator` item.
 ### MenuItem.click
 
 **Get** or **Set** the `click` callback of a `MenuItem`, the `click` must be a valid function, it will be called when users activate the item.
+
+### MenuItem.key
+_since v0.10.0-rc1_  
+A single character string to specify the shortcut key for the menu item.
+
+### MenuItem.modifiers
+_since v0.10.0-rc1_  
+A string to specify the modifier keys for the shortcut of the menu item. e.g. `"cmd-shift"`. It should be the concatenation of the following strings: `cmd`, `shift`, `ctrl`, `alt`.
 
 ## Events
 Following events can be listened by using `MenuItem.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
