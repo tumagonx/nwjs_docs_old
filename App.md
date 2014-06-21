@@ -71,7 +71,16 @@ Quit current app. This method will **not** send `close` event to windows and app
 _since v0.8.0_
 
 Set the directory where the minidump file will be saved on crash. For more information, see [[Crash dump]] 
-
+### addOriginAccessWhitelistEntry(sourceOrigin, destinationProtocol, destinationHost, allowDestinationSubdomains)
+_since v0.10.0-rc1_  
+Add an entry to the whitelist used for controlling cross-origin access. Suppose you want to allow HTTP redirecting from `github.com` to the page of your app, use something like this with the [[App-protocol]]: 
+```js
+App.addOriginAccessWhitelistEntry('http://github.com/', 'app', 'myapp', true);
+```  
+Use `App.removeOriginAccessWhitelistEntry` with exactly the same arguments to do the contrary.
+### removeOriginAccessWhitelistEntry(sourceOrigin, destinationProtocol, destinationHost, allowDestinationSubdomains)
+_since v0.10.0-rc1_  
+Remove an entry from the whitelist used for controlling cross-origin access. See `addOriginAccessWhitelistEntry` above.
 ## Events
 
 Following events can be listened by using `App.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
