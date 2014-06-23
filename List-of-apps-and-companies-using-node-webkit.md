@@ -9,7 +9,7 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 [Soundnode App](http://www.soundnodeapp.com/) Soundnode App is a Open-Source project to support Soundcloud for desktop. 
 Built with Angular.js, consuming Soundcloud and Github API.
 
-[![Brandon Must Die! screenshot](https://raw.githubusercontent.com/Soundnode/soundnode-app/master/Soundnode-app.png)](http://www.soundnodeapp.com/)
+[![Soundnode App! screenshot](https://raw.githubusercontent.com/Soundnode/soundnode-app/master/Soundnode-app.png)](http://www.soundnodeapp.com/)
 
 ### Brandon Must Die!
 
