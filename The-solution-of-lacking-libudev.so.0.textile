@@ -1,19 +1,17 @@
-Due to the removal of `libudev0` and its associated library `libudev.so.0`, node-webkit isn't able to run on newer distributions such as:
+Due to the update of `libudev0` and its associated library `libudev.so.0` to `libudev1`, node-webkit isn't able to run on older distributions such as:
 
- * Ubuntu 13.04+
- * Fedora 18+
- * Arch
- * Gentoo
+ * Ubuntu 12.10
+ * Fedora 17
  * Derivatives of the above
 
-...and possibly others. Until node-webkit is updated to depend on the currently shipped version `libudev.so.1`, the following solutions *should* provide a stopgap measure for packaging your applications.
+...and possibly others. Until your distribution is updated to the current `libudev.so.1`, the following solutions *should* provide a stopgap measure for packaging your applications.
 
-**1. Create a local symlink to `libudev.so.1`**
+**1. Create a local symlink to `libudev.so.0`**
 
-Same as above install `libudev1` if needed. Now create a local symlink to `libudev.so.1`. On Ubuntu for example, run from the directory where nw files are extracted:
+Install `libudev0` if needed. Now create a local symlink to `libudev.so.0`. On Ubuntu for example, run from the directory where nw files are extracted:
 
 ``` bash
-# ln -s /lib/x86_64-linux-gnu/libudev.so.1 ./libudev.so.0
+# ln -s /lib/$(arch)-linux-gnu/libudev.so.0 ./libudev.so.1
 ```
 
 Then create a shell script to run nw:
@@ -45,27 +43,17 @@ In the postinstall script of your DEB or RPM package, run the following script t
 ```bash
 #!/bin/bash
 paths=(
-  "/lib/x86_64-linux-gnu/libudev.so.1" # Ubuntu, Xubuntu, Mint
-  "/usr/lib64/libudev.so.1" # SUSE, Fedora
-  "/usr/lib/libudev.so.1" # Arch, Fedora 32bit
-  "/lib/i386-linux-gnu/libudev.so.1" # Ubuntu 32bit
+  "/lib/x86_64-linux-gnu/libudev.so.0" # Ubuntu, Xubuntu, Mint
+  "/usr/lib64/libudev.so.0" # SUSE, Fedora
+  "/usr/lib/libudev.so.0" # Arch, Fedora 32bit
+  "/lib/i386-linux-gnu/libudev.so.0" # Ubuntu 32bit
 )
 for i in "${paths[@]}"
 do
   if [ -f $i ]
   then
-    ln -sf "$i" /opt/myapp/libudev.so.0
+    ln -sf "$i" /opt/myapp/libudev.so.1
     break
   fi
 done
 ```
-
-**3. Modify the nw binary itself**
-
-In this method, we navigate (via command line) to the directory containing the nw binary and run the following:
-
-``` bash
-sed -i 's/\x75\x64\x65\x76\x2E\x73\x6F\x2E\x30/\x75\x64\x65\x76\x2E\x73\x6F\x2E\x31/g' nw
-```
-
-As should be obvious, this method comes with increased risk of damaging the nw executable and should only be attempted by skilled users *which understand what the command is doing*.
