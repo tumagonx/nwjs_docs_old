@@ -4,11 +4,19 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### Soundnode App - Soundcloud for desktop
+
+[Soundnode App](http://www.soundnodeapp.com/) Soundnode App is a Open-Source project to support Soundcloud for desktop. 
+Built with Angular.js, consuming Soundcloud and Github API.
+
+[![Soundnode App](https://raw.githubusercontent.com/Soundnode/soundnode-app/master/Soundnode-app.png](http://www.soundnodeapp.com/)
+
 ### Brandon Must Die!
 
 [Brandon Must Die!](http://www.brandonmustdie.com/) is a 'Procedural Death Labyrinth' game available for Win/Mac/Linux. It features 100s of items, randomized maps, unlockable characters, secret rooms, and dozens of enemies.
 
 [![Brandon Must Die! screenshot](https://s3.amazonaws.com/ksr/projects/761817/photo-main.jpg?1397856432)](http://www.brandonmustdie.com/)
+
 ### Personal Kanban
 
 [Personal Kanban](http://screenisland.com/personal-kanban/) enables you to manage your projects via a virtual Kanban Board.
