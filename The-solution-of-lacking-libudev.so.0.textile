@@ -65,7 +65,7 @@ done
 In this method, we navigate (via command line) to the directory containing the nw binary and run the following:
 
 ``` bash
-sed -i 's/\x75\x64\x65\x76\x2E\x73\x6F\x2E\x30/\x75\x64\x65\x76\x2E\x73\x6F\x2E\x31/g' nw
+sed -i 's/udev\.so\.0/udev.so.1/g' nw
 ```
 
 As should be obvious, this method comes with increased risk of damaging the nw executable and should only be attempted by skilled users *which understand what the command is doing*.
