@@ -8,7 +8,7 @@ Due to the removal of `libudev0` and its associated library `libudev.so.0`, node
 
 ...and possibly others. Until node-webkit is updated to depend on the currently shipped version `libudev.so.1`, the following solutions *should* provide a stopgap measure for packaging your applications.
 
-**1. Create a local symlink to `libudev.so.1` [NOT RECOMMENDED]**
+**1. Create a local symlink to `libudev.so.1`**
 
 Same as above install `libudev1` if needed. Now create a local symlink to `libudev.so.1`. On Ubuntu for example, run from the directory where nw files are extracted:
 
