@@ -7,7 +7,7 @@ If your project already has a function called `require()` it will conflict with 
 </script>
 ````
 
-**NOTE:** If you are using the text! plugin of requirejs you need also to add some code before the require.config (or another place once the require object is fully loaded)
+**NOTE:** If you are using the text! plugin of requirejs you also need to add some code before the require.config (or another place once the require object is fully loaded)
 
 ````html
 require.nodeRequire = window.requireNode;
