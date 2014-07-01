@@ -45,6 +45,7 @@ From the command line:
 * [nodebob](https://github.com/geo8bit/nodebob) is a build tool for node-webkit that automates a release of your node-webkit application in windows environment. Currently in v0.1, written in windows batch script.
 * [node-webkit-builder](https://github.com/mllrsohn/node-webkit-builder) & [grunt-node-webkit-builder](https://github.com/mllrsohn/grunt-node-webkit-builder) Let's you build your node-webkit apps for mac, win and linux with grunt. They will download the prebuilt binaries for a specific version, unpacks it, creates a release folder, creates the app.nw file for a specified directory and copies the app.nw file to where it belongs
 * [Nuwk!](http://codeb.it/nuwk/) Nuwk! makes it easy to create Mac Applications based on node-webkit, simplifying testing and building procedures. It takes care of creating the executable, attaching the app icon and configuring the plist file accordingly. (very alpha stage)
+* [generator-node-webkit!](https://www.npmjs.org/package/generator-node-webkit) is a yeoman generator to develop node-webkit applications and create packages for mac, linux and win.
 
 
 ## Step 2b: Alternative way - Making an executable file out of a .nw file 
