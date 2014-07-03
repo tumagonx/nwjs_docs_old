@@ -1,4 +1,4 @@
-_getUserMedia API requries node-webkit >= v0.2.5_
+_getUserMedia API requires node-webkit >= v0.2.5_
 
 The [getUserMedia API](http://www.html5rocks.com/en/tutorials/getusermedia/intro/) lets users grant web apps access to their camera and microphone without a plug-in. This is the first step in enabling high quality video and audio communication as part of WebRTC, a powerful new real-time communications standard for the open web platform.
 
