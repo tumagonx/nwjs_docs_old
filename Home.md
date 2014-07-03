@@ -29,7 +29,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [Frameless window and drag region](wiki/Frameless-window)
 * [[The Kiosk mode]]
 * [[File dialogs]]
-* [[Support mp3 and H264 in video and audio tag]]
+* [[Using MP3 & MP4 (H.264) using the  video  &  audio  tags.]]
 * [[Third party browser plugins]]
 * [[WebGL support on Windows]]
 * [[About node.js server side script in node-webkit]] — wonder how to use `express` stuff in node-webkit?
