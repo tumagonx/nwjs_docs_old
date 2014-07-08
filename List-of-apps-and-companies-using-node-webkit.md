@@ -607,3 +607,8 @@ The Substance Composer is a modern workspace for creating professional web-first
 [QueryTree](http://querytreeapp.com) is a visual database query builder for Windows, Mac and Linux. It currently works with Microsoft SQL Server and MySQL. 
 
 ![QueryTree Screenshot](http://querytreeapp.com/wp-content/uploads/2014/05/mainfeature2-1024x666.jpg)
+
+### Postbird
+
+[Postbird](https://github.com/Paxa/postbird/releases) is postgresql client for Mac.
+![screen shot 2014-07-08 at 7 56 52 pm](https://cloud.githubusercontent.com/assets/26019/3509770/5e85ff5e-069f-11e4-8eb0-c83656291163.png)
