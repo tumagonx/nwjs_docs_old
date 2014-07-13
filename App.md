@@ -81,6 +81,21 @@ Use `App.removeOriginAccessWhitelistEntry` with exactly the same arguments to do
 ### removeOriginAccessWhitelistEntry(sourceOrigin, destinationProtocol, destinationHost, allowDestinationSubdomains)
 _since v0.10.0-rc1_  
 Remove an entry from the whitelist used for controlling cross-origin access. See `addOriginAccessWhitelistEntry` above.
+
+### registerGlobalHotKey(shortcut);
+_since v0.10.0_
+
+Register a global keyboard shortcut (also known as system-wide hot key) to the system.
+
+For more information, please see [[Shortcut]].
+
+### unregisterGlobalHotKey(shortcut);
+_since v0.10.0_
+
+Unregisters a global keyboard shortcut.
+
+For more information, please see [[Shortcut]].
+
 ## Events
 
 Following events can be listened by using `App.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
