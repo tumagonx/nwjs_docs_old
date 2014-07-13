@@ -80,5 +80,5 @@ Emitted when the application pass an invalid `Shortcut.key`, or when the shortcu
 
 ## See Also
 
-* [App.registerGlobalHotKey](App#registerGlobalHotKey)
-* [App.unregisterGlobalHotKey](App#unregisterGlobalHotKey)
+* [App.registerGlobalHotKey](App#registerglobalhotkeyshortcut)
+* [App.unregisterGlobalHotKey](App#unregisterglobalhotkeyshortcut)
