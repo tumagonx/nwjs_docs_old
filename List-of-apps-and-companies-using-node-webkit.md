@@ -3,7 +3,11 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 
 ## Apps
+### Node WebKit QQ - Node WebKit QQ
 
+[Node WebKit QQ](https://github.com/caofb/nodewebkitqq/) is a Open-Source project  WebQQ using Node WebKit,FYI: QQ is a instant messaging service widely used in china provided by Tencent..
+
+[![Node WebKit QQ! screenshot](http://webqq.qiniudn.com/screenshort.png)](https://github.com/caofb/nodewebkitqq/)
 ### Soundnode App - Soundcloud for desktop
 
 [Soundnode App](http://www.soundnodeapp.com/) is a Open-Source project to support Soundcloud for desktop. 
