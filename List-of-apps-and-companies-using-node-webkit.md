@@ -9,7 +9,7 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 [Broado](https://sahanarula.github.io/broado) is a Open-Source project using Node WebKit. Broado is a desktop music player built with node and angular.js
 
-[![broado screenshot](http://broado.cyburl.in/assets/img/jude.png)](https://sahanarula.github.io/sahanarula)
+[![broado screenshot](http://broado.cyburl.in/assets/img/jude.png)](https://sahanarula.github.io/broado)
 ### Node WebKit QQ - Node WebKit QQ
 
 [Node WebKit QQ](https://github.com/caofb/nodewebkitqq/) is a Open-Source project  WebQQ using Node WebKit,FYI: QQ is a instant messaging service widely used in china provided by Tencent..
