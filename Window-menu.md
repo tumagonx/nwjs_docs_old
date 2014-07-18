@@ -42,10 +42,10 @@ The resulted menu will have indeed three submenus: `your-app-name`, `Edit` and `
 
 Another thing you may encounter is that the first item of application menu shows `node-webkit` instead of `your-app-name`, to fix it, you need to edit CFBundleName in `node-webkit.app/Contents/Info.plist`. Set your app name instead of `node-webkit` string.
 
-_Since v0.10.0_
+_Since v0.10.0-rc1_
 
 By default the standard menus (`your-app-name`, `Edit` and `Window`) are no longer enabled and so the associated hotkeys (Copy, Paste, ...).
-The window menu can be initialized with the standard menu items using the following snippet:
+The window menu can be initialized with the standard menu items using the [Menu.createMacBuiltin](https://github.com/rogerwang/node-webkit/wiki/Menu#menucreatemacbuiltinappname) method:
 
 ```javascript
 var gui = require('nw.gui');
