@@ -4,7 +4,7 @@ The app protocol is defined like http protocol: `app://<host>/path`. The host pa
 
 It's provided for the ease of migrating files from your web site, e.g. repackage your web site as a node-webkit application.
 
-Regarding [security](Security), it's treated as local file protocol and have access to Node functionality. 
+Regarding [security](Security), it's treated as local file protocol and has access to Node functionality. 
 
 _Example:_
 
