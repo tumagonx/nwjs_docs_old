@@ -4,12 +4,13 @@ A frameless window is a window without standard frames and window buttons, usual
 
 ## Enable frameless window
 
-To make your window frameless, you just need to add `"frame": false` in your app's `package.json`'s `window` field:
+To make your window frameless, you just need to add `"frame": false` in your app's `package.json`'s `window` field, toolbar need to be disabled as well:
 
 ```json
 {
   "window": {
-    "frame": false
+    "frame": false,
+    "toolbar": false
   }
 }
 ```
