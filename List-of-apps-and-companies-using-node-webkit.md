@@ -5,6 +5,13 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 ## Apps
 
 
+### Cellist
+
+[Cellist](https://itunes.apple.com/us/app/cellist/id897814548?ls=1&mt=12) is a HTTP debugging proxy, available on Mac App Store.
+
+[![Cellist screenshot](http://cellist.patr0n.us/img/cellist.png)](https://itunes.apple.com/us/app/cellist/id897814548?ls=1&mt=12)
+
+
 ### Broado - Music player for Desktop
 
 [Broado](https://sahanarula.github.io/broado) is a Open-Source project using Node WebKit. Broado is a desktop music player built with node and angular.js
