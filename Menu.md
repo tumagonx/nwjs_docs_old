@@ -89,7 +89,7 @@ In this way, you can precisely choose which menu to show for different elements,
 
 ### Menu.createMacBuiltin(appname)
 _since v0.10.0-rc1_  
-OSX only. Create the default menus (App, Edit and Windows). Later the items can be manipulated with the `items` property. The argument `appname` is use for the title of App menu.  
+OSX only. Creates the default menus (App, Edit and Windows). The items can be manipulated with the `items` property. The argument `appname` is used for the title of App menu.  
 Example:
 ```js
 var nw = require('nw.gui');
