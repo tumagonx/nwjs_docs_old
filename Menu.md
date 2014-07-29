@@ -89,7 +89,7 @@ In this way, you can precisely choose which menu to show for different elements,
 
 ### Menu.createMacBuiltin(appname)
 _since v0.10.0-rc1_  
-OSX only. Creates the default menus (App, Edit and Windows). The items can be manipulated with the `items` property. The argument `appname` is used for the title of App menu.  
+OSX only. Creates the default menus (App, Edit and Window). The items can be manipulated with the `items` property. The argument `appname` is used for the title of App menu.  
 Example:
 ```js
 var nw = require('nw.gui');
@@ -98,7 +98,13 @@ var nativeMenuBar = new nw.Menu({ type: "menubar" });
 nativeMenuBar.createMacBuiltin("My App");
 win.menu = nativeMenuBar;
 ```
-
+If desired, you can also hide the "Edit" and "Window" menus when invoking `createMacBuiltin` like so:
+```js
+nativeMenuBar.createMacBuiltin("My App", {
+  hideEdit: true,
+  hideWindow: true
+});
+```
 ## See also
 
 * [[Tray]]
