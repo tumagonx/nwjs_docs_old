@@ -98,7 +98,7 @@ var nativeMenuBar = new nw.Menu({ type: "menubar" });
 nativeMenuBar.createMacBuiltin("My App");
 win.menu = nativeMenuBar;
 ```
-If desired, you can also hide the "Edit" and "Window" menus when invoking `createMacBuiltin` like so:
+Since v0.10.1, if desired, you can also hide the "Edit" and "Window" menus when invoking `createMacBuiltin` like so:
 ```js
 nativeMenuBar.createMacBuiltin("My App", {
   hideEdit: true,
