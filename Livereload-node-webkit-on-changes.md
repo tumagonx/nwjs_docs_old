@@ -54,6 +54,17 @@ then change the script tag content:
   </script>
 ```
 
-## Using gulp
+### gulp
 
-[See this gist](https://gist.github.com/spelufo/10872517)
+`npm install gulp`
+
+```
+<script>
+  var gulp = require('gulp');
+  gulp.task('reload', function () {
+    if (location) location.reload();
+  });
+
+  gulp.watch('**/*', ['reload']);
+</script>
+```
