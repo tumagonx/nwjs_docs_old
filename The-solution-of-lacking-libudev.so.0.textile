@@ -23,7 +23,7 @@ Then create a shell script to run nw:
 LD_LIBRARY_PATH=/home/omi/nw:$LD_LIBRARY_PATH ./nw $*
 ```
 
-As you are only modifying local contents of node-webkit directory, this option should not have an impact on the overall stability of your system.
+As you are only modifying local contents of node-webkit directory, this option should not have an impact on the overall stability of your system. However, note that with this method, when the script's process is killed, its nw child process might not die.
 
 **2. Use a wrapper shell script for your application.**
 In this method, we rename the binary executable file as `myapp-bin`, and then create a shell script named `myapp` as the following. Users will then run the `myapp` file to launch your application.
