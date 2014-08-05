@@ -268,6 +268,12 @@ Control whether to show window in taskbar or dock. See also `show_in_taskbar` in
 
 Pass `true` to indicate that the window needs user's action, pass `false` to cancel it. The final behaviour depends on the platform.
 
+### Window.requestAttention(Integer count)
+_since v0.10.2_  
+Similar with the boolean version, on Windows platform you can specify number of times the frame flash(es)<br>
+on OSX value < 0 will trigger `NSInformationalRequest` while value > 0 will trigger `NSCriticalRequest`<br>
+on Linux the Integer value will be casted to Boolean
+
 ### Window.capturePage(callback [, image_format | config_object ]) 
 _since v0.4.2_
 
