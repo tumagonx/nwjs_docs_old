@@ -19,7 +19,7 @@ To do this, you can add this script tag to the end of your main file:
 
 ## Recursive solution
 
-Sadly, the previous solution don't work recursively. If you want a recursive
+Sadly, the previous solution doesn't work recursively. If you want a recursive
 alternative, first you need to install "gaze" or "chokidar", and
 then change the script tag content:
 
