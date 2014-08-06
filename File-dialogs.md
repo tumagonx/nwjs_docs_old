@@ -176,6 +176,29 @@ Such path suggestion is given as a value of yet another custom attribute (`nww
 
 The file dialog starts in the given directory when this element is activated.
 
+# Choosing the same directory multiple times
+
+Once the chooser has been used to select a directory (or the same file path + file name), the change event will not fire again since the value of the input is already set with the same value. For example, if a user is expected to select a directory to export a file to, if they choose the same directory multiple times, the change event will one fire once. This is only an issue if the selected value may potentially be the same multiple times, i.e. in the case of selecting an output directory.
+
+In this case, re-setting the value of the input can ensure that the change event will always fire in subsequent selections.
+
+## jQuery
+```html
+<script>
+  function chooseFile(name) {
+    var chooser = $(name);
+    chooser.change(function(evt) {
+      console.log($(this).val());
+      // Reset the selected value to empty ('')
+      $(this).val('');
+    });
+
+    chooser.trigger('click');  
+  }
+  chooseFile('#fileDialog');
+</script>
+```
+
 # Why not provide API in javascript
 
 We do not provide file dialog API in javascript for following reasons now:
