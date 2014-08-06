@@ -315,9 +315,17 @@ win.capturePage(function(buffer){
  // do something with the buffer
 }, { format : 'png', datatype : 'buffer'} );
 ```
+### setProgressBar(progress)
+_since v0.10.2_  
+valid values are 0 to 1 <br>
+val < 0 means remove the progress bar <br>
+val > 1 means indeterminate <br>
+on linux, only Ubuntu is supported, you'll need to specify the application `.desktop` file through `NW_DESKTOP` env. if `NW_DESKTOP` env variable is not found, it will assume `nw.desktop`
+
 ### setBadgeLabel(label)
 _since v0.10.0-rc1_  
-Windows and OSX only. Set the badge label on the window icon in taskbar or dock.
+Windows and OSX only. Set the badge label on the window icon in taskbar or dock.<br>
+_since v0.10.2_ the linux Ubuntu is supported, but you'll need to specify the `.desktop` file for your application (see the note on `setProgressBar`)
 
 ### Window.cookies.*
 
