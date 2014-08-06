@@ -325,7 +325,7 @@ on linux, only Ubuntu is supported, you'll need to specify the application `.des
 ### setBadgeLabel(label)
 _since v0.10.0-rc1_  
 Windows and OSX only. Set the badge label on the window icon in taskbar or dock.<br>
-_since v0.10.2_ the linux Ubuntu is supported, but you'll need to specify the `.desktop` file for your application (see the note on `setProgressBar`)
+_since v0.10.2_ the linux Ubuntu is supported, however the label is restricted to a string number only. You'll also need to specify the `.desktop` file for your application (see the note on `setProgressBar`)
 
 ### Window.cookies.*
 
