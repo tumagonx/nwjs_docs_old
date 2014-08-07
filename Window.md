@@ -2,7 +2,7 @@ _Window API requires node-webkit >= v0.3.0_
 
 `Window` is a wrapper of DOM's `window` object, it has extended operations and can receive various window events.
 
-Every `Window` is an instance of [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter) object, and you're able to use `Window.on(...)` to response to native window's events.
+Every `Window` is an instance of [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter) object, and you're able to use `Window.on(...)` to respond to native window's events.
 
 ## Synopsis
 
