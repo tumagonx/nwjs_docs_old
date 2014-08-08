@@ -642,3 +642,9 @@ The Substance Composer is a modern workspace for creating professional web-first
 [Super Scrapped Robot](http://scrappedrobot.com/) is a retro action twin stick shooter in 4 shades of green!
 
 [![Super Scrapped Robot screenshot](http://press.bureaubureau.de/super_scrapped_robot/images/header.png)](http://scrappedrobot.com/)
+
+### Bubble Painter
+
+[Bubble Painter](https://github.com/kethinov/BubblePainter) is an open source app for Mac OS X 10.10 Yosemite which gives you back the ability to customize the colors of the message bubbles in Messages.app.
+
+[![Bubble Painter screenshot](https://raw.githubusercontent.com/kethinov/BubblePainter/master/screenshot.png)](https://github.com/kethinov/BubblePainter)
