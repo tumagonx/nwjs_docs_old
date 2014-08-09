@@ -8,24 +8,7 @@ Due to the removal of `libudev0` and its associated library `libudev.so.0`, node
 
 ...and possibly others. Until node-webkit is updated to depend on the currently shipped version `libudev.so.1`, the following solutions *should* provide a stopgap measure for packaging your applications.
 
-**1. Create a local symlink to `libudev.so.1`**
-
-Same as above install `libudev1` if needed. Now create a local symlink to `libudev.so.1`. On Ubuntu for example, run from the directory where nw files are extracted:
-
-``` bash
-# ln -s /lib/x86_64-linux-gnu/libudev.so.1 ./libudev.so.0
-```
-
-Then create a shell script to run nw:
-
-``` bash
-#!/bin/sh
-LD_LIBRARY_PATH=/home/omi/nw:$LD_LIBRARY_PATH ./nw $*
-```
-
-As you are only modifying local contents of node-webkit directory, this option should not have an impact on the overall stability of your system. However, note that with this method, when the script's process is killed, its nw child process might not die.
-
-**2. Use a wrapper shell script for your application.**
+**1. Use a wrapper shell script for your application.**
 In this method, we rename the binary executable file as `myapp-bin`, and then create a shell script named `myapp` as the following. Users will then run the `myapp` file to launch your application.
 
 ```bash
@@ -60,7 +43,7 @@ do
 done
 ```
 
-**3. Modify the nw binary itself**
+**2. Modify the nw binary itself**
 
 In this method, we navigate (via command line) to the directory containing the nw binary and run the following:
 
