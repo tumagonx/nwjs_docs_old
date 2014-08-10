@@ -1,6 +1,6 @@
 _Shortcut API requires node-webkit >= 0.10.0_
 
-`Shortcut` represents a global keyboard shortcut, also known as system-wide hotkey. If register successfully, it works even if your app does *not* have focus. Every time the user presses the shortcut registered here, your app will receive an "active" event of the shortcut object.
+`Shortcut` represents a global keyboard shortcut, also known as system-wide hotkey. If registered successfully, it works even if your app does *not* have focus. Every time the user presses the registered shortcut, your app will receive an "active" event of the shortcut object.
 
 ## Synopsis
 
@@ -57,7 +57,7 @@ Supported keys: A-Z, 0-9, Comma, Period, Home, End, PageUp, PageDown, Insert, De
 
 Modifiers: Ctrl (On Mac OS X, "Ctrl" correspond to the Command keys on the Macintosh keyboard), Alt, Shift. Note that `Shortcut.key` takes zero or more modifiers. 
 
-Please use zero modifier only when you are knowing what your are doing. The API `App.registerGlobalHotKey` can support applications intercept single key (like `{ key: "A"}`), don't do it since the users will not be able to use "A" normally any more until the app unregister it. However, the API doesn't limit this usage, and it would be useful if the applications want to listen Media Keys.
+Please use zero modifier only when you are knowing what your are doing. The API `App.registerGlobalHotKey` can support applications intercepting a single key (like `{ key: "A"}`), but please don't do this since users will not be able to use "A" normally any more until the app unregisters it. However, the API doesn't limit this usage, and it would be useful if the applications wants to listen Media Keys.
 
 ### Shortcut.active
 
@@ -65,18 +65,18 @@ Please use zero modifier only when you are knowing what your are doing. The API 
 
 ### Shortcut.failed
 
-**Get** or **Set** the `failed` callback of a `Shortcut`, the `failed` must be a valid function, it will be called when application pass an invalid `Shortcut.key`, or when the shortcut registration (`App.registerGlobalHotKey`) is failed.
+**Get** or **Set** the `failed` callback of a `Shortcut`, the `failed` must be a valid function, it will be called when application passes an invalid `Shortcut.key`, or when the shortcut registration (`App.registerGlobalHotKey`) has failed.
 
 ## Events
-Following events can be listened by using `Shortcut.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
+Following events can be listened to by using `Shortcut.on()` method, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
 
 ### active
 
-Emitted when user presses the registered shortcut.
+Emitted when the users pressed the registered shortcut.
 
 ### failed
 
-Emitted when the application pass an invalid `Shortcut.key`, or when the shortcut registration (`App.registerGlobalHotKey`) is failed.
+Emitted when the application passed an invalid `Shortcut.key`, or when the shortcut registration (`App.registerGlobalHotKey`) has failed.
 
 ## See Also
 
