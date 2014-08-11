@@ -651,6 +651,6 @@ The Substance Composer is a modern workspace for creating professional web-first
 
 ### j5nw
 
-Example from the "Getting started with Johnny-Five and Node-Webkit" tutorial.
+Example for ["Getting started with Johnny-Five and Node-Webkit"](https://github.com/rwaldron/johnny-five/wiki/Getting-started-with-Johnny-Five-and-Node-Webkit) tutorial.
 
 ![j5nw](https://cloud.githubusercontent.com/assets/641525/3868798/7576b16a-2065-11e4-96a4-d016e7d5a093.png)
