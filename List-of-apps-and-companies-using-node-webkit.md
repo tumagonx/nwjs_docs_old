@@ -648,3 +648,9 @@ The Substance Composer is a modern workspace for creating professional web-first
 [Bubble Painter](https://github.com/kethinov/BubblePainter) is an open source app for Mac OS X 10.10 Yosemite which gives you back the ability to customize the colors of the message bubbles in Messages.app.
 
 [![Bubble Painter screenshot](https://raw.githubusercontent.com/kethinov/BubblePainter/master/screenshot.png)](https://github.com/kethinov/BubblePainter)
+
+### j5nw
+
+Example from the "Getting started with Johnny-Five and Node-Webkit" tutorial.
+
+![j5nw](https://cloud.githubusercontent.com/assets/641525/3868798/7576b16a-2065-11e4-96a4-d016e7d5a093.png)
