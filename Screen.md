@@ -10,19 +10,24 @@ _Screen API requires node-webkit >= v0.10.2_
 Init the Screen singleton object, you only need to call this once
 
 ### Screen.screens
-return the array of screen
+**Get** the array of screen (number of screen connected to the computer)
 
 screen has following structure:
 ```javascript
 screen {
-  id : int,   // unique id for a screen
-  bounds : {  // physical screen resolution, can be negative, not necessarily start from 0,depending on screen arrangement
+  // unique id for a screen
+  id : int,
+
+  // physical screen resolution, can be negative, not necessarily start from 0,depending on screen arrangement
+  bounds : {
     x : int,
     y : int,
     width : int,
     height : int
   },
-  work_area : { // useable area within the screen bound (due to native OS taskbar)
+ 
+  // useable area within the screen bound
+  work_area : {
     x : int,
     y : int,
     width : int,
