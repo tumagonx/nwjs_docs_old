@@ -26,6 +26,7 @@ _Native UI API requires node-webkit >= 0.3.0_
 * [[File dialogs]]
 * [[Shell]] - platform-dependent desktop functions
 * [[Handling files and arguments]]
+* [[Screen]] - Screen geometry functions
 
 ## Tips
 
