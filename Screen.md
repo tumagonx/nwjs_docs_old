@@ -15,14 +15,14 @@ return the array of screen
 screen has following structure:
 ```javascript
 screen {
-  id : int,
-  bounds : { 
+  id : int,   // unique id for a screen
+  bounds : {  // physical screen resolution, can be negative, not necessarily start from 0,depending on screen arrangement
     x : int,
     y : int,
     width : int,
     height : int
   },
-  work_area : { 
+  work_area : { // useable area within the screen bound (due to native OS taskbar)
     x : int,
     y : int,
     width : int,
