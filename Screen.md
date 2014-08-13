@@ -4,6 +4,13 @@ _Screen API requires node-webkit >= v0.10.2_
 
 `Screen` is a singleton object, need to be initiated once by calling `gui.Screen.Init()`
 
+## Reference
+
+### Screen.Init()
+Init the Screen singleton object, you only need to call this once
+
+### Screen.screens
+return the array of screen
 
 screen has following structure:
 ```javascript
@@ -25,7 +32,23 @@ screen {
   isBuiltIn : bool
 }
 ```
-How to use it?
+## Events
+
+Following events can be listened by using `Screen.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
+
+### displayBoundsChanged
+
+emitted when the screen resolution, arrangement is changed
+
+### displayAdded
+
+emitted when a new screen added
+
+### displayRemoved
+
+emitted when existing screen removed
+
+## Synopsis
 ```javascript
 function ScreenToString(screen) {
   var string = "";
