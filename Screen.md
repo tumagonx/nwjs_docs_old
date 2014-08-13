@@ -15,10 +15,10 @@ Init the Screen singleton object, you only need to call this once
 screen has following structure:
 ```javascript
 screen {
-  // unique id for a screen
+// unique id for a screen
   id : int,
 
-  // physical screen resolution, can be negative, not necessarily start from 0,depending on screen arrangement
+// physical screen resolution, can be negative, not necessarily start from 0,depending on screen arrangement
   bounds : {
     x : int,
     y : int,
@@ -26,13 +26,14 @@ screen {
     height : int
   },
  
-  // useable area within the screen bound
+// useable area within the screen bound
   work_area : {
     x : int,
     y : int,
     width : int,
     height : int
   },
+
   scaleFactor : float,
   isBuiltIn : bool
 }
@@ -43,15 +44,15 @@ Following events can be listened by using `Screen.on()` function, for more infor
 
 ### displayBoundsChanged
 
-emitted when the screen resolution, arrangement is changed
+emitted when the screen resolution, arrangement is changed, the callback is called with 1 argument `screen'
 
 ### displayAdded
 
-emitted when a new screen added
+emitted when a new screen added, the callback is called with 1 argument `screen'
 
 ### displayRemoved
 
-emitted when existing screen removed
+emitted when existing screen removed, the callback is called with 1 argument `screen'
 
 ## Synopsis
 ```javascript
