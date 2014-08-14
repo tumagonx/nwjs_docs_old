@@ -45,6 +45,8 @@ As you may have found from trying to run node-webkit in later versions of Ubuntu
 You should find this now works in Ubuntu 13.x
 
 ## Downloads
+### 0.10.x
+Please look for it in the release notes or the same directory with the node-webkit binary on http://dl.node-webkit.org/  
 ### 0.9.x
 https://s3.amazonaws.com/node-webkit/v0.9.0/chromedriver2-nw-v0.9.0-linux-ia32.tar.gz  
 https://s3.amazonaws.com/node-webkit/v0.9.0/chromedriver2-nw-v0.9.0-linux-x64.tar.gz  
