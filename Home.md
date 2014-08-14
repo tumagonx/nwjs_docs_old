@@ -43,6 +43,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[Application auto building scripts for Linux Windows and OSX]]
 * [[Handling files and arguments]]
 * [[Livereload node-webkit on changes]]
+* [[Window-menu]]
 
 **Testing**
 * [The Testing framework for your application running on node-webkit](wiki/chromedriver)
