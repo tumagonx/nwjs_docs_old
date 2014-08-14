@@ -97,6 +97,8 @@ And the `$('#fileDialog').val()` will return all selected files's paths separate
 
 ## Filter File
 
+To restrict list of file types dialog accept, just add an `accept` attribute. Also works for `nwsaveas` dialogs.
+
 ```html
 <input type="file" accept=".doc,.docx,.xml,application/msword">
 ```
