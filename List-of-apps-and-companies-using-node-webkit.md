@@ -654,3 +654,11 @@ The Substance Composer is a modern workspace for creating professional web-first
 Example for ["Getting started with Johnny-Five and Node-Webkit"](https://github.com/rwaldron/johnny-five/wiki/Getting-started-with-Johnny-Five-and-Node-Webkit) tutorial.
 
 ![j5nw](https://cloud.githubusercontent.com/assets/641525/3868798/7576b16a-2065-11e4-96a4-d016e7d5a093.png)
+
+### github-reader
+
+[github-reader](https://github.com/azu/github-reader "github-reader") is a viewer for [Notifications](https://github.com/notifications "Notifications") and [News Feed](https://github.com/ "News Feed").
+
+It's like RSS reader for GitHub's.
+
+![github-reader](http://monosnap.com/image/oQoh7LC29yoWA63J9ZlY6CoFH1jKbJ.png)
