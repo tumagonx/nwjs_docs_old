@@ -659,6 +659,6 @@ Example for ["Getting started with Johnny-Five and Node-Webkit"](https://github.
 
 [github-reader](https://github.com/azu/github-reader "github-reader") is a viewer for [Notifications](https://github.com/notifications "Notifications") and [News Feed](https://github.com/ "News Feed").
 
-It's like RSS reader for GitHub's.
+It's like RSS reader for GitHub.
 
 ![github-reader](http://monosnap.com/image/oQoh7LC29yoWA63J9ZlY6CoFH1jKbJ.png)
