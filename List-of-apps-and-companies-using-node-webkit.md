@@ -661,4 +661,4 @@ Example for ["Getting started with Johnny-Five and Node-Webkit"](https://github.
 
 It's like RSS reader for GitHub.
 
-![github-reader](http://monosnap.com/image/oQoh7LC29yoWA63J9ZlY6CoFH1jKbJ.png)
+[![github-reader](http://monosnap.com/image/oQoh7LC29yoWA63J9ZlY6CoFH1jKbJ.png)](https://github.com/azu/github-reader "github-reader")
