@@ -662,3 +662,20 @@ Example for ["Getting started with Johnny-Five and Node-Webkit"](https://github.
 It's like RSS reader for GitHub.
 
 [![github-reader](http://monosnap.com/image/oQoh7LC29yoWA63J9ZlY6CoFH1jKbJ.png)](https://github.com/azu/github-reader "github-reader")
+
+### SUM - Secure Ultimate Messenger
+
+[SUM](http://www.sum-messenger.org/) is a simple secure desktop instant messenger for local networks. 
+No server infrastructure is needed. All communication is encrypted and nothing saved on any server.
+
+[![SUM screenshot](https://raw.githubusercontent.com/SSilence/sum/master/website/screenshot_medium.png)](http://www.sum-messenger.org/)
+
+**Features**
+* no server needed
+* full encrypted
+* signature check (public / private key management)
+* send files (encrypted)
+* rooms
+* send formatted source code
+* avatars for users
+* emoticons
