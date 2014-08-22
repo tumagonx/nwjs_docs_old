@@ -35,7 +35,20 @@ $ (your_project_path)/node_modules/.bin/wd shell
 (wd): x.get("http://google.com")
 ```
 * At this point you should have a node-webkit window open showing Google's homepage
+* Another sample with python:  
+```python
+import time
+from selenium import webdriver
 
+driver = webdriver.Chrome('/home/roger/Download/node-webkit-v0.10.2-linux-x64/chromedriver')  # Optional argument, if not specified will search path.
+driver.get('http://www.google.com/xhtml');
+time.sleep(5) # Let the user actually see something!
+search_box = driver.find_element_by_name('q')
+search_box.send_keys('ChromeDriver')
+search_box.submit()
+time.sleep(5) # Let the user actually see something!
+driver.quit()
+```
 ### Important Note For Ubuntu 13.x Users
 
 As you may have found from trying to run node-webkit in later versions of Ubuntu, you will probably find this won't work due to lacking libudev.so.0.  You can work around this reasonably easily.
