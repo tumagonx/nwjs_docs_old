@@ -4,6 +4,10 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Atraci] (https://github.com/Atraci/Atraci) ###
+ > Free music streaming player
+
+<img src="https://camo.githubusercontent.com/f85f35c14b923f3e3a860f6c6039c62db8cc85a9/687474703a2f2f692e696d6775722e636f6d2f4c7a4344716b492e6a7067">
 
 ### Cellist
 
@@ -615,12 +619,6 @@ The Substance Composer is a modern workspace for creating professional web-first
 > Easily run [gulp](http://gulpjs.com) tasks from the current directory in Finder and get notified when they're finished.
 
 <img src="https://github.com/sindresorhus/gulp-app/raw/master/media/screenshot.png" width="315">
-
-
-### [DizzyJS] (https://github.com/avihaymenahem/Dizzy-JS) ###
- > Open Source Node-webkit based Desktop Music player!
-
-<img src="http://up407.siz.co.il/up2/2yj1qhyzyhwt.jpg">
 
 ### Wrong App
 [Wrong App](http://wrongapp.com) is a distraction-free text editor (with some Markdown support) for Mac. You can even try it online without downloading anything.
