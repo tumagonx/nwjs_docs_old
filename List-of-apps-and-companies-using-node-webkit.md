@@ -15,6 +15,11 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 [![Cellist screenshot](http://cellist.patr0n.us/img/cellist.png)](https://itunes.apple.com/us/app/cellist/id897814548?ls=1&mt=12)
 
+### CityBound - City Building game by [Anselm Eickhoff](http://aeplay.co/)
+
+[CityBound](http://cityboundsim.com/) is a work-in-progress project developed by Anselm Eickhoff using Node-webkit and WebGl for 3D graphics.
+
+![](http://www.rockpapershotgun.com/images/14/mar/citybound1.jpg)
 
 ### Broado - Music player for Desktop
 
