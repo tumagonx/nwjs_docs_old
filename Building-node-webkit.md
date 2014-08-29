@@ -19,6 +19,8 @@ And preview the upstream instructions for your platform, they contained importan
 
 First find a place to put our code, it will take up about 14G disk space after compilation.
 
+### Getting main version of node-webkit
+
 To start, make an empty directory, say `node-webkit`, then create the `.gclient` file in it, its content should be:
 
     solutions = [
@@ -39,9 +41,43 @@ To start, make an empty directory, say `node-webkit`, then create the `.gclient`
        },
     ]
 
+### Getting forked version of node-webkit
+
+These instructions will help you build a custom version of node-webkit that you have forked off [the main version](https://github.com/rogerwang/node-webkit).
+
+First, create a fork of [chromium.src](https://github.com/rogerwang/chromium.src).
+
+Next, edit *.DEPS.git* by changing the value of `deps['src/content/nw']` from `https://github.com/rogerwang/node-webkit.git@origin/master` to the URL of your forked version of node-webkit.
+
+Then, if you have added any dependencies to the project, make sure to specify them in the appropriate gyp file (these are located in the **build** directory).
+
+Now, on your workstation make an empty directory, say `node-webkit`, then create the `.gclient` file in it, its content should be:
+
+    solutions = [
+       { "name"        : "src",
+         "url"         : "https://github.com/YOUR-NAME-HERE/chromium.src.git@origin/nw",
+         "deps_file"   : ".DEPS.git",
+         "managed"     : True,
+         "custom_deps" : {
+           "src/third_party/WebKit/LayoutTests": None,
+           "src/chrome_frame/tools/test/reference_build/chrome": None,
+           "src/chrome_frame/tools/test/reference_build/chrome_win": None,
+           "src/chrome/tools/test/reference_build/chrome": None,
+           "src/chrome/tools/test/reference_build/chrome_linux": None,
+           "src/chrome/tools/test/reference_build/chrome_mac": None,
+           "src/chrome/tools/test/reference_build/chrome_win": None,
+         },
+         "safesync_url": "",
+       },
+    ]
+
+### Syncing code
+
 Finally sync code under `node-webkit` directory (where `.gclient` resides), it would spend a few hours depending on your network condition:
 
     gclient sync
+
+### Notes
 
 _On OSX you'll see error messages reporting `cycle in .gyp file dependency graph detected`. It can be ignored because `gclient` wants to run `gyp_chromium` without a switch we need. Please move on to the `Build` section._
 
@@ -66,7 +102,7 @@ Note: if you're on Linux and you get any dependency errors during `gclient sync`
 
 If you encountered other problems, see [UsingNewGit](http://code.google.com/p/chromium/wiki/UsingNewGit).
 
-## Extra Steps on Windows
+### Extra Steps on Windows
 
 If you're building node-webkit on Windows, you should copy DirectX SDK files into `/path/to/node-webkit/src/third_party/directxsdk/files`:
 
@@ -77,7 +113,7 @@ cp -r /c/Program\ Files\ \(x86\)/Microsoft\ DirectX\ SDK\ \(June\ 2010\)/* /path
 
 This step is necessary to get some DirectX dlls files extracted, and we mentioned it here because this is not documented in Chromium's site.
 
-## Build
+### Build
 
 After the `gclient sync`, project files should have be prepared. If not, you should manually run:
 
@@ -96,6 +132,7 @@ export GYP_GENERATORS='ninja'
 ./build/gyp_chromium content/content.gyp
 ninja -C out/Release nw -j4
 ````
+
 
 ##Tips
 1. You can specify what project files to generate through `GYP_GENERATORS`. And you can export it in `~/.bashrc` etc.For example, if you want to use `make`:
