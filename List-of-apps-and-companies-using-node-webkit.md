@@ -12,7 +12,7 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 * No time loss, instant, exact searches,
 * KeeeX is simple and quick to adopt
 
-<img src="https://content.wuala.com/contents/nguduong1988/keeex/keeex.jpg">
+<img src="https://content.wuala.com/contents/nguduong1988/keeex/keeex.png">
 
 ### [Atraci] (https://github.com/Atraci/Atraci) ###
  > Free music streaming player
