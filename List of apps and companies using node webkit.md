@@ -6,10 +6,11 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ### [KeeeX] (https://keeex.io/) ###
  > [KeeeX](https://keeex.io/) is a unique solution to trust files, trace their lifecycle, find them in a snap.
-No doubt, we see the same document,
-No mess, we efficiently organize them,
-No time loss, instant, exact searches,
-KeeeX is simple and quick to adopt
+
+* No doubt, we see the same document,
+* No mess, we efficiently organize them,
+* No time loss, instant, exact searches,
+* KeeeX is simple and quick to adopt
 
 <img src="https://content.wuala.com/contents/nguduong1988/keeex/keeex.jpg">
 
