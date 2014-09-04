@@ -11,7 +11,7 @@ No mess, we efficiently organize them,
 No time loss, instant, exact searches,
 KeeeX is simple and quick to adopt
 
-<img src="http://www.wuala.com/nguduong1988/keeex/keeex.jpg/">
+<img src="https://content.wuala.com/contents/nguduong1988/keeex/keeex.jpg">
 
 ### [Atraci] (https://github.com/Atraci/Atraci) ###
  > Free music streaming player
