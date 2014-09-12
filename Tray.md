@@ -53,7 +53,7 @@ On Mac `title` will be showed on status bar along with its `icon`, but it doesn'
 
 **Get** or **Set** the `tooltip` of `Tray`. `tooltip` shows when you hover the `Tray` with mouse.
 
-`tooltip` is showed on all three platforms.
+`tooltip` is showed on all three platforms. Should be set as `Tray` property rather from `option` object constructor. See issue #1903 for more information. 
 
 ### Tray.icon
 
