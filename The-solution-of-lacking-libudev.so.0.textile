@@ -51,4 +51,4 @@ In this method, we navigate (via command line) to the directory containing the n
 sed -i 's/udev\.so\.0/udev.so.1/g' nw
 ```
 
-As should be obvious, this method comes with increased risk of damaging the nw executable and should only be attempted by skilled users *which understand what the command is doing*.
+As should be obvious, this method comes with increased risk of damaging the nw executable and should only be attempted by skilled users *who understand what the command is doing*.
