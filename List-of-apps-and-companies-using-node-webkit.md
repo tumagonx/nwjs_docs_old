@@ -4,6 +4,23 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [DebugGap] (http://www.debuggap.com) (run easily and debug powerfully) ###
+ > [DebugGap](http://www.debuggap.com) is a debug tool for webview(e.g phonggap) and all kinds of browsers.
+
+
+1. Run on Windows, Linux and Mac without setup process
+1. Support different platforms( Android,IOS,WebOS,BlackBerry and so on,except for Windows Phone )
+1. Support all the HTML5 frameworks(e.g phonegap) and browsers
+1. Support to inspect the element quickly in the node tree
+1. Debug lots of devices at the same time
+1. Support single-step debug ,watch variables and so on for Android devices
+
+![blue spot](http://www.debuggap.com/static/css/image/8.png)
+![four-leaf clover](http://www.debuggap.com/static/css/image/4.png)
+![debug page](http://www.debuggap.com/static/css/image/7.png)
+
+
+
 ### [TorrenTV](https://torrentv.github.io/)
  > [TorrenTV](https://torrentv.github.io/) Stream Torrents to your AppleTV/Roku/Chromecast
 
