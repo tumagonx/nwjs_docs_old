@@ -735,4 +735,4 @@ Don't worry whether to run your scripts with or without the tester module.
 Easily return to previously run scripts.
 
 #### Latest CasperJS and PhantomJS
-You can easily replace them with another 
+You can easily replace them with another version.
