@@ -720,10 +720,10 @@ No server infrastructure is needed. All communication is encrypted and nothing s
 
 An IDE for creating and running CasperJS scripts.
 
-[![CasperJS IDE screenshot](https://static-2.gumroad.com/res/gumroad/files/342298bf9b4a454cbcf5eb9d468a5190/original/Screenshot%20from%202014-09-08%2022:34:26.png)](https://gum.co/casperjside)
+[![CasperJS IDE screenshot](https://static-2.gumroad.com/res/gumroad/files/cdf61b4cd9ff44c8a476ae74e71d29ae/original/Screenshot%20from%202014-09-24%2020:26:43.png)](https://gum.co/casperjside)
 
 #### Rich Code Editor
-With syntax checking and highlighting for your scripts.
+Write scripts easily with CasperJS API autocompletion, syntax checking and highlighting.
 
 #### Real Time Console
 Check the ANSI formatted CasperJS output as it becomes available.
@@ -735,4 +735,4 @@ Don't worry whether to run your scripts with or without the tester module.
 Easily return to previously run scripts.
 
 #### Latest CasperJS and PhantomJS
-But you can replace them with another version.
+You can easily replace them with another 
