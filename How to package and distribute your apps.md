@@ -47,6 +47,7 @@ From the command line:
 * [Nuwk!](http://codeb.it/nuwk/) Nuwk! makes it easy to create Mac Applications based on node-webkit, simplifying testing and building procedures. It takes care of creating the executable, attaching the app icon and configuring the plist file accordingly. (very alpha stage)
 * [generator-node-webkit](https://www.npmjs.org/package/generator-node-webkit) is a yeoman generator to develop node-webkit applications and create packages for mac, linux and win.
 * [lein-node-webkit-builder](https://github.com/wilkerlucio/lein-node-webkit-build) It's similar to `grunt-node-webkit-builder`, will download the binaries automatically and let you build on multi-platforms, but it runs as a [Leiningen](http://leiningen.org/) plugin, more suitable for people working with [ClojureScript](https://github.com/clojure/clojurescript).
+* [Web2Executable](https://github.com/jyapayne/Web2Executable) It's a full, cross-platform, opensource GUI packaging app that makes a single binary out of the web app, ready to use out of the box. It massively simplifies packaging apps and works with the Phaser game library. Works on Mac OSX, Linux and Windows using Pyside. It's in beta, so feedback and contributors are very welcome.
 
 ## Step 2b: Alternative way - Making an executable file out of a .nw file 
 
