@@ -5,7 +5,7 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 ## Apps
 
 ### [Notedown] (https://github.com/isdampe/Notedown)
-> [Notedown] (https://github.com/isdampe/Notedown) provides a sleak, easy to use interface for writing, storing and viewing notes powered by markdown.
+> [Notedown] (https://github.com/isdampe/Notedown) provides a sleek, easy to use interface for writing, storing and viewing notes powered by markdown.
 
 ![Notedown 1](https://github.com/isdampe/Notedown/raw/master/screenshot-1.png)
 ![Notedown 2](https://github.com/isdampe/Notedown/raw/master/screenshot-2.png)
