@@ -720,7 +720,7 @@ No server infrastructure is needed. All communication is encrypted and nothing s
 
 An IDE for creating and running CasperJS scripts.
 
-[![CasperJS IDE screenshot](https://static-2.gumroad.com/res/gumroad/files/cdf61b4cd9ff44c8a476ae74e71d29ae/original/Screenshot%20from%202014-09-24%2020:26:43.png)](https://gum.co/casperjside)
+[![CasperJS IDE screenshot](https://s3.amazonaws.com/gumroad/files/0c0dda5ea1d94e73b10ab7da6a103180/original/Screenshot%20from%202014-09-26%2013:08:07.png)](https://gum.co/casperjside)
 
 #### Rich Code Editor
 Write scripts easily with CasperJS API autocompletion, syntax checking and highlighting.
