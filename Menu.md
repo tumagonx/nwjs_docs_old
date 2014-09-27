@@ -64,7 +64,7 @@ Remove `item` from `Menu`. This method requires you to keep the `MenuItem` outsi
 
 Remove the `i`th item form `Menu`
 
-### Menu.item[x].click
+### Menu.items[x].click
 Reference: x is the index of the menu object.
 
 ```javascript
