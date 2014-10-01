@@ -1,4 +1,4 @@
-Chromium has GPU ralated diagnostic info page at url chrome://gpu
+Chromium has GPU related diagnostic info page at url chrome://gpu
 In node-webkit this page is broken but information may be extracted through devtools:
 
 * 1. open chrome://gpu in nw
