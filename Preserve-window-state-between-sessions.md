@@ -33,6 +33,9 @@ winstate.js library:
  * 2014-03-22
  * - Repared workaround (from 2013-12-01) behaviour when use frameless window.
  *   Now it works correctly.
+ * 2014-10-02
+ * - Fixed crash when JSON.stringify is called on null winState. Now check for null and exit.
+ *
  */
 
 var gui = require('nw.gui');
