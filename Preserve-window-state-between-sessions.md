@@ -34,7 +34,7 @@ winstate.js library:
  * - Repared workaround (from 2013-12-01) behaviour when use frameless window.
  *   Now it works correctly.
  * 2014-10-02
- * - Fixed crash when JSON.stringify is called on null winState. Now check for null and exit.
+ * - Fixed cannot set windowState of null error when attempting to set localStorage
  *
  */
 
@@ -111,9 +111,7 @@ function restoreWindowState() {
 
 function saveWindowState() {
     dumpWindowState();
-    if (winState) {
-       localStorage.windowState = JSON.stringify(winState);
-    }
+       localStorage['windowState'] = JSON.stringify(winState);
 }
 
 initWindowState();
