@@ -108,7 +108,9 @@ function restoreWindowState() {
 
 function saveWindowState() {
     dumpWindowState();
-    localStorage.windowState = JSON.stringify(winState);
+    if (winState) {
+       localStorage.windowState = JSON.stringify(winState);
+    }
 }
 
 initWindowState();
