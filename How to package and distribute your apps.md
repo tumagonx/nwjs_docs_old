@@ -70,7 +70,7 @@ Then, all you have to do is zip app.exe and required DLLs, and distribute them. 
 
 And please also note that the `nw.pak` must also be distributed along with the `app.exe`.
 
-Finally note that if you are using native modules, your `.exe` file shall be named `nw.exe` as detailed in [Using Node modules](https://github.com/rogerwang/node-webkit/wiki/Using-Node-modules). Additional information is available at [#199](https://github.com/rogerwang/node-webkit/issues/199).
+**Important note**: if you are using native modules, your `.exe` file shall be named `nw.exe` as detailed in [Using Node modules](https://github.com/rogerwang/node-webkit/wiki/Using-Node-modules). Additional information is available at [#199](https://github.com/rogerwang/node-webkit/issues/199).
 
 ### Linux 
 
