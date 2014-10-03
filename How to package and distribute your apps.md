@@ -141,6 +141,19 @@ __Attention__! "Enigma Virtual Box" and all accompanying files are licensed "AS 
 
 Now you can move and distribute the single `app_boxed.exe` to anywhere, without any `nw.pak` and `*.dll` files.
 
+Alternatively, for batch bundling, there is a small Node integration module 
+[enigmavirtualbox](https://www.npmjs.org/package/enigmavirtualbox). It
+even automatically downloads and locally unpacks the Enigma Virtual Box
+distribution. For this install Node and NPM and run in your windows
+terminal:
+
+1. `npm install -g enigmavirtualbox`
+2. `enigmavirtualbox gen app.evp app_boxed.exe app.exe nw.pak icudtl.dat ffmpegsumo.dll libEGL.dll libGLESv2.dll` (generate configuration)
+3. `enigmavirtualbox gui app.evp` (optionally post-edit configuration)
+4. `enigmavirtualbox cli app.evp` (execute bundling process in batch)
+
+The generated configuration file `app.evp` can be stored so you
+can repeat step (4) arbitrary times.
 
 ## Setup on Windows
 
