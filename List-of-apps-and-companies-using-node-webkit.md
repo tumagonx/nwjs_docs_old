@@ -70,6 +70,16 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 [Broado](https://sahanarula.github.io/broado) is a Open-Source project using Node WebKit. Broado is a desktop music player built with node and angular.js
 
 [![broado screenshot](http://broado.cyburl.in/assets/img/jude.png)](https://sahanarula.github.io/broado)
+
+### SWIMBI - Swift Menu Builder
+
+[Swimbi](http://swimbi.com/) is a cross platform application enables developers to create website CSS menu navigation using intuitive user interface without coding.
+* **Develop faster**: Add menu items, select design and get responsive CSS menu in minutes.
+* **Create beauty**: Select from a number of ready-to-use designs and icons, use patterns, shadows and effects.
+* **Upload simply**: Using FTP button, update directly on a server.
+
+[![swimbi screenshot](http://swimbi.com/img/nwscreenshot.png)](http://swimbi.com/)
+
 ### Node WebKit QQ - Node WebKit QQ
 
 [Node WebKit QQ](https://github.com/caofb/nodewebkitqq/) is an Open-Source WebQQ desktop client using Node WebKit. FYI: QQ is an instant messaging service widely used in China provided by Tencent.
