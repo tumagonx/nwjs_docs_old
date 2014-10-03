@@ -4,6 +4,11 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Assistant](https://github.com/29decibel/assistant)
+> A super simple, extensible and powerful personal assistant, just like your shell, with the power of HTML.
+
+![short-intro-video](https://asistant-assets.s3.amazonaws.com/short-intro-video.gif)
+
 ### [Notedown] (https://github.com/isdampe/Notedown)
 > [Notedown] (https://github.com/isdampe/Notedown) provides a sleek, easy to use interface for writing, storing and viewing notes powered by markdown.
 
