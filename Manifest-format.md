@@ -59,10 +59,10 @@ Following fields control which features `node-webkit` should provide and how `no
 Starting from v0.10.0-rc1, it's also effective if your application is started from unpacked folders.
 
 ### window
-*(object)* controls how the main window looks, see _Window Subfields_ below.
+*(object)* controls how the main window looks, see [_Window Subfields_](#window-subfields) below.
 
 ### webkit
-*(object)* controls what features of WebKit should be on/off, see _WebKit Subfields_ below.
+*(object)* controls what features of WebKit should be on/off, see [_WebKit Subfields_](#webkit-subfields) below.
 
 ### user-agent
 _since v0.3.7_
