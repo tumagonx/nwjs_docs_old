@@ -93,7 +93,7 @@ OSX only. Creates the default menus (App, Edit and Window). The items can be man
 Example:
 ```js
 var nw = require('nw.gui');
-win = nw.Window.get();
+var win = nw.Window.get();
 var nativeMenuBar = new nw.Menu({ type: "menubar" });
 nativeMenuBar.createMacBuiltin("My App");
 win.menu = nativeMenuBar;
