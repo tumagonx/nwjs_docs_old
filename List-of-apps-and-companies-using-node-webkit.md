@@ -8,7 +8,7 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 > An IDE for creating and running CasperJS scripts.
 
-[![CasperJS IDE screenshot](https://s3.amazonaws.com/gumroad/files/0c0dda5ea1d94e73b10ab7da6a103180/original/Screenshot%20from%202014-09-26%2013:08:07.png)](https://gum.co/casperjside)
+[![CasperJS IDE screenshot](https://static-2.gumroad.com/res/gumroad/files/52f5176d46454909b2d17b501ca890cd/original/Screenshot%20from%202014-10-06%2023:03:56.png)](https://gum.co/casperjside)
 
 ### [Assistant](https://github.com/29decibel/assistant)
 > A super simple, extensible and powerful personal assistant, just like your shell, with the power of HTML.
