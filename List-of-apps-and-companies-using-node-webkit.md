@@ -6,7 +6,7 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ### [CasperJS IDE](https://gum.co/casperjside)
 
-An IDE for creating and running CasperJS scripts.
+> An IDE for creating and running CasperJS scripts.
 
 [![CasperJS IDE screenshot](https://s3.amazonaws.com/gumroad/files/0c0dda5ea1d94e73b10ab7da6a103180/original/Screenshot%20from%202014-09-26%2013:08:07.png)](https://gum.co/casperjside)
 
