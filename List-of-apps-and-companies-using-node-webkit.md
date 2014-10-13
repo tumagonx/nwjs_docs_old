@@ -4,6 +4,13 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Nevermore](https://github.com/nihgwu/Nevermore)
+
+> A shadowsocks client powered by node-webkit + angular.js
+
+![main](https://github.com/nihgwu/Nevermore/raw/master/screenshots/1.png)   
+![list](https://github.com/nihgwu/Nevermore/raw/master/screenshots/2.png)
+![share](https://github.com/nihgwu/Nevermore/raw/master/screenshots/3.png)
 
 ### [TimoFM](https://github.com/sapjax/TimoFM)
 
