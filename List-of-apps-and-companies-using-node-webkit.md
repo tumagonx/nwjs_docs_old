@@ -755,3 +755,11 @@ No server infrastructure is needed. All communication is encrypted and nothing s
 * send formatted source code
 * avatars for users
 * emoticons
+
+### Zen Notebook
+
+Zen Notebook is a daily distraction-free diary/journal/notebook similar to Red Notebook with more features in the works
+
+[Zen Notebook](http://zen-notebook.com)
+
+[![Screenshot](http://stephanmiller.com/sites/default/files/styles/large/public/screenshot_0.png)](http://zen-notebook.com)
