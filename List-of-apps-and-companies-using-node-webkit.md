@@ -505,18 +505,18 @@ Maintained by [passcod](https://github.com/passcod).
 
 ![](http://github.com/PCI-TDF/artomico/raw/master/artomico.png)
 
+### Yimello
+
+Tiny tool to help you browsing your bookmarks easily. More details: http://yimello.adriencadet.com/
+
+![Yimello](http://yimello.adriencadet.com/assets/img/insights/overview.jpg)
+
 ### Youpp
 
 Simple YouTube client for Mac OSX. 
 [Youpp](http://ambrosechua.github.io/Youpp/)
 
 ![](http://ambrosechua.github.io/Youpp/screenshots/Youpp-splash-screenshot.png)
-
-### Yimello
-
-Tiny tool to help you browsing your bookmarks easily. More details: http://yimello.adriencadet.com/
-
-![Yimello](http://yimello.adriencadet.com/assets/img/logo-250.png)
 
 ## Companies
 
