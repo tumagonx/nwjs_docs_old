@@ -762,3 +762,11 @@ Zen Notebook is a daily distraction-free diary/journal/notebook similar to Red N
 [Zen Notebook](http://zen-notebook.com)
 
 [![Screenshot](http://stephanmiller.com/sites/default/files/styles/large/public/screenshot_0.png)](http://zen-notebook.com)
+
+
+### Sdal za mig
+
+Sdal za mig is software that used to send tax reports in russian federal tax service. Software available as web app, standalone app (node-webkit) and app for interactive kiosks (node-webkit).
+
+![Sdal za mig](http://i.imgur.com/T4CQSD5.png)
+![Sdal za mig](http://i.imgur.com/uFfzpje.png)
