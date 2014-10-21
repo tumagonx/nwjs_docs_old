@@ -4,6 +4,10 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Atraci] (https://github.com/Atraci/Atraci) ###
+ > Free music streaming player
+<img src="http://i.imgur.com/jpZVKgt.jpg">
+
 ### [Nevermore](https://github.com/nihgwu/Nevermore)
 
 > A shadowsocks client powered by node-webkit + angular.js
@@ -66,11 +70,6 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 * KeeeX is simple and quick to adopt
 
 <img src="https://content.wuala.com/contents/nguduong1988/keeex/keeex.png">
-
-### [Atraci] (https://github.com/Atraci/Atraci) ###
- > Free music streaming player
-
-<img src="https://camo.githubusercontent.com/f85f35c14b923f3e3a860f6c6039c62db8cc85a9/687474703a2f2f692e696d6775722e636f6d2f4c7a4344716b492e6a7067">
 
 ### Cellist
 
