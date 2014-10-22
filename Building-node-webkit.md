@@ -13,6 +13,8 @@ And preview the upstream instructions for your platform, they contained importan
 1. [Get the Chromium depot_tools](http://www.chromium.org/developers/how-tos/install-depot-tools).
 2. Setup building enviroment, see *Build Instructions* above.
 
+**Starting from v0.11.0, it's required to use at least VS2013 Pro update 2 to build on windows.** And see also the section 'Official extra build settings' below.
+
 ## Get the Code
 
 `node-webkit` is now a part of our custom `Chromium`, that means the way we get `node-webkit` is mostly the same with `Chromium`, following steps are indeed modified from the [Get the Code](http://www.chromium.org/developers/how-tos/get-the-code).
@@ -133,6 +135,12 @@ export GYP_GENERATORS='ninja'
 ninja -C out/Release nw -j4
 ````
 
+## Official extra build settings
+
+Windows all: set DEPOT_TOOLS_WIN_TOOLCHAIN=0; set GYP_MSVS_VERSION=2013  
+Win64: set GYP_DEFINES='host_arch=x64 target_arch=x64' and build in src/out/Release_x64  
+Mac ia32: export GYP_DEFINES='host_arch=ia32'  
+Linux ia32: export GYP_DEFINES='clang=0'  
 
 ##Tips
 1. You can specify what project files to generate through `GYP_GENERATORS`. And you can export it in `~/.bashrc` etc.For example, if you want to use `make`:
