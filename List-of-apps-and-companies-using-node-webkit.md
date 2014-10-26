@@ -4,6 +4,11 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Minecraft Snaps](https://github.com/Antrikshy/MinecraftSnaps)
+
+> A simple tool (for Mac, Windows version in the works) to save backups of Minecraft worlds before blowing stuff up and to restore them without having to manually copy folders.
+![](http://i.imgur.com/iw4cJzf.png)
+
 ### [Atraci] (https://github.com/Atraci/Atraci) ###
  > Free music streaming player
 <img src="http://i.imgur.com/jpZVKgt.jpg">
