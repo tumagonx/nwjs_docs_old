@@ -4,6 +4,11 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Bear With Me](http://steamcommunity.com/sharedfiles/filedetails/?id=332120189)
+
+> Bear With Me is a classic 2D, black and white, point´n´click adventure game which mixes noire mystery & horror elements in a cute style filled with puns. 
+![](http://i.imgur.com/Pt891hj.jpg)
+
 ### [Minecraft Snaps](https://github.com/Antrikshy/MinecraftSnaps)
 
 > A simple tool (for Mac, Windows version in the works) to save backups of Minecraft worlds before blowing stuff up and to restore them without having to manually copy folders.
