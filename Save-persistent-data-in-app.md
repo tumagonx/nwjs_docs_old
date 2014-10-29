@@ -65,6 +65,29 @@ NB: An extra step is required to use EJDB in a node-webkit app. Please refer to 
 ## NeDB
 [NeDB](https://github.com/louischatriot/nedb) (Node embedded database) is a pure javascript database for Node.js (unlike EJDB, you don't need to compile anything). It implements the most common subset of MongoDB's and can be used to persist data or simply as an in-memory datastore. Even though it's not native, it's still fast enough for desktop apps (40k reads/s, 10k writes/s).
 
+## StoreDB
+
+[StoreDB](https://github.com/djyde/StoreDB) is a local database **based on localStorage**. It makes you can use localStorage to store complex data by providing MogonDB-Style APIs and using concepts like `collection`, `document`, etc.
+
+It is super simple and friendly to store data as below:
+
+```javascript
+
+//insert data
+storedb('players').insert({"name":"Randy","sex":"male","score":20},function(err,result){
+  if(!err){
+    //do sth...
+  } else //do sth...
+})
+
+//update data
+storedb('players').update({"name":"Randy"},{"$inc":{"score":"10"}},function(err){
+  if(!err){
+    //do sth...
+  } else //do sth...
+})
+```
+
 ## Web Storage
 
 Web storage is a easy to use key-value database, you can use it like normal js objects but everything will be saved to disk for you.
@@ -93,6 +116,8 @@ console.log(sessionStorage.life);
 ```
 
 **Be warned that for large data sets web storage is incredibly impractical, since the API is synchronous, there is no advanced indexing/queries (only one key-value store) and the value can only be a string.**
+
+
 
 ## Application Cache
 
