@@ -1,4 +1,4 @@
-If you used to writing server side scripts, and have little experience writing mobile HTML apps, then this guide is absolutely for you. And if you think you're an expert on node.js or mobile HTML apps, you should also read this guide carefully, too many 'experts' were restricted to their old experiences and failed to be aware of new possibilities.
+If you're used to writing server side scripts, and have little experience writing mobile HTML apps, then this guide is absolutely for you. And if you think you're an expert on node.js or mobile HTML apps, you should also read this guide carefully, too many 'experts' were restricted to their old experiences and failed to be aware of new possibilities.
 
 ## Express?
 
