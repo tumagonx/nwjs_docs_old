@@ -5,7 +5,7 @@ automatically on file changes.
 
 To do this, you can add this script tag to the end of your main file:
 
-```
+```html
 <script>
   var path = './';
   var fs = require('fs');
@@ -27,7 +27,7 @@ then change the script tag content:
 
 `npm install gaze`
 
-```
+```html
   <script>
    var Gaze = require('gaze').Gaze;
    var gaze = new Gaze('**/*');
@@ -43,7 +43,7 @@ then change the script tag content:
 
 `npm install chokidar`
 
-```
+```html
   <script>
     var chokidar = require('chokidar');
     var watcher  = chokidar.watch('.', {ignored: /[\/\\]\./});
@@ -58,7 +58,7 @@ then change the script tag content:
 
 `npm install gulp`
 
-```
+```html
 <script>
   var gulp = require('gulp');
   gulp.task('reload', function () {
@@ -66,5 +66,30 @@ then change the script tag content:
   });
 
   gulp.watch('**/*', ['reload']);
+</script>
+```
+Or if you don't want to reload the entire app when editing styles, you can attach a style task
+in gulp only to css files.
+
+```html
+<script>
+  var gulp = require('gulp');
+  
+  gulp.task('html', function () {
+    if (location) location.reload();
+  });
+
+  gulp.task('css', function () {
+    var styles = document.querySelectorAll('link[rel=stylesheet]');
+
+    for (var i = 0; i < styles.length; i++) {
+      // reload styles
+      var restyled = styles[i].getAttribute('href') + '?v='+Math.random(0,10000);
+      styles[i].setAttribute('href', restyled);
+    };
+  });
+
+  gulp.watch(['**/*.css'], ['css']);
+  gulp.watch(['**/*.html'], ['html']);
 </script>
 ```
