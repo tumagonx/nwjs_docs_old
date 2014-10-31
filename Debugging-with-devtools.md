@@ -2,7 +2,7 @@
 
 ## Open Developer Tools
 
-In order to show the `devtools` button in toolbar, you should make sure your window shows the toolbar:
+In order to show the `devtools` button in toolbar, you should edit package.json to make sure your window shows the toolbar:
 
 ```json
 {
