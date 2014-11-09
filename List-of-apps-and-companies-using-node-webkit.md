@@ -4,6 +4,11 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Nextday-Desktop](https://github.com/sanddudu/nextday-desktop)
+
+> Nextday-Desktop is a port of iOS App "NextDay" to Desktop. It will show you a picture of world scenery, a music and a sentence everyday.  
+![](http://ww2.sinaimg.cn/large/6529c470gw1em41kn596cj208w0f8myn.jpg)
+
 ### [Bear With Me](http://steamcommunity.com/sharedfiles/filedetails/?id=332120189)
 
 > Bear With Me is a classic 2D, black and white, point´n´click adventure game which mixes noire mystery & horror elements in a cute style filled with puns. 
