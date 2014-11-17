@@ -4,6 +4,11 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Schreiberling](https://github.com/lxndio/Schreiberling)
+
+> Schreiberling is a free, lightweight, completely customizable, open source, distraction free Markdown editor. It is currently in development so don't expect too much yet.
+![](http://www.lxnd.me/SchreiberlingScreenshot.png)
+
 ### [Nextday-Desktop](https://github.com/sanddudu/nextday-desktop)
 
 > Nextday-Desktop is a port of iOS App "NextDay" to Desktop. It will show you a picture of world scenery, a music and a sentence everyday.  
