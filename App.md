@@ -58,10 +58,61 @@ These 2 functions crashes the browser process and the renderer process respectiv
 
 ### getProxyForURL(url)
 
-_since v0.6.3_
-
+_since v0.6.3_  
 Query the proxy to be used for loading `url` in DOM. The return value is in the same format used in [PAC](http://en.wikipedia.org/wiki/Proxy_auto-config) (e.g. "DIRECT", "PROXY localhost:8080").
 
+### setProxyConfig(config)
+_since v0.11.1_  
+Set the proxy config which the web engine will be used to request network resources.  
+Rule: 
+````
+    // Parses the rules from a string, indicating which proxies to use.                                                                                                                        
+    //                                                                                                                                                                                         
+    //   proxy-uri = [<proxy-scheme>"://"]<proxy-host>[":"<proxy-port>]                                                                                                                        
+    //                                                                                                                                                                                         
+    //   proxy-uri-list = <proxy-uri>[","<proxy-uri-list>]                                                                                                                                     
+    //                                                                                                                                                                                         
+    //   url-scheme = "http" | "https" | "ftp" | "socks"                                                                                                                                       
+    //                                                                                                                                                                                         
+    //   scheme-proxies = [<url-scheme>"="]<proxy-uri-list>                                                                                                                                    
+    //                                                                                                                                                                                         
+    //   proxy-rules = scheme-proxies[";"<scheme-proxies>]                                                                                                                                     
+    //                                                                                                                                                                                         
+    // Thus, the proxy-rules string should be a semicolon-separated list of                                                                                                                    
+    // ordered proxies that apply to a particular URL scheme. Unless specified,                                                                                                                
+    // the proxy scheme for proxy-uris is assumed to be http.                                                                                                                                  
+    //                                                                                                                                                                                         
+    // Some special cases:                                                                                                                                                                     
+    //  * If the scheme is omitted from the first proxy list, that list applies                                                                                                                
+    //    to all URL schemes and subsequent lists are ignored.                                                                                                                                 
+    //  * If a scheme is omitted from any proxy list after a list where a scheme                                                                                                               
+    //    has been provided, the list without a scheme is ignored.                                                                                                                             
+    //  * If the url-scheme is set to 'socks', that sets a fallback list that                                                                                                                  
+    //    to all otherwise unspecified url-schemes, however the default proxy-                                                                                                                 
+    //    scheme for proxy urls in the 'socks' list is understood to be                                                                                                                        
+    //    socks4:// if unspecified.                                                                                                                                                            
+    //                                                                                                                                                                                         
+    // For example:                                                                                                                                                                            
+    //   "http=foopy:80;ftp=foopy2"  -- use HTTP proxy "foopy:80" for http://                                                                                                                  
+    //                                  URLs, and HTTP proxy "foopy2:80" for                                                                                                                   
+    //                                  ftp:// URLs.                                                                                                                                           
+    //   "foopy:80"                  -- use HTTP proxy "foopy:80" for all URLs.                                                                                                                
+    //   "foopy:80,bar,direct://"    -- use HTTP proxy "foopy:80" for all URLs,                                                                                                                
+    //                                  failing over to "bar" if "foopy:80" is                                                                                                                 
+    //                                  unavailable, and after that using no                                                                                                                   
+    //                                  proxy.                                                                                                                                                 
+    //   "socks4://foopy"            -- use SOCKS v4 proxy "foopy:1080" for all                                                                                                                
+    //                                  URLs.                                                                                                                                                  
+    //   "http=foop,socks5://bar.com -- use HTTP proxy "foopy" for http URLs,                                                                                                                  
+    //                                  and fail over to the SOCKS5 proxy                                                                                                                      
+    //                                  "bar.com" if "foop" is unavailable.                                                                                                                    
+    //   "http=foopy,direct://       -- use HTTP proxy "foopy" for http URLs,                                                                                                                  
+    //                                  and use no proxy if "foopy" is                                                                                                                         
+    //                                  unavailable.                                                                                                                                           
+    //   "http=foopy;socks=foopy2   --  use HTTP proxy "foopy" for http URLs,                                                                                                                  
+    //                                  and use socks4://foopy2 for all other                                                                                                                  
+    //                                  URLs.                                          
+````
 ### quit()
 
 Quit current app. This method will **not** send `close` event to windows and app will just quit quietly.
