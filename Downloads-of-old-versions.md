@@ -1,3 +1,10 @@
+## v0.11.0 (Nov 11, 2014)
+Node v0.11.13, Chromium 35.0.1916.157  
+[release notes](https://groups.google.com/d/msg/node-webkit/nDN1VclGRAA/_AKK5VIrH6gJ)  
+ * Linux: [32bit](http://dl.node-webkit.org/v0.11.0/node-webkit-v0.11.0-linux-ia32.tar.gz) / [64bit](http://dl.node-webkit.org/v0.11.0/node-webkit-v0.11.0-linux-x64.tar.gz)
+ * Windows: [32bit](http://dl.node-webkit.org/v0.11.0/node-webkit-v0.11.0-win-ia32.zip) / [64bit](http://dl.node-webkit.org/v0.11.0/node-webkit-v0.11.0-win-x64.zip)
+ * Mac 10.7+: [32bit](http://dl.node-webkit.org/v0.11.0/node-webkit-v0.11.0-osx-ia32.zip) / [64bit](http://dl.node-webkit.org/v0.11.0/node-webkit-v0.11.0-osx-x64.zip)
+
 ## v0.10.5 (Sep 16, 2014)
 Node v0.11.13, Chromium 35.0.1916.157  
 [release notes](https://groups.google.com/d/msg/node-webkit/l2PsW-0G5Oc/Fx19-UrS3ZoJ)  
