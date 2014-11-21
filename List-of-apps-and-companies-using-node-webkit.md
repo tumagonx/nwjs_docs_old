@@ -4,6 +4,10 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [U2Bear](https://github.com/shubapp/u2bear)
+> An awesome client for watching and downloading Youtube videos without adds.
+![U2Bear](http://i.imgur.com/FVYyjSN.jpg)
+
 ### [Wunderlist for Windows 7](https://www.wunderlist.com/download)
 > Wunderlist helps millions of people around the world capture their ideas, things to do and places to see. Whether you’re sharing a grocery list with a loved one, working on a project, or planning a vacation, Wunderlist makes it easy to share your lists and collaborate with everyone in your life. Wunderlist then instantly syncs between your phone, tablet and computer, so you can access your to-do lists from anywhere.
 ![Wunderlist for Windows 7](https://s3.amazonaws.com/uploads.hipchat.com/110810/861188/6W8tWj6skVyO8pM/fenster.png)
