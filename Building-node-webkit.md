@@ -142,6 +142,8 @@ Win64: set GYP_DEFINES='host_arch=x64 target_arch=x64' and build in src/out/Rele
 Mac ia32: export GYP_DEFINES='host_arch=ia32'  
 Linux ia32: export GYP_DEFINES='clang=0'  
 
+You can view the official build environment settings and commands in the build log here: http://buildbot-master.node-webkit.org:8010/waterfall
+
 ##Tips
 1. You can specify what project files to generate through `GYP_GENERATORS`. And you can export it in `~/.bashrc` etc.For example, if you want to use `make`:
 ````
