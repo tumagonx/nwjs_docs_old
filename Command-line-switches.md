@@ -9,6 +9,9 @@ Force disabling toolbar.
 ### --data-path
 Override the default data path (where cookies and localStorage etc. resides)
 
+### --disable-transparency
+Completely turn off the code handling window transparency.
+
 ### And more: all the switches supported by [Content API of Chromium](http://src.chromium.org/svn/trunk/src/content/public/common/content_switches.cc)
 
 All the command line arguments can be predefined in the application's manifest file. See `chromium-args` in [[Manifest-format]]
