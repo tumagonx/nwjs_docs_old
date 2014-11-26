@@ -1,12 +1,12 @@
 ## v0.11.1 (Nov 20, 2014)
-Node v0.11.13, Chromium 35.0.1916.157  
+Node v0.11.13, Chromium 38.0.2125.104  
 [release notes](https://groups.google.com/d/msg/node-webkit/zR_ZWxMvDqs/kYOC7sJ7XOUJ)  
  * Linux: [32bit](http://dl.node-webkit.org/v0.11.1/node-webkit-v0.11.1-linux-ia32.tar.gz) / [64bit](http://dl.node-webkit.org/v0.11.1/node-webkit-v0.11.1-linux-x64.tar.gz)
  * Windows: [32bit](http://dl.node-webkit.org/v0.11.1/node-webkit-v0.11.1-win-ia32.zip) / [64bit](http://dl.node-webkit.org/v0.11.1/node-webkit-v0.11.1-win-x64.zip)
  * Mac 10.7+: [32bit](http://dl.node-webkit.org/v0.11.1/node-webkit-v0.11.1-osx-ia32.zip) / [64bit](http://dl.node-webkit.org/v0.11.1/node-webkit-v0.11.1-osx-x64.zip)
 
 ## v0.11.0 (Nov 11, 2014)
-Node v0.11.13, Chromium 35.0.1916.157  
+Node v0.11.13, Chromium 38.0.2125.104  
 [release notes](https://groups.google.com/d/msg/node-webkit/nDN1VclGRAA/_AKK5VIrH6gJ)  
  * Linux: [32bit](http://dl.node-webkit.org/v0.11.0/node-webkit-v0.11.0-linux-ia32.tar.gz) / [64bit](http://dl.node-webkit.org/v0.11.0/node-webkit-v0.11.0-linux-x64.tar.gz)
  * Windows: [32bit](http://dl.node-webkit.org/v0.11.0/node-webkit-v0.11.0-win-ia32.zip) / [64bit](http://dl.node-webkit.org/v0.11.0/node-webkit-v0.11.0-win-x64.zip)
