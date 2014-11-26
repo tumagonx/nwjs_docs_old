@@ -91,6 +91,10 @@ _since v0.3.5_
 
 **Get** or **Set** whether we're in fullscreen mode.
 
+### Window.isTransparent  
+_since v0.11.2_  
+**Get** whether transparency is turned on
+
 ### Window.isKioskMode
 
 _since v0.3.5_
@@ -211,6 +215,10 @@ Leave the Kiosk mode.
 _Requires node-webkit >= v0.3.5_
 
 Toggle the kiosk mode.
+
+### Window.setTransparent(transparent)  
+_since v0.11.2_  
+turn on/off the transparency support
 
 ### Window.showDevTools([id | iframe, headless])
 
