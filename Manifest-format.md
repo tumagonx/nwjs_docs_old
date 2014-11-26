@@ -216,6 +216,11 @@ _since v0.7.3_
 ### kiosk
 *(boolean)* whether to use `Kiosk` mode. In `Kiosk` mode, the app will be fullscreen and try to prevent users from leaving the app, so you should remember to provide a way in app to leave `Kiosk` mode. This mode is mainly used for presentation on public displays _(available after node-webkit v0.3.1)_
 
+### transparent
+*(boolean)* whether to turn on transparent window mode. The default is `false`. _since v0.11.2_  
+
+_control the transparency with rgba background value in CSS. Use command line argument `--disable-transparency` to disable this feature completely. There is experimental support for "click-through" on the transparent region: add `--disable-gpu` argument to the command line. See the discussion here: https://github.com/rogerwang/node-webkit/issues/132 _
+
 ## WebKit Subfields
 
 _Following fields requires node-webkit >= v0.3.0._
