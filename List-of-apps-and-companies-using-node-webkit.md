@@ -796,3 +796,10 @@ Sdal za mig is software that used to send tax reports in russian federal tax ser
 
 ![Sdal za mig](http://i.imgur.com/T4CQSD5.png)
 ![Sdal za mig](http://i.imgur.com/uFfzpje.png)
+
+
+### SCHEMA Reader
+
+[SCHEMA Reader](http://www.schema.de/en/reader "SCHEMA Reader") is a free Online-Help System or Documentation browser. It offers various navigation and personalization functionalities like table of contents, index, full text search, bookmarks, browse history, filter based on taxonomies, and some more.
+
+[![SCHEMA Reader](http://i.imgur.com/bd5r1cp.png)](http://www.schema.de/en/reader "SCHEMA Reader")
