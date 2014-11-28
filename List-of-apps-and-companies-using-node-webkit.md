@@ -4,6 +4,16 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Story-writer](http://markdown.xiaoshujiang.com)
+Story-writer is a free  Markdown editor.
+It support web version and node-webkit version.
+the main fetures:
+* export word
+* export zip
+* sync evernote
+and so on.
+![pic](https://raw.githubusercontent.com/suziwen/markdownxiaoshujiang/master/snapshot.png)
+
 ### [U2Bear](https://github.com/shubapp/u2bear)
 > An awesome client for watching and downloading Youtube videos without adds.
 ![U2Bear](http://i.imgur.com/FVYyjSN.jpg)
