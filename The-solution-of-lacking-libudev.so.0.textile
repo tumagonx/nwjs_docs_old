@@ -52,3 +52,14 @@ sed -i 's/udev\.so\.0/udev.so.1/g' nw
 ```
 
 As should be obvious, this method comes with increased risk of damaging the nw executable and should only be attempted by skilled users *who understand what the command is doing*.
+
+
+//////////////////////////////////////////////////////////////////////////
+
+
+Another method for: ubuntu v12.04+ & mint v15.0+ use this code:
+       X64
+           sudo ln -s /lib/x86_64-linux-gnu/libudev.so.1 /lib/x86_64-linux-gnu/libudev.so.0
+Or this
+       X32
+           sudo ln -s /lib/i386-linux-gnu/libudev.so.1 /lib/i386-linux-gnu/libudev.so.0
