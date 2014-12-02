@@ -24,7 +24,7 @@ You can use the `--remote-debugging-port=port` command parameter to specify whic
 
 ## Bugs of Developer Tools
 
-Currently not everything of developer tools is working well, bellow are the things that don't work:
+Currently not everything of developer tools is working well, below are the things that don't work:
 
 * node modules don't shown in script sources
 
