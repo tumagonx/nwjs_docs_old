@@ -498,6 +498,7 @@ Emitted when a new window is requested from this window or a child iframe, e.g. 
  * `forceDownload()` : force the link to be a downloadable, or open by external program
  * `forceNewWindow()` : force the link to be opened in a new window
  * `forceNewPopup()` : force the link to be opened in a new popup window
+ * `setNewWindowManifest(m)` : control the options for the new popup window. The object `m` is in the same format as the `window` subfield in [[Manifest format]] (e.g. `{"frame" : false}`). _since v0.11.3_
 
 ## Issues
 
