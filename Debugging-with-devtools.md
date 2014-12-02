@@ -26,7 +26,7 @@ You can use the `--remote-debugging-port=port` command parameter to specify whic
 
 Currently not everything of developer tools is working well, below are the things that don't work:
 
-* node modules don't shown in script sources
+* node modules don't show in script sources
 
 ## Why the devtools shows an empty window?
 
