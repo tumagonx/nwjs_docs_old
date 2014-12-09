@@ -4,6 +4,15 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Akiee](http://rockiger.com/en/akiee/)
+
+A cross plattform task manager that stores its tasks in a Markdown file (similar to org-mode) and let's you easily rank your tasks. It works great with different time management methods like GTD or Personal Kanban.
+
+* Download for Linux, Mac and Windows: http://rockiger.com/en/akiee/
+* Source: https://github.com/rockiger/akiee
+
+![Akiee Task Manager](http://rockiger.com/static/img/akiee-leader.jpg "Akiee Task Manager")
+
 ### [Tinder++](http://tinderplusplus.com/)
 
 (open source: [mfkp/tinderplusplus](https://github.com/mfkp/tinderplusplus))
