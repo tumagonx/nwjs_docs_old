@@ -4,6 +4,18 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Tinder++](http://tinderplusplus.com/)
+
+(open source: [mfkp/tinderplusplus](https://github.com/mfkp/tinderplusplus))
+
+Tinder++ is a desktop application for Mac and Windows that allows you to swipe from your computer, plus some extra features:
+
+* Hotkeys: Right arrow for like, Left arrow for pass, Backspace for undo. Simple.
+* Change your location so you can "Tinder Ahead" if you're going to be traveling.
+* Undo: ever missed your soulmate because you were swiping too fast? No more.
+
+![](http://tinderplusplus.com/img/screenshot.png)
+
 ### [Story-writer](http://soft.xiaoshujiang.com)
 
 Story-writer is a free  Markdown editor.
