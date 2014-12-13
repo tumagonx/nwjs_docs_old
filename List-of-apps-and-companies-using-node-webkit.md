@@ -4,6 +4,14 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [TopAnimeStream](http://www.topanimestream.com/en/)
+
+Watch anime / cartoon stream online on Windows, Mac or Linux. Example of shows you can watch ads FREE: Family Guy, Attack on Titan, Naruto, Archer, Death Note, Sword Art Online and a lot more. More than 3000 animes.
+* Download here: http://www.topanimestream.com/en/downloads/
+* Github link: https://github.com/senpaiski/TopAnimeStream
+
+![TopAnimeStream](https://camo.githubusercontent.com/83bcd3c0f6820ee016b6a4de47240e99b9fbfa8e/687474703a2f2f7777772e746f70616e696d6573747265616d2e636f6d2f496d616765486f73742f35362f33392f382f6465736b746f705f6170705f746f70616e696d6573747265616d5f64657461696c5f706167652e6a7067 "TopAnimeStream")
+
 ### [Akiee](http://rockiger.com/en/akiee/)
 
 A cross plattform task manager that stores its tasks in a Markdown file (similar to org-mode) and let's you easily rank your tasks. It works great with different time management methods like GTD or Personal Kanban.
