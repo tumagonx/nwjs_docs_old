@@ -15,7 +15,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[Troubleshooting]]
 * [[Security]]
 * [Sample applications](https://github.com/zcbenz/nw-sample-apps)
-* [Chinese document based English wiki for Chinese users(中文文档)](http://www.cnblogs.com/xuanhun/category/568577.html)
+* [Chinese document based English wiki for Chinese users(中文文档)](http://www.xuanhun521.com/?search=node)
 
 **Library Reference:**
 * [[Manifest format]] — the format of `package.json`
