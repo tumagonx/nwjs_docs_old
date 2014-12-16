@@ -88,7 +88,7 @@ Eventually, we will provide scripts which do this automatically for various pack
 
 _Following guides apply to node-webkit >= 0.2.4_
 
-On OS X, the `node-webkit.app` is a directory that can be easily changed. To make node-webkit automatically open your app, you need to put your app file under `Contents/Resources` and name it `app.nw`. The bonus over other platforms is, the `app.nw` needs not to be a zip file, if you want to speed up startup, you can make `app.nw` your app's directory.
+On OS X, the `node-webkit.app` is a directory that can be easily changed. To make node-webkit automatically open your app, you need to put your app file under `Contents/Resources` and name it `app.nw`. The bonus over other platforms is that `app.nw` does not need to be a zip file, if you want to speed up startup, you can make `app.nw` your app's directory.
 
 And you need to modify following files to make a real distribution of yours:
 
