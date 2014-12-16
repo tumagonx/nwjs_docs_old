@@ -264,6 +264,12 @@ _Requires node-webkit >= v0.3.4_
 
 Sets the widget to be on top of all other windows in the windowing system.
 
+### Window.setVisibleOnAllWorkspaces(Boolean)
+For platforms that support multiple workspaces (currently Mac and Linux), this allows node-webkit windows to be visible on all workspaces simultaneously.
+
+### Window.canSetVisibleOnAllWorkspaces()
+returning a a boolean indicating if the platform (currently OS X and Linux) support Window API object method setVisibleOnAllWorkspace().
+
 ### Window.setPosition(String position)
 
 Shortcut to move window to specified `position`. Currently only `center` is supported on all platforms, which will put window in the middle of the screen.
