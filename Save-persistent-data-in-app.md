@@ -65,6 +65,9 @@ NB: An extra step is required to use EJDB in a node-webkit app. Please refer to 
 ## NeDB
 [NeDB](https://github.com/louischatriot/nedb) (Node embedded database) is a pure javascript database for Node.js (unlike EJDB, you don't need to compile anything). It implements the most common subset of MongoDB's and can be used to persist data or simply as an in-memory datastore. Even though it's not native, it's still fast enough for desktop apps (40k reads/s, 10k writes/s).
 
+## LowDB
+[LowDB](https://github.com/typicode/lowdb) is a flat JSON file database for Node. It uses Lo-Dash functional programming API.
+
 ## StoreDB
 
 [StoreDB](https://github.com/djyde/StoreDB) is a local database **based on localStorage**. It makes you can use localStorage to store complex data by providing MogonDB-Style APIs and using concepts like `collection`, `document`, etc.
