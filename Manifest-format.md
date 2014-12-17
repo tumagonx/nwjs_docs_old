@@ -204,6 +204,11 @@ _since v0.7.3_
 ### always-on-top
 *(boolean)* whether the window should always stay on top of other windows _(available after node-webkit v0.3.4)_
 
+### visible-on-all-workspaces
+_(since v0.11.3)_
+
+*(boolean)* whether the window should be visible on all workspaces simultaneously (on platforms that support multiple workspaces, currently Mac OS X and Linux).
+
 ### fullscreen
 *(boolean)* whether window is fullscreen _(available after node-webkit v0.3.0)_
 
