@@ -56,7 +56,9 @@ Following fields control which features `node-webkit` should provide and how `no
 *(boolean)* set `nodejs` to false will disable Node support in WebKit.
 
 ### node-main
-*(string)* specify the path to a node.js script file, it will be executed on startup in Node context. This script will have same runtime environment with normal node.js binary. The script is ensured to run before the first DOM window load starting from v0.3.3. [See here](node-main) for more information. _(available after node-webkit v0.3.1)_
+_since v0.3.1_
+
+*(string)* specify the path to a node.js script file, it will be executed on startup in Node context. This script will have same runtime environment with normal node.js binary. The script is ensured to run before the first DOM window load starting from v0.3.3. [See here](node-main) for more information.
 
 ### single-instance
 *(boolean)* by default node-webkit only allows one instance of your app if your app is a standalone package (packaged with instructions of [[How to package and distribute your apps]]), if you want to allow multiple instances of your app running at the same time, specify this to `false`.  
@@ -148,10 +150,13 @@ _since v0.4.1_
 }
 ```
 ### inject-js-start / inject-js-end
-*(string)* a local filename, relative to the application path, used to specify a JavaScript file to inject to the window. `inject-js-start`: The injecting JavaScript code is to be executed after any files from css, but before any other DOM is constructed or any other script is run; `inject-js-end`: The injecting JavaScript code is to be executed after the document object is loaded, before `onload` event is fired. This is mainly to be used as an option of `Window.open()` to inject JS in a new window. _(Since v0.9.0 and v0.8.5)_
+_since v0.9.0 and v0.8.5_
+
+*(string)* a local filename, relative to the application path, used to specify a JavaScript file to inject to the window. `inject-js-start`: The injecting JavaScript code is to be executed after any files from css, but before any other DOM is constructed or any other script is run; `inject-js-end`: The injecting JavaScript code is to be executed after the document object is loaded, before `onload` event is fired. This is mainly to be used as an option of `Window.open()` to inject JS in a new window. 
 
 ### additional_trust_anchors
 _since v0.11.1_  
+
 containing a list of PEM-encoded certificates (i.e. `"-----BEGIN CERTIFICATE-----\n...certificate data...\n-----END CERTIFICATE-----\n"`).  
 These certificates are used as additional root certificates for validation, to allow connecting to services using a self-signed certificate or certificates issued by custom CAs.
 
@@ -161,16 +166,14 @@ _since v0.4.2_
 *(string)* Specify the path to the snapshot file to be loaded with the application. The snapshot file contains compiled code of your application. See [[Protect JavaScript source code with v8 snapshot]].
 
 ### dom_storage_quota
-
 _since v0.6.1_
 
 *(int)* Number of mega bytes for the quota of the DOM storage. The suggestion is to put double the value you want.
 
 ### no-edit-menu
-
 _since v0.7.3_
 
-*(boolean)* whether the default `Edit` menu should be disabled on Mac. The default value is `false`. Only effective on Mac. **This is a workaround for a feature request and is expected to be replaced by something else soon**
+*(boolean)* whether the default `Edit` menu should be disabled on Mac OS X. The default value is `false`. Only effective on Mac OS X. **This is a workaround for a feature request and is expected to be replaced by something else soon**
 
 ## Window Subfields
 
@@ -202,37 +205,50 @@ _since v0.7.3_
 *(boolean)* whether window is resizable _(available after node-webkit v0.3.0)_
 
 ### always-on-top
-*(boolean)* whether the window should always stay on top of other windows _(available after node-webkit v0.3.4)_
+_since v0.3.4_
+
+*(boolean)* whether the window should always stay on top of other windows.
 
 ### visible-on-all-workspaces
-_(since v0.11.3)_
+_since v0.11.3_
 
 *(boolean)* whether the window should be visible on all workspaces simultaneously (on platforms that support multiple workspaces, currently Mac OS X and Linux).
 
 ### fullscreen
-*(boolean)* whether window is fullscreen _(available after node-webkit v0.3.0)_
+_since v0.3.0_
+
+*(boolean)* whether window is fullscreen
 
 ### show_in_taskbar
-*(boolean)* whether the window is shown in taskbar or dock. The default is `true`. _since v0.9.2_
+_since v0.9.2_
+
+*(boolean)* whether the window is shown in taskbar or dock. The default is `true`. 
 
 ### frame
+_since v0.3.0_
 
-*(boolean)* specify it to `false` to make the window frameless _(available after node-webkit v0.3.0)_
+*(boolean)* specify it to `false` to make the window frameless 
 
 ### show
-*(boolean)* specify it to `false` if you want your app to be hidden on startup _(available after node-webkit v0.3.0)_
+_since v0.3.0_
+
+*(boolean)* specify it to `false` if you want your app to be hidden on startup 
 
 ### kiosk
-*(boolean)* whether to use `Kiosk` mode. In `Kiosk` mode, the app will be fullscreen and try to prevent users from leaving the app, so you should remember to provide a way in app to leave `Kiosk` mode. This mode is mainly used for presentation on public displays _(available after node-webkit v0.3.1)_
+_since v0.3.1_
+
+*(boolean)* whether to use `Kiosk` mode. In `Kiosk` mode, the app will be fullscreen and try to prevent users from leaving the app, so you should remember to provide a way in app to leave `Kiosk` mode. This mode is mainly used for presentation on public displays
 
 ### transparent
-*(boolean)* whether to turn on transparent window mode. The default is `false`. _since v0.11.2_  
+_since v0.11.2_
+
+*(boolean)* whether to turn on transparent window mode. The default is `false`.   
 
 _control the transparency with rgba background value in CSS. Use command line argument `--disable-transparency` to disable this feature completely. There is experimental support for "click-through" on the transparent region: add `--disable-gpu` argument to the command line. See the discussion here: https://github.com/rogerwang/node-webkit/issues/132 _
 
 ## WebKit Subfields
 
-_Following fields requires node-webkit >= v0.3.0._
+_The following fields require node-webkit >= v0.3.0._
 
 ### plugin
 *(boolean)* whether to load external browser plugins like Flash, default to false.
