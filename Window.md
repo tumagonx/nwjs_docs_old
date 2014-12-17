@@ -170,7 +170,7 @@ Like reload(), but don't use caches (aka "shift-reload").
 
 ### Window.maximize()
 
-Maximize the window on GTK and Windows, zoom the window on Mac.
+Maximize the window on GTK and Windows, zoom the window on Mac OS X.
 
 ### Window.unmaximize()
 
@@ -178,7 +178,7 @@ Unmaximize the window, e.g. the reverse of `maximize()`.
 
 ### Window.minimize()
 
-Minimize the window to taskbar on Windows, iconify the window on GTK, and miniaturize the window on Mac.
+Minimize the window to task bar on Windows, iconify the window on GTK, and miniaturize the window on Mac OS X.
 
 ### Window.restore()
 
@@ -265,10 +265,20 @@ _Requires node-webkit >= v0.3.4_
 Sets the widget to be on top of all other windows in the windowing system.
 
 ### Window.setVisibleOnAllWorkspaces(Boolean)
-For platforms that support multiple workspaces (currently Mac and Linux), this allows node-webkit windows to be visible on all workspaces simultaneously.
+
+_since v0.11.3_
+
+For platforms that support multiple workspaces (currently Mac OS X and Linux), this allows node-webkit windows to be visible on all workspaces simultaneously.
+
+For example usage see [visible_on_all_workspaces manual test](https://github.com/rogerwang/node-webkit/tree/0d9a0319b49c665c88d69ee6b1093bb1ff8f4915/tests/manual_tests/visible_on_all_workspaces).
+
+For further information see https://github.com/rogerwang/node-webkit/issues/2523.
 
 ### Window.canSetVisibleOnAllWorkspaces()
-returning a a boolean indicating if the platform (currently OS X and Linux) support Window API object method setVisibleOnAllWorkspace().
+
+_since v0.11.3_
+
+Returns a a boolean indicating if the platform (currently Mac OS X and Linux) support Window API object method `setVisibleOnAllWorkspace(Boolean)`.
 
 ### Window.setPosition(String position)
 
