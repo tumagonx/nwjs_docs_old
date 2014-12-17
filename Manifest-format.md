@@ -39,6 +39,10 @@ Each package must provide all the following fields in its package descriptor fil
 ### main
 *(string)* which page should be opened when `node-webkit` starts.
 
+You can specify an URL here. You can also specify just a filename (such as `index.html`) or a path (relative to the directory where your `package.json` resides).
+
+Note that you should not use parameters after a filename (such as `index.html?foo=bar`) because they'll be treated as parts of the file's path (for example, `index.html?foo=bar/baz` is a file `baz` in a directory named `index.html?foo=bar`) and that's probably not what you expect. When you need to pass some parameters to a local application, use an URL with the [[App protocol]].
+
 ### name 
 *(string)* the name of the package. This must be a unique, lowercase alpha-numeric name without spaces. It may include "." or "_" or "-" characters. It is otherwise opaque. 
 
