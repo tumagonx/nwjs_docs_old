@@ -54,8 +54,11 @@ For more information, you can read tutorials like [Introducing Web SQL Databases
 IndexedDB's API is asynchronous and relatively low-level and verbose, so you might prefer using an abstraction, like PouchDB.
 
 ## PouchDB
-[PouchDB](http://pouchdb.com/) is an embedded database engine inspired by CouchDB. In node-webkit, it can be used as an abstraction over IndexedDB (via the Chromium implementation) or directly on LevelDB (via the node.js module). As with CouchDB, there are no dynamic index-based queries, but you can dynamically aggregate a view via map/reduce. Unlike CouchDB, you cannot have incremental views, which ultimately makes retrieving data from it slow with large data sets (always execute map/reduce to query).
-It can directly replicate to/from CouchDB, which gives it an advantage if you are building an application that has to sync with the cloud.
+[PouchDB](http://pouchdb.com/) is an embedded database engine inspired by CouchDB. In node-webkit, it can be used as an abstraction over IndexedDB or WebSQL (via the Chromium implementations) or directly on LevelDB (via the node.js module).
+
+As with CouchDB, there are no dynamic index-based queries, but you can dynamically aggregate a view via map/reduce. It can directly replicate to/from CouchDB, which gives it an advantage if you are building an application that has to sync with the cloud.
+
+To get started with PouchDB and node-webkit, check out [node-webkit-pouchdb-demo](https://github.com/nolanlawson/node-webkit-pouchdb-demo).
 
 ## EJDB
 [EJDB](https://github.com/Softmotions/ejdb) (Embedded JSON Database engine) is a simple & fast database engine based on Tokyo Cabinet. It's usage copies MongoDB - you can easily make dynamic queries and sort/paginate the result.
