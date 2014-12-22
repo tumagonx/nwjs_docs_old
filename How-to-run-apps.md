@@ -46,6 +46,10 @@ You can setup an alias in your Terminal session to call the binary when you use 
     # alias to nw
     alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 
+You have to refresh the bash shell environment:
+
+    source ~/.bash_profile
+
 Now you can call nw from the commandline like Linux and Windows: 
 
     nw "/home/path/to/game" 
