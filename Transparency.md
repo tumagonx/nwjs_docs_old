@@ -17,12 +17,15 @@ you can also specify it in package.json
     "transparent": true
   }
 ```
+### Windows
+support only windows vista and above, DWM (Desktop Window Manager) must be enabled (i.e. transparency might not work on classic theme / basic version of the OS / using remote desktop)
+
 ### Linux
 you need to run node webkit with these params
 ```params
 --enable-transparent-visuals --disable-gpu
 ```
-and your window manager needs to support compositing
+and your window manager needs to support **compositing**
 
 ## Click through transparency
 _Click through transparency requires node-webkit >= v0.11.4_
@@ -31,4 +34,5 @@ you must run with these args
 ```params
 --disable-gpu --force-cpu-draw"
 ```
-the click through is only supported for **frameless**, **non resizable** frame, though it might work for other configuration, depending on the OS
+the click through is only supported for **frameless**, **non resizable** frame, though it might work for other configuration, depending on the OS.
+Click through only works if the alpha value in the pixel is 0
