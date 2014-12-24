@@ -218,7 +218,7 @@ Toggle the kiosk mode.
 
 ### Window.setTransparent(transparent)  
 _since v0.11.2_  
-turn on/off the transparency support
+turn on/off the transparency support, more info https://github.com/rogerwang/node-webkit/wiki/Transparency
 
 ### Window.showDevTools([id | iframe, headless])
 
