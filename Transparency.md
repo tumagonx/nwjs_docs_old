@@ -33,7 +33,7 @@ _Click through transparency requires node-webkit >= v0.11.4_
 to enable Transparency clickthrough (currently only supported on OSX / WIN)
 you must run with these args
 ```params
---disable-gpu --force-cpu-draw"
+--disable-gpu --force-cpu-draw
 ```
 the click through is only supported for **frameless**, **non resizable** frame, though it might work for other configuration, depending on the OS.
 Click through only works if the alpha value in the pixel is 0
