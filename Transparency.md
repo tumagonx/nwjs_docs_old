@@ -29,6 +29,7 @@ and your window manager needs to support **compositing**
 
 ## Click through transparency
 _Click through transparency requires node-webkit >= v0.11.4_
+
 to enable Transparency clickthrough (currently only supported on OSX / WIN)
 you must run with these args
 ```params
