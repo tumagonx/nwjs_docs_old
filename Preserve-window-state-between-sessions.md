@@ -166,7 +166,11 @@ win.window.addEventListener('resize', function () {
 }, false);
 
 win.on('close', function () {
-    saveWindowState();
+    try {
+        saveWindowState();
+    } catch(err) {
+        console.log("winstateError: " + err);
+    }
     this.close(true);
 });
 ```
