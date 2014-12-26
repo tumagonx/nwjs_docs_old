@@ -162,6 +162,10 @@ _Requires node-webkit >= v0.3.5_
 
 Reloads the current window.
 
+### Window.reloadDev()
+_since version 0.4.0_  
+Reloads the current page by starting a new renderer process from scratch. This is the same as pressing the "reload" button in the right side of the toolbar.
+
 ### Window.reloadIgnoringCache()
 
 _Requires node-webkit >= v0.3.5_
