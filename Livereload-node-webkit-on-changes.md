@@ -93,3 +93,26 @@ in gulp only to css files.
   gulp.watch(['**/*.html'], ['html']);
 </script>
 ```
+
+## Clearing the node modules cache
+
+If you want to reload and re-run your node modules, you'll need to the global `global.require.cache`. [See this StackOverflow question](http://stackoverflow.com/questions/25143532/node-webkit-clear-cache). Note that this will remove ALL modules from the cache, possibly including the `node-main` module:
+
+```coffee
+# Define a new `reload` task in Gulp that simply refreshes the current page
+gulp.task 'reload', ->
+	# Log that we're reloading the app
+	console.log 'Reloading app...'
+	# Clear and delete node-webkit's global required modules cache.
+	# See: http://stackoverflow.com/q/25143532/
+	for module_name, module of global.require.cache
+		delete global.require.cache[module_name]
+	# Refresh the page
+	window.location.reload()
+
+# Set Gulp to watch all files in the parent engine directory, and reload the
+# page when it detects a change.
+gulp.watch '**/*', ['reload']
+```
+
+
