@@ -110,8 +110,7 @@ gulp.task 'reload', ->
 	# Refresh the page
 	window.location.reload()
 
-# Set Gulp to watch all files in the parent engine directory, and reload the
-# page when it detects a change.
+# Set Gulp to watch all files, and reload the page when it detects a change.
 gulp.watch '**/*', ['reload']
 ```
 
