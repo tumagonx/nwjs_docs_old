@@ -1,6 +1,6 @@
 node-webkit adds Node.js support and enhancement in DOM for trusted code and content. **For untrusted code and content, it should remain in a normal `frame` or `iframe`**, which is the same as the one in browser. So there are 2 kinds of frames in node-webkit: `Node frame` and `normal frame`.
 
-As application developer, one should be keep in mind that contents should be loaded in correct frames.
+**As application developer, one should be keep in mind that contents should be loaded in correct frames.**
 
 Which frames are Node frames and which are not?
 
