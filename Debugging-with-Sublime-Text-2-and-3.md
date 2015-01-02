@@ -13,6 +13,7 @@ Sublime Text 2 is a great cross-platform editor for building node-webkit apps, y
     "path": "/Applications/node-webkit.app/Contents/MacOS/"
 }
 ````
+
 4. Save the configuration as `nodeWebKit.sublime-build` on the suggested folder
 5. Open a new window in Sublime Text 2 using `File -> New Window`
 6. Add your project to the window using `Project -> Add Folder to Project...`
