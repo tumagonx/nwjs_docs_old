@@ -13,13 +13,15 @@ Sublime Text 2 is a great cross-platform editor for building node-webkit apps, y
     "path": "/Applications/node-webkit.app/Contents/MacOS/"
 }
 ````
+4. Save the configuration as `nodeWebKit.sublime-build` on the suggested folder
+5. Open a new window in Sublime Text 2 using `File -> New Window`
+6. Add your project to the window using `Project -> Add Folder to Project...`
+7. Open your main application file (ex.: index.html) from the left side menu 
+8. Select `Tools -> Build System -> nodeWebKit` (required step just for Sublime Text 3)
+9. Select `Tools -> Build`
+10. At this point node-webkit application will launch with your project and you will be able to see the debugging output in Sublime Text 2
 
-4. Open a new window in Sublime Text 2 using `File -> New Window`
-5. Add your project to the window using `Project -> Add Folder to Project...`
-6. Open your main application file (ex.: index.html) from the left side menu and select `Tools -> Build`
-7. At this point node-webkit application will launch with your project and you will be able to see the debugging output in Sublime Text 2
-
-Work the same with Sublime Text 3.
+Work the same with Sublime Text 3, just notice step 8
 
 ### Windows
 As above, but the commands for the build system are as follows (replacing the path with the location of nw.exe):
