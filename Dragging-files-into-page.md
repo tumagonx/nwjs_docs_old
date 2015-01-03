@@ -19,7 +19,7 @@ window.ondrop = function(e) { e.preventDefault(); return false };
 
 var holder = document.getElementById('holder');
 holder.ondragover = function () { this.className = 'hover'; return false; };
-holder.ondragend = function () { this.className = ''; return false; };
+holder.ondragleave = function () { this.className = ''; return false; };
 holder.ondrop = function (e) {
   e.preventDefault();
 
