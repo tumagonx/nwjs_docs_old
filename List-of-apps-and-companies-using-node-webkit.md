@@ -4,6 +4,19 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Yasminoku](http://yasminoku.tuxfamily.org/)
+
+Yasminoku is an open source and free "Sudoku" game totally written in DHTML (JavaScript, CSS and HTML with newer version using CSS3 and HTML5 too) that can be controlled by mouse (or finger on mobile devices) and/or keyboard. Includes sudoku solver and sudoku generator. Browser version also allows anyone to print sudokus easily.
+
+This cross-platform and cross-browser game was tested under BeOS, Haiku, Linux, NetBSD, OpenBSD, FreeBSD, Windows, QNX, Android, iOS, BlackBerry PlayBook and others.
+
+Last old version (0.25a) was released on 25th July 2006, with last changes beyond 16th August 2006 (approximately). It was available in both English and Spanish languages.
+
+The new improved version (0.75a) was released on 9th December 2014 with a better mobile devices support, more platform ports (ported to desktop thanks to node-webkit), improved printing presentation, and is now multi-lingual with auto-detection (main version includes Chinese, English and Spanish languages and it is very easy to add new ones).
+
+![Yasminoku](http://yasminoku.tuxfamily.org/yasminoku_new.jpg "Yasminoku")
+
+
 ### [TopAnimeStream](http://www.topanimestream.com/en/)
 
 Watch anime / cartoon stream online on Windows, Mac or Linux. Example of shows you can watch ads FREE: Family Guy, Attack on Titan, Naruto, Archer, Death Note, Sword Art Online and a lot more. More than 3000 animes.
