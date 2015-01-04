@@ -866,3 +866,12 @@ Sdal za mig is software that used to send tax reports in russian federal tax ser
 [SCHEMA Reader](http://www.schema.de/en/reader "SCHEMA Reader") is a free Online-Help System or Documentation browser. It offers various navigation and personalization functionalities like table of contents, index, full text search, bookmarks, browse history, filter based on taxonomies, and some more.
 
 [![SCHEMA Reader](http://i.imgur.com/bd5r1cp.png)](http://www.schema.de/en/reader "SCHEMA Reader")
+
+
+### BeanCounter
+
+[BeanCounter](https://github.com/josephlewis42/beancounter) is an entirely web-based computer algebra system with a clean user interface similar to WolframAlpha. It supports feature addition through a simple plugin system making it adaptable to a wide variety of operations. Out of the box it supports expression evaluation, integration/differentiation, formatting expressions with LaTeX, solving for different variables and simplification.
+
+[![BeanCounter](https://raw.githubusercontent.com/josephlewis42/beancounter/master/screenshot.png)](https://github.com/josephlewis42/beancounter)
+
+
