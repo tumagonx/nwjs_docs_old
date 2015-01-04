@@ -13,8 +13,9 @@ This cross-platform and cross-browser game was tested under BeOS, Haiku, Linux, 
 Last old version (0.25a) was released on 25th July 2006, with last changes beyond 16th August 2006 (approximately). It was available in both English and Spanish languages.
 
 The new improved version (0.75a) was released on 9th December 2014 with a better mobile devices support, more platform ports (ported to desktop thanks to node-webkit), improved printing presentation, improved browser integration (can be included easily in any web site), and is now multilingual with language auto-detection (main version includes Chinese, English and Spanish languages and it is very easy to add new ones).
+Native ports that has been tested should work properly. Browser version will work virtually everywhere, on modern browsers as well as on old ones (including Internet Explorer 5.0).
 
-The game can be downloaded or played online at [http://yasminoku.tuxfamily.org](http://yasminoku.tuxfamily.org)
+To download the game, play online or include it in your web site for free you can visit [http://yasminoku.tuxfamily.org](http://yasminoku.tuxfamily.org)
 
 ![Yasminoku](http://yasminoku.tuxfamily.org/yasminoku_new.jpg "Yasminoku")
 
