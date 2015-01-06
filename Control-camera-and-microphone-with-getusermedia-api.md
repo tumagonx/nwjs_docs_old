@@ -68,7 +68,7 @@ function takePhoto()
 
 ### Applying effects
 
-Using CSS Filters, we can apply some gnarly effects to the <video> as it is captured:
+Using CSS Filters, we can apply some gnarly effects to the video as it is captured:
 
 ```html
 <style>
