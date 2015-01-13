@@ -14,3 +14,4 @@
 * [Node Webkit – Build Desktop Apps with Node and Web Technologies](http://thejackalofjavascript.com/getting-started-with-node-webkit-apps/) by THE JACKAL OF JAVASCRIPT
 * [Build Desktop Apps with JavaScript and Node WebKit](http://modernweb.com/2014/02/10/build-desktop-apps-with-javascript-and-node-webkit/) by modernweb
 * [Node Webkit powered Dashboard application](http://thejackalofjavascript.com/node-webkit-powered-dashboard-app/) by THE JACKAL OF JAVASCRIPT
+* [Creating Your First Desktop App With HTML, JS, and Node-WebKit](http://tutorialzine.com/2015/01/your-first-node-webkit-app/) by Tutorialzine
