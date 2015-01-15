@@ -734,7 +734,7 @@ Original and Great team
 * http://getpopcornti.me/
 
 Follower team (holds the original project) 
-* http://get-popcorn.com
+* https://popcorntime.io/
 
 To allow any computer user to watch movies easily streaming from torrents, without any particular knowledge.
 
@@ -873,5 +873,4 @@ Sdal za mig is software that used to send tax reports in russian federal tax ser
 [BeanCounter](https://github.com/josephlewis42/beancounter) is an entirely web-based computer algebra system with a clean user interface similar to WolframAlpha. It supports feature addition through a simple plugin system making it adaptable to a wide variety of operations. Out of the box it supports expression evaluation, integration/differentiation, formatting expressions with LaTeX, solving for different variables and simplification.
 
 [![BeanCounter](https://raw.githubusercontent.com/josephlewis42/beancounter/master/screenshot.png)](https://github.com/josephlewis42/beancounter)
-
 
