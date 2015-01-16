@@ -1,3 +1,12 @@
+## Quick start
+
+Just put the files along with NW files in the same directory and then ship them to your users.  
+nw.exe and package.json should be in the same directory.  
+
+On OSX it's different: put the tree of your app in a directory named `nwjs.app/Contents/Resources/app.nw`.
+
+For more info and other ways of packaging, please read on.
+
 ## Preparing extra files
 
 The following sub-directories can be put in application's root directory:
