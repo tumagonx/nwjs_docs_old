@@ -27,12 +27,14 @@ We are using node.js <script>document.write(process.version); </script>
 ````
 index.js
 ````javascript
-var i = 0;
-exports.callback0 = function () {
+(function(){
+  var i = 0;
+  exports.callback0 = function () {
     console.log(i + ": " + window.location);
     window.alert ("i = " + i);
     i = i + 1;
-}
+  }
+})();
 ````
 package.json
 ````json
