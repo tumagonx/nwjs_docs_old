@@ -12,7 +12,6 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 * Share url, youtube videos, images png jpeg and gif, instagram photos, your geolocation and more
 
 <img src="https://dl.dropboxusercontent.com/u/47074505/scre/chat104.png">
-<img src="https://dl.dropboxusercontent.com/u/47074505/scre/groups.png">
 
 ### [KeeeX] (https://keeex.io/) ###
  > [KeeeX](https://keeex.io/) secures, traces, organizes, finds and shares any file, anywhere in absolute privacy.
