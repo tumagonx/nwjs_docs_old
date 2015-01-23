@@ -5,7 +5,7 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 ## Apps
 
 ### [KeeeX] (https://keeex.io/) ###
- > [KeeeX](https://keeex.io/) secures, traces, organizes, find and shares any file, anywhere in absolute privacy.
+ > [KeeeX](https://keeex.io/) secures, traces, organizes, finds and shares any file, anywhere in absolute privacy.
 
 * No doubt, we see the same document,
 * No mess, we efficiently organize them,
