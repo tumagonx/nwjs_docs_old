@@ -4,6 +4,17 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [KeeeX] (https://keeex.io/) ###
+ > [KeeeX](https://keeex.io/) secures, traces, organizes, find and shares any file, anywhere in absolute privacy.
+
+* No doubt, we see the same document,
+* No mess, we efficiently organize them,
+* No time loss, instant, exact searches,
+* KeeeX is simple and quick to adopt
+
+<img src="https://content.wuala.com/contents/nguduong1988/keeex/search_keeex_xiger-harah.png">
+<img src="https://content.wuala.com/contents/nguduong1988/keeex/share_keeex_xodav-hyhep.png">
+
 ### [Yasminoku](http://yasminoku.tuxfamily.org/)
 
 Yasminoku is an open source and free "Sudoku" game totally written in DHTML (JavaScript, CSS and HTML with newer version using CSS3 and HTML5 too) that can be controlled by mouse (or finger on mobile devices) and/or keyboard. Includes sudoku solver and sudoku generator. Browser version also allows anyone to print sudokus easily.
@@ -151,16 +162,6 @@ and so on.
 
 <img src="http://torrentv.github.io/images/screen1.png">
 
-
-### [KeeeX] (https://keeex.io/) ###
- > [KeeeX](https://keeex.io/) is a unique solution to trust files, trace their lifecycle, find them in a snap.
-
-* No doubt, we see the same document,
-* No mess, we efficiently organize them,
-* No time loss, instant, exact searches,
-* KeeeX is simple and quick to adopt
-
-<img src="https://content.wuala.com/contents/nguduong1988/keeex/keeex.png">
 
 ### Cellist
 
