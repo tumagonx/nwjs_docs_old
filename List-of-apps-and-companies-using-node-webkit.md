@@ -4,6 +4,16 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [M2S] (http://m2s.es/) ###
+ > [M2S](http://m2s.es/) is an messaging app created with web technologies and open source
+* Discover groups and join it,
+* Add people without his phone number,
+* Compatible with all web browsers,
+* Share url, youtube videos, images png jpeg and gif, instagram photos, your geolocation and more
+
+<img src="https://dl.dropboxusercontent.com/u/47074505/scre/chat104.png">
+<img src="https://dl.dropboxusercontent.com/u/47074505/scre/groups.png">
+
 ### [KeeeX] (https://keeex.io/) ###
  > [KeeeX](https://keeex.io/) secures, traces, organizes, finds and shares any file, anywhere in absolute privacy.
 
@@ -874,4 +884,3 @@ Sdal za mig is software that used to send tax reports in russian federal tax ser
 [BeanCounter](https://github.com/josephlewis42/beancounter) is an entirely web-based computer algebra system with a clean user interface similar to WolframAlpha. It supports feature addition through a simple plugin system making it adaptable to a wide variety of operations. Out of the box it supports expression evaluation, integration/differentiation, formatting expressions with LaTeX, solving for different variables and simplification.
 
 [![BeanCounter](https://raw.githubusercontent.com/josephlewis42/beancounter/master/screenshot.png)](https://github.com/josephlewis42/beancounter)
-
