@@ -25,9 +25,7 @@ win.minimize();
 win.removeAllListeners('minimize');
 
 // Create a new window and get it
-var new_win = gui.Window.get(
-  window.open('https://github.com')
-);
+var new_win = gui.Window.open('https://github.com');
 
 // And listen to new window's focus event
 new_win.on('focus', function() {
@@ -47,9 +45,7 @@ If `window_object` is not specifed, then return current window's `Window` object
 var win = gui.Window.get();
 
 // Create a new window and get it
-var new_win = gui.Window.get(
-  window.open('https://github.com')
-);
+var new_win = gui.Window.open('https://github.com');
 ```
 
 ### open(url[, options])
@@ -392,9 +388,7 @@ The `closed` event is emitted **after** corresponding window is closed. Normally
   var gui = require('nw.gui');
 
   // Open a new window.
-  var win = gui.Window.get(
-    window.open('popup.html')
-  );
+  var win = gui.Window.open('popup.html');
 
   // Release the 'win' object here after the new window is closed.
   win.on('closed', function() {
