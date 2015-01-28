@@ -55,3 +55,6 @@ process load failure ..
 jquery的ready > nw.gui.window 的 document-end事件 > window.onload >  nw.gui.window 的 loaded事件
 ### 疑问
 只有在加载nodejs的process模块才加载失败,加载util 或者其他模块不会报失败! 真心不知道这是怎么的...node官方API写着process对象是一个全局对象，可以在任何地方访问到它。
+
+### 解答
+经过测试 终于明白啥叫全局对象 , 不需要require..怪不得加载不出来..唉 自坑啊
