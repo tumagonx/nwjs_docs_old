@@ -94,6 +94,19 @@ in gulp only to css files.
 </script>
 ```
 
+### Livereload script src format
+
+Use format allowing file: URLs.
+https://github.com/livereload/livereload-js#using-livereloadjs
+
+```js
+[
+  'http://',
+  (location.host || 'localhost').split(':')[0],
+  ':35729/livereload.js'
+].join('')
+```
+
 ## Clearing the node modules cache
 
 If you want to reload and re-run your node modules, you'll need to delete the global require cache (`global.require.cache`). [See this StackOverflow question](http://stackoverflow.com/questions/25143532/node-webkit-clear-cache). Note that this will remove ALL modules from the cache, possibly including the `node-main` module:
