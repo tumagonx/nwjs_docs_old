@@ -13,7 +13,7 @@ People who want `Express` are indeed finding two things: `router` and `template 
 As for `router`, it is used for showing different pages for different urls, like `/user/zcbenz` and `/article/901127`. You don't need a `router` in node-webkit, because you already have a better one: the `file:` protocol. For example, if you have an app like this:
 
 ```
-ap
+app
 ├── index.html
 └── views
     ├── user.html
