@@ -883,3 +883,9 @@ Sdal za mig is software that used to send tax reports in russian federal tax ser
 [BeanCounter](https://github.com/josephlewis42/beancounter) is an entirely web-based computer algebra system with a clean user interface similar to WolframAlpha. It supports feature addition through a simple plugin system making it adaptable to a wide variety of operations. Out of the box it supports expression evaluation, integration/differentiation, formatting expressions with LaTeX, solving for different variables and simplification.
 
 [![BeanCounter](https://raw.githubusercontent.com/josephlewis42/beancounter/master/screenshot.png)](https://github.com/josephlewis42/beancounter)
+
+### Carematics
+
+[Carematics](http://carematics) automates tasks, referrals, and other communications between hospitals, ancillary service providers, patients, and other care team members during and after the patient discharge process.
+
+[![Carematics](https://www.dropbox.com/s/kvv8cynj37ixll1/carematics_nwjs_preview.png?dl=1)](http://carematics.com)
