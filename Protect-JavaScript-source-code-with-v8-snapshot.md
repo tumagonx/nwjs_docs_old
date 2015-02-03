@@ -104,3 +104,6 @@ index.html: (note that we don't need to distribute 'mytest.js' with it)
   </script>
 </body></html>
 ```
+
+## Troubleshooting
+For some unknown reason, nwsnapshot will sometimes silently fail and provide a bad snapshot see [issue#1295](https://github.com/nwjs/nw.js/issues/1295). To make sure that you always have a valid snapshot, you can use  [node-nw-snapshot](https://github.com/miklschmidt/node-nw-snapshot).
