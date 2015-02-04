@@ -87,7 +87,7 @@ video {
 .blur {
   +filter: blur(3px);
 }
-...
+/* ... */
 </style>
 
 <video autoplay></video>
