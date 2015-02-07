@@ -35,7 +35,9 @@ screen {
   },
 
   scaleFactor : float,
-  isBuiltIn : bool
+  isBuiltIn : bool,
+  rotation : int,
+  touchSupport : int
 }
 ```
 ## Events
