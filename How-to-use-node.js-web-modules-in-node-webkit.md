@@ -1,3 +1,3 @@
 **MOVED!**
 
-[How-to-use-node.js-web-modules-in-node-webkit](https://github.com/rogerwang/node-webkit/wiki/How-to-use-3rd-party-node.js-modules-in-node-webkit)
+[Using Node modules](https://github.com/nwjs/nw.js/wiki/Using-Node-modules)
