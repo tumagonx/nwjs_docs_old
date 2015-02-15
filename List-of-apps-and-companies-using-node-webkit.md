@@ -4,6 +4,15 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Pawnee](https://github.com/johansatge/pawnee)
+
+Pawnee is an Apache GUI designed for Mac OS X.
+
+* Project page: http://johan.satge.io/pawnee
+* Source on Github: https://github.com/johansatge/pawnee
+
+<img src="http://i.imgur.com/64gjJid.png">
+
 ### [M2S] (http://m2s.es/) ###
  > [M2S](http://m2s.es/) is an messaging app created with web technologies and open source
 * Discover groups and join it,
