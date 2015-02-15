@@ -6,13 +6,13 @@ Sublime Text 2 is a great cross-platform editor for building node-webkit apps, y
 2. From the Sublime Text 2 menu select `Tools -> Build System -> New Build System`
 3. Enter the following code:
 
-````json
-{
-    "cmd": ["node-webkit", "--enable-logging", "${project_path:${file_path}}"],
-    "working_dir": "${project_path:${file_path}}",
-    "path": "/Applications/node-webkit.app/Contents/MacOS/"
-}
-````
+    ````json
+    {
+        "cmd": ["node-webkit", "--enable-logging", "${project_path:${file_path}}"],
+        "working_dir": "${project_path:${file_path}}",
+        "path": "/Applications/node-webkit.app/Contents/MacOS/"
+    }
+    ````
 
 4. Save the configuration as `nodeWebKit.sublime-build` on the suggested folder
 5. Open a new window in Sublime Text 2 using `File -> New Window`
