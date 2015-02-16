@@ -4,6 +4,12 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [lolconf](https://github.com/gwwfps/lolconf)
+
+Settings utility for the game League of Legends, with appearance mimicking the official in-game menu.
+
+![](https://github.com/gwwfps/lolconf/raw/master/screenshot.png)
+
 ### [Pawnee](https://github.com/johansatge/pawnee)
 
 Pawnee is an Apache GUI designed for Mac OS X.
