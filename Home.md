@@ -1,12 +1,12 @@
-Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't read documentations, but please at least skim the content, you could find answers to most of your questions here.
+Here is the Wiki, the encyclopedia of nw.js. I know most of you just don't read documentations, but please at least skim the content, you could find answers to most of your questions here.
 
 ## For Users
 
 
 **Overview:**
 * [[Features list]]
-* [[Getting Started with node-webkit]]
-* [[Tutorials on node-webKit]]
+* [[Getting Started with nw.js]]
+* [[Tutorials on nw.js]]
 * [How to open a window](wiki/Window)
 * [[How to run apps]]
 * [[How to package and distribute your apps]]
@@ -19,7 +19,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 
 **Library Reference:**
 * [[Manifest format]] — the format of `package.json`
-* [[Native UI API Manual]] — node-webkit API for native UI controls
+* [[Native UI API Manual]] — nw.js API for native UI controls
 * [[Changes related to Node]] — Things added/changed to Node API after bring in DOM
 * [[Changes to DOM]] — Things changed to DOM to support native app better
 * [Node.js Manual & Documentation](http://nodejs.org/api/)
@@ -35,8 +35,8 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[Using MP3 & MP4 (H.264) using the  video  &  audio  tags.]]
 * [[Third party browser plugins]]
 * [[WebGL support on Windows]]
-* [[About node.js server side script in node-webkit]] — wonder how to use `express` stuff in node-webkit?
-* [[Get version of node-webkit in app]]
+* [[About node.js server side script in nw.js]] — wonder how to use `express` stuff in nw.js?
+* [[Get version of nw.js in app]]
 * [What if Node's require() conflicts with the same name in your code (e.g. RequireJS) ?](wiki/faq-name-conflict)
 * [[Protect JavaScript source code with v8 snapshot]]
 * [[The solution of lacking libudev.so.0]]
@@ -45,12 +45,12 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[Devtools jail feature]] -- useful for IDE developers
 * [[Application auto building scripts for Linux Windows and OSX]]
 * [[Handling files and arguments]]
-* [[Livereload node-webkit on changes]]
+* [[Livereload nw.js on changes]]
 * [[Window-menu]]
 
 **Testing**
-* [The Testing framework for your application running on node-webkit](wiki/chromedriver)
-* [The Testing work for node-webkit](wiki/Testing)
+* [The Testing framework for your application running on nw.js](wiki/chromedriver)
+* [The Testing work for nw.js](wiki/Testing)
 
 **HTML5 Features:**
 * [[Play with window]]
@@ -74,4 +74,4 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 * [[Building nw.js]]
 * [[How node.js is integrated with Chromium]]
 * [[Downloads of old versions]]
-* [[List of apps and companies using node-webkit]]
+* [[List of apps and companies using nw.js]]
