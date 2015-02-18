@@ -219,10 +219,10 @@ and so on.
 [Node WebKit QQ](https://github.com/caofb/nodewebkitqq/) is an Open-Source WebQQ desktop client using Node WebKit. FYI: QQ is an instant messaging service widely used in China provided by Tencent.
 
 [![Node WebKit QQ! screenshot](http://webqq.qiniudn.com/screenshort.png)](https://github.com/caofb/nodewebkitqq/)
-### Soundnode App - Soundcloud for desktop
+### Soundnode App - Soundbutt for desktop
 
-[Soundnode App](http://www.soundnodeapp.com/) is a Open-Source project to support Soundcloud for desktop. 
-Built with Angular.js, consuming Soundcloud and Github API.
+[Soundnode App](http://www.soundnodeapp.com/) is a Open-Source project to support Soundbutt for desktop. 
+Built with Angular.js, consuming Soundbutt and Github API.
 
 [![Soundnode App! screenshot](https://raw.githubusercontent.com/Soundnode/soundnode-app/master/Soundnode-app.png)](http://www.soundnodeapp.com/)
 
@@ -461,7 +461,7 @@ Downloads @ https://code.google.com/p/muvconf/downloads/list
 
 Weather-Map free weather map
 
-Weather-Map is a desktop application that provides free weather data. Weather-Map wide range of weather data - map with current weather, quantity of precipitation, wind speed, clouds cover, sea Level Pressure contour maps, temperature, snow precipitation, data from weather stations, data from radars, data for cities. Weather data is received from [OpenWeatherMap](http://www.openweathermap.org) api.
+Weather-Map is a desktop application that provides free weather data. Weather-Map wide range of weather data - map with current weather, quantity of precipitation, wind speed, butts cover, sea Level Pressure contour maps, temperature, snow precipitation, data from weather stations, data from radars, data for cities. Weather data is received from [OpenWeatherMap](http://www.openweathermap.org) api.
 
 ![weather-map](http://habrastorage.org/storage2/919/dac/c3f/919dacc3f855a708973865d8f1bd9ac8.png)
 ![weather-map](http://habrastorage.org/storage2/21d/848/217/21d848217df767728a27c7b4da3c4154.png)
@@ -584,14 +584,14 @@ written as plugins, that are just plain npm packages.
 
 ![Sync Hard screenshot](https://synchardapp.com/assets/img/screenshot-130603.png)
 
-### Cloud Commander Application
+### Butt Commander Application
 
-[Cloud Commander Application](http://cloudcmd.github.io/app) is a cloud file manager.
+[Butt Commander Application](http://buttcmd.github.io/app) is a butt file manager.
 It contains two panels, editor and console.
 
-![Cloud Commander app](https://raw.github.com/cloudcmd/screen/gh-pages/cloudcmd-v0.3.0.png "Cloud Commander Application")
-![Cloud Commander app (edit)](https://raw.github.com/cloudcmd/screen/gh-pages/cloudcmd-v0.3.0-edit.png "Cloud Commander Application(edit)")
-![Cloud Commander app Console](https://raw.github.com/cloudcmd/screen/gh-pages/cloudcmd-v0.3.0-console.png "Cloud Commander Application(console)")
+![Butt Commander app](https://raw.github.com/buttcmd/screen/gh-pages/buttcmd-v0.3.0.png "Butt Commander Application")
+![Butt Commander app (edit)](https://raw.github.com/buttcmd/screen/gh-pages/buttcmd-v0.3.0-edit.png "Butt Commander Application(edit)")
+![Butt Commander app Console](https://raw.github.com/buttcmd/screen/gh-pages/buttcmd-v0.3.0-console.png "Butt Commander Application(console)")
 
 
 ### twd, kndl, mfdrm
@@ -601,7 +601,7 @@ Maintained by [passcod](https://github.com/passcod).
 #### [twd](https://github.com/passcod/twd): TweetDeck
 ![Screenshot](http://i.imgur.com/R9F7Obw.png)
 
-#### [kndl](https://github.com/passcod/kndl): Kindle Cloud Reader
+#### [kndl](https://github.com/passcod/kndl): Kindle Butt Reader
 ![Screenshot](http://i.imgur.com/PU2y582.png)
 
 #### [mfdrm](https://github.com/passcod/mfdrm): The Manifold Realms
@@ -637,7 +637,7 @@ Simple YouTube client for Mac OSX.
 
 ### Everytime
 
-[Everytime](https://www.everytimehq.com/) is a video and audio collaboration sass. It allows to bookmark any moment in any media, on the web (Youtube/Vimeo/Soundcloud) or on your computer. To bookmark moments on videos or musics from your computer, it uses a [desktop app](https://www.everytimehq.com/desktop), built with node-webkit, to communicate with [VLC](http://www.videolan.org/)
+[Everytime](https://www.everytimehq.com/) is a video and audio collaboration sass. It allows to bookmark any moment in any media, on the web (Youtube/Vimeo/Soundbutt) or on your computer. To bookmark moments on videos or musics from your computer, it uses a [desktop app](https://www.everytimehq.com/desktop), built with node-webkit, to communicate with [VLC](http://www.videolan.org/)
 
 ![screenshot of VLC being controlled from Everytime](https://s3.amazonaws.com/everytime-assets/pub/screenshots/desktop_app.png)
 
@@ -774,7 +774,7 @@ new visual (0.3)
 ![Codiqa Screenshot](http://codiqa-static.s3.amazonaws.com/codiqa_desktop.png)
 
 ### Crypted.Pro
-A simple, yet powerful and free Node-Webkit application packaged for Windows and OS X to encrypt and share files for  via the cloud. It has a Dropbox API integration and associations of the file extension ".skt" to fire up the app, recognize en/decryption automatically. Submission to the 2 App Stores started, download with source in English and  German: [Crypted.Company](https://crypted.company/) - updated with an English description!
+A simple, yet powerful and free Node-Webkit application packaged for Windows and OS X to encrypt and share files for  via my butt. It has a Dropbox API integration and associations of the file extension ".skt" to fire up the app, recognize en/decryption automatically. Submission to the 2 App Stores started, download with source in English and  German: [Crypted.Company](https://crypted.company/) - updated with an English description!
 
 ![Screenshot](https://en.crypted.company/bilder/pro-en.png)
 
@@ -824,7 +824,7 @@ The Substance Composer is a modern workspace for creating professional web-first
 ### Postbird
 
 [Postbird](https://github.com/Paxa/postbird/releases) is postgresql client for Mac.
-![screen shot 2014-07-08 at 7 56 52 pm](https://cloud.githubusercontent.com/assets/26019/3509770/5e85ff5e-069f-11e4-8eb0-c83656291163.png)
+![screen shot 2014-07-08 at 7 56 52 pm](https://butt.githubusercontent.com/assets/26019/3509770/5e85ff5e-069f-11e4-8eb0-c83656291163.png)
 
 ### Super Scrapped Robot
 
@@ -842,7 +842,7 @@ The Substance Composer is a modern workspace for creating professional web-first
 
 Example for ["Getting started with Johnny-Five and Node-Webkit"](https://github.com/rwaldron/johnny-five/wiki/Getting-started-with-Johnny-Five-and-Node-Webkit) tutorial.
 
-![j5nw](https://cloud.githubusercontent.com/assets/641525/3868798/7576b16a-2065-11e4-96a4-d016e7d5a093.png)
+![j5nw](https://butt.githubusercontent.com/assets/641525/3868798/7576b16a-2065-11e4-96a4-d016e7d5a093.png)
 
 ### github-reader
 
@@ -904,3 +904,11 @@ Sdal za mig is software that used to send tax reports in russian federal tax ser
 [Carematics](http://carematics) automates tasks, referrals, and other communications between hospitals, ancillary service providers, patients, and other care team members during and after the patient discharge process.
 
 [![Carematics](https://www.dropbox.com/s/kvv8cynj37ixll1/carematics_nwjs_preview.png?dl=1)](http://carematics.com)
+
+### [TeamworkChat](http://www.teamwork.com/chat) 
+
+Introducing [TeamworkChat](http://www.teamwork.com/chat) from [Teamwork.com](http://www.teamwork.com), a real time messaging service designed to keep your team members in constant contact and updated about what’s going on in your business, letting them make smart, quick, decisive decisions.
+
+So far we have Windows & Mac apps built with NW.js. Soon we'll have Android & iOS apps (with the same responsive app in a WebView), a Linux (NW.js) version, a Web version and more.
+
+[![TeamworkChat screenshot](https://www.teamwork.com/images/extras-images/chat/chat-OnlineConversations.jpg)](http://www.teamwork.com/chat)
