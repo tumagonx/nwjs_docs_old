@@ -2,8 +2,8 @@
 Node v0.11.13, Chromium 38.0.2125.104  
 [release notes](https://groups.google.com/forum/#!topic/nwjs-general/ADFYPzjpo8Q)
 * Linux: [32bit](http://dl.nwjs.io/v0.11.6/node-webkit-v0.11.6-linux-ia32.tar.gz) / [64bit](http://dl.nwjs.io/v0.11.6/node-webkit-v0.11.6-linux-x64.tar.gz)
- * Windows: [32bit](http://dl.nwjs.io/v0.11.6/node-webkit-v0.11.6-win-ia32.zip) / [64bit](http://dl.nwjs.io/v0.11.6/node-webkit-v0.11.6-win-x64.zip)
- * Mac 10.7+: [32bit](http://dl.nwjs.io/v0.11.6/node-webkit-v0.11.6-osx-ia32.zip) / [64bit](http://dl.nwjs.io/v0.11.6/node-webkit-v0.11.6-osx-x64.zip )
+* Windows: [32bit](http://dl.nwjs.io/v0.11.6/node-webkit-v0.11.6-win-ia32.zip) / [64bit](http://dl.nwjs.io/v0.11.6/node-webkit-v0.11.6-win-x64.zip)
+* Mac 10.7+: [32bit](http://dl.nwjs.io/v0.11.6/node-webkit-v0.11.6-osx-ia32.zip) / [64bit](http://dl.nwjs.io/v0.11.6/node-webkit-v0.11.6-osx-x64.zip )
 
 ## v0.11.5 (Dec 28, 2014)
 Node v0.11.13, Chromium 38.0.2125.104  
