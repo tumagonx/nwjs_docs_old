@@ -71,7 +71,7 @@ Here is the Wiki, the encyclopedia of node-webkit. I know most of you just don't
 
 ## For Developers
 
-* [[Building node-webkit]]
+* [[Building nw.js]]
 * [[How node.js is integrated with Chromium]]
 * [[Downloads of old versions]]
 * [[List of apps and companies using node-webkit]]
