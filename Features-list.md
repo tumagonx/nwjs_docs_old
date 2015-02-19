@@ -14,6 +14,7 @@ _PAGE NOT DONE YET_
 * File dialogs
 * Media
 * Very good HTML5 support
+ * Web Components
  * Drag & Drop
  * Data persistent
  * WebGL
