@@ -79,6 +79,11 @@ Finally sync code under `node-webkit` directory (where `.gclient` resides), it w
 
     gclient sync
 
+If you are not interested in the repo history and don't want to wait hours or have a slow/flaky internet connection, you can use the --no-history flag
+
+    gclient sync --no-history
+
+
 ### Notes
 
 _On OSX you'll see error messages reporting `cycle in .gyp file dependency graph detected`. It can be ignored because `gclient` wants to run `gyp_chromium` without a switch we need. Please move on to the `Build` section._
