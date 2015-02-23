@@ -17,7 +17,7 @@ As node-webkit is based on Chromium, the media components are essentially the sa
 
 Alternatively, you can try to use the media libraries from Chrome. It has been reported to work, but it hasn't been properly tested, so it may or may not work for you in latest version.
 
-**Warning: linking code licesnsed under the GPL code requires you to license your code under the GPL as well**
+**Warning: linking code licensed under the GPL code requires you to license your code under the GPL as well**
 
 # Windows
 
