@@ -10,7 +10,7 @@ Sublime Text 2 is a great cross-platform editor for building node-webkit apps, y
     {
         "cmd": ["node-webkit", "--enable-logging", "${project_path:${file_path}}"],
         "working_dir": "${project_path:${file_path}}",
-        "path": "/Applications/node-webkit.app/Contents/MacOS/"
+        "path": "/Applications/nwjs.app/Contents/MacOS/"
     }
     ````
 
@@ -31,7 +31,7 @@ As above, but the commands for the build system are as follows (replacing the pa
 {
     "cmd": ["nw.exe", "--enable-logging", "${project_path:${file_path}}"],
     "working_dir": "${project_path:${file_path}}",
-    "path": "C:/Tools/node-webkit/",
+    "path": "C:/Tools/nwjs/",
     "shell": true
 }
 ````
