@@ -10,7 +10,7 @@ There are important limitations in the current implementation. Please see the 'L
 
 This feature is the fix for [issue 269](https://github.com/rogerwang/node-webkit/issues/269)
 
-## Compilation
+### Compilation
 
 JS source code is compiled to native code (aka. 'snapshot') with the tool `nwjc` (before 0.12.0-rc1 it's supported by `nwsnapshot` tool), which is provided in the binary download. To use it:
 ```bash
@@ -18,11 +18,16 @@ nwjc source.js binary.bin
 ```
 The `*.bin` file is needed to be distributed with your application. You can name it whatever you want.
 
-## Load the compiled JS in your app
+### Load the compiled JS in your app
 ```js
 require('nw.gui').Window.get().evalNWBin(null, 'binary.bin');
 ```
 The arguments of the `evalNWBin()` method are similar with the `Window.eval()` method, where the first parameter is the target iframe ('null' for main frame), and the 2nd parameter is the binary code file.
+
+### Limitation of nwjc
+The compiled code runs **slower than normal JS**: ~30% performance according to v8bench. Normal JS source code will not be affected. Again, if you have a real need against this limit, please file an issue and we'll find time to fix it.
+
+The compiled code is **not cross-platform nor compatible between versions** of node-webkit. So you'll need to run `nwsnapshot` for each of the platforms when you package your application.
 
 ## Usage of the deprecated nwsnapshot way
 
@@ -46,7 +51,7 @@ And the scripts runs/loads loads very early (you can assume it's earlier than co
 
 The snapshot is used by V8 as a kind of 'template' to create JS contexts. So the objects defined there will be in every JS contexts.
 
-### Limitation
+### Limitation of nwsnapshot
 
 The source code being compiled **cannot be too big**. `nwsnapshot` will report error when this happens. 
 
