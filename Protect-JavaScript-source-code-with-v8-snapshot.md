@@ -12,7 +12,7 @@ This feature is the fix for [issue 269](https://github.com/rogerwang/node-webkit
 
 ### Compilation
 
-JS source code is compiled to native code (aka. 'snapshot') with the tool `nwjc` (before 0.12.0-rc1 it's supported by `nwsnapshot` tool), which is provided in the binary download. To use it:
+JS source code is compiled to native code (aka. 'snapshot') with the tool `nwjc` (before 0.12.0-rc1 it's supported by `nwsnapshot` tool, refer to the section below), which is provided in the binary download. To use it:
 ```bash
 nwjc source.js binary.bin
 ```
