@@ -24,6 +24,42 @@ require('nw.gui').Window.get().evalNWBin(null, 'binary.bin');
 ```
 The arguments of the `evalNWBin()` method are similar with the `Window.eval()` method, where the first parameter is the target iframe ('null' for main frame), and the 2nd parameter is the binary code file.
 
+### Sample for nwjc
+
+mytest.js: (this is the JS code to be protected)
+```javascript
+function mytest(a) {
+    document.write(a + 42);
+}
+```
+Compile `mytest.js` to native code:
+
+```bash
+nwjc mytest.js mytest.bin
+```
+
+package.json:
+```json
+{
+  "name": "nw-demo",
+  "main": "index.html"
+}
+```
+
+index.html: (note that we don't need to distribute 'mytest.js' with it)
+```html
+<html><head>
+  <title>snapshot demo</title>
+</head>
+<body>
+  <script>
+  require('nw.gui').Window.get().evalNWBin(null, 'mytest.bin');
+  mytest(2); 
+  console.log(mytest);
+  </script>
+</body></html>
+```
+
 ### Limitation of nwjc
 The compiled code runs **slower than normal JS**: ~30% performance according to v8bench. Normal JS source code will not be affected. Again, if you have a real need against this limit, please file an issue and we'll find time to fix it.
 
@@ -87,7 +123,7 @@ function sampleFunction()
 ```
 If you have a large piece of code like this then you could wrap it inside a function and then compile it.
 
-## Sample
+### Sample for nwsnapshot
 
 mytest.js: (this is the JS code to be protected)
 ```javascript
