@@ -4,7 +4,7 @@ When you found you can use the `require` function in the `<script>` tag, one thi
 
 First I should introduce the concept of `context`, every javascript variable lives in a javascript context, and every javascript context has a root global variable.
 
-In the browser world, every window you opened have a `window` object in it, and global variables will only live in the window where they're created, so different windows' global variables will not conflict. That's because every browser window (or tab) has its own javascript context, and the `window` object is the root global variable of the window's javascript context.
+In the browser world, every window you open has a `window` object in it, and global variables will only live in the window where they're created, so different windows' global variables will not conflict. That's because every browser window (or tab) has its own javascript context, and the `window` object is the root global variable of the window's javascript context.
 
 In the node.js world, things are similar. Every module in node.js has it's own context (including the main script you passed in command line), so modules' global variables won't fight each other, and if you want to pass variables between contexts, you have to use `require` and `export`, this is the fundamental idea of node.js's module system.
 
