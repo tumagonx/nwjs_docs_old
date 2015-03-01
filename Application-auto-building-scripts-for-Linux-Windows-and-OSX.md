@@ -1,3 +1,5 @@
+**You can use [node-webkit-builder](https://github.com/mllrsohn/node-webkit-builder) to automate this process.**
+
 Structure of files for autobuild cross-platform app:
 
 ```
