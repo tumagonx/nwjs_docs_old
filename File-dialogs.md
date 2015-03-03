@@ -125,7 +125,7 @@ In order to provide complete set of file dialogs, node-webkit add another two at
 
 ## Save file
 
-`nwsaveas` will open a save as dialog which let user enter the path of a file, and it's possible to select a non-exist file which is different with the default file input tag:
+`nwsaveas` will open a 'save as' dialog, which lets user enter the path of a file. It's possible to select a non-existing file, which is different from the default file input tag:
 
 ```html
 <input type="file" nwsaveas />
