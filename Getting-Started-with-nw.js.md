@@ -141,7 +141,7 @@ menu.items[0].click = function() {
 
 **Example 3. Using node.js**
 
-You can call node.js and modules directly from the DOM. So it enable endless possibilities for writing apps with node-webkit.
+You can call node.js and modules directly from the DOM. So it enables endless possibilities for writing apps with node-webkit.
 
 ```html
 <html>
@@ -162,7 +162,7 @@ Now, we can write simple node-webkit apps. Next is to learn how to run and packa
 
 **Run the App**
 
-There are two general ways to run apps for all platform.
+There are two general ways to run apps for all platforms.
 
 * From a folder. The startup path specifies this folder.
 * From a .nw file (a renamed .zip-file). The startup path specifies the file.
