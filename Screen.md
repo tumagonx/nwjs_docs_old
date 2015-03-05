@@ -40,6 +40,18 @@ screen {
   touchSupport : int
 }
 ```
+### chooseDesktopMedia()
+Screen sharing by selection; Currently only working in Windows and OSX. Example:  
+```js
+var gui = require('nw.gui');
+gui.Screen.Init();
+gui.Screen.chooseDesktopMedia(["window","screen"], 
+function(streamId) {
+var vid_cons = {mandatory: {chromeMediaSource: 'desktop', chromeMediaSourceId: streamId, maxWidth: 1920, maxHeight: 1080}, optional:[]};
+navigator.webkitGetUserMedia({audio: false, video: vid_cons}, success_func, fallback_func);
+});
+```
+More info: https://github.com/nwjs/nw.js/issues/3077
 ## Events
 
 Following events can be listened by using `Screen.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
