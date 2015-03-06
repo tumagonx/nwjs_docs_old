@@ -22,7 +22,7 @@ The `*.bin` file is needed to be distributed with your application. You can name
 ```js
 require('nw.gui').Window.get().evalNWBin(null, 'binary.bin');
 ```
-The arguments of the `evalNWBin()` method are similar with the `Window.eval()` method, where the first parameter is the target iframe ('null' for main frame), and the 2nd parameter is the binary code file.
+The arguments of the [evalNWBin()](https://github.com/nwjs/nw.js/wiki/Window#windowevalnwbinframe-path) method are similar with the `Window.eval()` method, where the first parameter is the target iframe ('null' for main frame), and the 2nd parameter is the binary code file.
 
 ### Sample for nwjc
 
