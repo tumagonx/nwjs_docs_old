@@ -63,7 +63,7 @@ index.html: (note that we don't need to distribute 'mytest.js' with it)
 ### Limitation of nwjc
 The compiled code runs **slower than normal JS**: ~30% performance according to v8bench. Normal JS source code will not be affected. Again, if you have a real need against this limit, please file an issue and we'll find time to fix it.
 
-The compiled code is **not cross-platform nor compatible between versions** of node-webkit. So you'll need to run `nwsnapshot` for each of the platforms when you package your application.
+The compiled code is **not cross-platform nor compatible between versions** of node-webkit. So you'll need to run `nwjc` for each of the platforms when you package your application.
 
 ## Usage of the deprecated nwsnapshot way
 
