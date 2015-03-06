@@ -363,6 +363,10 @@ And anything related to `CookieStore` in the Chrome extension API is not support
 _Since v0.9.0 and v0.8.5_  
 Execute a piece of JavaScript in the window, if `frame` argument is null, or in the context of an iframe, if `frame` is an iframe object. The `script` argument is the content of the JavaScript source code.
 
+### Window.evalNWBin(frame, path)
+_Since v0.12.0-rc1_  
+Load compiled JavaScript binary in the window, if `frame` argument is null; or in the context of an iframe, if `frame` is an iframe object. The `path` argument is the path of the JS binary compiled with `nwjc`, see https://github.com/nwjs/nw.js/wiki/Protect-JavaScript-source-code-with-v8-snapshot.
+
 ## Events
 
 Following events can be listened by using `Window.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
