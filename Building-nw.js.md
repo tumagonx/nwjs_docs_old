@@ -47,9 +47,9 @@ To start, make an empty directory, say `node-webkit`, then create the `.gclient`
 
 These instructions will help you build a custom version of node-webkit that you have forked off [the main version](https://github.com/rogerwang/node-webkit).
 
-First, create a fork of [chromium.src](https://github.com/rogerwang/chromium.src).
+First, create a fork of [chromium.src](https://github.com/nwjs/chromium.src).
 
-Next, edit *.DEPS.git* by changing the value of `deps['src/content/nw']` from `https://github.com/rogerwang/node-webkit.git@origin/master` to the URL of your forked version of node-webkit.
+Next, edit *DEPS* by changing the value of `deps['src/content/nw']` from `https://github.com/rogerwang/node-webkit.git@origin/master` to the URL of your forked version of node-webkit.
 
 Then, if you have added any dependencies to the project, make sure to specify them in the appropriate gyp file (these are located in the **build** directory).
 
@@ -57,7 +57,7 @@ Now, on your workstation make an empty directory, say `node-webkit`, then create
 
     solutions = [
        { "name"        : "src",
-         "url"         : "https://github.com/YOUR-NAME-HERE/chromium.src.git@origin/nw",
+         "url"         : "https://github.com/YOUR-NAME-HERE/chromium.src.git@origin/nw12",
          "deps_file"   : ".DEPS.git",
          "managed"     : True,
          "custom_deps" : {
@@ -177,22 +177,20 @@ cd /path-to-node-webkit
 gclient sync
 ````
 
-node-webkit's code are in 6 git repos. To keep an eye on the commits, subscribe to our dev mailing list: node-webkit-dev+subscribe@googlegroups.com . 
+NW.js's code are in 6 git repos. To keep an eye on the commits, subscribe to our dev mailing list: node-webkit-dev+subscribe@googlegroups.com . 
 
-List of node-webkit repos, they are the repos we're doing daily works on and there are no internal repos:
+List of repos, they are the repos we're doing daily works on and there are no internal repos:
 ````
-https://github.com/rogerwang/node-webkit
-https://github.com/rogerwang/blink
-https://github.com/rogerwang/chromium.src
-https://github.com/rogerwang/breakpad
-https://github.com/rogerwang/v8
-https://github.com/rogerwang/node
+https://github.com/nwjs/node-webkit
+https://github.com/nwjs/blink
+https://github.com/nwjs/chromium.src
+https://github.com/nwjs/breakpad
+https://github.com/nwjs/v8
+https://github.com/nwjs/node
 ````
 ### branches
-There are two branches for node-webkit: v0.8 branch and master (v0.9) branch. See https://groups.google.com/d/msg/node-webkit/2OJ1cEMPLlA/09BvpTagSA0J
+There are two branches for node-webkit: v0.8 branch and master branch. See https://groups.google.com/d/msg/node-webkit/2OJ1cEMPLlA/09BvpTagSA0J
 
-The root repo and some of the dependency repos use the default branch for 0.9 starting from Feb 11, 2014. Previously the default branch was used for 0.8 branch.
+The "default branch" is the branch name you see in the start page of github repos. Regarding the root Chromium repo, the current default branch is 'nw12'.
 
-The "default branch" is the branch name you see in the start page of github repos. Regarding the root Chromium repo, the default branch is 'nw'. It was switched from 0.8 to 0.9 on Feb 11, 2014.
-
-The branch names in dependency repos are specified in '.DEPS.git' file in the root repo. The tool 'gclient' is supposed to sync them for you. But sometimes manual switching between branches might be needed.
+The branch names in dependency repos are specified in `DEPS` or `.DEPS.git` file in the root repo. The tool 'gclient' is supposed to sync them for you. But sometimes manual switching between branches might be needed.
