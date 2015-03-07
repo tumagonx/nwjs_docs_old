@@ -15,7 +15,10 @@ To make your window frameless, you just need to add `"frame": false` in your app
 }
 ```
 
-then your main window and windows opened by `window.open` will have no frames.
+then your main window will be frameless. To open additional frameless windows from within your app you must also pass them the frameless options.
+
+    gui = require('nw.gui');
+    gui.Window.open('http://google.com',{toolbar:false,frame:false});
 
 ## Make your window draggable
 
