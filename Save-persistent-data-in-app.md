@@ -68,6 +68,9 @@ NB: An extra step is required to use EJDB in a node-webkit app. Please refer to 
 ## NeDB
 [NeDB](https://github.com/louischatriot/nedb) (Node embedded database) is a pure javascript database for Node.js (unlike EJDB, you don't need to compile anything). It implements the most common subset of MongoDB's and can be used to persist data or simply as an in-memory datastore. Even though it's not native, it's still fast enough for desktop apps (40k reads/s, 10k writes/s).
 
+## LinvoDB
+[LinvoDB](https://github.com/Ivshti/linvodb3) is a persistent embedded database for Node.js / NW.js. It can be used on top of LevelDB, but it can also be used on top of Medea with no need to compile anything. It has a MongoDB+Mongoose-like features and API. Performance is comparible to MongoDB.
+
 ## LowDB
 [LowDB](https://github.com/typicode/lowdb) is a flat JSON file database for Node. It uses Lo-Dash functional programming API.
 
