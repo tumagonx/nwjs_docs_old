@@ -40,16 +40,32 @@ screen {
   touchSupport : int
 }
 ```
-### chooseDesktopMedia()
-Screen sharing by selection; Currently only working in Windows and OSX. Example:  
+### Screen.chooseDesktopMedia (array of DesktopCaptureSourceType sources, function callback)
+_Screen.chooseDesktopMedia requires nwjs >= v0.12.0_<br>
+Screen sharing by selection; Currently only working in Windows and OSX.<br><br> 
+DesktopCaptureSourceType: ```"window" or "screen" ```<br>
+The callback parameter should be a function that looks like this:
+```function(string streamId) {...};```<br>
+```returns false``` if the function fails to execute or existing chooseDesktopMedia is still active
+<br><br>
+Example:  
 ```js
 var gui = require('nw.gui');
 gui.Screen.Init();
 gui.Screen.chooseDesktopMedia(["window","screen"], 
-function(streamId) {
-var vid_cons = {mandatory: {chromeMediaSource: 'desktop', chromeMediaSourceId: streamId, maxWidth: 1920, maxHeight: 1080}, optional:[]};
-navigator.webkitGetUserMedia({audio: false, video: vid_cons}, success_func, fallback_func);
-});
+  function(streamId) {
+    var vid_constraint = {
+      mandatory: {
+        chromeMediaSource: 'desktop', 
+        chromeMediaSourceId: streamId, 
+        maxWidth: 1920, 
+        maxHeight: 1080
+      }, 
+      optional:[]
+    };
+    navigator.webkitGetUserMedia({audio: false, video: constraint}, success_func, fallback_func);
+  }
+);
 ```
 More info: https://github.com/nwjs/nw.js/issues/3077
 ## Events
