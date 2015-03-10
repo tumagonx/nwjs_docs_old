@@ -3,6 +3,14 @@
 -
 -
 -## Apps
+
+-
+-### [SVARTURIS](http://robert-tomsons.de/browser/src/index.html)
+-
+-small and fast node webkit browser 0.1
+-
+-![](http://i.imgur.com/GvGjz2H.png)
+-
 -
 -### [lolconf](https://github.com/gwwfps/lolconf)
 -
