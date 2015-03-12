@@ -28,7 +28,7 @@ To start, make an empty directory, say `node-webkit`, then create the `.gclient`
     solutions = [
        { "name"        : "src",
          "url"         : "https://github.com/nwjs/chromium.src.git@origin/nw12",
-         "deps_file"   : ".DEPS.git",
+         "deps_file"   : "DEPS",
          "managed"     : True,
          "custom_deps" : {
            "src/third_party/WebKit/LayoutTests": None,
@@ -58,7 +58,7 @@ Now, on your workstation make an empty directory, say `node-webkit`, then create
     solutions = [
        { "name"        : "src",
          "url"         : "https://github.com/YOUR-NAME-HERE/chromium.src.git@origin/nw12",
-         "deps_file"   : ".DEPS.git",
+         "deps_file"   : "DEPS",
          "managed"     : True,
          "custom_deps" : {
            "src/third_party/WebKit/LayoutTests": None,
