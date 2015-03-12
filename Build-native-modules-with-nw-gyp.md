@@ -12,7 +12,7 @@ $ nw-gyp build
 
 Please see https://github.com/rogerwang/nw-gyp for more details.
 
-For some packages you may need to use node-pre-gyp (e.g. when you get the error "Undefined variable module_name in binding.gyp while trying to load binding.gyp"), which supports building for both node.js and node-webkit by using either node-gyp or nw-gyp.
+For some packages you may need to use [node-pre-gyp](https://github.com/mapbox/node-pre-gyp) (e.g. when you get the error "Undefined variable module_name in binding.gyp while trying to load binding.gyp"), which supports building for both node.js and node-webkit by using either node-gyp or nw-gyp.
 
 ````bash
 $ npm install node-pre-gyp
