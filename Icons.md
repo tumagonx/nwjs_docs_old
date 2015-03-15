@@ -13,7 +13,7 @@ To change icon in title bar of your app, put a reference to PNG/JPG into package
 This is platform specific unfortunately.
 
 ###Windows
-After creating package you would have to use resource editor to change bundled icon. Some sources recommend freeware [Resource Hacker](http://www.angusj.com/resourcehacker/) which would do the trick ( [example](http://www.techtalkz.com/tips-n-tricks/3866-how-change-default-icon-exe-using-resource-editor-resource-hacker.html) )
+After creating package you would have to use resource editor to change bundled icon. Some sources recommend freeware [Resource Hacker](http://www.angusj.com/resourcehacker/) which would do the trick ([example](http://www.techtalkz.com/tips-n-tricks/3866-how-change-default-icon-exe-using-resource-editor-resource-hacker.html))
 
 Additionally, [node-webkit-builder](https://github.com/mllrsohn/node-webkit-builder) can insert your windows icon into your package.  See the [winIco](https://github.com/mllrsohn/node-webkit-builder#optionswinico) option.
 
