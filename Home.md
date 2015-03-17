@@ -1,4 +1,4 @@
-Here is the Wiki, the encyclopedia of nw.js. I know most of you just don't read documentations, but please at least skim the content, you could find answers to most of your questions here.
+Here is the Wiki, the encyclopedia of nw.js. I know most of you just don't read documentation, but please at least skim the content, you could find answers to most of your questions here.
 
 ## For Users
 
