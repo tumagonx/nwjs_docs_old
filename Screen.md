@@ -42,7 +42,7 @@ screen {
 ```
 ### Screen.chooseDesktopMedia (array of DesktopCaptureSourceType sources, function callback)
 _Screen.chooseDesktopMedia requires nwjs >= v0.12.0_<br>
-Screen sharing by selection; Currently only working in Windows and OSX.<br><br> 
+Screen sharing by selection; Currently only working in Windows and OSX and some linux distribution.<br><br> 
 DesktopCaptureSourceType: ```"window" or "screen" ```<br>
 The callback parameter should be a function that looks like this:
 ```function(string streamId) {...};```<br>
@@ -51,7 +51,7 @@ The callback parameter should be a function that looks like this:
 Example:  
 ```js
 var gui = require('nw.gui');
-gui.Screen.Init();
+gui.Screen.Init(); // you only need to call this once
 gui.Screen.chooseDesktopMedia(["window","screen"], 
   function(streamId) {
     var vid_constraint = {
