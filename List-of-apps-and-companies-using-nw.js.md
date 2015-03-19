@@ -4,6 +4,12 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Mongo Management Studio](http://www.litixsoft.de/english/mms/)
+
+Mongo Management Studio is the best way to work with MongoDB the easy way. Because of the clean and light user interface, you can execute the typical MongoDB commands fast and effective, without using the MongoDB shell.
+
+![](http://www.litixsoft.de/wp-content/uploads/sites/4/2014/08/feature-query.png)
+
 ### [lolconf](https://github.com/gwwfps/lolconf)
 
 Settings utility for the game League of Legends, with appearance mimicking the official in-game menu.
