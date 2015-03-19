@@ -135,7 +135,8 @@ _since v0.4.0_
 
 *(string)* Specify chromium (content shell) command line arguments. It will be useful if you want to distribute the app with some custom chromium args. For example, if you want to disable the GPU accelerated video display, just add `"chromium-args" : "--disable-accelerated-video"`. If you want to add multiple arguments, separate each two arguments by space. This field can take a number of flags in one argument as well, via enclosing them in single quotation marks.
 
-A list of Chromium's command line arguments is available at http://src.chromium.org/svn/trunk/src/content/public/common/content_switches.cc
+A list of Chromium's command line arguments is available at 
+http://peter.sh/experiments/chromium-command-line-switches/
 
 ### js-flags
 _since v0.4.1_
