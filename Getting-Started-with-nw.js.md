@@ -1,6 +1,6 @@
 This chapter contains some tutorial information to get you started with nw.js programming. It assumes that you have nw.js binaries. (Such binaries are available in the “[Downloads](https://github.com/nwjs/nw.js#downloads)” section of our README. If you want to build your own nw.js binaries, refer to the [[Building node-webkit]] section instead.)
 
-Node-webkit is based on [Chromium](http://www.chromium.org) and [io.js](http://iojs.org/). It lets you to call node.js code and modules directly from the DOM, and allows you to use Web technologies for your apps. Further, you can easily package a web application to a native application.
+Nw.js is based on [Chromium](http://www.chromium.org) and [io.js](http://iojs.org/). It lets you to call node.js code and modules directly from the DOM, and allows you to use Web technologies for your apps. Further, you can easily package a web application to a native application.
 
 ## Basics
 
