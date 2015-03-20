@@ -1,4 +1,4 @@
-This chapter contains some tutorial information to get you started with node-webkit programming. It assumes that you have node-webkit binaries. (Such binaries are available in the “[Downloads](https://github.com/rogerwang/node-webkit#downloads)” section of our README. If you want to build your own node-webkit binaries, refer to the [[Building node-webkit]] section instead.)
+This chapter contains some tutorial information to get you started with nw.js programming. It assumes that you have nw.js binaries. (Such binaries are available in the “[Downloads](https://github.com/nwjs/nw.js#downloads)” section of our README. If you want to build your own nw.js binaries, refer to the [[Building node-webkit]] section instead.)
 
 Node-webkit is based on [Chromium](http://www.chromium.org) and [io.js](http://iojs.org/). It lets you to call node.js code and modules directly from the DOM, and allows you to use Web technologies for your apps. Further, you can easily package a web application to a native application.
 
@@ -54,7 +54,7 @@ Note: on Windows, you can drag the `app.nw` to `nw.exe` to open it.
 
 ![Capture4](https://f.cloud.github.com/assets/2891424/279875/e8572dd0-913d-11e2-8a82-ea021ca07ce6.PNG)
 
-There are APIs for native UI controls in node-webkit. You can use these for controlling window, menu, etc.
+There are APIs for native UI controls in nw.js. You can use these for controlling window, menu, etc.
 
 The following example shows how to use menu.
 
@@ -141,7 +141,7 @@ menu.items[0].click = function() {
 
 **Example 3. Using node.js**
 
-You can call node.js and modules directly from the DOM. So it enables endless possibilities for writing apps with node-webkit.
+You can call node.js and modules directly from the DOM. So it enables endless possibilities for writing apps with nw.js.
 
 ```html
 <html>
@@ -158,7 +158,7 @@ document.write('Our computer is: ', os.platform())
 
 ## Run and Package Apps
 
-Now, we can write simple node-webkit apps. Next is to learn how to run and package them. 
+Now, we can write simple nw.js apps. Next is to learn how to run and package them. 
 
 **Run the App**
 
@@ -178,4 +178,4 @@ nw path_to_app.nw
 
 Please read [[Troubleshooting]] if there are any problems.
 
-Go back to [Wiki](https://github.com/rogerwang/node-webkit/wiki) for much more.
+Go back to [Wiki](https://github.com/nwjs/nw.js/wiki) for much more.
