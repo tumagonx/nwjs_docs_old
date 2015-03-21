@@ -2,9 +2,9 @@ If you're used to writing server side scripts, and have little experience writin
 
 ## Express?
 
-If you searched `write desktop apps in node.js` and found node-webkit, the first thing you may do is trying to figure out how to make `Express` or other node web frameworks work, and I've get questions like this for too many times.
+If you searched `write desktop apps in node.js` and found node-webkit, the first thing you may do is trying to figure out how to make `Express` or other node web frameworks work, and I've get questions like this far too many times.
 
-The answer is, You can still use `Express` in the same way you use with Node.js (create a HTTP server, etc), but that's not the way which can fully unleash the power of node-webkit.
+The answer is, you can still use `Express` in the same way you use with Node.js (create a HTTP server, etc), but that's not the way in which you can fully unleash the power of node-webkit.
 
 ### Router
 
@@ -22,11 +22,11 @@ app
 
 Then you you can navigate to a page by using `window.location = 'views/user.html#zcbenz'` and handle logics in `views/user.html` file.
 
-However the recommended way is not opening a new window or changing the `window.location`, you should just replace part of your page with ajax, like `$('#main').load('views/user.html#zcbenz');`. In this way users won't have bad experience feeling refreshing the page, and the current javascript context is also kept.
+However the recommended way is not opening a new window or changing the `window.location`, you should just replace part of your page with ajax, like `$('#main').load('views/user.html#zcbenz');`. Doing it this way users won't have bad experience of having the page refresh/flicker, and the current javascript context is also kept.
 
 ### Template Engine
 
-For template engine, node.js developers have always been comfortable with rendering at server side and then send result to clients. In node-webkit everything is at client side, you don't need to render the template and then feed it to node-webkit, you could just render everything after the page is loaded.
+For template engine, node.js developers have always been comfortable with rendering at server side and then sending the result to clients. In node-webkit everything is client side, you don't need to render the template and then feed it to node-webkit, you could just render everything after the page is loaded.
 
 The basic idea is: use the template engine to generate contents on the fly, and then append dynamic contents into the DOM. like this:
 
@@ -55,13 +55,13 @@ Another example is how I refresh the address bar and folder view in [zcbenz/nw-f
 
 One of the founding nature of node-webkit is that you can call any Node modules you want from DOM **directly**. 'directly' means the Javascript objects of Node and DOM reside in the same V8 heap. So variables references are made directly like a pointer, and function calls don't need to come across any kind of JSON marshalling/unmarshalling bridge between processes, or even threads.
 
-Some may find their code in B/S architecture can be easily reused by launching a http server in node-webkit, but refactoring your code a little bit and making DOM calls Node directly would give you a brand new way of writing applications, with the benefits on both performance and architecture.
+Some may find their code in B/S architecture can be easily reused by launching a http server in node-webkit, but refactoring your code a little bit and making DOM calls to Node directly would give you a brand new way of writing applications, with benefits to both performance and architecture.
 
 ## CoffeeScript, LESS and more
 
-Developers who code in node.js would also want languages that compile into javascript and CSS, the most famous ones are `CoffeeScript` and `LESS`. Usually people would compile the code in server and then send results into clients' browsers, but indeed you can use them directly at browser side, by installing the compiler first and then evaluate the code on the fly.
+Developers who code in node.js would also want languages that compile into javascript and CSS, the most famous ones are `CoffeeScript` and `LESS`. Usually people would compile the code on the server side and then send results to clients' browsers, but instead you can use them directly on the browser side, by installing the compiler first and then evaluate the code on the fly.
 
-For `CoffeScript`, you should first tag your coffeescript with the type `text/coffeescript`, and then include [coffee-script.js](http://github.com/jashkenas/coffee-script/raw/master/extras/coffee-script.js) after all coffeescript on the page (this is the compiler that will evaluate and compile all coffeescript in order). Here is an example:
+For `CoffeScript`, you should first tag your coffeescript with the type `text/coffeescript`, and then include [coffee-script.js](http://github.com/jashkenas/coffee-script/raw/master/extras/coffee-script.js) after all coffeescript is available on the page (this is the compiler that will evaluate and compile all coffeescript in order). Here is an example:
 
 ```html
 <html>
