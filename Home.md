@@ -47,6 +47,7 @@ Here is the Wiki, the encyclopedia of nw.js. I know most of you just don't read 
 * [[Handling files and arguments]]
 * [[Livereload nw.js on changes]]
 * [[Window-menu]]
+* [[Making your app start at user login (OS X)]]
 
 **Testing**
 * [The Testing framework for your application running on nw.js](wiki/chromedriver)
