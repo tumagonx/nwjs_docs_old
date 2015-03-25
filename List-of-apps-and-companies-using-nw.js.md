@@ -4,6 +4,11 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Leanote Desktop App](https://github.com/leanote/desktop-app)
+[Leanote](http://leanote.com) is a cloud notebook, which you can manage, public and share knowledge. 
+Leanote use nw.js to create desktop app, and it's open source: https://github.com/leanote/desktop-app 
+![leanote desktop app preview](https://github.com/leanote/desktop-app/blob/master/preview.png)
+
 ### [Mongo Management Studio](http://www.litixsoft.de/english/mms/)
 
 Mongo Management Studio is the best way to work with MongoDB the easy way. Because of the clean and light user interface, you can execute the typical MongoDB commands fast and effective, without using the MongoDB shell.
