@@ -244,7 +244,7 @@ Close the devtools window.
 
 _since v0.8.0_
 
-Query the status of devtools window
+Query the status of devtools window. *Note: This will always return false if the `headless` option was  `true` when calling `showDevTools()`*
 
 ### Window.setMaximumSize(width, height)
 
