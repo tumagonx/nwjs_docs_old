@@ -679,15 +679,6 @@ Here is video tutorial http://youtu.be/BfBIzmpPV2M
 [![Image](http://sourceforge.net/projects/shubhalabhadown/screenshots/snap2.png)](http://sourceforge.net/projects/shubhalabhadown/screenshots/snap2.png)
 [![Image](http://sourceforge.net/projects/shubhalabhadown/screenshots/snap3.png)](http://sourceforge.net/projects/shubhalabhadown/screenshots/snap3.png)
 
-### TeeChart
-
-TeeChart is an HTML5 charting and graphing library, fully compatible with node-webkit.
-
-Get it at http://www.steema.com/teechart/html5
-
-[![Image](http://www.steema.com/uploads/products/screenshot1Scroller_th.jpg)](http://www.steema.com/uploads/products/screenshot1Scroller_th.jpg)
-
-
 ### Facebook AoPS.app (internal design tool)
 
 Remote Inspector for Adobe Photoshop. Wraps the https://github.com/subtleGradient/node-photoshop-inspector-server project in a Mac app and adds some features that are handy for Designers at Facebook.
