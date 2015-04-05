@@ -14,7 +14,7 @@ Completely turn off the code handling window transparency.
 
 ### --disable-gpu --force-cpu-draw
 force the drawing / compositing using cpu, needed for click through transparency, <br>
-more info on transparency visit: https://github.com/rogerwang/node-webkit/wiki/Transparency
+more info on transparency visit: https://github.com/nwjs/nw.js/wiki/Transparency
 
 ### And more: all the switches supported by [Content API of Chromium](http://src.chromium.org/svn/trunk/src/content/public/common/content_switches.cc)
 
