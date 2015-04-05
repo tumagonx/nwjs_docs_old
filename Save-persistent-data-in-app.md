@@ -1,6 +1,6 @@
 It's very common to store persistent data in native apps, people usually do it by embedding external databases or manipulating plain text files. In node-webkit, you have much better choices than that, you can use `Web SQL Database`, `embedded databases`, `Web Storage` or `Application Cache` without headaches of any extra dependencies.
 
-Additionally, nw.js provides [[`App.dataPath`|App]] which will give you a system dependent path where you can store application data.
+Additionally, nw.js provides [`App.dataPath`](https://github.com/nwjs/nw.js/wiki/App) which will give you a system dependent path where you can store application data.
 
 ## Web SQL Database
 
