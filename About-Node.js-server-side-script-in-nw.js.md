@@ -4,13 +4,15 @@ If you're used to writing server side scripts, and have little experience writin
 
 If you searched `write desktop apps in node.js` and found node-webkit, the first thing you may do is trying to figure out how to make `Express` or other node web frameworks work, and I've get questions like this far too many times.
 
-The answer is, you can still use `Express` in the same way you use with Node.js (create a HTTP server, etc), but that's not the way in which you can fully unleash the power of node-webkit.
+The answer is, you can still use `Express` in the same way you use with Node.js (create a HTTP server, etc), but that's not the way in which you can fully unleash the power of node-webkit. By using front-end libraries like jQuery or Angular and a healthy separation between views and controllers, the need for Node to render templates disappears.
 
 ### Router
 
 People who want `Express` are indeed finding two things: `router` and `template engine`.
 
-As for `router`, it is used for showing different pages for different urls, like `/user/zcbenz` and `/article/901127`. You don't need a `router` in node-webkit, because you already have a better one: the `file:` protocol. For example, if you have an app like this:
+As for `router`, it is used for showing different pages or API responses for different urls, like `/user/zcbenz` and `/article/901127`. For optimal efficiency, you may want to dig in to [Express's routing mechanism](http://expressjs.com/api.html#router) (or another of your choosing) in order to access it through the Node context instead of having to use HTTP.
+
+As for static files, the `file:` protocol is preferred over other middleware (such as `express.static`). For example, if you have an app like this:
 
 ```
 app
