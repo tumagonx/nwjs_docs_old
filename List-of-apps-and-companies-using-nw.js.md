@@ -5,8 +5,7 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 ## Apps
 
 ### [SkimHN](https://github.com/mcaravind/HackerNewsSummary)
-[SkimHN](https://github.com/mcaravind/HackerNewsSummary) is a desktop client for Hacker News built with nw.js, edge.js and C#. SkimHN fetches the front page stories and also gives you a quick summary of selected stories. The purpose of SkimHN is to get a quick preview of a story before deciding to read it on the HackerNews website.
-Leanote use nw.js to create desktop app, and it's open source: https://github.com/leanote/desktop-app 
+[SkimHN](https://github.com/mcaravind/HackerNewsSummary) is a desktop client for Hacker News built with nw.js, edge.js and C#. SkimHN fetches the front page stories and also gives you a quick summary of selected stories. The purpose of SkimHN is to get a quick preview of a story before deciding to read it on the HackerNews website. 
 ![SkimHN preview](https://github.com/mcaravind/HackerNewsSummary/blob/master/screenshot_summary.PNG)
 
 ### [Leanote Desktop App](https://github.com/leanote/desktop-app)
