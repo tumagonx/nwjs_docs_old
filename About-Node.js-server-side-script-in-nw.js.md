@@ -55,7 +55,7 @@ Another example is how I refresh the address bar and folder view in [zcbenz/nw-f
 
 One of the founding nature of node-webkit is that you can call any Node modules you want from DOM **directly**. 'directly' means the Javascript objects of Node and DOM reside in the same V8 heap. So variables references are made directly like a pointer, and function calls don't need to come across any kind of JSON marshalling/unmarshalling bridge between processes, or even threads.
 
-Some may find their code in B/S architecture can be easily reused by launching a http server in node-webkit, but refactoring your code a little bit and making DOM calls to Node directly would give you a brand new way of writing applications, with benefits to both performance and architecture.
+Some may find their code in B/S architecture can be easily reused by launching a HTTP server in node-webkit. By using an asynchronous API layer for either HTTP or it's Node context you could account for the difference between desktop- and browser based clients transparently. It must be noted that making DOM calls to Node directly would give you a brand new way of writing applications, with benefits to both performance and architecture, but be limited as to code sharing with platforms that cannot call Node.
 
 ## CoffeeScript, LESS and more
 
