@@ -13,7 +13,7 @@ And preview the upstream instructions for your platform, they contained importan
 1. [Get the Chromium depot_tools](http://www.chromium.org/developers/how-tos/install-depot-tools).
 2. Setup building enviroment, see *Build Instructions* above.
 
-**Starting from v0.11.0, it's required to use at least VS2013 Pro update 2 to build on windows.** And see also the section 'Official extra build settings' below.
+**Starting from v0.11.0, it's required to use at least VS2013 Pro update 2 or VS Community 2013 to build on windows.** And see also the section 'Official extra build settings' below.
 
 ## Get the Code
 
