@@ -57,6 +57,7 @@ From the command line:
 * [generator-node-webkit](https://www.npmjs.org/package/generator-node-webkit) is a yeoman generator to develop node-webkit applications and create packages for mac, linux and win.
 * [lein-node-webkit-builder](https://github.com/wilkerlucio/lein-node-webkit-build) It's similar to `grunt-node-webkit-builder`, will download the binaries automatically and let you build on multi-platforms, but it runs as a [Leiningen](http://leiningen.org/) plugin, more suitable for people working with [ClojureScript](https://github.com/clojure/clojurescript).
 * [Web2Executable](https://github.com/jyapayne/Web2Executable) It's a full, cross-platform, opensource GUI packaging app that makes a single binary out of the web app, ready to use out of the box. It massively simplifies packaging apps and works with the Phaser game library. Works on Mac OSX, Linux and Windows using Pyside. It's in beta, so feedback and contributors are very welcome.
+* [nwjs-shell-builder](https://github.com/Gisto/nwjs-shell-builder) - nwjs shell script builder for nwjs (node-webkit) applications. This script can be easily integrated into your build process, it will download nwjs 32/64bit for Linux, Windows and OSX and build packages for all 3 platforms from given source directory.
 
 ## Step 2b: Alternative way - Making an executable file out of a .nw file 
 
