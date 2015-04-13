@@ -2,7 +2,7 @@
 IO.js v1.2.0, Chromium 41.0.2272.76  
 [release notes](https://groups.google.com/d/msg/nwjs-general/NJA-Up4MFug/1jmBPjzklSUJ)  
 * Linux: [32bit](http://dl.nwjs.io/v0.12.0/nwjs-v0.12.0-linux-ia32.tar.gz) / [64bit] (http://dl.nwjs.io/v0.12.0/nwjs-v0.12.0-linux-x64.tar.gz)
-* Windows: [32bit](http://dl.nwjs.io/v0.12.0/nwjs-v0.12.0-win-ia32.zip) / [64bit] http://dl.nwjs.io/v0.12.0/nwjs-v0.12.0-win-x64.zip)
+* Windows: [32bit](http://dl.nwjs.io/v0.12.0/nwjs-v0.12.0-win-ia32.zip) / [64bit] (http://dl.nwjs.io/v0.12.0/nwjs-v0.12.0-win-x64.zip)
 * Mac 10.7+: [32bit](http://dl.nwjs.io/v0.12.0/nwjs-v0.12.0-osx-ia32.zip) / [64bit] (http://dl.nwjs.io/v0.12.0/nwjs-v0.12.0-osx-x64.zip)
 
 ## v0.11.6 (Jan 21, 2015)
