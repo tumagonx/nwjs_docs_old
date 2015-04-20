@@ -4,6 +4,10 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [PiktoPuzzle] (https://github.com/mcaravind/PiktoPuzzle)
+[PiktoPuzzle](https://github.com/mcaravind/PiktoPuzzle) is a node-webkit based desktop app to help memorize pictures (e.g. maps, scientific diagrams).   
+![PiktoPuzzle preview](https://github.com/mcaravind/PiktoPuzzle/blob/master/screenshots/review_select_item.PNG)
+
 ### [SkimHN](https://github.com/mcaravind/HackerNewsSummary)
 [SkimHN](https://github.com/mcaravind/HackerNewsSummary) is a desktop client for Hacker News built with nw.js, edge.js and C#. SkimHN fetches the front page stories and also gives you a quick summary of selected stories. The purpose of SkimHN is to get a quick preview of a story before deciding to read it on the HackerNews website. 
 ![SkimHN preview](https://github.com/mcaravind/HackerNewsSummary/blob/master/screenshot_summary.PNG)
