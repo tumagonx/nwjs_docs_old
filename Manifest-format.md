@@ -220,6 +220,8 @@ _since v0.3.0_
 
 *(boolean)* whether window is fullscreen
 
+Beware, if frame is also set to false in fullscreen it will prevent the mouse from being captured on the very edges of the screen. You should avoid activate it if fullscreen is also set to true.
+
 ### show_in_taskbar
 _since v0.9.2_
 
@@ -229,6 +231,8 @@ _since v0.9.2_
 _since v0.3.0_
 
 *(boolean)* specify it to `false` to make the window frameless 
+
+Beware, if frame is set to false in fullscreen it will prevent the mouse from being captured on the very edges of the screen. You should avoid activate it if fullscreen is also set to true.
 
 ### show
 _since v0.3.0_
