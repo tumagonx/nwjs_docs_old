@@ -23,7 +23,7 @@ Here is the Wiki, the encyclopedia of nw.js. I know most of you just don't read 
 * [[Native UI API Manual]] — nw.js API for native UI controls
 * [[Changes related to Node]] — Things added/changed to Node API after bring in DOM
 * [[Changes to DOM]] — Things changed to DOM to support native app better
-* [Node.js Manual & Documentation](http://nodejs.org/api/)
+* [io.js Manual & Documentation](https://iojs.org/api/)
 
 **Advanced:**
 * [Use app protocol to migrate code from your web site](wiki/App protocol)
