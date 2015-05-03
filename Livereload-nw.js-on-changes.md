@@ -46,8 +46,8 @@ You can add an option to the previous example to watch all subdirectories: `fs.w
     var chokidar = require('chokidar');
     var watcher  = chokidar.watch('.', {ignored: /[\/\\]\./});
     watcher.on('all', function(event, path) {
-      if (window.location)
-        window.location.reload();
+      if (location && event == "change")
+        location.reload();
     });
   </script>
 ```
