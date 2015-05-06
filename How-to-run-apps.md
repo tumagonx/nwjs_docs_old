@@ -54,7 +54,19 @@ Now you can call nw from the commandline like Linux and Windows:
 
     nw "/home/path/to/game"
 
-### Using 3rd party tools
+### Using npm `nw` installer
 
-* [npm nw](https://www.npmjs.com/package/nw)
-* [npm nodewebkit](https://www.npmjs.com/package/nodewebkit)
+[nw on npmjs.com](https://www.npmjs.com/package/nw) and [nw on github](https://github.com/nwjs/npm-installer)
+
+Install globally:
+```
+sudo npm install -g nw
+nw ./my_nwjs_app
+```
+
+Install locally:
+```
+npm install nw
+node_modules/.bin/nw ./my_nwjs_app
+```
+
