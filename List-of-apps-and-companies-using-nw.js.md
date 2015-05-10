@@ -107,6 +107,18 @@ Tinder++ is a desktop application for Mac and Windows that allows you to swipe f
 
 ![](http://tinderplusplus.com/img/screenshot.png)
 
+### [Fuckr](http://fuckr.me/)
+
+(open source: [tomlandia/fuckr](https://github.com/tomlandia/fuckr))
+
+Fuckr is a desktop Grindr client with extra features such as:
+
+* Pinpointing guys' exact location (using triangulation).
+* Changing your location.
+* Saving any pic.
+
+![](http://fuckr.me/img/screenshot_profiles.png)
+
 ### [Story-writer](http://soft.xiaoshujiang.com)
 
 Story-writer is a free  Markdown editor.
