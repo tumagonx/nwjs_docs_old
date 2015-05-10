@@ -4,6 +4,12 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Namagic](http://namagicapp.com)
+
+[Namagic](http://namagicapp.com) is a batch renaming tool, available on Mac App Store.
+
+![Namagic screenshot](https://cloud.githubusercontent.com/assets/5699295/7555242/19d7636a-f745-11e4-905a-d9a17c1012c1.png)
+
 ### [Evidentia] (https://evidentiasoftware.com)
 [Evidentia](https://evidentiasoftware.com) is a commercial node-webkit based desktop app developed by Evidentia Software for genealogists.  Evidentia is an evidence management  and analysis tool.  It makes use of angularjs for the main framework, and HTML5's indexeddb for its underlying database structure.
 
