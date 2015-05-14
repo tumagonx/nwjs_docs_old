@@ -1,3 +1,5 @@
+Note: Entries in each category are sorted from newest to oldest according to their publication dates.
+
 # Books.
 * [Windows Desktop App Creation with node-webkit](http://www.amazon.in/Windows-Desktop-App-Creation-node-webkit-ebook/dp/B00EEYFFVC) by Jonathan Dodd (Published on July 2013)
 
