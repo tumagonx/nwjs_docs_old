@@ -8,7 +8,6 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 Printr and Athom, 2 Dutch startups, joined forces to create a modular development kit built in nw.js and Angularjs. The core can be found at [printhom/devkit-core](http://github.com/printhom/devkit-core) and 2 example implementations at [athombv/devkit](http://github.com/athombv/devkit) and [printr3d/devkit-app](http://github.com/printr3d/devkit-app). Feel free to create you own DevKit for your company or project!
 
 ![printr-devkit](https://developers.formide.com/public/assets/images/devkit_example.png)
-
 ![athom-devkit](http://developers.athom.nl/img/devkit.png)
 
 ### [Namagic](http://namagicapp.com)
