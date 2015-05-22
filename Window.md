@@ -365,7 +365,7 @@ Execute a piece of JavaScript in the window, if `frame` argument is null, or in 
 
 ### Window.evalNWBin(frame, path)
 _Since v0.12.0-rc1_  
-Load compiled JavaScript binary in the window, if `frame` argument is null; or in the context of an iframe, if `frame` is an iframe object. The `path` argument is the path of the JS binary compiled with `nwjc`, see https://github.com/nwjs/nw.js/wiki/Protect-JavaScript-source-code-with-v8-snapshot. **NOTE: this method has no effect and will not load the binary when devtools window is opening.**
+Load compiled JavaScript binary in the window, if `frame` argument is null; or in the context of an iframe, if `frame` is an iframe object. The `path` argument is the path of the JS binary compiled with `nwjc`, see https://github.com/nwjs/nw.js/wiki/Protect-JavaScript-source-code-with-v8-snapshot. **NOTE: this method has no effect and will not load the binary when devtools window is opening. See https://github.com/nwjs/nw.js/issues/3388 **
 
 ## Events
 
