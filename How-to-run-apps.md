@@ -31,6 +31,11 @@ On Linux, you can use one of these command lines:
 
 If you have installed the `.deb`, you can double click on `.nw` files in your file manager as well.
 
+If you see this error:
+
+    nw: error while loading shared libraries: libudev.so.0: cannot open shared object file: No such file or directory
+Please read [The solution of lacking libudev.so.0](https://github.com/nwjs/nw.js/wiki/The-solution-of-lacking-libudev.so.0)
+
 ### Mac OS X
 
 On Mac OSX, a folder or `.nw` file can be dropped onto the nw.app application bundle. On the Mac OSX Terminal (commandline), you can use nw like this (assuming it's installed to the Applications directory):
@@ -69,4 +74,3 @@ Install locally:
 npm install nw
 node_modules/.bin/nw ./my_nwjs_app
 ```
-
