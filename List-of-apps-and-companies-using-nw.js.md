@@ -4,6 +4,11 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [neodym IDE](https://github.com/aaronprojects/neodym-ide)
+The neodym IDE makes developing hybrid apps using the [Ionic SDK](http://ionicframework.com/) faster, more comfortable and helps to increase your process and code quality. It is an open-source project based on a master thesis about hybrid app development written at [aaronprojects GmbH](http://www.aaronprojects.de) and built using nw.js and AngularJS. 
+
+![neodym IDE](https://camo.githubusercontent.com/2f80076ef9869f3c7b59950be133021d4132fd3a/68747470733a2f2f7261772e6769746875622e636f6d2f6161726f6e70726f6a656374732f6e656f64796d2d6964652f646576656c6f702f696d616765732f73657475702e706e67)
+
 ### [DevKit](http://github.com/printhom/devkit-core)
 Printr and Athom, 2 Dutch startups, joined forces to create a modular development kit built in nw.js and Angularjs. The core can be found at [printhom/devkit-core](http://github.com/printhom/devkit-core) and 2 example implementations at [athombv/devkit](http://github.com/athombv/devkit) and [printr3d/devkit-app](http://github.com/printr3d/devkit-app). Feel free to create you own DevKit for your company or project!
 
