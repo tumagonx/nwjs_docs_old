@@ -4,6 +4,13 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Boson Editor](https://github.com/isdampe/BosonEditorExperimental)
+Boson is a minimalistic experimental source code editor. It's written in Node, and wrapped in Nw.js as a runtime container for easy cross-platform integration. Boson supports theming, plugins and more.
+
+[![boson-1](https://camo.githubusercontent.com/7cc36f7c0002c69a66c8299c840a584c8dfd0e54/687474703a2f2f692e696d6775722e636f6d2f41424c544b6a412e706e67)](https://github.com/isdampe/BosonEditorExperimental)
+
+[![boson-2](https://camo.githubusercontent.com/12263869967502ab049e0c3b66bdf9a9b25f3bd5/687474703a2f2f692e696d6775722e636f6d2f41524c6a6d66342e706e67)](https://github.com/isdampe/BosonEditorExperimental)
+
 ### [neodym IDE](https://github.com/aaronprojects/neodym-ide)
 The neodym IDE makes developing hybrid apps using the [Ionic SDK](http://ionicframework.com/) faster, more comfortable and helps to increase your process and code quality. It is an open-source project based on a master thesis about hybrid app development written at [aaronprojects GmbH](http://www.aaronprojects.de) and built using nw.js and AngularJS. 
 
