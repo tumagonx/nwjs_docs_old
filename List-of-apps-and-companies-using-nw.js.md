@@ -984,4 +984,4 @@ So far we have Windows & Mac apps built with NW.js. Soon we'll have Android & iO
 * Open links in browser or new window
 * Preferences in the right-click context menu (or menu bar for OS X, tray menu for Windows)
 
-[![Messenger for Desktop screenshot](http://messengerfordesktop.com/img/platforms.jpg)](http://messengerfordesktop.com)
+[![Messenger for Desktop screenshot](https://raw.githubusercontent.com/Aluxian/Facebook-Messenger-Desktop/master/screenshot.png)](http://messengerfordesktop.com)
