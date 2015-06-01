@@ -28,7 +28,7 @@ Currently not everything of developer tools is working well, below are the thing
 
 * node modules don't show in script sources
 
-## Why the devtools shows an empty window?
+## Why does devtools show an empty window?
 
 Under certain network settings, it may show a white page for devtools. This might not be a bug of node-webkit, devtools in node-webkit is indeed a remote debugger, it needs to open a local server and transfer data via sockets.
 
