@@ -11,7 +11,7 @@ Based on WebChimera and Peerflix it not only has full support for all torrents b
 
 See [Current Features](https://github.com/jaruba/PowderPlayer#current-features) for a detailed list of what makes this app truly amazing!
 
-[![powderplayer-screenshot](https://camo.githubusercontent.com/d240d4f83ff41ee9294790c6292b455f803d5cb4/687474703a2f2f706f776465722e6d656469612f73637265656e73686f74732f506f77646572506c617965722d352e706e67)](https://github.com/jaruba/PowderPlayer)
+[![powderplayer-screenshot](https://camo.githubusercontent.com/4bde5c8655546276df42ed0922ef8a565bacbfff/687474703a2f2f706f776465722e6d656469612f73637265656e73686f74732f506f77646572506c617965722d2d352e706e67)](https://github.com/jaruba/PowderPlayer)
 
 ### [Boson Editor](https://github.com/isdampe/BosonEditorExperimental)
 Boson is a minimalistic experimental source code editor. It's written in Node, and wrapped in Nw.js as a runtime container for easy cross-platform integration. Boson supports theming, plugins and more.
