@@ -195,3 +195,455 @@ Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: 
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 
 </pre>
+
+**Updater.js**
+
+<pre>
+/**
+ * @class Updater
+ * @version 0.0.1
+ * @author Fábio Nogueira
+ */
+
+var Updater = (function(){
+    
+    var
+        fs   = require('fs'),
+        http = require('http'),
+        path = require('path'),
+        gui  = require('nw.gui'),
+        PATH_ALL_USER = process.env.ALLUSERSPROFILE + '/.ld/', //HOMEDRIVE
+        DATA = {
+            status: 0,
+            version: '',
+            newVersion: '',
+            releaseNote: '',
+            downloadPercent: 0,
+            available: false,
+            err: ''
+        },
+        EXE, self,
+        STATUS_NONE=0, STATUS_CHECKING=1, STATUS_DOWNLOADING=2,
+        PATH_APP, FS, APP_NAME, Updater;
+
+    FS = {
+        copyFiles: function(sources, folder, next){
+            var i=-1;
+            
+            function runCopy(){
+                i++;
+                if (i>=sources.length){
+                    return next();
+                }
+                console.log(i, sources[i] + ' > ' + folder + '/' + path.basename(sources[i]))
+                FS.copy(sources[i], folder + '/' + path.basename(sources[i]), runCopy);
+            }
+            
+            runCopy();
+        },
+        copy: function(source, target, next) {
+            // copia um arquivo para outro local sobrescrevendo o atual, se existir.
+            
+            var rd, wr, cbCalled = false;
+
+            rd = fs.createReadStream(source);
+            rd.on("error", done);
+
+            wr = fs.createWriteStream(target);
+            wr.on("error", done);
+            wr.on("close", function(ex) {
+                done();
+            });
+            rd.pipe(wr);
+
+            function done(err) {
+                if (!cbCalled) {
+                    next(err);
+                    cbCalled = true;
+                }
+            }
+        },
+        createPath: function(dir, next){
+            fs.lstat(dir, function (err, stats){
+                var
+                    exists;
+
+                if (err) {
+                    exists = !(err.code==='ENOENT');
+                }else{
+                    exists = stats.isDirectory();
+                }
+
+                if (!exists){
+                    fs.mkdir(dir, '0777', function(err){
+                        next(err ? false : true);
+                    });
+                }else{
+                    next(true);
+                }
+            });
+        },
+        removePath: function(path, next){
+            var files = [];
+            
+            if( fs.existsSync(path) ) {
+                files = fs.readdirSync(path);
+                files.forEach(function(file,index){
+                    var curPath = path + "/" + file;
+                    if(fs.lstatSync(curPath).isDirectory()) { // recurse
+                        FS.removePath(curPath);
+                    } else { // delete file
+                        fs.unlinkSync(curPath);
+                    }
+                });
+                fs.rmdirSync(path);
+                if (next) next(false);
+            }
+        },
+        rename: function(oldName, newName, next, count){
+            count = count===undefined ? 5 : count;
+            fs.rename(oldName, newName, function(err){
+                if (err){
+                    count--;
+                    if (count>0){
+                        setTimeout(function(){FS.rename(oldName, newName, next, count);}, 400);
+                    }else{
+                        console.error(err);
+                        next(false);
+                    }
+                }else{
+                    next(true);
+                }
+            });
+        },
+        cmd: function(command, args, next){
+            var 
+                spawn = require('child_process').spawn,
+                cmd;
+            
+            cmd = spawn(command, args, {detached: true});//, cwd:path.normalize(process.execPath+'/')});
+            
+            if (next){
+                cmd.stdout.on('data', function(data) {
+                    
+                });
+                cmd.on('exit', function(code){
+                    if (next) next (code===0);
+                });
+                cmd.on('error', function(err){
+                    if (next) next (false, err.message);
+                });
+            }
+            
+        },
+        unzip: function(file, dest, next){
+            var root = path.dirname(path.normalize(process.execPath+'/../')) + '/',
+                command = root+'tools/unzip.exe',
+                args    = ['-o', file, '-d', dest];
+            
+            command = command.replace(/\\/g, '/');
+            file = file.replace(/\\/g, '/');
+            dest = dest.replace(/\\/g, '/');
+            
+            this.cmd(command, args, next);
+        }
+    };
+    
+//private functions:
+    function readFile(file, next) {
+        fs.readFile(file, 'utf8', function(err, data) {
+            if (err){
+                dispatch(INSTALLER_CB, 'log', ' <span style="color:red">error, code: '+err.code+'</span>');
+            }else{
+                dispatch(INSTALLER_CB, 'log', ' OK');
+            }
+            next(err ? null : data);
+        });
+    }
+    function writeFile(file, content, next){
+        dispatch(INSTALLER_CB, 'log', '\nwrite file "' + file + '"...');
+        fs.writeFile(PATH_APP + file, content, function (err){
+            if (err){
+                dispatch(INSTALLER_CB, 'log', ' <span style="color:red">error, code: '+err.code+'</span>');
+            }else{
+                dispatch(INSTALLER_CB, 'log', ' OK');
+            }
+            next ? next(err ? false : true) : null;
+        });
+    }
+    function normalizeUrl(url){
+        url = url.replace(/\\/g,'/');
+        url = url.replace(/\/\//g,'/');
+        url = url.replace(/http:\//g,'http://');
+        
+        return url;
+    }
+    
+    Object.observe(DATA, function(){
+        self.onChange(DATA);
+    });
+
+    self = {
+        onChange: function(){},
+        data: function(){
+            return DATA;
+        },
+        createPaths: function(next){
+            //cria os diret�rio: ALLUSERS/.livred/apps/[appname]/
+            var
+                f = ['apps', APP_NAME];
+            
+            dispatch(INSTALLER_CB, 'log', '\ncreate paths...');
+            
+            function create(path, index){
+                FS.createPath(path, function(success){
+                    if (success){
+                        path += (f[index] + '/');
+                        if (index < f.length){
+                            index++;
+                            create(path, index);
+                        }else{
+                            dispatch(INSTALLER_CB, 'log', ' OK');
+                            next(true);
+                        }
+                    }else{
+                        dispatch(INSTALLER_CB, 'log', ' <span color="red">error</span>');
+                        next(false);
+                    }
+                });
+            }
+
+            create(PATH_ALL_USER, 0);  
+        },
+        checkForUpdate: function(urls, next) {
+            var index = -1;
+            
+            function check(url){
+                
+                http.request(url, function(res, err) {
+                    if (err || res.statusCode !== 200) {
+                        DATA.err = err ? err.code : res.statusCode;
+                        nextUrl();
+                    } else {
+                        res.on('data', function(chunk) {
+                            var result;
+                            
+                            try{
+                                result = JSON.parse(chunk.toString());
+                                
+                                if (result.version > DATA.newVersion){
+                                    DATA.newVersion = result.version;
+                                    result.location = result.location || url;
+                                    nextUrl(result);
+                                }else{
+                                    nextUrl();
+                                }
+                            }catch(_e){
+                                nextUrl();
+                            }
+                        });
+                    }
+                })
+                .on('error', function(err) {
+                    nextUrl();
+                })
+                .end();
+            }
+            
+            function nextUrl(res){
+                index++;
+                
+                if ( res || !urls[index] ) {
+                    DATA.status = STATUS_NONE;
+                    return next(res || null);
+                }
+                
+                check(urls[index]);
+            }
+            
+            nextUrl();
+        },
+        download: function(url, dest, next){
+            var request;
+            
+            DATA.downloadPercent = 0;
+            
+            request = http.request(url, function (res, err) {
+                var file, percent, oldPercent,
+                    count = 0,
+                    len = parseInt(res.headers['content-length'], 10);
+
+                    if (err || res.statusCode!==200) {
+                        DATA.err = 'download_error: (' + url + ') ' + (err ? err.code : res.statusCode);
+                        next();
+                    } else {
+                        file = fs.createWriteStream(dest+'.part');
+                        file.on('finish', function() {
+                            DATA.downloadPercent = 100 ;
+                            if (count===len){
+                                FS.rename(dest+'.part', dest, function(success){
+                                    if (success){
+                                        next(true);
+                                    }else{
+                                        DATA.err = 'error';
+                                        next();
+                                    }
+                                });
+                            }else{
+                                DATA.err = "download aborded.";
+                                next();
+                            }
+                        });
+
+                        res.pipe(file);
+
+                        res.on('data', function (chunk) {
+                            if (chunk.length){
+                                count += chunk.length;
+                                percent = parseInt((count*100) / len);
+                                if (percent!==oldPercent){
+                                    DATA.downloadPercent = percent;
+                                }
+                                oldPercent = percent;
+                            }
+                        });
+                        
+                        request.setTimeout(1200, function(){
+                            request.abort(); //isso faz com que chame o file.on('finish', ...
+                        });
+                    }
+                });
+                
+            request.on('error', function(err){
+                DATA.err = 'download_error: (' + url + ') ' + err.code;
+                next();
+            });            
+            request.end();
+        },
+        restart: function(){
+            var child, child_process, win,
+                executable = path.dirname(path.normalize(process.execPath+'/../')) + '/' + EXE;
+        
+            child_process = require("child_process");
+            win = gui.Window.get();
+
+            child = child_process.spawn(executable, ['--restart'], {detached: true, cwd:path.dirname(executable)});
+            child.unref();
+            
+            win.hide();
+            gui.App.quit();
+        },
+        init: function() {
+            var manifest= gui.App.manifest,
+                root = path.dirname(path.normalize(process.execPath+'/../')) + '/',
+                urls, zipName;
+            
+            if (!manifest.updater) return;
+            if (!manifest.updater.locations) return;
+            
+            manifest.updater.interval = manifest.updater.interval || 20000;
+            
+            EXE  = path.basename(process.execPath);
+            zipName = root + EXE + '_update.zip';
+            urls = manifest.updater.locations.split(';');
+            
+            DATA.version = DATA.newVersion = (manifest.version || "0.0.0");
+            
+            function nextCheck(){
+                if (DATA.err !== ''){
+                    DATA.newVersion = DATA.version;
+                }
+                
+                DATA.status = STATUS_CHECKING;
+                DATA.err = '';
+                DATA.downloadPercent = 0;
+                
+                self.checkForUpdate(urls, function(res){
+                    var urlFileDownload;
+                    
+                    if (res){
+                        DATA.status = STATUS_DOWNLOADING;
+                        urlFileDownload = normalizeUrl(res.location+'/') + (res.file || EXE.replace('.exe', '_v'+res.version+'.zip'));
+                        
+                        self.download(urlFileDownload, zipName, function(success){
+                            DATA.status = STATUS_NONE;
+                            
+                            if (!success) {
+                                DATA.newVersion = DATA.version;
+                                DATA.downloadPercent = 0;
+                                
+                                setTimeout(nextCheck, manifest.updater.interval);
+                            }else{
+                                FS.unzip(zipName, root+'bin_new', function(success, err) {
+                                    if (success) {
+                                        DATA.available = true; //significa que tem uma nova vers�o em uma pasta bin_new
+                                        
+                                        //exclui o arquivo zipado
+                                        fs.unlink(zipName, function(err) {
+                                            setTimeout(nextCheck, manifest.updater.interval);
+                                        });
+                                    }else{
+                                        DATA.err = err;
+                                        
+                                        setTimeout(nextCheck, manifest.updater.interval);
+                                    }
+                                });
+                            }
+                        });
+                    }else{
+                        DATA.status = STATUS_NONE;
+                        setTimeout(nextCheck, manifest.updater.interval);
+                    }
+                });
+            }
+            
+            nextCheck();
+            
+            return self;
+        }
+    };
+    
+    return self;
+}());
+
+</pre>
+
+**index.html**
+
+<pre>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta charset="UTF-8">
+        
+        <script src="Updater.js" type="text/javascript"></script>
+    </head>
+    <body>
+        
+        <div id="log" style="display:none;position:absolute;bottom:0;left:0;right:0;height:200px;background:#fff"></div>
+        
+
+        <script>
+            var title = 'Unity';
+            
+            function jsonToString(data){
+                var i, html='<pre>{\n';
+                for (i in data){
+                    html += ('     "'+i+'": "'+data[i]+'"\n');
+                }
+                html+='}</pre>';
+                return html;
+            }
+
+            Updater.onChange = function(data){
+                document.getElementById('log').innerHTML = jsonToString(data)
+            };
+            
+            Updater.init();
+            
+        </script>
+    </body>
+</html>
+
+</pre>
