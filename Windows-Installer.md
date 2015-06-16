@@ -610,7 +610,7 @@ var Updater = (function(){
 
 **index.html**
 
-<pre>
+<code>
 <!DOCTYPE html>
 <html>
     <head>
@@ -646,4 +646,4 @@ var Updater = (function(){
     </body>
 </html>
 
-</pre>
+</code>
