@@ -77,3 +77,4 @@ Here is the Wiki, the encyclopedia of nw.js. I know most of you just don't read 
 * [[How node.js is integrated with Chromium]]
 * [[Downloads of old versions]]
 * [[List of apps and companies using nw.js]]
+* [[Windows-Installer]]
