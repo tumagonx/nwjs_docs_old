@@ -9,15 +9,12 @@
 
 **Directory tree created by the batch**
 
-`- dist
- +---- release\
-     +---- {version}\
-     |   |---- start.exe
-     |   +---- bin\
-     |       |---- application.exe
-     |       |---- nw.pak
-     |       |---- libEGL.dll
-     |       |---- ...
-     +---- installer\
-     +---- update\
+`dist\release\{version}\start.exe
+ dist\release\{version}\bin\application.exe
+ dist\release\{version}\bin\nw.pak
+ dist\release\{version}\bin\libEGL.dll
+ dist\release\{version}\bin\...
+ dist\installer\installer_{version}.exe
+ dist\update\package.json
+ dist\update\app_v{version}.zip
 `
