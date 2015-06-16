@@ -65,18 +65,15 @@ md %path_release_version%\www
 md %path_update_version%
 del /q %path_release_version%\sed\*
 
-
 rem cria o executável inicial, start.bat para .exe
 echo creating started executable...
 %path_bat2exe% -overwrite -invisible -bat %path_bat% -save %path_release_version%\%name%.exe -icon %path_icon% > nul
-
 
 rem copia os binários
 echo copy binaries...
 copy %path_bin%\* %path_release_version%\bin > nul
 copy %path_tools%\* %path_release_version%\tools > nul
 if exist %path_release_version%\bin\package.json del %path_release_version%\bin\package.json
-
 
 rem cria o zip www. substitui {{version}} em package.json
 echo creating www.zip...
@@ -89,13 +86,11 @@ xcopy %path_www%\* %path_release_version%\www /s > nul
 rd %path_release_version%\www /s /q
 rd %path_release_version%\sed /s /q
 
-
 rem cria um executável único com os arquivos www
 echo creating application.exe...
 cd %path_icon_resource%
 Resourcer -op:upd -src:%path_release_version%\bin\nw.exe -type:14 -name:IDR_MAINFRAME -file:%path_icon% > nul
 copy /b %path_release_version%\bin\nw.exe+%path_release_version%\www.zip %path_release_version%\bin\application.exe > nul
-
 
 rem exclui alguns arquivos (limpeza)
 del %path_release_version%\www.zip
@@ -105,19 +100,16 @@ if exist %path_release_version%\bin\run.bat del %path_release_version%\bin\run.b
 if exist %path_release_version%\bin\credits.html del %path_release_version%\bin\credits.html
 if exist %path_release_version%\bin\nwjc.exe del %path_release_version%\bin\nwjc.exe
 
-
 rem cria o zip para atualização automática
 echo creating bin update zip...
 cd %path_release_version%\bin
 %path_7zip% a -tzip %path_update_version%\%name%_%version%.zip * > nul
 cd %mypath%
 
-
 rem cria package.json
 echo {"version":"%version%","location":"%updater_url%","file":"%name%_%version%.zip"} > %path_update_version%\package.json
 
-
-<span style="color:green">rem cria o instalador</span>
+rem cria o instalador
 echo creating installer...
 md %path_release_version%\sed\
 copy %path_inno_setup_scp% %path_release_version%\sed\script.iss > nul
@@ -129,4 +121,77 @@ rd %path_release_version%\sed /s /q
 
 :end
 echo finish.
+</pre>
+
+**start.bat**
+<pre>
+@echo off
+
+cd %CD%
+
+rem pausa por 3 segundos
+if "%1" == "--restart" (
+    ping -n 3 127.0.0.1 > nul
+)
+
+if exist bin_new (
+    if exist bin (
+        ren bin bin_old
+    )
+    
+    ren bin_new bin
+)
+
+if exist bin_old (
+    rd bin_old /s /q
+)
+
+start /I bin\application.exe
+</pre>
+
+**script.iss**
+
+<pre>
+
+#define MyAppName "MyAppName"
+#define MyAppVersion "{{version}}"
+#define MyAppPublisher "My Company, Inc."
+#define MyAppURL "http://my.url.to.app/"
+#define MyAppExeName "MyApp.exe"
+
+[Setup]
+AppId={{Unity@redeci.com.br}
+AppName={#MyAppName}
+AppVersion={#MyAppVersion}
+AppVerName={#MyAppName}v{#MyAppVersion}
+AppPublisher={#MyAppPublisher}
+AppPublisherURL={#MyAppURL}
+AppSupportURL={#MyAppURL}
+AppUpdatesURL={#MyAppURL}
+DefaultDirName=C:\{#MyAppName}
+DefaultGroupName={#MyAppName}
+OutputDir=C:\path\to\installer
+OutputBaseFilename=Unity_v{#MyAppVersion}
+Compression=lzma
+SolidCompression=yes
+
+[Languages]
+Name: "brazilianportuguese"; MessagesFile: "compiler:Languages\BrazilianPortuguese.isl"
+
+[Tasks]
+Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
+
+[Files]
+Source: "C:\path\to\dist\release\{#MyAppVersion}\bin\*"; DestDir: "{app}\bin"; Flags: ignoreversion
+Source: "C:\path\to\dist\release\{#MyAppVersion}\tools\*"; DestDir: "{app}\tools"; Flags: ignoreversion
+Source: "C:\path\to\dist\release\{#MyAppVersion}\Myapp.exe"; DestDir: "{app}"; Flags: ignoreversion
+
+[Icons]
+Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
+Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
+Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
+
+[Run]
+Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
+
 </pre>
