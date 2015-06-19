@@ -4,6 +4,50 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [WhatsApp for Desktop](http://whatsapp-desktop.com/)
+
+**WhatsApp for Desktop** is a beautiful, simple and easy to use cross-platform app that brings web.whatsapp.com to your OS X, Windows or Linux desktop.
+
+#### *WhatsApp* features
+
+* Group chats
+* Send photos & videos
+* Share locations
+
+#### *WhatsApp for Desktop* features
+
+* Badge with the number of notifications in the dock/taskbar (OS X and Windows)
+* Auto-launch on OS startup (OS X, Windows)
+* Native notifications (all platforms)
+* System tray icon (OS X, Windows)
+* Open links in browser or new window
+* Preferences in the right-click context menu (or menu bar for OS X, tray menu for Windows)
+
+[![WhatsApp for Desktop screenshot](https://raw.githubusercontent.com/Aluxian/WhatsApp-Desktop/master/screenshot.png)](http://whatsapp-desktop.com)
+
+### [Messenger for Desktop](http://messengerfordesktop.com/)
+
+**Messenger for Desktop** is a beautiful, simple and easy to use cross-platform app that brings messenger.com to your OS X, Windows or Linux desktop.
+
+#### Features
+
+* Sounds *(can be disabled in settings)*
+* Desktop notifications *(enable them in settings)*
+* Voice and video calls
+
+#### Extra
+
+* Badge with the number of notifications in the dock/taskbar (OS X and Windows)
+* Auto-launch on OS startup (OS X, Windows)
+* Native notifications (all platforms)
+* System tray icon on Windows
+* 3 themes: Default, Dark and Mosaic
+* Auto-hide the left sidebar
+* Open links in browser or new window
+* Preferences in the right-click context menu (or menu bar for OS X, tray menu for Windows)
+
+[![Messenger for Desktop screenshot](https://raw.githubusercontent.com/Aluxian/Facebook-Messenger-Desktop/master/screenshot.png)](http://messengerfordesktop.com)
+
 ### [Powder Player](https://github.com/jaruba/PowderPlayer)
 An incredibly easy to use heavy-duty player that supports torrent streaming and torrent downloading.
 
@@ -971,26 +1015,3 @@ Introducing [TeamworkChat](http://www.teamwork.com/chat) from [Teamwork.com](htt
 So far we have Windows & Mac apps built with NW.js. Soon we'll have Android & iOS apps (with the same responsive app in a WebView), a Linux (NW.js) version, a Web version and more.
 
 [![TeamworkChat screenshot](https://www.teamwork.com/images/extras-images/chat/chat-OnlineConversations.jpg)](http://www.teamwork.com/chat)
-
-### [Messenger for Desktop](http://messengerfordesktop.com/)
-
-**Messenger for Desktop** is a beautiful, simple and easy to use cross-platform app that brings messenger.com to your OS X, Windows or Linux desktop.
-
-#### Features
-
-* Sounds *(can be disabled in settings)*
-* Desktop notifications *(enable them in settings)*
-* Voice and video calls
-
-#### Extra
-
-* Badge with the number of notifications in the dock/taskbar (OS X and Windows)
-* Auto-launch on OS startup (OS X, Windows)
-* Native notifications (all platforms)
-* System tray icon on Windows
-* 3 themes: Default, Dark and Mosaic
-* Auto-hide the left sidebar
-* Open links in browser or new window
-* Preferences in the right-click context menu (or menu bar for OS X, tray menu for Windows)
-
-[![Messenger for Desktop screenshot](https://raw.githubusercontent.com/Aluxian/Facebook-Messenger-Desktop/master/screenshot.png)](http://messengerfordesktop.com)
