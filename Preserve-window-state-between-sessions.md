@@ -51,12 +51,8 @@ var winState;
 var currWinMode;
 var resizeTimeout;
 var isMaximizationEvent = false;
-
 // extra height added in linux x64 gnome-shell env, use it as workaround
-var deltaHeight = (function () {
-    // use deltaHeight only in windows with frame enabled
-    if (gui.App.manifest.window.frame) return true; else return 'disabled';
-})();
+var deltaHeight = gui.App.manifest.window.frame ? 0 : 'disabled';
 
 
 function initWindowState() {
@@ -76,7 +72,6 @@ function initWindowState() {
             }
         } else {
             currWinMode = 'normal';
-            if (deltaHeight !== 'disabled') deltaHeight = 0;
             dumpWindowState();
         }
 
