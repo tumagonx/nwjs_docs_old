@@ -14,6 +14,8 @@ winstate.js library:
 ```javascript
 'use strict'
 /**
+ * https://github.com/nwjs/nw.js/wiki/Preserve-window-state-between-sessions
+ *
  * Cross-platform window state preservation.
  * Yes this code is quite complicated, but this is the best I came up with for
  * current state of node-webkit Window API (v0.7.3 and later).
@@ -38,6 +40,9 @@ winstate.js library:
  *
  * 2015-03-05
  * - Don't call window.show() if dev tools are already open (see initWindowState).
+ *
+ * 2015-06-15
+ * - Don't resize the window when using LiveReload.
  */
 
 var gui = require('nw.gui');
@@ -55,27 +60,26 @@ var deltaHeight = (function () {
 
 
 function initWindowState() {
-    winState = JSON.parse(localStorage.windowState || 'null');
-
-    if (winState) {
-        currWinMode = winState.mode;
-        if (currWinMode === 'maximized') {
-            win.maximize();
-        } else {
-            restoreWindowState();
-        }
-    } else {
-        currWinMode = 'normal';
-        if (deltaHeight !== 'disabled') deltaHeight = 0;
-        dumpWindowState();
-    }
-
-    // On Windows win.show() also acts like win.requestAttention().
-    // If you use LiveReload, it becomes annoying when your app is already open
-    // but starts to blink in the taskbar on changes.
-    // There seems to be no way to check if a window is open, so let's at least
-    // check for dev tools.
+    // Don't resize the window when using LiveReload.
+    // There seems to be no way to check whether a window was reopened, so let's
+    // check for dev tools - they can't be open on the app start, so if
+    // dev tools are open, LiveReload was used.
     if (!win.isDevToolsOpen()) {
+        winState = JSON.parse(localStorage.windowState || 'null');
+
+        if (winState) {
+            currWinMode = winState.mode;
+            if (currWinMode === 'maximized') {
+                win.maximize();
+            } else {
+                restoreWindowState();
+            }
+        } else {
+            currWinMode = 'normal';
+            if (deltaHeight !== 'disabled') deltaHeight = 0;
+            dumpWindowState();
+        }
+
         win.show();
     }
 }
