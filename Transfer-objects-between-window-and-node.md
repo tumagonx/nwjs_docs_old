@@ -35,7 +35,7 @@ $('#content').text('Modifying DOM elements');
 
 In node-webkit, every renderer process has only one node.js context. So even you have created many windows, they will share the same `global` variable, in this way you can store shared information between multiple windows.
 
-But one problem cased by this scheme is, variables you stored in `global` object may be overlapped by other windows. As an example, if we execute `global.$ = $` used above in multiple windows, the `global.$` will store only the last window's `$` object.
+But one problem caused by this scheme is, variables you stored in `global` object may be overlapped by other windows. As an example, if we execute `global.$ = $` used above in multiple windows, the `global.$` will store only the last window's `$` object.
 
 So if you are developing a multiple-window app that may share a module between multiple windows, you should never store DOM elements in the `global` variable or manipulate DOM elements in node.js modules, instead you need to switch to the traditional web javascript library way:
 
