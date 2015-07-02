@@ -2,7 +2,7 @@ Before develop an express base NW.js(node-webkit) APP, you should see [About Nod
 
 But if you already have an express base webapp, you want to use NW.js make it use as desktop app, there has problmes.
 
-First, express provide a web server and don't have `index.html` file, so what should I do at package.json `mian` property?
+First, express provide a web server and don't have `index.html` file, so what should I do at package.json `main` property?
 
 The solution is you can create a `index.html` file, and use the follow code to run the system:
 
