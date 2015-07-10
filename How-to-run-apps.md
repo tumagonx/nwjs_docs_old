@@ -40,7 +40,7 @@ Please read [The solution of lacking libudev.so.0](https://github.com/nwjs/nw.js
 
 On Mac OSX, a folder or `.nw` file can be dropped onto the nw.app application bundle. On the Mac OSX Terminal (commandline), you can use nw like this (assuming it's installed to the Applications directory):
 
-    open -n -a nwjs "/home/path/to/app"
+    open -n -a nwjs --args "/home/path/to/app"
 
 In some cases it may be faster to invoke the nw binary inside the application bundle directly via the following:
 
