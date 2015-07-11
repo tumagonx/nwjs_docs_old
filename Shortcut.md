@@ -53,7 +53,7 @@ Every field has its own property in the `Shortcut`, see documentation of each pr
 
 **Get** or **Set** the `key` of a `Shortcut`. It is a string to specify the shortcut key, like "Ctrl+Alt+A".
 
-Supported keys: A-Z, 0-9, Comma, Period, Home, End, PageUp, PageDown, Insert, Delete, Arrow keys (Up, Down, Left, Right) and the Media Keys (MediaNextTrack, MediaPlayPause, MediaPrevTrack, MediaStop). Note that `Shortcut.key` can have exactly one keycode.
+Supported keys: A-Z, 0-9, Comma, Period, Home, End, PageUp, PageDown, Insert, Delete, Arrow keys (Up, Down, Left, Right) and the Media Keys (MediaNextTrack, MediaPlayPause, MediaPrevTrack, MediaStop). Note that `Shortcut.key`  has to have exactly one keycode, multiple aren't supported.
 
 Modifiers: Ctrl (On Mac OS X, "Ctrl" correspond to the Command keys on the Macintosh keyboard), Alt, Shift. Note that `Shortcut.key` takes zero or more modifiers. 
 
