@@ -21,3 +21,10 @@ We can setup `node-main` at package.json, `node-main` property is a command whic
 
 Put the above code in your package.json and run it. It seems like OK but there have a problem (maybe a bug), is that NW.js show a blank page and you must refresh the page then the content will show. There have a way to solve this problem, you can create a html file and write JavaScript code `location.href="http://localhost:3000/"` in it, then setup the `main` as `your-dir-html.html`.
 
+If the application that you're working with doesn't contain a www binary, try something like this:
+
+```
+"node-main": "./app.js",
+"main": "http://localhost:3000"
+```
+This worked with the mean-stack-relational application (https://github.com/jpotts18/mean-stack-relational) which doesn't have a www binary.
