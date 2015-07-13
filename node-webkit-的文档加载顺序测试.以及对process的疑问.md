@@ -1,5 +1,6 @@
 ### 上代码
-`try{
+```
+try{
 	var gui = require('nw.gui');
 	var win = gui.Window.get();
 }catch(e){
@@ -42,7 +43,8 @@ $(document).ready(function(){
 	}catch(e){
 		console.log('process load failure .. ');
 	}
-});`
+});
+```
 ### 测试结果:
 process load failure .. 
 document-end ..  
