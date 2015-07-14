@@ -1015,3 +1015,18 @@ Introducing [TeamworkChat](http://www.teamwork.com/chat) from [Teamwork.com](htt
 So far we have Windows & Mac apps built with NW.js. Soon we'll have Android & iOS apps (with the same responsive app in a WebView), a Linux (NW.js) version, a Web version and more.
 
 [![TeamworkChat screenshot](https://www.teamwork.com/images/extras-images/chat/chat-OnlineConversations.jpg)](http://www.teamwork.com/chat)
+
+### [Markdownald](https://github.com/malko/markdownald)
+
+Another markdown editor focused at being a real desktop markdown editor.
+- Many themes included.
+- Shortcuts for some operations like bold or italic.
+- It can edit multiple files at once
+- change application font-size
+- toggle edit or preview pane on or off
+- can work in fullscreen mode as well
+- support for github flavored markdown
+- cross platform with [prebuilt binaries](https://github.com/malko/markdownald/releases/latest)
+
+![markdownald screenshot](https://raw.githubusercontent.com/malko/markdownald/screenshots/dark.png)
+![markdownald screenshot](https://raw.githubusercontent.com/malko/markdownald/screenshots/light.png)
