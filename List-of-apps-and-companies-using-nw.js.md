@@ -1028,5 +1028,5 @@ Another markdown editor focused at being a real desktop markdown editor.
 - support for github flavored markdown
 - cross platform with [prebuilt binaries](https://github.com/malko/markdownald/releases/latest)
 
-![markdownald screenshot](https://raw.githubusercontent.com/malko/markdownald/screenshots/dark.png)
-![markdownald screenshot](https://raw.githubusercontent.com/malko/markdownald/screenshots/light.png)
+[![markdownald screenshot](https://raw.githubusercontent.com/malko/markdownald/screenshots/dark.png)](https://raw.githubusercontent.com/malko/markdownald/screenshots/dark.png)
+[![markdownald screenshot](https://raw.githubusercontent.com/malko/markdownald/screenshots/light.png)](https://raw.githubusercontent.com/malko/markdownald/screenshots/light.png)
