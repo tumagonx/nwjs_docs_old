@@ -26,9 +26,35 @@ This guideline offers a complete walkthrough of the steps required to get your a
 
 Please also note, that Mac App Store require you to carefully fulfill its requirements when submitting an app, so your success depends on how carefully you follow the guides.
 
-If you have a question or a request about Mac App Store submission, please open an issue and mention [*@alexeyst*](https://github.com/alexeyst) or [*@johansatge*](https://github.com/johansatge) who are glad to help as soon as they can.
+If you have a question or a request about Mac App Store submission, please open an issue and mention *[@alexeyst](https://github.com/alexeyst)* or *[@johansatge](https://github.com/johansatge)* who are glad to help as soon as they can.
 
 Good luck with getting your app published!
+
+# Contents
+
+Use the links below to navigate Mac App Store guide. For convenience, Mac App Store documentation pages  start with 'MAS' prefix so you could easily find them.
+
+## First steps
+
+* [[MAS: Initial requirements]]
+* [[MAS: Requesting certificates]]
+* [[MAS: Registering a new app on the MAS]]
+
+## Packaging
+
+* [[MAS: Packaging your app]]
+* [[MAS: Installing your app icon]]
+* [[MAS: Configuring Info.plist]]
+* [[MAS: Configuring children apps]]
+* [[MAS: Signing the app]]
+
+## Distributing
+
+* [[MAS: Uploading the binary]]
+* [[MAS: Publishing your app]]
+* [[MAS: The validation process]]
+
+# Credits
 
 Official Mac App Store support and this guide were made possible thanks to these people:
 
@@ -36,6 +62,3 @@ Official Mac App Store support and this guide were made possible thanks to these
 * [Johan Satgé](https://github.com/johansatge) for his work in summarizing and writing most of this guide and user support
 * [Alexey Stoletny](https://github.com/alexeyst) for maintaining custom Mac App Store builds, troubleshooting, user support and portions of this guide
 * [Roger Wang](https://github.com/rogerwang) for maintaining NW.js and introducing official Mac App Store support
-
-_Contents being added_
-
