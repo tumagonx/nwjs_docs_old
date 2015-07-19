@@ -11,7 +11,7 @@ Beyond that, Mac App Store verifies the list of APIs used by the application pri
 
 # NW.js and Mac App Store
 
-NW.js uses Chromium, which in turn has many references to private and obsolete OS X APIs, including QTKit. Chromium is available on many platforms and doesn't specifically focus on complying with Mac App Store requirements. 
+NW.js uses Chromium, which in turn has many references to private and obsolete OS X APIs ([what is a private API](http://stackoverflow.com/questions/3000681/what-are-private-apis)), including QTKit. Chromium is available on many platforms and doesn't specifically focus on complying with Mac App Store requirements. 
 
 For that reason, submission of NW.js apps to Mac App Store was complicated, though possible, before NW.js 0.12.3. 
 
@@ -26,8 +26,16 @@ This guideline offers a complete walkthrough of the steps required to get your a
 
 Please also note, that Mac App Store require you to carefully fulfill its requirements when submitting an app, so your success depends on how carefully you follow the guides.
 
-If you have a question or a request about Mac App Store submission, please open an issue and mention @alexeyst or @johansatge who are glad to help as soon as they can.
+If you have a question or a request about Mac App Store submission, please open an issue and mention [*@alexeyst*](https://github.com/alexeyst) or [*@johansatge*](https://github.com/johansatge) who are glad to help as soon as they can.
 
 Good luck with getting your app published!
 
+Official Mac App Store support and this guide were made possible thanks to these people:
+
+* [Trevor Linton](https://github.com/trevorlinton) for his work on the compatibility between NW.js and the Mac App Store
+* [Johan Satgé](https://github.com/johansatge) for his work in summarizing and writing most of this guide and user support
+* [Alexey Stoletny](https://github.com/alexeyst) for maintaining custom Mac App Store builds, troubleshooting, user support and portions of this guide
+* [Roger Wang](https://github.com/rogerwang) for maintaining NW.js and introducing official Mac App Store support
+
 _Contents being added_
+
