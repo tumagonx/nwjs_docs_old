@@ -14,11 +14,11 @@ To request your certificates you need a `.certSigningRequest` file.
 
 Open `/Applications/Utilities/Keychain Access.app`; in the app menu, and select *Request a Certificate From A Certificate Authority...*:
 
-![Capture](screenshots/keychain_request_menu.jpg)
+![Capture](mas-screenshots/keychain_request_menu.jpg)
 
-Fill the needed informations in the assistant:
+Fill the needed information in the assistant:
 
-![Capture](screenshots/keychain_request_assistant.jpg)
+![Capture](mas-screenshots/keychain_request_assistant.jpg)
 
 1. Your email address
 2. The name of the certificate
@@ -30,23 +30,23 @@ Save the file on the disk. Its name is `CertificateSigningRequest.certSigningReq
 
 Login to the [Member Center](https://developer.apple.com/membercenter), and go to the *Certificates, Identifiers & Profiles* page, which looks like this:
 
-![Capture](screenshots/certificates_splashscreen.jpg)
+![Capture](mas-screenshots/certificates_splashscreen.jpg)
 
 In the *Mac Apps > Certificates* page, click on the **+** button to add a new *Mac App Store certificate*:
 
-![Capture](screenshots/certificate_type.jpg)
+![Capture](mas-screenshots/certificate_type.jpg)
 
 Then, select *Mac App Distribution*:
 
-![Capture](screenshots/certificate_generate.jpg)
+![Capture](mas-screenshots/certificate_generate.jpg)
 
 Upload your `CertificateSigningRequest.certSigningRequest` file, when asked:
 
-![Capture](screenshots/import_csr.jpg)
+![Capture](mas-screenshots/import_csr.jpg)
 
 Finally, download the generated certificate on your machine:
 
-![Capture](screenshots/certificate_ready.jpg)
+![Capture](mas-screenshots/certificate_ready.jpg)
 
 Then, you have to renew those steps, by selecting *Mac Installer Distribution* instead of *Mac App Distribution*, on the concerned step.
 
@@ -56,7 +56,7 @@ When both certificates have been downloaded, you have to import them in **Keycha
 
 The installed certificates look like this:
 
-![Capture](screenshots/installed_certificates.jpg)
+![Capture](mas-screenshots/installed_certificates.jpg)
 
 Save the string in parenthesis (beginning with `LK7` on the capture).
 
