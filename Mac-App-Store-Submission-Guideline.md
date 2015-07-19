@@ -1,6 +1,6 @@
 _Starting with NW.js >= 0.12.3 NW.js introduces official Mac App Store support (in beta)_
 
-![NW.js > Mac App Store ](https://github.com/johansatge/nwjs-macappstore/raw/master/icon.jpg)
+![NW.js > Mac App Store](mas-screenshots/icon.jpg)
 # Background
 
 Mac App Store imposes numerous requirements to submitted applications, including _sandboxing_ — a technology to ensure the app won't affect crucial system parts when and if broken, as well as provide an extra level of security for the application users. 
@@ -59,6 +59,6 @@ Use the links below to navigate Mac App Store guide. For convenience, Mac App St
 Official Mac App Store support and this guide were made possible thanks to these people:
 
 * [Trevor Linton](https://github.com/trevorlinton) for his work on the compatibility between NW.js and the Mac App Store
-* [Johan Satgé](https://github.com/johansatge) for his work in summarizing and writing most of this guide and user support
-* [Alexey Stoletny](https://github.com/alexeyst) for maintaining custom Mac App Store builds, troubleshooting, user support and portions of this guide
+* [Johan Satgé](https://github.com/johansatge) for his work in summarizing complete Mac App Store submission process, writing most of this guide and user support
+* [Alexey Stoletny](https://github.com/alexeyst) for maintaining custom Mac App Store builds, troubleshooting, user support, migration and portions of this guide
 * [Roger Wang](https://github.com/rogerwang) for maintaining NW.js and introducing official Mac App Store support
