@@ -1,10 +1,14 @@
 ### Getting the custom NW.js app
 
-NW.js offers a custom build that can be submitted to Mac App Store. This custom built version excludes the use of various obsolete and private APIs utilized by Chromium and WebKit. For more details, please see [[Mac App Store Submission Guideline]].
+NW.js offers a custom build that can be submitted to Mac App Store. This custom built version excludes the use of various obsolete and private APIs utilized by Chromium and WebKit. For more details, please see [[Mac App Store (MAS) Submission Guideline]].
 
 Mac App Store NW.js build can be downloaded here: [0.12.3](http://buildbot-master.nwjs.io:8010/builders/mac64_nw12_mas) or [externally hosted 0.12.2](https://github.com/alexeyst/node-webkit-macappstore/archive/master.zip)).
 
 *Note:* NW.js Mac App Store support is in beta. Links will be updated.
+
+### Automatic builds
+
+You can use [nwjs-macappstore-builder](https://github.com/johansatge/nwjs-macappstore-builder) by [Johan Satgé](https://github.com/johansatge).
 
 ### Custom build limitations
 
