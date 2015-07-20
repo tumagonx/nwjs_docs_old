@@ -26,13 +26,13 @@ This guideline offers a complete walkthrough of the steps required to get your a
 
 Please also note, that Mac App Store require you to carefully fulfill its requirements when submitting an app, so your success depends on how carefully you follow the guides.
 
-If you have a question or a request about Mac App Store submission, please open an issue and mention *[@alexeyst](https://github.com/alexeyst)* or *[@johansatge](https://github.com/johansatge)* who are glad to help as soon as they can.
+If you have a question or a request about Mac App Store submission, please open an issue and mention **[@alexeyst](https://github.com/alexeyst)** or **[@johansatge](https://github.com/johansatge)** who are glad to help as soon as they can.
 
 Good luck with getting your app published!
 
 # Contents
 
-Use the links below to navigate Mac App Store guide. For convenience, Mac App Store documentation pages  start with 'MAS' prefix so you could easily find them.
+Use the links below to navigate Mac App Store guide. For convenience, Mac App Store documentation pages  start with 'MAS' prefix so you could easily find them using the *Sidebar* on the right, just type `MAS` into the search field, or see the complete list of Mac App Store related pages below.
 
 ## First steps
 
