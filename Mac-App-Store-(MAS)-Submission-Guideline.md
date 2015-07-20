@@ -7,7 +7,7 @@ Mac App Store imposes numerous requirements to submitted applications, including
 
 Sandboxed applications have numerous limitations further discussed in the [About App Sandbox](https://developer.apple.com/library/mac/documentation/Security/Conceptual/AppSandboxDesignGuide/AboutAppSandbox/AboutAppSandbox.html) Apple's Guide.
 
-Beyond that, Mac App Store verifies the list of APIs used by the application prior to letting it to the store. This review focuses on ensuring that no obsolete APIs and no undocumented / private APIs are used by an application — all to the benefit of the end user who always gets the best user experience available in the platform.
+Beyond that, Mac App Store verifies the list of APIs used by the application prior to letting it to the store. This review focuses on ensuring that no obsolete APIs and no undocumented / private APIs are used by an application — all to the benefit of the end user who always gets the best user experience available on the platform.
 
 # NW.js and Mac App Store
 
@@ -15,7 +15,7 @@ NW.js uses Chromium, which in turn has many references to private and obsolete O
 
 For that reason, submission of NW.js apps to Mac App Store was complicated, though possible, before NW.js 0.12.3. 
 
-NW.js already has wide exposure to Mac App Store thanks to many developers who've gone to great lengths in making their NW.js apps successfully accepted. 
+NW.js already has extensive exposure to Mac App Store thanks to many developers who've gone to great lengths in making their NW.js apps successfully accepted. 
 
 This guideline offers a complete walkthrough of the steps required to get your app published on the Mac App Store the easy way. For clarity, NW.js provides:
 
@@ -24,7 +24,7 @@ This guideline offers a complete walkthrough of the steps required to get your a
 
 **Note:** Mac App Store support is currently in beta. We're working to make your apps submission as smooth as possible. Mac App Store may also change requirements without notice, in which case we will be updating NW.js to follow them as soon as we can.
 
-Please also note, that Mac App Store require you to carefully fulfill its requirements when submitting an app, so your success depends on how carefully you follow the guides.
+Please also note, that Mac App Store require you to carefully fulfill its requirements when submitting an app, so your success depends on how strictly you follow the guides.
 
 If you have a question or a request about Mac App Store submission, please open an issue and mention **[@alexeyst](https://github.com/alexeyst)** or **[@johansatge](https://github.com/johansatge)** who are glad to help as soon as they can.
 
