@@ -1,6 +1,6 @@
 The `Info.plist` file (located in `YourApp.app/Contents`) is used on OS X to display your app information, and on the Mac App Store for identification purposes. You will need to update it.
 
-You may start from this [sample file](Info.plist).
+You may start from this [sample file](mas/Info.plist).
 
 You can override the existing file (`YourApp.app/Contents/Info.plist`), and update the following fields:
 
