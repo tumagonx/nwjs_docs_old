@@ -58,6 +58,7 @@ Then we trigger a `click` event on `input` tag, and use the `change` event to ca
 <script>
   function chooseFile(name) {
     var chooser = $(name);
+    chooser.unbind('change');
     chooser.change(function(evt) {
       console.log($(this).val());
     });
