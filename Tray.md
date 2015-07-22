@@ -96,6 +96,8 @@ Emitted when user clicks the menu item with left mouse button.
 
 And you cannot catch click with right mouse button, because it is used to show menu. Even if you're not binding a menu to a tray, you still can not listen to it. Double click events are also ignored.
 
+Mac OS X note: NW.js cannot support menulet CMD⌘+drag because it would [prohibit NW.js apps from being distributed in the App Store](https://github.com/nwjs/nw.js/issues/3347#issuecomment-121109691).
+
 ## See also
 
 * [[Menu]]
