@@ -4,7 +4,7 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 ### [Astar](https://github.com/YutaMiyake/Astar)
-Astar is a simple task manager application for Mac OS X, using NW.js.
+Astar is a simple task manager application for Mac OS X, using NW.js. Astar allows you to create your notebooks with your favorite image, in which you can manage your ToDos or WantToDos. These steps are grouped by tags that you define with your favorite color for them, and they are displayed by one of the three modes: bullet list, display by tag, and calendar view.
 
 #### Screenshots
 ![Alt vs group by tag](https://github.com/YutaMiyake/Astar/blob/master/screenshots/screenshot4.png "group by tag")
