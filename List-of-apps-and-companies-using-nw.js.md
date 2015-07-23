@@ -7,11 +7,10 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 Astar is a simple task manager application for Mac OS X, using NW.js.
 
 #### Screenshots
-![Alt notebooks](/screenshots/screenshot1.png "notebooks")
-![Alt vs custom background](/screenshots/screenshot2.png "custom background")
-![Alt bullet list](/screenshots/screenshot3.png "bullet list")
-![Alt vs group by tag](/screenshots/screenshot4.png "group by tag")
-![Alt vs calendar](/screenshots/screenshot5.png "calendar")
+![Alt notebooks](https://github.com/YutaMiyake/Astar/blob/master/screenshots/screenshot2.png"notebooks")
+![Alt bullet list](https://github.com/YutaMiyake/Astar/blob/master/screenshots/screenshot3.png "bullet list")
+![Alt vs group by tag](https://github.com/YutaMiyake/Astar/blob/master/screenshots/screenshot4.png "group by tag")
+![Alt vs calendar](https://github.com/YutaMiyake/Astar/blob/master/screenshots/screenshot5.png "calendar")
 
 ### [WhatsApp for Desktop](http://whatsapp-desktop.com/)
 
