@@ -3,6 +3,8 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 
 ## Apps
+### [Astar](https://github.com/YutaMiyake/Astar)
+Astar is a simple task manager application for Mac OS X, using NW.js.
 
 ### [WhatsApp for Desktop](http://whatsapp-desktop.com/)
 
