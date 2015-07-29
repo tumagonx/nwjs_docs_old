@@ -1,4 +1,5 @@
 ## Books.
+* ![NW.js in Action](http://www.manning.com/jensen/jensen_cover150.jpg)[NW.js in Action](http://www.manning.com/jensen/) by Paul. B. Jensen
 * [Windows Desktop App Creation with node-webkit](http://www.amazon.in/Windows-Desktop-App-Creation-node-webkit-ebook/dp/B00EEYFFVC) by Jonathan Dodd
 
 ## Video Tutorials.
