@@ -49,7 +49,7 @@ notification.onshow = function () {
 # General Notes
 you can use `http://` or `file://` for the `icon`. node-webkit supports jpg / png files
 ## Windows
-### Baloon Notification
+### Balloon Notification
 if no icon is specified, it will use the app's icon.
 
 icon size must be >= 32x32
