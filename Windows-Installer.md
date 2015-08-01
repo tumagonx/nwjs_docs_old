@@ -9,7 +9,8 @@
 
 **Directory tree created by the batch:**
 <pre>
- dist\release\{version}\start.exe dist\release\{version}\bin\application.exe
+ dist\release\{version}\start.exe
+ dist\release\{version}\bin\application.exe
  dist\release\{version}\bin\nw.pak
  dist\release\{version}\bin\libEGL.dll
  dist\release\{version}\bin\...
