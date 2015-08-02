@@ -16,7 +16,7 @@ Here is the Wiki, the encyclopedia of nw.js. I know most of you just don't read 
 * [Sample applications](https://github.com/zcbenz/nw-sample-apps)
 * [Chinese document based English wiki for Chinese users(中文文档)](http://www.xuanhun521.com/?search=node)
 * [nw.js wiki for Korean users(한국어 nw.js 위키)](https://github.com/composite/nw.js/wiki)
-* [NW.js in Action - Book by Paul B. Jensen](http://www.manning.com/jensen/)
+* [NW.js in Action - Book by Paul B. Jensen](http://www.manning.com/jensen/) (Link to the [Chapter 1](http://www.manning.com/jensen/NWjsinAction_MEAP_ch1.pdf))
 
 **Packaging and distribution:**
 * [[How to package and distribute your apps]]
