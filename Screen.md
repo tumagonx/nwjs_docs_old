@@ -16,28 +16,28 @@ screen has following structure:
 ```javascript
 screen {
 // unique id for a screen
-  id : int,
+  id: int,
 
 // physical screen resolution, can be negative, not necessarily start from 0,depending on screen arrangement
-  bounds : {
-    x : int,
-    y : int,
-    width : int,
-    height : int
+  bounds: {
+    x: int,
+    y: int,
+    width: int,
+    height: int
   },
  
 // useable area within the screen bound
-  work_area : {
-    x : int,
-    y : int,
-    width : int,
-    height : int
+  work_area: {
+    x: int,
+    y: int,
+    width: int,
+    height: int
   },
 
-  scaleFactor : float,
-  isBuiltIn : bool,
-  rotation : int,
-  touchSupport : int
+  scaleFactor: float,
+  isBuiltIn: bool,
+  rotation: int,
+  touchSupport: int
 }
 ```
 ### Screen.chooseDesktopMedia (array of DesktopCaptureSourceType sources, function callback)
@@ -61,7 +61,7 @@ gui.Screen.chooseDesktopMedia(["window","screen"],
         maxWidth: 1920, 
         maxHeight: 1080
       }, 
-      optional:[]
+      optional: []
     };
     navigator.webkitGetUserMedia({audio: false, video: constraint}, success_func, fallback_func);
   }
@@ -105,20 +105,20 @@ gui.Screen.Init();
 var string = "";
 var screens = gui.Screen.screens;
 // store all the screen information into string
-for(var i=0; i<screens.length; i++) {
+for (var i=0; i<screens.length; i++) {
   string += ScreenToString(screens[i]);
 }
 
 var screenCB = {
-  onDisplayBoundsChanged : function(screen) {
+  onDisplayBoundsChanged: function(screen) {
     var out = "OnDisplayBoundsChanged " + ScreenToString(screen);
   },
 
-  onDisplayAdded : function(screen) {
+  onDisplayAdded: function(screen) {
     var out = "OnDisplayAdded " + ScreenToString(screen);
   },
 
-  onDisplayRemoved : function(screen) {
+  onDisplayRemoved: function(screen) {
     var out = "OnDisplayRemoved " + ScreenToString(screen);
   }
 };
@@ -189,9 +189,13 @@ gui.Screen.DesktopCaptureMonitor.on("added", function (id, name, order, type) {
              chromeMediaSourceId: id,
          }
       }
-  }; //call getUserMedia with contraints
+  };
+
+  // TODO: call getUserMedia with contraints
+
   gui.Screen.DesktopCaptureMonitor.stop();
 });
+
 gui.Screen.DesktopCaptureMonitor.on("removed", function (id) { });
 gui.Screen.DesktopCaptureMonitor.on("orderchanged", function (id, new_order, old_order) { });
 gui.Screen.DesktopCaptureMonitor.on("namechanged", function (id, name) { });
