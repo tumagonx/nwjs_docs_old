@@ -38,15 +38,7 @@ Create a new `Menu`.
 If no `option` is specified, a normal context menu will be created. To create a menu to be used as window's menu, you need to explicitly specify `'type': 'menubar'` in the `option`, e.g. `new Menu({ 'type': 'menubar' })`.
 
 ### Menu.items
-**Get** an array that contains all items of a menu.
-
-### Menu.items.length
-
-**Get** how many items this `Menu` has.
-
-### Menu.items[i]
-
-**Get** the `i`th menu item of the `Menu`. It will return a `MenuItem` object.
+**Get** an array that contains all items of a menu. Each item is a `MenuItem`.
 
 ### Menu.append(MenuItem item)
 
@@ -63,15 +55,6 @@ Remove `item` from `Menu`. This method requires you to keep the `MenuItem` outsi
 ### Menu.removeAt(int i)
 
 Remove the `i`th item form `Menu`
-
-### Menu.items[x].click
-Reference: x is the index of the menu object.
-
-```javascript
-  menu.items[x].click = function() { 
-      console.log('clicked');
-  };
-```
 
 ### Menu.popup(int x, int y)
 
@@ -105,8 +88,22 @@ nativeMenuBar.createMacBuiltin("My App", {
   hideWindow: true
 });
 ```
+
+### MenuItem.click
+
+Get or set a `MenuItem`'s action.
+
+```javascript
+menu.append(menuitem);
+menuitem.click = function() { 
+    console.log('clicked');
+};
+console.log(menu.items[0].click);
+```
+
+
 ## See also
 
 * [[Tray]]
 * [[MenuItem]]
-* [Example of cut/copy/paste context menu implementation](https://gist.github.com/b1rdex/7409406)
+* [Example of cut/copy/paste context menu implementation](https://github.com/b1rdex/nw-contextmenu)
