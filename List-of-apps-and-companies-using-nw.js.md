@@ -3,6 +3,16 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 
 ## Apps
+
+### [Powder Player](https://github.com/jaruba/PowderPlayer)
+A cross-platform, incredibly easy to use heavy-duty player that supports torrent streaming and torrent downloading.
+
+Based on WebChimera and Peerflix it not only has full support for all torrents but also works with any video type and video url, including youtube/vimeo links.
+
+See [Current Features](https://github.com/jaruba/PowderPlayer#current-features) for a detailed list of what makes this app truly amazing!
+
+[![powderplayer-screenshot](http://powder.media/screenshots/PowderPlayer-new-4.png)](https://github.com/jaruba/PowderPlayer)
+
 ### [Astar](https://github.com/YutaMiyake/Astar)
 Astar is a simple task manager application for Mac OS X, using NW.js. Astar allows you to create your notebooks with your favorite image, in which you can manage your ToDos or WantToDos. These steps are grouped by tags that you define with your favorite color for them, and they are displayed by one of the three modes: bullet list, display by tag, and calendar view.
 
@@ -53,15 +63,6 @@ Astar is a simple task manager application for Mac OS X, using NW.js. Astar allo
 * Preferences in the right-click context menu (or menu bar for OS X, tray menu for Windows)
 
 [![Messenger for Desktop screenshot](https://raw.githubusercontent.com/Aluxian/Facebook-Messenger-Desktop/master/screenshot.png)](http://messengerfordesktop.com)
-
-### [Powder Player](https://github.com/jaruba/PowderPlayer)
-An incredibly easy to use heavy-duty player that supports torrent streaming and torrent downloading.
-
-Based on WebChimera and Peerflix it not only has full support for all torrents but also works with any video type and video url, including youtube/vimeo links.
-
-See [Current Features](https://github.com/jaruba/PowderPlayer#current-features) for a detailed list of what makes this app truly amazing!
-
-[![powderplayer-screenshot](https://camo.githubusercontent.com/4bde5c8655546276df42ed0922ef8a565bacbfff/687474703a2f2f706f776465722e6d656469612f73637265656e73686f74732f506f77646572506c617965722d2d352e706e67)](https://github.com/jaruba/PowderPlayer)
 
 ### [Boson Editor](https://github.com/isdampe/BosonEditorExperimental)
 Boson is a minimalistic experimental source code editor. It's written in Node, and wrapped in Nw.js as a runtime container for easy cross-platform integration. Boson supports theming, plugins and more.
