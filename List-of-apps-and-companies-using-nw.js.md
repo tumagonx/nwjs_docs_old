@@ -5,7 +5,7 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 ## Apps
 
 ### [Powder Player](https://github.com/jaruba/PowderPlayer)
-A cross-platform, incredibly easy to use heavy-duty player that supports torrent streaming and torrent downloading.
+A cross-platform, incredibly easy to use heavy-duty player that supports **torrent streaming** and **torrent downloading**.
 
 Based on WebChimera and Peerflix it not only has full support for all torrents but also works with any video type and video url, including youtube/vimeo links.
 
