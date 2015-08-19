@@ -1,3 +1,10 @@
+## Web2Executable
+
+[Web2Exectable](https://github.com/jyapayne/Web2Executable) is a friendly commandline and GUI application that helps you build your NW.js app cross-platform.
+
+
+## node-webkit-builder
+
 **You can use [node-webkit-builder](https://github.com/mllrsohn/node-webkit-builder) to automate this process.**
 
 Structure of files for autobuild cross-platform app:
@@ -59,10 +66,10 @@ del my-app.nw
 rem run application
 ..\build\win32\my-app.exe
 ```
-## PowerShell Script
+### PowerShell Script
 [PowerShell Script](https://gist.github.com/romanov/abc494ee7b08f232f539)
 
-## Building a .dmg for mac when you don't own a mac
+### Building a .dmg for mac when you don't own a mac
 If you want to create a proper .dmg file for OSX, you will need a an OSX environment to create the package. These *cannot* be built on Windows or Linux!
 
 You can either hijack a friend's Mac, or run virtualize OSX on VirtualBox or VMWare
@@ -104,6 +111,4 @@ input/myapp/
 #copy back results to node-webkit-builder host
 scp ./output/myapp.dmg myuser@nodewebkitbuilderhost:/var/www/my-app/build/
 ```
-
-
 
