@@ -1,9 +1,14 @@
-## Basic solution
 
-When you are working on a prototype it's faster to reload the nodewebkit window
+When you are working on a prototype it's faster to reload the nw.js window
 automatically on file changes.
 
-To do this, you can add this script tag to the end of your main file:
+## Drop-in library solution
+
+[nw-dev](https://www.npmjs.com/package/nw-dev)
+
+## Basic solution
+
+You can add this script tag to the end of your main file:
 
 ```html
 <script>
@@ -16,6 +21,8 @@ To do this, you can add this script tag to the end of your main file:
   });
 </script>
 ```
+
+It will be limited to watching files directly within the current directory.
 
 ## Recursive solution
 
