@@ -97,7 +97,7 @@ menu.createMacBuiltin('Sample App',{
 menu.append(
     new gui.MenuItem({
         label: 'Custom Menu Label',
-        submenu: menuItems // menu elements from customMenu object
+        submenu: menuItems // menu elements from menuItems object
     })
 );
 
