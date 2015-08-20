@@ -347,9 +347,9 @@ Built with Angular.js, consuming SoundCloud and Github API.
 
 ### Brandon Must Die!
 
-[Brandon Must Die!](http://www.brandonmustdie.com/) is a 'Procedural Death Labyrinth' game available for Win/Mac/Linux. It features 100s of items, randomized maps, unlockable characters, secret rooms, and dozens of enemies.
+*Brandon Must Die!* is a 'Procedural Death Labyrinth' game available for Win/Mac/Linux. It features 100s of items, randomized maps, unlockable characters, secret rooms, and dozens of enemies.
 
-[![Brandon Must Die! screenshot](https://s3.amazonaws.com/ksr/projects/761817/photo-main.jpg?1397856432)](http://www.brandonmustdie.com/)
+![Brandon Must Die! screenshot](https://s3.amazonaws.com/ksr/projects/761817/photo-main.jpg?1397856432)
 
 ### Personal Kanban
 
