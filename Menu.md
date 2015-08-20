@@ -75,11 +75,34 @@ _since v0.10.0-rc1_
 OSX only. Creates the default menus (App, Edit and Window). The items can be manipulated with the `items` property. The argument `appname` is used for the title of App menu.  
 Example:
 ```js
+// Load native UI library
 var gui = require('nw.gui');
-var win = gui.Window.get();
-var nativeMenuBar = new gui.Menu({ type: "menubar" });
-nativeMenuBar.createMacBuiltin("My App");
-win.menu = nativeMenuBar;
+
+// Create menu
+var menu = new gui.Menu({ type: 'menubar' });
+
+// Create sub-menu
+var menuItems = new gui.Menu()
+
+menuItems.append(new gui.MenuItem({ label: 'Custom Menu Item 1' }));
+menuItems.append(new gui.MenuItem({ label: 'Custom Menu Item 2' }));
+
+// create MacBuiltin
+menu.createMacBuiltin('Sample App',{
+	hideEdit: true,
+  	hideWindow: true
+});
+
+// Append MenuItem as a Submenu
+menu.append(
+    new gui.MenuItem({
+        label: 'Custom Menu Label',
+        submenu: menuItems // menu elements from customMenu object
+    })
+);
+
+// Append Menu to Window
+gui.Window.get().menu = menu;
 ```
 Since v0.10.1, if desired, you can also hide the "Edit" and "Window" menus when invoking `createMacBuiltin` like so:
 ```js
