@@ -3,6 +3,7 @@ Note: Entries in each category are sorted from newest to oldest according to the
 # Books.
 * [Windows Desktop App Creation with node-webkit](http://www.amazon.in/Windows-Desktop-App-Creation-node-webkit-ebook/dp/B00EEYFFVC) by Jonathan Dodd (Published on July 2013)
 * [NW.js Essentials](http://www.amazon.com/NW-js-Essentials-Alessandro-Benoit/dp/1785280864) by Alessandro Benoit (Published on May 2015)
+* [NW.js in Action](http://manning.com/jensen) by Paul Jensen (available now on MEAP, to be published Spring 2016)
 
 # Video Tutorials.
 * [Bulding HTML5 Desktop Apps with Node-Webkit](https://www.youtube.com/playlist?list=PLkyEadCJGLm0-yn8wi-a5n8H7lKll23t9) by NodeHead (Published on June 25, 2014)
