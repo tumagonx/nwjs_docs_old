@@ -203,7 +203,11 @@ _since v0.7.3_
 *(boolean)* show as desktop background window under X11 environment
 
 ### resizable
-*(boolean)* whether window is resizable _(available after node-webkit v0.3.0)_
+_since v0.3.0_
+
+*(boolean)* whether window is resizable
+
+Beware, if resizable is set to false on OS X and frame is set to true, the user will still be able to make the window fullscreen. Set fullscreen to false to disable the fullscreen control.
 
 ### always-on-top
 _since v0.3.4_
