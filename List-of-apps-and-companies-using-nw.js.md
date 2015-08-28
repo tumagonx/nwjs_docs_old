@@ -177,7 +177,7 @@ A cross plattform task manager that stores its tasks in a Markdown file (similar
 * Download for Linux, Mac and Windows: http://rockiger.com/en/akiee/
 * Source: https://github.com/rockiger/akiee
 
-![Akiee Task Manager](http://rockiger.com/static/img/akiee-leader.jpg "Akiee Task Manager")
+![Akiee Task Manager](http://rockiger.com/static/img/akiee-leader-626.jpg "Akiee Task Manager")
 
 ### [Tinder++](http://tinderplusplus.com/)
 
