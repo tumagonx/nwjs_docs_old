@@ -69,6 +69,6 @@ menuitem.on('click', function() {
 In summary, please **DO NOT** do following things:
 
 * Do not recreate UI elements, reuse them.
-* Do not reassign an element, such as `menu.items[0] = item` or `item = new gui.MenuItem({})`.
-* Do not delete an element, such way `delete item`.
+* Do not reassign an element, ie. don't do this `menu.items[0] = item` or `item = new gui.MenuItem({})`.
+* Do not delete an element, remove it using `delete item`.
 * Do not change UI types' prototype.
