@@ -1035,5 +1035,16 @@ Another markdown editor focused at being a real desktop markdown editor.
 - support for github flavored markdown
 - cross platform with [prebuilt binaries](https://github.com/malko/markdownald/releases/latest)
 
+### [AlexGallery](https://github.com/hcnode/AlexGallery/)
+
+AlexGallery is an application of images gallery and image processing.
+- Local folder browser, list folders in tree view
+- preview with thumbnails of images, and with two size mode small and large.
+- Batch images with batch manipulates including resize, lighten, and with three resize modes
+- Image gallery slider mode
+- Image processing, you can resize, crop, rotate, set effects (lighten, darken, blur, sharpen ...)
+![screenshot1](https://raw.githubusercontent.com/hcnode/AlexGallery/master/screenshots/screenshot1.png)
+![screenshot4](https://raw.githubusercontent.com/hcnode/AlexGallery/master/screenshots/screenshot4.png)
+
 [![markdownald screenshot](https://raw.githubusercontent.com/malko/markdownald/screenshots/dark.png)](https://raw.githubusercontent.com/malko/markdownald/screenshots/dark.png)
 [![markdownald screenshot](https://raw.githubusercontent.com/malko/markdownald/screenshots/light.png)](https://raw.githubusercontent.com/malko/markdownald/screenshots/light.png)
