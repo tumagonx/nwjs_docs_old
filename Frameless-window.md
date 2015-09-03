@@ -41,6 +41,44 @@ button {
 
 If you're only using a custom titlebar, you also need to make buttons in titlebar non-draggable.
 
+## Mouse Events
+Elements configured as drag regions will not emit mouse events such as `mouseenter` or `mousemove`. This prevents the `:hover` metaclass from activating. An effective workaround is to use a "screen" Element to capture the initial events and bubble them up where they belong. In this example, the screen only remains long enough to send `mouseenter` (and one `mousemove` event) which is enough to activate the correct `:hover` behavior.
+
+There is currently no workaround for full `mousemove` support in a drag region.
+
+```html
+<html>
+  <body>
+    <div id="Controls">
+      <div class="screen"></div>
+    </div>
+  </body>
+</html>
+```
+
+```css
+#Controls {
+  -webkit-app-region: drag;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.screen {
+  -webkit-app-region: no-drag;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#Controls:hover .screen {
+  display: none;
+}
+```
+
 ## Text selection
 
 One thing on frameless window is that the dragging behaviour may conflict with selecting text, for example, when you drag the titlebar, you may accidentally select the text on titlebar. To prevent this, you need to disable text selection on dragging area like this:
