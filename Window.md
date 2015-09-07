@@ -62,7 +62,7 @@ var win = gui.Window.open ('https://github.com', {
 });
 win.on ('loaded', function(){
   // the native onload event has just occurred
-  var document = window.window.document;
+  var document = win.window.document;
 });
 ```
 
