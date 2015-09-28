@@ -19,8 +19,18 @@ You can also call it from the command line:
 
 For instance:
 
-    nw C:\apps\myapp
-    nw C:\apps\packagedapp.nw
+    C:\nw\nw.exe C:\apps\myapp
+    C:\nw\nw.exe C:\apps\packagedapp.nw
+
+You can also:
+
+1. Copy the command (`C:\nw\nw.exe "C:\apps\myapp"`)
+2. Right-click in a folder or on the desktop
+3. New > Shortcut
+4. Paste > Next
+5. Type the App name > Finish
+
+Now you are always just a double-click away from running your app.
 
 ### Linux
 
