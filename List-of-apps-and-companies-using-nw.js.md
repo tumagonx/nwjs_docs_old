@@ -1059,3 +1059,10 @@ nwMAME is multi-platform (Windows, Linux, OS X) MAME front-end which uses power 
 #### Screenshot
 
 ![nwMAME Screenshot](http://ozguncagri.github.io/nwMAME/nwMAME_screenshot.png)
+
+
+### [cmod3](https://github.com/jllodra/cmod3) 
+
+cmod3 is a music player for the classic .MOD,.S3M,.XM and .IT music formats (made popular by the AMIGA computer). It features an audio decoding library named libopenmpt, compiled with ecmascripten, to provide the most accurate playback. You can directly browse the Modarchive to download and listen songs, or play the Nectarine Demoscene radio.
+
+[![cmod3 screenshot](https://raw.githubusercontent.com/jllodra/cmod3/master/screenshot.png)](https://github.com/jllodra/cmod3)
