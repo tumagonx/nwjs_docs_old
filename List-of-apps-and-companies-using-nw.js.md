@@ -1050,3 +1050,12 @@ AlexGallery is an application of images gallery and image processing.
 - Image processing, you can resize, crop, rotate, set effects (lighten, darken, blur, sharpen ...)
 ![screenshot1](https://raw.githubusercontent.com/hcnode/AlexGallery/master/screenshots/screenshot1.png)
 ![screenshot4](https://raw.githubusercontent.com/hcnode/AlexGallery/master/screenshots/screenshot4.png)
+
+
+### [nwMAME](https://github.com/ozguncagri/nwMAME)
+
+nwMAME is multi-platform (Windows, Linux, OS X) MAME front-end which uses power of Web. It's built top of NW.JS with HTML5, JavaScript, CSS3 and using several technologies like Node.JS, AngularJS, jQuery, Semantic UI and ect...
+
+#### Screenshot
+
+![nwMAME Screenshot](http://ozguncagri.github.io/nwMAME/nwMAME_screenshot.png)
