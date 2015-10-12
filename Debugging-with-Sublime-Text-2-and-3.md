@@ -35,3 +35,17 @@ As above, but the commands for the build system are as follows (replacing the pa
     "shell": true
 }
 ````
+
+### Linux
+The same process for the Mac OS, just replace the `"path"` with the `nw` path of your dist.
+
+You can find it with `which nw` (return `/usr/bin/nw`), so in this case the nw is inside `/usr/bin` folder.
+
+Example:
+````json
+{
+	"cmd": ["nw", "--enable-logging", "${folder}"],
+	"working_dir": "${folder}",
+	"path": "/usr/bin/"
+}
+````
