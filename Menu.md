@@ -82,7 +82,7 @@ var gui = require('nw.gui');
 var menu = new gui.Menu({ type: 'menubar' });
 
 // Create sub-menu
-var menuItems = new gui.Menu()
+var menuItems = new gui.Menu();
 
 menuItems.append(new gui.MenuItem({ label: 'Custom Menu Item 1' }));
 menuItems.append(new gui.MenuItem({ label: 'Custom Menu Item 2' }));
