@@ -78,7 +78,7 @@ NB: An extra step is required to use EJDB in a node-webkit app. Please refer to 
 
 ## StoreDB
 
-[StoreDB](https://github.com/djyde/StoreDB) is a local database **based on localStorage**. It makes you can use localStorage to store complex data by providing MongoDB-Style APIs and using concepts like `collection`, `document`, etc.
+[StoreDB](https://github.com/djyde/StoreDB) is a local database **based on localStorage**. It allows the use of localStorage to store complex data by providing MongoDB-Style APIs and using concepts like `collection`, `document`, etc.
 
 It is super simple and friendly to store data as below:
 
