@@ -17,6 +17,12 @@ After creating package you would have to use resource editor to change bundled i
 
 Additionally, [node-webkit-builder](https://github.com/mllrsohn/node-webkit-builder) can insert your windows icon into your package.  See the [winIco](https://github.com/mllrsohn/node-webkit-builder#optionswinico) option.
 
+With [node-winresourcer](https://github.com/felicienfrancois/node-winresourcer) you can insert the icon from  the [command line](https://github.com/felicienfrancois/node-winresourcer#command-line) Note ` --lang: 1033 ` is removed as it is not required when mearly updating an exe.
+
+```shell
+winresourcer --operation=Update --exeFile=path/to/your/file.exe --resourceType=Icongroup --resourceName:IDR_MAINFRAME --resourceFile:path/to/your/resource.ico
+```
+
 [Winrar](http://www.win-rar.com/download.html) has also proven to be a great tool for this: Just select all files from your build + your .ico file and `add to Archive` marking 'create SFX archive'. Then, go to `Advanced -> SFX Options...`, and in `Setup` write up `yourmainfilename.exe` in the `Run after Extraction` textarea. 
 In `Mode` Tab choose `Unpack to temporary folder` and then select `Hide All`. Last, but not least, go to `Text and Icon` tab and add a .ico there.
 This will provide a standalone .exe file with its own icon, half the size (if normal NW apps are at least 40mb, this makes them 20mb), and self silent extracting when opening. No more installers, or multiple files.
