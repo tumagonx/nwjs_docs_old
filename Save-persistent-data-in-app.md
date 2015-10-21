@@ -73,6 +73,11 @@ NB: An extra step is required to use EJDB in a node-webkit app. Please refer to 
 ## LinvoDB
 [LinvoDB](https://github.com/Ivshti/linvodb3) is a persistent embedded database for Node.js / NW.js. It can be used on top of LevelDB, but it can also be used on top of Medea with no need to compile anything. It has a MongoDB+Mongoose-like features and API. Performance is comparible to MongoDB.
 
+
+## MarsDB
+[MarsDB](https://github.com/c58/marsdb) is a lightweight database for any kind of JS-environment (Browser, Node, NW.js, Electron), based on Meteor's minimongo. It uses Promises almost everywhere, carefully written on ES6. It can be in-memory (by default) or persisted with any kind of storage (LocalStorage implemented for now), and it's easy to implement your own storage manager (thanks to Promises).
+
+
 ## LowDB
 [LowDB](https://github.com/typicode/lowdb) is a flat JSON file database for Node. It uses Lo-Dash functional programming API.
 
