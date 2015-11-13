@@ -1,4 +1,4 @@
-Every app package should contain a manifest file named `package.json`, it will tell `node-webkit` how to open the app and control how the browser behaves.
+Every app package should contain a manifest file named `package.json`, it will tell `nwjs` how to open the app and control how the browser behaves.
 
 ## Quick Start
 
