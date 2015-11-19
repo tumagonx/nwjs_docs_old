@@ -140,6 +140,11 @@ export GYP_GENERATORS='ninja'
 ninja -C out/Release nw -j4
 ````
 
+Since 0.12.0, NW.js supports multiple [[build flavors]], such as MAS, NaCl, SDK and minimum build. To build those flavors, just add following switches to `GYP_DEFINES` and run `./build/gyp_chromium content/content.gyp` before build your own NW.js.
+* **SDK**: `nwjs_sdk=1 disable_nacl=0` *since 0.13.0-alpha1*
+* **NaCl**: `disable_nacl=0` *since 0.13.0-alpha1*
+* **Minimum**: the default configuration, same as `nwjs_sdk=0 disable_nacl=1` *since 0.13.0-alpha1*
+
 ## Official extra build settings
 
 Windows all: set DEPOT_TOOLS_WIN_TOOLCHAIN=0; set GYP_MSVS_VERSION=2013  
