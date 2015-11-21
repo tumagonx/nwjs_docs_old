@@ -162,7 +162,7 @@ document.write('Our computer is: ', os.platform())
 
 ## Run and Package Apps
 
-Now, we can write simple nw.js apps. Next is to learn how to run and package them. 
+Now, we can write simple nw.js apps. Next is to learn more about how to run and package them. 
 
 **Run the App**
 
@@ -177,6 +177,10 @@ For Example:
 nw path_to_app_dir
 nw path_to_app.nw
 ````
+
+Learn more about [how to run apps](https://github.com/nwjs/nw.js/wiki/How-to-run-apps).
+
+Learn more about [how to package and distribute your apps](https://github.com/nwjs/nw.js/wiki/How-to-package-and-distribute-your-apps).
 
 ## Troubleshooting
 
