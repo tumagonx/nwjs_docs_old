@@ -86,7 +86,7 @@ And please also note that the `nw.pak` must also be distributed along with the `
 
 On Linux, it's similar: 
 
-    cat /usr/bin/nw app.nw > app && chmod +x app 
+    cat `which nw` app.nw > app && chmod +x app 
 
 Then, you'll have to make a package for various packaging systems with dependencies as the `nw` package. Were you to make a .deb package this way, for instance, the user would not have to install the `nw` package separately. 
 
