@@ -38,7 +38,7 @@ Download the prebuilt binary for your platform, and use this command to run your
 ```bash
 $ /path/to/nw .
 ```
-Note: on Windows, you can drag the `package.json` to `nw.exe` to open it.
+Note: on Windows, you can drag the `package.json` to `nw.exe` to run your app.
 
 Alternatively, you could compress `index.html` and `package.json` into a zip archive, and run that. You could name the zip archive `app.nw`:
 
