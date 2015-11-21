@@ -47,7 +47,7 @@ Alternatively, you could compress `index.html` and `package.json` into a zip arc
     `-- index.html
 Note: on Windows, you can now drag the `app.nw` to `nw.exe` to open it.
 
-You can run the app from the zip archive using (run from same directory as your app.nw archive):
+You can run the app from the zip archive using (Note: run this command from same directory as your app.nw archive):
 
 ```bash
 $ /path/to/nw ./app.nw
