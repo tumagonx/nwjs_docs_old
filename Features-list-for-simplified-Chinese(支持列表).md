@@ -1,5 +1,7 @@
 Translation for Features list
+
 翻译自Features list
+
 下面的列表是 node-webkit 的支持列表，如果你正在考虑使用 node-webkit 或其他的东西来作为未来的发展方向。你可以耐心阅读并作出正确的决定。
 _页面尚未完成_
 * 完全支持在浏览器中运行node.js
