@@ -33,22 +33,26 @@ Create `package.json`:
 }
 ```
 
-Compress `index.html` and `package.json` into a zip archive, and rename
-it to `app.nw`:
+Download the prebuilt binary for your platform, and use it to run your app:
+Note: This should be run from the same directory as the package.json file you created.
+
+```bash
+$ ./path/to/nw .
+```
+Note: on Windows, you can drag the `package.json` to `nw.exe` to open it.
+
+Alternatively, you could compress `index.html` and `package.json` into a zip archive, and run that. You could name the zip archive `app.nw`:
 
     app.nw
     |-- package.json
     `-- index.html
+Note: on Windows, you can now drag the `app.nw` to `nw.exe` to open it.
 
-Download the prebuilt binary for your platform and use it to open the
-`app.nw` file:
+You can run the app from the zip archive using (run from same directory as your app.nw archive):
 
 ```bash
-$ ./nw app.nw
+$ ./path/to/nw ./app.nw
 ```
-
-Note: on Windows, you can drag the `app.nw` to `nw.exe` to open it.
-
 
 
 **Example 2. Native UI API**
