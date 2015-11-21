@@ -51,7 +51,7 @@ Note: on Windows, you can now drag the `app.nw` to `nw.exe` to open it.
 You can run the app from the zip archive using (run from same directory as your app.nw archive):
 
 ```bash
-$ ./path/to/nw ./app.nw
+$ /path/to/nw ./app.nw
 ```
 
 
