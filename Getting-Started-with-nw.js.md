@@ -37,7 +37,7 @@ Download the prebuilt binary for your platform, and use it to run your app:
 Note: This should be run from the same directory as the package.json file you created.
 
 ```bash
-$ ./path/to/nw .
+$ /path/to/nw .
 ```
 Note: on Windows, you can drag the `package.json` to `nw.exe` to open it.
 
