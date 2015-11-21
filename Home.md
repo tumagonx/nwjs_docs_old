@@ -5,7 +5,9 @@ Here is the Wiki, the encyclopedia of nw.js. I know most of you just don't read 
 
 **Overview:**
 * [[Features list]]
+* [[Features list for simplified Chinese(支持列表)]]
 * [[Getting Started with nw.js]]
+* [[Getting Started with nw.js for simplified Chinese(开始nw.js)]]
 * [[Tutorials on nw.js]]
 * [How to open a window](wiki/Window)
 * [[How to run apps]]
