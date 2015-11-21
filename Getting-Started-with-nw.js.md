@@ -13,6 +13,7 @@ To begin our introduction to nwjs, we'll start with the simplest program possibl
 Create `index.html`:
 
 ```html
+<!DOCTYPE html>
 <html>
 <head>
 <title>Hello World!</title>
