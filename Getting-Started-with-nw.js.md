@@ -33,8 +33,7 @@ Create `package.json`:
 }
 ```
 
-Download the prebuilt binary for your platform, and use it to run your app:
-Note: This should be run from the same directory as the package.json file you created.
+Download the prebuilt binary for your platform, and use this command to run your app (Note: This should be run from the same directory as the package.json file you created):
 
 ```bash
 $ /path/to/nw .
