@@ -199,3 +199,18 @@ There are two branches for node-webkit: v0.8 branch and master branch. See https
 The "default branch" is the branch name you see in the start page of github repos. Regarding the root Chromium repo, the current default branch is 'nw12'.
 
 The branch names in dependency repos are specified in `DEPS` or `.DEPS.git` file in the root repo. The tool 'gclient' is supposed to sync them for you. But sometimes manual switching between branches might be needed.
+
+## Common Errors
+If you receive the following error message when building:
+```
+Error: Command 'git checkout --quiet refs/remotes/origin/nw13' returned non-zero exit status 1 in /home/[myAccountName]/Documents/dev/nwjs/src
+error: pathspec 'refs/remotes/origin/nw13' did not match any file(s) known to git.
+```
+Use the following commands (unix)
+```
+cd /path/to/content/nw
+git branch nw12
+git checkout nw13
+cd ../
+rm -rf nw
+```
