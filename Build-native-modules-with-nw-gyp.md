@@ -6,6 +6,7 @@ The usage is the same with node-gyp, except that you need to specify the version
 
 ````bash
 $ npm install -g nw-gyp
+$ cd myaddon
 $ nw-gyp configure --target=0.12.2
 $ nw-gyp build
 ````
