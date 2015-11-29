@@ -36,8 +36,6 @@ Now edit the file `.gclient`, and paste this into it:
 sync and build
 -----------
 ```bash
-gclient sync --nohooks
-./src/build/install-build-deps.sh
 gclient sync --no-history
 cd src
 ./build/gyp_chromium content/content.gyp
