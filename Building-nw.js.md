@@ -1,3 +1,47 @@
+Quick Start
+------
+```bash
+cd
+git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+export PATH=$PATH:~/depot_tools
+```
+Above will give you `gclient` the main build tool.  You should also edit your `~/.bashrc` file so that `gclient` can always be found.
+```bash
+mkdir node-webkit
+cd node-webkit
+touch .gclient
+vi .gclient
+```
+Now edit the file `.gclient`, and paste this into it:
+```
+    solutions = [
+       { "name"        : "src",
+         "url"         : "https://github.com/nwjs/chromium.src.git@origin/nw12",
+         "deps_file"   : "DEPS",
+         "managed"     : True,
+         "custom_deps" : {
+           "src/third_party/WebKit/LayoutTests": None,
+           "src/chrome_frame/tools/test/reference_build/chrome": None,
+           "src/chrome_frame/tools/test/reference_build/chrome_win": None,
+           "src/chrome/tools/test/reference_build/chrome": None,
+           "src/chrome/tools/test/reference_build/chrome_linux": None,
+           "src/chrome/tools/test/reference_build/chrome_mac": None,
+           "src/chrome/tools/test/reference_build/chrome_win": None,
+         },
+         "safesync_url": "",
+       },
+    ]
+
+```
+run gclient
+-----------
+```bash
+gclient sync --no-history
+
+```
+
+Detailed Build Documentation
+-----------------------
 Our compilation will follow `Chromium`'s standard, by using `gclient` and `gyp`, be sure to read following documentations before you continue, they contained required knowledge to build `node-webkit`.
 
 * [Get the Code](http://www.chromium.org/developers/how-tos/get-the-code) - the usage of `gclient`
@@ -43,7 +87,7 @@ To start, make an empty directory, say `node-webkit`, then create the `.gclient`
        },
     ]
 
-### Getting forked version of node-webkit
+### Building your own forked version of node-webkit
 
 These instructions will help you build a custom version of node-webkit that you have forked off [the main version](https://github.com/rogerwang/node-webkit).
 
