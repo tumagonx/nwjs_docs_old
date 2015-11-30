@@ -55,7 +55,24 @@ Every field has its own property in the `Shortcut`, see documentation of each pr
 
 Supported keys: A-Z, 0-9, Comma, Period, Home, End, PageUp, PageDown, Insert, Delete, Arrow keys (Up, Down, Left, Right) and the Media Keys (MediaNextTrack, MediaPlayPause, MediaPrevTrack, MediaStop). Note that `Shortcut.key`  has to have exactly one keycode, multiple aren't supported.
 
-Modifiers: Ctrl (On Mac OS X, "Ctrl" correspond to the Command keys on the Macintosh keyboard), Alt, Shift. Note that `Shortcut.key` takes zero or more modifiers. 
+Since 0.13.0, NW.js supports most of [DOM Level 3 W3C KeyboardEvent Code Values](http://www.w3.org/TR/DOM-Level-3-Events-code/). And also supports following key aliases:
+* `Backquote` == "`"
+* `Tab` == `\t`
+* `Enter` == `\n`
+* `Minus` == `-`
+* `Equal` == `=`
+* `Backslash` == `\`
+* `Comma` == `,`
+* `Period` == `.`
+* `Slash` == `/`
+* `Semicolon` == `:`
+* `Quote` == `'`
+* `BracketLeft` == `[`
+* `BracketRight` == `]`
+
+Modifiers: <kbd>Ctrl</kbd>, <kbd>Alt</kbd>, <kbd>Shift</kbd>. `Shortcut.key` takes zero or more modifiers.
+
+For version < 0.13.0, `Ctrl` maps to <kbd>&#8984;</kbd> on Mac OS X. But it's no longer true since NW 0.13.0. Starting from 0.13.0, `Command` modifier is supported across all platforms. On Mac OS X, `Command` maps to <kbd>&#8984;</kbd> key. On Windows and Linux, it maps to <kbd>Win</kbd> key for US 101 Layout keyboard.
 
 Please use zero modifier only when you are knowing what your are doing. The API `App.registerGlobalHotKey` can support applications intercepting a single key (like `{ key: "A"}`), but please don't do this since users will not be able to use "A" normally any more until the app unregisters it. However, the API doesn't limit this usage, and it would be useful if the applications wants to listen Media Keys.
 
