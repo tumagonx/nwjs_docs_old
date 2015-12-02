@@ -8,7 +8,7 @@ _页面尚未完成_
 * 使用方便
 * 原生UI库
 * 无边框窗口
-* 包装与配送(Packaging and distribution)
+* 打包与发布
 * 兼容NPM
 * 调试器支持
 * 丰富的文档
