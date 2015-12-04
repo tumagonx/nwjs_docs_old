@@ -248,14 +248,13 @@ The branch names in dependency repos are specified in `DEPS` or `.DEPS.git` file
 ## Common Errors
 If you receive the following error message when building:
 ```
-Error: Command 'git checkout --quiet refs/remotes/origin/nw13' returned non-zero exit status 1 in /home/[myAccountName]/Documents/dev/nwjs/src
+Error: Command 'git checkout --quiet refs/remotes/origin/nw13' returned non-zero exit status 1 in /path/to/nwjs/src
 error: pathspec 'refs/remotes/origin/nw13' did not match any file(s) known to git.
 ```
+The path gives the key to the issue: ```/path/to/nwjs/src``` Go down to that folder and use the following commands.
 Use the following commands (unix)
 ```
 cd /path/to/content/nw
 git branch nw12
-git checkout nw13
-cd ../
-rm -rf nw
+git checkout nw12
 ```
