@@ -254,7 +254,7 @@ error: pathspec 'refs/remotes/origin/nw13' did not match any file(s) known to gi
 The path gives the key to the issue: ```/path/to/nwjs/src``` Go down to that folder and use the following commands.
 Use the following commands (unix)
 ```
-cd /path/to/content/nw
+cd /path/to/nwjs/src # or where the error message refers you to
 git branch nw12
 git checkout nw12
 ```
