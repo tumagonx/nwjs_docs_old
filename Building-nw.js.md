@@ -40,6 +40,10 @@ gclient sync --no-history
 cd src
 ./build/gyp_chromium content/content.gyp
 ```
+Unless you are building nw13, which in this case you run
+```
+./build/gyp_chromium
+```
 
 Detailed Build Documentation
 -----------------------
