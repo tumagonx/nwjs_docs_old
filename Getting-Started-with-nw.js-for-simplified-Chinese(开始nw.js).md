@@ -2,7 +2,7 @@ Translation for Getting Started with nw.js
 
 翻译自Getting Started with nw.js
 
-本章节包涵了一些指导信息，以帮助您开始nw.js编程。嘉定你有nw.js的二进制文件(这样的文件都可以在 “[下载](https://github.com/nwjs/nw.js#downloads)”READEME的部分，如果你想建立自己的二进制文件请参阅[Building nw.js])
+本章节包涵了一些指导信息，以帮助您开始nw.js编程。假定你有nw.js的二进制文件(这样的文件都可以在 “[下载](https://github.com/nwjs/nw.js#downloads)”READEME的部分，如果你想建立自己的二进制文件请参阅[Building nw.js])
 nw.js基于[Chromium](http://www.chromium.org) and [io.js](http://iojs.org/)。它可以让你直接从DOM调用Node.js的代码及模块，使您可以使用web技术来开发应用程序。此外，你可以很轻松的打包web应用到本地应用程序
 ## 基础
 首先我们介绍nw.js，我们先从最简单的程序开始。
