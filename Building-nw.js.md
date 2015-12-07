@@ -1,5 +1,5 @@
-Quick Start
-------
+# Quick Start
+## Get the code
 ```bash
 cd
 git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
@@ -33,20 +33,19 @@ Now edit the file `.gclient`, and paste this into it:
     ]
 
 ```
-sync and build
------------
+## sync and build
+
 ```bash
 gclient sync --no-history
 cd src
 ./build/gyp_chromium content/content.gyp
 ```
 Unless you are building nw13, which in this case you run
-```
+```bash
 ./build/gyp_chromium
 ```
 
-Detailed Build Documentation
------------------------
+# Detailed Build Documentation
 Our compilation will follow `Chromium`'s standard, by using `gclient` and `gyp`, be sure to read following documentations before you continue, they contained required knowledge to build `node-webkit`.
 
 * [Get the Code](http://www.chromium.org/developers/how-tos/get-the-code) - the usage of `gclient`
@@ -73,25 +72,26 @@ First find a place to put our code, it will take up about 14G disk space after c
 ### Getting main version of node-webkit
 
 To start, make an empty directory, say `node-webkit`, then create the `.gclient` file in it, its content should be:
-
-    solutions = [
-       { "name"        : "src",
-         "url"         : "https://github.com/nwjs/chromium.src.git@origin/nw12",
-         "deps_file"   : "DEPS",
-         "managed"     : True,
-         "custom_deps" : {
-           "src/third_party/WebKit/LayoutTests": None,
-           "src/chrome_frame/tools/test/reference_build/chrome": None,
-           "src/chrome_frame/tools/test/reference_build/chrome_win": None,
-           "src/chrome/tools/test/reference_build/chrome": None,
-           "src/chrome/tools/test/reference_build/chrome_linux": None,
-           "src/chrome/tools/test/reference_build/chrome_mac": None,
-           "src/chrome/tools/test/reference_build/chrome_win": None,
-         },
-         "safesync_url": "",
-       },
-    ]
-
+```python
+solutions = [
+  {
+    "name"        : "src",
+    "url"         : "https://github.com/nwjs/chromium.src.git@origin/nw12",
+    "deps_file"   : "DEPS",
+    "managed"     : True,
+    "custom_deps" : {
+      "src/third_party/WebKit/LayoutTests": None,
+      "src/chrome_frame/tools/test/reference_build/chrome": None,
+      "src/chrome_frame/tools/test/reference_build/chrome_win": None,
+      "src/chrome/tools/test/reference_build/chrome": None,
+      "src/chrome/tools/test/reference_build/chrome_linux": None,
+      "src/chrome/tools/test/reference_build/chrome_mac": None,
+      "src/chrome/tools/test/reference_build/chrome_win": None,
+    },
+    "safesync_url": "",
+  },
+]
+```
 ### Building your own forked version of node-webkit
 
 These instructions will help you build a custom version of node-webkit that you have forked off [the main version](https://github.com/rogerwang/node-webkit).
@@ -103,25 +103,26 @@ Next, edit *DEPS* by changing the value of `deps['src/content/nw']` from `https:
 Then, if you have added any dependencies to the project, make sure to specify them in the appropriate gyp file (these are located in the **build** directory).
 
 Now, on your workstation make an empty directory, say `node-webkit`, then create the `.gclient` file in it, its content should be:
-
-    solutions = [
-       { "name"        : "src",
-         "url"         : "https://github.com/YOUR-NAME-HERE/chromium.src.git@origin/nw12",
-         "deps_file"   : "DEPS",
-         "managed"     : True,
-         "custom_deps" : {
-           "src/third_party/WebKit/LayoutTests": None,
-           "src/chrome_frame/tools/test/reference_build/chrome": None,
-           "src/chrome_frame/tools/test/reference_build/chrome_win": None,
-           "src/chrome/tools/test/reference_build/chrome": None,
-           "src/chrome/tools/test/reference_build/chrome_linux": None,
-           "src/chrome/tools/test/reference_build/chrome_mac": None,
-           "src/chrome/tools/test/reference_build/chrome_win": None,
-         },
-         "safesync_url": "",
-       },
-    ]
-
+```python
+solutions = [
+  {
+    "name"        : "src",
+    "url"         : "https://github.com/YOUR-NAME-HERE/chromium.src.git@origin/nw12",
+    "deps_file"   : "DEPS",
+    "managed"     : True,
+    "custom_deps" : {
+      "src/third_party/WebKit/LayoutTests": None,
+      "src/chrome_frame/tools/test/reference_build/chrome": None,
+      "src/chrome_frame/tools/test/reference_build/chrome_win": None,
+      "src/chrome/tools/test/reference_build/chrome": None,
+      "src/chrome/tools/test/reference_build/chrome_linux": None,
+      "src/chrome/tools/test/reference_build/chrome_mac": None,
+      "src/chrome/tools/test/reference_build/chrome_win": None,
+    },
+    "safesync_url": "",
+  },
+]
+```
 ### Syncing code
 
 Finally sync code under `node-webkit` directory (where `.gclient` resides), it would spend a few hours depending on your network condition:
@@ -149,13 +150,13 @@ Assume you store code under `node-webkit` folder, after all code is downloaded b
             `-- nw  (source code of this repo)
 
 Note: if you're on Linux and you get any dependency errors during `gclient sync` (like 'nss' or 'gtk+-2.0'), run `./src/build/install-build-deps.sh`, then re-run gclient sync:
-
-    cd /path/to/node-webkit
-    # Do this to boot strap dependencies on Linux:
-    gclient sync --nohooks
-    ./src/build/install-build-deps.sh
-    gclient sync
-
+```bash
+cd /path/to/node-webkit
+# Do this to boot strap dependencies on Linux:
+gclient sync --nohooks
+./src/build/install-build-deps.sh
+gclient sync
+```
 If you encountered other problems, see [UsingNewGit](http://code.google.com/p/chromium/wiki/UsingNewGit).
 
 ### Extra Steps on Windows
@@ -169,11 +170,16 @@ cp -r /c/Program\ Files\ \(x86\)/Microsoft\ DirectX\ SDK\ \(June\ 2010\)/* /path
 
 This step is necessary to get some DirectX dlls files extracted, and we mentioned it here because this is not documented in Chromium's site.
 
-### Build
+## Build
 
 After the `gclient sync`, project files should have be prepared. If not, you should manually run:
-
-    ./build/gyp_chromium content/content.gyp   (on OSX the argument '--no-circular-check' is needed)
+```bash
+./build/gyp_chromium content/content.gyp   (on OSX the argument '--no-circular-check' is needed)
+```
+To build from latest NW13 branch, please use following command instead:
+```bash
+./build/gyp_chromium
+```
 
 Then you can just compile the `nw` target (and don't forget to build with `Release` mode):
 
@@ -194,7 +200,7 @@ Since 0.12.0, NW.js supports multiple [[build flavors]], such as MAS, NaCl, SDK 
 * **NaCl**: `disable_nacl=0` *since 0.13.0-alpha1*
 * **Minimum**: the default configuration, same as `nwjs_sdk=0 disable_nacl=1` *since 0.13.0-alpha1*
 
-## Official extra build settings
+### Official extra build settings
 
 Windows all: set DEPOT_TOOLS_WIN_TOOLCHAIN=0; set GYP_MSVS_VERSION=2013  
 Win64: set GYP_DEFINES='host_arch=x64 target_arch=x64' and build in src/out/Release_x64  
@@ -203,7 +209,7 @@ Linux ia32: export GYP_DEFINES='clang=0'
 
 You can view the official build environment settings and commands in the build log here: http://buildbot-master.node-webkit.org:8010/waterfall
 
-##Tips
+### Tips
 1. You can specify what project files to generate through `GYP_GENERATORS`. And you can export it in `~/.bashrc` etc.For example, if you want to use `make`:
 ````
 export GYP_GENERATORS='make'
@@ -216,7 +222,7 @@ export GYP_GENERATORS='ninja'
 ./build/gyp_chromium content/content.gyp --no-circular-check
 ````
 
-## Build Faster
+### Build Faster
 
 * [Build Instructions for Windows](http://www.chromium.org/developers/how-tos/build-instructions-windows#TOC-Accelerating-the-build)
 * [LinuxFasterBuilds](http://code.google.com/p/chromium/wiki/LinuxFasterBuilds)
