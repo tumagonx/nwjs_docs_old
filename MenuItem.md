@@ -97,20 +97,17 @@ Mac OS X Only. **Get** or **Set** whether `icon` image is treated as "template" 
 _since v0.10.0-rc1_  
 A single character string to specify the shortcut key for the menu item.
 
-_Note: Some non alphanumeric keys can be used with their corresponding char codes:_
-```
-key = String.fromCharCode(28); // arrow left
-key = String.fromCharCode(29); // arrow right
-key = String.fromCharCode(30); // arrow up
-key = String.fromCharCode(31); // arrow down
-key = String.fromCharCode(27); // escape
-key = String.fromCharCode(11); // Page up
-key = String.fromCharCode(12); // Page down
-```
+A valid key can be any digit (0-9), alphabet (a-z) and other useful keys, such as `[`, `'`, `,`, `Tab`, `Esc`, `Down` etc.
+
+Since 0.13.0, you can use key names defined in [W3C DOM Level 3 KeyboardEvent Key Values](http://www.w3.org/TR/DOM-Level-3-Events-key/), such as `KeyA` (same as `A`), `Escape` (same as `Esc`), `F1`, `ArrowDown` (same as `Down`), `MediaPlayPause` etc.
 
 ### MenuItem.modifiers
 _since v0.10.0-rc1_  
-A string to specify the modifier keys for the shortcut of the menu item. e.g. `"cmd-shift"`. It should be the concatenation of the following strings: `cmd`, `shift`, `ctrl`, `alt`.
+A string to specify the modifier keys for the shortcut of the menu item. e.g. `"cmd+shift"`. It should be the concatenation of the following strings: `cmd`, `super`, `shift`, `ctrl`, `alt`.
+
+For NW.js older than 0.13.0, `cmd` is only valid for Mac OS X which represents <kbd>&#8984;</kbd>. `super` is only valid for Windows, which represents <kbd>Windows</kbd>.
+
+Since 0.13.0, `cmd` represents different keys on all platforms: <kbd>Windows</kbd> for Windows and Linux, <kbd>&#8984;</kbd> for Mac OS X. `super` and `command` are aliases of `cmd`.
 
 ## Events
 Following events can be listened by using `MenuItem.on()` function, for more information on how to receive events, you can visit [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
