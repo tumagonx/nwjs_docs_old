@@ -1066,3 +1066,18 @@ nwMAME is multi-platform (Windows, Linux, OS X) MAME front-end which uses power 
 cmod3 is a music player for the classic .MOD,.S3M,.XM and .IT music formats (made popular by the AMIGA computer). It features an audio decoding library named libopenmpt, compiled with ecmascripten, to provide the most accurate playback. You can directly browse the Modarchive to download and listen songs, or play the Nectarine Demoscene radio.
 
 [![cmod3 screenshot](https://raw.githubusercontent.com/jllodra/cmod3/master/screenshot.png)](https://github.com/jllodra/cmod3)
+
+### [Synchrom](http://www.synchromthegame.com)
+
+Synchrom is a new genre of immersive focus game. Revisiting shooter, musical and puzzle game mechanics, it rises your skill to a new level.
+
+In this new kind of music game mixing reflexes, anticipation and sense of rhythm, you can take control of a Synchrom, a mysterious spiritual device that can channel the pulses of light energy. Your mission is to defend the Light against Cryptangles, a race of chromophage machine-gods.
+
+Making quick decisions based on both musical and visual elements is the key to lead your Synchrom to the victory. Your inner focus ability is our last hope.
+
+http://www.synchromthegame.com
+
+#### Screenshots
+![](http://www.morphiks.com/synchrom/presskit/synchrom/images/0_synchromavatar.png)
+![](http://www.morphiks.com/synchrom/screens/sc2.png)
+
