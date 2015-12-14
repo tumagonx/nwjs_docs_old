@@ -99,6 +99,18 @@ A single character string to specify the shortcut key for the menu item.
 
 A valid key can be any digit (0-9), alphabet (a-z) and other useful keys, such as `[`, `'`, `,`, `Tab`, `Esc`, `Down` etc.
 
+On Mac OS X, you can use followings special keys as shortcut key:
+```javascript
+key = String.fromCharCode(28); // arrow left
+key = String.fromCharCode(29); // arrow right
+key = String.fromCharCode(30); // arrow up
+key = String.fromCharCode(31); // arrow down
+key = String.fromCharCode(27); // escape
+key = String.fromCharCode(11); // Page up
+key = String.fromCharCode(12); // Page down
+```
+For full list of special keys supported on Mac, see [NSMenuItem.keyEquivalent](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSMenuItem_Class/#//apple_ref/occ/instp/NSMenuItem/keyEquivalent) and [NSEvent: Function-Key Unicodes](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSEvent_Class/index.html#//apple_ref/doc/constant_group/Function_Key_Unicodes).
+
 Since 0.13.0, you can use key names defined in [W3C DOM Level 3 KeyboardEvent Key Values](http://www.w3.org/TR/DOM-Level-3-Events-key/), such as `KeyA` (same as `A`), `Escape` (same as `Esc`), `F1`, `ArrowDown` (same as `Down`), `MediaPlayPause` etc.
 
 ### MenuItem.modifiers
