@@ -74,4 +74,8 @@ index ac059f0..1b0424c 100644
 ```
 (see [https://github.com/nwjs/nw.js/issues/1461#issuecomment-32009915](https://github.com/nwjs/nw.js/issues/1461#issuecomment-32009915))
 
-You'll also need to turn on the resource loader's support in Chromium's code, or your format will be treated as a non standard d MIME type and won't be loaded. See src/net/base/mime_util.cc for more. You might also want to look into code in other files guarded by the `'USE_PROPRIETARY_CODECS'` macro.
+You'll also need to turn on the resource loader's support in Chromium's code, or your format will be treated as a non standard d MIME type and won't be loaded. See src/net/base/mime_util.cc for more. You might also want to look into code in other files guarded by the `'USE_PROPRIETARY_CODECS'` macro. 
+
+**Update**
+
+the `'USE_PROPRIETARY_CODECS'` macro can be done by setting `'proprietary_codecs%': 1` in file `build/common.gypi`
