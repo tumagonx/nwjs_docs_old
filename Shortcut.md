@@ -65,7 +65,7 @@ Since 0.13.0, NW.js supports most of [DOM Level 3 W3C KeyboardEvent Code Values]
 * `Comma` == `,`
 * `Period` == `.`
 * `Slash` == `/`
-* `Semicolon` == `:`
+* `Semicolon` == `;`
 * `Quote` == `'`
 * `BracketLeft` == `[`
 * `BracketRight` == `]`
