@@ -1058,7 +1058,7 @@ nwMAME is multi-platform (Windows, Linux, OS X) MAME front-end which uses power 
 
 #### Screenshot
 
-![nwMAME Screenshot](http://ozguncagri.github.io/nwMAME/nwMAME_screenshot.png)
+![nwMAME Screenshot](https://raw.githubusercontent.com/ozguncagri/ozguncagri.github.io/gh-pages/nwMAME/nwMAME_screenshot.png)
 
 
 ### [cmod3](https://github.com/jllodra/cmod3) 
@@ -1080,4 +1080,3 @@ http://www.synchromthegame.com
 #### Screenshots
 ![](http://www.morphiks.com/synchrom/presskit/synchrom/images/0_synchromavatar.png)
 ![](http://www.morphiks.com/synchrom/screens/sc2.png)
-
