@@ -600,16 +600,6 @@ Ace Text Editor  -  The Same Editor that powers github.com
 Source @ https://github.com/brads-tools/node-webkit-ace-editor & 
 Thanks @ http://ace.ajax.org/
 
-### Light Table
-
-Light Table is a new interactive IDE that lets you modify running programs and embed anything from websites to games. It provides the real time feedback.
-
-http://www.lighttable.com/
-
-![lt-inspector](http://www.chris-granger.com/images/040/inspector.png)
-![lt-table](http://www.chris-granger.com/images/lightable/table.png)
-
-
 ### Brief Msg
 
 Brief Msg is a cross-platform open source messenger for SIP servers compatible with WebSocket protocol.
