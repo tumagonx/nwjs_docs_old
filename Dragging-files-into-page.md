@@ -6,32 +6,32 @@ An example is:
 
 ```html
 <html>
-    <head>
-        <style>
-            #holder { border: 10px dashed #ccc; width: 300px; height: 300px; margin: 20px auto;}
-            #holder.hover { border: 10px dashed #333; }
-        </style>
-        <script>
-            // prevent default behavior from changing page on dropped file
-            window.ondragover = function(e) { e.preventDefault(); return false };
-            window.ondrop = function(e) { e.preventDefault(); return false };
+  <head>
+    <style>
+      #holder { border: 10px dashed #ccc; width: 300px; height: 300px; margin: 20px auto;}
+      #holder.hover { border: 10px dashed #333; }
+    </style>
+    <script>
+      // prevent default behavior from changing page on dropped file
+      window.ondragover = function(e) { e.preventDefault(); return false };
+      window.ondrop = function(e) { e.preventDefault(); return false };
 
-            var holder = document.getElementById('holder');
-            holder.ondragover = function () { this.className = 'hover'; return false; };
-            holder.ondragleave = function () { this.className = ''; return false; };
-            holder.ondrop = function (e) {
-                e.preventDefault();
+      var holder = document.getElementById('holder');
+      holder.ondragover = function () { this.className = 'hover'; return false; };
+      holder.ondragleave = function () { this.className = ''; return false; };
+      holder.ondrop = function (e) {
+        e.preventDefault();
 
-                for (var i = 0; i < e.dataTransfer.files.length; ++i) {
-                    console.log(e.dataTransfer.files[i].path);
-                }
-                return false;
-            };
-    </script>
-    </head>
-    <body>
-        <div id="holder"></div>
-    </body>
+        for (var i = 0; i < e.dataTransfer.files.length; ++i) {
+          console.log(e.dataTransfer.files[i].path);
+        }
+        return false;
+      };
+  </script>
+  </head>
+  <body>
+    <div id="holder"></div>
+  </body>
 </html>
 ```
 
