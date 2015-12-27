@@ -6,12 +6,11 @@ An example is:
 
 ```html
 <html>
-<body>
+<head>
 <style>
 #holder { border: 10px dashed #ccc; width: 300px; height: 300px; margin: 20px auto;}
 #holder.hover { border: 10px dashed #333; }
 </style>
-<div id="holder"></div>
 <script>
 // prevent default behavior from changing page on dropped file
 window.ondragover = function(e) { e.preventDefault(); return false };
@@ -29,6 +28,9 @@ holder.ondrop = function (e) {
   return false;
 };
 </script>
+</head>
+<body>
+<div id="holder"></div>
 </body>
 </html>
 ```
