@@ -14,6 +14,7 @@ An example is:
     </style>
     <script>
 
+      //Same as $(document).ready();
       function ready(fn) {
         if (document.readyState != 'loading'){
           fn();
@@ -22,6 +23,7 @@ An example is:
         }
       }
 
+      //When the page has loaded, run this code
       ready(function(){
         // prevent default behavior from changing page on dropped file
         window.ondragover = function(e) { e.preventDefault(); return false };
