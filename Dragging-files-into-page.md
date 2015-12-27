@@ -5,6 +5,7 @@ node-webkit allows directly dragging files into page, developers can use it the 
 An example is:
 
 ```html
+<!DOCTYPE html>
 <html>
   <head>
     <style>
