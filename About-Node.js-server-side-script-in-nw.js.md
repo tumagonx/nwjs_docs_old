@@ -2,9 +2,9 @@ If you're used to writing server side scripts, and have little experience writin
 
 ## Express?
 
-If you searched `write desktop apps in node.js` and found node-webkit, the first thing you may do is trying to figure out how to make `Express` or other node web frameworks work, and I've get questions like this far too many times.
+If you searched `write desktop apps in node.js` and found NW.js, the first thing you may do is trying to figure out how to make `Express` or other node web frameworks work, and I've get questions like this far too many times.
 
-The answer is, you can still use `Express` in the same way you use with Node.js (create a HTTP server, etc), but that's not the way in which you can fully unleash the power of node-webkit. By using front-end libraries like jQuery or Angular and a healthy separation between views and controllers, the need for Node to render templates disappears.
+The answer is, you can still use `Express` in the same way you use with Node.js (create a HTTP server, etc), but that's not the way in which you can fully unleash the power of NW.js. By using front-end libraries like jQuery or Angular and a healthy separation between views and controllers, the need for Node to render templates disappears.
 
 ### Router
 
@@ -28,7 +28,7 @@ However the recommended way is not opening a new window or changing the `window.
 
 ### Template Engine
 
-For template engine, node.js developers have always been comfortable with rendering at server side and then sending the result to clients. In node-webkit everything is client side, you don't need to render the template and then feed it to node-webkit, you could just render everything after the page is loaded.
+For template engine, node.js developers have always been comfortable with rendering at server side and then sending the result to clients. In NW.js everything is client side, you don't need to render the template and then feed it to NW.js, you could just render everything after the page is loaded.
 
 The basic idea is: use the template engine to generate contents on the fly, and then append dynamic contents into the DOM. like this:
 
@@ -55,9 +55,9 @@ Another example is how I refresh the address bar and folder view in [zcbenz/nw-f
 
 ### Why not the router way?
 
-One of the founding nature of node-webkit is that you can call any Node modules you want from DOM **directly**. 'directly' means the Javascript objects of Node and DOM reside in the same V8 heap. So variables references are made directly like a pointer, and function calls don't need to come across any kind of JSON marshalling/unmarshalling bridge between processes, or even threads.
+One of the founding nature of NW.js is that you can call any Node modules you want from DOM **directly**. 'directly' means the Javascript objects of Node and DOM reside in the same V8 heap. So variables references are made directly like a pointer, and function calls don't need to come across any kind of JSON marshalling/unmarshalling bridge between processes, or even threads.
 
-Some may find their code in B/S architecture can be easily reused by launching a HTTP server in node-webkit. By using an asynchronous API layer for either HTTP or it's Node context you could account for the difference between desktop- and browser based clients transparently. It must be noted that making DOM calls to Node directly would give you a brand new way of writing applications, with benefits to both performance and architecture, but be limited as to code sharing with platforms that cannot call Node.
+Some may find their code in B/S architecture can be easily reused by launching a HTTP server in NW.js. By using an asynchronous API layer for either HTTP or it's Node context you could account for the difference between desktop- and browser based clients transparently. It must be noted that making DOM calls to Node directly would give you a brand new way of writing applications, with benefits to both performance and architecture, but be limited as to code sharing with platforms that cannot call Node.
 
 ## CoffeeScript, LESS and more
 
@@ -115,7 +115,7 @@ And of course you can always choose to compile the code before packing your app,
 
 If you have written server side scripts, you would be familiar with navigating user to different pages when they click a link, and save users' session information in `cookies` or in server.
 
-In node-webkit, you can basically do the same thing by using `window.location`, you can install it in the `onclick` event of a link and node-webkit will navigate to a new page when user clicks it. But by doing this you would lose everything in `window` context, you can save everything in cookies like old web pages, or you can save things in the `global` variable, which resides in Node.js's context and will live through your app.
+In NW.js, you can basically do the same thing by using `window.location`, you can install it in the `onclick` event of a link and NW.js will navigate to a new page when user clicks it. But by doing this you would lose everything in `window` context, you can save everything in cookies like old web pages, or you can save things in the `global` variable, which resides in Node.js's context and will live through your app.
 
 But a better way is just refreshing part of your pages, not navigating to a new one, you can search for `ajax` to get basic ideas.
 
