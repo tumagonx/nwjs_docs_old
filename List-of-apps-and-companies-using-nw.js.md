@@ -1070,3 +1070,8 @@ http://www.synchromthegame.com
 #### Screenshots
 ![](http://www.morphiks.com/synchrom/presskit/synchrom/images/0_synchromavatar.png)
 ![](http://www.morphiks.com/synchrom/screens/sc2.png)
+
+### [Lingo Player](http://oaprograms.github.io/lingo-player/)
+Open source video player with language-learning features (built-in google dictionary, word saving, dual subtitles).
+
+[![lingoplayer-screenshot](http://oaprograms.github.io/lingo-player/images/screenshots/2.png)](http://oaprograms.github.io/lingo-player/)
