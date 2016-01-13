@@ -4,6 +4,17 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Scoop](https://itunes.apple.com/us/app/scoop/id1050308420)
+Scoop is an OS X Photo Organizer and Photo Server Application written in NW.js and available in the [Mac App Store](https://itunes.apple.com/us/app/scoop/id1050308420).  Scoop makes it easy to privately share your photos with family and friends - both online and in your home. 
+
+Run Scoop on every Mac in your home and easily share photos between your Family members. With Scoop's powerful Photo Server you will always have access to 
+your photos - whether they are on your MacBook or your iMac. Create PRIVATE online photo galleries with Scoop's free online gallery service that can be shared with family 
+and friends - perfect for sharing memories with extended family members. 
+
+#### Screenshots
+[![screenshot1](http://a1.mzstatic.com/us/r30/Purple69/v4/4c/ff/10/4cff1065-06cc-9801-d450-3ca8cb757120/screen800x500.jpeg)](https://itunes.apple.com/us/app/scoop/id1050308420)
+[![screenshot2](http://a2.mzstatic.com/us/r30/Purple69/v4/53/77/a3/5377a389-c2f4-d816-d9fb-dd01bd75af8e/screen800x500.jpeg)](https://itunes.apple.com/us/app/scoop/id1050308420)
+
 ### [Powder Player](https://github.com/jaruba/PowderPlayer)
 A cross-platform, incredibly easy to use heavy-duty player that supports **torrent streaming** and **torrent downloading**.
 
