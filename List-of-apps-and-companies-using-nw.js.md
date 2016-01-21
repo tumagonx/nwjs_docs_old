@@ -1086,3 +1086,13 @@ http://www.synchromthegame.com
 Open source video player with language-learning features (built-in google dictionary, word saving, dual subtitles).
 
 [![lingoplayer-screenshot](http://oaprograms.github.io/lingo-player/images/screenshots/2.png)](http://oaprograms.github.io/lingo-player/)
+
+### [quickemoji](https://github.com/2yuri/quickemoji)
+
+Quickemoji is an easy-use emoji tools.
+- Taskbar
+- Keyword Search
+- 3 Popular emojis and Updates dynamicly refer to the use frequency
+- Many helpful and efficent keyborad shortcut
+
+![screenshot1](https://raw.githubusercontent.com/2yuri/quickemoji/master/snap-v1.0.png)
