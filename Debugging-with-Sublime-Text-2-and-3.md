@@ -13,6 +13,7 @@ Sublime Text 2 is a great cross-platform editor for building node-webkit apps, y
         "path": "/Applications/nwjs.app/Contents/MacOS/"
     }
     ````
+Alternately use ${project_path} instead of ${project_path:${file_path}} if your package.json is in the project root directory to launch NW while viewing a file from any project sub-directory.
 
 4. Save the configuration as `nodeWebKit.sublime-build` on the suggested folder
 5. Open a new window in Sublime Text 2 using `File -> New Window`
