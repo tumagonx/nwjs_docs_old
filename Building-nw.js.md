@@ -16,7 +16,7 @@ Now edit the file `.gclient`, and paste this into it:
 ```
     solutions = [
        { "name"        : "src",
-         "url"         : "https://github.com/nwjs/chromium.src.git@origin/nw13",
+         "url"         : "https://github.com/nwjs/chromium.src.git@origin/nw12",
          "deps_file"   : "DEPS",
          "managed"     : True,
          "custom_deps" : {
