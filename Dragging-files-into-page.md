@@ -27,6 +27,7 @@ An example is:
       ready(function(){
         // prevent default behavior from changing page on dropped file
         window.ondragover = function(e) { e.preventDefault(); return false };
+        // NOTE: window.ondrop WILL NOT WORK without window.ondragover!
         window.ondrop = function(e) { e.preventDefault(); return false };
 
         var holder = document.getElementById('holder');
