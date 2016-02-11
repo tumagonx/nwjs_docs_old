@@ -113,8 +113,31 @@ function restoreWindowState() {
         winState.height = winState.height - deltaHeight
     }
 
-    win.resizeTo(winState.width, winState.height);
-    win.moveTo(winState.x, winState.y);
+
+    //Make sure that the window is displayed somewhere on a screen that is connected to the PC. 
+    //Imagine you run the program on a secondary screen connected to a laptop - and then the next time you start the 
+    //program the screen is not connected...
+    gui.Screen.Init();
+    var screens = gui.Screen.screens;
+    var locationIsOnAScreen = false;
+    for (var i = 0; i < screens.length; i++) {
+        var screen = screens[i];
+        if (winState.x > screen.bounds.x && winState.x < screen.bounds.x + screen.bounds.width) {
+            if (winState.y > screen.bounds.y && winState.y < screen.bounds.y + screen.bounds.height) {
+                console.debug("Location of window (" + winState.x + "," + winState.y + ") is on screen " + JSON.stringify(screen));
+                locationIsOnAScreen = true;
+            }
+        }
+    }
+
+    if (!locationIsOnAScreen) {
+        console.debug("Last saved position of windows is not usable on current monitor setup. Moving window to center!");
+        win.setPosition("center");
+    }
+    else {
+        win.resizeTo(winState.width, winState.height);
+        win.moveTo(winState.x, winState.y);
+    }
 }
 
 function saveWindowState() {
