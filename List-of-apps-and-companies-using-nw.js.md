@@ -41,17 +41,6 @@ Astar is a simple task manager application for Mac OS X, using NW.js. Astar allo
 * Send photos & videos
 * Share locations
 
-#### *WhatsApp for Desktop* features
-
-* Badge with the number of notifications in the dock/taskbar (OS X and Windows)
-* Auto-launch on OS startup (OS X, Windows)
-* Native notifications (all platforms)
-* System tray icon (OS X, Windows)
-* Open links in browser or new window
-* Preferences in the right-click context menu (or menu bar for OS X, tray menu for Windows)
-
-[![WhatsApp for Desktop screenshot](https://raw.githubusercontent.com/Aluxian/WhatsApp-Desktop/master/screenshot.png)](http://whatsapp-desktop.com)
-
 ### [Messenger for Desktop](http://messengerfordesktop.com/)
 
 **Messenger for Desktop** is a beautiful, simple and easy to use cross-platform app that brings messenger.com to your OS X, Windows or Linux desktop.
