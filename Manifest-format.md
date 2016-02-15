@@ -153,7 +153,9 @@ _since v0.4.1_
 ### inject-js-start / inject-js-end
 _since v0.9.0 and v0.8.5_
 
-*(string)* a local filename, relative to the application path, used to specify a JavaScript file to inject to the window. `inject-js-start`: The injecting JavaScript code is to be executed after any files from css, but before any other DOM is constructed or any other script is run; `inject-js-end`: The injecting JavaScript code is to be executed after the document object is loaded, before `onload` event is fired. This is mainly to be used as an option of `Window.open()` to inject JS in a new window. 
+*(string)* a local filename, relative to the application path, used to specify a JavaScript file to inject to the window.
+ * `inject-js-start`: The injecting JavaScript code is to be executed after any files from css, but before any other DOM is constructed or any other script is run.
+ * `inject-js-end`: The injecting JavaScript code is to be executed after the document object is loaded, before `onload` event is fired. This is mainly to be used as an option of `Window.open()` to inject JS in a new window. 
 
 ### additional_trust_anchors
 _since v0.11.1_  
