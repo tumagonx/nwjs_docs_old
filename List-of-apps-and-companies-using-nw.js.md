@@ -161,6 +161,18 @@ To download the game, play online or include it in your web site for free you ca
 
 ![Yasminoku](http://yasminoku.tuxfamily.org/yasminoku_new.jpg "Yasminoku")
 
+### [WallArty](http://avanishpathak.com/wallArty) - Delicious Papers for your Wall 
+
+Browse, fetch and set beautiful wallpapers for your desktop screen. A minimalistic clean UI which offers only the best high definition images with recommended resolutions. Scroll through delicious papers and click to set the wallpaper on your desktop. 
+
+[![Screenshots](http://avanishpathak.com/wallArty/img/transparentPC.png)](http://avanishpathak.com/wallArty)
+
+#### Features
+
+* Choose between different categories
+* Added NSFW section
+* Timer for automatic Wallpaper change based on your wallpaper search preference
+* Cross platform - Mac / Windows support
 
 ### [TopAnimeStream](http://www.topanimestream.com/en/)
 
