@@ -245,6 +245,11 @@ and so on.
 > The unofficial multi-platform Pushover desktop client.
 ![Pullover Demo](https://raw.githubusercontent.com/cgrossde/Pullover/master/res/Demo.gif)
 
+### [OpenSubtitles-Uploader](https://github.com/vankasteelj/opensubtitles-uploader)
+
+Upload your subtitles to OpenSubtitles.org without any hassle.
+![OpenSubtitles-Uploader screenshot](https://camo.githubusercontent.com/bfeab6d5e6f180af7de58090c7ea79fadd436d26/687474703a2f2f692e696d6775722e636f6d2f576c355853595a2e706e67)
+
 ### [U2Bear](https://github.com/shubapp/u2bear)
 > An awesome client for watching and downloading Youtube videos without adds.
 ![U2Bear](http://i.imgur.com/FVYyjSN.jpg)
