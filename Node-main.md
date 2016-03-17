@@ -6,7 +6,7 @@ Besides Node's symbols, the following symbols are available in Node's context:
 
 *  **window**: defined as a property of 'global', points to the DOM window global object. Note that it would be updated upon page navigation. This symbol is not available at the time the script is loaded, because the script is executed before the DOM window load.
 
-Since the `node-main` script is the main module of Node.js, it can be referred from DOM context with `process.mainModule`, or for nwjs v0.13-rc3 use `nw.process.mainModule`.
+Since the `node-main` script is the main module of Node.js, it can be referred from DOM context with `process.mainModule`.
 
 # Example 
 *the following code works with node-webkit* **>=0.3.3**
@@ -20,9 +20,6 @@ index.html
 <title>Hello World!</title>
 </head>
 <body onload="process.mainModule.exports.callback0()">
-<!-- "For nwjs v0.13-rc3 use: ("process" has been moved into the "nw" object for newer versions) 
-<body onload="nw.process.mainModule.exports.callback0()">
--->
 <h1>Hello World!</h1>
 We are using node.js <script>document.write(process.version); </script>
 </body>
