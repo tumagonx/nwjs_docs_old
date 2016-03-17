@@ -20,6 +20,9 @@ index.html
 <title>Hello World!</title>
 </head>
 <body onload="process.mainModule.exports.callback0()">
+<!-- "For nwjs v0.13-rc3 use: ("process" has been moved into the "nw" object for newer versions) 
+<body onload="nw.process.mainModule.exports.callback0()">
+-->
 <h1>Hello World!</h1>
 We are using node.js <script>document.write(process.version); </script>
 </body>
