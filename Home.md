@@ -1,3 +1,5 @@
+** NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io
+
 Here is the Wiki, the encyclopedia of nw.js. I know most of you just don't read documentation, but please at least skim the content, you could find answers to most of your questions here.
 
 ## For Users
