@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 _Window API requires node-webkit >= v0.3.0_
 
 `Window` is a wrapper of the DOM's `window` object. It has extended operations and can receive various window events.

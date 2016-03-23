@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 ## Quick start
 
 Just put the files along with NW files in the same directory and then ship them to your users.  

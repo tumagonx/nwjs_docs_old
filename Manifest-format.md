@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 Every app package should contain a manifest file named `package.json`, it will tell `nwjs` how to open the app and control how the browser behaves.
 
 ## Quick Start
