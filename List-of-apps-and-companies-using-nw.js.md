@@ -68,7 +68,7 @@ Astar is a simple task manager application for Mac OS X, using NW.js. Astar allo
 
 **Teamwire** is a fast, easy to use and secure enterprise messaging app that improves team communication and collaboration and increases the productivity of businesses. 
 
-Teamwire is available cross-platform for mobile and desktop devices, and offers a desktop app for Windows, Mac and Linux.
+Teamwire is available cross-platform for all mobile and desktop devices, and offers a desktop app for Windows, Mac and Linux.
 
 [![Teamwire for Desktop screenshot](http://www.teamwire.eu/assets/Uploads/Teamwire-Enterprise-Messaging-App-for-Desktop.tiff)](http://www.teamwire.eu)
 
