@@ -64,6 +64,14 @@ Astar is a simple task manager application for Mac OS X, using NW.js. Astar allo
 
 [![Messenger for Desktop screenshot](https://raw.githubusercontent.com/Aluxian/Facebook-Messenger-Desktop/master/screenshot.png)](http://messengerfordesktop.com)
 
+### [Teamwire for Desktop](http://www.teamwire.eu/)
+
+**Teamwire** is a fast, easy to use and secure enterprise messaging app that improves team communication and collaboration and increases the productivity of businesses. 
+
+Teamwire is available cross-platform for mobile and desktop devices, and offers a desktop app for Windows, Mac and Linux.
+
+[![Teamwire for Desktop screenshot](http://www.teamwire.eu/assets/Uploads/Teamwire-Enterprise-Messaging-App-for-Desktop.tiff)](http://www.teamwire.eu)
+
 ### [Boson Editor](https://github.com/isdampe/BosonEditorExperimental)
 Boson is a minimalistic experimental source code editor. It's written in Node, and wrapped in Nw.js as a runtime container for easy cross-platform integration. Boson supports theming, plugins and more.
 
