@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 *Note: following guides only apply to node-webkit >= v0.3.0*
 
 ## Open Developer Tools
