@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 `node-main` is a field in the [manifest format](Manifest-format), with which you can specify the path to a Javascript file to run on startup. It is treated in the same way as the 'main module' you would run in Node.js.
 
 The script will be running in Node's context which won't be destroyed across page navigation in Webkit, so it can be used to write some 'background' or 'daemon' like code.
