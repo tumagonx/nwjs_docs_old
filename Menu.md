@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 _Menu API requires node-webkit >= 0.3.0_
 
 `Menu` represents a native menu, it can be used as window menu or context menu.
