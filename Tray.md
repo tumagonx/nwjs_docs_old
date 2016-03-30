@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 _Tray API requires node-webkit >= v0.3.0_
 
 `Tray` is an abstraction of different controls on different platforms, usually it's a small icon shown on the OS's notification area. On Mac OS X it's called `Status Item`, on GTK it's `Status Icon`, and on Windows it's `System Tray Icon`.
