@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 *nw-gyp is supported from version 0.3.2*
 
 nw-gyp is a hack on node-gyp to support node-webkit specific headers and libraries. 
