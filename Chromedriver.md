@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 Since v0.6.0 `chromedriver` is distributed with node-webkit binaries.
 
 From [chromedriver project home page](http://code.google.com/p/chromedriver/):
