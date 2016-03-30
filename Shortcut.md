@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 _Shortcut API requires node-webkit >= 0.10.0_
 
 `Shortcut` represents a global keyboard shortcut, also known as system-wide hotkey. If registered successfully, it works even if your app does *not* have focus. Every time the user presses the registered shortcut, your app will receive an "active" event of the shortcut object.
