@@ -1,3 +1,7 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
+**This feature is deprecated since 0.13.0. See [migration note](http://docs.nwjs.io/en/latest/For%20Users/Migration/From%200.12%20to%200.13/) for details.**
+
 _since v0.7.0_
 
 The app protocol is defined like http protocol: `app://<host>/path`. The host part is essential. You can define it to anything you want. The root of `path` refers to the application's directory, which is the directory where the manifest file resides.
