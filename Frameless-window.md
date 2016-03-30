@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 _Frameless window requires node-webkit >= v0.3.0_
 
 A frameless window is a window without standard frames and window buttons, usually you would use a frameless window to custom titlebar and other standard window buttons. To have a quick glance of it, you can visit the [frameless-window](https://github.com/zcbenz/nw-sample-apps/tree/master/frameless-window) and [webgl](https://github.com/zcbenz/nw-sample-apps/tree/master/webgl) demo in [zcbenz/nw-sample-apps](https://github.com/zcbenz/nw-sample-apps).
