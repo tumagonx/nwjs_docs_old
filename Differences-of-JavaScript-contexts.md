@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 Different windows of a node-webkit-based application have different JavaScript contexts, i.e. each window has its own global object and its own set of global constructors (such as `Array` or `Object`).
 
 That's common practice among web browsers. It's a good thing because, for example:
