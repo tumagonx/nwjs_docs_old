@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 _Notification API requires node-webkit >= v0.10.1_
 
 `Notification` specification is based from http://www.w3.org/TR/notifications/
