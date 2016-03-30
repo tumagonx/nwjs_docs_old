@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 _MenuItem API requires node-webkit >= 0.3.0_
 
 `MenuItem` represents an item in a menu. A `MenuItem` can be a separator or a normal item which has label and icon. `MenuItem` is usually used with `Menu` together.
