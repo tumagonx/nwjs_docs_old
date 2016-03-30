@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 The following changes to DOM is made to support native applications better:
 
 Features marked with `node only` means that only `Node frames` can do this. `Normal frames` still follow the W3C standard. For definition of `Node frames` and `Normal frames`, see [Security](Security)
