@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 node-webkit adds Node.js support and enhancement in DOM for trusted code and content. **For untrusted code and content, it should remain in a normal `frame` or `iframe`**, which is the same as the one in browser. So there are 2 kinds of frames in node-webkit: `Node frame` and `normal frame`.
 
 **As application developer, one should keep in mind that contents should be loaded in correct frames.**
