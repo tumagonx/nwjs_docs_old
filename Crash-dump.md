@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 Since 0.8.0 crash dump is supported. It means if node-webkit crashed, a `minidump` file will be saved. Users can include it in the bug report. It would be helpful to find out what's wrong with node-webkit in certain cases. Ideally node-webkit should not crash in all cases.
 
 Crash dumping is enabled on all the 3 platforms and the minidump file will be saved in the following default directories:
