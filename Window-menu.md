@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 _Window menu requires node-webkit >= v0.3.2_
 
 Different platforms has different meanings of window menu, following discussions will point out the differences and provide best practice to keep window menu working decently on all platforms.
