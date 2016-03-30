@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 ## Prerequisite
 
 * node-webkit didn't ship third party node modules required for testing, you
