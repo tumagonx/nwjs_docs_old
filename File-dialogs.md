@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 _Following content requires node-webkit >= v0.2.5_
 
 One important factor of native apps is the ability to make use of native file dialogs. HTML5 does provided limited support for file dialogs, you can put `<input type='file' />` and make user click on it and then upload the file to somewhere, that's not enough for apps on node-webkit, so we extended the `input` tag.
