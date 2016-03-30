@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 Due to licensing issues, the pre-built binary doesn't ship with the necessary codecs for patented media formats. If you require support for these formats, see the instructions below.
 
 _**Consult a lawyer if you do not understand the licensing constraints and require patented media formats in your application.**_
