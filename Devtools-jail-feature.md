@@ -1,3 +1,5 @@
+**NOTE: some content in this wiki applies only to 0.12 and earlier versions. For official documentation on 0.13 and later, see http://docs.nwjs.io**
+
 ## Devtools Jail
 
 With the feature `Devtools jail` you can limit the functions of devtools inside an iframe of your window. That means the user can only inspect the DOM elements and JavaScript files in the iframe.
