@@ -1,4 +1,4 @@
-*Prior to signing your app, you have to request and install certificates from the Apple Member Center. To do so, you can check [[this page|Requesting certificates]].*
+*Prior to signing your app, you have to request and install certificates from the Apple Member Center. To do so, you can check [[this page|MAS: Requesting certificates]].*
 
 ### Configuring the permissions
 
