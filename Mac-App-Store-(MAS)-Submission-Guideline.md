@@ -1,6 +1,6 @@
 _Starting with NW.js = 0.12.3 NW.js introduces official Mac App Store support (in beta)_
 
- 0.13.x and 0.14.x don't actually have MAS support.
+ 0.13.x and 0.14.x don't actually have MAS support yet. See [Mac App Support Issue](https://github.com/nwjs/nw.js/issues/4556)
 
 ![NW.js > Mac App Store](mas-screenshots/icon.jpg)
 # Background
