@@ -1,4 +1,6 @@
-_Starting with NW.js >= 0.12.3 NW.js introduces official Mac App Store support (in beta)_
+_Starting with NW.js = 0.12.3 NW.js introduces official Mac App Store support (in beta)_
+
+ 0.13.x and 0.14.x don't actually have MAS support.
 
 ![NW.js > Mac App Store](mas-screenshots/icon.jpg)
 # Background
