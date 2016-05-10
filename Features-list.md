@@ -21,3 +21,7 @@ _PAGE NOT DONE YET_
  * WebRTC
  * datalist
  * CSS3
+
+### Comparison of NW.js and similar projects
+
+* [NW.js & Electron Compared (2016 Edition)](http://tangiblejs.com/posts/nw-js-and-electron-compared-2016-edition)
