@@ -1,4 +1,4 @@
-_This feature requires node-webkit v0.3.3 or newer._
+_This feature works for node-webkit v0.3.3 to v0.12.3_
 
 Like normal browsers, node-webkit enables you to load third party NPAPI plugins, and you can even ship them with your app. So apart from using node.js native modules, you can also use browser plugins to add native code for your app.
 
