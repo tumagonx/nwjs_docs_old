@@ -169,6 +169,13 @@ To download the game, play online or include it in your web site for free you ca
 
 ![Yasminoku](http://yasminoku.tuxfamily.org/yasminoku_new.jpg "Yasminoku")
 
+### [Soliton Oscilloscope](http://www.solitontech.com)
+     Oscilloscope is a nwjs visualization app that fetches audio signal from an Arduino board and plots it on a graph. This App uses nwjs + Angular and D3 for data visualization. At Soliton, We have an engineering division with 25+ engineers dedicated to building nwjs apps for the semiconductor industry. We are able to bring modern HTML5 User Interfaces for Engineering Apps due to nwjs capabilities.
+
+![](https://github.com/KowsalyaPK/Soliton-Images/blob/master/Oscilloscope.png)
+
+![](https://github.com/KowsalyaPK/Soliton-Images/blob/master/Oscilloscope-Setup.jpg)
+
 ### [WallArty](http://avanishpathak.com/wallArty) - Delicious Papers for your Wall 
 
 Browse, fetch and set beautiful wallpapers for your desktop screen. A minimalistic clean UI which offers only the best high definition images with recommended resolutions. Scroll through delicious papers and click to set the wallpaper on your desktop. 
