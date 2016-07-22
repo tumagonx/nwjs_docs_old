@@ -1,6 +1,39 @@
 It's very common to store persistent data in native apps, people usually do it by embedding external databases or manipulating plain text files. In node-webkit, you have much better choices than that, you can use `Web SQL Database`, `embedded databases`, `Web Storage` or `Application Cache` without headaches of any extra dependencies.
 
-Additionally, nw.js provides [`App.dataPath`](https://github.com/nwjs/nw.js/wiki/App) which will give you a system dependent path where you can store application data.
+## Saving a plain text file directly to disk
+
+NW.js provides [`App.dataPath`](https://github.com/nwjs/nw.js/wiki/App) which will give you a system dependent path where you can store application data. For example, on Windows this would typically be `C:\Users\username\AppData\Local\YourAppName`, on Linux it would be here `/home/username/.config/YourAppName`.
+
+**Real World Example:**
+
+```
+var nw = require('nw.gui'); //This line is only required for NW.js 0.12.x and below
+var fs = require('fs');
+var path = require('path');
+
+function saveSettings (settings, callback) {
+    var file = 'my-settings-file.json';
+    var filePath = path.join(nw.App.dataPath, file);
+    fs.writeFile(filePath, settings, function (err) {
+        if (err) {
+            console.info("There was an error attempting to save your data.");
+            console.warn(err.message);
+            return;
+        } else if (callback) {
+            callback();
+        }
+    });
+}
+
+var mySettings = {
+    "language": "en",
+    "theme": "dark"
+};
+
+saveSettings(mySettings, function () {
+    console.log('Settings saved');
+});
+```
 
 ## Web SQL Database
 
