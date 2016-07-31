@@ -73,7 +73,7 @@ console.log(__dirname); // '/myApp/libs'
 
 ## Working around differences of contexts
 
-While differences of contexts are generally benefitial, sometimes they may constitute a problem in your (or some other person's) code, and a need for a workaround arises.
+While differences of contexts are generally beneficial, sometimes they may constitute a problem in your (or some other person's) code, and a need for a workaround arises.
 
 The most common cause for such problems is the behaviour of the `instanceof` operator in JavaScript. As you may [see in MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof), the operation `someValue instanceof someConstructor` tests whether an object has in its prototype chain the `prototype` property of the given constructor. However, if `someValue` is passed from a different JavaScript context, then it has its own line of ancestor objects, and the `someValue instanceof someConstructor` check fails inevitably.
 
