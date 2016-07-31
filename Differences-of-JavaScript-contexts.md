@@ -167,19 +167,19 @@ var getData = function (callback) {
        callback();
    }, 300);
 }
-var makeFolder=  function (callback) {
+var makeFolder = function (callback) {
    setTimeout(function(){
        console.log('1.1: made folder');
        callback();
    }, 200);
 }
-var writeFile= function(callback) {
+var writeFile = function(callback) {
    setTimeout(function(){
        console.log('1.1: wrote file');
        callback(null, 'myfile');
    }, 300);
 }
-var emailFiles= function(callback, results) {
+var emailFiles = function(callback, results) {
    console.log('1.1: emailed file: '+results.writeFile);
    callback(null, results.writeFile);
 }
