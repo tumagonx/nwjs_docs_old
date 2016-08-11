@@ -4,6 +4,13 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Movie Magic Desktop App](http://moviemagic.ga/latest)
+Movie Magic is a Desktop Application written in NW.js and available in Windows. It allows you to download and stream the latest movies for free.
+
+#### Screenshots
+[![screenshot1](http://i.imgur.com/PwNpXEo.png)](https://moviemagic.ga/latest)
+[![screenshot2](http://i.imgur.com/ZweAaTO.png)](https://moviemagic.ga/latest)
+
 ### [Scoop](https://itunes.apple.com/us/app/scoop/id1050308420)
 Scoop is an OS X Photo Organizer and Photo Server Application written in NW.js and available in the [Mac App Store](https://itunes.apple.com/us/app/scoop/id1050308420).  Scoop makes it easy to privately share your photos with family and friends - both online and in your home. 
 
