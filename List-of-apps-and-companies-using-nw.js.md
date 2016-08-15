@@ -4,8 +4,10 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
-### [Movie Magic Desktop App](http://moviemagic.ga/latest)
+### [Movie Magic Desktop App](http://moviemagic.ga/desktop)
 Movie Magic is a Desktop Application written in NW.js and available in Windows. It allows you to download and stream the latest movies for free.
+
+[http://moviemagic.ga/desktop](http://moviemagic.ga/desktop)
 
 #### Screenshots
 [![screenshot1](http://i.imgur.com/PwNpXEo.png)](https://moviemagic.ga/latest)
