@@ -118,11 +118,6 @@ Printr and Athom, 2 Dutch startups, joined forces to create a modular developmen
 [SkimHN](https://github.com/mcaravind/HackerNewsSummary) is a desktop client for Hacker News built with nw.js, edge.js and C#. SkimHN fetches the front page stories and also gives you a quick summary of selected stories. The purpose of SkimHN is to get a quick preview of a story before deciding to read it on the HackerNews website. 
 ![SkimHN preview](https://github.com/mcaravind/HackerNewsSummary/blob/master/screenshot_summary.PNG)
 
-### [Leanote Desktop App](https://github.com/leanote/desktop-app)
-[Leanote](http://leanote.com) is a cloud notebook, which you can manage, public and share knowledge. 
-Leanote use nw.js to create desktop app, and it's open source: https://github.com/leanote/desktop-app 
-![leanote desktop app preview](https://github.com/leanote/desktop-app/blob/master/preview.png)
-
 ### [Mongo Management Studio](http://www.litixsoft.de/english/mms/)
 
 Mongo Management Studio is the best way to work with MongoDB the easy way. Because of the clean and light user interface, you can execute the typical MongoDB commands fast and effective, without using the MongoDB shell.
