@@ -1,25 +1,27 @@
-Before develop an express base NW.js(node-webkit) APP, you should see [About Node.js server side script in nw.js](https://github.com/nwjs/nw.js/wiki/About-Node.js-server-side-script-in-nw.js), it provides some good ways to replace those framework.
+Before you start developing an express-based NW.js(node-webkit) application, you should see [About Node.js server side script in nw.js](https://github.com/nwjs/nw.js/wiki/About-Node.js-server-side-script-in-nw.js), as it provides some good ways to replace those frameworks.
 
-But if you already have an express base webapp, you want to use NW.js make it use as desktop app, there has problmes.
+But if you already have an express-based webapp, and you want NW.js to use it as desktop app, you might encounter problems.
 
-First, express provide a web server and don't have `index.html` file, so what should I do at package.json `main` property?
+First, express provide a web server and doesn't have an `index.html` file, so what should you do with the `package.json` `main` property?
 
-The solution is you can create a `index.html` file, and use the follow code to run the system:
+The solution is that you can create a `index.html` file, and use the following code to run the system:
 
 ```<script type="text/javascript" src="app.js"></script>```
 
-In NW.js you can use node modules in html files, more details on this see: [Using Node modules](https://github.com/nwjs/nw.js/wiki/Using-Node-modules)
+In NW.js you can use node modules in html files, for more details on this, see: [Using Node modules](https://github.com/nwjs/nw.js/wiki/Using-Node-modules)
 
-Second, express 3/4 use the `./bin/www` to start a web server, if you run the app.js it will fail to start. And sometimes if you want run a node app directly not through a html file, your can use the follow way:
+Second, express 3.x/4.x use the `./bin/www` folder to start a web server, so if you run the `app.js` it will fail to start. If you want run a node app directly, not through a html file, you can use the following way.
 
-We can setup `node-main` at package.json, `node-main` property is a command which will be call when NW.js app start, more details see: [Node main](https://github.com/nwjs/nw.js/wiki/Node-main). And for express case, we should also setup the main property to `http://localhost:3000`. If we setup a filename to that, NW.js will open it with file protocol, so you will see the source code, if you setup a url with http protocol, NW.js will open it just like a browser.
+We can setup `node-main` in `package.json`. The `node-main` property is a command which will be call when NW.js app start, for more details see: [Node main](https://github.com/nwjs/nw.js/wiki/Node-main).  
+And for express, we should also setup the `main` property to `http://localhost:3000`. If we setup a filename to that, NW.js will open it with the file protocol, so you will see the source code. If you setup a url with http protocol, NW.js will open it just like a browser.
 
 ```
 "node-main": "./bin/www",
 "main": "http://localhost:3000"
 ```
 
-Put the above code in your package.json and run it. It seems like OK but there have a problem (maybe a bug), is that NW.js show a blank page and you must refresh the page then the content will show. There have a way to solve this problem, you can create a html file and write JavaScript code `location.href="http://localhost:3000/"` in it, then setup the `main` as `your-dir-html.html`.
+Put the above code in your package.json and run it. It seems OK but there is a problem (maybe a bug), in that NW.js shows a blank page. You must refresh the page, and then the content will show.  
+There is a way to solve this problem: you can create a html file and write JavaScript code `location.href="http://localhost:3000/"` in it, then setup the `main` as `your-dir-html.html`.
 
 If the application that you're working with doesn't contain a www binary, try something like this:
 
