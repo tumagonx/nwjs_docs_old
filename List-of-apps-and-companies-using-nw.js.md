@@ -1135,3 +1135,8 @@ Quickemoji is an easy-use emoji tools.
 - Many helpful and efficent keyborad shortcut
 
 ![screenshot1](https://raw.githubusercontent.com/2yuri/quickemoji/master/snap-v1.0.png)
+
+### [Triangle](https://github.com/MrEikono/Triangle)
+
+Triangle allows you to encode and decode things using a variety of different ciphers.
+Currently, it's **very** work-in-progress.
