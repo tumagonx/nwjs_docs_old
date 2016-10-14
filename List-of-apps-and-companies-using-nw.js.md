@@ -4,6 +4,13 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [SPECapc for Siemens NX9.0 and NX10.0 benchmark](https://www.spec.org/gwpg/apc.static/nx9-10info.html)
+SPECapc for Siemens NX 9/10 is a collaborative benchmark developed by Siemens and the Standard Performance Evaluation Corporation (SPEC) Graphics and Workstation Performance Group's (GWPG) Application Performance Characterization Group (SPECapc). The benchmark uses the actual application to measure the performance of a workstation, including CPU and GPU performance. NW.js is used not only for the GUI, but also for a significant amount of the business logic governing the benchmark run, harvesting of results, and the creation of the final report.
+
+#### Screenshot
+[![screenshot1](http://www.spec.org/images/SPECapc_NX_screenshot.jpg)](https://www.spec.org/gwpg/apc.static/nx9-10info.html)
+[![screenshot1](https://www.spec.org/gwpg/images/NX-9-10-Avrocar.jpg)](https://www.spec.org/gwpg/apc.static/nx9-10info.html)
+
 ### [Movie Magic Desktop App](http://moviemagic.ga/desktop)
 Movie Magic is a Desktop Application written in NW.js and available in Windows. It allows you to download and stream the latest movies for free.
 
