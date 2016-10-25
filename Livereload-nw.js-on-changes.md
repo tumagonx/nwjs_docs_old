@@ -26,7 +26,7 @@ It will be limited to watching files directly within the current directory.
 
 ## Recursive solution
 
-You can add an option to the previous example to watch all subdirectories: `fs.watch(path, { recursive: true }, listener)`. Sadly, the recursive option is only currently supported on OS X. For a more robust solution, first you need to install "gaze", "chokidar" or "gulp", and then change the script tag content:
+You can add an option to the previous example to watch all subdirectories: `fs.watch(path, { recursive: true }, listener)`. The recursive option is only currently supported on OS X and Windows. For a more robust solution, first you need to install "gaze", "chokidar" or "gulp", and then change the script tag content:
 
 ### gaze
 
