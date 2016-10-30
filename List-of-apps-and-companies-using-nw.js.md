@@ -4,6 +4,12 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Scout-App 2](http://Scout-App.io)
+
+Scout-App allows you to process your `.sass` and `.scss` files into CSS without needing any knowledge of the command line. It runs on Windows, Linux, and OSX. It's free, open-source, and under active development.
+
+<p align="center"><img src="http://scout-app.io/_img/screenshots/win/02.png" alt="Scout-App Screenshot"></p>
+
 ### [SPECapc for Siemens NX9.0 and NX10.0 benchmark](https://www.spec.org/gwpg/apc.static/nx9-10info.html)
 SPECapc for Siemens NX 9/10 is a collaborative benchmark developed by Siemens and the Standard Performance Evaluation Corporation (SPEC) Graphics and Workstation Performance Group's (GWPG) Application Performance Characterization Group (SPECapc). The benchmark uses the actual application to measure the performance of a workstation, including CPU and GPU performance. NW.js is used not only for the GUI, but also for a significant amount of the business logic governing the benchmark run, harvesting of results, and the creation of the final report.
 
