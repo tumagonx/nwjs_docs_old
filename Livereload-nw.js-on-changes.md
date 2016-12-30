@@ -15,9 +15,9 @@ You can add this script tag to the end of your main file:
   var path = './';
   var fs = require('fs');
   
-  fs.watch(path, function() {
-    if (location)
-      location.reload();
+  var reloadWatcher=fs.watch(path, function() {
+    location.reload();
+    reloadWatcher.close();
   });
 </script>
 ```
