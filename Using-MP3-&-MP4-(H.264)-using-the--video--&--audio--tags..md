@@ -56,7 +56,7 @@ add_flag_common --enable-parser=aac,h264,mpegaudio
 ```
 
 Then follow the short directions here:
-[http://src.chromium.org/svn/trunk/deps/third_party/ffmpeg/README.chromium](http://src.chromium.org/svn/trunk/deps/third_party/ffmpeg/README.chromium)
+[https://src.chromium.org/viewvc/chrome/trunk/deps/third_party/ffmpeg/README.chromium](https://src.chromium.org/viewvc/chrome/trunk/deps/third_party/ffmpeg/README.chromium)
 
 You'll also need to patch the ffmpeg repo (or define the `branding` gyp variable to `Chrome`, untested)
 
