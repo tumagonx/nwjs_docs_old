@@ -26,7 +26,7 @@ $ node-pre-gyp build --runtime=node-webkit --target=0.3.3
 
 ## Known issues and limitations
 
-**NOTE**: The V8 version in node-webkit is different with the version in Node.js. And because V8 doesn't have any stable ABI, your native module could be broken. But we are trying our best to support native modules, deprecated API is supported to maintain backward compatibility. And if you find your module can't be built, file an issue.
+**NOTE**: The V8 version in node-webkit is different with the version in Node.js. And because V8 doesn't have any stable API, your native module could be broken. But we are trying our best to support native modules, deprecated API is supported to maintain backward compatibility. And if you find your module can't be built, file an issue.
 
 On Windows, the executable file `nw.exe` cannot be renamed, or the native module cannot be loaded since it will try to find `nw.exe`. See https://github.com/nwjs/nw.js/issues/199
 
