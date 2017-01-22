@@ -16,7 +16,7 @@ In order to show the `devtools` button in toolbar, you should edit package.json 
 
 Then you can open devtools from the `devtools` button (the one on the right of url entry) in the toolbar.
 
-Alternatively, even when this button (or the toolbar as a whole) is not visible, you may open devtools programmatically (calling the node-webkit's [`require('nw.gui').Window.get().showDevTools()`](Window#windowshowdevtools) method from one of your scripts).
+Alternatively, even when this button (or the toolbar as a whole) is not visible, you may open devtools programmatically (calling the NW.js's [`require('nw.gui').Window.get().showDevTools()`](Window#windowshowdevtools) method from one of your scripts). **Note:** On NW.js 0.13.0+ the command is `nw.Window.get().showDevTools()`.
 
 **Requirement:** On Windows and Linux, you need to make sure `nw.pak` is in the same directory with `nw` (Linux) or `nw.exe` (Windows).
 
