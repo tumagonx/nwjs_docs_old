@@ -12,8 +12,8 @@ Create a project built with Meteor, customize the running port, color or an imag
 
 [![Meteor Launcher Screenshot](http://necrotxilok.github.io/meteor-launcher/img/screenshots/screenshot-01.png)](http://necrotxilok.github.io/meteor-launcher/)
 
-[Direct Download](https://github.com/necrotxilok/meteor-launcher/releases)
-[Github Source](https://github.com/necrotxilok/meteor-launcher)
+ - [Latest Release](https://github.com/necrotxilok/meteor-launcher/releases)
+ - [Source Code](https://github.com/necrotxilok/meteor-launcher)
 
 ### [Scout-App 2](http://Scout-App.io)
 
