@@ -4,6 +4,14 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Meteor Launcher](http://necrotxilok.github.io/meteor-launcher/)
+
+Meteor Launcher is a multi-platform desktop app to help Meteor developers create, manage, launch and build multiple Meteor projects easily. 
+
+Create a project built with Meteor, customize the running port, color or an image for that project. Run the application and watch all errors while developing. Add and remove packages from Atmosphere, NPM and Cordova Plugins to your project. Add Platform to your project and run it in emulation mode or directly in your device. And when your app is ready for production build the application to publish everywhere.
+
+[![Meteor Launcher Screenshot](http://necrotxilok.github.io/meteor-launcher/img/screenshots/screenshot-01.png)](http://necrotxilok.github.io/meteor-launcher/)
+
 ### [Scout-App 2](http://Scout-App.io)
 
 Scout-App allows you to process your `.sass` and `.scss` files into CSS without needing any knowledge of the command line. It runs on Windows, Linux, and OSX. It's free, open-source, and under active development.
