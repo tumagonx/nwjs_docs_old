@@ -1172,7 +1172,4 @@ Ourmaze is a challenging horror adventure game. The player starts the game not k
 http://www.ourmaze.com
 
 #### Screenshots
-![](https://img.itch.io/aW1hZ2UvOTQ2NjEvNDQ0OTcxLnBuZw==/347x500/VldQYU.png)
-![](https://img.itch.io/aW1hZ2UvOTQ2NjEvNDQzNDUyLnBuZw==/347x500/f9%2BX0A.png)
-![](https://img.itch.io/aW1hZ2UvOTQ2NjEvNDQzNDU4LnBuZw==/347x500/dFByvl.png)
-![](https://img.itch.io/aW1hZ2UvOTQ2NjEvNDQzNDU5LmpwZw==/347x500/vvU4oB.jpg)
+![](https://img.itch.io/aW1hZ2UvOTQ2NjEvNDkzNDkyLmdpZg==/347x500/FCDQZz.gif)
