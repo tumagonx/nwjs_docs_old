@@ -8,9 +8,12 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 Meteor Launcher is a multi-platform desktop app to help Meteor developers create, manage, launch and build multiple Meteor projects easily. 
 
-Create a project built with Meteor, customize the running port, color or an image for that project. Run the application and watch all errors while developing. Add and remove packages from Atmosphere, NPM and Cordova Plugins to your project. Add Platform to your project and run it in emulation mode or directly in your device. And when your app is ready for production build the application to publish everywhere.
+Create a project built with Meteor, customize the running port, color or an image for that project. Run the application and watch all errors while developing. Add and remove packages from Atmosphere, NPM and Cordova Plugins to your project. Add Android and iOS platforms to your project and run it in emulation mode or directly in your device. And when your app is ready for production build the application to publish everywhere.
 
 [![Meteor Launcher Screenshot](http://necrotxilok.github.io/meteor-launcher/img/screenshots/screenshot-01.png)](http://necrotxilok.github.io/meteor-launcher/)
+
+[Direct Download](https://github.com/necrotxilok/meteor-launcher/releases)
+[Github Source](https://github.com/necrotxilok/meteor-launcher)
 
 ### [Scout-App 2](http://Scout-App.io)
 
