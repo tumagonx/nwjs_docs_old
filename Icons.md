@@ -15,6 +15,16 @@ This is platform specific unfortunately.
 ###Windows
 After creating package you would have to use resource editor to change bundled icon. Some sources recommend freeware [Resource Hacker](http://www.angusj.com/resourcehacker/) which would do the trick ([example](http://www.techtalkz.com/tips-n-tricks/3866-how-change-default-icon-exe-using-resource-editor-resource-hacker.html))
 
+With Resource Hacker you can insert the icon from the command line. 
+
+Example:
+```shell
+"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open yourapp.exe -save app.exe -action addoverwrite -res your.ico -mask ICONGROUP,IDR_MAINFRAME,
+```
+
+See the [Command Line Syntax](http://www.angusj.com/resourcehacker/) section on the Resource Hacker website for more information.
+
+
 Additionally, [node-webkit-builder](https://github.com/mllrsohn/node-webkit-builder) can insert your windows icon into your package.  See the [winIco](https://github.com/mllrsohn/node-webkit-builder#optionswinico) option.
 
 With [node-winresourcer](https://github.com/felicienfrancois/node-winresourcer) you can insert the icon from  the [command line](https://github.com/felicienfrancois/node-winresourcer#command-line) Note ` --lang: 1033 ` is removed as it is not required when mearly updating an exe.
