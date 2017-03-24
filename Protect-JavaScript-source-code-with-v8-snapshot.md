@@ -4,11 +4,9 @@ _Since v0.4.2_
 
 **There is a bug in 0.8.x that would make source code exposed. Do not use this feature with 0.8.x. It is fixed in 0.9.x**
 
-**This feature is still experimental -- API & tool usage are subject to change in future versions.**
-
 The JavaScript source code of your application can be protected by compiling to native code. Only the native code is distributed with the application and is loaded by the application.
 
-There are important limitations in the current implementation. Please see the 'Limitation' section.
+~~There are important limitations in the current implementation. Please see the 'Limitation' section.~~
 
 This feature is the fix for [issue 269](https://github.com/rogerwang/node-webkit/issues/269)
 
@@ -63,7 +61,8 @@ index.html: (note that we don't need to distribute 'mytest.js' with it)
 ```
 
 ### Limitation of nwjc
-The compiled code runs **slower than normal JS**: ~30% performance according to v8bench. Normal JS source code will not be affected. Again, if you have a real need against this limit, please file an issue and we'll find time to fix it.
+~~The compiled code runs **slower than normal JS**: 30% performance according to v8bench. Normal JS source code will not be affected. Again, if you have a real need against this limit, please file an issue and we'll find time to fix it.~~
+The performance issue is fixed in 0.22: https://nwjs.io/blog/js-src-protect-perf/
 
 The compiled code is **not cross-platform nor compatible between versions** of node-webkit. So you'll need to run `nwjc` for each of the platforms when you package your application.
 
@@ -95,7 +94,8 @@ The source code being compiled **cannot be too big**. `nwsnapshot` will report e
 
 Experiments show that 3 copies of the jquery library will exceed this limit. If you feel this is too small for your application, consider split your code into 2 parts: compiled and plain source. If you have a real need against this limit, please file an issue and we'll find time to fix it.
 
-The compiled code runs **slower than normal JS**: ~30% performance according to v8bench. Normal JS source code will not be affected. Again, if you have a real need against this limit, please file an issue and we'll find time to fix it.
+~~The compiled code runs **slower than normal JS**: 30% performance according to v8bench. Normal JS source code will not be affected. Again, if you have a real need against this limit, please file an issue and we'll find time to fix it.~~
+The performance issue is fixed in 0.22: https://nwjs.io/blog/js-src-protect-perf/
 
 The compiled code is **not cross-platform nor compatible between versions** of node-webkit. So you'll need to run `nwsnapshot` for each of the platforms when you package your application.
 
