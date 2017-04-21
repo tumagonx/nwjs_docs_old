@@ -130,12 +130,12 @@ Printr and Athom, 2 Dutch startups, joined forces to create a modular developmen
 
 ![Namagic screenshot](https://cloud.githubusercontent.com/assets/5699295/7555242/19d7636a-f745-11e4-905a-d9a17c1012c1.png)
 
-### [Evidentia] (https://evidentiasoftware.com)
+### [Evidentia](https://evidentiasoftware.com)
 [Evidentia](https://evidentiasoftware.com) is a commercial node-webkit based desktop app developed by Evidentia Software for genealogists.  Evidentia is an evidence management  and analysis tool.  It makes use of angularjs for the main framework, and HTML5's indexeddb for its underlying database structure.
 
 ![Evidentia preview](http://evidentiasoftware.com/static_pages/Screen%20Shot%202015-04-22%20at%209.00.10%20AM.png)
 
-### [PiktoPuzzle] (https://github.com/mcaravind/PiktoPuzzle)
+### [PiktoPuzzle](https://github.com/mcaravind/PiktoPuzzle)
 [PiktoPuzzle](https://github.com/mcaravind/PiktoPuzzle) is a node-webkit based desktop app to help memorize pictures (e.g. maps, scientific diagrams).   
 ![PiktoPuzzle preview](https://github.com/mcaravind/PiktoPuzzle/blob/master/screenshots/review_select_item.PNG)
 ### [SkimHN](https://github.com/mcaravind/HackerNewsSummary)
@@ -163,7 +163,7 @@ Pawnee is an Apache GUI designed for Mac OS X.
 
 <img src="http://i.imgur.com/64gjJid.png">
 
-### [M2S] (http://m2s.es/) ###
+### [M2S](http://m2s.es/) ###
  > [M2S](http://m2s.es/) is an messaging app created with web technologies and open source
 * Discover groups and join it,
 * Add people without his phone number,
@@ -172,7 +172,7 @@ Pawnee is an Apache GUI designed for Mac OS X.
 [Github repos](https://github.com/M2Sapp)
 <img src="https://dl.dropboxusercontent.com/u/47074505/scre/chat104.png">
 
-### [KeeeX] (https://keeex.io/) ###
+### [KeeeX](https://keeex.io/) ###
  > [KeeeX](https://keeex.io/) secures, traces, organizes, finds and shares any file, anywhere in absolute privacy.
 
 * No doubt, we see the same document,
@@ -323,7 +323,7 @@ Upload your subtitles to OpenSubtitles.org without any hassle.
 > A simple tool (for Mac, Windows version in the works) to save backups of Minecraft worlds before blowing stuff up and to restore them without having to manually copy folders.
 ![](http://i.imgur.com/iw4cJzf.png)
 
-### [Atraci] (https://github.com/Atraci/Atraci) ###
+### [Atraci](https://github.com/Atraci/Atraci) ###
  > Free music streaming player
 <img src="http://i.imgur.com/jpZVKgt.jpg">
 
@@ -351,13 +351,13 @@ Upload your subtitles to OpenSubtitles.org without any hassle.
 
 ![short-intro-video](https://asistant-assets.s3.amazonaws.com/short-intro-video.gif)
 
-### [Notedown] (https://github.com/isdampe/Notedown)
-> [Notedown] (https://github.com/isdampe/Notedown) provides a sleek, easy to use interface for writing, storing and viewing notes powered by markdown.
+### [Notedown](https://github.com/isdampe/Notedown)
+> [Notedown](https://github.com/isdampe/Notedown) provides a sleek, easy to use interface for writing, storing and viewing notes powered by markdown.
 
 ![Notedown 1](https://github.com/isdampe/Notedown/raw/master/screenshot-1.png)
 ![Notedown 2](https://github.com/isdampe/Notedown/raw/master/screenshot-2.png)
 
-### [DebugGap] (http://www.debuggap.com) (run easily and debug powerfully) ###
+### [DebugGap](http://www.debuggap.com) (run easily and debug powerfully) ###
  > [DebugGap](http://www.debuggap.com) is a debug tool for webview(e.g phonggap) and all kinds of browsers.
 
 
