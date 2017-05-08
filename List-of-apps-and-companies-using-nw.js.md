@@ -4,6 +4,20 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [The Daily Project](https://www.thedailyproject.com/en/index.html)
+A productivity tool based on simplicity and efficiency!
+
+The Daily Project combines the simplicity of a task manager with the flexibility of tracking tasks in both projects and categories. You can track your time working on specific tasks, and can manage both project-based and category-based tasks simultaneously. 
+
+Projects are organized by pillars, and you will have no problem handling a lot of projects at the same time. Even with many projects, you will never lose track of what’s truly important and critical. It is aimed at startups, freelancers, and individuals who like a more streamlined approach to managing projects and tasks without much overhead.
+
+[https://www.thedailyproject.com/en/index.html](https://www.thedailyproject.com/en/index.html)
+
+#### Screenshots
+[![screenshot1](http://thedailyproject.com/img/en/pillars/pillars.png)](http://thedailyproject.com/img/en/pillars/pillars.png)
+[![screenshot2](http://thedailyproject.com/img/en/home/home.png)](http://thedailyproject.com/img/en/home/home.png)
+
+
 ### [Meteor Launcher](http://necrotxilok.github.io/meteor-launcher/)
 
 Meteor Launcher is a multi-platform desktop app to help Meteor developers create, manage, launch and build multiple Meteor projects easily. 
