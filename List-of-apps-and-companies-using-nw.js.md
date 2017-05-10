@@ -14,8 +14,8 @@ Projects are organized by pillars, and you will have no problem handling a lot o
 [https://www.thedailyproject.com/en/index.html](https://www.thedailyproject.com/en/index.html)
 
 #### Screenshots
-[![screenshot1](http://thedailyproject.com/img/en/pillars/pillars.png)](http://thedailyproject.com/img/en/pillars/pillars.png)
-[![screenshot2](http://thedailyproject.com/img/en/home/home.png)](http://thedailyproject.com/img/en/home/home.png)
+[![screenshot1](http://thedailyproject.com/img/en/pillars/pillars.png)](https://www.thedailyproject.com)
+[![screenshot2](http://thedailyproject.com/img/en/home/home.png)](https://www.thedailyproject.com)
 
 
 ### [Meteor Launcher](http://necrotxilok.github.io/meteor-launcher/)
