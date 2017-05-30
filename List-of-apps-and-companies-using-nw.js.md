@@ -4,6 +4,16 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Demonheart](https://www.rollingcrown.com/demonheart/)
+Demonheart is an otome visual novel in a dark fantasy setting, with a protagonist whose personality is completely up to the player thanks to extensive dialog choices.
+
+_Story: Bright, a young woman from a small, peaceful town, becomes the assistant of the famous healer-witch Orchid. Benevolent, calm and beloved by all, Orchid hides dark secrets that Bright begins to uncover. Bright is drawn into a world of darkness and treachery. It seems she can never be alone again - for a powerful demonic presence has taken an interest in her activities, and his voice enters her mind at the most inappropriate times._
+
+Demonheart is built with NW.js and players can experience it on [Steam](http://store.steampowered.com/app/578900/Demonheart/) or [itch.io](https://rollingcrown.itch.io/demonheart).
+
+![Demonheart screenshot 1](http://cdn.akamai.steamstatic.com/steam/apps/578900/ss_5616b865b9b15a96caffc960a5832a5e4ab76530.jpg)
+![Demonheart screenshot 2](http://cdn.akamai.steamstatic.com/steam/apps/578900/ss_62cb0252c797981345645500cef43befa3885432.jpg)
+
 ### [The Daily Project](https://www.thedailyproject.com/en/index.html)
 A productivity tool based on simplicity and efficiency!
 
