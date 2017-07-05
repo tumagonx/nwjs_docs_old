@@ -4,6 +4,15 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Koa11y](https://open-indy.github.io/Koa11y)
+
+<img src="https://camo.githubusercontent.com/bce06b25460b595af56054ec302f2b4bfacce6f4/687474703a2f2f6f70656e2d696e64792e6769746875622e696f2f4b6f613131792f5f696d672f776f72646d61726b2e706e67" alt="Koa11y Logo">
+
+Koa11y is a cross-platform desktop app made with NW.js. It allows users to easily check for accessibility (a11y) issues in their webpages. Koa11y spins up a headless browser, navigates to your URL, scans it based on your accessibility guidelines, and gives you a report in several common formats. The reports include the specific line of code that violates a guideline and in many cases direct recommendations on how best to resolve the violation.
+
+<p align="center"><img src="https://open-indy.github.io/Koa11y/_img/screenshot-win.png" alt="Koa11y Screenshot"></p>
+
+
 ### [Demonheart](https://www.rollingcrown.com/demonheart/)
 Demonheart is an otome visual novel in a dark fantasy setting, with a protagonist whose personality is completely up to the player thanks to extensive dialog choices.
 
