@@ -8,7 +8,7 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 **Qilin** is a free, open-source text editor developed for exact sciences in mind. It fully supports [`LaTeX`](https://www.latex-project.org/), [`KaTeX`](https://khan.github.io/KaTeX/) and [`AsciiMath`](http://asciimath.org/). Qilin works on each desktop platform - it is based on `nw.js`, licensed under the *BSD-3-Clause* license.
 
-![Qilin light mode](http://i.imgur.com/0gxjJIo.png)
+![Qilin light mode](https://i.imgur.com/jWZaZCd.png)
 ![Qilin dark mode](http://i.imgur.com/eUWZvKw.png)
 
 ### [Koa11y](https://open-indy.github.io/Koa11y)
