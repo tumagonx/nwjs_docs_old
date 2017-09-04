@@ -212,16 +212,15 @@ Pawnee is an Apache GUI designed for Mac OS X.
 [Github repos](https://github.com/M2Sapp)
 <img src="https://dl.dropboxusercontent.com/u/47074505/scre/chat104.png">
 
-### [KeeeX](https://keeex.io/) ###
- > [KeeeX](https://keeex.io/) secures, traces, organizes, finds and shares any file, anywhere in absolute privacy.
+### [KeeeX](https://keeex.me/) ###
+ > [KeeeX](https://keeex.me/) secures, traces, organizes, finds and shares any file, anywhere in absolute privacy.
 
 * No doubt, we see the same document,
 * No mess, we efficiently organize them,
 * No time loss, instant, exact searches,
 * KeeeX is simple and quick to adopt
 
-<img src="https://content.wuala.com/contents/nguduong1988/keeex/search_keeex_xiger-harah.png">
-<img src="https://content.wuala.com/contents/nguduong1988/keeex/share_keeex_xodav-hyhep.png">
+<img src="https://keeex.me/wp-content/uploads/2015/02/macbook-290816.png">
 
 ### [Yasminoku](http://yasminoku.tuxfamily.org/)
 
