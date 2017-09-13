@@ -22,6 +22,15 @@ You can add this script tag to the end of your main file:
 </script>
 ```
 
+### Reloading NodeJS modules
+NodeJS modules loaded with require() will be cached in require.cache.
+If these modules ought to be reloaded along with the page, add the following to the reloadWatcher listener:
+```
+    for(var i in require.cache) {
+      delete require.cache[i];
+    }
+```
+
 It will be limited to watching files directly within the current directory.
 
 ## Recursive solution
