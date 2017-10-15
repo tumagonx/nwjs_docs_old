@@ -12,9 +12,10 @@ Note: Entries in each category are sorted from newest to oldest according to the
 
 
 # Written Articles.
+* [Creating Desktop Apps using HTML/CSS/JS + Node.js with NW.js](https://zanon.io/posts/creating-desktop-apps-using-html-css-js-nodejs-with-nwjs) by Zanon (Published on Sep 20, 2015)
 * [Node Webkit tutorial: creating a Markdown editor](https://ducode.org/node-webkit-tutorial-creating-a-markdown-editor.html) by Duco (Published on Feb 21, 2015)
 * [Creating Your First Desktop App With HTML, JS, and Node-WebKit](http://tutorialzine.com/2015/01/your-first-node-webkit-app/) by Tutorialzine (Published on Jan 7, 2015)
-* [Node Webkit powered Dashboard application](http://thejackalofjavascript.com/node-webkit-powered-dashboard-app/) by THE JACKAL OF JAVASCRIPT (Published on Jul 20, 2012)
+* [Node Webkit powered Dashboard application](http://thejackalofjavascript.com/node-webkit-powered-dashboard-app/) by THE JACKAL OF JAVASCRIPT (Published on Jul 20, 2014)
 * [Node Webkit – Build Desktop Apps with Node and Web Technologies](http://thejackalofjavascript.com/getting-started-with-node-webkit-apps/) by THE JACKAL OF JAVASCRIPT (Published on Jul 12, 2014)
 * [Build Desktop Apps with JavaScript and Node WebKit](http://modernweb.com/2014/02/10/build-desktop-apps-with-javascript-and-node-webkit/) by modernweb (Published on Feb 10, 2014)
 * [Introduction to HTML5 Desktop Apps With Node-Webkit](http://code.tutsplus.com/tutorials/introduction-to-html5-desktop-apps-with-node-webkit--net-36296) by Tuts+ (Published on Dec 31, 2013)
