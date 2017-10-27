@@ -4,6 +4,13 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [JavaScript Game Coder](http://pointjs.ru/pages/gamecoder/)
+
+**Game Coder** is an IDE for developing games on JavaScript. It is available on the main platforms of Windows, Linux, Mac OS X.
+
+![Game Coder day mode](http://pointjs.ru/pages/gamecoder/screen/scr8.png)
+![Game Coder night mode](http://pointjs.ru/pages/gamecoder/screen/scr2.png)
+
 ### [Qilin](https://github.com/qilin-editor/qilin-app)
 
 **Qilin** is a free, open-source text editor developed for exact sciences in mind. It fully supports [`LaTeX`](https://www.latex-project.org/), [`KaTeX`](https://khan.github.io/KaTeX/) and [`AsciiMath`](http://asciimath.org/). Qilin works on each desktop platform - it is based on `nw.js`, licensed under the *BSD-3-Clause* license.
