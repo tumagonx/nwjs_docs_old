@@ -1214,3 +1214,12 @@ http://www.ourmaze.com
 
 #### Screenshots
 ![](https://img.itch.io/aW1hZ2UvOTQ2NjEvNDkzNDkyLmdpZg==/347x500/FCDQZz.gif)
+
+### [AppKiwi](http://app.kiwi)
+
+AppKiwi is a desktop based APK file downloader. It let's you browse the daily updated collections; or search for specific apps. You can only download free Android APK files and it stores them in your library. From your library you can launch them into any APK player you want to play the app or game. Works on PC & Mac!
+
+http://App.Kiwi
+
+#### Screenshots
+![](http://app.kiwi/img/hero-upper.png)
