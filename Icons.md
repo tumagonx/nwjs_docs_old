@@ -43,5 +43,11 @@ Drag your image into app window and export resulting icon as ```nw.icns```. You'
 
 Check out [this thread](http://stackoverflow.com/questions/12306223/how-to-manually-create-icns-files-using-iconutil) on other simple ways to create icns files
 
+**Convert from the command line with [node-icns](https://www.npmjs.com/package/node-icns)**
+```
+npm install -g node-icns
+nicns --in application-icon.png --out application-icon.icns
+```
+
 ### Linux
 You'd need to create proper [.desktop file](https://wiki.archlinux.org/index.php/Desktop_Entries).
