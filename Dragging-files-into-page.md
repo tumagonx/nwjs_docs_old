@@ -30,13 +30,13 @@ An example is:
         // NOTE: ondrop events WILL NOT WORK if you do not "preventDefault" in the ondragover event!!
         window.ondrop = function(e) { e.preventDefault(); return false };
 
-        var holder = document.getElementById('holder');
+        const holder = document.getElementById('holder');
         holder.ondragover = function () { this.className = 'hover'; return false; };
         holder.ondragleave = function () { this.className = ''; return false; };
         holder.ondrop = function (e) {
           e.preventDefault();
 
-          for (var i = 0; i < e.dataTransfer.files.length; ++i) {
+          for (let i = 0; i < e.dataTransfer.files.length; ++i) {
             console.log(e.dataTransfer.files[i].path);
           }
           return false;
@@ -56,13 +56,34 @@ And the standard HTML5 way of reading files is also supported too:
 holder.ondrop = function (e) {
   e.preventDefault();
 
-  var file = e.dataTransfer.files[0],
-      reader = new FileReader();
+  const file = e.dataTransfer.files[0];
+  const reader = new FileReader();
+
   reader.onload = function (event) {
     console.log(event.target);
   };
   console.log(file);
   reader.readAsDataURL(file);
+
+  return false;
+};
+```
+
+If you need to handle file or folder:
+
+```javascript
+holder.ondrop = function (e) {
+  e.preventDefault();
+
+  const item = e.dataTransfer.items[0];
+  const entry = item.webkitGetAsEntry();
+  if (entry.isFile) {
+    const file = entry.getAsFile();
+    // Do magic with file
+  } else if (entry.isDirectory) {
+    // Do magic with directory
+    const dir = entry.getAsFile();
+  }
 
   return false;
 };
