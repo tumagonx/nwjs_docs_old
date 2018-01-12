@@ -18,15 +18,13 @@ https://firework.cloud/
 
 #### Screenshots
 
-![](https://startpack.ru/repository/articles/965/2993.jpg)
-
+![Windows version demo gif](https://startpack.ru/repository/articles/965/2993.jpg)
 
 ***
 
 <br>
 
-
-![](https://startpack.ru/repository/articles/965/2992.jpg)
+![MacOS version demo gif](https://startpack.ru/repository/articles/965/2992.jpg)
 
 Perfect with Gmail, Trello, Evernote, WhatsApp, Facebook Messenger, Google Keep and other popular web apps. Web apps should be apps! 🐱
 
