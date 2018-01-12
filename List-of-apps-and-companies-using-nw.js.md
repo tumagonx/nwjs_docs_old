@@ -5,15 +5,15 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 ## Apps
 
 
-### [Firework] (https://firework.cloud/)
+### [Firework](https://firework.cloud/)
 
 When you work with web apps they mix with other sites, losing you time and distracting you. Firework turns web applications and sites into desktop applications. Instant loading time, pinned to taskbar, easy to switch between. Available on Windows and macOS.
 
 Features:
-⏱ These web apps launch and are ready to use immediately.
-📌 You can pin them to Taskbar or Dock.
-👌🏻 Switch between them as you usually do with desktop apps.
-🎁 Apps notifications, ads blocking and many more.
+* ⏱ These web apps launch and are ready to use immediately.
+* 📌 You can pin them to Taskbar or Dock.
+* 👌🏻 Switch between them as you usually do with desktop apps.
+* 🎁 Apps notifications, ads blocking and many more.
 
 https://firework.cloud/
 
