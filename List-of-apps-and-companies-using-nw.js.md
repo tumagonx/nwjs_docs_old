@@ -4,6 +4,28 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+
+### [Firework] (https://firework.cloud/)
+
+When you work with web apps they mix with other sites, losing you time and distracting you. Firework turns web applications and sites into desktop applications. Instant loading time, pinned to taskbar, easy to switch between. Available on Windows and macOS.
+
+Features:
+⏱ These web apps launch and are ready to use immediately.
+📌 You can pin them to Taskbar or Dock.
+👌🏻 Switch between them as you usually do with desktop apps.
+🎁 Apps notifications, ads blocking and many more.
+
+https://firework.cloud/
+
+#### Screenshots
+
+![](https://ph-files.imgix.net/3de46253-1611-4617-9252-7f9019a1ed0c?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=507&h=380)
+
+![](https://ph-files.imgix.net/36d38909-b91e-4242-9652-767b9c1ccd9a?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=507&h=380)
+
+Perfect with Gmail, Trello, Evernote, WhatsApp, Facebook Messenger, Google Keep and other popular web apps. Web apps should be apps! 🐱
+
+
 ### [JavaScript Game Coder](http://pointjs.ru/pages/gamecoder/)
 
 **Game Coder** is an IDE for developing games on JavaScript. It is available on the main platforms of Windows, Linux, Mac OS X.
