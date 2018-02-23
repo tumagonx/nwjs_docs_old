@@ -78,11 +78,11 @@ holder.ondrop = function (e) {
   const item = e.dataTransfer.items[0];
   const entry = item.webkitGetAsEntry();
   if (entry.isFile) {
-    const file = entry.getAsFile();
+    const file = item.getAsFile();
     // Do magic with file
   } else if (entry.isDirectory) {
     // Do magic with directory
-    const dir = entry.getAsFile();
+    const dir = item.getAsFile();
   }
 
   return false;
