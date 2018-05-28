@@ -4,6 +4,13 @@ Here is the list of apps and companies using node-webkit. If you want your app o
 
 ## Apps
 
+### [Asylamba: Influence](https://asylamba.com)
+
+**Asylamba: Influence** is a game combining aspects of a puzzle-game with a nervous real-time strategy game. It is available on [Steam](https://store.steampowered.com/app/756240/Asylamba_Influence/) for Windows, MacOS and Linux.
+
+![Screenshot of Asylamba Influence](https://asylamba.com/public/media/files/sources/game.png)
+
+
 ### [Firework](https://firework.cloud/)
 
 When you work with web apps they mix with other sites, losing you time and distracting you. Firework turns web applications and sites into desktop applications. Instant loading time, pinned to taskbar, easy to switch between. Available on Windows and macOS.
