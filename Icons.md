@@ -13,7 +13,7 @@ To change icon in title bar of your app, put a reference to PNG/JPG into package
 This is platform specific unfortunately.
 
 ### Windows
-After creating package you would have to use resource editor to change bundled icon. Some sources recommend freeware [Resource Hacker](http://www.angusj.com/resourcehacker/) which would do the trick ([example](http://www.techtalkz.com/tips-n-tricks/3866-how-change-default-icon-exe-using-resource-editor-resource-hacker.html))
+After creating a package you have to use a resource editor to change the bundled icon. Some sources recommend freeware [Resource Hacker](http://www.angusj.com/resourcehacker/) which would do the trick ([example](http://www.techtalkz.com/tips-n-tricks/3866-how-change-default-icon-exe-using-resource-editor-resource-hacker.html))
 
 With Resource Hacker you can insert the icon from the command line. 
 
