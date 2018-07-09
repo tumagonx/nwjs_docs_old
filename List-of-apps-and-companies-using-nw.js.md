@@ -1,4 +1,4 @@
-Here is the list of apps and companies using node-webkit. If you want your app or company listed, you can add it yourself or send a mail to roger.wang@intel.com, both public and private apps would be fine.
+Here is the list of apps and companies using NW.js. You can add your application here.
 
 
 
