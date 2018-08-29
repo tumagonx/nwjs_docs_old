@@ -32,6 +32,8 @@ Currently not everything of developer tools is working well, below are the thing
 
 ## Why does devtools show an empty window?
 
+First off, ensure you are using the `SDK` version of NW.js. The `Normal` version can still launch the Chromium developer tools window, however it will be empty.
+
 Under certain network settings, it may show a white page for devtools. This might not be a bug of node-webkit, devtools in node-webkit is indeed a remote debugger, it needs to open a local server and transfer data via sockets.
 
 So if you encounter empty window when opening the devtools, please check following things:
