@@ -1,45 +1,88 @@
-__This relates to the OSX version only.__
+_This relates to the OSX version only._
 
 Sometimes you want to give your app to someone directly or via a download from your website. In that case it is preferable that you sign it so the recipient can more easily install it without running foul of Gatekeeper.
 
-The requirements in this case are less than the ones necessary for delivery via the MAS.
+The requirements in this case are less than the ones necessary for delivery via the Mac App Store (MAS).
 
-*Prior to signing your app, you have to request and install certificates from the Apple Member Center. To do so, you can check [[this page|MAS: Requesting certificates]]. You only need the **Mac App Distribution** certificate - the one you will use to sign your .app file.*
+*Prior to signing your app, you have to request and install certificates from the Apple Member Center. To do so, you can check [[this page|MAS: Requesting certificates]]. NOTE: Choose the **Production > Developer ID** certificate.*
 
-The following assumes you have [packaged](http://docs.nwjs.io/en/latest/For%20Users/Package%20and%20Distribute/) your .app file and you have your Mac App Distribution certificate installed.
+Open Applications > Keychain Access, and look for your new certificate under the "My Certificates" side panel. You'll notice it says "Developer ID Application: YOUR NAME (XXXXXXXXXX)". The confidential string between the `(XXXXXXXXXX)` is the ID you'll use later.
 
-First, you need the chromium version number from the nw.js version you used to build your app. This can be found via `nw.process.versions.chromium`, or open the .app package and navigate to /Contents/Versions and you will see a folder with the version number. It will look something like 64.0.3282.186
+---
 
-You need to run the codesign commands below from the same folder as your .app file.
+The following assumes you have [packaged](http://docs.nwjs.io/en/latest/For%20Users/Package%20and%20Distribute/) your .app file and you have your Mac Developer ID Application certificate installed.
 
-For convenience I run a .command file:
+### Signing the .app
 
-    cd path/to/myapp folder
+1. `cd` to the folder containing your .app
+    ```bash
+    cd path/to/folder
+    ```
 
-    # The chromium version number you are using from: nw.process.versions.chromium
-    chromium="64.0.3282.186"
+2. Perform the codesign
 
-    # Your app file name:
-    app="myapp.app"
+    _NOTE: Replace MAC_CERTIFICATE with the string `(XXXXXXXXXX)` from your developer certificate, and replace APP_NAME with the name of your app._
 
-    # Your certificate identity
-    identity="HEX_STRING_FROM_YOUR_CERTIFICATE"
+    ```bash
+    codesign --force --deep --verbose --sign  "MAC_CERTIFICATE" APP_NAME.app
+    ```
 
-    # Code sign your app using the variables above
-    codesign --force --verify --verbose --sign "$identity" "$app/Contents/Versions/$chromium/nwjs Framework.framework/Helpers/crashpad_handler"
-    codesign --force --verify --verbose --sign "$identity" "$app/Contents/Versions/$chromium/nwjs Framework.framework/libnode.dylib"
-    codesign --force --verify --verbose --sign "$identity" "$app/Contents/Versions/$chromium/nwjs Framework.framework"
-    codesign --force --verify --verbose --sign "$identity" "$app/Contents/Versions/$chromium/nwjs Helper.app"
-    codesign --force --verify --verbose --sign "$identity" "$app"
+3. Verify it worked
 
-    # Verify your app is signed correctly. This should output "valid on disk. satisfies its Designated Requirement"
-    codesign --verify --verbose=4 "$app"
+    _NOTE: Replace APP_NAME with the name of your app._
 
-From there you can package into a .dmg using whatever tool you use:
+    ```bash
+    codesign --verify -vvvv APP_NAME.app & spctl -a -vvvv APP_NAME.app
+    ```
+
+4. You should see the following messages:
+
+- APP_NAME: signed app bundle with Mach-O thin (x86_64)
+- APP_NAME: valid on disk
+- APP_NAME: satisfies its Designated Requirement
+- APP_NAME: accepted
+
+5. Congrats, you're all set to distribute your Mac app!
+
+---
+
+For convenience, you may create a .command file to keep these commands for later:
+
+1. Create the .command file
+    ```bash
+    touch my-script.command
+    ```
+
+2. Set permissions to run the .command file
+    ```bash
+    chmod u+x /path/to/file.command
+    ```
+
+3. Edit your .command file, adding in:
+
+    _NOTE: Replace the two variables with your own information._
+
+    ```bash
+    # Automatically change to current directory
+    cd "$(dirname "$0")"
+
+    # CHANGE ME: Relative path to your .app from where this 
+    # .command file is (include ".app" after the name of your app)
+    APP_PATH="My-app.app"
+
+    # CHANGE ME: Developer certificate
+    CERTIFICATE=XXXXXXXXXX
+
+    # CodeSign
+    codesign --force --deep --verbose --sign "$CERTIFICATE" $APP_PATH
+
+    # Verify
+    codesign --verify -vvvv $APP_PATH & spctl -a -vvvv $APP_PATH
+    ```
+
+---
+
+From there, you can package into a .dmg using whatever tool you use:
 eg [appdmg](https://github.com/LinusU/node-appdmg) (free)
 or [DropDmg](https://c-command.com/dropdmg/) (not free)
 or *(please add other solutions you are using)*
-
-
- 
-  
