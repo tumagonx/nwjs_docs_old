@@ -1011,7 +1011,7 @@ Original and Great team
 * http://getpopcornti.me/
 
 Follower team (holds the original project) 
-* https://popcorntime.io/
+* https://popcorntime.sh/
 
 To allow any computer user to watch movies easily streaming from torrents, without any particular knowledge.
 
