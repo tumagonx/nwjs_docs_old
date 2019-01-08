@@ -4,6 +4,12 @@ Here is the list of apps and companies using NW.js. You can add your application
 
 ## Apps
 
+### [Boats Animator](https://github.com/charlielee/boats-animator)
+
+Boats Animator is an open-source stop motion animation program created with NW.js. Its intuitive interface caters to animators of all levels and offers many powerful features. 
+
+![Screenshot of Boats Animator 0.8.0](https://www.charlielee.uk/assets/boats-animator/BA-0-8-0-screenshot-2-min.png)
+
 ### [Asylamba: Influence](https://asylamba.com)
 
 **Asylamba: Influence** is a game combining aspects of a puzzle-game with a nervous real-time strategy game. It is available on [Steam](https://store.steampowered.com/app/756240/Asylamba_Influence/) for Windows, MacOS and Linux.
