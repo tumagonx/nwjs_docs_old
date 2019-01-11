@@ -47,7 +47,7 @@ function init()
 
 function onSuccess(stream)
 {
-    document.getElementById('camFeed').src = webkitURL.createObjectURL(stream);
+    document.getElementById('camFeed').srcObject = stream;
 }
 
 function onFail()
