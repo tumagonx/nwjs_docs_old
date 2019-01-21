@@ -1261,3 +1261,12 @@ http://App.Kiwi
 
 #### Screenshots
 ![](http://app.kiwi/img/hero-upper.png)
+
+### [JIT.js](https://jitjs.blogspot.com/)
+
+JIT.js is a open source, cross-platform, terminal interface with integrated code editor. It comes with a few libraries to easy the development work, and allows for great expansion and customization.
+
+https://jitjs.blogspot.com/
+
+#### Screenshots
+![](https://2.bp.blogspot.com/-Pctr9lq7qp4/XEXeAEpDrNI/AAAAAAAAABo/_1iWNrjUjKsANrKMI2qe_s6QQgvRvc73gCLcBGAs/s1600/jitjs%2Bfree%2Bterminal.png)
