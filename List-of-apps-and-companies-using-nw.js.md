@@ -41,14 +41,6 @@ https://firework.cloud/
 
 Perfect with Gmail, Trello, Evernote, WhatsApp, Facebook Messenger, Google Keep and other popular web apps. Web apps should be apps! 🐱
 
-
-### [JavaScript Game Coder](http://pointjs.ru/pages/gamecoder/)
-
-**Game Coder** is an IDE for developing games on JavaScript. It is available on the main platforms of Windows, Linux, Mac OS X.
-
-![Game Coder day mode](http://pointjs.ru/pages/gamecoder/screen/scr8.png)
-![Game Coder night mode](http://pointjs.ru/pages/gamecoder/screen/scr2.png)
-
 ### [Qilin](https://github.com/qilin-editor/qilin-app)
 
 **Qilin** is a free, open-source text editor developed for exact sciences in mind. It fully supports [`LaTeX`](https://www.latex-project.org/), [`KaTeX`](https://khan.github.io/KaTeX/) and [`AsciiMath`](http://asciimath.org/). Qilin works on each desktop platform - it is based on `nw.js`, licensed under the *BSD-3-Clause* license.
@@ -113,15 +105,7 @@ SPECapc for Siemens NX 9/10 is a collaborative benchmark developed by Siemens an
 [![screenshot1](http://www.spec.org/images/SPECapc_NX_screenshot.jpg)](https://www.spec.org/gwpg/apc.static/nx9-10info.html)
 [![screenshot1](https://www.spec.org/gwpg/images/NX-9-10-Avrocar.jpg)](https://www.spec.org/gwpg/apc.static/nx9-10info.html)
 
-### [Movie Magic Desktop App](http://moviemagic.ga/desktop)
-Movie Magic is a Desktop Application written in NW.js and available in Windows. It allows you to download and stream the latest movies for free.
 
-[http://moviemagic.ga/desktop](http://moviemagic.ga/desktop)
-
-#### Screenshots
-[![screenshot1](http://i.imgur.com/PwNpXEo.png)](https://moviemagic.ga/latest)
-[![screenshot2](http://i.imgur.com/ZweAaTO.png)](https://moviemagic.ga/latest)
-[![screenshot3](http://i.imgur.com/LxXNUDu.png)](https://moviemagic.ga/latest)
 
 ### [Scoop](https://itunes.apple.com/us/app/scoop/id1050308420)
 Scoop is an OS X Photo Organizer and Photo Server Application written in NW.js and available in the [Mac App Store](https://itunes.apple.com/us/app/scoop/id1050308420).  Scoop makes it easy to privately share your photos with family and friends - both online and in your home. 
@@ -141,7 +125,7 @@ Based on WebChimera and Peerflix it not only has full support for all torrents b
 
 See [Current Features](https://github.com/jaruba/PowderPlayer#current-features) for a detailed list of what makes this app truly amazing!
 
-[![powderplayer-screenshot](http://powder.media/screenshots/PowderPlayer-new-4.png)](https://github.com/jaruba/PowderPlayer)
+(https://github.com/jaruba/PowderPlayer)
 
 ### [Astar](https://github.com/YutaMiyake/Astar)
 Astar is a simple task manager application for Mac OS X, using NW.js. Astar allows you to create your notebooks with your favorite image, in which you can manage your ToDos or WantToDos. These steps are grouped by tags that you define with your favorite color for them, and they are displayed by one of the three modes: bullet list, display by tag, and calendar view.
@@ -150,15 +134,7 @@ Astar is a simple task manager application for Mac OS X, using NW.js. Astar allo
 ![Alt vs group by tag](https://github.com/YutaMiyake/Astar/blob/master/screenshots/screenshot4.png "group by tag")
 ![Alt vs calendar](https://github.com/YutaMiyake/Astar/blob/master/screenshots/screenshot5.png "calendar")
 
-### [WhatsApp for Desktop](http://whatsapp-desktop.com/)
 
-**WhatsApp for Desktop** is a beautiful, simple and easy to use cross-platform app that brings web.whatsapp.com to your OS X, Windows or Linux desktop.
-
-#### *WhatsApp* features
-
-* Group chats
-* Send photos & videos
-* Share locations
 
 ### [Messenger for Desktop](http://messengerfordesktop.com/)
 
@@ -181,7 +157,6 @@ Astar is a simple task manager application for Mac OS X, using NW.js. Astar allo
 * Open links in browser or new window
 * Preferences in the right-click context menu (or menu bar for OS X, tray menu for Windows)
 
-[![Messenger for Desktop screenshot](https://raw.githubusercontent.com/Aluxian/Facebook-Messenger-Desktop/master/screenshot.png)](http://messengerfordesktop.com)
 
 ### [Teamwire for Desktop](http://www.teamwire.eu/)
 
@@ -206,8 +181,7 @@ The neodym IDE makes developing hybrid apps using the [Ionic SDK](http://ionicfr
 ### [DevKit](http://github.com/printhom/devkit-core)
 Printr and Athom, 2 Dutch startups, joined forces to create a modular development kit built in nw.js and Angularjs. The core can be found at [printhom/devkit-core](http://github.com/printhom/devkit-core) and 2 example implementations at [athombv/devkit](http://github.com/athombv/devkit) and [printr3d/devkit-app](http://github.com/printr3d/devkit-app). Feel free to create you own DevKit for your company or project!
 
-![printr-devkit](http://downloads.formide.com/cdn/images/devkit.png)
-![athom-devkit](http://developers.athom.nl/img/devkit.png)
+
 
 ### [Namagic](http://namagicapp.com)
 
@@ -218,7 +192,7 @@ Printr and Athom, 2 Dutch startups, joined forces to create a modular developmen
 ### [Evidentia](https://evidentiasoftware.com)
 [Evidentia](https://evidentiasoftware.com) is a commercial node-webkit based desktop app developed by Evidentia Software for genealogists.  Evidentia is an evidence management  and analysis tool.  It makes use of angularjs for the main framework, and HTML5's indexeddb for its underlying database structure.
 
-![Evidentia preview](http://evidentiasoftware.com/static_pages/Screen%20Shot%202015-04-22%20at%209.00.10%20AM.png)
+
 
 ### [PiktoPuzzle](https://github.com/mcaravind/PiktoPuzzle)
 [PiktoPuzzle](https://github.com/mcaravind/PiktoPuzzle) is a node-webkit based desktop app to help memorize pictures (e.g. maps, scientific diagrams).   
@@ -255,7 +229,6 @@ Pawnee is an Apache GUI designed for Mac OS X.
 * Compatible with all web browsers,
 * Share url, youtube videos, images png jpeg and gif, instagram photos, your geolocation and more
 [Github repos](https://github.com/M2Sapp)
-<img src="https://dl.dropboxusercontent.com/u/47074505/scre/chat104.png">
 
 ### [KeeeX ChatOps](https://keeex.me/products/chatops/) ###
  > [KeeeX ChatOps](https://keeex.me/products/chatops/) secures, traces, organizes, finds and shares any file, anywhere in absolute privacy.
@@ -294,7 +267,6 @@ Oscilloscope is a nwjs visualization app that fetches audio signal from an Ardui
 
 Browse, fetch and set beautiful wallpapers for your desktop screen. A minimalistic clean UI which offers only the best high definition images with recommended resolutions. Scroll through delicious papers and click to set the wallpaper on your desktop. 
 
-[![Screenshots](http://avanishpathak.com/wallArty/img/transparentPC.png)](http://avanishpathak.com/wallArty)
 
 #### Features
 
@@ -303,13 +275,7 @@ Browse, fetch and set beautiful wallpapers for your desktop screen. A minimalist
 * Timer for automatic Wallpaper change based on your wallpaper search preference
 * Cross platform - Mac / Windows support
 
-### [TopAnimeStream](http://www.topanimestream.com/en/)
 
-Watch anime / cartoon stream online on Windows, Mac or Linux. Example of shows you can watch ads FREE: Family Guy, Attack on Titan, Naruto, Archer, Death Note, Sword Art Online and a lot more. More than 3000 animes.
-* Download here: http://www.topanimestream.com/en/downloads/
-* Github link: https://github.com/senpaiski/TopAnimeStream
-
-![TopAnimeStream](https://camo.githubusercontent.com/83bcd3c0f6820ee016b6a4de47240e99b9fbfa8e/687474703a2f2f7777772e746f70616e696d6573747265616d2e636f6d2f496d616765486f73742f35362f33392f382f6465736b746f705f6170705f746f70616e696d6573747265616d5f64657461696c5f706167652e6a7067 "TopAnimeStream")
 
 ### [Anonymous Browser PersonaTool](https://www.personatool.com/)
 
@@ -321,7 +287,7 @@ Find the pure app.nw/ directory at the bottom of the download page: https://www.
 * Tested on Windows and Mac
 * Use a proxy network in the back with several instances 
 
-![PersonaTool Proxy Switcher](https://www.personatool.com/images/proxy-select.png "Proxy Manager")
+
 
 ### [Akiee](http://rockiger.com/en/akiee/)
 
@@ -332,29 +298,7 @@ A cross plattform task manager that stores its tasks in a Markdown file (similar
 
 ![Akiee Task Manager](http://rockiger.com/static/img/akiee-leader-626.jpg "Akiee Task Manager")
 
-### [Tinder++](http://tinderplusplus.com/)
 
-(open source: [mfkp/tinderplusplus](https://github.com/mfkp/tinderplusplus))
-
-Tinder++ is a desktop application for Mac and Windows that allows you to swipe from your computer, plus some extra features:
-
-* Hotkeys: Right arrow for like, Left arrow for pass, Backspace for undo. Simple.
-* Change your location so you can "Tinder Ahead" if you're going to be traveling.
-* Undo: ever missed your soulmate because you were swiping too fast? No more.
-
-![](http://tinderplusplus.com/img/screenshot.png)
-
-### [Fuckr](http://fuckr.me/)
-
-(open source: [tomlandia/fuckr](https://github.com/tomlandia/fuckr))
-
-Fuckr is a desktop Grindr client with extra features such as:
-
-* Pinpointing guys' exact location (using triangulation).
-* Changing your location.
-* Saving any pic.
-
-![](http://fuckr.me/img/screenshot_profiles.png)
 
 ### [Story-writer](http://soft.xiaoshujiang.com)
 
@@ -424,16 +368,12 @@ Upload your subtitles to OpenSubtitles.org without any hassle.
 
 [![TimoFM screenshot](https://github.com/sapjax/TimoFM/raw/master/assets/images/capture1.png)](https://github.com/sapjax/TimoFM)
 
-### [CasperJS IDE](https://gum.co/casperjside)
 
-> An IDE for creating and running CasperJS scripts.
-
-[![CasperJS IDE screenshot](https://static-2.gumroad.com/res/gumroad/files/52f5176d46454909b2d17b501ca890cd/original/Screenshot%20from%202014-10-06%2023:03:56.png)](https://gum.co/casperjside)
 
 ### [Assistant](https://github.com/29decibel/assistant)
 > A super simple, extensible and powerful personal assistant, just like your shell, with the power of HTML.
 
-![short-intro-video](https://asistant-assets.s3.amazonaws.com/short-intro-video.gif)
+
 
 ### [Notedown](https://github.com/isdampe/Notedown)
 > [Notedown](https://github.com/isdampe/Notedown) provides a sleek, easy to use interface for writing, storing and viewing notes powered by markdown.
@@ -441,20 +381,6 @@ Upload your subtitles to OpenSubtitles.org without any hassle.
 ![Notedown 1](https://github.com/isdampe/Notedown/raw/master/screenshot-1.png)
 ![Notedown 2](https://github.com/isdampe/Notedown/raw/master/screenshot-2.png)
 
-### [DebugGap](http://www.debuggap.com) (run easily and debug powerfully) ###
- > [DebugGap](http://www.debuggap.com) is a debug tool for webview(e.g phonggap) and all kinds of browsers.
-
-
-1. Run on Windows, Linux and Mac without setup process
-1. Support different platforms( Android,IOS,WebOS,BlackBerry and so on,except for Windows Phone )
-1. Support all the HTML5 frameworks(e.g phonegap) and browsers
-1. Support to inspect the element quickly in the node tree
-1. Debug lots of devices at the same time
-1. Support single-step debug ,watch variables and so on for Android devices
-
-![blue spot](http://www.debuggap.com/static/css/image/8.png)
-![four-leaf clover](http://www.debuggap.com/static/css/image/4.png)
-![debug page](http://www.debuggap.com/static/css/image/7.png)
 
 
 
@@ -468,7 +394,7 @@ Upload your subtitles to OpenSubtitles.org without any hassle.
 
 [Cellist](https://itunes.apple.com/us/app/cellist/id897814548?ls=1&mt=12) is a HTTP debugging proxy, available on Mac App Store.
 
-[![Cellist screenshot](http://cellist.patr0n.us/img/cellist.png)](https://itunes.apple.com/us/app/cellist/id897814548?ls=1&mt=12)
+
 
 ### CityBound - City Building game by [Anselm Eickhoff](http://aeplay.co/)
 
@@ -480,7 +406,7 @@ Upload your subtitles to OpenSubtitles.org without any hassle.
 
 [Broado](https://sahanarula.github.io/broado) is a Open-Source project using Node WebKit. Broado is a desktop music player built with node and angular.js
 
-[![broado screenshot](http://broado.cyburl.in/assets/img/jude.png)](https://sahanarula.github.io/broado)
+
 
 ### SWIMBI - Swift Menu Builder
 
@@ -495,7 +421,7 @@ Upload your subtitles to OpenSubtitles.org without any hassle.
 
 [Node WebKit QQ](https://github.com/caofb/nodewebkitqq/) is an Open-Source WebQQ desktop client using Node WebKit. FYI: QQ is an instant messaging service widely used in China provided by Tencent.
 
-[![Node WebKit QQ! screenshot](http://webqq.qiniudn.com/screenshort.png)](https://github.com/caofb/nodewebkitqq/)
+
 ### Soundnode App - SoundCloud for desktop
 
 [Soundnode App](http://www.soundnodeapp.com/) is a Open-Source project to support SoundCloud for desktop. 
@@ -524,7 +450,7 @@ The app is built on [Angular.js](https://angularjs.org) and [node-webkit](https:
 
 [Super Game Jam](http://supergamejam.com/) is an engaging new documentary series following some of the world’s most talented indie game developers doing what they do best. Filmed in five cities over a six month time period, each episode pairs two indie developers together for 48 hours and challenges them to create a game based on a theme suggested by their peers. The app was built on [Ember.js](http://emberjs.com/), [node-webkit](https://github.com/rogerwang/node-webkit), [Bootstrap](http://getbootstrap.com/) and [Greenworks](https://github.com/greenheartgames/greenworks).
 
-![SuperGameJam Screenshot](http://legrudgerugged.com/img/supergamejam-screen.png)
+
 
 
 ### Game Dev Tycoon
@@ -559,7 +485,6 @@ Intel XDK is available as a free download for Windows* 7 & 8 , Apple OS X*, and 
 
 [POM 360](http://sandipchitale.blogspot.com/2014/04/pom-360.html) is a simple tool to look at all aspects of your Maven pom and learn maven. Integrated help and short presentation on Maven is included.
 
-![POM 360 Screenshot](http://raw.githubusercontent.com/sandipchitale/POM360NW/master/pom360.png)
 
 ### Fenix Web Server
 
@@ -642,23 +567,7 @@ made by Jared Wright ([@jawerty](http://github.com/jawerty))
 
 ![Sqwiggle Screenshot](https://lh6.googleusercontent.com/-jHelIGY5NvE/Uh7iazRsE4I/AAAAAAAAABw/iTqloaGk8aI/s1092-fcrop64=1,13fd0000ecbcfe78/Screen%2BShot%2B2013-08-28%2Bat%2B22.54.56.png)
 
-### Sputnik
-Open source RSS reader. Download at [http://sputnik.szwacz.com](http://sputnik.szwacz.com)
 
-![Screenshot](http://sputnik.szwacz.com/images/screen.jpg)
-
-### Circadio
-Circadio is an easy to use yet feature rich time tracking application for Windows, Linux and OS X and is currently in public beta.
-
-![Preview](https://getcircadio.com/img/timetracker.png)
-
-With Circadio, you will be tracking time with a single click, enabling you to focus on your job instead of timetracking. When you're ready, you can provide additional information and finally sync your time to a task from any project management system with an API.
-
-Circadio will notify you when you forget to start a timer, and will ask you what to do with the missing time, when it wakes up after your laptop lost its power. Circadio can be configured to fit your way of working. If you want it to, it will tell you when to go home, when you're overloaded with work, when you can take on new tasks and much more.
-
-Circadio will update itself as new features and fixes become available.
-
-Sign up and download at [https://getcircadio.com](https://getcircadio.com)
 
 ### Haroopad
 Haroopad is a markdown enabled document processor for creating web-friendly documents.
@@ -682,8 +591,6 @@ Create gif from video. Actually for Mac OSX only, Windows and Linux are on the w
 ### Wifi-fikser
 Wifi fikser is an app for Telenet a Belgian ISP provider to help clients with their Wifi problems. It's released as both a Web app and a Desktop app for Windows and Mac OSX. We first created the Web app and after that we just packaged in into a Desktop app using Node-Webkit which was very easy.
 
-![Preview](http://www.telenet-wifi.be/img/dummy/nw-preview.png)
-
 More info can be found at [Telenet-wifi](http://www.telenet-wifi.be/) 
 Also a download is available in [Dutch](http://www.telenet-wifi.be/nl#/download) and [French](http://www.telenet-wifi.be/fr#/download) 
 
@@ -692,10 +599,6 @@ Also a download is available in [Dutch](http://www.telenet-wifi.be/nl#/download)
 Gisto is a Cross-platform gist snippets management desktop application that allows you and your team share code snippets fast and easily.
 
 Based on GitHub Gists Infrastructure which means you can use all your existing snippets by connecting your GitHub account!
-
-| Light theme | Dark theme |
-|:------|:------|
-| ![Gisto](http://Gisto.github.io/img/lite_theme.png "Gisto") | ![Gisto](http://Gisto.github.io/img/dark_theme.png "Gisto") |
 
 
 See more at: [www.gistoapp.com](http://www.gistoapp.com)
@@ -707,8 +610,6 @@ Source/Fork: [@GitHub](https://github.com/Gisto/Gisto)
 
 Get more info at [http://alphapixels.com/prepros](http://alphapixels.com/prepros)
 
-![Prepros screenshot](http://alphapixels.com/prepros/static/img/prepros.jpg)
-
 
 ### Slate
 
@@ -716,7 +617,7 @@ Slate is a minimalistic IRC client focused on extensibility.
 
 See more and get it at [https://github.com/slate/slate](https://github.com/slate/slate)
 
-![Slate screenshot](https://camo.githubusercontent.com/0f50694c7e4d0bbcbd6350a271cc9ec0ad7405b0/68747470733a2f2f646c2e64726f70626f7875736572636f6e74656e742e636f6d2f752f363339363931332f736c6174652f53637265656e25323053686f74253230323031332d31302d3139253230617425323031312e34352e3038253230414d2e706e67)
+
 
 ### Koala
 
@@ -849,8 +750,6 @@ written as plugins, that are just plain npm packages.
 
 [Sync Hard](http://synchardapp.com/) is a super simplified GUI front-end to rsync.  It will optionally create md5 checksums of each file before and after being transferred.
 
-![Sync Hard screenshot](https://synchardapp.com/assets/img/screenshot-130603.png)
-
 ### Cloud Commander Application
 
 [Cloud Commander Application](http://cloudcmd.github.io/app) is a cloud file manager.
@@ -915,12 +814,6 @@ Simple YouTube client for Mac OSX.
 
 **Spreaker Studio** is a brand new application for Windows and Mac OS that allows Spreaker users to professionally broadcast live audio. This application has been built with node-webkit, portaudio and lame.
 
-Download:
-
- - Mac: http://download.spreaker.com/spreaker-osx.dmg
- - Win: http://download.spreaker.com/spreaker-win.exe
-
-[![Image](http://download.spreaker.com/spreaker_studio_1.png)](http://download.spreaker.com/spreaker_studio_1.png)
 
 
 ### Shubha Downloader
@@ -984,10 +877,6 @@ UI is updated in real-time by detecting file changes and git index changes. Subm
 
 It also organizes repository submodules in tabs, so that you can work easily with them without the need of having multiple git gui instances or shells.
 
-![Overview 1](http://gitw.zedplan.com/screenshots/gitw1.png)
-![Overview 2](http://gitw.zedplan.com/screenshots/gitw2.png)
-![Overview 3](http://gitw.zedplan.com/screenshots/gitw3.png)
-
 ### Spock
 
 https://github.com/willerce/spock
@@ -996,7 +885,6 @@ Spock is a GUI frontend for Grunt. Unlike Koala and Prepros, Spock merely provid
 
 Instead of Grunt's original command line interface, Spock's graphic interface helps the new Grunt users. We hope Spock can promote the usage of Grunt.
 
-![Spock Overview](https://github-camo.global.ssl.fastly.net/f1f12a5904fa04229a8ed1145aa6bd9ec3fdaf19/687474703a2f2f732e77696c6c657263652e636f6d2f6c61622f73706f636b2f73706f636b2e706e67)
 
 Get it at [http://getspock.com/](http:/getspock.com/)
 
@@ -1006,8 +894,6 @@ Get it at [http://getspock.com/](http:/getspock.com/)
 https://turtl.it/
 
 Turtl is an app that lets you store and share files and notes. It uses client-side encryption, making your data readable only to you and those you share with. Store playlists, code snippets, bookmarks...anything you want, all completely private.
-
-![Playlist in Turtl](http://turtl.github.io/js/playlist.jpg)
 
 [Download Turtl!](https://turtl.it/download)
 
@@ -1050,7 +936,7 @@ A simple, yet powerful and free Node-Webkit application packaged for Windows and
 
 The Substance Composer is a modern workspace for creating professional web-first publications. You can download it [here.](http://substance.io/composer)
 
-![Substance Composer UI](http://substance.io/images/screenshots/composer-alpha-comments.png)
+
 
 
 ### Vocabulary Builder
@@ -1072,12 +958,8 @@ The Substance Composer is a modern workspace for creating professional web-first
 ### Wrong App
 [Wrong App](http://wrongapp.com) is a distraction-free text editor (with some Markdown support) for Mac. You can even try it online without downloading anything.
 
-![""](https://github.com/handstrings/wrong/raw/master/wrongappscreenshot.png)
-
 ### QueryTree
 [QueryTree](http://querytreeapp.com) is a visual database query builder for Windows, Mac and Linux. It currently works with Microsoft SQL Server and MySQL. 
-
-![QueryTree Screenshot](http://querytreeapp.com/wp-content/uploads/2014/05/mainfeature2-1024x666.jpg)
 
 ### Postbird
 
@@ -1094,7 +976,6 @@ The Substance Composer is a modern workspace for creating professional web-first
 
 [Bubble Painter](https://github.com/kethinov/BubblePainter) is an open source app for Mac OS X 10.10 Yosemite which gives you back the ability to customize the colors of the message bubbles in Messages.app.
 
-[![Bubble Painter screenshot](https://raw.githubusercontent.com/kethinov/BubblePainter/master/screenshot.png)](https://github.com/kethinov/BubblePainter)
 
 ### j5nw
 
@@ -1108,7 +989,6 @@ Example for ["Getting started with Johnny-Five and Node-Webkit"](https://github.
 
 It's like RSS reader for GitHub.
 
-[![github-reader](http://monosnap.com/image/oQoh7LC29yoWA63J9ZlY6CoFH1jKbJ.png)](https://github.com/azu/github-reader "github-reader")
 
 ### SUM - Secure Ultimate Messenger
 
@@ -1161,15 +1041,11 @@ Sdal za mig is software that used to send tax reports in russian federal tax ser
 
 [Carematics](http://carematics) automates tasks, referrals, and other communications between hospitals, ancillary service providers, patients, and other care team members during and after the patient discharge process.
 
-[![Carematics](https://www.dropbox.com/s/kvv8cynj37ixll1/carematics_nwjs_preview.png?dl=1)](http://carematics.com)
-
 ### [TeamworkChat](http://www.teamwork.com/chat) 
 
 Introducing [TeamworkChat](http://www.teamwork.com/chat) from [Teamwork.com](http://www.teamwork.com), a real time messaging service designed to keep your team members in constant contact and updated about what’s going on in your business, letting them make smart, quick, decisive decisions.
 
 So far we have Windows & Mac apps built with NW.js. Soon we'll have Android & iOS apps (with the same responsive app in a WebView), a Linux (NW.js) version, a Web version and more.
-
-[![TeamworkChat screenshot](https://www.teamwork.com/images/extras-images/chat/chat-OnlineConversations.jpg)](http://www.teamwork.com/chat)
 
 ### [Markdownald](https://github.com/malko/markdownald)
 
@@ -1233,16 +1109,6 @@ http://www.synchromthegame.com
 Open source video player with language-learning features (built-in google dictionary, word saving, dual subtitles).
 
 [![lingoplayer-screenshot](http://oaprograms.github.io/lingo-player/images/screenshots/2.png)](http://oaprograms.github.io/lingo-player/)
-
-### [quickemoji](https://github.com/2yuri/quickemoji)
-
-Quickemoji is an easy-use emoji tools.
-- Taskbar
-- Keyword Search
-- 3 Popular emojis and Updates dynamicly refer to the use frequency
-- Many helpful and efficent keyborad shortcut
-
-![screenshot1](https://raw.githubusercontent.com/2yuri/quickemoji/master/snap-v1.0.png)
 
 ### [Ourmaze](http://www.ourmaze.com)
 
