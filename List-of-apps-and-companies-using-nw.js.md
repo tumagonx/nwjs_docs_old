@@ -4,6 +4,15 @@ Here is the list of apps and companies using NW.js. You can add your application
 
 ## Apps
 
+### [JIT.js](https://jitjs.blogspot.com/)
+
+JIT.js is a open source, cross-platform, terminal interface with integrated code editor. It comes with a few libraries to easy the development work, and allows for great expansion and customization.
+
+https://jitjs.blogspot.com/
+
+#### Screenshots
+![](https://2.bp.blogspot.com/-Pctr9lq7qp4/XEXeAEpDrNI/AAAAAAAAABo/_1iWNrjUjKsANrKMI2qe_s6QQgvRvc73gCLcBGAs/s1600/jitjs%2Bfree%2Bterminal.png)
+
 ### [Boats Animator](https://github.com/charlielee/boats-animator)
 
 Boats Animator is an open-source stop motion animation program created with NW.js. Its intuitive interface caters to animators of all levels and offers many powerful features. 
@@ -179,7 +188,7 @@ The neodym IDE makes developing hybrid apps using the [Ionic SDK](http://ionicfr
 ![neodym IDE](https://camo.githubusercontent.com/2f80076ef9869f3c7b59950be133021d4132fd3a/68747470733a2f2f7261772e6769746875622e636f6d2f6161726f6e70726f6a656374732f6e656f64796d2d6964652f646576656c6f702f696d616765732f73657475702e706e67)
 
 ### [DevKit](http://github.com/printhom/devkit-core)
-Printr and Athom, 2 Dutch startups, joined forces to create a modular development kit built in nw.js and Angularjs. The core can be found at [printhom/devkit-core](http://github.com/printhom/devkit-core) and 2 example implementations at [athombv/devkit](http://github.com/athombv/devkit) and [printr3d/devkit-app](http://github.com/printr3d/devkit-app). Feel free to create you own DevKit for your company or project!
+Printr and Athom, 2 Dutch startups, joined forces to create a modular development kit built in nw.js and Angularjs. The core can be found at [printhom/devkit-core](http://github.com/printhom/devkit-core) and 2 example implementations at [athombv/devkit](http://github.com/athombv/devkit). Feel free to create you own DevKit for your company or project!
 
 
 
@@ -262,30 +271,6 @@ Oscilloscope is a nwjs visualization app that fetches audio signal from an Ardui
 ![](https://github.com/KowsalyaPK/Soliton-Images/blob/master/Oscilloscope.png)
 
 ![](https://github.com/KowsalyaPK/Soliton-Images/blob/master/Oscilloscope-Setup.jpg)
-
-### [WallArty](http://avanishpathak.com/wallArty) - Delicious Papers for your Wall 
-
-Browse, fetch and set beautiful wallpapers for your desktop screen. A minimalistic clean UI which offers only the best high definition images with recommended resolutions. Scroll through delicious papers and click to set the wallpaper on your desktop. 
-
-
-#### Features
-
-* Choose between different categories
-* Added NSFW section
-* Timer for automatic Wallpaper change based on your wallpaper search preference
-* Cross platform - Mac / Windows support
-
-
-
-### [Anonymous Browser PersonaTool](https://www.personatool.com/)
-
-Currently based on release 13.5-beta, this browser tool allows for spontaneous proxy switching and restarting new instances of the app. The source code is available for download as well and the software is packaged for Mac and Windows.
-
-Find the pure app.nw/ directory at the bottom of the download page: https://www.personatool.com/download.php
- 
-* Save "Personas" as json formatted and start the app with different profiles (aka manifests)
-* Tested on Windows and Mac
-* Use a proxy network in the back with several instances 
 
 
 
@@ -1128,11 +1113,3 @@ http://App.Kiwi
 #### Screenshots
 ![](http://app.kiwi/img/hero-upper.png)
 
-### [JIT.js](https://jitjs.blogspot.com/)
-
-JIT.js is a open source, cross-platform, terminal interface with integrated code editor. It comes with a few libraries to easy the development work, and allows for great expansion and customization.
-
-https://jitjs.blogspot.com/
-
-#### Screenshots
-![](https://2.bp.blogspot.com/-Pctr9lq7qp4/XEXeAEpDrNI/AAAAAAAAABo/_1iWNrjUjKsANrKMI2qe_s6QQgvRvc73gCLcBGAs/s1600/jitjs%2Bfree%2Bterminal.png)
