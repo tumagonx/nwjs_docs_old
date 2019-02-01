@@ -2,16 +2,14 @@
 
 ### Configuring the permissions
 
-We have to sign the three helpers, and then the main app:
+We have to sign the one helper, and then the main app:
 
-* `YourApp.app/Contents/Frameworks/nwjs Helper.app`
-* `YourApp.app/Contents/Frameworks/nwjs Helper EH.app`
-* `YourApp.app/Contents/Frameworks/nwjs Helper NP.app`
+* `YourApp.app/Contents/Versions/*/nwjs Helper.app`
 * `YourApp.app`
 
 To do so, we use two entitlement files ([more information](https://developer.apple.com/library/mac/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html)). They describe what the application is allowed to do when sandboxed.
 
-The child entitlements will be applied on the three helpers, and basically say that they inherit from the parent.
+The child entitlements will be applied on the three helpers, and basically, say that they inherit from the parent.
 
 Child entitlements:
 
