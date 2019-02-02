@@ -82,5 +82,5 @@ export APP_PATH=/path/to/yourapp/YourApp.app
 
 codesign --deep -s -f $IDENTITY --entitlements $CHILD_PLIST $APP_PATH"/Contents/Versions/CHROMIUMVERSIONHERE/nwjs Helper.app"
 
-codesign --deep -s $IDENTITY --entitlements $PARENT_PLIST $APP_PATH
+codesign --deep -s -f $IDENTITY --entitlements $PARENT_PLIST $APP_PATH
 ```
