@@ -68,7 +68,7 @@ Complete list of rules is available [here](https://developer.apple.com/library/i
 
 ### Signing commands
 
-We assume that you have saved both files as `child.plist` and `parent.plist`.
+We assume that you have saved both files as `child.plist` and `parent.plist`. The -f allows you to replace the signature if one is already in place.
 
 You can now run the signing commands:
 
@@ -80,11 +80,7 @@ export PARENT_PLIST=/path/to/parent.plist
 export CHILD_PLIST=/path/to/child.plist
 export APP_PATH=/path/to/yourapp/YourApp.app
 
-codesign --deep -s $IDENTITY --entitlements $CHILD_PLIST $APP_PATH"/Contents/Frameworks/nwjs Helper.app"
-
-codesign --deep -s $IDENTITY --entitlements $CHILD_PLIST $APP_PATH"/Contents/Frameworks/nwjs Helper EH.app"
-
-codesign --deep -s $IDENTITY --entitlements $CHILD_PLIST $APP_PATH"/Contents/Frameworks/nwjs Helper NP.app"
+codesign --deep -s -f $IDENTITY --entitlements $CHILD_PLIST $APP_PATH"/Contents/Versions/CHROMIUMVERSIONHERE/nwjs Helper.app"
 
 codesign --deep -s $IDENTITY --entitlements $PARENT_PLIST $APP_PATH
 ```
