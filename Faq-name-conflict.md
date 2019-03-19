@@ -6,6 +6,15 @@ If your project already has a function called `require()` it will conflict with 
     window.require = undefined; 
 </script>
 ````
+**NOTE:** If you are using Angular app use the following script.
+
+````html
+<script type="text/javascript">
+     window.nw_global = window.global;
+     window.global = undefined;
+</script>
+````
+
 
 **NOTE:** If you are using the text! plugin of requirejs you also need to add some code before the require.config (or another place once the require object is fully loaded)
 
