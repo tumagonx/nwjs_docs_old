@@ -34,7 +34,7 @@ Here is the Wiki, the encyclopedia of nw.js. I know most of you just don't read 
 * [io.js Manual & Documentation](https://iojs.org/api/)
 
 **Advanced:**
-* [Use app protocol to migrate code from your web site](wiki/App protocol)
+* [Use app protocol to migrate code from your web site](wiki/App-protocol)
 * [[Build native modules with nw-gyp]]
 * [Command line arguments of 'nw' executable](wiki/Command-line-switches)
 * [[mini browser in iframe]]
