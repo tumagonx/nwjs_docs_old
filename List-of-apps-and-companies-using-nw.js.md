@@ -11,7 +11,7 @@ JIT.js is a open source, cross-platform, terminal interface with integrated code
 https://jitjs.blogspot.com/
 
 #### Screenshots
-![](https://2.bp.blogspot.com/-Pctr9lq7qp4/XEXeAEpDrNI/AAAAAAAAABo/_1iWNrjUjKsANrKMI2qe_s6QQgvRvc73gCLcBGAs/s1600/jitjs%2Bfree%2Bterminal.png)
+![](https://i71.servimg.com/u/f71/15/27/47/75/sem_tz16.png)
 
 ### [Boats Animator](https://github.com/charlielee/boats-animator)
 
