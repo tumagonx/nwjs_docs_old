@@ -12,7 +12,7 @@ To sign your app, you will need to have two certificates installed on your machi
 
 To request your certificates you need a `.certSigningRequest` file.
 
-Open `/Applications/Utilities/Keychain Access.app`; in the app menu, and select *Request a Certificate From A Certificate Authority...*:
+Open `/Applications/Utilities/Keychain Access.app`; in the app menu, click on the "Certificates" section and select "Apple Worldwide Developer Relations Certification Authority", then select *Request a Certificate From A Certificate Authority...*:
 
 ![Capture](mas-screenshots/keychain_request_menu.jpg)
 
