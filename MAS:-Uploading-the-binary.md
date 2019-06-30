@@ -4,6 +4,8 @@ To upload the signed app, you have to bundle it in a `.pkg` file.
 
 To do so, run the following command:
 
+TODO: where to get the identity?
+
 ```bash
 export IDENTITY=LK12345678
 export APP_DIR=/path/to/yourapp/
