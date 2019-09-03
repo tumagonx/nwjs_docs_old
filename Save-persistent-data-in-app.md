@@ -14,7 +14,7 @@ var path = require('path');
 function saveSettings (settings, callback) {
     var file = 'my-settings-file.json';
     var filePath = path.join(nw.App.dataPath, file);
-    fs.writeFile(filePath, settings, function (err) {
+    fs.writeFile(filePath, JSON.stringify(settings), function (err) {
         if (err) {
             console.info("There was an error attempting to save your data.");
             console.warn(err.message);
