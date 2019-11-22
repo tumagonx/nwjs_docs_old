@@ -48,19 +48,22 @@ The `Web SQL Database` API in node-webkit is implemented with `sqlite`, and oper
 To create and open a database, use the following code:
 
 ```javascript
-var db = openDatabase('mydb', '1.0', 'my first database', 2 * 1024 * 1024);
+var databaseName = 'mydb';
+var versionNumber = '1.0';
+var textDescription = 'my first database';
+var estimatedSizeOfDatabase = 2 * 1024 * 1024;
+
+var db = openDatabase(
+    databaseName,
+    versionNumber,
+    textDescription,
+    estimatedSizeOfDatabase
+);
 ```
 
-I’ve passed four arguments to the openDatabase method. These are:
+If you try to open a database that doesn't exist, the API will create it on the fly for you. You also don't have to worry about closing databases.
 
-* Database name
-* Version number
-* Text description
-* Estimated size of database
-
-If you try to open a database that doesn’t exist, the API will create it on the fly for you. You also don’t have to worry about closing databases.
-
-To create table, insert data and query data, just `executeSql` in `transaction`:
+To create a table, insert data or query data, use `executeSql` in `transaction`:
 
 ```javascript
 // Create table and insert one line
