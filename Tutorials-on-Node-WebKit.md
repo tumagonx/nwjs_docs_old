@@ -6,7 +6,7 @@ Note: Entries in each category are sorted from newest to oldest according to the
 * [NW.js in Action](http://manning.com/jensen) by Paul Jensen (available now on MEAP, to be published Spring 2016)
 
 # Video Tutorials.
-* [Heartbeat (NW.js + Vue[tify].js video playlist)](https://goo.gl/8p3msR) by ackzell (latest update: Aug 25, 2018)
+* [Heartbeat (NW.js + Vue[tify].js video playlist)](https://goo.gl/8p3msR) by ackzell (latest update: Mar 15, 2019)
 * [Bulding HTML5 Desktop Apps with Node-Webkit](https://www.youtube.com/playlist?list=PLkyEadCJGLm0-yn8wi-a5n8H7lKll23t9) by NodeHead (Published on June 25, 2014)
 * [WebApp to DesktopApp with Node-Webkit](https://www.youtube.com/watch?v=d2tYH7vXMUM) at HTML5devconf (Published on Jan 28, 2014)
 * [Native apps from Node webkit](https://www.youtube.com/watch?v=IhcUWEN6uTY) by SinkingShriek (Published on Jan 3, 2014)
