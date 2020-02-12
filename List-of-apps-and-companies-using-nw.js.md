@@ -4,15 +4,6 @@ Here is the list of apps and companies using NW.js. You can add your application
 
 ## Apps
 
-### [JIT.js](https://jitjs.blogspot.com/)
-
-JIT.js is a open source, cross-platform, terminal interface with integrated code editor. It comes with a few libraries to easy the development work, and allows for great expansion and customization.
-
-https://jitjs.blogspot.com/
-
-#### Screenshots
-![](https://i71.servimg.com/u/f71/15/27/47/75/sem_tz16.png)
-
 ### [Boats Animator](https://github.com/charlielee/boats-animator)
 
 Boats Animator is an open-source stop motion animation program created with NW.js. Its intuitive interface caters to animators of all levels and offers many powerful features. 
