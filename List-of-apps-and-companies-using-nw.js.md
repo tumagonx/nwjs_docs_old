@@ -4,6 +4,19 @@ Here is the list of apps and companies using NW.js. You can add your application
 
 ## Apps
 
+### [Play with Me: Esacpe room](https://store.steampowered.com/app/725780/Play_With_Me_Escape_room/)
+Play With Me offers some cool and unique features. Blow into the microphone to blow out candles, use hand gesture to light the match. In some cases, we will have to move away or move closer to the PC screen to be able to read codes or see otherwise unidentifiable images. There will also be riddles in which we will have to put our hands on the screen to cover some parts of an image or an inscription to be able to discover the hidden solution. From this point of view, Play With Me stimulates the player to think in an alternative way, without forcing him to click everywhere. 
+
+![Play with Me: Escape room riddle](https://steamcdn-a.akamaihd.net/steam/apps/725780/ss_6a3e8dce1a97c2bf3a076775096886f011d83ee2.1920x1080.jpg?t=1581795643)
+
+_Story: An investigative journalist, Robert Hawk, together with his wife Sara disappears in mysterious circumstances. The police find only their wreck from the car crash. According to the suspicions of the investigation officers, a man called „Illusion”, a serial killer about who Hawk has been writing investigative articles for a long time, may have something to do with their disappearance. Apparently, he was very close to discover his identity with the help of his friend, private detective Patrick Clark. Now, as a result of the accident, Hawk finds himself in the “Illusion” and he has to get through a maze of puzzles in order to survive._
+
+Play with Me is built with NW.js and players can experience it on [Steam](https://store.steampowered.com/app/725780/Play_With_Me_Escape_room/) or [itch.io](https://airem.itch.io/play-with-me), [official website](http://playwithmegame.com).
+
+![Play with Me: Esacpe room screenshot 1](https://steamcdn-a.akamaihd.net/steam/apps/725780/ss_7fd7a09b7409425f78cb368459ecb5537123992f.1920x1080.jpg?t=1581795643)
+![Play with Me: Esacpe room screenshot 2](https://steamcdn-a.akamaihd.net/steam/apps/725780/ss_d8e647014bf2f2a7c544acd6faa266ee50b362fa.1920x1080.jpg?t=1581795643)
+
+
 ### [Boats Animator](https://github.com/charlielee/boats-animator)
 
 Boats Animator is an open-source stop motion animation program created with NW.js. Its intuitive interface caters to animators of all levels and offers many powerful features. 
