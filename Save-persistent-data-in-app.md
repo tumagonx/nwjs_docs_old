@@ -6,32 +6,54 @@ NW.js provides [`App.dataPath`](https://github.com/nwjs/nw.js/wiki/App) which wi
 
 **Real World Example:**
 
-```
-var nw = require('nw.gui'); //This line is only required for NW.js 0.12.x and below
+```js
+var nw = require('nw.gui'); // This line is only required for NW.js 0.12.x and below
 var fs = require('fs');
 var path = require('path');
 
-function saveSettings (settings, callback) {
-    var file = 'my-settings-file.json';
-    var filePath = path.join(nw.App.dataPath, file);
-    fs.writeFile(filePath, JSON.stringify(settings), function (err) {
-        if (err) {
-            console.info("There was an error attempting to save your data.");
-            console.warn(err.message);
-            return;
-        } else if (callback) {
-            callback();
-        }
+var helpers = {
+  file: 'my-settings-file.json',
+  filePath: path.join(nw.App.dataPath, this.file),
+  saveSettings: function (settings, callback) {
+    fs.writeFile(this.filePath, JSON.stringify(settings), function (err) {
+      if (err) {
+        console.info('There was an error attempting to save your settings.');
+        console.warn(err.message);
+        return;
+      } else if (typeof(callback) === 'function') {
+        callback();
+      }
     });
-}
-
-var mySettings = {
-    "language": "en",
-    "theme": "dark"
+  },
+  loadSettings: function (callback) {
+    fs.readFile(this.filePath, function (err, data) {
+      if (err) {
+        console.info('There was an error attempting to read your settings.');
+        console.warn(err.message);
+      } else if (typeof(callback) === 'function') {
+        try {
+          data = JSON.parse(data);
+          callback(data);
+        } catch (error) {
+          console.info('There was a problem parsing the data in your settings.');
+          console.warn(error);
+        }
+      }
+    });
+  }
 };
 
-saveSettings(mySettings, function () {
-    console.log('Settings saved');
+var mySettings = {
+  language: 'en',
+  theme: 'dark'
+};
+
+helpers.saveSettings(mySettings, function () {
+  console.log('Settings saved');
+});
+
+helpers.loadSettings(function (data) {
+  mySettings = data;
 });
 ```
 
