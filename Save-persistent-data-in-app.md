@@ -136,6 +136,11 @@ NB: An extra step is required to use EJDB in a node-webkit app. Please refer to 
 [MarsDB](https://github.com/c58/marsdb) is a lightweight database for any kind of JS-environment (Browser, Node, NW.js, Electron), based on Meteor's minimongo. It uses Promises almost everywhere, carefully written on ES6. It can be in-memory (by default) or persisted with any kind of storage (LocalStorage implemented for now), and it's easy to implement your own storage manager (thanks to Promises).
 
 
+## SQLite3
+
+Use [better-sqlite3](https://www.npmjs.com/package/better-sqlite3) for NW.js compatibility. Example of it in use in an [Angular project](https://github.com/vatsalkgor/nw-sqlite3-error).
+
+
 ## LowDB
 [LowDB](https://github.com/typicode/lowdb) is a flat JSON file database for Node. It uses Lo-Dash functional programming API.
 
