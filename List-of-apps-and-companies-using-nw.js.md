@@ -4,7 +4,7 @@ Here is the list of apps and companies using NW.js. You can add your application
 
 ## Apps
 
-### [Play with Me: Esacpe room](https://store.steampowered.com/app/725780/Play_With_Me_Escape_room/)
+### [Play with Me: Escape room](https://store.steampowered.com/app/725780/Play_With_Me_Escape_room/)
 Play With Me offers some cool and unique features. Blow into the microphone to blow out candles, use hand gesture to light the match. In some cases, we will have to move away or move closer to the PC screen to be able to read codes or see otherwise unidentifiable images. There will also be riddles in which we will have to put our hands on the screen to cover some parts of an image or an inscription to be able to discover the hidden solution. From this point of view, Play With Me stimulates the player to think in an alternative way, without forcing him to click everywhere. 
 
 ![Play with Me: Escape room riddle](https://steamcdn-a.akamaihd.net/steam/apps/725780/ss_6a3e8dce1a97c2bf3a076775096886f011d83ee2.1920x1080.jpg?t=1581795643)
