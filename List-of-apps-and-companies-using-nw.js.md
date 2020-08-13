@@ -1122,3 +1122,10 @@ http://App.Kiwi
 A retro-inspired 2D Action RPG set in the distant future. Meet Lea as she logs into an MMO of the distant future.
 
 ![CrossCode screenshot](https://i.imgur.com/uT6JmMo.png)
+
+### [Notepie](https://nohakcoffee.itch.io/notepie)
+
+A minimalist note-taking app with features like dark-mode, HTML, PDF and Docx exporting and more.
+It is still in development.
+
+![Notepie screenshot](https://img.itch.zone/aW1hZ2UvNjcxMzUxLzM2Nzg5NTIucG5n/original/eBGTG%2B.png)
