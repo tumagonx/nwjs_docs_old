@@ -120,6 +120,11 @@ As with CouchDB, there are no dynamic index-based queries, but you can dynamical
 
 To get started with PouchDB and NW.js, check out [pouchdb-nw](https://github.com/nolanlawson/pouchdb-nw).
 
+Additional links you may find useful:
+
+* https://github.com/pouchdb-community/relational-pouch
+* https://www.npmjs.com/package/pouchdb-find
+
 ## EJDB
 [EJDB](https://github.com/Softmotions/ejdb) (Embedded JSON Database engine) is a simple & fast database engine based on Tokyo Cabinet. It's usage copies MongoDB - you can easily make dynamic queries and sort/paginate the result.
 The fast queries and easy-to-use API make it a very good choice for node-webkit.
